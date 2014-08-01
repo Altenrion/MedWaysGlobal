@@ -1,0 +1,51 @@
+#page {
+    padding-top: 60px;
+}
+
+
+
+.my{
+    color: #8C9DFF;
+    width: 400px;
+    height: 100px;
+    background-color: #000;
+}
+
+.my th,
+.my td {
+  padding: 8px;
+  line-height: 30px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #000000;
+}
+
+.my th {
+  font-weight: bold;
+}
+
+.my thead th {
+  vertical-align: bottom;
+  background-color: #000;
+}
+.my tr{
+    
+    background-color: #000;
+}
+
+.my tbody > tr:nth-child(odd) > td,
+.my tbody > tr:nth-child(odd) > th {
+  background-color: #000;
+}
+
+.my tbody> tr >td{
+    
+background-color: #000;
+    
+}
+
+.tooltip-inner{
+    
+    
+    max-width: 350px;
+}
