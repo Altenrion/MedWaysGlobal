@@ -49,50 +49,28 @@
                 <div class="collapse navbar-collapse pull-right">
                     <ul class="nav navbar-nav">
                         <li class="dropdown"><a href="<?= Yii::app()->createUrl('ShowCase/index')?>" class="dropdown-toggle ">Главная</a>
+                        </li>
 
-                        </li>
-                        <li class="dropdown"><a href="<?= Yii::app()->createUrl('ShowCase/statistics')?>" class="dropdown-toggle js-activated">Статистика</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">О конкурсе</a></li>
-                                <li><a href="<?=Yii::app()->createUrl('ShowCase/statistics')?>">Научные платформы</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="#" class="dropdown-toggle js-activated">Информация</a>
+                        <li class="dropdown"><a href="<?=Yii::app()->createUrl('ShowCase/info')?>" class="dropdown-toggle js-activated">Информация</a>
                             <ul class="dropdown-menu">
                                 <li><a href="<?= (Yii::app()->controller->action->id == 'info')?('#DOCS'):(Yii::app()->createUrl('ShowCase/info').'#DOCS')     ?>">Локальные документы</a></li>
                                 <li><a href="<?= (Yii::app()->controller->action->id == 'info')?('#PLATF'):(Yii::app()->createUrl('ShowCase/info').'#PLATF')     ?>">Платформы</a></li>
                                 <li><a href="<?= (Yii::app()->controller->action->id == 'info')?('#NPB'):(Yii::app()->createUrl('ShowCase/info').'#NPB')     ?>">НПБ</a></li>
-
-                                <li><a href="<?=Yii::app()->createUrl('ShowCase/infoPartners')?>">Партнеры</a></li>
-                                <li><a href="<?=Yii::app()->createUrl('ShowCase/infoFAQ')?>">Вопросы</a></li>
-
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="#" class="dropdown-toggle js-activated">Организаторы</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="<?=Yii::app()->createUrl('ShowCase/team')?>">Оргкомитет</a></li>
-                                <li><a href="#">Базовые вузы округов</a></li>
-                            </ul>
-                        </li>
-
-
-                        <li class="dropdown"><a href="#" class="dropdown-toggle js-activated">Обратная связь</a>
+                        <li class="dropdown"><a href="<?=Yii::app()->createUrl('ShowCase/organizers')?>" class="dropdown-toggle">Организаторы</a>
 
                         </li>
+                        <li><a href="<?=Yii::app()->createUrl('ShowCase/partners')?>">Партнеры</a></li>
+
+                        <li><a href="<?=Yii::app()->createUrl('ShowCase/feedback')?>">Обратная связь </a></li>
                     </ul>
 
                     <ul class="social pull-right">
                         <li></li>
-                        <li><a href="#"><i class="icon-user"></i></a></li>
+                        <li><a href="<?=Yii::app()->createUrl('ShowCase/logout')?>"><i class="icon-user"></i></a></li>
                         <li><a href="<?=Yii::app()->createUrl('ShowCase/login')?>"><i class="icon-login"></i></a></li>
-
                     </ul>
-
-
-
-
-
-
                 </div>
             </div>
         </div>
@@ -103,7 +81,7 @@
 
 
     <div class="offset"></div>
- 
+
 
 
 

@@ -3223,11 +3223,11 @@ input:focus:-ms-input-placeholder {
 }
 .sidebox .post-list .icon-overlay {
     float: left;
-    width: 70px;
+    width: 200px;
     height: 70px;
 }
 .sidebox .post-list .meta {
-    margin-left: 85px;
+    margin-left: 215px;
     overflow: hidden;
     margin-bottom: 0;
 }
@@ -4387,4 +4387,62 @@ input:focus:-ms-input-placeholder {
 .no_r_pad{
     padding-right: 0px;!important;
 
+}
+.radio {
+    border: 1px solid black;
+}
+
+label .radio{
+    min-width:300px;
+}
+
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"]{
+    float: left;
+    width: 10%;
+}
+.radio label, .checkbox label{
+float:left;
+
+}
+
+select{
+    min-width: 250px;
+    width:100%;
+}
+
+.forms label.checkbox, .forms label.radio{
+    width:80%;
+    /*border:1px solid black;*/
+    font-weight: normal;
+    font-size: 14px;
+}
+label.checkbox{
+margin-left: 0px;
+    text-align: left;
+    float: left;
+}
+.forms label.radio.inlinee{
+    display:inline-block;
+    width:40%;
+    clear: both;
+    float: left;
+}
+
+.overlay{
+margin-top:-390px;
+
+}
+.map{
+    height: 100%;
+    background-image: url(../images/art/map1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    mix-height: 400px;
+}
+
+.con { position: relative; }
+.up { position: absolute; left: 0px; top: 0px; }
+
+.formmm ol li{
+    list-style: none;
 }

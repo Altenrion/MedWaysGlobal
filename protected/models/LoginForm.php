@@ -89,12 +89,12 @@ class LoginForm extends CFormModel
             
             switch ($r){
                 case 1: 
-                    $route = 'TuneDSS/index'; break;        
-                case 2: 
-                    $route = 'UseDSS/patientDB'; break;       
-                case 3: 
-                    $route = 'UseDSS/patientDB'; break;       
-                
+                    $route = 'Autorized/index'; break;
+                case 2:
+                    $route = 'UseDSS/patientDB'; break;
+                case 3:
+                    $route = 'UseDSS/patientDB'; break;
+
             }
             
             return $route;

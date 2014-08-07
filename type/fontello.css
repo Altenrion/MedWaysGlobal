@@ -3,7 +3,12 @@
 
 @import "http://webfonts.ru/import/boblic.css";
 
-
+@font-face {
+    font-family: 'Boblic';
+    src: local('Boblic'), local('Boblic'), url('http://64424.selcdn.ru/webfont/boblic/boblic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
     font-family: 'Helios-Cond-Light';
     src: url('fontello/Helios-Cond-Light.eot');

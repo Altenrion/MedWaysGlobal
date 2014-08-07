@@ -57,7 +57,7 @@ return array(
                     // enable cookie-based authentication
                         'class'=> 'WebUser',
                         'allowAutoLogin'=>true,
-                        'loginUrl'=>array('site/login'),
+                        'loginUrl'=>array('ShowCase/login'),
                 ),
 
                 'authManager' => array(
@@ -95,7 +95,8 @@ return array(
 		
                 'errorHandler'=>array(
                         // use 'site/error' action to display errors
-                        'errorAction'=>'site/error',
+                        'errorAction'=>'ShowCase/error',
+                        'adminInfo'=>'landerfeld@gmail.com'
                 ),
 
 //                'log'=>array(

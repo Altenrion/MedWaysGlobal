@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info_docs.php" line="85" mnemonic="1" />
-    <bookmark url="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info_docs.php" line="233" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php" line="85" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php" line="233" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" name="Default" comment="" />
     <ignored path="MedWaysGlobal.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406874256820" ignored="false" />
+    <file path="/index.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407337102910" ignored="false" />
     <file path="/style.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1405683779993" ignored="false" />
-    <file path="/fontello.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406177898815" ignored="false" />
+    <file path="/fontello.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407341663248" ignored="false" />
     <file path="/main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406134500245" ignored="false" />
-    <file path="/Proto.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406881096284" ignored="false" />
+    <file path="/Proto.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407397207271" ignored="false" />
     <file path="/Autentification_main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406121974522" ignored="false" />
-    <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406276465874" ignored="false" />
-    <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406796816455" ignored="false" />
-    <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406877051929" ignored="false" />
-    <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406808715130" ignored="false" />
-    <file path="/login.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406803458880" ignored="false" />
-    <file path="/dummy.xml" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406883240851" ignored="false" />
-    <file path="/partners.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406182373132" ignored="false" />
-    <file path="/statistics.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406182387463" ignored="false" />
+    <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407439311929" ignored="false" />
+    <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407260038018" ignored="false" />
+    <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407439353383" ignored="false" />
+    <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407400498589" ignored="false" />
+    <file path="/login.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407439242680" ignored="false" />
+    <file path="/dummy.xml" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407316533920" ignored="false" />
+    <file path="/partners.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407146437757" ignored="false" />
+    <file path="/statistics.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407391938955" ignored="false" />
     <file path="/team.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406804278906" ignored="false" />
     <file path="/myscripts.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406278236034" ignored="false" />
     <file path="/tabs.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406405672507" ignored="false" />
@@ -30,15 +30,30 @@
     <file path="$PROJECT_DIR$/../validation/jquery-steps-master/build/jquery.steps.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406449177579" ignored="false" />
     <file path="/jquery.steps.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406449172658" ignored="false" />
     <file path="/info.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406808378293" ignored="false" />
-    <file path="/info_docs.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406883707194" ignored="false" />
+    <file path="/info_docs.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406888431655" ignored="false" />
     <file path="$PROJECT_DIR$/../test_scroll/index.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406877007052" ignored="false" />
     <file path="$PROJECT_DIR$/../test_scroll/js/mootools-1.2.3-core.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406873920366" ignored="false" />
     <file path="$PROJECT_DIR$/../test_scroll/js/mootools-1.2.3.1-more.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406873945818" ignored="false" />
     <file path="$PROJECT_DIR$/../test_scroll/js/class.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406873974856" ignored="false" />
     <file path="$PROJECT_DIR$/../test_scroll/js/base.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406874039882" ignored="false" />
     <file path="$PROJECT_DIR$/../test_scroll/js/home.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406874061993" ignored="false" />
-    <file path="/init.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406880539512" ignored="false" />
+    <file path="/init.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407140456960" ignored="false" />
     <file path="/my.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406882924462" ignored="false" />
+    <file path="/info_FAQ.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406888578176" ignored="false" />
+    <file path="/organizers.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407146123521" ignored="false" />
+    <file path="/feedback.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407259264365" ignored="false" />
+    <file path="/error.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407259053013" ignored="false" />
+    <file path="/registration.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407316775162" ignored="false" />
+    <file path="/registration.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407316915486" ignored="false" />
+    <file path="/Dummy.txt" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407319012709" ignored="false" />
+    <file path="/statistics.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407392668540" ignored="false" />
+    <file path="$PROJECT_DIR$/../Testing/image.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407330858514" ignored="false" />
+    <file path="$PROJECT_DIR$/../Testing/data.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407330925501" ignored="false" />
+    <file path="$PROJECT_DIR$/../Testing/win2uni.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407330962716" ignored="false" />
+    <file path="$PROJECT_DIR$/../Testing/index.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407337103978" ignored="false" />
+    <file path="$PROJECT_DIR$/../Testing/in.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407396213708" ignored="false" />
+    <file path="/in.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407396208870" ignored="false" />
+    <file path="$PROJECT_DIR$/../SPPR/protected/controllers/SiteController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407439509253" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,92 +72,90 @@
     <favorites_list name="MedWaysGlobal" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Proto.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="1" selection-start="5583" selection-end="5583" vertical-scroll-proportion="-64.73077">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/settings.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="team.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/team.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="4" selection-start="576" selection-end="2749" vertical-scroll-proportion="-0.65384614">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style_adoptive.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style_adoptive.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4389" column="1" selection-start="92598" selection-end="92598" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="info_docs.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info_docs.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="63" selection-start="2951" selection-end="2953" vertical-scroll-proportion="0.32692307">
-              <folding>
-                <element signature="e#6#158#0" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="info_FAQ.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info_FAQ.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="175" column="29" selection-start="5435" selection-end="5444" vertical-scroll-proportion="-26.153847">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="738" column="21" selection-start="11130" selection-end="11130" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="info_partners.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info_partners.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="52" selection-start="10363" selection-end="10363" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5304299">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="Proto.php" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="70" column="78" selection-start="4454" selection-end="4454" vertical-scroll-proportion="-16.346153">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="19" column="33" selection-start="489" selection-end="489" vertical-scroll-proportion="-3.0384614">
+                  <folding>
+                    <element signature="e#3004#3169#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LoginForm.php" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/protected/models/LoginForm.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="64" column="27" selection-start="1523" selection-end="1523" vertical-scroll-proportion="0.3846154">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UserIdentity.php" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="71" column="20" selection-start="2011" selection-end="2011" vertical-scroll-proportion="-20.884615">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/index.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="6" column="2" selection-start="89" selection-end="89" vertical-scroll-proportion="-3.9230769">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ShowCaseController.php" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="123" column="0" selection-start="2556" selection-end="2556" vertical-scroll-proportion="0.5729665">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="style_adoptive.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/style_adoptive.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="4407" column="7" selection-start="92907" selection-end="92907" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="SiteController.php" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="189" column="1" selection-start="5132" selection-end="5132" vertical-scroll-proportion="0.87914693">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -152,22 +165,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/adaptive/wizard/undefined.js" />
-        <option value="$USER_HOME$/Downloads/moose/moose/s" />
-        <option value="$USER_HOME$/Downloads/moose/moose/elements.html" />
-        <option value="$PROJECT_DIR$/type/fontello.css" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/team.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/info_FAQ.php" />
-        <option value="$PROJECT_DIR$/js/skel/init.js" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/partners.php" />
+        <option value="$PROJECT_DIR$/js/fileInput.js" />
+        <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
+        <option value="$PROJECT_DIR$/type/fontello.css" />
+        <option value="$PROJECT_DIR$/js/registration.js" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/statistics.php" />
+        <option value="$PROJECT_DIR$/js/statistics.js" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/registration.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
-        <option value="$PROJECT_DIR$/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/css/my.css" />
+        <option value="$PROJECT_DIR$/protected/models/LoginForm.php" />
+        <option value="$PROJECT_DIR$/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php" />
         <option value="$PROJECT_DIR$/css/style_adoptive.css" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/info_docs.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
       </list>
     </option>
   </component>
@@ -232,7 +245,171 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="type" />
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="showCase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -260,11 +437,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skel" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,26 +449,26 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="appearance" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="options.lastSelected" value="web.server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SPPR" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\MedWaysGlobal\type\fontello" />
+      <recent name="C:\wamp\www\MedWaysGlobal\themes\bootstrap\views\site" />
       <recent name="C:\wamp\www\MedWaysGlobal\js\skel" />
       <recent name="C:\wamp\www\MedWaysGlobal\css\style\images\art" />
       <recent name="C:\Users\User\Downloads\moose\moose" />
-      <recent name="C:\wamp\www\MedWaysGlobal\type\fontello" />
-      <recent name="C:\wamp\www\MedWaysGlobal\themes\bootstrap\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\MedWaysGlobal\themes\bootstrap\views" />
+      <recent name="C:\wamp\www\MedWaysGlobal\themes\bootstrap\views\showCase" />
       <recent name="C:\wamp\www\MedWaysGlobal\css\style\images" />
       <recent name="C:\wamp\www\MedWaysGlobal\js\validator" />
       <recent name="C:\wamp\www\MedWaysGlobal\css" />
-      <recent name="C:\wamp\www\MedWaysGlobal\themes\adaptive\views" />
-      <recent name="C:\wamp\www\MedWaysGlobal\themes\adaptive" />
     </key>
   </component>
   <component name="RunManager">
@@ -367,18 +540,18 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.73157316" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11846318" sideWeight="0.26842684" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19370331" sideWeight="0.26842684" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.73157316" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -445,118 +618,133 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/moose/elements.html">
+    <entry file="file://$PROJECT_DIR$/type/fontello.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="479" column="45" selection-start="30382" selection-end="30382" vertical-scroll-proportion="0.17417061">
+        <state line="7" column="97" selection-start="218" selection-end="229" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/registration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="36" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#154#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/statistics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="92" selection-start="1614" selection-end="1624" vertical-scroll-proportion="23.26923">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#figure#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#2;n#figure#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#3;n#figure#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#4;n#figure#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="tag#thead#0;tag#table#1;tag#div#0;tag#div#0;tag#div#0;tag#div#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="78" selection-start="4454" selection-end="4454" vertical-scroll-proportion="-16.346153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="20" selection-start="2011" selection-end="2011" vertical-scroll-proportion="-20.884615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="40" selection-start="95" selection-end="95" vertical-scroll-proportion="0.10167464">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="46" selection-start="4494" selection-end="4494" vertical-scroll-proportion="0.8983254">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="286" column="48" selection-start="15533" selection-end="15620" vertical-scroll-proportion="0.4605103">
+          <folding>
+            <element signature="e#6#159#0" expanded="true" />
+            <element signature="e#171#324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/site/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.6111786">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/statistics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="32" selection-start="612" selection-end="612" vertical-scroll-proportion="0.39327148">
+          <folding>
+            <element signature="e#0#155#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="2" selection-start="89" selection-end="89" vertical-scroll-proportion="-3.9230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="189" column="1" selection-start="5132" selection-end="5132" vertical-scroll-proportion="0.87914693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/LoginForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="27" selection-start="1523" selection-end="1523" vertical-scroll-proportion="0.3846154">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="25" selection-start="429" selection-end="515" vertical-scroll-proportion="-9.153846" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="31" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="52" selection-start="10363" selection-end="10363" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/skel/skel.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/skel/init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="235" column="34" selection-start="9154" selection-end="9154" vertical-scroll-proportion="0.0">
+        <state line="19" column="33" selection-start="489" selection-end="489" vertical-scroll-proportion="-3.0384614">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#3004#3169#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/skel/skel-panels.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="1" selection-start="5583" selection-end="5583" vertical-scroll-proportion="-64.73077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/settings.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/my.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="433" selection-end="433" vertical-scroll-proportion="0.50056624">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="738" column="21" selection-start="11130" selection-end="11130" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style_adoptive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4389" column="1" selection-start="92598" selection-end="92598" vertical-scroll-proportion="0.0">
+        <state line="4407" column="7" selection-start="92907" selection-end="92907" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/team.php">
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="4" selection-start="576" selection-end="2749" vertical-scroll-proportion="-0.65384614">
+        <state line="123" column="0" selection-start="2556" selection-end="2556" vertical-scroll-proportion="0.5729665">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info_partners.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info_FAQ.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="29" selection-start="5435" selection-end="5444" vertical-scroll-proportion="-26.153847">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info_docs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="63" selection-start="2951" selection-end="2953" vertical-scroll-proportion="0.32692307">
-          <folding>
-            <element signature="e#6#158#0" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

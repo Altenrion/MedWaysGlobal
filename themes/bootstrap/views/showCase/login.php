@@ -27,18 +27,19 @@
                 </p>
                 <div class="divide15"></div>
                 <div class="form-container">
-                    <form class="forms" action="#" method="post" id="login_form">
+                    <form class="formmm" action="<?=Yii::app()->createUrl('ShowCase/login')?>" method="post" name="LoginForm" id="login_form">
                         <fieldset>
                             <ol>
-                                <li class="form-row text-input-row email-field">
-                                    <input type="text" name="email" class="text-input defaultText required email" title=" Email (Обязательно)"/>
+                                <li class="form-row text-input-row ">
+                                    <input type="text" name="LoginForm[username]" class="text-input defaultText required " title=" Email (Обязательно)"/>
                                 </li>
                                 <li class="form-row text-input-row password-field">
-                                    <input type="text" name="password" class="text-input defaultText required password" title="Пароль (Обязательно)"/>
+                                    <input type="text" name="LoginForm[password]" class="text-input defaultText required password" title="Пароль (Обязательно)"/>
                                 </li>
 
                                 <li class="button-row">
                                     <input type="submit" value="Войти" name="submit" class="btn btn-submit bm0 pull-left" />
+<!--                                    <span class="response alert alert-success"></span>-->
                                     <p class="forgot">Забыли свой <a href="#">email</a> или <a href="#">пароль</a>?</p>
                                 </li>
                             </ol>
@@ -55,7 +56,7 @@
                     данные. Регистрация в нашей системе позволит вам получить доступ к учачстию в нашем мероприятии и
                     отслеживать более подробную статистику проектов.
                 </p>
-                <a href="#" class="btn">Зарегистрироваться</a>
+                <a href="<?=Yii::app()->createUrl('ShowCase/registration')?>" class="btn">Зарегистрироваться</a>
                 <div class="divide20"></div>
                 <!-- /.connect -->
 

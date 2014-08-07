@@ -57,7 +57,7 @@ $this->breadcrumbs=array(
 
 
         <div class="row bm20">
-            <div class="col-sm-8">
+            <div class="col-sm-6">
                 <div class="section-title">О мероприятии</div>
                 <p class="just">Общероссийское научно-практическое мероприятие <a>«Эстафета вузовской науки»</a> (далее Эстафета) – это многоэтапный проект, направленный на содействие в реализации Стратегии развития медицинской науки в Российской Федерации на период до 2025 года и программы по созданию карты российской науки в медицинской области.</p>
                 <p class="just"> <a> Участники Эстафеты</a> -  научные и научно-педагогические коллективы, научные-исследовательские организации, аффилированные с ведомственными медицинскими образовательными учреждениями.</p>
@@ -77,12 +77,12 @@ $this->breadcrumbs=array(
                 </blockquote>
 
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6">
                 <div class="section-title">Этапы <span>Эстафета проходит в три этапа</span></div>
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle active" data-parent="#accordion" href="#collapseOne"> Открытие Эстафеты  </a> </h4>
+                            <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle active" data-parent="#accordion" href="#collapseOne">1. Открытие Эстафеты  </a> </h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse in" style="height: auto;">
                             <div class="panel-body">Старт Эстафеты предусматривает освещение результатов мероприятия предыдущего года и уточнение задач на текущий период. К участию приглашаются все медицинские высшие учебные заведения страны и аффилированные с ними научно-исследовательские коллективы.</div>
@@ -90,7 +90,7 @@ $this->breadcrumbs=array(
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle collapsed" data-parent="#accordion" href="#collapseTwo"> Конкурсный отбор проектов (ФО) </a> </h4>
+                            <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle collapsed" data-parent="#accordion" href="#collapseTwo">2. Конкурсный отбор проектов (ФО) </a> </h4>
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse" style="height: 0px;">
                             <div class="panel-body ">
@@ -126,7 +126,7 @@ $this->breadcrumbs=array(
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle collapsed" data-parent="#accordion" href="#collapseThree"> финальный конкурсный отбор </a> </h4>
+                            <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle collapsed" data-parent="#accordion" href="#collapseThree">3. финальный конкурсный отбор </a> </h4>
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse" style="height: 0px;">
                             <div class="panel-body">
@@ -171,7 +171,7 @@ $this->breadcrumbs=array(
                     <div class="col-sm-9">
                         <p class="lead tp3 bm0 text-right">Мы верим в ваши силы! Примите участие в эстафете прямо сейчас. </p>
                     </div>
-                    <div class="col-sm-3"><a href="#" class="btn bm0">Регистрация</a></div>
+                    <div class="col-sm-3"><a href="<?=Yii::app()->createUrl('ShowCase/registration')?>" class="btn bm0">Регистрация</a></div>
                 </div>
             </div>
         </div>
@@ -218,13 +218,11 @@ $this->breadcrumbs=array(
 </div>
 <div id="second" class="parallax">
     <div class="container inner text-center">
-        <div class="section-title">Подпишитесь на рассылку <span>Получайте оповещения о новых событиях</span></div>
-        <form id="newsletter" class="form-inline newsletter" role="form">
-            <div>
-                <label class="sr-only" for="exampleInputEmail">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail" placeholder=" email">
+        <div class="row">
+            <div class="col-sm-9">
+                <p class="lead tp3 bm0 text-right">Следите в реальном времени за шансом на победу ! </p>
             </div>
-            <button type="submit" class="btn btn-default btn-submit">Отправить</button>
-        </form>
+            <div class="col-sm-3"><a href="<?=Yii::app()->createUrl('ShowCase/statistics')?>" class="btn bm0">Статистика</a></div>
+        </div>
     </div>
 </div>
