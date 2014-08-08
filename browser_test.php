@@ -21,7 +21,7 @@ switch ($body_browser_class){
         header( 'Location: http://google.ru/search?q=современные браузеры' );
         break;
     case 'chrome':
-        header( 'Location: '.__DIR__.DIRECTORY_SEPARATOR.'index.php', true, 303 );
+        header( 'Location: http://medways.altenrion.ru', true, 303 );
         break;
 
 
