@@ -73,7 +73,7 @@
     <div class="container inner text-center">
         <div class="row">
             <div class="col-sm-9 ">
-                <p class="lead tp3 bm0 text-right">Скачать все локальные документы одним архивом</p>
+                <p class="lead tp3 bm0 text-center">Скачать все локальные документы одним архивом</p>
             </div>
             <div class="col-sm-3"><a href="#" class="btn bm0"><i class="icon-download"></i> Скачать</a></div>
         </div>
@@ -219,7 +219,7 @@
     <div class="container inner text-center">
         <div class="row">
             <div class="col-sm-9 ">
-                <p class="lead tp3 bm0 text-right">Скачать информацию о платформах одним архивом</p>
+                <p class="lead tp3 bm0 text-center">Скачать информацию о платформах одним архивом</p>
             </div>
             <div class="col-sm-3"><a href="#" class="btn bm0"><i class="icon-download"></i> Скачать</a></div>
         </div>
@@ -341,7 +341,7 @@
     <div class="container inner text-center">
         <div class="row">
             <div class="col-sm-9">
-                <p class="lead tp3 bm0 text-right">Скачать все документы нормативно-правовой базы  </p>
+                <p class="lead tp3 bm0 text-center">Скачать все документы нормативно-правовой базы  </p>
             </div>
             <div class="col-sm-3"><a href="#" class="btn bm0"> Скачать</a></div>
         </div>

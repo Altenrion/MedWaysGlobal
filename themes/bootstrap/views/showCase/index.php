@@ -169,7 +169,7 @@ $this->breadcrumbs=array(
             <div class="container inner text-center">
                 <div class="row">
                     <div class="col-sm-9">
-                        <p class="lead tp3 bm0 text-right">Мы верим в ваши силы! Примите участие в эстафете прямо сейчас. </p>
+                        <p class="lead tp3 bm0 text-center">Мы верим в ваши силы! Примите участие в эстафете прямо сейчас. </p>
                     </div>
                     <div class="col-sm-3"><a href="<?=Yii::app()->createUrl('ShowCase/registration')?>" class="btn bm0">Регистрация</a></div>
                 </div>
@@ -220,7 +220,7 @@ $this->breadcrumbs=array(
     <div class="container inner text-center">
         <div class="row">
             <div class="col-sm-9">
-                <p class="lead tp3 bm0 text-right">Следите в реальном времени за шансом на победу ! </p>
+                <p class="lead tp3 bm0 text-center">Следите в реальном времени за шансом на победу ! </p>
             </div>
             <div class="col-sm-3"><a href="<?=Yii::app()->createUrl('ShowCase/statistics')?>" class="btn bm0">Статистика</a></div>
         </div>
