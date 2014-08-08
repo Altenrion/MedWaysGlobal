@@ -48,7 +48,6 @@ class ShowCaseController extends Controller
         if(isset($_POST['partners_request'])){
             $data = Yii::app()->request;
 
-
             $model->NAME = $data->getPost('name');
             $model->EMAIL = $email =  $data->getPost('email');
             $model->ORG_NAME = $data->getPost('org_name');
@@ -74,6 +73,9 @@ class ShowCaseController extends Controller
 
 	public function actionStatistics()
 	{
+
+
+
 		$this->render('statistics');
 	}
 
@@ -88,7 +90,6 @@ class ShowCaseController extends Controller
             $data = Yii::app()->request;
 
             if(isset($_POST['question_form'])){
-
 
                 $model->NAME = $data->getPost('name');
                 $model->EMAIL = $email =  $data->getPost('email');
@@ -123,19 +124,18 @@ class ShowCaseController extends Controller
 		$this->render('organizers');
 	}
 
+
+
+
     public function actionRegistration()
 	{
-
-
         if(isset($_POST['F_NAME'])){
 
-            echo 'Заявка на регистрацию отправлена';
+            echo 'Заявка на регистрацию отправлена...';
             Yii::app()->end();
         }
 
-
-
-		$this->render('registration');
+			$this->render('registration');
 	}
 
 

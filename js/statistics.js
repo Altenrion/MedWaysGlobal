@@ -22,6 +22,8 @@ $(document).ready(function () {
     var stat_p = im_p.add(nums);
     var stat_a = im_a.add(act);
 
+    stat_p.fadeIn(1000);
+    proj_t.delay(700).fadeIn('slow');
 
     $('a#vuz').click(function(){
         if (stat_p.css('display') !== 'none'){
