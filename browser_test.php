@@ -18,7 +18,7 @@ elseif ( strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7') ) $body_browser_class 
 
 switch ($body_browser_class){
     case 'no' :
-        header( 'Location: http://google.ru/search?q=modern browsers' );
+        header( 'Location: http://google.ru/search?q=современные браузеры' );
         break;
     case 'chrome':
         header( 'Location: '.__DIR__.DIRECTORY_SEPARATOR.'index.php', true, 303 );
