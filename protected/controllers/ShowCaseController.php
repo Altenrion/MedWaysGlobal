@@ -100,6 +100,24 @@ class ShowCaseController extends Controller
         }
     }
 
+    public function actionGetFile($filename = NULL) {
+
+        if ($filename !== NULL) {
+            // некоторая логика по обработке пути из url в путь до файла на сервере
+
+            $currentFile = Yii::getPathOfAlias('webroot.downloads').DIRECTORY_SEPARATOR.$filename;
+
+            if (file_exists($currentFile)) {
+                    Yii::app()->request->sendFile($filename, file_get_contents(Yii::getPathOfAlias('webroot.downloads').DIRECTORY_SEPARATOR.$filename));
+            }
+            else
+            {
+            $this->redirect('404');
+            }
+        }
+    }
+
+
 	public function actionLogin()
 	{
         {

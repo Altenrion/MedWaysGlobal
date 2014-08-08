@@ -32,7 +32,7 @@
 
             <div class="row">
                 <div class="col-sm-4 step">
-                    <div class="icon"> <i class="icon-attach icn"></i> </div>
+                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=kontent_1_EVN.docx"> <i class="icon-attach icn"> </i> </a></div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Информационное письмо </h4>
@@ -42,7 +42,7 @@
                 </div>
                 <!-- /.col-sm-4 -->
                 <div class="col-sm-4 step">
-                    <div class="icon"> <i class="icon-attach icn"></i> </div>
+                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=kontent_1_EVN.docx"> <i class="icon-attach icn"></i></a> </div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Положение об Эстафете вузовской науки </h4>
@@ -52,7 +52,7 @@
                 </div>
                 <!-- /.col-sm-4 -->
                 <div class="col-sm-4 step">
-                    <div class="icon"> <i class="icon-attach icn"></i> </div>
+                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=u1.jpg"> <i class="icon-attach icn"></i></a> </div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Рекомендации по регистрации проекта</h4>
@@ -75,7 +75,7 @@
             <div class="col-sm-9 ">
                 <p class="lead tp3 bm0 text-center">Скачать все локальные документы одним архивом</p>
             </div>
-            <div class="col-sm-3"><a href="#" class="btn bm0"><i class="icon-download"></i> Скачать</a></div>
+            <div class="col-sm-3"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=local_docs.rar" class="btn bm0"><i class="icon-download"></i> Скачать</a></div>
         </div>
         <div class="row" id="PLATF"></div>
     </div>

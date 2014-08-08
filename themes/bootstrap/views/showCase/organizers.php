@@ -89,64 +89,64 @@
     <div class="lm10 rm10">
         <div id="owl-blog" class="owl-carousel carousel-th">
             <div class="item">
-                <figure class="icon-overlay icn-link"><a href="blog-post.html"><img src="<?=Yii::app()->baseUrl?>/images/art/b1.jpg" alt="" /></a></figure>
+                <figure class="icon-overlay icn-link"><a href="#"><img src="<?=Yii::app()->baseUrl?>/images/art/b1.jpg" alt="" /></a></figure>
                 <div class="bordered no-top-border">
                     <div class="info">
-                        <h3 class="post-title"><a href="blog-post.html">Tortor Ullamcorper Fringi</a></h3>
+                        <h3 class="post-title"><a href="#">Tortor Ullamcorper Fringi</a></h3>
                         <div class="meta"> <span class="date">21 May 2013</span> <span class="category"><a href="#">Macro</a>, <a href="#">Photography</a></span> <span class="like"><a href="#">27 <i class="icon-heart"></i></a></span> </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <figure class="icon-overlay icn-link"><a href="blog2-post.html"><img src="<?=Yii::app()->baseUrl?>/images/art/b2.jpg" alt="" /></a></figure>
+                <figure class="icon-overlay icn-link"><a href="#"><img src="<?=Yii::app()->baseUrl?>/images/art/b2.jpg" alt="" /></a></figure>
                 <div class="bordered no-top-border">
                     <div class="info">
-                        <h3 class="post-title"><a href="blog-post2.html">Nullam Lorem Aenean</a></h3>
+                        <h3 class="post-title"><a href="#">Nullam Lorem Aenean</a></h3>
                         <div class="meta"> <span class="date">14 Apr 2013</span> <span class="category"><a href="#">Flyer</a>, <a href="#">Poster</a></span> <span class="like"><a href="#">12 <i class="icon-heart"></i></a></span> </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <figure class="icon-overlay icn-link"><a href="blog3-post.html"><img src="<?=Yii::app()->baseUrl?>/images/art/b3.jpg" alt="" /></a></figure>
+                <figure class="icon-overlay icn-link"><a href="#"><img src="<?=Yii::app()->baseUrl?>/images/art/b3.jpg" alt="" /></a></figure>
                 <div class="bordered no-top-border">
                     <div class="info">
-                        <h3 class="post-title"><a href="blog-post3.html">Etiam Cursus Tellus Purus</a></h3>
+                        <h3 class="post-title"><a href="#">Etiam Cursus Tellus Purus</a></h3>
                         <div class="meta"> <span class="date">08 Apr 2013</span> <span class="category"><a href="#">Vintage</a>, <a href="#">Poster</a></span> <span class="like"><a href="#">18 <i class="icon-heart"></i></a></span> </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <figure class="icon-overlay icn-link"><a href="blog-post.html"><img src="<?=Yii::app()->baseUrl?>/images/art/b4.jpg" alt="" /></a></figure>
+                <figure class="icon-overlay icn-link"><a href="#"><img src="<?=Yii::app()->baseUrl?>/images/art/b4.jpg" alt="" /></a></figure>
                 <div class="bordered no-top-border">
                     <div class="info">
-                        <h3 class="post-title"><a href="blog-post.html">Vehicula Lorem Nullam</a></h3>
+                        <h3 class="post-title"><a href="#">Vehicula Lorem Nullam</a></h3>
                         <div class="meta"> <span class="date">03 March 2013</span> <span class="category"><a href="#">Typography</a>, <a href="#">Journal</a></span> <span class="like"><a href="#">11 <i class="icon-heart"></i></a></span> </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <figure class="icon-overlay icn-link"><a href="blog2-post.html"><img src="<?=Yii::app()->baseUrl?>/images/art/b5.jpg" alt="" /></a></figure>
+                <figure class="icon-overlay icn-link"><a href="#"><img src="<?=Yii::app()->baseUrl?>/images/art/b5.jpg" alt="" /></a></figure>
                 <div class="bordered no-top-border">
                     <div class="info">
-                        <h3 class="post-title"><a href="blog-post2.html">Euismod Malesuada Tristique</a></h3>
+                        <h3 class="post-title"><a href="#">Euismod Malesuada Tristique</a></h3>
                         <div class="meta"> <span class="date">21 Feb 2013</span> <span class="category"><a href="#">Logo</a>, <a href="#">Illustration</a></span> <span class="like"><a href="#">08 <i class="icon-heart"></i></a></span> </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <figure class="icon-overlay icn-link"><a href="blog3-post.html"><img src="<?=Yii::app()->baseUrl?>/images/art/b6.jpg" alt="" /></a></figure>
+                <figure class="icon-overlay icn-link"><a href="#"><img src="<?=Yii::app()->baseUrl?>/images/art/b6.jpg" alt="" /></a></figure>
                 <div class="bordered no-top-border">
                     <div class="info">
-                        <h3 class="post-title"><a href="blog-post3.html">Risus Egestas Adipiscing Fringilla</a></h3>
+                        <h3 class="post-title"><a href="#">Risus Egestas Adipiscing Fringilla</a></h3>
                         <div class="meta"> <span class="date">14 Feb 2013</span> <span class="category"><a href="#">Typography</a>, <a href="#">Flyer</a></span> <span class="like"><a href="#">22 <i class="icon-heart"></i></a></span> </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <figure class="icon-overlay icn-link"><a href="blog-post.html"><img src="<?=Yii::app()->baseUrl?>/images/art/b7.jpg" alt="" /></a></figure>
+                <figure class="icon-overlay icn-link"><a href="#"><img src="<?=Yii::app()->baseUrl?>/images/art/b7.jpg" alt="" /></a></figure>
                 <div class="bordered no-top-border">
                     <div class="info">
-                        <h3 class="post-title"><a href="blog-post.html">Sem Egestas Euismod</a></h3>
+                        <h3 class="post-title"><a href="#">Sem Egestas Euismod</a></h3>
                         <div class="meta"> <span class="date">12 Jan 2013</span> <span class="category"><a href="#">Poster</a>, <a href="#">Vintage</a></span> <span class="like"><a href="#">19 <i class="icon-heart"></i></a></span> </div>
                     </div>
                 </div>

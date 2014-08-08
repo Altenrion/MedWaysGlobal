@@ -48,7 +48,6 @@
                 <h3 class="section-title bm30">Заявка на партнерство</h3>
                     <div class="divide20"></div>
                     <div class="form-container">
-                        <div class="response alert alert-success"></div>
                         <form class="forms" action="<?=Yii::app()->createUrl('ShowCase/regPartners')?>" method="post">
                             <fieldset>
                                 <ol>
@@ -73,6 +72,8 @@
                                     </li>
                                     <li class="button-row">
                                         <input type="submit" value="Submit" name="submit" class="btn btn-submit bm0">
+                                        <span class="response alert alert-success"></span>
+
                                     </li>
                                 </ol>
                                 <input type="hidden" name="v_error" id="v-error" value="Required">

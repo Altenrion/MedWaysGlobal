@@ -8,7 +8,7 @@ Yii::setPathOfAlias('editable', dirname(__FILE__).'/../extensions/x-editable');
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
-	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
+	    'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
         'theme'=>'bootstrap',
 	    'name'=>'',
         'language' => 'ru',
@@ -18,7 +18,7 @@ return array(
 
 	    // autoloading model and component classes
 	    'import'=>array(
-                'application.models.LogsModels.*',
+                'application.models.medways.*',
 		        'application.models.*',
 		        'application.components.*',
                 'editable.*'
@@ -83,7 +83,7 @@ return array(
                 ),
 
                 'db'=>array(
-                        'connectionString' => 'mysql:host=localhost;dbname=cytologi',
+                        'connectionString' => 'mysql:host=localhost;dbname=medwaysglobal',
                         'emulatePrepare' => true,
                         'username' => 'root',
                         'password' => '',
@@ -130,5 +130,6 @@ return array(
 		        'adminEmail'=>'landerfeld@gmail.com',
                 'hash_site_key' => 'dlfkgknbcvjkbsdkjflsdkhfdf34534jkHL$@#K$^kb',
                 'postsPerPage' => 10,
+                'downloads'=>Yii::app()->basePath,
 	),
 );
