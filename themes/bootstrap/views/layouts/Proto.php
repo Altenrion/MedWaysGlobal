@@ -67,9 +67,20 @@
                     </ul>
 
                     <ul class="social pull-right">
-                        <li></li>
-                        <li><a href="<?=Yii::app()->createUrl('ShowCase/logout')?>"><i class="icon-user"></i></a></li>
-                        <li><a href="<?=Yii::app()->createUrl('ShowCase/login')?>"><i class="icon-login"></i></a></li>
+
+                        <? if($this->checkRole(array('Dev','Moderator'))):   ?>
+                        <li><a href="###"><i class="icon-shareable"></i></a></li>
+                        <? endif; ?>
+
+                        <? if($this->checkRole(array('Dev','Moderator'))): ?>
+                            <li><a href="<?=Yii::app()->createUrl('Autorized/index')?>"><i class="icon-user"></i></a></li>
+                        <? endif; ?>
+                        <? if($this->checkRole(array('Dev','Moderator'))):  ?>
+                            <li><a href="<?=Yii::app()->createUrl('ShowCase/logout')?>"><i class="icon-logout"></i></a></li>
+                        <? endif; ?>
+                        <? if(Yii::app()->user->isGuest): ?>
+                            <li><a href="<?=Yii::app()->createUrl('ShowCase/login')?>"><i class="icon-login"></i></a></li>
+                        <? endif; ?>
                     </ul>
                 </div>
             </div>

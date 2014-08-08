@@ -83,7 +83,7 @@ return array(
                 ),
 
                 'db'=>array(
-                        'connectionString' => 'mysql:host=localhost;dbname=medwaysglobal',
+                        'connectionString' => 'mysql:host=localhost;dbname=cytologi',
                         'emulatePrepare' => true,
                         'username' => 'root',
                         'password' => '',

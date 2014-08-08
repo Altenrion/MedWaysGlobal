@@ -116,8 +116,7 @@
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
         <div class="divide20"></div>
         <div class="form-container">
-          <div class="response alert alert-success"></div>
-          <form class="forms" action="http://themes.iki-bir.com/moose/contact/form-handler.php" method="post">
+          <form class="forms" action="<?=Yii::app()->createUrl('ShowCase/feedbackQuestions')?>" method="post">
             <fieldset>
               <ol>
                 <li class="form-row text-input-row name-field">
@@ -130,17 +129,17 @@
                   <input type="text" name="subject" class="text-input defaultText" title="Тема"/>
                 </li>
                 <li class="form-row text-area-row">
-                  <textarea name="message" class="text-area required"></textarea>
+                  <textarea name="question" class="text-area required"></textarea>
                 </li>
                 <li class="form-row hidden-row">
                   <input type="hidden" name="hidden" value="" />
                 </li>
                 <li class="nocomment">
-                  <label for="nocomment">Leave This Field Empty</label>
-                  <input id="nocomment" value="" name="nocomment" />
+                  <input id="nocomment" value="" name="question_form" />
                 </li>
                 <li class="button-row">
                   <input type="submit" value="Submit" name="submit" class="btn btn-submit bm0" />
+                  <span class="response alert alert-success"></span>
                 </li>
               </ol>
               <input type="hidden" name="v_error" id="v-error" value="Required" />

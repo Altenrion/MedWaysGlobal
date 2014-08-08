@@ -48,7 +48,7 @@
                 <h3 class="section-title bm30">Заявка на партнерство</h3>
                     <div class="divide20"></div>
                     <div class="form-container">
-                        <form class="forms" action="<?=Yii::app()->createUrl('ShowCase/regPartners')?>" method="post">
+                        <form class="forms" action="<?=Yii::app()->createUrl('ShowCase/regPartners')?>" name="partners_request" method="post">
                             <fieldset>
                                 <ol>
                                     <li class="form-row text-input-row name-field">
@@ -58,17 +58,13 @@
                                         <input type="text" name="email" class="text-input defaultText required email defaultTextActive" title="Email (Обязательно)">
                                     </li>
                                     <li class="form-row text-input-row subject-field">
-                                        <input type="text" name="subject" class="text-input defaultText defaultTextActive" title="Название организации">
+                                        <input type="text" name="org_name" class="text-input defaultText defaultTextActive" title="Название организации">
                                     </li>
                                     <li class="form-row text-area-row">
                                         <textarea name="message" class="text-area required"></textarea>
                                     </li>
-                                    <li class="form-row hidden-row">
-                                        <input type="hidden" name="hidden" value="">
-                                    </li>
                                     <li class="nocomment" style="display: none;">
-                                        <label for="nocomment">Leave This Field Empty</label>
-                                        <input id="nocomment" value="" name="nocomment">
+                                        <input id="nocomment" value="" name="partners_request">
                                     </li>
                                     <li class="button-row">
                                         <input type="submit" value="Submit" name="submit" class="btn btn-submit bm0">

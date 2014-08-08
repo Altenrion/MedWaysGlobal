@@ -43,12 +43,31 @@ class ShowCaseController extends Controller
 	}
     public function actionRegPartners()
     {
+        $model = new PartnersRequests();
+
+        if(isset($_POST['partners_request'])){
+            $data = Yii::app()->request;
 
 
+            $model->NAME = $data->getPost('name');
+            $model->EMAIL = $email =  $data->getPost('email');
+            $model->ORG_NAME = $data->getPost('org_name');
+            $model->TEXT = $data->getPost('message');
 
-        echo "Yiiiiihaaaa";
-        Yii::app()->end();
+            $email_exist = $model->find("email='$email'");
 
+            if($email_exist){
+                echo 'Заявка не принята. Указанный email уже использовался';
+                Yii::app()->end();
+            }
+            if($model->save()){
+                echo 'Заявка на партнерство зарегистрирована';
+                Yii::app()->end();
+            }
+
+            echo 'Сервер не доступен';
+            Yii::app()->end();
+        }
     }
 
 
@@ -63,6 +82,34 @@ class ShowCaseController extends Controller
 	{
 		$this->render('info');
 	}
+    public function actionFeedbackQuestions()
+        {
+            $model = new Questions();
+            $data = Yii::app()->request;
+
+            if(isset($_POST['question_form'])){
+
+
+                $model->NAME = $data->getPost('name');
+                $model->EMAIL = $email =  $data->getPost('email');
+                $model->SUBJECT = $data->getPost('subject');
+                $model->QUESTION = $data->getPost('question');
+
+                $email_exist = $model->find("email='$email'");
+
+                if($email_exist){
+                    echo 'Вопрос не отправлен. Указанный email уже использовался';
+                    Yii::app()->end();
+                }
+                if($model->save()){
+                    echo 'Вопрос зарегистрирован. Ответ будет отправлен на указанный email';
+                    Yii::app()->end();
+                }
+
+                echo 'Сервер не доступен';
+                Yii::app()->end();
+            }
+        }
 
 
     public function actionFeedback()
@@ -156,5 +203,23 @@ class ShowCaseController extends Controller
         Yii::app()->user->logout();
         $this->redirect(Yii::app()->homeUrl);
     }
+
+    public function checkRole(array $roles){
+        if(!empty($roles)){
+        $reply = false;
+            foreach ($roles as $r_k=>$r_v) {
+                $check = Yii::app()->user->checkAccess($r_v);
+                if($check == true){
+                    $reply = true;
+                }
+            }
+        return $reply;
+
+        }
+
+
+    }
+
+
 
 }
