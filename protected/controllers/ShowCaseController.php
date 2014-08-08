@@ -43,6 +43,9 @@ class ShowCaseController extends Controller
 	}
     public function actionRegPartners()
     {
+
+
+
         echo "Yiiiiihaaaa";
         Yii::app()->end();
 
