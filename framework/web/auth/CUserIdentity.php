@@ -30,6 +30,9 @@ class CUserIdentity extends CBaseUserIdentity
 	 * @var string username
 	 */
 	public $username;
+
+
+    public $EMAIL;
 	/**
 	 * @var string password
 	 */
@@ -40,10 +43,11 @@ class CUserIdentity extends CBaseUserIdentity
 	 * @param string $username username
 	 * @param string $password password
 	 */
-	public function __construct($username,$password)
+	public function __construct($EMAIL,$password)
 	{
-		$this->username=$username;
+		$this->EMAIL=$EMAIL;
 		$this->password=$password;
+
 	}
 
 	/**
@@ -65,7 +69,7 @@ class CUserIdentity extends CBaseUserIdentity
 	 */
 	public function getId()
 	{
-		return $this->username;
+		return $this->EMAIL;
 	}
 
 	/**
@@ -76,6 +80,6 @@ class CUserIdentity extends CBaseUserIdentity
 	 */
 	public function getName()
 	{
-		return $this->username;
+		return $this->EMAIL;
 	}
 }

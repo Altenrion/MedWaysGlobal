@@ -35,12 +35,12 @@ $('#mem').change(function(){
 
 
                 break;
-            case '1':
+            case 'Manager':
                 $('#submit_butt').slideUp();
                 ol.find('input').addClass('required');
                 $("#project").delay(500).slideDown( "slow" );
                 break;
-            case '2':
+            case 'Exp':
 
                 $('#project').slideUp('slow');
                 $('#submit_butt').delay( 500).slideDown();

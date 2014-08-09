@@ -3,6 +3,8 @@
 class AutorizedController extends Controller
 {
 
+    use MyTraits;
+
     public  $layout = '//layouts/Proto';
 
 	public function actionIndex()

@@ -110,81 +110,98 @@
                                     <input type="text" name="S_NAME" class="text-input defaultText required" title="Отчество (Обязательно)"/>
                                 </li>
                                 <li class="form-row text-input-row email-field">
-                                    <input type="email" name="email" class="text-input defaultText required email" title="Email (Обязательно)"/>
+                                    <input type="email" name="EMAIL" class="text-input defaultText required email" title="Email (Обязательно)"/>
+                                </li>
+                                <li class="form-row text-input-row name-field ">
+                                    <input type="text" name="PASSWD" class="text-input defaultText required " title="Пароль (Обязательно)"/>
                                 </li>
                                 <li class="form-row text-input-row name-field">
-                                    <input type="tel" name="phone" class="text-input defaultText required" title="Телефон (Обязательно)"/>
+                                    <input type="tel" name="PHONE" class="text-input defaultText required" title="Телефон (Обязательно)"/>
                                 </li>
                                 <li class="form-row text-input-row subject-field">
-                                    <input type="date" name="birth_date" class="text-input defaultText required" title="Дата рождения (Обязательно)"/>
+                                    <input type="date" name="BIRTH_DATE" class="text-input defaultText required" title="Дата рождения (Обязательно)"/>
                                 </li>
-                                <li><select name="sex" id="">
+                                <li><select name="SEX" id="">
                                         <option value="m">Пол</option>
                                         <option value="m">м</option>
                                         <option value="f">ж</option>
                                     </select>
                                 </li>
                                 <li>
-                                    <select name="degree" id="">
+                                    <select name="DEGREE" id="">
                                         <option value="">Ученая степень</option>
-                                        <option value="">Lorem.</option>
-                                        <option value="">Nisi?</option>
-                                        <option value="">Consequuntur?</option>
+                                        <option value="test1">Тестовый вариант1</option>
+                                        <option value="test2">Тестовый вариант2</option>
+                                        <option value="test3">Тестовый вариант3</option>
+                                        <option value="test4">Тестовый вариант4</option>
+                                        <option value="test5">Тестовый вариант5</option>
                                     </select>
 
                                 </li>
                                 <li>
-                                    <select name="degree" id="">
+                                    <select name="ACADEMIC_TITLE" id="">
                                         <option value="">Ученое звание</option>
-                                        <option value="">Lorem.</option>
-                                        <option value="">Nisi?</option>
-                                        <option value="">Consequuntur?</option>
+                                        <option value="test1">Тестовый вариант1</option>
+                                        <option value="test2">Тестовый вариант2</option>
+                                        <option value="test3">Тестовый вариант3</option>
+                                        <option value="test4">Тестовый вариант4</option>
+                                        <option value="test5">Тестовый вариант5</option>
                                     </select>
                                 </li>
                                 <li>
-                                    <select name="degree" id="">
+                                    <select name="ID_DISTRICT" id="">
                                         <option value="">Округ</option>
-                                        <option value="">Lorem.</option>
-                                        <option value="">Nisi?</option>
-                                        <option value="">Consequuntur?</option>
+                                        <option value="1">Центральный федеральный округ</option>
+                                        <option value="2">Южный федеральный округ</option>
+                                        <option value="3">Северо-Западный федеральный округ</option>
+                                        <option value="4">Дальневосточный федеральный округ</option>
+                                        <option value="5">Сибирский федеральный округ</option>
+                                        <option value="6">Уральский федеральный округ</option>
+                                        <option value="7">Приволжский федеральный округ</option>
+                                        <option value="8">Северо-Кавказский федеральный округ</option>
+                                        <option value="9">Крымский федеральный округ</option>
                                     </select>
                                 </li>
                                 <li>
-                                    <select name="degree" id="">
+                                    <select name="ID_UNIVER" id="">
                                         <option value="">Вуз</option>
-                                        <option value="">Lorem.</option>
-                                        <option value="">Nisi?</option>
-                                        <option value="">Consequuntur?</option>
+                                        <option value="1">Тестовый вариант1</option>
+                                        <option value="2">Тестовый вариант2</option>
+                                        <option value="3">Тестовый вариант3</option>
+                                        <option value="4">Тестовый вариант4</option>
+                                        <option value="5">Тестовый вариант5</option>
                                     </select>
                                 </li>
                                 <li class="form-row text-input-row name-field">
-                                    <input type="text" name="academic_title" class="text-input defaultText required" title="Должность (Обязательно)"/>
+                                    <input type="text" name="W_POSITION" class="text-input defaultText required" title="Должность (Обязательно)"/>
                                 </li>
                                 <li>
-                                    <select name="degree" id="">
+                                    <select name="ID_SPECIALITY" id="">
                                         <option value="">Специальность основная</option>
-                                        <option value="">Lorem.</option>
-                                        <option value="">Nisi?</option>
-                                        <option value="">Consequuntur?</option>
+                                        <option value="1">Тестовый вариант1</option>
+                                        <option value="2">Тестовый вариант2</option>
+                                        <option value="3">Тестовый вариант3</option>
+                                        <option value="4">Тестовый вариант4</option>
+                                        <option value="5">Тестовый вариант5</option>
                                     </select>
                                 </li>
                                 <li class="form-row text-input-row name-field">
-                                    <input type="text" name="hirsh" class="text-input defaultText required" title="Индекс Хирша (Обязательно)"/>
+                                    <input type="text" name="HIRSH" class="text-input defaultText required" title="Индекс Хирша (Обязательно)"/>
                                 </li>
 
                                 <li>
                                     <label class="checkbox inline">
-                                        <input type="checkbox"  value="option1"> Подтверждение конфиденциальности
+                                        <input type="checkbox"  name="PRIVACY" value="1"> Подтверждение конфиденциальности
                                     </label>
                                     </br>
                                 </li>
                                 </br>
 
                                 <li>
-                                    <select name="degree" id="mem">
+                                    <select name="ROLE" id="mem">
                                         <option value="0">Форма участия</option>
-                                        <option value="1">Руководитель проекта</option>
-                                        <option value="2">Эксперт</option>
+                                        <option value="Manager">Руководитель проекта</option>
+                                        <option value="Exp">Эксперт</option>
                                     </select>
                                 </li>
                             </ol>
@@ -198,10 +215,11 @@
                                 <li>
                                     <select   name="stage"  id="mem">
                                         <option value="0">Профильная научная платформа</option>
-                                        <option value="1">бла бла </option>
-                                        <option value="1">бла бла </option>
-                                        <option value="1">бла бла </option>
-                                        <option value="1">бла бла </option>
+                                        <option value="test1">Тестовый вариант1</option>
+                                        <option value="test2">Тестовый вариант2</option>
+                                        <option value="test3">Тестовый вариант3</option>
+                                        <option value="test4">Тестовый вариант4</option>
+                                        <option value="test5">Тестовый вариант5</option>
                                     </select>
                                 </li>
                                 <li class="form-row text-input-row subject-field">
@@ -231,37 +249,41 @@
                                 <li>
                                     <select   name="stage"  id="mem">
                                         <option value="0">Стадия развития проекта</option>
-                                        <option value="1">бла бла </option>
-                                        <option value="1">бла бла </option>
-                                        <option value="1">бла бла </option>
-                                        <option value="1">бла бла </option>
+                                        <option value="test1">Тестовый вариант1</option>
+                                        <option value="test2">Тестовый вариант2</option>
+                                        <option value="test3">Тестовый вариант3</option>
+                                        <option value="test4">Тестовый вариант4</option>
+                                        <option value="test5">Тестовый вариант5</option>
                                     </select>
                                 </li>
                                 <li>
                                     <select   name="stage"  id="mem">
                                         <option value="0">Объем финансирования на период реализации</option>
-                                        <option value="1">бла бла </option>
-                                        <option value="1">бла бла </option>
-                                        <option value="1">бла бла </option>
-                                        <option value="1">бла бла </option>
+                                        <option value="test1">Тестовый вариант1</option>
+                                        <option value="test2">Тестовый вариант2</option>
+                                        <option value="test3">Тестовый вариант3</option>
+                                        <option value="test4">Тестовый вариант4</option>
+                                        <option value="test5">Тестовый вариант5</option>
                                     </select>
                                 </li>
                                 <li>
                                     <select   name="stage"  id="mem">
                                         <option value="0">Объем финансирования на календарный год</option>
-                                        <option value="1">бла бла </option>
-                                        <option value="1">бла бла </option>
-                                        <option value="1">бла бла </option>
-                                        <option value="1">бла бла </option>
+                                        <option value="test1">Тестовый вариант1</option>
+                                        <option value="test2">Тестовый вариант2</option>
+                                        <option value="test3">Тестовый вариант3</option>
+                                        <option value="test4">Тестовый вариант4</option>
+                                        <option value="test5">Тестовый вариант5</option>
                                     </select>
                                 </li>
                                 <li>
                                     <select   name="stage"  id="mem">
                                         <option value="0">Доля предполагаемого финансирования</option>
-                                        <option value="1">бла бла </option>
-                                        <option value="1">бла бла </option>
-                                        <option value="1">бла бла </option>
-                                        <option value="1">бла бла </option>
+                                        <option value="test1">Тестовый вариант1</option>
+                                        <option value="test2">Тестовый вариант2</option>
+                                        <option value="test3">Тестовый вариант3</option>
+                                        <option value="test4">Тестовый вариант4</option>
+                                        <option value="test5">Тестовый вариант5</option>
                                     </select>
                                 </li>
                                 <li class="form-row text-area-row">

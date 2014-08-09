@@ -38,6 +38,10 @@ class Users extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
+
+
+
+
 	public function tableName()
 	{
 		return 'm_w_users';
@@ -51,7 +55,7 @@ class Users extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('F_NAME, L_NAME, S_NAME, EMAIL, PHONE, ID_DISTRICT, ID_UNIVER, BIRTH_DATE, SEX, DEGREE, ACADEMIC_TITLE, W_POSITION, HIRSH, PRIVACY, ID_STAGE, ID_SPECIALITY, ROLE, PASSWD', 'required'),
+			array('F_NAME, L_NAME, S_NAME, EMAIL, PHONE, ID_DISTRICT, ID_UNIVER, BIRTH_DATE, SEX, DEGREE, ACADEMIC_TITLE, W_POSITION, HIRSH, PRIVACY, ID_STAGE, ID_SPECIALITY, roles, password', 'required'),
 			array('ID_DISTRICT, ID_UNIVER, HIRSH, PRIVACY, ID_STAGE, ID_SPECIALITY, AKTIV_KEY', 'numerical', 'integerOnly'=>true),
 			array('F_NAME, L_NAME, S_NAME, EMAIL, ROLE, PASSWD', 'length', 'max'=>50),
 			array('PHONE', 'length', 'max'=>20),
@@ -59,7 +63,7 @@ class Users extends CActiveRecord
 			array('DEGREE, ACADEMIC_TITLE, W_POSITION', 'length', 'max'=>200),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID_USER, F_NAME, L_NAME, S_NAME, EMAIL, PHONE, ID_DISTRICT, ID_UNIVER, BIRTH_DATE, SEX, DEGREE, ACADEMIC_TITLE, W_POSITION, HIRSH, PRIVACY, ID_STAGE, ID_SPECIALITY, ROLE, AKTIV_KEY, PASSWD', 'safe', 'on'=>'search'),
+			array('id, F_NAME, L_NAME, S_NAME, EMAIL, PHONE, ID_DISTRICT, ID_UNIVER, BIRTH_DATE, SEX, DEGREE, ACADEMIC_TITLE, W_POSITION, HIRSH, PRIVACY, ID_STAGE, ID_SPECIALITY, roles, AKTIV_KEY, password', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -86,7 +90,7 @@ class Users extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'ID_USER' => 'Id User',
+			'id' => 'Id User',
 			'F_NAME' => 'F Name',
 			'L_NAME' => 'L Name',
 			'S_NAME' => 'S Name',
@@ -103,9 +107,9 @@ class Users extends CActiveRecord
 			'PRIVACY' => 'Privacy',
 			'ID_STAGE' => 'Id Stage',
 			'ID_SPECIALITY' => 'Id Speciality',
-			'ROLE' => 'Role',
+			'roles' => 'Role',
 			'AKTIV_KEY' => 'Aktiv Key',
-			'PASSWD' => 'Passwd',
+			'password' => 'Passwd',
 		);
 	}
 
@@ -127,26 +131,27 @@ class Users extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('ID_USER',$this->ID_USER);
+		$criteria->compare('id',$this->ID_USER);
 		$criteria->compare('F_NAME',$this->F_NAME,true);
 		$criteria->compare('L_NAME',$this->L_NAME,true);
 		$criteria->compare('S_NAME',$this->S_NAME,true);
 		$criteria->compare('EMAIL',$this->EMAIL,true);
-		$criteria->compare('PHONE',$this->PHONE,true);
-		$criteria->compare('ID_DISTRICT',$this->ID_DISTRICT);
+        $criteria->compare('password',$this->password,true);
+        $criteria->compare('PHONE',$this->PHONE,true);
+        $criteria->compare('BIRTH_DATE',$this->BIRTH_DATE,true);
+        $criteria->compare('SEX',$this->SEX,true);
+        $criteria->compare('DEGREE',$this->DEGREE,true);
+        $criteria->compare('ACADEMIC_TITLE',$this->ACADEMIC_TITLE,true);
+        $criteria->compare('ID_DISTRICT',$this->ID_DISTRICT);
 		$criteria->compare('ID_UNIVER',$this->ID_UNIVER);
-		$criteria->compare('BIRTH_DATE',$this->BIRTH_DATE,true);
-		$criteria->compare('SEX',$this->SEX,true);
-		$criteria->compare('DEGREE',$this->DEGREE,true);
-		$criteria->compare('ACADEMIC_TITLE',$this->ACADEMIC_TITLE,true);
 		$criteria->compare('W_POSITION',$this->W_POSITION,true);
-		$criteria->compare('HIRSH',$this->HIRSH);
-		$criteria->compare('PRIVACY',$this->PRIVACY);
-		$criteria->compare('ID_STAGE',$this->ID_STAGE);
-		$criteria->compare('ID_SPECIALITY',$this->ID_SPECIALITY);
-		$criteria->compare('ROLE',$this->ROLE,true);
+        $criteria->compare('ID_SPECIALITY',$this->ID_SPECIALITY);
+        $criteria->compare('HIRSH',$this->HIRSH);
+        $criteria->compare('PRIVACY',$this->PRIVACY);
+        $criteria->compare('roles',$this->roles,true);
+
+        $criteria->compare('ID_STAGE',$this->ID_STAGE);
 		$criteria->compare('AKTIV_KEY',$this->AKTIV_KEY);
-		$criteria->compare('PASSWD',$this->PASSWD,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -163,4 +168,33 @@ class Users extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public static function encrypting($value) {
+
+        $site_key = Yii::app()->getParams()->hash_site_key;
+        //hashing plain password with added salt
+        return hash_hmac('sha256', $value, $site_key);
+
+    }
+
+    public function validatePassword($password)
+    {
+        return $this->encrypting($password)===$this->password;
+    }
+
+
+
+    /**
+     * perform one-way encryption on the password before we store it in
+    the database
+     */
+    protected function afterValidate()
+    {
+        parent::afterValidate();
+        $this->password = $this->encrypting($this->password);
+    }
+
+
+
+
 }

@@ -21,7 +21,7 @@ return array(
                 'application.models.medways.*',
 		        'application.models.*',
 		        'application.components.*',
-                'editable.*'
+                'editable.*',
 	    ),
 
         'defaultController'=>'ShowCase',
@@ -99,28 +99,28 @@ return array(
                         'adminInfo'=>'landerfeld@gmail.com'
                 ),
 
-//                'log'=>array(
-//                        'class'=>'CLogRouter',
-//                        'routes'=>array(
-//                                array(
-//                                    'class' => 'CWebLogRoute',
-//                                    'categories' => 'application',
-//                                    'levels'=>'error, warning, trace, profile, info',
-//                                ),
+                'log'=>array(
+                        'class'=>'CLogRouter',
+                        'routes'=>array(
+                                array(
+                                    'class' => 'CWebLogRoute',
+                                    'categories' => 'application',
+                                    'levels'=>'error, warning, trace, profile, info',
+                                ),
+				                array(
+                                        'class'=>'CProfileLogRoute',
+                                         'levels'=>'profile',
+                                         'enabled'=>true,
+				                ),
+
+
+				            // uncomment the following to show log messages on web pages
 //				                array(
-//                                        'class'=>'CProfileLogRoute',
-//                                         'levels'=>'profile',
-//                                         'enabled'=>true,
-//				                ),
-//
-//
-//				            // uncomment the following to show log messages on web pages
-////				                array(
-////                                    'class'=>'CWebLogRoute',
-////                                ),
-//
-//			        ),
-//		        )
+//                                    'class'=>'CWebLogRoute',
+//                                ),
+
+			        ),
+		        )
 	),
 
 	// application-level parameters that can be accessed

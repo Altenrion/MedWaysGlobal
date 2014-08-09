@@ -37,11 +37,11 @@ class UserIdentity extends CUserIdentity
 
 public function authenticate()
 {
-        $users = Users::model()->findByAttributes(array('username' => $this->username));
+        $users = Users::model()->findByAttributes(array('EMAIL' => $this->EMAIL));
         //var_dump($users);
         if ($users === null)
         {
-                $this->username = 'user Null';
+                $this->EMAIL = 'user Null';
         
                 $this->errorCode = self::ERROR_USERNAME_INVALID;
         }
@@ -71,7 +71,7 @@ public function authenticate()
     
     public function getRole(){
         
-        $users = Users::model()->findByAttributes(array('username' => $this->username));
+        $users = Users::model()->findByAttributes(array('EMAIL' => $this->EMAIL));
         if($users->roles == 'Dev')
             return 1;
         if($users->roles == 'Moderator')

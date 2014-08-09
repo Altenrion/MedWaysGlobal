@@ -2,6 +2,11 @@
 
 class ShowCaseController extends Controller
 {
+
+
+    use MyTraits;
+
+
     public  $layout = '//layouts/Proto';
     public $defaultAction = 'index';
 
@@ -129,11 +134,75 @@ class ShowCaseController extends Controller
 
     public function actionRegistration()
 	{
-        if(isset($_POST['F_NAME'])){
+        $model = new Users();
+        $data = Yii::app()->request;
 
-            echo 'Заявка на регистрацию отправлена...';
+        if(isset($_POST['ROLE'])){
+
+        // тут рега эксперта и менеджера
+
+            $model->F_NAME = $data->getPost('F_NAME');
+            $model->L_NAME =  $data->getPost('L_NAME');
+            $model->S_NAME = $data->getPost('S_NAME');
+            $model->EMAIL = $email = $data->getPost('EMAIL');
+            $model->password = $data->getPost('PASSWD');
+            $model->PHONE = $data->getPost('PHONE');
+            $model->BIRTH_DATE = $data->getPost('BIRTH_DATE');
+            $model->SEX = $data->getPost('SEX');
+            $model->DEGREE = $data->getPost('DEGREE');
+            $model->ACADEMIC_TITLE = $data->getPost('ACADEMIC_TITLE');
+            $model->ID_DISTRICT = $data->getPost('ID_DISTRICT');
+            $model->ID_UNIVER = $data->getPost('ID_UNIVER');
+            $model->W_POSITION = $data->getPost('W_POSITION');
+            $model->ID_SPECIALITY = $data->getPost('ID_SPECIALITY');
+            $model->HIRSH = $data->getPost('HIRSH');
+            $model->PRIVACY = $data->getPost('PRIVACY');
+            $model->roles = $data->getPost('ROLE');
+
+            $email_exist = $model->find("EMAIL='$email'");
+
+            if($email_exist){
+                echo 'Регистрация не прошла. Указанный email уже использовался';
+                Yii::app()->end();
+            }
+
+            switch($model->roles){
+                case 'Exp':
+
+                    if($model->save()){
+                        echo 'Регистрация завершена. На указанный email отправлено письмо активации.';
+                        Yii::app()->end();
+                    }
+                    break;
+
+
+                case 'Manager':
+                    // тут рега проекта
+
+//                    $project = new ProjectRegistry();
+//
+//                    $project->F_NAME = $data->getPost('F_NAME');
+//                    $project->L_NAME =  $data->getPost('L_NAME');
+//                    $project->S_NAME = $data->getPost('S_NAME');
+//
+
+                    echo 'Вы менедджер';
+                    Yii::app()->end();
+                    break;
+
+            }
+
+
+            echo 'Сервер не доступен';
             Yii::app()->end();
         }
+
+
+
+
+
+
+
 
 			$this->render('registration');
 	}
@@ -204,21 +273,6 @@ class ShowCaseController extends Controller
         $this->redirect(Yii::app()->homeUrl);
     }
 
-    public function checkRole(array $roles){
-        if(!empty($roles)){
-        $reply = false;
-            foreach ($roles as $r_k=>$r_v) {
-                $check = Yii::app()->user->checkAccess($r_v);
-                if($check == true){
-                    $reply = true;
-                }
-            }
-        return $reply;
-
-        }
-
-
-    }
 
 
 

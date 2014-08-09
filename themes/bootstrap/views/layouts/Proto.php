@@ -15,6 +15,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=9">
+
         <link rel="shortcut icon" href="<?=Yii::app()->baseUrl.'/images/favicon.png' ?> ">
         <title>Moose</title>
 
@@ -152,13 +154,13 @@
 
     <div class="sub-footer">
         <div class="container">
-            <p class="pull-left">© 2013 Moose. All rights reserved. Theme by <a href="http://elemisfreebies.com/">elemis</a>.</p>
+            <p class="pull-left">© <?=date('Y')?> MedWays. Все права защищены.</p>
             <ul class="footer-menu pull-right">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="<?= Yii::app()->createUrl('ShowCase/index')?>">Главная</a></li>
+                <li><a href="<?= Yii::app()->createUrl('ShowCase/info')?>">Информация</a></li>
+                <li><a href="<?= Yii::app()->createUrl('ShowCase/organizers')?>">Организаторы</a></li>
+                <li><a href="<?= Yii::app()->createUrl('ShowCase/partners')?>">Партнеры</a></li>
+                <li><a href="<?= Yii::app()->createUrl('ShowCase/feedback')?>">Обратная связь</a></li>
             </ul>
         </div>
     </div>
