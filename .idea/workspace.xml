@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="158" mnemonic="1" />
-    <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="78" mnemonic="2" />
-    <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="240" mnemonic="3" />
+    <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="162" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="80" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="244" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" name="Default" comment="" />
@@ -18,7 +18,7 @@
     <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407771969549" ignored="false" />
     <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407567919162" ignored="false" />
     <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407770848990" ignored="false" />
-    <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407866332811" ignored="false" />
+    <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407878523127" ignored="false" />
     <file path="/login.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407829978865" ignored="false" />
     <file path="/dummy.xml" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407610557484" ignored="false" />
     <file path="/partners.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407519970748" ignored="false" />
@@ -58,7 +58,7 @@
     <file path="/Constants.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407484976558" ignored="false" />
     <file path="/Controller.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407488883437" ignored="false" />
     <file path="$PROJECT_DIR$/../Testing/browser_test.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407492404868" ignored="false" />
-    <file path="/browser_test.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407567997272" ignored="false" />
+    <file path="/browser_test.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407878296086" ignored="false" />
     <file path="/IE.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407568262263" ignored="false" />
     <file path="/CUserIdentity.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407569744508" ignored="false" />
     <file path="/Users.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407570366959" ignored="false" />
@@ -73,6 +73,7 @@
     <file path="/html-newsletter-template-predesigned61-97.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407858548464" ignored="false" />
     <file path="/mail_template.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407864241786" ignored="false" />
     <file path="/mail_template.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407864843958" ignored="false" />
+    <file path="/tests.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407878560404" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +96,7 @@
       <file leaf-file-name="ShowCaseController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="176" column="0" selection-start="4345" selection-end="4345" vertical-scroll-proportion="-1.9803921">
+            <state line="93" column="28" selection-start="2009" selection-end="2009" vertical-scroll-proportion="-8.333333">
               <folding />
             </state>
           </provider>
@@ -110,10 +111,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="52" selection-start="268" selection-end="268" vertical-scroll-proportion="0.19836639">
+            <state line="20" column="0" selection-start="534" selection-end="534" vertical-scroll-proportion="-13.076923">
               <folding />
             </state>
           </provider>
@@ -122,7 +123,7 @@
       <file leaf-file-name="production.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/config/production.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="18" selection-start="4533" selection-end="5434" vertical-scroll-proportion="-59.615383">
+            <state line="98" column="45" selection-start="3742" selection-end="3742" vertical-scroll-proportion="-12.538462">
               <folding />
             </state>
           </provider>
@@ -131,53 +132,28 @@
       <file leaf-file-name="devel.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="38" selection-start="5283" selection-end="5283" vertical-scroll-proportion="-17.76923">
+            <state line="99" column="20" selection-start="3740" selection-end="3740" vertical-scroll-proportion="-14.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="YiiMail.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/extensions/yii-mail/YiiMail.php">
+      <file leaf-file-name="browser_test.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/browser_test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="201" column="20" selection-start="5735" selection-end="5735" vertical-scroll-proportion="-10.961538">
+            <state line="21" column="36" selection-start="911" selection-end="911" vertical-scroll-proportion="-13.730769">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Users.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
+      <file leaf-file-name="tests.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/tests.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="55" selection-start="1628" selection-end="1628" vertical-scroll-proportion="-11.769231">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="65" selection-start="5702" selection-end="5710" vertical-scroll-proportion="-29.692308">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activate_submit.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/activate_submit.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserIdentity.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="9" selection-start="1219" selection-end="1219" vertical-scroll-proportion="-11.769231">
-              <folding />
+            <state line="9" column="23" selection-start="183" selection-end="183" vertical-scroll-proportion="0.17852975">
+              <folding>
+                <element signature="e#6#158#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,8 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
-        <option value="$PROJECT_DIR$/js/registration.js" />
         <option value="$PROJECT_DIR$/js/validator/myscripts.js" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
         <option value="$PROJECT_DIR$/css/style_adoptive.css" />
@@ -203,11 +177,13 @@
         <option value="$PROJECT_DIR$/downloads/mail_template.html" />
         <option value="$PROJECT_DIR$/downloads/mail_template.php" />
         <option value="$PROJECT_DIR$/protected/models/medways/Users.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
         <option value="$PROJECT_DIR$/protected/config/main.php" />
-        <option value="$PROJECT_DIR$/protected/config/devel.php" />
-        <option value="$PROJECT_DIR$/protected/config/production.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/protected/config/production.php" />
+        <option value="$PROJECT_DIR$/protected/config/devel.php" />
+        <option value="$PROJECT_DIR$/browser_test.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/tests.php" />
       </list>
     </option>
   </component>
@@ -593,55 +569,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="9" selection-start="1219" selection-end="1219" vertical-scroll-proportion="-11.769231">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="55" selection-start="1628" selection-end="1628" vertical-scroll-proportion="-11.769231">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="176" column="0" selection-start="4345" selection-end="4345" vertical-scroll-proportion="-1.9803921">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/yii-mail/YiiMailMessage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.8961494">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.13068844">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/yii-mail/vendors/swiftMailer/preferences.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/yii-mail/vendors/swiftMailer/dependency_maps/cache_deps.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/extensions/yii-mail/vendors/swiftMailer/dependency_maps/mime_deps.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.0431739">
@@ -659,13 +586,6 @@
     <entry file="file://$PROJECT_DIR$/protected/extensions/yii-mail/vendors/swiftMailer/swift_init.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="60" selection-start="498" selection-end="498" vertical-scroll-proportion="0.21820304">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/yii-mail/YiiMail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="201" column="20" selection-start="5735" selection-end="5735" vertical-scroll-proportion="-10.961538">
           <folding />
         </state>
       </provider>
@@ -699,24 +619,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="38" selection-start="5283" selection-end="5283" vertical-scroll-proportion="-17.76923">
+        <state line="20" column="0" selection-start="534" selection-end="534" vertical-scroll-proportion="-13.076923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/production.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="18" selection-start="4533" selection-end="5434" vertical-scroll-proportion="-59.615383">
+        <state line="98" column="45" selection-start="3742" selection-end="3742" vertical-scroll-proportion="-12.538462">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="52" selection-start="268" selection-end="268" vertical-scroll-proportion="0.19836639">
+        <state line="99" column="20" selection-start="3740" selection-end="3740" vertical-scroll-proportion="-14.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="65" selection-start="5702" selection-end="5710" vertical-scroll-proportion="-29.692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/activate_submit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="0" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.61494905">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="55" selection-start="1628" selection-end="1628" vertical-scroll-proportion="0.3570595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="9" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.3570595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/yii-mail/YiiMail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="201" column="20" selection-start="5735" selection-end="5735" vertical-scroll-proportion="0.3325554">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser_test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="36" selection-start="911" selection-end="911" vertical-scroll-proportion="-13.730769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="28" selection-start="2009" selection-end="2009" vertical-scroll-proportion="-8.333333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/tests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="23" selection-start="183" selection-end="183" vertical-scroll-proportion="0.17852975">
+          <folding>
+            <element signature="e#6#158#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -96,15 +96,15 @@ return array(
 
                 'mail' => array(
                     'class' => 'ext.yii-mail.YiiMail',
-//                    'transportType' => 'php',
-                    'transportType' => 'smtp',
-                    'transportOptions'=>array(
-                        'host'=>'smtp.timeweb.ru',
-                        //'encryption'=>'tls',
-                        'username'=>'administration@altenrion.ru',
-                        'password'=>'Altenrion',
-                        'port'=>25,
-                    ),
+                    'transportType' => 'php',
+//                    'transportType' => 'smtp',
+//                    'transportOptions'=>array(
+//                        'host'=>'smtp.timeweb.ru',
+//                        //'encryption'=>'tls',
+//                        'username'=>'administration@altenrion.ru',
+//                        'password'=>'Altenrion',
+//                        'port'=>25,
+//                    ),
                     'viewPath' => 'application.views.mail',
                     'logging' => true,
                     'dryRun' => false

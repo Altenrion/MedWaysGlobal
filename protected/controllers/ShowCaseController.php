@@ -46,6 +46,8 @@ class ShowCaseController extends Controller
 	{
 		$this->render('partners');
 	}
+
+
     public function actionRegPartners()
     {
         $model = new PartnersRequests();
@@ -79,8 +81,6 @@ class ShowCaseController extends Controller
 	public function actionStatistics()
 	{
 
-
-
 		$this->render('statistics');
 	}
 
@@ -89,6 +89,10 @@ class ShowCaseController extends Controller
 	{
 		$this->render('info');
 	}
+
+    public function actionTests(){
+        $this->render('tests');
+    }
     public function actionFeedbackQuestions()
         {
             $model = new Questions();
