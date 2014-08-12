@@ -129,6 +129,27 @@ class ShowCaseController extends Controller
 		$this->render('organizers');
 	}
 
+    public function actionMail(){
+
+        $message = new YiiMailMessage;
+        $message->setBody('Message content here with HTML', 'text/html');
+        $message->subject = 'My Subject';
+        $message->addTo('nekit_001@mail.ru');
+        $message->from = Yii::app()->params['adminEmail'];
+        Yii::app()->mail->send($message);
+
+        $this->render('mail');
+    }
+    public function mail(){
+
+        $message = new YiiMailMessage;
+        $message->setBody('Message content here with HTML', 'text/html');
+        $message->subject = 'My Subject';
+        $message->addTo('nekit_001@mail.ru');
+        $message->from = Yii::app()->params['adminEmail'];
+        Yii::app()->mail->send($message);
+
+    }
 
 
 

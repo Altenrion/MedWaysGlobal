@@ -22,6 +22,7 @@ return array(
 		        'application.models.*',
 		        'application.components.*',
                 'editable.*',
+                'ext.yii-mail.YiiMailMessage',
 	    ),
 
         'defaultController'=>'ShowCase',
@@ -92,7 +93,16 @@ return array(
                                     // показываем значения параметров
                                     'enableParamLogging' => true,
                 ),
-		
+
+                'mail' => array(
+                    'class' => 'ext.yii-mail.YiiMail',
+                    'transportType' => 'php',
+                    'viewPath' => 'application.views.mail',
+                    'logging' => true,
+                    'dryRun' => false
+                ),
+
+
                 'errorHandler'=>array(
                         // use 'site/error' action to display errors
                         'errorAction'=>'ShowCase/error',
