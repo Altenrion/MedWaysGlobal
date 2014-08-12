@@ -58,7 +58,7 @@
     <file path="/Constants.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407484976558" ignored="false" />
     <file path="/Controller.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407488883437" ignored="false" />
     <file path="$PROJECT_DIR$/../Testing/browser_test.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407492404868" ignored="false" />
-    <file path="/browser_test.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407878296086" ignored="false" />
+    <file path="/browser_test.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407879014289" ignored="false" />
     <file path="/IE.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407568262263" ignored="false" />
     <file path="/CUserIdentity.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407569744508" ignored="false" />
     <file path="/Users.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407570366959" ignored="false" />
@@ -138,19 +138,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="browser_test.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="browser_test.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/browser_test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="36" selection-start="911" selection-end="911" vertical-scroll-proportion="-13.730769">
+            <state line="18" column="0" selection-start="836" selection-end="836" vertical-scroll-proportion="0.3570595">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tests.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tests.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/tests.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="23" selection-start="183" selection-end="183" vertical-scroll-proportion="0.17852975">
+            <state line="9" column="23" selection-start="183" selection-end="183" vertical-scroll-proportion="-5.8846154">
               <folding>
                 <element signature="e#6#158#0" expanded="true" />
               </folding>
@@ -181,9 +181,9 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/protected/config/production.php" />
         <option value="$PROJECT_DIR$/protected/config/devel.php" />
-        <option value="$PROJECT_DIR$/browser_test.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/tests.php" />
+        <option value="$PROJECT_DIR$/browser_test.php" />
       </list>
     </option>
   </component>
@@ -675,13 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/browser_test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="36" selection-start="911" selection-end="911" vertical-scroll-proportion="-13.730769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="93" column="28" selection-start="2009" selection-end="2009" vertical-scroll-proportion="-8.333333">
@@ -691,10 +684,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/tests.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="183" selection-end="183" vertical-scroll-proportion="0.17852975">
+        <state line="9" column="23" selection-start="183" selection-end="183" vertical-scroll-proportion="-5.8846154">
           <folding>
             <element signature="e#6#158#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser_test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="836" selection-end="836" vertical-scroll-proportion="0.3570595">
+          <folding />
         </state>
       </provider>
     </entry>

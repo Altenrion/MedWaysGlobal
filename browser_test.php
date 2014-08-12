@@ -19,7 +19,7 @@ elseif ( strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7') ) $user_agent = 'no';
 
 switch ($user_agent){
     case 'no' :
-        header( 'Location:'.(__DIR__).'IE.html' );
+        header( 'Location:http://medways.altenrion.ru/IE.html' );
         break;
     case 'Yes':
         continue;
