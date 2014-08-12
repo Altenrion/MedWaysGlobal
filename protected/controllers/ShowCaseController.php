@@ -129,21 +129,24 @@ class ShowCaseController extends Controller
 		$this->render('organizers');
 	}
 
-    public function actionMail(){
 
+    public function mailAktivation($name,$role,$email,$password){
+
+        $tpl_file = Yii::getPathOfAlias('webroot.downloads').DIRECTORY_SEPARATOR.'mail_template.php';
+        $tpl = file_get_contents($tpl_file);
+        $mail = $tpl;
+        if($role == 'Exp'){$role = 'Эксперт';}
+        if($role == 'Manager'){$role = 'Руководитель проекта';}
+
+        $mail = strtr($mail, array(
+            "{name}"   => $name,
+            "{role}" => $role,
+            "{email}" => $email,
+            "{password}" => $password,
+
+        ));
         $message = new YiiMailMessage;
-        $message->setBody('Message content here with HTML', 'text/html');
-        $message->subject = 'My Subject';
-        $message->addTo('nekit_001@mail.ru');
-        $message->from = Yii::app()->params['adminEmail'];
-        Yii::app()->mail->send($message);
-
-        $this->render('mail');
-    }
-    public function mail(){
-
-        $message = new YiiMailMessage;
-        $message->setBody('Message content here with HTML', 'text/html');
+        $message->setBody($mail, 'text/html');
         $message->subject = 'My Subject';
         $message->addTo('nekit_001@mail.ru');
         $message->from = Yii::app()->params['adminEmail'];
@@ -161,6 +164,11 @@ class ShowCaseController extends Controller
         if(isset($_POST['RegForm'])){
 
             $model->attributes=$_POST['RegForm'];
+
+
+            $name = $_POST['RegForm']['L_NAME'];
+            $role = $_POST['RegForm']['roles'];
+            $password = $_POST['RegForm']['password'];
             $email = $_POST['RegForm']['EMAIL'];
             $email_exist = $model->find("EMAIL='$email'");
 
@@ -176,6 +184,7 @@ class ShowCaseController extends Controller
 
 //
             if($model->save()){
+                $this->mailAktivation($name,$role,$email,$password);
 
                 $success= 'succsess';
                 echo json_encode($success);
