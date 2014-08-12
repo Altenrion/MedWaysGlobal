@@ -84,10 +84,10 @@ return array(
                 ),
 
                 'db'=>array(
-                        'connectionString' => 'mysql:host=localhost;dbname=altenrion_medway',
+                        'connectionString' => 'mysql:host=localhost;dbname=medwaysglobal',
                         'emulatePrepare' => true,
-                        'username' => 'altenrion_medway',
-                        'password' => 'sBJ9RUYW',
+                        'username' => 'root',
+                        'password' => '',
                         'charset' => 'utf8',
                                     'enableProfiling'=>true,
                                     // показываем значения параметров
@@ -132,10 +132,10 @@ return array(
 				                ),
 
 
-				            // uncomment the following to show log messages on web pages
-//				                array(
-//                                    'class'=>'CWebLogRoute',
-//                                ),
+//				             uncomment the following to show log messages on web pages
+				                array(
+                                    'class'=>'CWebLogRoute'
+                                ),
 
 			        ),
 		        )
