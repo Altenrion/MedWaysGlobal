@@ -35,6 +35,11 @@
                               succsess.css("display", "block");
                               succsess.html('Вы зарегестрированы. На указанный email отправлено письмо активации.');
                         }
+                        if(data == 'fail'){
+                            succsess.css("display", "none");
+                            error.css("display", "block");
+                            error.html('Произошла техническая ошибка. Приносим извенения.');
+                        }
 
 
                     }

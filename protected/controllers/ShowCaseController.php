@@ -146,34 +146,24 @@ class ShowCaseController extends Controller
 
 
 
-            if(!$email_exist){
-                    $fail = 'email';
-                        echo json_encode($fail);
-                    Yii::app()->end();
+            if($email_exist){
+
+                $fail = 'email';
+                echo json_encode($fail);
+                Yii::app()->end();
             }
 
 //
-//            if($model->save()){
-//
-//                $success= 'Вы зарегестрированы. На указанный email отправлено письмо активации.';
-//                echo json_encode($success);
-//                Yii::app()->end();
-//
-//
-//            }
-
-        // тут рега эксперта и менеджера
-//
-//            $model->F_NAME = $data->getPost('F_NAME');
-//            $model->L_NAME =  $data->getPost('L_NAME');
-//            $model->S_NAME = $data->getPost('S_NAME');
-//            $model->EMAIL = $email = $data->getPost('EMAIL');
-//            $model->password = $data->getPost('password');
-//            $model->roles = $data->getPost('roles');
-//            $model->ID_STAGE = null;
+            if($model->save()){
 
                 $success= 'succsess';
                 echo json_encode($success);
+                Yii::app()->end();
+
+            }
+
+                $fail= 'fail';
+                echo json_encode($fail);
                 Yii::app()->end();
 
 
