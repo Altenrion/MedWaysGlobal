@@ -11,7 +11,7 @@
  * @property string $roles
  * @property integer $password
  */
-class Users extends CActiveRecord
+class Users_old extends CActiveRecord
 {
             const ROLE_DEVELOPER = 'Dev';
             const ROLE_ADMIN = 'Admin';

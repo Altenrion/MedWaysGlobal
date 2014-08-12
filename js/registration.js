@@ -5,22 +5,6 @@
  * Time: 8:11
  * To change this template use File | Settings | File Templates.
  */
-//
-//function regProject(){
-//    $("form.forms").append( $('<fieldset id="two"><h3 class="section-title">Регистрация проекта</h3><ol>'+
-//
-//        '<li><select name="sex" id=""><option value="m">Пол</option><option value="m">м</option><option value="f">ж</option></select></li>'+
-//
-//        '<li class="form-row text-input-row subject-field"><input type="text" name="qq" class="text-input defaultText required" title="Название проекта"/></li>'+
-//
-//
-//        '<li class="form-row text-area-row"><textarea name="message" class="text-area required"></textarea></li>'+
-//
-//        '<li class="button-row"><input type="submit" value="Submit" name="submit" class="btn btn-submit bm0"></li></ol>'+
-//
-//        '</fieldset>') );
-//
-//}
 
 
 $('#mem').change(function(){

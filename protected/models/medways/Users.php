@@ -4,7 +4,7 @@
  * This is the model class for table "m_w_users".
  *
  * The followings are the available columns in table 'm_w_users':
- * @property integer $ID_USER
+ * @property integer $id
  * @property string $F_NAME
  * @property string $L_NAME
  * @property string $S_NAME
@@ -21,9 +21,9 @@
  * @property integer $PRIVACY
  * @property integer $ID_STAGE
  * @property integer $ID_SPECIALITY
- * @property string $ROLE
+ * @property string $roles
  * @property integer $AKTIV_KEY
- * @property string $PASSWD
+ * @property string $password
  *
  * The followings are the available model relations:
  * @property ProjectRegistry[] $projectRegistries
@@ -55,10 +55,10 @@ class Users extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('F_NAME, L_NAME, S_NAME, EMAIL, PHONE, ID_DISTRICT, ID_UNIVER, BIRTH_DATE, SEX, DEGREE, ACADEMIC_TITLE, W_POSITION, HIRSH, PRIVACY, ID_STAGE, ID_SPECIALITY, roles, password', 'required'),
+			array('F_NAME, L_NAME, S_NAME, EMAIL, roles, password', 'required'),
 			array('ID_DISTRICT, ID_UNIVER, HIRSH, PRIVACY, ID_STAGE, ID_SPECIALITY, AKTIV_KEY', 'numerical', 'integerOnly'=>true),
-			array('F_NAME, L_NAME, S_NAME, EMAIL, ROLE, PASSWD', 'length', 'max'=>50),
-			array('PHONE', 'length', 'max'=>20),
+			array('F_NAME, L_NAME, S_NAME, EMAIL, roles, password', 'length', 'max'=>50),
+			array('PHONE', 'length', 'max'=>50),
 			array('SEX', 'length', 'max'=>2),
 			array('DEGREE, ACADEMIC_TITLE, W_POSITION', 'length', 'max'=>200),
 			// The following rule is used by search().
@@ -131,7 +131,7 @@ class Users extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->ID_USER);
+		$criteria->compare('id',$this->id);
 		$criteria->compare('F_NAME',$this->F_NAME,true);
 		$criteria->compare('L_NAME',$this->L_NAME,true);
 		$criteria->compare('S_NAME',$this->S_NAME,true);

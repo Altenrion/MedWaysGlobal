@@ -81,7 +81,7 @@
         <div class="span5 formm">
             
                 <?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
-                        'id'=>'login-form',
+                        'id'=>'horizontalForm',
                         'type'=>'horizontal',
                         'enableClientValidation'=>true,
                         'clientOptions'=>array(

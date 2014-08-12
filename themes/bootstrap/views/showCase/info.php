@@ -94,28 +94,28 @@
 
         <div class="row bm30">
             <div class="col-sm-3 no_r_pad">
-                <figure><img src="http://lorempixel.com/350/170/animals/1" alt=""></figure>
+                <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/cardio.jpg" alt=""></figure>
                     <div class="bordered">
                         <h3 class="post-title"><a href="blog3-post.html">Кардиология и ангиология </a></h3>
 <!--                        <p>Приложение по научной платформе «Кардиология и ангиология»</p>-->
                     </div>
             </div>
             <div class="col-sm-3 no_r_pad">
-                <figure><img src="http://lorempixel.com/350/170/animals/2" alt=""></figure>
+                <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/neurology.jpg" alt=""></figure>
                     <div class="bordered">
                         <h3 class="post-title"><a href="blog3-post.html">Неврология </a></h3>
 <!--                        <p>Приложение по научной платформе «Неврология»</p>-->
                     </div>
             </div>
             <div class="col-sm-3 no_r_pad">
-                <figure><img src="http://lorempixel.com/350/170/animals/3" alt=""></figure>
+                <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/endocrinology.jpg" alt=""></figure>
                     <div class="bordered">
                         <h3 class="post-title"><a href="blog3-post.html">Эндокринология </a></h3>
 <!--                        <p>Приложение по научной платформе «Эндокринология»</p>-->
                     </div>
             </div>
             <div class="col-sm-3 no_r_pad">
-                <figure><img src="http://lorempixel.com/350/170/animals/4" alt=""></figure>
+                <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/pediatry.jpg" alt=""></figure>
                     <div class="bordered">
                         <h3 class="post-title"><a href="blog3-post.html">Педиатрия </a></h3>
 <!--                        <p>Приложение по научной платформе «Педиатрия»</p>-->
@@ -126,28 +126,28 @@
 
         <div class="row bm10">
             <div class="col-sm-3">
-                <figure><img src="http://lorempixel.com/350/170/animals/5" alt=""></figure>
+                <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/psychiatry.jpg" alt=""></figure>
                     <div class="bordered">
                         <h3 class="post-title"><a href="blog3-post.html">Психиатрия и зависимости  </a></h3>
 <!--                        <p>Приложение по научной платформе «Психиатрия и зависимости»</p>-->
                     </div>
             </div>
             <div class="col-sm-3">
-                <figure><img src="http://lorempixel.com/350/170/animals/6" alt=""></figure>
+                <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/immunology.jpg" alt=""></figure>
                     <div class="bordered">
                         <h3 class="post-title"><a href="blog3-post.html">Иммунология </a></h3>
 <!--                        <p>Приложение по научной платформе «Иммунология»</p>-->
                     </div>
             </div>
             <div class="col-sm-3">
-                <figure><img src="http://lorempixel.com/350/170/animals/7" alt=""></figure>
+                <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/microbiology.jpg" alt=""></figure>
                     <div class="bordered">
                         <h3 class="post-title"><a href="blog3-post.html">Микробиология </a></h3>
 <!--                        <p>Приложение по научной платформе «Микробиология»</p>-->
                     </div>
             </div>
             <div class="col-sm-3">
-                <figure><img src="http://lorempixel.com/350/170/animals/8" alt=""></figure>
+                <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/Pharmacology.jpg" alt=""></figure>
                     <div class="bordered">
                         <h3 class="post-title"><a href="blog3-post.html">Фармакология </a></h3>
 <!--                        <p>Приложение по научной платформе «Фармакология»</p>-->
@@ -158,28 +158,28 @@
 
         <div class="row bm10">
             <div class="col-sm-3">
-                <figure><img src="http://lorempixel.com/350/170/animals/9" alt=""></figure>
+                <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/preventative.jpg" alt=""></figure>
                     <div class="bordered">
                         <h3 class="post-title"><a href="blog3-post.html">Профилактическая среда </a></h3>
 <!--                        <p>Приложение по научной платформе «Профилактическая среда»</p>-->
                     </div>
             </div>
             <div class="col-sm-3">
-                <figure><img src="http://lorempixel.com/350/170/animals/10" alt=""></figure>
+                <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/reproduction.jpg" alt=""></figure>
                     <div class="bordered">
                         <h3 class="post-title"><a href="blog3-post.html">Репродуктивное здоровье </a></h3>
 <!--                        <p>Приложение по научной платформе «Репродуктивное здоровье»</p>-->
                     </div>
             </div>
             <div class="col-sm-3">
-                <figure><img src="http://lorempixel.com/350/170/animals/1" alt=""></figure>
+                <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/regenerat.jpg" alt=""></figure>
                     <div class="bordered">
                         <h3 class="post-title"><a href="blog3-post.html">Регенеративная медицина </a></h3>
 <!--                        <p>Приложение по научной платформе «Регенеративная медицина»</p>-->
                     </div>
             </div>
             <div class="col-sm-3">
-                <figure><img src="http://lorempixel.com/350/170/animals/2" alt=""></figure>
+                <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/invaziv.jpg" alt=""></figure>
                     <div class="bordered">
                         <h3 class="post-title"><a href="blog3-post.html">Инвазивные технологии </a></h3>
 <!--                        <p>Приложение по научной платформе «Инвазивные технологии»</p>-->
@@ -190,14 +190,14 @@
 
         <div class="row bm10">
             <div class="col-sm-3">
-                <figure><img src="http://lorempixel.com/350/170/animals/3" alt=""></figure>
+                <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/innovatoin.jpg" alt=""></figure>
                     <div class="bordered">
                         <h3 class="post-title"><a href="blog3-post.html">Инновационные фундаментальные технологии в медицине </a></h3>
 <!--                        <p>Приложение по научной платформе «Инновационные фундаментальные технологии в медицине»</p>-->
                     </div>
             </div>
             <div class="col-sm-3">
-                <figure><img src="http://lorempixel.com/350/170/animals/8" alt=""></figure>
+                <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/oncology.jpg" alt=""></figure>
                     <div class="bordered">
                         <h3 class="post-title"><a href="blog3-post.html">Онкология </a></h3>
 <!--                        <p>Приложение по научной платформе «Онкология»</p>-->

@@ -22,55 +22,126 @@
             <div class="col-sm-6">
                 <h2>Зарегистрированные пользователи</h2>
 
-                <p>Уважаемый пользователь, для входа в систему вам необходимо ввести <a href="#">email</a> и <a href="#">пароль</a>, указанные при
-                    регистрации.
-                </p>
+
                 <div class="divide15"></div>
                 <div class="form-container">
-                    <form class="formmm" action="<?=Yii::app()->createUrl('ShowCase/login')?>" method="post" name="LoginForm" id="login_form">
+                    <form class="formmm form-horizontal" id="horizontalForm" action="<?=Yii::app()->createUrl('ShowCase/login')?>" method="post" name="LoginForm" id="login_form">
                         <fieldset>
-                            <ol>
-                                <li class="form-row text-input-row ">
-                                    <input type="text" name="LoginForm[username]" class="text-input defaultText required " title=" Email (Обязательно)"/>
-                                </li>
-                                <li class="form-row text-input-row password-field">
-                                    <input type="text" name="LoginForm[password]" class="text-input defaultText required password" title="Пароль (Обязательно)"/>
-                                </li>
+                            <div class="form-actions">
+                                <p>Уважаемый пользователь, для входа в систему вам необходимо ввести <a href="#">email</a> и <a href="#">пароль</a>, указанные при
+                                    регистрации.
+                                </p>
+                            </div>
+                            <div class="control-group ">
+                                <label class="control-label" for="LoginForm_email">Email</label>
+                                <div class="controls">
+                                    <input name="LoginForm[username]" id="LoginForm_email" type="text">
+                                    <span class="help-inline error"  style="display: none"></span>
+                                </div>
+                            </div>
+                            <div class="control-group ">
+                                <label class="control-label" for="LoginForm_password">Пароль</label>
+                                <div class="controls">
+                                    <input name="LoginForm[password]" id="LoginForm_password" type="password">
+                                    <span class="help-inline error"  style="display: none"></span>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button class="btn btn-primary" type="submit" name="yt0">Войти</button>
+                                <button class="btn" type="reset" name="yt1">Очистить</button>
+                            </div>
 
-                                <li class="button-row">
-                                    <input type="submit" value="Войти" name="submit" class="btn btn-submit bm0 pull-left" />
-<!--                                    <span class="response alert alert-success"></span>-->
-                                    <p class="forgot">Забыли свой <a href="#">email</a> или <a href="#">пароль</a>?</p>
-                                </li>
-                            </ol>
-                        </fieldset>
+
+
+                            </fieldset>
+
                     </form>
                 </div>
-                <!-- /.form-container -->
+
+
 
             </div>
             <div class="col-sm-6">
                 <h2>Новый пользователь? Зарегистрируйстесь сейчас!</h2>
 
-                <p>Для регистрации в системе, вам потребуется выбрать роль участника, и заполнить регистрационные
-                    данные. Регистрация в нашей системе позволит вам получить доступ к учачстию в нашем мероприятии и
-                    отслеживать более подробную статистику проектов.
-                </p>
-                <a href="<?=Yii::app()->createUrl('ShowCase/registration')?>" class="btn">Зарегистрироваться</a>
-                <div class="divide20"></div>
-                <!-- /.connect -->
+                <div class="divide15"></div>
+                <div class="form-container">
+                    <form class="formstt form-horizontal" id="RegForm" action="<?=Yii::app()->createUrl('ShowCase/registration')?>" method="post" name="RegForm" >
+                        <fieldset>
+                            <div class="form-actions">
+                                <p>Заполните краткую форму регистрации, и выберите роль участия. Регистрация в нашей системе позволит вам получить доступ к учачстию в нашем мероприятии и
+                                    отслеживать более подробную статистику проектов.
+                                </p>
+                            </div>
+                            <div class="control-group ">
+                                <label class="control-label" for="RegForm_F_NAME">Фамилия</label>
+                                <div class="controls">
+                                    <input name="RegForm[F_NAME]" id="RegForm_F_NAME" type="text" class="required">
+                                    <span class="help-inline error"  style="display: none"></span>
+                                </div>
+                            </div>
+                            <div class="control-group ">
+                                <label class="control-label" for="RegForm_L_NAME">Имя</label>
+                                <div class="controls">
+                                    <input name="RegForm[L_NAME]" id="RegForm_L_NAME" type="text"  class="required">
+                                    <span class="help-inline error"  style="display: none"></span>
+                                </div>
+                            </div>
+                            <div class="control-group ">
+                                <label class="control-label" for="RegForm_S_NAME">Отчество</label>
+                                <div class="controls">
+                                    <input name="RegForm[S_NAME]" id="RegForm_S_NAME" type="text"  class="required">
+                                    <span class="help-inline error"  style="display: none"></span>
+                                </div>
+                            </div>
+                            <div class="control-group ">
+                                <label class="control-label" for="RegForm_EMAIL">Email</label>
+                                <div class="controls">
+                                    <input name="RegForm[EMAIL]" id="RegForm_EMAIL" type="text"  class="required email">
+                                    <span class="help-inline error"  style="display: none"></span>
+                                </div>
+                            </div>
+                            <div class="control-group ">
+                                <label class="control-label" for="RegForm_passwordd">Пароль</label>
+                                <div class="controls">
+                                    <input name="RegForm[password]" id="RegForm_passwordd" type="text"  class="required">
+                                    <span class="help-inline error"  style="display: none"></span>
+                                </div>
+                            </div>
+                            <div class="control-group ">
+                                <label class="control-label" for="RegForm_roles">Форма участия</label>
+                                <div class="controls">
+                                    <select name="RegForm[roles]" id="RegForm_roles"  class="required">
+                                        <option value="">...</option>
+                                        <option value="Manager">Руководитель проекта</option>
+                                        <option value="Exp">Эксперт</option>
 
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button class="btn btn-primary" type="submit" name="subm" id="Subm">Зарегистрироваться</button>
+                                <button class="btn" type="reset" name="reset" id="res">Очистить</button>
+                                <div class="response alert alert-success"></div>
+                                <div class="response alert alert-danger"></div>
+                            </div>
+                        </fieldset>
+
+                    </form>
+                </div>
             </div>
+
         </div>
     </div>
     <!-- /.container -->
 </div>
 <!-- /.light-wrapper -->
-
 <?
-/*
 $base_url = Yii::app()->baseUrl;
 $cs = Yii::app()->getClientScript();
-$cs->registerScriptFile($base_url.'/js/validator/myscripts.js', CClientScript::POS_END);  */
+$cs->registerScriptFile($base_url.'/js/validator/jquery.validate.min.js', CClientScript::POS_END);
+$cs->registerScriptFile($base_url.'/js/activate_submit.js', CClientScript::POS_END);
+
 
 ?>

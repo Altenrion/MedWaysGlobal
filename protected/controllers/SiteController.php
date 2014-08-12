@@ -153,6 +153,7 @@ class SiteController extends Controller
 	 */
 	public function actionLogin()
 	{
+        var_dump($_POST);
 		$model=new LoginForm;
 
 		// if it is ajax validation request

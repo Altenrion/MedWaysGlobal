@@ -171,7 +171,7 @@ $this->breadcrumbs=array(
                     <div class="col-sm-9">
                         <p class="lead tp3 bm0 text-center">Мы верим в ваши силы! Примите участие в эстафете прямо сейчас. </p>
                     </div>
-                    <div class="col-sm-3"><a href="<?=Yii::app()->createUrl('ShowCase/registration')?>" class="btn bm0">Регистрация</a></div>
+                    <div class="col-sm-3"><a href="<?=Yii::app()->createUrl('ShowCase/login')?>" class="btn bm0">Регистрация</a></div>
                 </div>
             </div>
         </div>

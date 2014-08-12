@@ -22,7 +22,7 @@
  * @property integer $YEAR_BUDGET
  * @property integer $LONG_BUDGET
  * @property integer $CO_FINANCING
- * @property integer $PRIVACY
+ * @property integer $PRIVACY_P
  * @property integer $FIRST_LAVEL_APPROVAL
  * @property integer $SECOND_LAVEL_RATING
  * @property integer $THIRD_LAVEL_RATING
@@ -52,14 +52,14 @@ class ProjectRegistry extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('ID_REPRESENTATIVE, ID_STAGE, NAME, DESCR_PROJECT, ROADMAP_PROJECT, ID_PHASE, ID_BUDGET, EXECUTERS_NUM, UN_THIRTY_FIVE, STUDY, PUBLICATIONS, FORIN_PUBL, START_YEAR, END_YEAR, YEAR_BUDGET, LONG_BUDGET, CO_FINANCING, PRIVACY', 'required'),
-			array('ID_REPRESENTATIVE, ID_STAGE, ID_PHASE, ID_BUDGET, EXECUTERS_NUM, UN_THIRTY_FIVE, STUDY, PUBLICATIONS, FORIN_PUBL, START_YEAR, END_YEAR, YEAR_BUDGET, LONG_BUDGET, CO_FINANCING, PRIVACY, FIRST_LAVEL_APPROVAL, SECOND_LAVEL_RATING, THIRD_LAVEL_RATING', 'numerical', 'integerOnly'=>true),
+			array('ID_REPRESENTATIVE, ID_STAGE, NAME, DESCR_PROJECT, ROADMAP_PROJECT, ID_PHASE, ID_BUDGET, EXECUTERS_NUM, UN_THIRTY_FIVE, STUDY, PUBLICATIONS, FORIN_PUBL, START_YEAR, END_YEAR, YEAR_BUDGET, LONG_BUDGET, CO_FINANCING, PRIVACY_P', 'required'),
+			array('ID_REPRESENTATIVE, ID_STAGE, ID_PHASE, ID_BUDGET, EXECUTERS_NUM, UN_THIRTY_FIVE, STUDY, PUBLICATIONS, FORIN_PUBL, START_YEAR, END_YEAR, YEAR_BUDGET, LONG_BUDGET, CO_FINANCING, PRIVACY_P, FIRST_LAVEL_APPROVAL, SECOND_LAVEL_RATING, THIRD_LAVEL_RATING', 'numerical', 'integerOnly'=>true),
 			array('NAME', 'length', 'max'=>150),
 			array('DESCR_PROJECT', 'length', 'max'=>1500),
 			array('ROADMAP_PROJECT', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID_PROJECT, ID_REPRESENTATIVE, ID_STAGE, NAME, DESCR_PROJECT, ROADMAP_PROJECT, ID_PHASE, ID_BUDGET, EXECUTERS_NUM, UN_THIRTY_FIVE, STUDY, PUBLICATIONS, FORIN_PUBL, START_YEAR, END_YEAR, YEAR_BUDGET, LONG_BUDGET, CO_FINANCING, PRIVACY, FIRST_LAVEL_APPROVAL, SECOND_LAVEL_RATING, THIRD_LAVEL_RATING', 'safe', 'on'=>'search'),
+			array('ID_PROJECT, ID_REPRESENTATIVE, ID_STAGE, NAME, DESCR_PROJECT, ROADMAP_PROJECT, ID_PHASE, ID_BUDGET, EXECUTERS_NUM, UN_THIRTY_FIVE, STUDY, PUBLICATIONS, FORIN_PUBL, START_YEAR, END_YEAR, YEAR_BUDGET, LONG_BUDGET, CO_FINANCING, PRIVACY_P, FIRST_LAVEL_APPROVAL, SECOND_LAVEL_RATING, THIRD_LAVEL_RATING', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -86,24 +86,25 @@ class ProjectRegistry extends CActiveRecord
 	{
 		return array(
 			'ID_PROJECT' => 'Id Project',
-			'ID_REPRESENTATIVE' => 'Id Representative',
-			'ID_STAGE' => 'Id Stage',
-			'NAME' => 'Name',
-			'DESCR_PROJECT' => 'Descr Project',
-			'ROADMAP_PROJECT' => 'Roadmap Project',
-			'ID_PHASE' => 'Id Phase',
+			    'ID_REPRESENTATIVE' => 'Id Representative',
+			    'ID_STAGE' => 'Id Stage',
+			    'NAME' => 'Name',
+			    'DESCR_PROJECT' => 'Descr Project',
+			    'ROADMAP_PROJECT' => 'Roadmap Project',
+			    'ID_PHASE' => 'Id Phase',
 			'ID_BUDGET' => 'Id Budget',
-			'EXECUTERS_NUM' => 'Executers Num',
-			'UN_THIRTY_FIVE' => 'Un Thirty Five',
-			'STUDY' => 'Study',
-			'PUBLICATIONS' => 'Publications',
-			'FORIN_PUBL' => 'Forin Publ',
-			'START_YEAR' => 'Start Year',
-			'END_YEAR' => 'End Year',
-			'YEAR_BUDGET' => 'Year Budget',
-			'LONG_BUDGET' => 'Long Budget',
-			'CO_FINANCING' => 'Co Financing',
-			'PRIVACY' => 'Privacy',
+			    'EXECUTERS_NUM' => 'Executers Num',
+			    'UN_THIRTY_FIVE' => 'Un Thirty Five',
+			    'STUDY' => 'Study',
+			    'PUBLICATIONS' => 'Publications',
+			    'FORIN_PUBL' => 'Forin Publ',
+			    'START_YEAR' => 'Start Year',
+			    'END_YEAR' => 'End Year',
+			    'YEAR_BUDGET' => 'Year Budget',
+			    'LONG_BUDGET' => 'Long Budget',
+			    'CO_FINANCING' => 'Co Financing',
+			    'PRIVACY_P' => 'Privacy',
+
 			'FIRST_LAVEL_APPROVAL' => 'First Lavel Approval',
 			'SECOND_LAVEL_RATING' => 'Second Lavel Rating',
 			'THIRD_LAVEL_RATING' => 'Third Lavel Rating',
@@ -146,7 +147,7 @@ class ProjectRegistry extends CActiveRecord
 		$criteria->compare('YEAR_BUDGET',$this->YEAR_BUDGET);
 		$criteria->compare('LONG_BUDGET',$this->LONG_BUDGET);
 		$criteria->compare('CO_FINANCING',$this->CO_FINANCING);
-		$criteria->compare('PRIVACY',$this->PRIVACY);
+		$criteria->compare('PRIVACY_P',$this->PRIVACY_P);
 		$criteria->compare('FIRST_LAVEL_APPROVAL',$this->FIRST_LAVEL_APPROVAL);
 		$criteria->compare('SECOND_LAVEL_RATING',$this->SECOND_LAVEL_RATING);
 		$criteria->compare('THIRD_LAVEL_RATING',$this->THIRD_LAVEL_RATING);

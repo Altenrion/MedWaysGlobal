@@ -11,6 +11,7 @@ class LoginForm extends CFormModel
 	public $password;
 	public $rememberMe;
 	public $role;
+    public $email;
 
         private $_route;
 	private $_identity;
@@ -27,6 +28,7 @@ class LoginForm extends CFormModel
 			array('username, password', 'required'),
 			// rememberMe needs to be a boolean
 			array('rememberMe', 'boolean'),
+			array('email', 'email'),
 			// password needs to be authenticated
 			array('password', 'authenticate'),
 		);

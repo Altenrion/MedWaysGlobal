@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/feedback.php" line="118" mnemonic="3" />
     <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="134" mnemonic="1" />
     <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="78" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="219" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" name="Default" comment="" />
@@ -15,22 +15,22 @@
     <file path="/main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407487814422" ignored="false" />
     <file path="/Proto.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407571734197" ignored="false" />
     <file path="/Autentification_main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406121974522" ignored="false" />
-    <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407570922114" ignored="false" />
+    <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407771969549" ignored="false" />
     <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407567919162" ignored="false" />
-    <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407439353383" ignored="false" />
-    <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407613717657" ignored="false" />
-    <file path="/login.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407439242680" ignored="false" />
+    <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407770848990" ignored="false" />
+    <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407829496131" ignored="false" />
+    <file path="/login.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407829978865" ignored="false" />
     <file path="/dummy.xml" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407610557484" ignored="false" />
     <file path="/partners.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407519970748" ignored="false" />
     <file path="/statistics.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407391938955" ignored="false" />
     <file path="/team.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406804278906" ignored="false" />
-    <file path="/myscripts.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406278236034" ignored="false" />
+    <file path="/myscripts.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407769137762" ignored="false" />
     <file path="/tabs.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406405672507" ignored="false" />
     <file path="/elements.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406411883475" ignored="false" />
     <file path="$PROJECT_DIR$/../validation/jquery-steps-master/demo/index.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406449650964" ignored="false" />
     <file path="$PROJECT_DIR$/../validation/jquery-steps-master/build/jquery.steps.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406449177579" ignored="false" />
     <file path="/jquery.steps.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406449172658" ignored="false" />
-    <file path="/info.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407489546899" ignored="false" />
+    <file path="/info.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407679312295" ignored="false" />
     <file path="/info_docs.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406888431655" ignored="false" />
     <file path="$PROJECT_DIR$/../test_scroll/index.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406877007052" ignored="false" />
     <file path="$PROJECT_DIR$/../test_scroll/js/mootools-1.2.3-core.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406873920366" ignored="false" />
@@ -44,7 +44,7 @@
     <file path="/organizers.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407489905838" ignored="false" />
     <file path="/feedback.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407522259428" ignored="false" />
     <file path="/error.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407259053013" ignored="false" />
-    <file path="/registration.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407610482853" ignored="false" />
+    <file path="/registration.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407616601356" ignored="false" />
     <file path="/registration.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407316915486" ignored="false" />
     <file path="/Dummy.txt" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407319012709" ignored="false" />
     <file path="/statistics.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407392668540" ignored="false" />
@@ -64,6 +64,12 @@
     <file path="/Users.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407570366959" ignored="false" />
     <file path="/MyTraits.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407570938843" ignored="false" />
     <file path="/AutorizedController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407570947507" ignored="false" />
+    <file path="/Users_old.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407620556572" ignored="false" />
+    <file path="/regist.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407659269252" ignored="false" />
+    <file path="/Subscriber.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407657729038" ignored="false" />
+    <file path="/subscribe.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407658217467" ignored="false" />
+    <file path="/LoginForm.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407749357012" ignored="false" />
+    <file path="/activate_submit.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407830021735" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,114 +88,54 @@
     <favorites_list name="MedWaysGlobal" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6659552">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="Proto.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="162" column="73" selection-start="10271" selection-end="10271" vertical-scroll-proportion="-13.5">
-                  <folding>
-                    <element signature="n#style#0;n#a#0;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#1;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#2;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#3;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#4;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#5;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#6;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#7;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#8;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#9;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#10;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#11;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#12;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#13;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#14;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#15;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#16;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#17;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#18;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#19;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#20;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#21;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#22;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#23;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#24;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#25;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#26;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#27;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#28;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#29;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#30;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#31;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#32;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#33;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ShowCaseController.php" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="187" column="0" selection-start="4862" selection-end="5106" vertical-scroll-proportion="0.4294049">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/protected/config/main.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="24" column="0" selection-start="829" selection-end="829" vertical-scroll-proportion="-13.730769">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="registration.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/registration.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="125" column="56" selection-start="4805" selection-end="4805" vertical-scroll-proportion="26.313726">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AutorizedController.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="-5.230769">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="Users.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="151" column="0" selection-start="5318" selection-end="5318" vertical-scroll-proportion="-18.307692">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ProjectRegistry.php" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="88" column="30" selection-start="3420" selection-end="3437" vertical-scroll-proportion="0.2014218">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="ShowCaseController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="136" column="29" selection-start="3133" selection-end="3133" vertical-scroll-proportion="0.13418902">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Users.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="45" selection-start="1699" selection-end="1699" vertical-scroll-proportion="-11.153846">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="126" column="32" selection-start="7023" selection-end="7023" vertical-scroll-proportion="-8.0">
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#fieldset#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#2;n#fieldset#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#fieldset#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#2;n#fieldset#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#fieldset#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#4;n#fieldset#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#5;n#fieldset#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activate_submit.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/activate_submit.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="19" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#155#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -199,22 +145,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/statistics.js" />
-        <option value="$PROJECT_DIR$/images/anti_ie/mootools.js" />
-        <option value="$PROJECT_DIR$/images/anti_ie/qtabs.js" />
-        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/protected/models/medways/Subscriber.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/subscribe.php" />
         <option value="$PROJECT_DIR$/browser_test.php" />
-        <option value="$PROJECT_DIR$/IE.html" />
-        <option value="$PROJECT_DIR$/framework/web/auth/CUserIdentity.php" />
-        <option value="$PROJECT_DIR$/protected/components/UserIdentity.php" />
-        <option value="$PROJECT_DIR$/protected/config/main.php" />
-        <option value="$PROJECT_DIR$/protected/components/MyTraits.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/regist.php" />
+        <option value="$PROJECT_DIR$/protected/models/LoginForm.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
         <option value="$PROJECT_DIR$/js/registration.js" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/registration.php" />
+        <option value="$PROJECT_DIR$/js/validator/myscripts.js" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
+        <option value="$PROJECT_DIR$/css/style_adoptive.css" />
         <option value="$PROJECT_DIR$/protected/models/medways/Users.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
+        <option value="$PROJECT_DIR$/js/activate_submit.js" />
       </list>
     </option>
   </component>
@@ -403,6 +349,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adaptive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -415,21 +411,21 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SPPR" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\MedWaysGlobal\images" />
       <recent name="C:\wamp\www\MedWaysGlobal" />
       <recent name="C:\wamp\www\MedWaysGlobal\downloads" />
       <recent name="C:\wamp\www\MedWaysGlobal\type\fontello" />
       <recent name="C:\wamp\www\MedWaysGlobal\themes\bootstrap\views\site" />
-      <recent name="C:\wamp\www\MedWaysGlobal\js\skel" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\MedWaysGlobal\themes\bootstrap\views" />
       <recent name="C:\wamp\www\MedWaysGlobal\themes\bootstrap\views\showCase" />
+      <recent name="C:\wamp\www\MedWaysGlobal\themes\bootstrap\views" />
       <recent name="C:\wamp\www\MedWaysGlobal\css\style\images" />
       <recent name="C:\wamp\www\MedWaysGlobal\js\validator" />
       <recent name="C:\wamp\www\MedWaysGlobal\css" />
@@ -504,10 +500,10 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.73157316" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15731573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18676628" sideWeight="0.26842684" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17075774" sideWeight="0.84268427" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -582,151 +578,126 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="44" selection-end="44" vertical-scroll-proportion="0.119019836">
+        <state line="21" column="0" selection-start="635" selection-end="635" vertical-scroll-proportion="-0.34241706">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework/db/ar/CActiveRecord.php">
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/site/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="15" selection-start="2006" selection-end="2006" vertical-scroll-proportion="0.34360188">
+        <state line="85" column="55" selection-start="2088" selection-end="2119" vertical-scroll-proportion="0.3722287">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework/web/auth/CUserIdentity.php">
+    <entry file="file://$PROJECT_DIR$/js/statistics.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="20" selection-start="1036" selection-end="1036" vertical-scroll-proportion="-4.647059">
+        <state line="45" column="33" selection-start="1006" selection-end="1024" vertical-scroll-proportion="0.69309175">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/MyTraits.php">
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/partners.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="14" selection-start="175" selection-end="175" vertical-scroll-proportion="0.17852975">
-          <folding>
-            <element signature="e#6#159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="25" selection-start="1921" selection-end="1926" vertical-scroll-proportion="0.48511165">
+        <state line="49" column="48" selection-start="2087" selection-end="2284" vertical-scroll-proportion="0.16690442">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Users_old.php">
+    <entry file="file://$PROJECT_DIR$/js/validator/myscripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="0" selection-start="3532" selection-end="3532" vertical-scroll-proportion="0.40490082">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/WebUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="3" selection-start="66" selection-end="66" vertical-scroll-proportion="0.13885647">
+        <state line="4" column="18" selection-start="41" selection-end="51" vertical-scroll-proportion="-0.09596662">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/registration.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="27" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.41379312">
+        <state line="9" column="28" selection-start="185" selection-end="185" vertical-scroll-proportion="0.21279556">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
+    <entry file="file://$PROJECT_DIR$/assets/bbdb026/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="73" selection-start="10271" selection-end="10271" vertical-scroll-proportion="-13.5">
+        <state line="49" column="38" selection-start="1600" selection-end="1626" vertical-scroll-proportion="0.30311614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style_adoptive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4500" column="0" selection-start="94843" selection-end="94843" vertical-scroll-proportion="0.9298487">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="202" column="74" selection-start="13897" selection-end="13897" vertical-scroll-proportion="0.85900474">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/adaptive/jquery.slickforms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="9" selection-start="318" selection-end="318" vertical-scroll-proportion="-2.5232162">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/adaptive/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="442" column="21" selection-start="15528" selection-end="15670" vertical-scroll-proportion="1.7846154">
           <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#2;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#3;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#4;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#5;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#6;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#7;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#8;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#9;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#10;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#11;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#12;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#13;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#14;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#15;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#16;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#17;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#18;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#19;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#20;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#21;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#22;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#23;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#24;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#25;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#26;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#27;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#28;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#29;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#30;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#31;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#32;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#33;n#div#0;n#section#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+    <entry file="file://$PROJECT_DIR$/moose/style/js/jquery.slickforms.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="829" selection-end="829" vertical-scroll-proportion="-13.730769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/statistics.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.24170616">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="-5.230769">
+        <state line="101" column="32" selection-start="3016" selection-end="3016" vertical-scroll-proportion="0.3272933">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="0" selection-start="5318" selection-end="5318" vertical-scroll-proportion="-18.307692">
+        <state line="60" column="45" selection-start="1699" selection-end="1699" vertical-scroll-proportion="-11.153846">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="30" selection-start="3420" selection-end="3437" vertical-scroll-proportion="0.2014218">
-          <folding />
+        <state line="126" column="32" selection-start="7023" selection-end="7023" vertical-scroll-proportion="-8.0">
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#fieldset#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#2;n#fieldset#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#fieldset#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#2;n#fieldset#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#fieldset#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#4;n#fieldset#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#5;n#fieldset#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/registration.php">
+    <entry file="file://$PROJECT_DIR$/js/activate_submit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="56" selection-start="4805" selection-end="4805" vertical-scroll-proportion="26.313726">
-          <folding />
+        <state line="41" column="19" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#155#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="187" column="0" selection-start="4862" selection-end="5106" vertical-scroll-proportion="0.4294049">
+        <state line="136" column="29" selection-start="3133" selection-end="3133" vertical-scroll-proportion="0.13418902">
           <folding />
         </state>
       </provider>
