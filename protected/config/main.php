@@ -84,7 +84,7 @@ return array(
                 ),
 
                 'db'=>array(
-                        'connectionString' => 'mysql:host=localhost;dbname=medwaysglobal',
+                        'connectionString' => 'mysql:host=localhost;dbname=altenrion_medway',
                         'emulatePrepare' => true,
                         'username' => 'root',
                         'password' => '',

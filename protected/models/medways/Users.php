@@ -57,7 +57,7 @@ class Users extends CActiveRecord
 		return array(
 			array('F_NAME, L_NAME, S_NAME, EMAIL, roles, password', 'required'),
 			array('ID_DISTRICT, ID_UNIVER, HIRSH, PRIVACY, ID_STAGE, ID_SPECIALITY, AKTIV_KEY', 'numerical', 'integerOnly'=>true),
-			array('F_NAME, L_NAME, S_NAME, EMAIL, roles, password', 'length', 'max'=>50),
+			array('F_NAME, L_NAME, S_NAME, EMAIL, roles', 'length', 'max'=>50),
 			array('PHONE', 'length', 'max'=>50),
 			array('SEX', 'length', 'max'=>2),
 			array('DEGREE, ACADEMIC_TITLE, W_POSITION', 'length', 'max'=>200),

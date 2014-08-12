@@ -166,14 +166,16 @@ class ShowCaseController extends Controller
             $model->attributes=$_POST['RegForm'];
 
 
+
+
             $name = $_POST['RegForm']['L_NAME'];
             $role = $_POST['RegForm']['roles'];
             $password = $_POST['RegForm']['password'];
             $email = $_POST['RegForm']['EMAIL'];
+
+            $model->password = $model->encrypting($password);
+
             $email_exist = $model->find("EMAIL='$email'");
-
-
-
 
             if($email_exist){
 
@@ -182,7 +184,6 @@ class ShowCaseController extends Controller
                 Yii::app()->end();
             }
 
-//
             if($model->save()){
                 $this->mailAktivation($name,$role,$email,$password);
 
@@ -198,7 +199,7 @@ class ShowCaseController extends Controller
 
 
         }
-        echo 'Сервен';
+        echo 'Извините';
         Yii::app()->end();
 
 	}
