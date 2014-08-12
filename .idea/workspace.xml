@@ -17,7 +17,7 @@
     <file path="/Autentification_main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406121974522" ignored="false" />
     <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407771969549" ignored="false" />
     <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407567919162" ignored="false" />
-    <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407770848990" ignored="false" />
+    <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407883042874" ignored="false" />
     <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407878523127" ignored="false" />
     <file path="/login.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407829978865" ignored="false" />
     <file path="/dummy.xml" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407610557484" ignored="false" />
@@ -93,10 +93,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ShowCaseController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ShowCaseController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="152" column="46" selection-start="3750" selection-end="3750" vertical-scroll-proportion="0.5516827">
+            <state line="146" column="30" selection-start="3579" selection-end="3579" vertical-scroll-proportion="-7.0">
               <folding />
             </state>
           </provider>
@@ -124,6 +124,24 @@
         <entry file="file://$PROJECT_DIR$/protected/config/production.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="98" column="45" selection-start="3742" selection-end="3742" vertical-scroll-proportion="-12.538462">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="58" selection-start="2734" selection-end="2734" vertical-scroll-proportion="-11.076923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style_adoptive.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/style_adoptive.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4501" column="0" selection-start="94845" selection-end="94845" vertical-scroll-proportion="0.8827586">
               <folding />
             </state>
           </provider>
@@ -170,8 +188,6 @@
       <list>
         <option value="$PROJECT_DIR$/js/validator/myscripts.js" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
-        <option value="$PROJECT_DIR$/css/style_adoptive.css" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php" />
         <option value="$PROJECT_DIR$/js/activate_submit.js" />
         <option value="$USER_HOME$/Downloads/html-newsletter-template-predesigned61-97/html-newsletter-template-predesigned61-97.html" />
         <option value="$PROJECT_DIR$/downloads/mail_template.html" />
@@ -184,6 +200,8 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/tests.php" />
         <option value="$PROJECT_DIR$/browser_test.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php" />
+        <option value="$PROJECT_DIR$/css/style_adoptive.css" />
       </list>
     </option>
   </component>
@@ -391,6 +409,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -486,7 +518,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -569,13 +601,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/extensions/yii-mail/vendors/swiftMailer/dependency_maps/mime_deps.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.0431739">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/extensions/yii-mail/vendors/swiftMailer/dependency_maps/transport_deps.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="31" selection-start="82" selection-end="82" vertical-scroll-proportion="0.07934656">
@@ -640,13 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="65" selection-start="5702" selection-end="5710" vertical-scroll-proportion="-29.692308">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/activate_submit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="0" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.61494905">
@@ -693,7 +711,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="46" selection-start="3750" selection-end="3750" vertical-scroll-proportion="0.5516827">
+        <state line="146" column="30" selection-start="3579" selection-end="3579" vertical-scroll-proportion="-7.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="58" selection-start="2734" selection-end="2734" vertical-scroll-proportion="-11.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style_adoptive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4501" column="0" selection-start="94845" selection-end="94845" vertical-scroll-proportion="0.8827586">
           <folding />
         </state>
       </provider>
