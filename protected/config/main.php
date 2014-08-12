@@ -87,7 +87,7 @@ return array(
                         'connectionString' => 'mysql:host=localhost;dbname=altenrion_medway',
                         'emulatePrepare' => true,
                         'username' => 'root',
-                        'password' => '',
+                        'password' => 'Altenrion1',
                         'charset' => 'utf8',
                                     'enableProfiling'=>true,
                                     // показываем значения параметров

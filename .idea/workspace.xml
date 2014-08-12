@@ -128,7 +128,7 @@
       <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/config/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="39" selection-start="3324" selection-end="3324" vertical-scroll-proportion="0.38506418">
+            <state line="89" column="49" selection-start="3334" selection-end="3334" vertical-scroll-proportion="0.38506418">
               <folding />
             </state>
           </provider>
@@ -705,7 +705,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="39" selection-start="3324" selection-end="3324" vertical-scroll-proportion="0.38506418">
+        <state line="89" column="49" selection-start="3334" selection-end="3334" vertical-scroll-proportion="0.38506418">
           <folding />
         </state>
       </provider>
