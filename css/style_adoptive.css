@@ -4499,3 +4499,72 @@ label.error{
     margin-bottom: 15px;
     color: #FF4F45;
 }
+
+@media(max-width: 1200px){
+
+    .form-horizontal .form-actions {
+        padding-left: 20px;
+    }
+    .form-horizontal .control-label {
+        width:100px;
+
+    }
+    .form-horizontal .controls {
+        margin-left: 110px;
+    }
+}
+
+
+
+@media (min-width: 768px)  {
+
+     .container {
+         width:90%;!important;
+         margin-left: 5px;!important;
+         margin-right: 5px;!important;
+
+     }
+
+
+
+}
+
+@media screen and (min-width: 979px) and (max-width: 1199px) {
+    body{
+        min-width: 990px;
+    }
+    .container {
+
+        width:90%;!important;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        width:90%;!important;
+        padding-right: 1px;
+        padding-left: 1px;
+    }
+    .form-horizontal .form-actions {
+    padding-left: 30px;
+    }
+    .form-horizontal .control-label {
+    width:100px;
+
+    }
+    .form-horizontal .controls {
+    margin-left: 110px;
+    }
+
+}
+
+
+
+@media screen and (min-width:980px){
+    .container {
+        max-width: 95%;
+    }
+}

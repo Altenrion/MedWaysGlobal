@@ -67,7 +67,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" align="center" data-editable="button">
                                         <tr>
                                             <td valign="top" width="245" bgcolor="#D73441" align="center" style="padding-top:13px;padding-bottom:14px;padding-left:0;padding-right:0;margin:0;">
-                                                <a href="" style="font-family:Verdana,Arial,Helvetica;color:#ffffff;font-size:18px;text-decoration:none">
+                                                <a href="<?=Yii::app()->createUrl('ShowCase/login')?>" style="font-family:Verdana,Arial,Helvetica;color:#ffffff;font-size:18px;text-decoration:none">
                                                     Активировать сейчас &raquo;
                                                 </a>
                                             </td>
