@@ -163,6 +163,7 @@ class ShowCaseController extends Controller
     public function actionRegistration()
 	{
         $model = new Users();
+
         $data = Yii::app()->request;
 
         if(isset($_POST['RegForm'])){
@@ -277,6 +278,25 @@ class ShowCaseController extends Controller
         $this->redirect(Yii::app()->homeUrl);
     }
 
+
+    public function actionAktivation(){
+
+        if(isset($_GET['email'])){
+
+            $email = $_GET['email'];
+            $user = new Users();
+            $user_exist = $user->find("EMAIL='".$email."'");
+
+            if($user_exist){
+                $user_exist->AKTIV_KEY = 100;
+
+                if($user_exist->save()){
+                    $this->redirect(Yii::app()->createUrl('ShowCase/login'));
+                }
+            }
+        }
+        $this->redirect(Yii::app()->createUrl('ShowCase/login'));
+    }
 
 
 

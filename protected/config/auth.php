@@ -18,15 +18,41 @@ return array(
         'data' => null
     ),
     
-    'Moderator' => array(
+    'Manager' => array(
         'type' => CAuthItem::TYPE_ROLE,
-        'description' => 'Moderator',
-        'children' => array(
-            'ProjectManager',
-        ),
+        'description' => 'Manager',
+
         'bizRule' => null,
         'data' => null
-    ),    
+    ),
+    'Exp' => array(
+        'type' => CAuthItem::TYPE_ROLE,
+        'description' => 'Manager',
+
+        'bizRule' => null,
+        'data' => null
+    ),
+    'Exp1' => array(
+        'type' => CAuthItem::TYPE_ROLE,
+        'description' => 'Manager',
+
+        'bizRule' => null,
+        'data' => null
+    ),
+    'Exp2' => array(
+        'type' => CAuthItem::TYPE_ROLE,
+        'description' => 'Manager',
+
+        'bizRule' => null,
+        'data' => null
+    ),
+    'Exp3' => array(
+        'type' => CAuthItem::TYPE_ROLE,
+        'description' => 'Manager',
+
+        'bizRule' => null,
+        'data' => null
+    ),
     
     'Dev' => array(
         'type' => CAuthItem::TYPE_ROLE,

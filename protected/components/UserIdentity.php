@@ -38,6 +38,7 @@ class UserIdentity extends CUserIdentity
 public function authenticate()
 {
         $users = Users::model()->findByAttributes(array('EMAIL' => $this->EMAIL));
+
         //var_dump($users);
         if ($users === null)
         {
@@ -51,7 +52,16 @@ public function authenticate()
         {
                 Yii::log('encrypted db password: '.$users->password,'trace');
                 Yii::log('input password: '.$this->password.' / encrypted: '.$users->encrypting($this->password),'trace');
+                Yii::log('aktiv_key: '.$users->AKTIV_KEY ,'trace');
+
                 $this->errorCode=self::ERROR_PASSWORD_INVALID;
+        }
+        else if ($users->AKTIV_KEY !=='100'){
+
+            Yii::log('aktiv_key: '.$users->AKTIV_KEY ,'trace');
+
+            $this->errorCode=self::ERROR_PASSWORD_INVALID;
+
         }
         else
         {
@@ -74,9 +84,9 @@ public function authenticate()
         $users = Users::model()->findByAttributes(array('EMAIL' => $this->EMAIL));
         if($users->roles == 'Dev')
             return 1;
-        if($users->roles == 'Moderator')
+        if($users->roles == 'Manager')
             return 2;
-        if($users->roles == 'User')
+        if($users->roles == 'Exp' || $users->roles == 'Exp1'|| $users->roles == 'Exp2'|| $users->roles == 'Exp3' )
             return 3;
         
     }

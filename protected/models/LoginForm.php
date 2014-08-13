@@ -93,9 +93,9 @@ class LoginForm extends CFormModel
                 case 1: 
                     $route = 'Autorized/index'; break;
                 case 2:
-                    $route = 'UseDSS/patientDB'; break;
+                    $route = 'Autorized/index'; break;
                 case 3:
-                    $route = 'UseDSS/patientDB'; break;
+                    $route = 'Autorized/index'; break;
 
             }
             
@@ -104,7 +104,8 @@ class LoginForm extends CFormModel
                 
                 
             }
-            
+
+
            
             
       
