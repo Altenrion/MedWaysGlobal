@@ -18,7 +18,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=9">
 
         <link rel="shortcut icon" href="<?=Yii::app()->baseUrl.'/images/favicon.png' ?> ">
-        <title>Moose</title>
+        <title>Эстафета</title>
 
         <!-- Bootstrap core CSS -->
         <link href="<?=Yii::app()->baseUrl?>/css/bootstrap.css" rel="stylesheet">

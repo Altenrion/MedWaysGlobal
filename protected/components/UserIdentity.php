@@ -67,6 +67,7 @@ public function authenticate()
         {
                 $this->errorCode = self::ERROR_NONE;
                 $this->_id = $users->id;
+                $this->setState('name', $users->F_NAME.' '.$users->L_NAME);
         }
 
         return $this->errorCode == self::ERROR_NONE;
