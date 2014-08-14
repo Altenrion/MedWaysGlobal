@@ -25,6 +25,9 @@
     <!-- Custom CSS -->
     <link href="<?=Yii::app()->baseUrl?>/adminka/css/sb-admin.css" rel="stylesheet">
 
+    <!--Mine Customs -->
+    <link href="<?=Yii::app()->baseUrl?>/adminka/css/stylings.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="<?=Yii::app()->baseUrl?>/adminka/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
