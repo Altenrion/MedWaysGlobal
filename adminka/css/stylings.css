@@ -8,6 +8,8 @@
     .image-block{
         text-align:center;
     }
+
+
     .vcard-details{
         font-size: 11px;
     }
@@ -25,8 +27,9 @@
 
 .profile-image {
     /*width: 100%;*/
-    border: 5px solid white;
-    outline: 1px solid #dbdee0;
+    /*border: 5px solid white;*/
+    /*outline: 1px solid #dbdee0;*/
+    border-radius: 7px;
 }
 
 
@@ -45,5 +48,12 @@
 .vcard-details .fa{
     color:#A8A8A8;
 }
-
+.vcard-detail {
+    width: 100%;
+    padding: 2px 0 2px 0px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    text-overflow: ellipsis;
+}
 

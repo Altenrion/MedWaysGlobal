@@ -13,9 +13,7 @@
 
 
 			<ol class="breadcrumb">
-			  	<li><a href="page-profile.html#">Genius</a></li>
-				<li><a href="page-profile.html#">Example Pages</a></li>
-			  	<li class="active">Profile</li>
+			   	<li class="active"> Профиль</li>
 			</ol>
 
 
@@ -29,22 +27,22 @@
 						</div>
 						<div class="col-xs-12 col-sm-12">
                             <div class="row">
-                                <div class="col-xs-4 col-sm-4 col-sm-offset-1 col-md-12">
+                                <div class="col-xs-4 col-sm-4 col-sm-offset-1 col-md-12 name">
                                     <h3> Nikita </br>
                                         <small>Altenrion</small>
                                     </h3></div>
                                 <div class="col-xs-8 col-sm-6 col-md-12">
                                     <ul class="vcard-details">
 
-                                        <li>
-                                            <div><i class="fa fa-fw fa-child"></i> Эксперт</div>
+                                        <li class="vcard-detail">
+                                            <div><i class="fa fa-fw fa-child"></i> Разработчик</div>
 
-                                        </li>
-                                        <li>
+                                        </li >
+                                        <li class="vcard-detail">
                                             <div><i class="fa fa-fw fa-envelope"></i>  lukasz@bomaster.com</div>
 
                                         </li>
-                                        <li>
+                                        <li class="vcard-detail">
                                             <div><i class="fa fa-fw fa-clock-o"></i> <span class="join-label"> В проекте с </span><span class="join-date">Сент 26, 2013</span> </div>
 
                                         </li>
@@ -62,7 +60,10 @@
 				</div><!--/col-->
 
 				<div class="col-sm-12 col-md-7 col-lg-7 data bord">
-
+                    <div class="alert alert-warning alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                    </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">Личные данные</h3>
