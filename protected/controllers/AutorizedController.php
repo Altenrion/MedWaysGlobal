@@ -13,6 +13,11 @@ class AutorizedController extends Controller
 		$this->render('index');
 	}
 
+    public function actionProfile()
+	{
+		$this->render('profile');
+	}
+
 
 
 

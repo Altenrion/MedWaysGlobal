@@ -72,10 +72,6 @@
 
                     <ul class="social pull-right">
 
-                        <? if($this->checkRole(array('Dev','Manager','Exp','Exp1','Exp2','Exp3'))):   ?>
-                        <li><a href="###"><i class="icon-shareable"></i></a></li>
-                        <? endif; ?>
-
                         <? if($this->checkRole(array('Dev','Manager','Exp','Exp1','Exp2','Exp3'))): ?>
                             <li><a href="<?=Yii::app()->createUrl('Autorized/index')?>"><i class="icon-user"></i></a></li>
                         <? endif; ?>

@@ -142,7 +142,7 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> &nbsp;<?=Yii::app()->user->name?> <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li>
-                        <a href="#"><i class="fa fa-fw fa-user"></i> Профиль</a>
+                        <a href="<?=Yii::app()->createUrl('Autorized/profile')?>"><i class="fa fa-fw fa-user"></i> Профиль</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
