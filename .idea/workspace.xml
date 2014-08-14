@@ -13,11 +13,11 @@
     <file path="/style.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1405683779993" ignored="false" />
     <file path="/fontello.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407341663248" ignored="false" />
     <file path="/main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407487814422" ignored="false" />
-    <file path="/Proto.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407928225159" ignored="false" />
+    <file path="/Proto.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408045832181" ignored="false" />
     <file path="/Autentification_main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406121974522" ignored="false" />
     <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407771969549" ignored="false" />
     <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408043293277" ignored="false" />
-    <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408032541612" ignored="false" />
+    <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408046105834" ignored="false" />
     <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407920772767" ignored="false" />
     <file path="/login.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407829978865" ignored="false" />
     <file path="/dummy.xml" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408030225313" ignored="false" />
@@ -76,7 +76,7 @@
     <file path="/tests.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407878560404" ignored="false" />
     <file path="/UserIdentity.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407929092355" ignored="false" />
     <file path="$PROJECT_DIR$/adminka/font-awesome-4.1.0/less/font-awesome.less" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407927659262" ignored="false" />
-    <file path="/Adminka.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408043926819" ignored="false" />
+    <file path="/Adminka.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408045303584" ignored="false" />
     <file path="/stylings.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408035212734" ignored="false" />
     <file path="/profile.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408034952985" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -121,11 +121,20 @@
       <file leaf-file-name="Adminka.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="25" selection-start="2855" selection-end="2855" vertical-scroll-proportion="-5.4313726">
+            <state line="39" column="0" selection-start="1483" selection-end="1483" vertical-scroll-proportion="6.901961">
               <folding>
                 <element signature="e#6#159#0" expanded="true" />
-                <marker date="1408044635072" expanded="true" signature="3374:3403" placeholder="..." />
+                <marker date="1408045304310" expanded="true" signature="3374:3403" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style_adoptive.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style_adoptive.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4565" column="25" selection-start="95831" selection-end="95831" vertical-scroll-proportion="-22.24">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -153,7 +162,7 @@
       <file leaf-file-name="Proto.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="84" selection-start="4595" selection-end="4595" vertical-scroll-proportion="0.74725276">
+            <state line="71" column="88" selection-start="4418" selection-end="4418" vertical-scroll-proportion="0.53968257">
               <folding>
                 <element signature="e#6#159#0" expanded="true" />
               </folding>
@@ -179,14 +188,14 @@
         <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
         <option value="$PROJECT_DIR$/protected/components/UserIdentity.php" />
         <option value="$USER_HOME$/Downloads/sb-admin/sb-admin/bootstrap-elements.html" />
-        <option value="$PROJECT_DIR$/css/style_adoptive.css" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/index.php" />
         <option value="$PROJECT_DIR$/adminka/css/stylings.css" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php" />
         <option value="$PROJECT_DIR$/protected/models/LoginForm.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
+        <option value="$PROJECT_DIR$/css/style_adoptive.css" />
       </list>
     </option>
   </component>
@@ -371,11 +380,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -588,22 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style_adoptive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4516" column="0" selection-start="95081" selection-end="95081" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="26" selection-start="2364" selection-end="2364" vertical-scroll-proportion="-6.509804">
-          <folding>
-            <element signature="e#6#159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/PhpAuthManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -653,6 +642,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="1483" selection-end="1483" vertical-scroll-proportion="6.901961">
+          <folding>
+            <element signature="e#6#159#0" expanded="true" />
+            <marker date="1408045304310" expanded="true" signature="3374:3403" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="26" selection-start="2364" selection-end="2364" vertical-scroll-proportion="-6.509804">
+          <folding>
+            <element signature="e#6#159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/adminka/css/stylings.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="19" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
@@ -660,19 +668,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php">
+    <entry file="file://$PROJECT_DIR$/css/style_adoptive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="25" selection-start="2855" selection-end="2855" vertical-scroll-proportion="-5.4313726">
-          <folding>
-            <element signature="e#6#159#0" expanded="true" />
-            <marker date="1408044635072" expanded="true" signature="3374:3403" placeholder="..." />
-          </folding>
+        <state line="4565" column="25" selection-start="95831" selection-end="95831" vertical-scroll-proportion="-22.24">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="84" selection-start="4595" selection-end="4595" vertical-scroll-proportion="0.74725276">
+        <state line="71" column="88" selection-start="4418" selection-end="4418" vertical-scroll-proportion="0.53968257">
           <folding>
             <element signature="e#6#159#0" expanded="true" />
           </folding>

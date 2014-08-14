@@ -4371,6 +4371,9 @@ input:focus:-ms-input-placeholder {
 	.yamm .yamm-content.row {
 	    margin-bottom: -30px
 	}
+
+
+
 	.about-author .author-image {
 	    display: none
 	}
@@ -4560,11 +4563,19 @@ label.error{
     }
 
 }
-
+@media (max-width:979px){
+    li.mobi{
+        display:block;
+    }
+}
 
 
 @media screen and (min-width:980px){
     .container {
         max-width: 95%;
+    }
+
+    li.mobi{
+        display:none;
     }
 }

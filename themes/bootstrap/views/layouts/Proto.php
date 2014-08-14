@@ -68,6 +68,8 @@
                         <li><a href="<?=Yii::app()->createUrl('ShowCase/partners')?>">Партнеры</a></li>
 
                         <li><a href="<?=Yii::app()->createUrl('ShowCase/feedback')?>">Обратная связь </a></li>
+
+                        <li class="mobi"><a href="<?=Yii::app()->createUrl('ShowCase/login')?>">Вход </a></li>
                     </ul>
 
                     <ul class="social pull-right">
