@@ -26,12 +26,12 @@
 							<img class="profile-image" height="200" width="200" src="<?=Yii::app()->baseUrl?>/images/badge/5549987.jpg">
 						</div>
 						<div class="col-xs-12 col-sm-12">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4 col-sm-offset-1 col-md-12 name">
+                            <div class="row image-block">
+                                <div class="col-xs-5 col-sm-4 col-sm-offset-1 col-md-12 name">
                                     <h3> Nikita </br>
                                         <small>Altenrion</small>
                                     </h3></div>
-                                <div class="col-xs-8 col-sm-6 col-md-12">
+                                <div class="col-xs-7 col-sm-6 col-md-12">
                                     <ul class="vcard-details">
 
                                         <li class="vcard-detail">

@@ -36,17 +36,6 @@
 
 
 
-@media (max-width: 568px) {
-    .image-block{
-        text-align:center;
-    }
-
-
-    .vcard-details{
-        font-size: 11px;
-    }
-
-}
 
 @media (min-width: 1480px) {
     
@@ -89,3 +78,18 @@
     text-overflow: ellipsis;
 }
 
+
+@media (max-width: 568px) {
+    .image-block{
+        text-align:center;
+    }
+
+
+    .vcard-details{
+        font-size: 11px;
+        border-top: 0px solid #eee;
+        border-bottom: 0px solid #eee;
+        text-align: left;
+    }
+
+}
