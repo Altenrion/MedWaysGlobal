@@ -24,7 +24,7 @@
 				<div class="col-sm-12 col-md-4 col-lg-3 bord">
 
 					<div class="row">
-						<div class="col-xs-12 col-sm-12">
+						<div class="col-xs-12 col-sm-12 image-block">
 							<img class="profile-image" height="200" width="200" src="<?=Yii::app()->baseUrl?>/images/badge/5549987.jpg">
 						</div>
 						<div class="col-xs-12 col-sm-12">

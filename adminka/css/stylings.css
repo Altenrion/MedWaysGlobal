@@ -4,6 +4,17 @@
 .bord{
     border:0px solid black;
 }
+@media (max-width: 568px) {
+    .image-block{
+        text-align:center;
+    }
+    .vcard-details{
+        font-size: 11px;
+    }
+
+}
+
+
 
 .profile-image {
     /*width: 100%;*/
