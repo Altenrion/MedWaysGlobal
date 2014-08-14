@@ -76,8 +76,8 @@
     <file path="/tests.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407878560404" ignored="false" />
     <file path="/UserIdentity.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407929092355" ignored="false" />
     <file path="$PROJECT_DIR$/adminka/font-awesome-4.1.0/less/font-awesome.less" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407927659262" ignored="false" />
-    <file path="/Adminka.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408045303584" ignored="false" />
-    <file path="/stylings.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408035212734" ignored="false" />
+    <file path="/Adminka.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408048790086" ignored="false" />
+    <file path="/stylings.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408048945517" ignored="false" />
     <file path="/profile.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408034952985" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,10 +121,10 @@
       <file leaf-file-name="Adminka.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="1483" selection-end="1483" vertical-scroll-proportion="6.901961">
+            <state line="80" column="47" selection-start="3256" selection-end="3256" vertical-scroll-proportion="-5.647059">
               <folding>
                 <element signature="e#6#159#0" expanded="true" />
-                <marker date="1408045304310" expanded="true" signature="3374:3403" placeholder="..." />
+                <marker date="1408048803430" expanded="true" signature="4396:4425" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -133,7 +133,7 @@
       <file leaf-file-name="style_adoptive.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style_adoptive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4565" column="25" selection-start="95831" selection-end="95831" vertical-scroll-proportion="-22.24">
+            <state line="4544" column="1" selection-start="95471" selection-end="95471" vertical-scroll-proportion="-7.96">
               <folding />
             </state>
           </provider>
@@ -150,19 +150,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stylings.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="stylings.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/adminka/css/stylings.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="19" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+            <state line="13" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="0.25028312">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Proto.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Proto.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="88" selection-start="4418" selection-end="4418" vertical-scroll-proportion="0.53968257">
+            <state line="57" column="92" selection-start="3208" selection-end="3208" vertical-scroll-proportion="-4.0">
               <folding>
                 <element signature="e#6#159#0" expanded="true" />
               </folding>
@@ -190,12 +190,12 @@
         <option value="$USER_HOME$/Downloads/sb-admin/sb-admin/bootstrap-elements.html" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/index.php" />
-        <option value="$PROJECT_DIR$/adminka/css/stylings.css" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php" />
         <option value="$PROJECT_DIR$/protected/models/LoginForm.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
         <option value="$PROJECT_DIR$/css/style_adoptive.css" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php" />
+        <option value="$PROJECT_DIR$/adminka/css/stylings.css" />
       </list>
     </option>
   </component>
@@ -642,16 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1483" selection-end="1483" vertical-scroll-proportion="6.901961">
-          <folding>
-            <element signature="e#6#159#0" expanded="true" />
-            <marker date="1408045304310" expanded="true" signature="3374:3403" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="26" selection-start="2364" selection-end="2364" vertical-scroll-proportion="-6.509804">
@@ -661,26 +651,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminka/css/stylings.css">
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="57" column="92" selection-start="3208" selection-end="3208" vertical-scroll-proportion="-4.0">
+          <folding>
+            <element signature="e#6#159#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style_adoptive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4565" column="25" selection-start="95831" selection-end="95831" vertical-scroll-proportion="-22.24">
+        <state line="4544" column="1" selection-start="95471" selection-end="95471" vertical-scroll-proportion="-7.96">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="88" selection-start="4418" selection-end="4418" vertical-scroll-proportion="0.53968257">
+        <state line="80" column="47" selection-start="3256" selection-end="3256" vertical-scroll-proportion="-5.647059">
           <folding>
             <element signature="e#6#159#0" expanded="true" />
+            <marker date="1408048803430" expanded="true" signature="4396:4425" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminka/css/stylings.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="0.25028312">
+          <folding />
         </state>
       </provider>
     </entry>

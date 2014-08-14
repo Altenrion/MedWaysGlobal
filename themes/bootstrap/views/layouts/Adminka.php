@@ -55,9 +55,30 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="<?=Yii::app()->createUrl('Autorized/index')?>">MedWAYS</a>
+            <ul class="nav navbar-left top-nav open">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> &nbsp;<?=Yii::app()->user->name?> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="<?=Yii::app()->createUrl('Autorized/profile')?>"><i class="fa fa-fw fa-user"></i> Профиль</a>
+                        </li>
+
+                        <li>
+                            <a href="<?=Yii::app()->createUrl('ShowCase/index')?>"><i class="fa fa-fw fa-eye"></i> На сайт</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="<?=Yii::app()->createUrl('ShowCase/logout')?>"><i class="fa fa-fw fa-power-off"></i> Выйти</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+
         </div>
         <!-- Top Menu Items -->
-        <ul class="nav navbar-right top-nav">
+        <ul class="nav collapse navbar-collapse navbar-right top-nav clos">
 
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> &nbsp;<?=Yii::app()->user->name?> <b class="caret"></b></a>

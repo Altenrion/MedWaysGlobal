@@ -4,6 +4,38 @@
 .bord{
     border:0px solid black;
 }
+
+.open{
+    display:none;
+}
+@media(max-width:767px){
+    body {
+        margin-top: 50px;
+    }
+    div#page-wrapper {
+        padding-top: 10px;
+    }
+
+    .open{
+        display:block;
+    }
+    .clos{
+        display:none;
+    }
+
+}
+
+/*@madia (min-width:780px){*/
+    /*.clos{*/
+        /*display:block;*/
+    /*}*/
+    /*.open{*/
+        /*display:none;*/
+    /*}*/
+/*}*/
+
+
+
 @media (max-width: 568px) {
     .image-block{
         text-align:center;
