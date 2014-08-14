@@ -1,49 +1,16 @@
 .persona{
     padding: 0px;
 }
-
+.bord{
+    border:0px solid black;
+}
 
 .profile-image {
-    width: 100%;
+    /*width: 100%;*/
     border: 5px solid white;
     outline: 1px solid #dbdee0;
 }
 
-@media all{
-    .column {
-        float: left;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .columns:before,
-    .columns:after{
-        display:table;
-        content:" "
-    }
-    .columns:after{
-        clear:both
-    }
-    .one-fourth {
-        max-width: 250px;
-        width: 25%;
-
-    }
-    .three-fourths {
-        width: 70%;
-    }
-    .columns {
-        margin-left: -10px;
-        margin-right: -10px;
-    }
-    .columns:after {
-        clear: both;
-    }
-    .columns:before, .columns:after {
-        display: table;
-        content: " ";
-    }
-
-}
 
 .panel-heading{
     border-bottom: 0px;
@@ -54,9 +21,11 @@
     padding-bottom: 15px;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
-    margin-left:-30px;
+    margin-left:-40px;
 
 }
-.glyphicon{
-    color:#CECECE;
+.vcard-details .fa{
+    color:#A8A8A8;
 }
+
+

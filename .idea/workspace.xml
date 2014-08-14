@@ -16,11 +16,11 @@
     <file path="/Proto.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407928225159" ignored="false" />
     <file path="/Autentification_main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406121974522" ignored="false" />
     <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407771969549" ignored="false" />
-    <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408006651746" ignored="false" />
+    <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408030451226" ignored="false" />
     <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407912703640" ignored="false" />
     <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407920772767" ignored="false" />
     <file path="/login.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407829978865" ignored="false" />
-    <file path="/dummy.xml" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407610557484" ignored="false" />
+    <file path="/dummy.xml" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408030225313" ignored="false" />
     <file path="/partners.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407519970748" ignored="false" />
     <file path="/statistics.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407391938955" ignored="false" />
     <file path="/team.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406804278906" ignored="false" />
@@ -77,7 +77,7 @@
     <file path="/UserIdentity.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407929092355" ignored="false" />
     <file path="$PROJECT_DIR$/adminka/font-awesome-4.1.0/less/font-awesome.less" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407927659262" ignored="false" />
     <file path="/Adminka.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407996160012" ignored="false" />
-    <file path="/stylings.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408006863127" ignored="false" />
+    <file path="/stylings.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408029330347" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,10 +118,23 @@
       <file leaf-file-name="Adminka.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="65" selection-start="929" selection-end="929" vertical-scroll-proportion="-7.647059">
+            <state line="210" column="0" selection-start="9466" selection-end="9466" vertical-scroll-proportion="-9.313725">
               <folding>
                 <element signature="e#6#159#0" expanded="true" />
-                <marker date="1407996161389" expanded="true" signature="7765:7794" placeholder="..." />
+                <marker date="1408027291104" expanded="true" signature="7765:7794" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="62" selection-start="1094" selection-end="1094" vertical-scroll-proportion="0.5355893">
+              <folding>
+                <element signature="e#6#159#0" expanded="true" />
+                <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#div#1;tag#div#0;tag#div#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -130,51 +143,16 @@
       <file leaf-file-name="index2.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/index2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="122" selection-start="803" selection-end="852" vertical-scroll-proportion="-22.23077">
+            <state line="27" column="0" selection-start="337" selection-end="633" vertical-scroll-proportion="-7.8076925">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="109" selection-start="612" selection-end="612" vertical-scroll-proportion="-17.0">
-              <folding>
-                <element signature="e#6#159#0" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#canvas#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#5;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#7;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#8;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#9;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#10;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#11;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#12;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stylings.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="stylings.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/adminka/css/stylings.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="1" selection-start="128" selection-end="128" vertical-scroll-proportion="0.17327294">
+            <state line="31" column="0" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -242,8 +220,8 @@
         <option value="$PROJECT_DIR$/protected/components/UserIdentity.php" />
         <option value="$USER_HOME$/Downloads/sb-admin/sb-admin/bootstrap-elements.html" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/index.php" />
         <option value="$PROJECT_DIR$/adminka/css/stylings.css" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/index.php" />
       </list>
     </option>
   </component>
@@ -520,7 +498,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -691,58 +669,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="65" selection-start="929" selection-end="929" vertical-scroll-proportion="-7.647059">
+        <state line="210" column="0" selection-start="9466" selection-end="9466" vertical-scroll-proportion="-9.313725">
           <folding>
             <element signature="e#6#159#0" expanded="true" />
-            <marker date="1407996161389" expanded="true" signature="7765:7794" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/index2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="122" selection-start="803" selection-end="852" vertical-scroll-proportion="-22.23077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="109" selection-start="612" selection-end="612" vertical-scroll-proportion="-17.0">
-          <folding>
-            <element signature="e#6#159#0" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#canvas#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#7;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#8;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#9;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#10;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#11;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#12;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1408027291104" expanded="true" signature="7765:7794" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/adminka/css/stylings.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="1" selection-start="128" selection-end="128" vertical-scroll-proportion="0.17327294">
+        <state line="31" column="0" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/index2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="337" selection-end="633" vertical-scroll-proportion="-7.8076925">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="62" selection-start="1094" selection-end="1094" vertical-scroll-proportion="0.5355893">
+          <folding>
+            <element signature="e#6#159#0" expanded="true" />
+            <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#0;tag#div#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
