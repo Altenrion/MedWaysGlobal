@@ -23,6 +23,7 @@
  * @property integer $ID_SPECIALITY
  * @property string $roles
  * @property integer $AKTIV_KEY
+ * @property integer $REG_DATE
  * @property string $password
  *
  * The followings are the available model relations:
@@ -63,7 +64,7 @@ class Users extends CActiveRecord
 			array('DEGREE, ACADEMIC_TITLE, W_POSITION', 'length', 'max'=>200),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, F_NAME, L_NAME, S_NAME, EMAIL, PHONE, ID_DISTRICT, ID_UNIVER, BIRTH_DATE, SEX, DEGREE, ACADEMIC_TITLE, W_POSITION, HIRSH, PRIVACY, ID_STAGE, ID_SPECIALITY, roles, AKTIV_KEY, password', 'safe', 'on'=>'search'),
+			array('id,REG_DATE, F_NAME, L_NAME, S_NAME, EMAIL, PHONE, ID_DISTRICT, ID_UNIVER, BIRTH_DATE, SEX, DEGREE, ACADEMIC_TITLE, W_POSITION, HIRSH, PRIVACY, ID_STAGE, ID_SPECIALITY, roles, AKTIV_KEY, password', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -110,6 +111,7 @@ class Users extends CActiveRecord
 			'roles' => 'Role',
 			'AKTIV_KEY' => 'Aktiv Key',
 			'password' => 'Passwd',
+            'REG_DATE' => 'Дата регистрации'
 		);
 	}
 
@@ -149,6 +151,7 @@ class Users extends CActiveRecord
         $criteria->compare('HIRSH',$this->HIRSH);
         $criteria->compare('PRIVACY',$this->PRIVACY);
         $criteria->compare('roles',$this->roles,true);
+        $criteria->compare('REG_DATE',$this->REG_DATE,true);
 
         $criteria->compare('ID_STAGE',$this->ID_STAGE);
 		$criteria->compare('AKTIV_KEY',$this->AKTIV_KEY);
@@ -195,6 +198,44 @@ class Users extends CActiveRecord
     }
 
 
+    public function findProfileData($id){
+        $data = Yii::app()->db->createCommand("SELECT
+                user.id,
+                user.F_NAME,
+                user.L_NAME,
+                user.S_NAME,
+                user.EMAIL,
+                user.PHONE,
+                user.BIRTH_DATE,
+                user.SEX,
+                user.BIRTH_DATE,
+                user.DEGREE,
+                user.ACADEMIC_TITLE,
+                (SELECT dist.NAME FROM m_w_district as dist WHERE dist.ID_DISTRICT = user.ID_DISTRICT) AS ID_DISTRICT,
+                (SELECT univ.NAME_UNIVER FROM m_w_university as univ WHERE univ.ID_UNIVER = user.ID_UNIVER) AS ID_UNIVER,
+                (SELECT spec.NAME FROM m_w_speciality as spec WHERE spec.ID_SPECIALITY = user.ID_SPECIALITY) AS ID_SPECIALITY,
+                user.W_POSITION,
+                user.HIRSH,
+                user.PRIVACY,
+                user.roles,
+                user.REG_DATE
 
+
+                FROM m_w_users as user
+                WHERE user.id = $id")->queryAll();
+
+        return $data;
+
+
+
+//        return $id;
+    }
+
+    public function getSex(){
+        return array(
+            array('sex_id' => 'm', 'sex_name' => 'M'),
+            array('sex_id' => 'f', 'sex_name' => 'Ж')
+        );
+    }
 
 }
