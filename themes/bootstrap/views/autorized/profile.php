@@ -90,30 +90,6 @@ if(isset($data) && !is_null($data)){
                                 <tr>
                                     <td>Lorem ipsum.</td>
                                     <td>
-                                        <?
-                                        $tags = array(
-                                            array('id' => 1, 'text' => 'php'),
-                                            array('id' => 2, 'text' => 'html'),
-                                            array('id' => 3, 'text' => 'css'),
-                                            array('id' => 4, 'text' => 'javascript'),
-                                        );
-                                        $this->widget('editable.Editable', array(
-                                            'type'      => 'select',
-                                            'name'      => 'SEX',
-                                            'pk'        => $data[0]['id'],
-                                            'text'      => CHtml::encode($data[0]['SEX']),
-                                            'url'       => $this->createUrl('Autorized/updateProfile'),
-                                            'source'    => $tags, //Editable::source(Users::model()->getSex(), 'sex_id', 'sex_name'),
-                                            'title'     => 'Enter title',
-                                            'placement' => 'right'
-
-                                        ));
-
-
-
-                                        ?>
-
-
                                     </td>
                                 </tr>
                                 <tr>
