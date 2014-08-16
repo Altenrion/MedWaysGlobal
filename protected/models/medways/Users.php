@@ -57,16 +57,18 @@ class Users extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('F_NAME, L_NAME, S_NAME, EMAIL, roles, password', 'required'),
-			array('ID_DISTRICT, ID_UNIVER, HIRSH, PRIVACY, ID_STAGE, ID_SPECIALITY, AKTIV_KEY', 'numerical', 'integerOnly'=>true),
+			array('ID_DISTRICT, ID_UNIVER, HIRSH, ID_STAGE, ID_SPECIALITY, AKTIV_KEY', 'numerical', 'integerOnly'=>true),
 			array('F_NAME, L_NAME, S_NAME, EMAIL, roles', 'length', 'max'=>50),
 			array('PHONE', 'length', 'max'=>50),
-			array('SEX', 'length', 'max'=>2),
+			array('SEX', 'length', 'max'=>2 ),
+            array('BIRTH_DATE', 'date', 'format'=>'yyyy-M-d'),
 			array('DEGREE, ACADEMIC_TITLE, W_POSITION', 'length', 'max'=>200),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id,REG_DATE, F_NAME, L_NAME, S_NAME, EMAIL, PHONE, ID_DISTRICT, ID_UNIVER, BIRTH_DATE, SEX, DEGREE, ACADEMIC_TITLE, W_POSITION, HIRSH, PRIVACY, ID_STAGE, ID_SPECIALITY, roles, AKTIV_KEY, password', 'safe', 'on'=>'search'),
+			array('id,REG_DATE, L_NAME, S_NAME, EMAIL, PHONE, ID_DISTRICT, ID_UNIVER, SEX, DEGREE, ACADEMIC_TITLE, W_POSITION, HIRSH, PRIVACY, ID_STAGE, ID_SPECIALITY, roles, AKTIV_KEY, password', 'safe', 'on'=>'search'),
 		);
 	}
+
 
 	/**
 	 * @return array relational rules.
@@ -231,11 +233,6 @@ class Users extends CActiveRecord
 //        return $id;
     }
 
-    public function getSex(){
-        return array(
-            array('sex_id' => 'm', 'sex_name' => 'M'),
-            array('sex_id' => 'f', 'sex_name' => 'Ж')
-        );
-    }
+
 
 }

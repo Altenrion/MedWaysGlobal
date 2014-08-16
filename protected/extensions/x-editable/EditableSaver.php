@@ -101,22 +101,8 @@ class EditableSaver extends CComponent {
         //get params from request
         $this->primaryKey = yii::app()->request->getParam('pk');
         $this->attribute = yii::app()->request->getParam('name');
-        $atributes = [
-            'prospect_value',
-            'rated_value',
-            'sec_hold_comp_summ',
-            'prim_hold_comp_summ',
-            'summ_inc_nds',
-            'guaranty_req'
-            
-           ];
-        
-        
-        if(in_array($this->attribute,$atributes)){ 
-            $this->value = $this->cleanMoney(yii::app()->request->getParam('value'));
-            }
-        else{
-            $this->value = yii::app()->request->getParam('value'); }
+
+        $this->value = yii::app()->request->getParam('value');
         $this->scenario = yii::app()->request->getParam('scenario');
 
         //checking params
@@ -171,7 +157,7 @@ class EditableSaver extends CComponent {
 
 
         ///////////тут будет логгер/////////////////////////////////////////////////////////////////////////
-        $this->logger($this->model, $this->attribute, $this->value, $this->primaryKey);
+//        $this->logger($this->model, $this->attribute, $this->value, $this->primaryKey);
 
 
         ///////////////////////////////////////////////////////////////////////////////
@@ -221,52 +207,46 @@ class EditableSaver extends CComponent {
      * TABLE name is 'log_'.'atribute_name' 
 
      */
-    public function logger($model, $attr, $new_value, $pk) {
-        $atr_class = '';
+//    public function logger($model, $attr, $new_value, $pk) {
+//        $atr_class = '';
+//
+//        $model = $this->model->findByPk($pk);
+//        //$model->scenario = $this->scenario;
+//
+//        $atr_name = explode('_', $attr);
+//        if (count($atr_name) > 1) {
+//            foreach ($atr_name as $name => &$value) {
+//                $atr_class .= ucfirst($value);
+//            }
+//        } else {
+//            $atr_class = ucfirst($attr);
+//        }
+//
+//        $this->atr_class_name = $atr_class;
+//        $atr_class = new $this->atr_class_name;
+//        $atr_class->old_value = $model->{$attr};
+//        $atr_class->new_value = $new_value;
+//        $atr_class->user_id = Yii::app()->user->id;
+//        $atr_class->scenario = 'logger';
+//        $atr_class->pk = $this->primaryKey;
+//
+//
+//
+//        $atr_class->validate($atr_class->new_value);
+//        if ($atr_class->hasErrors()) {
+//            $err = array();
+//                foreach ($atr_class->getErrors() as $attribute => $errors) {
+//                    $err = array_merge($err, $errors);
+//                }
+//            $this->error($err[0]);
+//        }
+//            else {
+//                $atr_class->save();
+//            }
+//        }
+        
+        
 
-        $model = $this->model->findByPk($pk);
-        //$model->scenario = $this->scenario;
-
-        $atr_name = explode('_', $attr);
-        if (count($atr_name) > 1) {
-            foreach ($atr_name as $name => &$value) {
-                $atr_class .= ucfirst($value);
-            }
-        } else {
-            $atr_class = ucfirst($attr);
-        }
-
-        $this->atr_class_name = $atr_class;
-        $atr_class = new $this->atr_class_name;
-        $atr_class->old_value = $model->{$attr};
-        $atr_class->new_value = $new_value;
-        $atr_class->user_id = Yii::app()->user->id;
-        $atr_class->scenario = 'logger';
-        $atr_class->pk = $this->primaryKey;
-        
-        
-        
-        $atr_class->validate($atr_class->new_value);
-        if ($atr_class->hasErrors()) {
-            $err = array();
-                foreach ($atr_class->getErrors() as $attribute => $errors) {
-                    $err = array_merge($err, $errors);
-                }
-            $this->error($err[0]);
-        }
-            else {
-                $atr_class->save();
-            }
-        }
-        
-        
-        
-        /**
-     * errors as CHttpException
-     * @param $msg
-     * @throws CHttpException
-
-     */ 
     public function checkErrors() {
         if ($this->model->hasErrors()) {
             $msg = array();

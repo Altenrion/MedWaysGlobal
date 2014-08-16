@@ -24,15 +24,12 @@
     }
 
 }
-
-/*@madia (min-width:780px){*/
-    /*.clos{*/
-        /*display:block;*/
-    /*}*/
-    /*.open{*/
-        /*display:none;*/
-    /*}*/
-/*}*/
+.panel-heading {
+    padding: 15px 15px;
+}
+button#enable {
+    margin-bottom: 10px;
+}
 
 
 
@@ -93,3 +90,4 @@
     }
 
 }
+

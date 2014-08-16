@@ -586,21 +586,21 @@ class Editable extends CWidget
         //include moment.js for combodate 
         if($this->type == 'combodate') {
             $momentUrl = $am->publish(Yii::getPathOfAlias('editable.assets.moment'));
-            $cs->registerScriptFile($momentUrl.'/moment.min.js');          
+            $cs->registerScriptFile($momentUrl.'/moment.min.js',CClientScript::POS_END);
         }
         
         //include select2 lib for select2 type
         if($this->type == 'select2') {
             $select2Url = $am->publish(Yii::getPathOfAlias('editable.assets.select2'));
-            $cs->registerScriptFile($select2Url.'/select2.min.js');  
-            $cs->registerCssFile($select2Url.'/select2.css');        
+            $cs->registerScriptFile($select2Url.'/select2.min.js',CClientScript::POS_END);
+            $cs->registerCssFile($select2Url.'/select2.css');
         }  
         
         //include bootstrap-datetimepicker
         if($this->type == 'datetime') {
             $url = $am->publish(Yii::getPathOfAlias('editable.assets.bootstrap-datetimepicker'));
-            $cs->registerScriptFile($url.'/js/bootstrap-datetimepicker.js');  
-            $cs->registerCssFile($url.'/css/datetimepicker.css');        
+            $cs->registerScriptFile($url.'/js/bootstrap-datetimepicker.js',CClientScript::POS_END);
+            $cs->registerCssFile($url.'/css/datetimepicker.css');
         }               
         
         //TODO: include locale for datepicker

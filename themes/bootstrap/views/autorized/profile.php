@@ -23,6 +23,8 @@ if(isset($data) && !is_null($data)){
 
 ?>
 
+
+
 <div id="content" class="col-lg-12 col-sm-12 col-xs-12">
 
 			<ol class="breadcrumb">
@@ -82,86 +84,298 @@ if(isset($data) && !is_null($data)){
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Личные данные</h3>
+                            <h3 class="panel-title">Личные данные
+                            <button id="enable" class="btn btn-xs btn-primary pull-right"><i class="fa  fa-edit"> </i> редактировать</button>
+                            </h3>
                         </div>
                         <div class="panel-body persona">
-                            <table class="table table-hover">
+                            <table   class="table table-hover">
                                 <tbody>
                                 <tr>
-                                    <td>Lorem ipsum.</td>
+                                    <th width="40%">Фамилия</th>
                                     <td>
-                                    <?
+                                        <?
                                         $this->widget('editable.Editable', array(
-                                        'type'      => 'text',
-                                        'pk'        => $data[0]['id'],
-                                        'name'      => 'F_NAME',
-                                        'text'      => CHtml::encode($data[0]['F_NAME']),
-                                        'url'       => $this->createUrl('Autorized/updateProfile'),
-                                        'title'     => 'Введите фамилию',
-                                        'placement' => 'right'
+                                            'type'      => 'text',
+                                            'pk'        => $data[0]['id'],
+                                            'name'      => 'F_NAME',
+                                            'text'      => CHtml::encode($data[0]['F_NAME']),
+                                            'url'       => $this->createUrl('Autorized/updateProfile'),
+                                            'title'     => 'Введите фамилию',
+                                            'placement' => 'right',
+                                            'options' => array(
+                                                'disabled'=>true,
+                                                'class'=>'edit',
+                                            ),
                                         ));
 
-//                                     $this->widget('bootstrap.widgets.TbButton', array(
-//                                        'label'=>'Primary',
-//                                        'type'=>'primary', // null, 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
-//                                        'size'=>'large', // null, 'large', 'small' or 'mini'
-//                                    ));
-
-                                    ?>
+                                        ?>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Lorem ipsum.</td>
-                                    <td>Culpa, reprehenderit?</td>
+                                    <th>Имя</th>
+                                    <td>
+                                        <?
+                                        $this->widget('editable.Editable', array(
+                                            'type'      => 'text',
+                                            'pk'        => $data[0]['id'],
+                                            'name'      => 'L_NAME',
+                                            'text'      => CHtml::encode($data[0]['L_NAME']),
+                                            'url'       => $this->createUrl('Autorized/updateProfile'),
+                                            'title'     => 'Введите фамилию',
+                                            'placement' => 'right',
+                                            'options' => array(
+                                                'disabled'=>true,
+                                            ),
+                                        ));
+
+                                        ?>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>Lorem ipsum.</td>
-                                    <td>Laboriosam, tempore.</td>
+                                    <th>Отчество</th>
+                                    <td>
+                                        <?
+                                        $this->widget('editable.Editable', array(
+                                            'type'      => 'text',
+                                            'pk'        => $data[0]['id'],
+                                            'name'      => 'S_NAME',
+                                            'text'      => CHtml::encode($data[0]['S_NAME']),
+                                            'url'       => $this->createUrl('Autorized/updateProfile'),
+                                            'title'     => 'Введите фамилию',
+                                            'placement' => 'right',
+                                            'options' => array(
+                                                'disabled'=>true,
+                                            ),
+                                        ));
+
+                                        ?>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>Lorem ipsum.</td>
-                                    <td>Excepturi, veniam?</td>
+                                    <th>Дата рождения</th>
+                                    <td>
+                                        <?
+                                        $this->widget('editable.Editable', array(
+                                            'type'      => 'combodate',
+                                            'name'      => 'BIRTH_DATE',
+                                            'pk'        => $data[0]['id'],
+                                            'text'      => CHtml::encode(date('d / m / Y', strtotime($data[0]['BIRTH_DATE']))),
+                                            'url'       => $this->createUrl('Autorized/updateProfile'),
+//                                            'format'      => 'yyyy-mm-dd', //format in which date is expected from model and submitted to server
+                                            'format'      => 'YYYY-MM-DD', //in this format date sent to server
+                                            'viewformat'  => 'DD / MM / YYYY', //in this format date is displayed
+                                            'template'    => 'DD / MM / YYYY', //template for dropdowns
+                                            'combodate'   => array('minYear' => 1930, 'maxYear' => 2015),
+                                            'options'     => array(
+                                                'datepicker' => array('language' => 'ru'),
+                                                'disabled'=>true,
+                                            )
+                                        ));
+
+
+//
+
+                                        ?>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>Lorem ipsum.</td>
-                                    <td>Qui, quisquam.</td>
+                                    <th>Пол</th>
+                                    <td>
+                                        <?
+                                        $this->widget('editable.Editable', array(
+                                            'type'      => 'select',
+                                            'name'      => 'SEX',
+                                            'pk'        => $data[0]['id'],
+                                            'text'      => CHtml::encode(($data[0]['SEX'])=='m'?'M':'Ж'),
+                                            'url'       => $this->createUrl('Autorized/updateProfile'),
+                                            'source'    => Editable::source(array(1 => 'М', 2 => 'Ж')),
+                                            'title'     => 'Enter title',
+                                            'placement' => 'right',
+                                            'options'     => array(
+                                                'disabled'=>true,
+                                                'showbuttons'=>false,
+                                            )
+                                        ));
+
+                                        ?>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>Lorem ipsum.</td>
-                                    <td>Autem, similique?</td>
+                                    <th>Телефон</th>
+                                    <td>
+                                        <?
+                                        $this->widget('editable.Editable', array(
+                                            'type'      => 'text',
+                                            'pk'        => $data[0]['id'],
+                                            'name'      => 'PHONE',
+                                            'text'      => CHtml::encode($data[0]['PHONE']),
+                                            'url'       => $this->createUrl('Autorized/updateProfile'),
+                                            'title'     => 'Введите фамилию',
+                                            'placement' => 'right',
+                                            'options' => array(
+                                                'disabled'=>true,
+                                            ),
+                                        ));
+
+                                        ?>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>Ученая степень</th>
+                                    <td>
+                                        <?
+                                        $this->widget('editable.Editable', array(
+                                            'type'      => 'select',
+                                            'name'      => 'DEGREE',
+                                            'pk'        => $data[0]['id'],
+                                            'text'      => CHtml::encode($data[0]['DEGREE']),
+                                            'url'       => $this->createUrl('Autorized/updateProfile'),
+                                            'source'    => Editable::source(array('тестовая степень 1'=>'тестовая степень 1' , 'тестовая степень 2'=>'тестовая степень 2')),
+                                            'title'     => 'Enter title',
+                                            'placement' => 'right',
+                                            'options'     => array(
+                                                'disabled'=>true,
+                                                'showbuttons'=>false,
+                                            )
+                                        ));
+                                        ?>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>Lorem ipsum.</td>
-                                    <td>Odit, similique!</td>
+                                    <th>Ученое звание</th>
+                                    <td>
+                                        <?
+                                        $this->widget('editable.Editable', array(
+                                            'type'      => 'select',
+                                            'name'      => 'ACADEMIC_TITLE',
+                                            'pk'        => $data[0]['id'],
+                                            'text'      => CHtml::encode($data[0]['ACADEMIC_TITLE']),
+                                            'url'       => $this->createUrl('Autorized/updateProfile'),
+                                            'source'    => Editable::source(array('тестовое звание 1'=>'тестовое звание 1' , 'тестовое звание 2'=>'тестовое звание 2')),
+                                            'title'     => 'Enter title',
+                                            'placement' => 'right',
+                                            'options'     => array(
+                                                'disabled'=>true,
+                                                'showbuttons'=>false,
+                                            )
+                                        ));
+
+
+
+                                        ?>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>Lorem ipsum.</td>
-                                    <td>Ab, vel.</td>
+                                    <th>Округ</th>
+                                    <td>
+                                        <?
+                                        $this->widget('editable.Editable', array(
+                                            'type'      => 'select',
+                                            'name'      => 'ID_DISTRICT',
+                                            'pk'        => $data[0]['id'],
+                                            'text'      => CHtml::encode($data[0]['ID_DISTRICT']),
+                                            'url'       => $this->createUrl('Autorized/updateProfile'),
+                                            'source'    => $this->createUrl('Autorized/getDistricts'),
+                                            'title'     => 'Enter title',
+                                            'placement' => 'right',
+                                            'options' => array(
+                                                'disabled'=>true,
+                                            ),
+
+                                        ));
+
+
+
+                                        ?>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>Lorem ipsum.</td>
-                                    <td>Facere, vero?</td>
+                                    <th>Вуз</th>
+                                    <td>
+                                        <?
+                                        $this->widget('editable.Editable', array(
+                                            'type'      => 'select',
+                                            'name'      => 'ID_UNIVER',
+                                            'pk'        => $data[0]['id'],
+                                            'text'      => CHtml::encode($data[0]['ID_UNIVER']),
+                                            'url'       => $this->createUrl('Autorized/updateProfile'),
+                                            'source'    => $this->createUrl('Autorized/getUniversities'),
+                                            'title'     => 'Enter title',
+                                            'placement' => 'right',
+                                            'options' => array(
+                                                'disabled'=>true,
+                                            ),
+
+                                        ));
+
+                                        ?>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>Lorem ipsum.</td>
-                                    <td>Ducimus, maiores?</td>
+                                    <th>Должность</th>
+                                    <td>
+                                        <?
+                                        $this->widget('editable.Editable', array(
+                                            'type'      => 'text',
+                                            'pk'        => $data[0]['id'],
+                                            'name'      => 'W_POSITION',
+                                            'text'      => CHtml::encode($data[0]['W_POSITION']),
+                                            'url'       => $this->createUrl('Autorized/updateProfile'),
+                                            'title'     => 'Введите фамилию',
+                                            'placement' => 'right',
+                                            'options' => array(
+                                                'disabled'=>true,
+                                            ),
+                                        ));
+
+                                        ?>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>Lorem ipsum.</td>
-                                    <td>Officiis, soluta.</td>
+                                    <th>Специальность основная</th>
+                                    <td>
+                                        <?
+                                        $this->widget('editable.Editable', array(
+                                            'type'      => 'select',
+                                            'name'      => 'ID_SPECIALITY',
+                                            'pk'        => $data[0]['id'],
+                                            'text'      => CHtml::encode($data[0]['ID_SPECIALITY']),
+                                            'url'       => $this->createUrl('Autorized/updateProfile'),
+                                            'source'    => $this->createUrl('Autorized/getSpecialities'),
+                                            'title'     => 'Enter title',
+                                            'placement' => 'right',
+                                            'options' => array(
+                                                'disabled'=>true,
+                                            ),
+
+                                        ));
+
+                                        ?>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>Lorem ipsum.</td>
-                                    <td>Dicta, ipsum?</td>
+                                    <th>Индекс Хирша</th>
+                                    <td>
+                                        <?
+                                        $this->widget('editable.Editable', array(
+                                            'type'      => 'text',
+                                            'pk'        => $data[0]['id'],
+                                            'name'      => 'HIRSH',
+                                            'text'      => CHtml::encode($data[0]['HIRSH']),
+                                            'url'       => $this->createUrl('Autorized/updateProfile'),
+                                            'title'     => 'Введите фамилию',
+                                            'placement' => 'right',
+                                            'options' => array(
+                                                'disabled'=>true,
+                                            ),
+                                        ));
+
+                                        ?>
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td>Lorem ipsum.</td>
-                                    <td>Delectus, earum.</td>
-                                </tr>
-                                <tr>
-                                    <td>Lorem ipsum.</td>
-                                    <td>Fuga, ratione.</td>
-                                </tr>
+
                                 </tbody>
                             </table>
                         </div>
@@ -176,3 +390,9 @@ if(isset($data) && !is_null($data)){
 
 
 			</div>
+<?
+$base_url = Yii::app()->baseUrl;
+$cs = Yii::app()->getClientScript();
+$cs->registerScriptFile( $base_url.'/assets/3160b985/js/bootstrap-datetimepicker.js', CClientScript::POS_END);
+$cs->registerScriptFile($base_url.'/adminka/js/MyEditsToEditable.js', CClientScript::POS_END);
+?>

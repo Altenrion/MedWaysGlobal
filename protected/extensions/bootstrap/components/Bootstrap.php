@@ -106,7 +106,7 @@ class Bootstrap extends CApplicationComponent
 //        $cs->registerScriptFile(Yii::app()->basePath . '/adminka/js/jquery-1.11.0.js', CClientScript::POS_END);
 
         $filename = YII_DEBUG ? 'bootstrap.js' : 'bootstrap.min.js';
-//		$cs->registerScriptFile($this->getAssetsUrl().'/js/'.$filename, $position);
+//		$cs->registerScriptFile($this->getAssetsUrl().'/js/'.$filename,CClientScript::POS_END);
 	}
 
 	/**
