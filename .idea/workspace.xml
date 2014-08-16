@@ -118,10 +118,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Users.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Users.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="44" selection-start="1750" selection-end="1750" vertical-scroll-proportion="0.31516588">
+            <state line="71" column="0" selection-start="2226" selection-end="2226" vertical-scroll-proportion="-16.115385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activate_submit.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/activate_submit.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.3657984">
               <folding />
             </state>
           </provider>
@@ -202,7 +211,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/index.php" />
         <option value="$PROJECT_DIR$/protected/models/LoginForm.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
         <option value="$PROJECT_DIR$/css/style_adoptive.css" />
@@ -218,6 +226,7 @@
         <option value="$PROJECT_DIR$/protected/extensions/x-editable/EditableSaver.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php" />
         <option value="$PROJECT_DIR$/protected/models/medways/Users.php" />
+        <option value="$PROJECT_DIR$/js/activate_submit.js" />
       </list>
     </option>
   </component>
@@ -390,7 +399,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -573,20 +582,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/adminka/css/stylings.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="1" selection-start="387" selection-end="387" vertical-scroll-proportion="0.46206117">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/bootstrap/components/Bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="5" selection-start="3117" selection-end="3117" vertical-scroll-proportion="0.3125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/extensions/x-editable/EditableConfig.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="57" selection-start="1179" selection-end="1179" vertical-scroll-proportion="-24.192308">
@@ -698,9 +693,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/registration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="44" selection-start="393" selection-end="393" vertical-scroll-proportion="0.3272933">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="44" selection-start="1750" selection-end="1750" vertical-scroll-proportion="0.31516588">
+        <state line="71" column="0" selection-start="2226" selection-end="2226" vertical-scroll-proportion="-16.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/activate_submit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.3657984">
           <folding />
         </state>
       </provider>
