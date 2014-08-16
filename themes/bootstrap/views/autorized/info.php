@@ -13,7 +13,7 @@
 
 
 			<ol class="breadcrumb">
-			   	<li class="active"><i class="fa fa-fw fa-graduation-cap"></i> Проект</li>
+			   	<li class="active"><i class="fa fa-fw fa-info"></i> Информация</li>
 			</ol>
 
 

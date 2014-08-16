@@ -13,6 +13,27 @@ class AutorizedController extends Controller
 		$this->render('index');
 	}
 
+	public function actionProject()
+	{
+		$this->render('project');
+	}
+
+	public function actionProjectStatistics()
+	{
+		$this->render('project_statistics');
+	}
+
+	public function actionInfo()
+	{
+		$this->render('info');
+	}
+
+	public function actionNews()
+	{
+		$this->render('news');
+	}
+
+
     public function actionUpdateProfile(){
         $edit = new EditableSaver('Users');
         $edit->scenario = 'update';

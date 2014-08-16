@@ -8,9 +8,11 @@
 
 
 $(document).ready(function () {
-//    $('a[rel="F_NAME_1"]').editable({
-//        toggle: 'manual'
-//    });
+    $('#openBtn').click(function(){
+        $('#myModal').modal({show:true})
+    });
+
+
     $('#enable').click(function (e) {
 //        e.stopPropagation()
         console.log("I'm Here");

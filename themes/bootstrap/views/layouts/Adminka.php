@@ -54,7 +54,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?=Yii::app()->createUrl('Autorized/index')?>">MedWAYS</a>
+            <a class="navbar-brand" href="<?=Yii::app()->createUrl('Autorized/profile')?>">MedWAYS</a>
             <ul class="nav navbar-left top-nav open">
 
                 <li class="dropdown">
@@ -101,19 +101,19 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav side-nav">
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-bar-chart-o"></i> Статистика</a>
+                    <a href="<?=Yii::app()->createUrl('Autorized/projectStatistics')?>"><i class="fa fa-fw fa-bar-chart-o"></i> Статистика</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-graduation-cap"></i> Проект</a>
+                    <a href="<?=Yii::app()->createUrl('Autorized/project')?>"><i class="fa fa-fw fa-graduation-cap"></i> Проект</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-info"></i> Информация</a>
+                    <a href="<?=Yii::app()->createUrl('Autorized/info')?>"><i class="fa fa-fw fa-info"></i> Информация</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-edit"></i> Обратная связь</a>
+                    <a href="#"><i class="fa fa-fw fa-pencil"></i> Обратная связь</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-calendar"></i> Новости</a>
+                    <a href="<?=Yii::app()->createUrl('Autorized/news')?>"><i class="fa fa-fw fa-calendar"></i> Новости</a>
                 </li>
 
             </ul>

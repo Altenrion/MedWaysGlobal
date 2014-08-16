@@ -28,7 +28,7 @@ if(isset($data) && !is_null($data)){
 <div id="content" class="col-lg-12 col-sm-12 col-xs-12">
 
 			<ol class="breadcrumb">
-			   	<li class="active"> Профиль</li>
+			   	<li class="active"><i class="fa fa-fw fa-user"></i> Профиль</li>
 			</ol>
 
 			<div class="row profile">
@@ -37,8 +37,10 @@ if(isset($data) && !is_null($data)){
 
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 image-block">
-							<img class="profile-image" height="200" width="200" src="<?=Yii::app()->baseUrl?>/images/badge/5549987.jpg">
-						</div>
+                            <a data-toggle="modal" href="#myModal" class="">
+							    <img class="profile-image" height="200" width="200" src="<?=Yii::app()->baseUrl?>/images/badge/<?=(isset($data) && !is_null($data[0]['AVATAR']))?($data[0]['AVATAR']):('new.png')?>">
+                            </a>
+                        </div>
 						<div class="col-xs-12 col-sm-12">
                             <div class="row image-block">
                                 <div class="col-xs-5 col-sm-4 col-sm-offset-1 col-md-12 name">
@@ -75,14 +77,14 @@ if(isset($data) && !is_null($data)){
 
 				</div><!--/col-->
 
-				<div class="col-sm-12 col-md-7 col-lg-7 data bord">
+				<div class="col-sm-12 col-md-7 col-lg-6 data bord">
 
-                    <div class="alert alert-warning alert-dismissable">
+                    <div class="alert alert-info  alert-dismissable">
                         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                        <strong>Внимание! </strong> Ваш id "<?=(isset($data))?(var_dump($data)):('---')?>"
+                        <strong>Внимание! </strong> Ваш id "<?=(isset($data))?('найден'):('---')?>"
                     </div>
 
-                    <div class="panel panel-default">
+                    <div class="panel panel-info">
                         <div class="panel-heading">
                             <h3 class="panel-title">Личные данные
                             <button id="enable" class="btn btn-xs btn-primary pull-right"><i class="fa  fa-edit"> </i> редактировать</button>
@@ -92,7 +94,7 @@ if(isset($data) && !is_null($data)){
                             <table   class="table table-hover">
                                 <tbody>
                                 <tr>
-                                    <th width="40%">Фамилия</th>
+                                    <th width="30%">Фамилия</th>
                                     <td>
                                         <?
                                         $this->widget('editable.Editable', array(
@@ -383,9 +385,37 @@ if(isset($data) && !is_null($data)){
 
 
 
+
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h4 class="modal-title">Выберите фотографию</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label for="exampleInputFile"> </label>
+                                            <input type="file" id="exampleInputFile">
+                                            <p class="help-block">Выберите фотографию для аватара. Пропорции изображения 50х50 . Рекомендуемое разрешение кадра :  300 x 300 - 500 x 500 px. </p>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-default">Загрузить</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#" data-dismiss="modal" class="btn">Закрыть</a>
+                                    <a href="#" class="btn btn-primary">Сохранить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div><!--/col-->
 
 			</div><!--/profile-->
+
 
 
 

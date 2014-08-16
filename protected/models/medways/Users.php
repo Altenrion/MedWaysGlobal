@@ -61,6 +61,7 @@ class Users extends CActiveRecord
 			array('F_NAME, L_NAME, S_NAME, EMAIL, roles', 'length', 'max'=>50),
 			array('PHONE', 'length', 'max'=>50),
 			array('SEX', 'length', 'max'=>2 ),
+
             array('BIRTH_DATE', 'date', 'format'=>'yyyy-M-d'),
 			array('DEGREE, ACADEMIC_TITLE, W_POSITION', 'length', 'max'=>200),
 			// The following rule is used by search().
@@ -220,7 +221,8 @@ class Users extends CActiveRecord
                 user.HIRSH,
                 user.PRIVACY,
                 user.roles,
-                user.REG_DATE
+                user.REG_DATE,
+                user.AVATAR
 
 
                 FROM m_w_users as user

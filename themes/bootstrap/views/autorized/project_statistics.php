@@ -13,9 +13,9 @@
 
 
 			<ol class="breadcrumb">
-			   	<li class="active"><i class="fa fa-fw fa-graduation-cap"></i> Проект</li>
+			   	<li class="active"><i class="fa fa-fw fa-bar-chart-o"></i> Статистика</li>
 			</ol>
-
+  
 
 			<div class="row profile">
 
