@@ -90,6 +90,24 @@ if(isset($data) && !is_null($data)){
                                 <tr>
                                     <td>Lorem ipsum.</td>
                                     <td>
+                                    <?
+//                                        $this->widget('editable.Editable', array(
+//                                        'type'      => 'textarea',
+//                                        'pk'        => $data[0]['id'],
+//                                        'name'      => 'SEX',
+//                                        'text'      => CHtml::encode($data[0]['SEX']),
+//                                        'url'       => $this->createUrl('Autorized/updateProfile'),
+//                                        'title'     => 'Enter SEX',
+//                                        'placement' => 'right'
+//                                        ));
+
+                                     $this->widget('bootstrap.widgets.TbButton', array(
+                                        'label'=>'Primary',
+                                        'type'=>'primary', // null, 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
+                                        'size'=>'large', // null, 'large', 'small' or 'mini'
+                                    ));
+
+                                    ?>
                                     </td>
                                 </tr>
                                 <tr>

@@ -71,7 +71,7 @@ $(document).ready(function () {
         var t = this.path.split("."),
             n = t.slice(0, t.length - 1).join("."),
             r = t[t.length - 1];
-        this.at_2x_path = n + "@2x." + r
+        this.at_2x_path = n + "." + r
     }
 
     function n(e) {
