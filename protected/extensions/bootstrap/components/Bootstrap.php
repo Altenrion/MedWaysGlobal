@@ -89,7 +89,7 @@ class Bootstrap extends CApplicationComponent
 	 */
 	public function registerCoreScripts()
 	{
-		$this->registerJS(Yii::app()->clientScript->coreScriptPosition);
+		$this->registerJS();
 		$this->registerPopover(); // popover also registers tooltip
 	}
 
@@ -97,13 +97,16 @@ class Bootstrap extends CApplicationComponent
 	 * Registers the Bootstrap JavaScript.
 	 * @param int $position the position of the JavaScript code.
 	 */
-	protected function registerJS($position = CClientScript::POS_HEAD)
+	protected function registerJS($position = CClientScript::POS_END)
 	{
 		/** @var CClientScript $cs */
 		$cs = Yii::app()->getClientScript();
-		$cs->registerCoreScript('jquery');
-		$filename = YII_DEBUG ? 'bootstrap.js' : 'bootstrap.min.js';
-		$cs->registerScriptFile($this->getAssetsUrl().'/js/'.$filename, $position);
+//		$cs->registerCoreScript('jquery');
+
+//        $cs->registerScriptFile(Yii::app()->basePath . '/adminka/js/jquery-1.11.0.js', CClientScript::POS_END);
+
+        $filename = YII_DEBUG ? 'bootstrap.js' : 'bootstrap.min.js';
+//		$cs->registerScriptFile($this->getAssetsUrl().'/js/'.$filename, $position);
 	}
 
 	/**
