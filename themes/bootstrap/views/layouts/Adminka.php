@@ -54,7 +54,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?=Yii::app()->createUrl('Autorized/profile')?>">MedWAYS</a>
+            <a class="navbar-brand" href="#">MedWAYS</a>
             <ul class="nav navbar-left top-nav open">
 
                 <li class="dropdown">
@@ -101,11 +101,16 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav side-nav">
                 <li>
-                    <a href="<?=Yii::app()->createUrl('Autorized/projectStatistics')?>"><i class="fa fa-fw fa-bar-chart-o"></i> Статистика</a>
+                    <a href="<?=Yii::app()->createUrl('Autorized/profile')?>"><i class="fa fa-fw fa-user"></i> Профиль</a>
                 </li>
-                <li>
+                <li class="border">
                     <a href="<?=Yii::app()->createUrl('Autorized/project')?>"><i class="fa fa-fw fa-graduation-cap"></i> Проект</a>
                 </li>
+
+                <li>
+                    <a href="<?=Yii::app()->createUrl('Autorized/projectStatistics')?>"><i class="fa fa-fw fa-bar-chart-o"></i> Статистика</a>
+                </li>
+
                 <li>
                     <a href="<?=Yii::app()->createUrl('Autorized/info')?>"><i class="fa fa-fw fa-info"></i> Информация</a>
                 </li>
