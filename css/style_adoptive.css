@@ -685,7 +685,14 @@ i.contact {
     background: #FFF;
 }
 .navbar.basic .navbar-brand img {
-    margin-top: 26px
+    margin-top: 2px;
+    height: 64px;
+
+}
+
+.navbar.basic.default .navbar-brand img {
+    /*height: auto;*/
+    margin-top:10px;
 }
 .navbar.basic .navbar-header {
     padding: 0
@@ -731,7 +738,7 @@ i.contact {
 
 .navbar.basic.fixed .navbar-brand img {
     height: 20px;
-    margin-top: 15px;
+    /*margin-top: 15px;*/
 }
 .navbar.basic.fixed .navbar-nav > li > a {
     padding: 25px 10px
@@ -1227,7 +1234,7 @@ i.contact {
 }
 
 .navbar.basic.fixed .navbar-brand img{
-    height: 34px;!important;
+    height: 64px;!important;
 }
 
 
@@ -1414,7 +1421,7 @@ i.contact {
     list-style: none;
 }
 .tp-caption.bold {
-    font-family: 'Roboto Slab', serif;
+    font-family: Boblic,'Roboto Slab', serif;
     font-size: 30px;
     line-height: 1;
     font-weight: 900;
@@ -1425,7 +1432,7 @@ i.contact {
     line-height: 1;
     color: #F5F5F5;
     font-weight: 400;
-    font-family: 'Roboto Slab', serif;
+    font-family:  Boblic,'Roboto Slab', serif;
 }
 .tp-caption.white-bg {
     background: #FFF;
@@ -3903,6 +3910,9 @@ input:focus:-ms-input-placeholder {
 	    clear: both;
 	    visibility: hidden;
 	}
+
+
+
 	.navbar.basic.default,
 	.navbar.basic.fixed {
 	    position: relative
@@ -3933,8 +3943,12 @@ input:focus:-ms-input-placeholder {
 	    height: auto;
 	    margin-top: 26px;
 	}
+
+
+
+
 	.navbar.basic .navbar-brand {
-	    margin: 0
+	    margin: 0px;
 	}
 }
 @media (max-width: 969px) { 

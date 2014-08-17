@@ -48,7 +48,7 @@
         <div class="navbar-header">
             <div class="container">
                 <div class="basic-wrapper">
-                    <a class="btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse"><i class='icon-menu-1'></i></a> <a class="navbar-brand" href="<?=Yii::app()->createUrl('ShowCase/index')?>"><img src="<?=Yii::app()->baseUrl?>/images/logo2.png" alt="" /></a>
+                    <a class="btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse"><i class='icon-menu-1'></i></a> <a class="navbar-brand" href="<?=Yii::app()->createUrl('ShowCase/index')?>"><img src="<?=Yii::app()->baseUrl?>/images/logo_med.png" alt="" /></a>
                 </div>
                 <div class="collapse navbar-collapse pull-right">
                     <ul class="nav navbar-nav">

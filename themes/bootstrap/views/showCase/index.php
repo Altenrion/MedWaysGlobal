@@ -11,34 +11,30 @@ $this->breadcrumbs=array(
     <div class="fullwidthbanner">
         <ul>
             <li data-transition="fade"> <img src="<?=Yii::app()->baseUrl; ?>/images/art/docs.png" alt="" />
-                <div class="caption sfl" data-x="200" data-y="176" data-speed="500" data-start="500" data-easing="Sine.easeOut"><img src="<?=Yii::app()->baseUrl; ?>/images/art/slider-woman.png" alt="" /></div>
-                <div class="caption sfr" data-x="350" data-y="37" data-speed="700" data-start="1000" data-easing="Sine.easeOut"><img src="<?=Yii::app()->baseUrl; ?>/images/art/slider-bubbles.png" alt="" /></div>
-                <div class="caption fade" data-x="400" data-y="57" data-speed="0" data-start="2000" data-easing="Sine.easeOut"><img src="<?=Yii::app()->baseUrl; ?>/images/art/slider-bulb.jpg" alt="" /></div>
-                <div class="caption bold white-bg sfr" data-x="550" data-y="215" data-speed="500" data-start="2000" data-easing="Sine.easeOut">Think unique. Be unique.</div>
-                <div class="caption lite white-bg sfr" data-x="550" data-y="280" data-speed="500" data-start="2500" data-easing="Sine.easeOut">Make a difference using Moose.</div>
-                <div class="caption sfr" data-x="550" data-y="340" data-speed="500" data-start="3000" data-easing="Sine.easeOut"><a href="#" class="btn btn-large">Start Now</a></div>
+                <div class="caption sft bold opacity-bg" data-x="550" data-y="215" data-speed="500" data-start="2000" data-easing="Sine.easeOut">Эстафета вузовской науки </div>
+                <div class="caption sfr bold opacity-bg" data-x="550" data-y="280" data-speed="500" data-start="2500" data-easing="Sine.easeOut">Используй свой шанс!</div>
+                <div class="caption sfb" data-x="550" data-y="340" data-speed="500" data-start="3000" data-easing="Sine.easeOut"><a href="<?=Yii::app()->createUrl('ShowCase/login')?>" class="btn btn-large">Регистрация</a></div>
             </li>
             <li data-transition="fade"> <img src="<?=Yii::app()->baseUrl; ?>/images/art/map4.png" alt="" />
                 <div class="caption sft" data-x="50" data-y="90" data-speed="900" data-start="500" data-easing="Sine.easeOut"><img src="<?=Yii::app()->baseUrl; ?>/images/art/slider-back.png" alt="" /></div>
                 <div class="caption fade" data-x="35" data-y="440" data-speed="500" data-start="300" data-easing="Sine.easeOut"><img src="<?=Yii::app()->baseUrl; ?>/images/art/slider-shadow.png" alt="" /></div>
                 <div class="caption sft" data-x="35" data-y="97" data-speed="900" data-start="800" data-easing="Sine.easeOut"><img src="<?=Yii::app()->baseUrl; ?>/images/art/slider-middle.png" alt="" /></div>
                 <div class="caption sft" data-x="60" data-y="105" data-speed="900" data-start="1300" data-easing="Sine.easeOut"><img src="<?=Yii::app()->baseUrl; ?>/images/art/slider-first.png" alt="" /></div>
-                <div class="caption sft bold opacity-bg" data-x="620" data-y="205" data-speed="500" data-start="2000" data-easing="Sine.easeOut">Showcase your business</div>
-                <div class="caption sfr bold opacity-bg" data-x="620" data-y="270" data-speed="500" data-start="2500" data-easing="Sine.easeOut">with editable PSD mockups</div>
-                <div class="caption sfb" data-x="620" data-y="335" data-speed="500" data-start="3000" data-easing="Sine.easeOut"><a href="#" class="btn btn-large">Purchase Now</a></div>
+                <div class="caption sfr bold opacity-bg" data-x="620" data-y="270" data-speed="500" data-start="2500" data-easing="Sine.easeOut">В эстафете уже 99999 проектов! </div>
+                <div class="caption sfb" data-x="620" data-y="335" data-speed="500" data-start="3000" data-easing="Sine.easeOut"><a href="<?=Yii::app()->createUrl('ShowCase/statistics')?>" class="btn btn-large">Статистика</a></div>
             </li>
-            <li data-transition="fade"> <img src="<?=Yii::app()->baseUrl; ?>/images/art/slider-bg3.jpg" alt="" />
-                <div class="caption sfl" data-x="450" data-y="115" data-speed="900" data-start="500" data-easing="Sine.easeOut"><img src="<?=Yii::app()->baseUrl; ?>/images/art/slider-browser.png" alt="" /></div>
-                <div class="caption sfl" data-x="800" data-y="180" data-speed="900" data-start="900" data-easing="Sine.easeOut"><img src="<?=Yii::app()->baseUrl; ?>/images/art/slider-tablet.png" alt="" /></div>
-                <div class="caption sfl" data-x="980" data-y="290" data-speed="900" data-start="1600" data-easing="Sine.easeOut"><img src="<?=Yii::app()->baseUrl; ?>/images/art/slider-mobile.png" alt="" /></div>
-                <div class="caption sfl bold opacity-bg" data-x="35" data-y="180" data-speed="500" data-start="1500" data-easing="Sine.easeOut">100% Responsive</div>
-                <div class="caption sfr bold opacity-bg" data-x="35" data-y="245" data-speed="500" data-start="2000" data-easing="Sine.easeOut">Retina-ready design</div>
-                <div class="caption sfb" data-x="35" data-y="310" data-speed="500" data-start="2500" data-easing="Sine.easeOut"><a href="#" class="btn btn-green btn-large">Get in Touch</a></div>
-            </li>
+<!--            <li data-transition="fade"> <img src="--><?//=Yii::app()->baseUrl; ?><!--/images/art/slider-bg3.jpg" alt="" />-->
+<!--                <div class="caption sfl" data-x="450" data-y="115" data-speed="900" data-start="500" data-easing="Sine.easeOut"><img src="--><?//=Yii::app()->baseUrl; ?><!--/images/art/slider-browser.png" alt="" /></div>-->
+<!--                <div class="caption sfl" data-x="800" data-y="180" data-speed="900" data-start="900" data-easing="Sine.easeOut"><img src="--><?//=Yii::app()->baseUrl; ?><!--/images/art/slider-tablet.png" alt="" /></div>-->
+<!--                <div class="caption sfl" data-x="980" data-y="290" data-speed="900" data-start="1600" data-easing="Sine.easeOut"><img src="--><?//=Yii::app()->baseUrl; ?><!--/images/art/slider-mobile.png" alt="" /></div>-->
+<!--                <div class="caption sfl bold opacity-bg" data-x="35" data-y="180" data-speed="500" data-start="1500" data-easing="Sine.easeOut">100% Responsive</div>-->
+<!--                <div class="caption sfr bold opacity-bg" data-x="35" data-y="245" data-speed="500" data-start="2000" data-easing="Sine.easeOut">Retina-ready design</div>-->
+<!--                <div class="caption sfb" data-x="35" data-y="310" data-speed="500" data-start="2500" data-easing="Sine.easeOut"><a href="#" class="btn btn-green btn-large">Get in Touch</a></div>-->
+<!--            </li>-->
             <li data-transition="fade"> <img src="<?=Yii::app()->baseUrl; ?>/images/art/slider-image22.jpg" alt="" />
-                <div class="caption sft bold white-bg" data-x="center" data-y="215" data-speed="500" data-start="500" data-easing="Sine.easeOut">Moose brings awesomeness</div>
-                <div class="caption sfb lite white-bg" data-x="center" data-y="281" data-speed="500" data-start="1000" data-easing="Sine.easeOut">A responsive template with clean and professional design</div>
-                <div class="caption sfb" data-x="center" data-y="339" data-speed="500" data-start="1500" data-easing="Sine.easeOut"><a href="#" class="btn btn-large">Purchase Now</a></div>
+                <div class="caption sft bold opacity-bg" data-x="center" data-y="215" data-speed="500" data-start="500" data-easing="Sine.easeOut">Медицинский форум </div>
+                <div class="caption sfb lite opacity-bg" data-x="center" data-y="281" data-speed="500" data-start="1000" data-easing="Sine.easeOut"><strong>MedWAYS</strong> - перспективные научные направления 2014</div>
+<!--                <div class="caption sfb" data-x="center" data-y="339" data-speed="500" data-start="1500" data-easing="Sine.easeOut"><a href="#" class="btn btn-large">Purchase Now</a></div>-->
             </li>
         </ul>
         <div class="tp-bannertimer tp-bottom"></div>
