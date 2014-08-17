@@ -16,7 +16,7 @@
     <file path="/Proto.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408285505155" ignored="false" />
     <file path="/Autentification_main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406121974522" ignored="false" />
     <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408165144511" ignored="false" />
-    <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408282940770" ignored="false" />
+    <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408286747504" ignored="false" />
     <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408286448219" ignored="false" />
     <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407920772767" ignored="false" />
     <file path="/login.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407829978865" ignored="false" />
@@ -121,10 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style_adoptive.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style_adoptive.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style_adoptive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="689" column="0" selection-start="13907" selection-end="13907" vertical-scroll-proportion="0.3927739">
+            <state line="689" column="0" selection-start="13907" selection-end="13907" vertical-scroll-proportion="-13.48">
               <folding />
             </state>
           </provider>
@@ -169,7 +169,7 @@
       <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="47" selection-start="1842" selection-end="1842" vertical-scroll-proportion="-15.692307">
+            <state line="48" column="47" selection-start="1842" selection-end="1842" vertical-scroll-proportion="-17.653847">
               <folding>
                 <marker date="1408276234688" expanded="true" signature="3533:4260" placeholder="..." />
                 <marker date="1408276234688" expanded="true" signature="3585:3858" placeholder="..." />
@@ -211,10 +211,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="33" selection-start="175" selection-end="175" vertical-scroll-proportion="-2.3333333">
+            <state line="34" column="82" selection-start="3850" selection-end="3850" vertical-scroll-proportion="0.64346766">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -256,9 +256,9 @@
         <option value="$PROJECT_DIR$/adminka/js/MyEditsToEditable.js" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
         <option value="$PROJECT_DIR$/css/style_adoptive.css" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
       </list>
     </option>
   </component>
@@ -640,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="67" selection-start="309" selection-end="309" vertical-scroll-proportion="-5.8846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="103" column="110" selection-start="4464" selection-end="4464" vertical-scroll-proportion="-16.346153">
@@ -691,9 +684,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="278" selection-start="2797" selection-end="2797" vertical-scroll-proportion="-15.038462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style_adoptive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="689" column="0" selection-start="13907" selection-end="13907" vertical-scroll-proportion="-13.48">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="47" selection-start="1842" selection-end="1842" vertical-scroll-proportion="-15.692307">
+        <state line="48" column="47" selection-start="1842" selection-end="1842" vertical-scroll-proportion="-17.653847">
           <folding>
             <marker date="1408276234688" expanded="true" signature="3533:4260" placeholder="..." />
             <marker date="1408276234688" expanded="true" signature="3585:3858" placeholder="..." />
@@ -734,6 +741,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="67" selection-start="309" selection-end="309" vertical-scroll-proportion="-5.8846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="352" column="14" selection-start="15314" selection-end="15314" vertical-scroll-proportion="-26.423077">
@@ -743,26 +757,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="33" selection-start="175" selection-end="175" vertical-scroll-proportion="-2.3333333">
+        <state line="34" column="82" selection-start="3850" selection-end="3850" vertical-scroll-proportion="0.64346766">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="278" selection-start="2797" selection-end="2797" vertical-scroll-proportion="-15.038462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style_adoptive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="689" column="0" selection-start="13907" selection-end="13907" vertical-scroll-proportion="0.3927739">
-          <folding />
         </state>
       </provider>
     </entry>
