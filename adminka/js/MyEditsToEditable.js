@@ -19,7 +19,7 @@ $(document).ready(function () {
 
         $('a[rel^="F_NAME"]').editable('toggleDisabled');
         $('a[rel^="L_NAME"]').editable('toggleDisabled');
-        $('a[rel^="S_NAME_1"]').editable('toggleDisabled');
+        $('a[rel^="S_NAME"]').editable('toggleDisabled');
         $('a[rel^="BIRTH_DATE"]').editable('toggleDisabled');
         $('a[rel^="PHONE"]').editable('toggleDisabled');
         $('a[rel^="SEX"]').editable('toggleDisabled');
