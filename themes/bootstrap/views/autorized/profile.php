@@ -44,8 +44,8 @@ if(isset($data) && !is_null($data)){
 						<div class="col-xs-12 col-sm-12">
                             <div class="row image-block">
                                 <div class="col-xs-5 col-sm-4 col-sm-offset-1 col-md-12 name">
-                                    <h3><?=(isset($data))?($data[0]['L_NAME']):('')?></br>
-                                        <small><?=(isset($data))?($data[0]['F_NAME']):('')?></small>
+                                    <h3><?=(isset($data))?($data[0]['F_NAME']):('')?></br>
+                                        <small><?=(isset($data))?($data[0]['L_NAME']):('')?> <?=(isset($data))?($data[0]['S_NAME']):('')?></small>
                                     </h3></div>
                                 <div class="col-xs-7 col-sm-6 col-md-12">
                                     <ul class="vcard-details">
