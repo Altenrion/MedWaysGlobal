@@ -187,8 +187,8 @@ h1.post-title {
     border-bottom: 1px solid #e5e5e5;
 }
 .inner {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .lead {
     font-size: 18px;
@@ -3655,7 +3655,7 @@ input:focus:-ms-input-placeholder {
 	    width: 910px
 	}
 	.parallax .inner {
-	    width: 50%
+	    width: 80%
 	}
 	.items.col4 {
 	    margin-left: -10px;

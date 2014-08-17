@@ -71,6 +71,7 @@
 
 <div id="fourth" class="parallax">
     <div class="container inner text-center">
+        <div class="col-sm-9">
         <div class="row">
             <div class="col-sm-9 ">
                 <p class="lead tp3 bm0 text-center">Скачать все локальные документы одним архивом</p>
@@ -78,6 +79,7 @@
             <div class="col-sm-3"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=local_docs.rar" class="btn bm0"><i class="icon-download"></i> Скачать</a></div>
         </div>
         <div class="row" id="PLATF"></div>
+        </div>
     </div>
 </div>
 
@@ -217,6 +219,7 @@
 
 <div id="fourth" class="parallax">
     <div class="container inner text-center">
+        <div class="col-sm-9">
         <div class="row">
             <div class="col-sm-9 ">
                 <p class="lead tp3 bm0 text-center">Скачать информацию о платформах одним архивом</p>
@@ -224,6 +227,7 @@
             <div class="col-sm-3"><a href="#" class="btn bm0"><i class="icon-download"></i> Скачать</a></div>
         </div>
         <div class="row" id="NPB"></div>
+    </div>
     </div>
 </div>
 
@@ -339,11 +343,13 @@
 
 <div id="fourth" class="parallax">
     <div class="container inner text-center">
+        <div class="col-sm-9">
         <div class="row">
             <div class="col-sm-9">
                 <p class="lead tp3 bm0 text-center">Скачать все документы нормативно-правовой базы  </p>
             </div>
             <div class="col-sm-3"><a href="#" class="btn bm0"> Скачать</a></div>
+        </div>
         </div>
     </div>
 </div>

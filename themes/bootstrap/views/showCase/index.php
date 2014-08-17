@@ -168,61 +168,24 @@ $this->breadcrumbs=array(
         <div id="second" class="parallax">
             <div class="container inner text-center">
                 <div class="row">
-                    <div class="col-sm-9">
-                        <p class="lead tp3 bm0 text-center">Мы верим в ваши силы! Примите участие в эстафете прямо сейчас. </p>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p class="lead tp3 bm0 text-center">Мы верим в ваши силы! Примите участие в эстафете прямо сейчас. </p>
+                            </div>
+                            <div class="col-sm-12"><a href="<?=Yii::app()->createUrl('ShowCase/login')?>" class="btn bm0">Регистрация</a></div>
+                        </div>
                     </div>
-                    <div class="col-sm-3"><a href="<?=Yii::app()->createUrl('ShowCase/login')?>" class="btn bm0">Регистрация</a></div>
+
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p class="lead tp3 bm0 text-center">Следите в реальном времени за шансом на победу ! </p>
+                            </div>
+                            <div class="col-sm-12"><a href="<?=Yii::app()->createUrl('ShowCase/statistics')?>" class="btn bm0">Статистика</a></div>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
-        </div>
 
-
-    <div class="container inner">
-        <h3 class="section-title bm20"> Эксперты </h3>
-
-        <p class="just bm20">В центральную экспертную комиссию войдут руководители и представители рабочих групп научных платформ, представители профильных министерств, представители государственных фондов и коммерческих организаций, представители промышленного сектора и бизнеса.</p>
-
-        <div class="row">
-            <div class="col-sm-3">
-                <figure><img src="http://lorempixel.com/270/270/cats/10"" alt=""></figure>
-                <div class="bordered no-top-border text-center member">
-                    <h3>Connor Gibson <span class="meta">Эксперт</span></h3>
-
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <figure><img src="http://lorempixel.com/270/270/cats/3" alt=""></figure>
-                <div class="bordered no-top-border text-center member">
-                    <h3>Pearce Frye <span class="meta">Эксперт</span></h3>
-
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <figure><img src="http://lorempixel.com/270/270/cats/4" alt=""></figure>
-                <div class="bordered no-top-border text-center member">
-                    <h3>Lou Bloxham <span class="meta">Эксперт</span></h3>
-
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <figure><img src="http://lorempixel.com/270/270/cats/9" alt=""></figure>
-                <div class="bordered no-top-border text-center member">
-                    <h3>Lou Bloxham <span class="meta">Эксперт</span></h3>
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-</div>
-<div id="second" class="parallax">
-    <div class="container inner text-center">
-        <div class="row">
-            <div class="col-sm-9">
-                <p class="lead tp3 bm0 text-center">Следите в реальном времени за шансом на победу ! </p>
-            </div>
-            <div class="col-sm-3"><a href="<?=Yii::app()->createUrl('ShowCase/statistics')?>" class="btn bm0">Статистика</a></div>
-        </div>
-    </div>
-</div>
