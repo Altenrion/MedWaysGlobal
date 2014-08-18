@@ -158,9 +158,16 @@
         <div class="sidebox widget">
           <h3 class="section-title">Координаторы проректа</h3>
             <figure class="media-wrapper bm0"><img src="<?=Yii::app()->baseUrl?>/images/art/p5-f.jpg" alt=""></figure>
-            <div class="bordered no-top-border text-center">
-                <h3>Branding</h3>
-                <p>Sed posuere consectetur est at lobortis. Donec ullamcorper metus auctor fringi nullam quis.</p>
+            <div class="bordered no-top-border ">
+                <h3>проведения регионального этапа </h3>
+                <p>ГБОУ ВПО Сибирский государственный медицинский университет Минздрава России
+                </p>
+                <address>
+                    <strong>Центр трансфера технологий</strong><br>
+                    Томск, Московский тракт, д. 2<br>
+                    <abbr title="Руководитель департамента">Рудко Татьяна Владимировна : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">okr@ssmu.ru</a><br>
+                    <abbr title="Руководитель департамента">Зима Анастасия Павловна : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">strateg@ssmu.ru</a>
+                </address>
             </div>
           <!-- /.post-list -->
         </div>
@@ -169,9 +176,16 @@
 
           <div class="sidebox widget">
               <figure class="media-wrapper bm0"><img src="<?=Yii::app()->baseUrl?>/images/art/p5-f.jpg" alt=""></figure>
-              <div class="bordered no-top-border text-center">
-                  <h3>Branding</h3>
-                  <p>Sed posuere consectetur est at lobortis. Donec ullamcorper metus auctor fringi nullam quis.</p>
+              <div class="bordered no-top-border ">
+                  <h3>проведения финального этапа и техническая поддержка</h3>
+                  <p>ГБОУ ВПО Первый Московский государственный медицинский университет имени И.М. Сеченова Минздрава России
+                  </p>
+                  <address>
+                      <strong>Университетский технопарк</strong><br>
+                      Москва, Трубецкая ул., д.8, стр.2<br>
+                      <abbr title="Руководитель департамента">Кузнецова Юлия Евгеньевна : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">kuznetsova.yulia@bk.ru</a><br>
+                      <abbr title="Руководитель департамента">Барышев Никита Владимирович : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">administration@altenrion.ru</a>
+                  </address>
               </div>
               <!-- /.post-list -->
           </div>

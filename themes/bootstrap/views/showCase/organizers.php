@@ -29,21 +29,52 @@
                         <li>
                             <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
                             <div class="meta">
-                                <h6><a href="#@#"> Lorem ipsum dolor sit amet, consectetur adipisicing.  </a></h6>
-                                <em>3th Oct 2012</em> </div>
+                                <h6><a href="#@#"> Министерство здравоохранения Российской Федерации  </a></h6>
+                                <em>Россия, Москва</em> </div>
                         </li>
                         <li>
                             <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
                             <div class="meta">
-                                <h6><a href="#@#"> Lorem ipsum dolor sit amet, consectetur adipisicing. </a></h6>
-                                <em>28th Sep 2012</em> </div>
+                                <h6><a href="#@#"> Министерство образования и науки Российской Федерации </a></h6>
+                                <em>Россия, Москва</em> </div>
                         </li>
                         <li>
                             <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
                             <div class="meta">
-                                <h6><a href="#@#"> Lorem ipsum dolor sit amet, consectetur adipisicing. </a></h6>
-                                <em>15th Aug 2012</em> </div>
+                                <h6><a href="#@#"> Совет ректоров медицинских и фармацевтических вузов России </a></h6>
+                                <em>Россия</em> </div>
                         </li>
+                        <li>
+                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
+                            <div class="meta">
+                                <h6><a href="#@#"> Российская академия наук </a></h6>
+                                <em>Россия, Москва</em> </div>
+                        </li>
+                        <li>
+                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
+                            <div class="meta">
+                                <h6><a href="#@#"> ГБОУ ВПО Первый Московский государственный медицинский университет имени И.М. Сеченова Минздрава России </a></h6>
+                                <em>Россия, Москва</em> </div>
+                        </li>
+                        <li>
+                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
+                            <div class="meta">
+                                <h6><a href="#@#"> Всероссийская общественная организация «Медицинская Лига России» </a></h6>
+                                <em>Россия</em> </div>
+                        </li>
+                        <li>
+                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
+                            <div class="meta">
+                                <h6><a href="#@#"> Общероссийская общественная организация «Российский союз молодых ученых» </a></h6>
+                                <em>Россия</em> </div>
+                        </li>
+                        <li>
+                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
+                            <div class="meta">
+                                <h6><a href="#@#"> МОО «Общество персонализированной медицины» </a></h6>
+                                <em>Россия, Москва</em> </div>
+                        </li>
+
                     </ul>
                     <!-- /.post-list -->
                 </div>
@@ -53,20 +84,17 @@
             <div class="col-sm-6">
                 <h3 class="section-title bm30">Базовые вузы</h3>
 
-                            <ul class="circled">
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil?</li>
-                                <li>Aliquid blanditiis cupiditate dolores odit quam recusandae veritatis! Vitae?</li>
-                                <li>Aliquid doloribus nemo nisi officia provident quasi, rem sunt.</li>
-                                <li>Consectetur, debitis dolor doloribus eveniet labore quae quaerat rem!</li>
-                                <li>Ad deserunt dolorum magnam possimus quidem quo repudiandae sit?</li>
-                                <li>Adipisci consectetur ducimus illum, mollitia obcaecati omnis provident voluptate.
-                                </li>
-                                <li>Aperiam debitis est expedita molestiae molestias nostrum reiciendis tenetur.</li>
-                                <li>Ad assumenda est vero. Modi non provident reprehenderit velit.</li>
-                                <li>Ab assumenda corporis cum, officia quibusdam quis repellat voluptate!</li>
-                                <li>Cupiditate deleniti dignissimos dolores enim fugit neque quam repudiandae.</li>
-                                <li>Alias, autem sed. Deleniti deserunt eius error facere similique?</li>
-                            </ul>
+                <ul class="circled">
+
+                    <li>Центральный федеральный округ – ГБОУ ВПО Рязанский государственный медицинский университет имени академика И.П. Павлова Минздрава России</li>
+                    <li>Южный федеральный округ – ГБОУ ВПО Кубанский государственный медицинский университет Минздрава России</li>
+                    <li>Северо-Западный федеральный округ – ГБОУ ВПО Санкт-Петербургский государственный медицинский университет имени академика И.П. Павлова Минздрава России</li>
+                    <li>Дальневосточный федеральный округ – ГБОУ ВПО Дальневосточный государственный медицинский университет Минздрава России</li>
+                    <li>Сибирский федеральный округ – ГБОУ ВПО Красноярский государственный Медицинский университет имени профессора В.Ф. Войно-Ясенецкого Минздрава России</li>
+                    <li>Уральский федеральный округ – ГБОУ ВПО Челябинская государственная медицинская академия Минздрава России</li>
+                    <li>Приволжский федеральный округ – ГБОУ ВПО  Самарский государственный медицинский университет Минздрава России</li>
+                    <li>Северо-Кавказский федеральный округ – ГБОУ ВПО Ставропольский государственный медицинский университет Минздрава России</li>
+                </ul>
 
             </div>
 

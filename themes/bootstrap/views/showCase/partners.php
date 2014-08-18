@@ -23,21 +23,10 @@
                         <li>
                             <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
                             <div class="meta">
-                                <h6><a href="#@#"> Lorem ipsum dolor sit amet, consectetur adipisicing.  </a></h6>
-                                <em>3th Oct 2012</em> </div>
+                                <h6><a href="#@#"> Сколково  </a></h6>
+                                <em>Россия, Москва</em> </div>
                         </li>
-                        <li>
-                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
-                            <div class="meta">
-                                <h6><a href="#@#"> Lorem ipsum dolor sit amet, consectetur adipisicing. </a></h6>
-                                <em>28th Sep 2012</em> </div>
-                        </li>
-                        <li>
-                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
-                            <div class="meta">
-                                <h6><a href="#@#"> Lorem ipsum dolor sit amet, consectetur adipisicing. </a></h6>
-                                <em>15th Aug 2012</em> </div>
-                        </li>
+
                     </ul>
                     <!-- /.post-list -->
                 </div>
@@ -80,14 +69,14 @@
                     <!-- /.form-container -->
 
                 <div class="sidebox widget">
-                    <h3>Address</h3>
-                    <p>Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur.</p>
+                    <h3>проведения мероприятия и техническая поддержка</h3>
+                    <p>ГБОУ ВПО Первый Московский государственный медицинский университет имени И.М. Сеченова Минздрава России
+                    </p>
                     <address>
-                        <strong>Moose, Inc.</strong><br>
-                        Moon Street Light Avenue, 14/05 <br>
-                        Jupiter, JP 80630<br>
-                        <abbr title="Phone">P:</abbr> (123) 456-7890 <br>
-                        <abbr title="Email">E:</abbr> <a href="mailto:#">first.last@email.com</a>
+                        <strong>Университетский технопарк</strong><br>
+                        Москва, Трубецкая ул., д.8, стр.2<br>
+                        <abbr title="Руководитель департамента">Кузнецова Юлия Евгеньевна : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">kuznetsova.yulia@bk.ru</a><br>
+                        <abbr title="Руководитель департамента">Барышев Никита Владимирович : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">administration@altenrion.ru</a>
                     </address>
                 </div>
 
