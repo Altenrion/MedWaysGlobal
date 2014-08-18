@@ -52,5 +52,8 @@
     #upload-wrapper {
         padding-left: 10px;
     }
+    input#imageInput {
+        width: 250px;
+    }
 
 }
