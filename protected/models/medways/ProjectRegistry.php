@@ -131,12 +131,12 @@ class ProjectRegistry extends CActiveRecord
 
 		$criteria->compare('ID_PROJECT',$this->ID_PROJECT);
 		$criteria->compare('ID_REPRESENTATIVE',$this->ID_REPRESENTATIVE);
-		$criteria->compare('ID_STAGE',$this->ID_STAGE);
+		    $criteria->compare('ID_STAGE',$this->ID_STAGE);
 		$criteria->compare('NAME',$this->NAME,true);
 		$criteria->compare('DESCR_PROJECT',$this->DESCR_PROJECT,true);
-		$criteria->compare('ROADMAP_PROJECT',$this->ROADMAP_PROJECT,true);
-		$criteria->compare('ID_PHASE',$this->ID_PHASE);
-		$criteria->compare('ID_BUDGET',$this->ID_BUDGET);
+		    $criteria->compare('ROADMAP_PROJECT',$this->ROADMAP_PROJECT,true);
+		    $criteria->compare('ID_PHASE',$this->ID_PHASE);
+		    $criteria->compare('ID_BUDGET',$this->ID_BUDGET);
 		$criteria->compare('EXECUTERS_NUM',$this->EXECUTERS_NUM);
 		$criteria->compare('UN_THIRTY_FIVE',$this->UN_THIRTY_FIVE);
 		$criteria->compare('STUDY',$this->STUDY);
@@ -147,7 +147,7 @@ class ProjectRegistry extends CActiveRecord
 		$criteria->compare('YEAR_BUDGET',$this->YEAR_BUDGET);
 		$criteria->compare('LONG_BUDGET',$this->LONG_BUDGET);
 		$criteria->compare('CO_FINANCING',$this->CO_FINANCING);
-		$criteria->compare('PRIVACY_P',$this->PRIVACY_P);
+		    $criteria->compare('PRIVACY_P',$this->PRIVACY_P);
 		$criteria->compare('FIRST_LAVEL_APPROVAL',$this->FIRST_LAVEL_APPROVAL);
 		$criteria->compare('SECOND_LAVEL_RATING',$this->SECOND_LAVEL_RATING);
 		$criteria->compare('THIRD_LAVEL_RATING',$this->THIRD_LAVEL_RATING);
@@ -167,4 +167,40 @@ class ProjectRegistry extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public function findProjectData($id){
+        $data = Yii::app()->db->createCommand("SELECT
+                proj.ID_PROJECT as id,
+                proj.NAME,
+                proj.DESCR_PROJECT,
+                proj.EXECUTERS_NUM,
+                proj.UN_THIRTY_FIVE,
+                proj.STUDY,
+                proj.PUBLICATIONS,
+                proj.FORIN_PUBL,
+                proj.START_YEAR,
+                proj.END_YEAR,
+                proj.YEAR_BUDGET,
+                proj.LONG_BUDGET,
+                proj.CO_FINANCING,
+                proj.FIRST_LAVEL_APPROVAL,
+                proj.SECOND_LAVEL_RATING,
+                proj.THIRD_LAVEL_RATING,
+                proj.ROADMAP_PROJECT,
+                (SELECT stage.NAME_STAGE FROM m_w_stage as stage WHERE stage.ID_STAGE = proj.ID_STAGE) AS ID_STAGE,
+
+                (SELECT phase.NAME FROM m_w_phase as phase WHERE phase.ID_PHASE = proj.ID_PHASE) AS ID_PHASE,
+                (SELECT budget.NAME FROM m_w_budget as budget WHERE budget.ID_BUDGET = proj.ID_BUDGET) AS ID_BUDGET
+
+
+                FROM m_w_project_registry as proj
+                WHERE proj.ID_REPRESENTATIVE = $id")->queryAll();
+
+        return $data;
+
+    }
+
+
+
+
 }

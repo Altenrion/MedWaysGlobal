@@ -38,7 +38,7 @@ if(isset($data) && !is_null($data)){
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 image-block">
                             <a data-toggle="modal" href="#myModal" class="">
-							    <img class="profile-image" height="200" width="200" src="<?=Yii::app()->baseUrl?>/images/badge/<?=(isset($data) && !is_null($data[0]['AVATAR']))?($data[0]['AVATAR']):('new.png')?>">
+							    <img class="profile-image" height="200" width="200" src="<?=Yii::app()->baseUrl?>/images/avatars/<?=(isset($data) && !is_null($data[0]['AVATAR']))?($data[0]['AVATAR']):('new.png')?>">
                             </a>
                         </div>
 						<div class="col-xs-12 col-sm-12">
@@ -391,22 +391,38 @@ if(isset($data) && !is_null($data)){
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                    <h4 class="modal-title">Выберите фотографию</h4>
+                                    <h4 class="modal-title">Выберите фотографию</h4> 
                                 </div>
                                 <div class="modal-body">
-                                    <form role="form">
-                                        <div class="form-group">
-                                            <label for="exampleInputFile"> </label>
-                                            <input type="file" id="exampleInputFile">
-                                            <p class="help-block">Выберите фотографию для аватара. Пропорции изображения 50х50 . Рекомендуемое разрешение кадра :  300 x 300 - 500 x 500 px. </p>
+                                    <div id="upload-wrapper">
+                                        <div align="center">
+                                            <h3>Загрузка персонального изображения</h3>
+                                            <form action="<?=Yii::app()->createUrl('Images/upload')?>" method="post" enctype="multipart/form-data" id="MyUploadForm">
+                                                <input name="image_file" id="imageInput" type="file" />
+                                                <input type="submit"  id="submit-btn" value="Upload" />
+                                                <img src="images/ajax-loader.gif" id="loading-img" style="display:none;" alt="Please Wait"/>
+                                            </form>
+                                            <div id="output"></div>
                                         </div>
+                                    </div>
 
-                                        <button type="submit" class="btn btn-default">Загрузить</button>
-                                    </form>
+
+
+
+
+<!--                                    <form role="form">-->
+<!--                                        <div class="form-group">-->
+<!--                                            <label for="exampleInputFile"> </label>-->
+<!--                                            <input type="file" id="exampleInputFile">-->
+<!--                                            <p class="help-block">Выберите фотографию для аватара. Пропорции изображения 50х50 . Рекомендуемое разрешение кадра :  300 x 300 - 500 x 500 px. </p>-->
+<!--                                        </div>-->
+<!---->
+<!--                                        <button type="submit" class="btn btn-default">Загрузить</button>-->
+<!--                                    </form>-->
                                 </div>
                                 <div class="modal-footer">
                                     <a href="#" data-dismiss="modal" class="btn">Закрыть</a>
-                                    <a href="#" class="btn btn-primary">Сохранить</a>
+                                    <a href="#" id="RebootAva" class="btn btn-primary">Применить</a>
                                 </div>
                             </div>
                         </div>
@@ -425,4 +441,6 @@ $base_url = Yii::app()->baseUrl;
 $cs = Yii::app()->getClientScript();
 $cs->registerScriptFile( $base_url.'/assets/3160b985/js/bootstrap-datetimepicker.js', CClientScript::POS_END);
 $cs->registerScriptFile($base_url.'/adminka/js/MyEditsToEditable.js', CClientScript::POS_END);
+$cs->registerScriptFile($base_url.'/adminka/js/jquery.form.min.js', CClientScript::POS_END);
+$cs->registerScriptFile($base_url.'/adminka/js/avatar_upload.js', CClientScript::POS_END);
 ?>

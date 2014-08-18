@@ -25,6 +25,7 @@
  * @property integer $AKTIV_KEY
  * @property integer $REG_DATE
  * @property string $password
+ * @property string $AVATAR
  *
  * The followings are the available model relations:
  * @property ProjectRegistry[] $projectRegistries
@@ -61,6 +62,7 @@ class Users extends CActiveRecord
 			array('F_NAME, L_NAME, S_NAME, EMAIL, roles', 'length', 'max'=>50),
 			array('PHONE', 'length', 'max'=>50),
 			array('SEX', 'length', 'max'=>2 ),
+            array('AVATAR', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
 
             array('BIRTH_DATE', 'date', 'format'=>'yyyy-M-d'),
 			array('DEGREE, ACADEMIC_TITLE, W_POSITION', 'length', 'max'=>200),

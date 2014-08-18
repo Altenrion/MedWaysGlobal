@@ -27,6 +27,7 @@
 
     <!--Mine Customs -->
     <link href="<?=Yii::app()->baseUrl?>/adminka/css/stylings.css" rel="stylesheet">
+    <link href="<?=Yii::app()->baseUrl?>/adminka/css/avatar_upload.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="<?=Yii::app()->baseUrl?>/adminka/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">

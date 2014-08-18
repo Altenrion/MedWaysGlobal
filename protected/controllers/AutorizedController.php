@@ -15,7 +15,15 @@ class AutorizedController extends Controller
 
 	public function actionProject()
 	{
-		$this->render('project');
+        $model = new ProjectRegistry;
+        if(!Yii::app()->user->isGuest){
+            $data = $model->findProjectData(Yii::app()->user->id);
+        }
+
+        $this->render('project',array(
+            'data'=>$data,
+            'model'=>$model,
+        ));
 	}
 
 	public function actionProjectStatistics()
@@ -34,6 +42,11 @@ class AutorizedController extends Controller
 	}
 
 
+    public function actionUpdateProject(){
+        $edit = new EditableSaver('ProjectRegistry');
+        $edit->scenario = 'update';
+        $edit->update();
+    }
     public function actionUpdateProfile(){
         $edit = new EditableSaver('Users');
         $edit->scenario = 'update';
@@ -55,6 +68,7 @@ class AutorizedController extends Controller
 
 
 
+
     public function actionGetSpecialities(){
         echo CJSON::encode(Editable::source(Speciality::model()->findAll(), 'ID_SPECIALITY', 'NAME'));
     }
@@ -63,6 +77,9 @@ class AutorizedController extends Controller
     }
     public function actionGetDistricts(){
         echo CJSON::encode(Editable::source(District::model()->findAll(), 'ID_DISTRICT', 'NAME'));
+    }
+    public function actionGetStages(){
+        echo CJSON::encode(Editable::source(District::model()->findAll(), 'ID_STAGE', 'NAME_STAGE'));
     }
 
 }
