@@ -9,6 +9,9 @@
 	border-radius: 10px;
 	box-shadow: 1px 1px 3px #AAA;
 }
+
+
+
 #upload-wrapper h3 {
 	padding: 0px 0px 10px 0px;
 	margin: 0px 0px 20px 0px;
@@ -22,6 +25,8 @@
 	border-radius: 5px;
     float:left;
 }
+
+
 #upload-wrapper #submit-btn {
 	border: none;
 	padding: 10px;
@@ -36,4 +41,16 @@
 #output img {
 	border: 1px solid #DDD;
 	padding: 5px;
+}
+
+
+@media (max-width:500px){
+    #upload-wrapper input[type=file] {
+        float:left;
+
+    }
+    #upload-wrapper {
+        padding-left: 10px;
+    }
+
 }
