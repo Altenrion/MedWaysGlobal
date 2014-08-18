@@ -41,6 +41,28 @@ class Users extends CActiveRecord
 	 * @return string the associated database table name
 	 */
 
+    private $_old_password;
+
+    protected function afterFind() // при чтении из базы
+    {
+        $this->_old_password = $this->password;
+        parent::afterFind();
+    }
+
+    protected function beforeSave()
+    {
+        if (parent::beforeSave())
+        {
+            if ($this->password !== $this->_old_password)
+            {
+//                $this->salt = $this->generateSalt();
+                $this->password = $this->encrypting($this->password);
+            }
+            return true;
+        }
+        else
+            return false;
+    }
 
 
 
@@ -62,8 +84,9 @@ class Users extends CActiveRecord
 			array('F_NAME, L_NAME, S_NAME, EMAIL, roles', 'length', 'max'=>50),
 			array('PHONE', 'length', 'max'=>50),
 			array('SEX', 'length', 'max'=>2 ),
-            array('AVATAR', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
-
+//            array('AVATAR', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+            array('password','unsafe','on'=>'update'),
+            array('AVATAR','safe','on'=>'update'),
             array('BIRTH_DATE', 'date', 'format'=>'yyyy-M-d'),
 			array('DEGREE, ACADEMIC_TITLE, W_POSITION', 'length', 'max'=>200),
 			// The following rule is used by search().
@@ -201,6 +224,8 @@ class Users extends CActiveRecord
         parent::afterValidate();
         $this->password = $this->encrypting($this->password);
     }
+
+
 
 
     public function findProfileData($id){

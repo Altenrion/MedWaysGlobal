@@ -189,7 +189,7 @@ if(isset($data) && !is_null($data)){
                                             'type'      => 'select',
                                             'name'      => 'SEX',
                                             'pk'        => $data[0]['id'],
-                                            'text'      => CHtml::encode(($data[0]['SEX'])=='m'?'M':'Ж'),
+                                            'text'      => CHtml::encode(($data[0]['SEX'])=='1'?'M':'Ж'),
                                             'url'       => $this->createUrl('Autorized/updateProfile'),
                                             'source'    => Editable::source(array(1 => 'М', 2 => 'Ж')),
                                             'title'     => 'Enter title',

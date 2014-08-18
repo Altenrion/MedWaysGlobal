@@ -100,12 +100,20 @@ class ImagesController extends Controller{
                         Yii::app()->end();
                     }
 
-                    $user_update = $user->findByPk(Yii::app()->user->id);
-                    $user_update->AVATAR = $new_file_name;
-                    if(!$user_update->save()){
-                        echo "Error saving avatar";
-                        Yii::app()->end();
-                    }
+
+                    $_POST['pk']= Yii::app()->user->id;
+                    $_POST['name']= 'AVATAR';
+                    $_POST['value']= $new_file_name;
+
+                    $this->forward('Autorized/updateProfile',false);
+
+
+//                    $user_update = $user->findByPk(Yii::app()->user->id);
+//                    $user_update->AVATAR = $new_file_name;
+//                    if(!$user_update->save()){
+//                        echo "Error saving avatar";
+//                        Yii::app()->end();
+//                    }
 
                     /* We have succesfully resized and created thumbnail image
                     We can now output image to user's browser or store information in the database*/
