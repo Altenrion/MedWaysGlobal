@@ -153,6 +153,20 @@ $this->breadcrumbs=array(
                         </div>
 
                     </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle collapsed" data-parent="#accordion" href="#collapseFour"> Награждение финалистов  </a> </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" style="height: 0px;">
+                            <div class="panel-body">
+                                <p class="just">Очная презентация и церемония награждения лучших проектов состоится в рамках Медицинского Форума «MedWAYS – ПЕРСПЕКТИВНЫЕ НАУЧНЫЕ НАПРАВЛЕНИЯ – 2014» <a class="date">4-5 декабря 2014 года </a>в ГБОУ ВПО Первый МГМУ им. И.М. Сеченова Минздрава России.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
                 </div>
             </div>
         </div>
