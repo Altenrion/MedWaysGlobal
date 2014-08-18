@@ -120,8 +120,7 @@ class ImagesController extends Controller{
             }
         }
 
-        echo "Fail";
-        Yii::app()->end();
+        
     }
 
     #####  This function will proportionally resize image #####

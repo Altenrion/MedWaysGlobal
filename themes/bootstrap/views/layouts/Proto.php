@@ -111,40 +111,87 @@
         <div class="container inner">
             <div class="row">
                 <section class="col-sm-3 widget">
-                    <h3 class="section-title widget-title">Popular Posts</h3>
+                    <h3 class="section-title widget-title">Научные платформы</h3>
                     <ul class="post-list">
+
+
+                        Эндокринология
+                        Педиатрия
+                        Психиатрия и зависимости
+                        Иммунология
+                        Микробиология
+                        Фармакология
+                        Профилактическая среда
+                        Репродуктивное здоровье
+                        Регенеративная медицина
+                        Инвазивные технологии
+                        Инновационные фундаментальные технологии в медицине
+
+
                         <li>
-                            <h6><a href="blog-post.html">Vivamus sagittis lacus vel augue metus</a></h6>
-                            <em>3th Oct 2012</em> </li>
+                            <a href="#">Онкология</a>
+                        </li>
                         <li>
-                            <h6><a href="blog-post.html">Scelerisque nisl consectetur et</a></h6>
-                            <em>28th Sep 2012</em> </li>
+                            <a href="#">Кардиология и ангиология</a>
                         <li>
-                            <h6><a href="blog-post.html">Pellentesque ornare sem lacinia quam</a></h6>
-                            <em>15th Aug 2012</em> </li>
+                            <h6><a href="#">Неврология</a></h6>
                     </ul>
                     <!-- /.post-list -->
                 </section>
                 <!-- /.widget -->
                 <section class="col-sm-3 widget">
-                    <h3 class="section-title widget-title">About</h3>
-                    <p>Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-                    <p>Donec ullamcorper metus auctor fringi. Nullam quis risus eget.</p>
-                    <p>Vestibulum id ligula porta  euismod semper. Maecenas faucibus mollis.</p>
+                    <h3 class="section-title widget-title">О мероприятии</h3>
+                    <p>ЭСТАФЕТА ВУЗОВСКОЙ НАУКИ – проект федерального масштаба, основной целью которого является поддержка ведущих научных коллективов, осуществляющих исследовательскую деятельность в приоритетных направлениях развития медицинской науки, ориентированных на создание высокотехнологичных инновационных продуктов, обеспечивающих сохранение и укрепление здоровья населения;
+                        интеграция научно-инновационного опыта,  образовательной деятельности и лечебного процесса.</p>
                 </section>
                 <!-- /.widget -->
                 <section class="col-sm-3 widget">
-                    <h3 class="section-title widget-title">Tags</h3>
-                    <div class="tagcloud"> <a href="#" style="font-size: 9pt;">blogroll</a> <a href="#" style="font-size: 19pt;">daily</a> <a href="#" style="font-size: 9pt;">dialog</a> <a href="#" style="font-size: 9pt;">gallery</a> <a href="#" style="font-size: 10pt;">journal</a> <a href="#" style="font-size: 9pt;">link</a> <a href="#" style="font-size: 12pt;">motion</a> <a href="#" style="font-size: 9pt;">music</a> <a href="#" style="font-size: 20pt;">photo</a> <a href="#" style="font-size: 13pt;">professional</a> <a href="#" style="font-size: 16pt;">quotation</a> <a href="#" style="font-size: 9pt;">show</a> <a href="#" style="font-size: 15pt;">sound</a> <a href="#" style="font-size: 9pt;">tv</a> <a href="#" style="font-size: 9pt;">video</a> <a href="#" style="font-size: 9pt;">gift</a> <a href="#" style="font-size: 19pt;">label</a> <a href="#" style="font-size: 9pt;">christmas</a> <a href="#" style="font-size: 9pt;">holiday</a> <a href="#" style="font-size: 10pt;">fun</a> <a href="#" style="font-size: 9pt;">recipes</a> <a href="#" style="font-size: 12pt;">concert</a> <a href="#" style="font-size: 9pt;">drinks</a> <a href="#" style="font-size: 20pt;">apps</a> <a href="#" style="font-size: 13pt;">iphone</a> <a href="#" style="font-size: 16pt;">ipad</a> <a href="#" style="font-size: 9pt;">develop</a> <a href="#" style="font-size: 15pt;">marketing</a> <a href="#" style="font-size: 9pt;">strategy</a> <a href="#" style="font-size: 13pt;">food</a> <a href="#" style="font-size: 12pt;">typography</a> <a href="#" style="font-size: 9pt;">mobile</a> <a href="#" style="font-size: 15pt;">envato</a> <a href="#" style="font-size: 9pt;">icon</a></div>
+                    <h3 class="section-title widget-title">Научные платформы</h3>
+
+
+
+                    <div class="tagcloud">
+                        <a href="#" style="font-size: 12pt;">Онкология</a>
+                        <a href="#" style="font-size: 17pt;">Кардиология и ангиология, </a>
+                        <a href="#" style="font-size: 11pt;">Эндокринология</a>
+                        <a href="#" style="font-size: 11pt;">Неврология</a>
+                        <a href="#" style="font-size: 15pt;">Педиатрия</a>
+                        <a href="#" style="font-size: 10pt;">Психиатрия и зависимости,</a>
+                        <a href="#" style="font-size: 9pt;">Иммунология, Микробиология</a>
+                        <a href="#" style="font-size: 12pt;">Фармакология</a>
+                        <a href="#" style="font-size: 9pt;">Профилактическая среда</a>
+                        <a href="#" style="font-size: 15pt;">Репродуктивное здоровье</a>
+                        <a href="#" style="font-size: 13pt;">Регенеративная медицина</a>
+                        <a href="#" style="font-size: 11pt;">Регенеративная медицина</a>
+                        <a href="#" style="font-size: 9pt;">Инвазивные технологии</a>
+                        <a href="#" style="font-size: 12pt;">Инновационные фундаментальные технологии в медицине</a>
+
+                    </div>
                 </section>
                 <!-- /.widget -->
                 <section class="col-sm-3 widget">
-                    <h3 class="section-title widget-title">Get In Touch</h3>
-                    <p>Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna. Sed posuere consectetur est at lobortis.</p>
+                    <h3 class="section-title widget-title">Контакты</h3>
+                    <strong>Региональный этап мероприятия:</strong>
+
+
+                    <p>ГБОУ ВПО Сибирский государственный медицинский университет Минздрава России</p>
+                    <strong>Центр трансфера технологий</strong>
+                    <div class="divide5"></div>
+
+                    <i class="icon-mail contact"></i> <a href="#">okr@ssmu.ru, strateg@ssmu.ru</a>
+                    <div class="divide20"></div>
+
+                    <strong>Финальный этап мероприятия:</strong>
+
+
+                    <p>ГБОУ ВПО Первый Московский государственный медицинский университет имени И.М. Сеченова Минздрава России</p>
+                    <strong>Университетский технопарк</strong>
                     <div class="divide10"></div>
-                    <i class="icon-location contact"></i> Moonshine St. 14/05 Light City, Jupiter <br />
-                    <i class="icon-phone contact"></i>+00 (123) 456 78 90 <br />
-                    <i class="icon-mail contact"></i> <a href="first.last%40email.html">first.last@email.com</a> </section>
+
+                    <i class="icon-mail contact"></i> <a href="#">kuznetsova.yulia@bk.ru, administration@altenrion.ru</a>
+                </section>
+
+
                 <!-- /.widget -->
             </div>
             <!-- /.row -->

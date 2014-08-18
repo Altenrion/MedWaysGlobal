@@ -391,12 +391,14 @@ if(isset($data) && !is_null($data)){
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                    <h4 class="modal-title">Выберите фотографию</h4> 
+                                    <h4 class="modal-title">Выберите фотографию</h4>
                                 </div>
                                 <div class="modal-body">
                                     <div id="upload-wrapper">
                                         <div align="center">
-                                            <h3>Загрузка персонального изображения</h3>
+                                            <h4>Загрузка персонального изображения <small>Рекомендуемое разрешение кадра : 300 x 300 - 500 x 500 px</small></h4>
+                                            </br>
+
                                             <form action="<?=Yii::app()->createUrl('Images/upload')?>" method="post" enctype="multipart/form-data" id="MyUploadForm">
                                                 <input name="image_file" id="imageInput" type="file" />
                                                 <input type="submit"  id="submit-btn" value="Upload" />
