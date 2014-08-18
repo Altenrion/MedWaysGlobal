@@ -34,7 +34,7 @@ $this->breadcrumbs=array(
             <li data-transition="fade"> <img src="<?=Yii::app()->baseUrl; ?>/images/art/doc_.png" alt="" />
                 <div class="caption sft bold opacity-bg" data-x="center" data-y="205" data-speed="500" data-start="500" data-easing="Sine.easeOut">Медицинский форум </div>
                 <div class="caption sfb lite opacity-bg" data-x="center" data-y="271" data-speed="500" data-start="1000" data-easing="Sine.easeOut"><strong>MedWAYS</strong> - перспективные научные направления 2014</div>
-<!--                <div class="caption sfb" data-x="center" data-y="339" data-speed="500" data-start="1500" data-easing="Sine.easeOut"><a href="#" class="btn btn-large">Purchase Now</a></div>-->
+                <div class="caption sfb" data-x="center" data-y="339" data-speed="500" data-start="1500" data-easing="Sine.easeOut"><img src="<?=Yii::app()->baseUrl; ?>/images/buttons/mw.png" alt="" /></div>
             </li>
         </ul>
         <div class="tp-bannertimer tp-bottom"></div>
@@ -163,6 +163,7 @@ $this->breadcrumbs=array(
         </div>
         <div id="second" class="parallax">
             <div class="container inner text-center">
+
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="row">
@@ -185,3 +186,78 @@ $this->breadcrumbs=array(
                 </div>
             </div>
 
+
+    <div class="light-wrapper">
+        <div class="container inner">
+
+            <div class="clearfix"></div>
+            <div class="section-title text-center">Последние новости</div>
+
+            <div class="row classic-blog">
+                <div class="col-sm-9 col-sm-offset-1 content">
+                    <div class="posts">
+
+                        <!-- /.post .format-gallery -->
+
+                        <div class="post format-standard">
+                            <div class="date-wrapper"> <a href="blog-post.html" class="date"><span class="day">23</span> <span class="month">Авг</span> </a> </div>
+                            <!-- /.date-wrapper -->
+                            <div class="format-wrapper"> <i class="icon-pencil"></i> </div>
+                            <!-- /.format -->
+
+                            <div class="post-content">
+                                <h2 class="post-title"><a href="blog-post.html">В скором времени будет дан старт эстафеты</a></h2>
+                                <div class="meta"> <span class="category"><a href="#">MedWAYS</a>, <a href="#">Daily</a></span> <span class="comments"><a href="#">23 Авг, 2014</a></span> <span class="like"><a href="#">25 <i class="icon-eye"></i></a></span> </div>
+                                <!-- /.meta -->
+                                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                            </div>
+                            <!-- /.post-content -->
+                        </div>
+                        <!-- /.post .format-standard -->
+                        <div class="post format-quote">
+                            <div class="date-wrapper"> <a href="blog-post.html" class="date"><span class="day">18</span> <span class="month">Авг</span></a> </div>
+                            <!-- /.date-wrapper -->
+                            <div class="format-wrapper"> <i class="icon-quote"></i> </div>
+                            <!-- /.format -->
+
+                            <div class="post-content">
+                                <blockquote>
+                                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis parturient montes. <small>Very important person</small></p>
+                                </blockquote>
+                            </div>
+                            <!-- /.post-content -->
+                        </div>
+
+
+
+
+                        <div class="post format-link">
+                            <div class="date-wrapper"> <a href="blog-post.html" class="date"><span class="day">14</span> <span class="month">Авг</span> </a> </div>
+                            <!-- /.date-wrapper -->
+                            <div class="format-wrapper"> <i class="icon-link"></i> </div>
+                            <!-- /.format -->
+
+                            <div class="post-content">
+                                <h2 class="post-title"><a href="http://google.com/">Nullam quis risus eget urna mollis</a></h2>
+                                <div class="meta"> <span class="category"><a href="#">MedWAYS</a>, <a href="#">Daily</a></span> <span class="comments"><a href="#">14 Авг, 2014</a></span> <span class="like"><a href="#">25 <i class="icon-eye"></i></a></span> </div>
+                                <!-- /.meta -->
+                                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                            </div>
+                            <!-- /.post-content -->
+                        </div>
+                        <!-- /.post .format-link -->
+
+                    </div>
+                    <!-- /.posts -->
+
+
+                    <!-- /.pagination -->
+                </div>
+                <!-- /.col-sm-8 .content -->
+
+                <!-- /.col-sm-4 .sidebar -->
+            </div>
+            <!-- /.row .classic-blog -->
+        </div>
+        <!-- /.container -->
+    </div>
