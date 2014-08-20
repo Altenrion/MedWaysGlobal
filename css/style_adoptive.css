@@ -4517,6 +4517,11 @@ label.error{
     color: #FF4F45;
 }
 
+.post-list li{
+    line-height: 15px;
+}
+
+
 @media(max-width: 1200px){
 
     .form-horizontal .form-actions {

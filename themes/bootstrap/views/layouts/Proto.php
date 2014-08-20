@@ -17,7 +17,7 @@
         <meta name="author" content="">
         <meta http-equiv="X-UA-Compatible" content="IE=9">
 
-        <link rel="shortcut icon" href="<?=Yii::app()->baseUrl.'/images/favicon.png' ?> ">
+        <link rel="shortcut icon" href="<?=Yii::app()->baseUrl.'/images/favicon1.ico' ?> ">
         <title>Эстафета</title>
 
         <!-- Bootstrap core CSS -->
@@ -111,30 +111,26 @@
         <div class="container inner">
             <div class="row">
                 <section class="col-sm-3 widget">
-                    <h3 class="section-title widget-title">Научные платформы</h3>
-                    <ul class="post-list">
+                    <h3 class="section-title widget-title">Базовые вузы</h3>
+                    <ul class="post-list" >
 
 
-                        Эндокринология
-                        Педиатрия
-                        Психиатрия и зависимости
-                        Иммунология
-                        Микробиология
-                        Фармакология
-                        Профилактическая среда
-                        Репродуктивное здоровье
-                        Регенеративная медицина
-                        Инвазивные технологии
-                        Инновационные фундаментальные технологии в медицине
+                        <li>ЦФО – <a href="#" style="font-size: 9pt;">Рязанский государственный медицинский университет имени академика И.П. Павлова</a></li>
+                        <li>ЮФО – <a href="#" style="font-size: 9pt;">Кубанский государственный медицинский университет</a></li>
+                        <li>СЗФО– <a href="#" style="font-size: 9pt;">Санкт-Петербургский государственный медицинский университет имени академика И.П. Павлова</a></li>
+                        <li>ДВФО – <a href="#" style="font-size: 9pt;">Дальневосточный государственный медицинский университет</a></li>
+                        <li>СФО – <a href="#" style="font-size: 9pt;">Красноярский государственный Медицинский университет имени профессора В.Ф. Войно-Ясенецкого</a></li>
+                        <li>УФО – <a href="#" style="font-size: 9pt;">Челябинская государственная медицинская академия</a></li>
+                        <li>ПФО – <a href="#" style="font-size: 9pt;">Самарский государственный медицинский университет</a></li>
+                        <li>СКФО – <a href="#" style="font-size: 9pt;">Ставропольский государственный медицинский университет</a></li>
 
-
-                        <li>
-                            <a href="#">Онкология</a>
-                        </li>
-                        <li>
-                            <a href="#">Кардиология и ангиология</a>
-                        <li>
-                            <h6><a href="#">Неврология</a></h6>
+<!--                        <li>-->
+<!--                            <a href="#">Онкология</a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a href="#">Кардиология и ангиология</a>-->
+<!--                        <li>-->
+<!--                            <h6><a href="#">Неврология</a></h6>-->
                     </ul>
                     <!-- /.post-list -->
                 </section>
@@ -152,12 +148,13 @@
 
                     <div class="tagcloud">
                         <a href="#" style="font-size: 12pt;">Онкология</a>
-                        <a href="#" style="font-size: 17pt;">Кардиология и ангиология, </a>
+                        <a href="#" style="font-size: 14pt;">Кардиология и ангиология</a>
                         <a href="#" style="font-size: 11pt;">Эндокринология</a>
                         <a href="#" style="font-size: 11pt;">Неврология</a>
                         <a href="#" style="font-size: 15pt;">Педиатрия</a>
-                        <a href="#" style="font-size: 10pt;">Психиатрия и зависимости,</a>
-                        <a href="#" style="font-size: 9pt;">Иммунология, Микробиология</a>
+                        <a href="#" style="font-size: 10pt;">Психиатрия и зависимости</a>
+                        <a href="#" style="font-size: 9pt;">Иммунология</a>
+                            <a href="#" style="font-size: 9pt;">    Микробиология</a>
                         <a href="#" style="font-size: 12pt;">Фармакология</a>
                         <a href="#" style="font-size: 9pt;">Профилактическая среда</a>
                         <a href="#" style="font-size: 15pt;">Репродуктивное здоровье</a>
@@ -174,7 +171,7 @@
                     <strong>Региональный этап мероприятия:</strong>
 
 
-                    <p>ГБОУ ВПО Сибирский государственный медицинский университет Минздрава России</p>
+                    <p>ГБОУ ВПО СибГМУ Минздрава России</p>
                     <strong>Центр трансфера технологий</strong>
                     <div class="divide5"></div>
 
@@ -184,7 +181,7 @@
                     <strong>Финальный этап мероприятия:</strong>
 
 
-                    <p>ГБОУ ВПО Первый Московский государственный медицинский университет имени И.М. Сеченова Минздрава России</p>
+                    <p>ГБОУ ВПО Первый МГМУ имени И.М. Сеченова Минздрава России</p>
                     <strong>Университетский технопарк</strong>
                     <div class="divide10"></div>
 

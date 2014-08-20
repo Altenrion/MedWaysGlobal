@@ -34,4 +34,28 @@ $(document).ready(function () {
 
 
     });
+
+    $('#enable').click(function (e) {
+//        e.stopPropagation()
+        console.log("I'm Here");
+
+        $('a[rel^="ID_STAGE"]').editable('toggleDisabled');
+        $('a[rel^="NAME"]').editable('toggleDisabled');
+        $('a[rel^="DESCR_PROJECT"]').editable('toggleDisabled');
+        $('a[rel^="ROADMAP_PROJECT"]').editable('toggleDisabled');
+        $('a[rel^="ID_PHASE"]').editable('toggleDisabled');
+        $('a[rel^="EXECUTERS_NUM"]').editable('toggleDisabled');
+        $('a[rel^="UN_THIRTY_FIVE"]').editable('toggleDisabled');
+        $('a[rel^="STUDY"]').editable('toggleDisabled');
+        $('a[rel^="PUBLICATIONS"]').editable('toggleDisabled');
+        $('a[rel^="FORIN_PUBL"]').editable('toggleDisabled');
+        $('a[rel^="START_YEAR"]').editable('toggleDisabled');
+        $('a[rel^="END_YEAR"]').editable('toggleDisabled');
+        $('a[rel^="YEAR_BUDGET"]').editable('toggleDisabled');
+        $('a[rel^="LONG_BUDGET"]').editable('toggleDisabled');
+        $('a[rel^="CO_FINANCING"]').editable('toggleDisabled');
+        $('a[rel^="ID_BUDGET"]').editable('toggleDisabled');
+
+
+    });
 });

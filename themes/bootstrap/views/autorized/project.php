@@ -24,8 +24,6 @@ if(isset($data) && !is_null($data)){
 var_dump($data);
 ?>
 
-
-
     <div id="content" class="col-lg-12 col-sm-12 col-xs-12">
 
     <ol class="breadcrumb">
@@ -61,10 +59,35 @@ var_dump($data);
                         </li>
 
                         </br>
-                        <li class="nav-header"><strong>Статистика</strong></li>
+
+
+                        </br>
+                        <li class="nav-header"><strong>Управление проектом</strong></li>
+                        </br>
 
                         <li>
-                            <p> Lorem ipsum dolor <span class="label label-danger"><i class="fa fa-times"></i></span></p>
+                            <p> Добавить бизнесплан <button type="button" class="btn btn-xs btn-primary">Выбрать PDF</button></span></p>
+
+
+
+                        </li>
+                        <li>
+                            <?
+                            $form = $this->beginWidget(
+                                'CActiveForm',
+                                array(
+                                    'id' => 'upload-form',
+                                    'enableAjaxValidation' => false,
+                                    'htmlOptions' => array('enctype' => 'multipart/form-data'),
+                                )
+                            );
+                            echo '<button type="button" class="btn btn-xs btn-primary">Выбрать PDF</button>';
+                            
+                            $this->endWidget();
+                            ?>
+                        </li>
+                        <li>
+                            <p> Заявить проект <button type="button" class="btn btn-xs btn-primary">Отправить</button></span></p>
                         </li>
                     </ul>
 
@@ -118,7 +141,7 @@ var_dump($data);
         <td>
             <? if(isset($data[0])){
             $this->widget('editable.Editable', array(
-                'type'      => 'text',
+                'type'      => 'textarea',
                 'pk'        => $data[0]['id'],
                 'name'      => 'NAME',
                 'text'      => CHtml::encode($data[0]['NAME']),
@@ -157,43 +180,42 @@ var_dump($data);
         <th>Из них до 35 лет</th>
         <td>
             <? if(isset($data[0])){
-            $this->widget('editable.Editable', array(
-                'type'      => 'combodate',
-                'name'      => 'UN_THIRTY_FIVE',
-                'pk'        => $data[0]['id'],
-                'text'      => CHtml::encode(date('d / m / Y', strtotime($data[0]['UN_THIRTY_FIVE']))),
-                'url'       => $this->createUrl('Autorized/updateProject'),
-//                                            'format'      => 'yyyy-mm-dd', //format in which date is expected from model and submitted to server
-                'format'      => 'YYYY-MM-DD', //in this format date sent to server
-                'viewformat'  => 'DD / MM / YYYY', //in this format date is displayed
-                'template'    => 'DD / MM / YYYY', //template for dropdowns
-                'combodate'   => array('minYear' => 1930, 'maxYear' => 2015),
-                'options'     => array(
-                    'datepicker' => array('language' => 'ru'),
-                    'disabled'=>true,
-                )
-            ));
-            } ?>
+                $this->widget('editable.Editable', array(
+                    'type'      => 'text',
+                    'pk'        => $data[0]['id'],
+                    'name'      => 'UN_THIRTY_FIVE',
+                    'text'      => CHtml::encode($data[0]['UN_THIRTY_FIVE']),
+                    'url'       => $this->createUrl('Autorized/updateProject'),
+                    'title'     => 'Введите фамилию',
+                    'placement' => 'right',
+                    'options' => array(
+                        'disabled'=>true,
+                    ),
+                ));
+
+            }
+
+         ?>
         </td>
     </tr>
     <tr>
         <th>Из них обучающихся</th>
         <td>
-            <? if(isset($data[0])){
-            $this->widget('editable.Editable', array(
-                'type'      => 'select',
-                'name'      => 'STUDY',
-                'pk'        => $data[0]['id'],
-                'text'      => CHtml::encode(($data[0]['STUDY'])=='m'?'M':'Ж'),
-                'url'       => $this->createUrl('Autorized/updateProject'),
-                'source'    => Editable::source(array(1 => 'М', 2 => 'Ж')),
-                'title'     => 'Enter title',
-                'placement' => 'right',
-                'options'     => array(
-                    'disabled'=>true,
-                    'showbuttons'=>false,
-                )
-            ));
+            <?
+
+            if(isset($data[0])){
+                $this->widget('editable.Editable', array(
+                    'type'      => 'text',
+                    'pk'        => $data[0]['id'],
+                    'name'      => 'STUDY',
+                    'text'      => CHtml::encode($data[0]['STUDY']),
+                    'url'       => $this->createUrl('Autorized/updateProject'),
+                    'title'     => 'Введите фамилию',
+                    'placement' => 'right',
+                    'options' => array(
+                        'disabled'=>true,
+                    ),
+                ));
 
             }  ?>
         </td>
@@ -223,20 +245,18 @@ var_dump($data);
         <th>Из них в зарубежных изданиях</th>
         <td>
             <? if(isset($data[0])){
-            $this->widget('editable.Editable', array(
-                'type'      => 'select',
-                'name'      => 'FORIN_PUBL',
-                'pk'        => $data[0]['id'],
-                'text'      => CHtml::encode($data[0]['FORIN_PUBL']),
-                'url'       => $this->createUrl('Autorized/updateProject'),
-                'source'    => Editable::source(array('тестовая степень 1'=>'тестовая степень 1' , 'тестовая степень 2'=>'тестовая степень 2')),
-                'title'     => 'Enter title',
-                'placement' => 'right',
-                'options'     => array(
-                    'disabled'=>true,
-                    'showbuttons'=>false,
-                )
-            ));
+                $this->widget('editable.Editable', array(
+                    'type'      => 'text',
+                    'pk'        => $data[0]['id'],
+                    'name'      => 'FORIN_PUBL',
+                    'text'      => CHtml::encode($data[0]['FORIN_PUBL']),
+                    'url'       => $this->createUrl('Autorized/updateProject'),
+                    'title'     => 'Введите фамилию',
+                    'placement' => 'right',
+                    'options' => array(
+                        'disabled'=>true,
+                    ),
+                ));
             }  ?>
         </td>
     </tr>
@@ -244,20 +264,23 @@ var_dump($data);
         <th>Год начала</th>
         <td>
             <? if(isset($data[0])){
-            $this->widget('editable.Editable', array(
-                'type'      => 'select',
+                $this->widget('editable.Editable', array(
+                'type'      => 'combodate',
                 'name'      => 'START_YEAR',
                 'pk'        => $data[0]['id'],
                 'text'      => CHtml::encode($data[0]['START_YEAR']),
                 'url'       => $this->createUrl('Autorized/updateProject'),
-                'source'    => Editable::source(array('тестовое звание 1'=>'тестовое звание 1' , 'тестовое звание 2'=>'тестовое звание 2')),
-                'title'     => 'Enter title',
-                'placement' => 'right',
+//                                            'format'      => 'yyyy-mm-dd', //format in which date is expected from model and submitted to server
+                'format'      => 'YYYY', //in this format date sent to server
+                'viewformat'  => 'YYYY', //in this format date is displayed
+                'template'    => 'YYYY', //template for dropdowns
+                'combodate'   => array('minYear' => 1980, 'maxYear' => 2015),
                 'options'     => array(
+                    'datepicker' => array('language' => 'ru'),
                     'disabled'=>true,
-                    'showbuttons'=>false,
                 )
             ));
+
             } ?>
         </td>
     </tr>
@@ -265,20 +288,22 @@ var_dump($data);
         <th>Год окончания</th>
         <td>
             <? if(isset($data[0])){
-            $this->widget('editable.Editable', array(
-                'type'      => 'select',
-                'name'      => 'END_YEAR',
-                'pk'        => $data[0]['id'],
-                'text'      => CHtml::encode($data[0]['END_YEAR']),
-                'url'       => $this->createUrl('Autorized/updateProject'),
-                'source'    => $this->createUrl('Autorized/getDistricts'),
-                'title'     => 'Enter title',
-                'placement' => 'right',
-                'options' => array(
-                    'disabled'=>true,
-                ),
-
-            ));
+                $this->widget('editable.Editable', array(
+                    'type'      => 'combodate',
+                    'name'      => 'END_YEAR',
+                    'pk'        => $data[0]['id'],
+                    'text'      => CHtml::encode($data[0]['END_YEAR']),
+                    'url'       => $this->createUrl('Autorized/updateProject'),
+//                                            'format'      => 'yyyy-mm-dd', //format in which date is expected from model and submitted to server
+                    'format'      => 'YYYY', //in this format date sent to server
+                    'viewformat'  => 'YYYY', //in this format date is displayed
+                    'template'    => 'YYYY', //template for dropdowns
+                    'combodate'   => array('minYear' => 1980, 'maxYear' => 2030),
+                    'options'     => array(
+                        'datepicker' => array('language' => 'ru'),
+                        'disabled'=>true,
+                    )
+                ));
             } ?>
         </td>
     </tr>
@@ -286,13 +311,14 @@ var_dump($data);
         <th>Стадия развития проекта</th>
         <td>
         <? if(isset($data[0])){
+
             $this->widget('editable.Editable', array(
                 'type'      => 'select',
                 'name'      => 'ID_PHASE',
                 'pk'        => $data[0]['id'],
                 'text'      => CHtml::encode($data[0]['ID_PHASE']),
                 'url'       => $this->createUrl('Autorized/updateProject'),
-                'source'    => $this->createUrl('Autorized/getUniversities'),
+                'source'    => $this->createUrl('Autorized/getPhases'),
                 'title'     => 'Enter title',
                 'placement' => 'right',
                 'options' => array(
@@ -304,22 +330,25 @@ var_dump($data);
         }    ?>
         </td>
     </tr>
+
     <tr>
         <th>Объем финансирования на период реализации</th>
         <td>
     <? if(isset($data[0])){
-            $this->widget('editable.Editable', array(
-                'type'      => 'text',
-                'pk'        => $data[0]['id'],
-                'name'      => 'LONG_BUDGET',
-                'text'      => CHtml::encode($data[0]['LONG_BUDGET']),
-                'url'       => $this->createUrl('Autorized/updateProject'),
-                'title'     => 'Введите фамилию',
-                'placement' => 'right',
-                'options' => array(
-                    'disabled'=>true,
-                ),
-            ));
+        $this->widget('editable.Editable', array(
+            'type'      => 'select',
+            'name'      => 'ID_BUDGET',
+            'pk'        => $data[0]['id'],
+            'text'      => CHtml::encode($data[0]['ID_BUDGET']),
+            'url'       => $this->createUrl('Autorized/updateProject'),
+            'source'    => $this->createUrl('Autorized/getBudget'),
+            'title'     => 'Enter title',
+            'placement' => 'right',
+            'options' => array(
+                'disabled'=>true,
+            ),
+
+        ));
 
     } ?>
         </td>
@@ -329,25 +358,23 @@ var_dump($data);
         <td>
         <? if(isset($data[0])){
             $this->widget('editable.Editable', array(
-                'type'      => 'select',
-                'name'      => 'YEAR_BUDGET',
+                'type'      => 'text',
                 'pk'        => $data[0]['id'],
+                'name'      => 'YEAR_BUDGET',
                 'text'      => CHtml::encode($data[0]['YEAR_BUDGET']),
                 'url'       => $this->createUrl('Autorized/updateProject'),
-                'source'    => $this->createUrl('Autorized/getSpecialities'),
-                'title'     => 'Enter title',
+                'title'     => 'Введите фамилию',
                 'placement' => 'right',
                 'options' => array(
                     'disabled'=>true,
                 ),
-
             ));
 
         }  ?>
         </td>
     </tr>
     <tr>
-        <th>Доля предполагаемого финансирования</th>
+        <th>Доля предполагаемого coфинансирования</th>
         <td>
         <? if(isset($data[0])){
             $this->widget('editable.Editable', array(
@@ -371,7 +398,7 @@ var_dump($data);
         <td>
         <? if(isset($data[0])){
             $this->widget('editable.Editable', array(
-                'type'      => 'text',
+                'type'      => 'textarea',
                 'pk'        => $data[0]['id'],
                 'name'      => 'DESCR_PROJECT',
                 'text'      => CHtml::encode($data[0]['DESCR_PROJECT']),

@@ -79,7 +79,14 @@ class AutorizedController extends Controller
         echo CJSON::encode(Editable::source(District::model()->findAll(), 'ID_DISTRICT', 'NAME'));
     }
     public function actionGetStages(){
-        echo CJSON::encode(Editable::source(District::model()->findAll(), 'ID_STAGE', 'NAME_STAGE'));
+        echo CJSON::encode(Editable::source(Stage::model()->findAll(), 'ID_STAGE', 'NAME_STAGE'));
+    }
+    public function actionGetPhases(){
+        echo CJSON::encode(Editable::source(Phase::model()->findAll(), 'ID_PHASE', 'NAME'));
+    }
+
+    public function actionGetBudget(){
+        echo CJSON::encode(Editable::source(Budget::model()->findAll(), 'ID_BUDGET', 'NAME'));
     }
 
 }
