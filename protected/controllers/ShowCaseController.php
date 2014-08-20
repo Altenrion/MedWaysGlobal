@@ -175,7 +175,8 @@ class ShowCaseController extends Controller
             $password = $_POST['RegForm']['password'];
             $email = $_POST['RegForm']['EMAIL'];
 
-            $model->password = $model->encrypting($password);
+            $model->password = $password;
+//            $model->password = $model->encrypting($password);
 
             $email_exist = $model->find("EMAIL='$email'");
 

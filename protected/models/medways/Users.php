@@ -85,7 +85,7 @@ class Users extends CActiveRecord
 			array('PHONE', 'length', 'max'=>50),
 			array('SEX', 'length', 'max'=>2 ),
 //            array('AVATAR', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
-            array('password','unsafe','on'=>'update'),
+//            array('password','unsafe','on'=>'update'),
             array('AVATAR','safe','on'=>'update'),
             array('BIRTH_DATE', 'date', 'format'=>'yyyy-M-d'),
 			array('DEGREE, ACADEMIC_TITLE, W_POSITION', 'length', 'max'=>200),
@@ -219,11 +219,11 @@ class Users extends CActiveRecord
      * perform one-way encryption on the password before we store it in
     the database
      */
-    protected function afterValidate()
-    {
-        parent::afterValidate();
-        $this->password = $this->encrypting($this->password);
-    }
+//    protected function afterValidate()
+//    {
+//        parent::afterValidate();
+//        $this->password = $this->encrypting($this->password);
+//    }
 
 
 
@@ -257,9 +257,6 @@ class Users extends CActiveRecord
 
         return $data;
 
-
-
-//        return $id;
     }
 
 
