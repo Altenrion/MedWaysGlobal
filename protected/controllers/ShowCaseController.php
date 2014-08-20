@@ -281,15 +281,18 @@ class ShowCaseController extends Controller
         if(isset($_GET['email'])){
 
             $email = $_GET['email'];
+
             $user = new Users();
             $user_exist = $user->find("EMAIL='".$email."'");
 
             if($user_exist){
-                $user_exist->AKTIV_KEY = 100;
 
-                if($user_exist->save()){
-                    $this->redirect(Yii::app()->createUrl('ShowCase/login'));
-                }
+                $_POST['pk']= $user_exist->id ;
+                $_POST['name']= 'AKTIV_KEY';
+                $_POST['value']= '100';
+
+                $this->forward('Autorized/updateProfile',false);
+                //$this->redirect(Yii::app()->createUrl('ShowCase/login'));
             }
         }
         $this->redirect(Yii::app()->createUrl('ShowCase/login'));
