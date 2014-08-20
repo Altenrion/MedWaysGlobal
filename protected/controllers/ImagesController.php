@@ -31,6 +31,107 @@ class ImagesController extends Controller{
     ##########################################
 
 
+    public function actionUploadPDF(){
+
+
+        $user = new Users();
+        $this->destination_folder = Yii::getPathOfAlias('webroot.uploads').DIRECTORY_SEPARATOR;
+        $this->user_id = Yii::app()->user->id;
+
+        if(isset($_POST) && isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest'){
+            if(!isset($_FILES['pdf_file']) || !is_uploaded_file($_FILES['pdf_file']['tmp_name'])){
+                echo "Image file is Missing!";
+                Yii::app()->end();
+            }
+
+//            //uploaded file info we need to proceed
+//            $pdf_name = $_FILES['pdf_file']['name']; //file name
+//            $pdf_temp = $_FILES['pdf_file']['tmp_name']; //file temp
+//
+////            //Get file extension and name to construct new file name
+//
+//                $pdf_info = pathinfo($pdf_name);
+//                $pdf_extension = strtolower($pdf_info["extension"]); //image extension
+//                $pdf_name_only = strtolower($pdf_info["filename"]);//file name only, no extension
+//
+//            if($pdf_extension !== 'pdf'){
+//                echo "Загружаемый документ должен быть в формате PDF";
+//                Yii::app()->end();
+//            }
+//            $new_file_name = 'roadmap_'.$this->user_id.'.'.$pdf_extension;
+//            $pdf_save_folder 	= $this->destination_folder .'_'. $new_file_name;
+
+
+            $whitelist = array( ".pdf");
+            $data = array();
+            $error = true;
+
+            //Проверяем разрешение файла
+            foreach  ($whitelist as  $item) {
+                if(preg_match("/$item\$/i",$_FILES['pdf_file']['name'])) $error = false;
+            }
+
+            //если нет ошибок, грузим файл
+            if(!$error) {
+
+                $new_file_name = 'roadmap_'.$this->user_id.'.pdf';
+                $folder =  $this->destination_folder; //директория в которую будет загружен файл
+                $uploadedFile =  $folder.$new_file_name;
+
+                if(is_uploaded_file($_FILES['pdf_file']['tmp_name'])){
+                    if(move_uploaded_file($_FILES['pdf_file']['tmp_name'],$uploadedFile)){
+                        $data = $_FILES['pdf_file'];
+
+                        /// Сохраняю инфу в таблицу с проектом.
+
+                        $_POST['pk']= Yii::app()->user->id;
+                        $_POST['name']= 'ROADMAP_PROJECT';
+                        $_POST['value']= $new_file_name;
+
+                        $this->forward('Autorized/updateProject',false);
+                        //////
+
+
+
+                        echo '<div class="alert alert-success">';
+                        echo '<strong>Ваш документ успешно загружен!</strong>';
+                        echo '</div>';
+
+                        Yii::app()->end();
+
+
+
+                    }
+                    else {
+                        echo "Во время загрузки файла произошла ошибка";
+                        Yii::app()->end();
+
+                    }
+                }
+                else {
+                    echo "Файл не  загружен";
+                    Yii::app()->end();
+                }
+            }
+            else{
+
+                echo 'Вы загружаете запрещенный тип файла';
+                Yii::app()->end();
+            }
+
+
+
+        }
+
+           echo '<div class="alert alert-success">';
+           echo '<strong>Ваш документ успешно загружен!</strong>';
+           echo '</div>';
+
+           Yii::app()->end();
+
+    }
+
+
     public function actionUpload(){
 
 
@@ -44,7 +145,7 @@ class ImagesController extends Controller{
             // check $_FILES['ImageFile'] not empty
             if(!isset($_FILES['image_file']) || !is_uploaded_file($_FILES['image_file']['tmp_name'])){
 
-                echo "Image file is Missing!";
+                echo "Изображение потеряно!";
                 Yii::app()->end();
             }
 
@@ -60,7 +161,7 @@ class ImagesController extends Controller{
                 $image_height 		= $image_size_info[1]; //image height
                 $image_type 		= $image_size_info['mime']; //image type
             }else{
-                echo "Make sure image file is valid!";
+                echo "Убедитесь, что загружается изображение!";
                 Yii::app()->end();
             }
 
@@ -96,7 +197,7 @@ class ImagesController extends Controller{
                     //call crop_image_square() function to create square thumbnails
                     if(!$this->crop_image_square($image_res, $thumb_save_folder, $image_type, $this->thumb_square_size, $image_width, $image_height, $this->jpeg_quality))
                     {
-                        echo "Error Creating thumbnail";
+                        echo "При создании превью произошла ошибка";
                         Yii::app()->end();
                     }
 

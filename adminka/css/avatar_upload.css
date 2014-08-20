@@ -28,13 +28,15 @@
 
 
 #upload-wrapper #submit-btn {
-	border: none;
-	padding: 10px;
-	background: #61BAE4;
-	border-radius: 5px;
-	color: #FFF;
+    height:34px;
+	/*border: none;*/
+	/*padding: 8px;*/
+	/*background: #4B8FD8;*/
+	/*border-radius: 5px;*/
+	/*color: #FFF;*/
 }
 #output{
+    margin-top:10px;
 	padding: 5px;
 	font-size: 12px;
 }

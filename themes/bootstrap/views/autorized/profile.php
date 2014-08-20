@@ -396,32 +396,20 @@ if(isset($data) && !is_null($data)){
                                 <div class="modal-body">
                                     <div id="upload-wrapper">
                                         <div align="center">
+
                                             <h4>Загрузка персонального изображения <small>Рекомендуемое разрешение кадра : 300 x 300 - 500 x 500 px</small></h4>
                                             </br>
-
                                             <form action="<?=Yii::app()->createUrl('Images/upload')?>" method="post" enctype="multipart/form-data" id="MyUploadForm">
-                                                <input name="image_file" id="imageInput" type="file" />
-                                                <input type="submit"  id="submit-btn" value="Upload" />
-                                                <img src="images/ajax-loader.gif" id="loading-img" style="display:none;" alt="Please Wait"/>
+                                                <input name="image_file" id="imageInput" type="file"  onchange="return doSomething();"/>
+<!--                                                <input type="submit"  id="submit-btn" value="Загрузить" class="btn btn-primary" />-->
+                                                <button type="submit" id="submit-btn" class="btn btn-sm btn-primary">Загрузить</button>
+
+                                                <img src="<?=Yii::app()->baseUrl?>/images/ajax-loader.gif" id="loading-img" style="display:none;" alt="Please Wait"/>
                                             </form>
                                             <div id="output"></div>
                                         </div>
                                     </div>
 
-
-
-
-
-<!--                                    <form role="form">-->
-<!--                                        <div class="form-group">-->
-<!--                                            <label for="exampleInputFile"> </label>-->
-<!--                                            <input type="file" id="exampleInputFile">-->
-<!--                                            <p class="help-block">Выберите фотографию для аватара. Пропорции изображения 50х50 . Рекомендуемое разрешение кадра :  300 x 300 - 500 x 500 px. </p>-->
-<!--                                        </div>-->
-<!---->
-<!--                                        <button type="submit" class="btn btn-default">Загрузить</button>-->
-<!--                                    </form>-->
-                                </div>
                                 <div class="modal-footer">
                                     <a href="#" data-dismiss="modal" class="btn">Закрыть</a>
                                     <a href="#" id="RebootAva" class="btn btn-primary">Применить</a>

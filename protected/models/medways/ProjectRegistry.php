@@ -57,7 +57,8 @@ class ProjectRegistry extends CActiveRecord
 			array('ID_REPRESENTATIVE, REG_DATE', 'required'),
 			array('ID_REPRESENTATIVE,YEAR_BUDGET, LONG_BUDGET, CO_FINANCING ,ID_STAGE, ID_PHASE, ID_BUDGET, EXECUTERS_NUM, UN_THIRTY_FIVE, STUDY, PUBLICATIONS, FORIN_PUBL, START_YEAR, END_YEAR, PRIVACY_P, FIRST_LAVEL_APPROVAL, SECOND_LAVEL_RATING, THIRD_LAVEL_RATING', 'numerical', 'integerOnly'=>true),
 			array('NAME', 'length', 'max'=>400),
-			array('DESCR_PROJECT', 'length', 'max'=>1500),
+            array('ROADMAP_PROJECT','safe','on'=>'update'),
+			array('DESCR_PROJECT' , 'length', 'max'=>1500),
             array('FIRST_LAVEL_COMMENT', 'length', 'max'=>500),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -191,6 +192,7 @@ class ProjectRegistry extends CActiveRecord
                 proj.FIRST_LAVEL_APPROVAL,
                 proj.SECOND_LAVEL_RATING,
                 proj.THIRD_LAVEL_RATING,
+                proj.FIRST_LAVEL_COMMENT,
                 proj.ROADMAP_PROJECT,
                 (SELECT stage.NAME_STAGE FROM m_w_stage as stage WHERE stage.ID_STAGE = proj.ID_STAGE) AS ID_STAGE,
 

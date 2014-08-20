@@ -48,7 +48,7 @@ function beforeSubmit(){
 
         if( !$('#imageInput').val()) //check empty input filed
         {
-            $("#output").html("Are you kidding me?");
+            $("#output").html("Вы уверены в своих действиях?");
             return false
         }
 
@@ -59,13 +59,13 @@ function beforeSubmit(){
         //allow only valid image file types
         switch(ftype)
         {
-            case 'image/png': case 'image/gif': case 'image/jpeg': case 'image/pjpeg':
+            case 'image/png': case 'image/gif': case 'image/jpeg': case 'image/pjpeg':case 'application/pdf' :
             break;
             default:
-                $("#output").html("<b>"+ftype+"</b> Unsupported file type!");
+                $("#output").html(" Данный тип файла неразрешен для загрузки!");
                 return false
         }
-
+//        "+ftype+"
         //Allowed file size is less than 1 MB (1048576)
         if(fsize>1048576)
         {
@@ -80,7 +80,7 @@ function beforeSubmit(){
     else
     {
         //Output error to older browsers that do not support HTML5 File API
-        $("#output").html("Please upgrade your browser, because your current browser lacks some new features we need!");
+        $("#output").html("Пожалуйста, обновите свой браузер!  Ваш не поддерживает некоторые современные возможности необходимые для корректной работы приложения!");
         return false;
     }
 }

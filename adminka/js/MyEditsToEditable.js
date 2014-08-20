@@ -13,6 +13,8 @@ $(document).ready(function () {
     });
 
 
+
+
     $('#enable').click(function (e) {
 //        e.stopPropagation()
         console.log("I'm Here");
@@ -58,4 +60,43 @@ $(document).ready(function () {
 
 
     });
+
+    function doSomething()
+    {
+        alert("before submit");
+        document.getElementById('someform').submit();
+        alert("after submit");
+    }
+
+    $('#Pull').click(function(){
+        $.ajax({
+            type: 'post',
+            url: Yii.app.createUrl('Autorized/CheckFullInfo'),
+            data: $(form).serialize(),
+            dataType : 'json',
+            success: function(data){
+                if(data == 'email'){
+                    succsess.css("display", "none");
+                    error.css("display", "block");
+                    error.html('Указанный email уже занят!');
+                }
+                if(data == 'succsess'){
+                    error.css("display", "none");
+                    succsess.css("display", "block");
+                    succsess.html('Вы зарегестрированы. На указанный email отправлено письмо активации.');
+                }
+                if(data == 'fail'){
+                    succsess.css("display", "none");
+                    error.css("display", "block");
+                    error.html('Произошла техническая ошибка. Приносим извенения.');
+                }
+
+
+            }
+
+        });
+
+    });
+
+
 });

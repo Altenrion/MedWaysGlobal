@@ -67,6 +67,34 @@ class AutorizedController extends Controller
 	}
 
 
+    public function actionCheckFullInfo(){
+        $user = new Users();
+        $project= new ProjectRegistry();
+
+        $user_info = $user->findProfileData(Yii::app()->user->id);
+        $proj_info = $project->findProjectData(Yii::app()->user->id);
+
+        $flag = 'Отправляй';
+        $flag_one = '';
+        $flag_two = '';
+
+
+        foreach($user_info[0] as $i_k=>$i_v){
+            if($i_v == null && $i_v == ''){  echo 'fail'; Yii::app()->end();  }
+        }
+
+        foreach ($proj_info as $info_two) {
+            if($info_two == null && $info_two == ''){  echo 'fail'; Yii::app()->end();   }
+        }
+
+            echo 'ok';
+            Yii::app()->end();
+
+    }
+
+
+
+
 
 
     public function actionGetSpecialities(){
@@ -89,4 +117,16 @@ class AutorizedController extends Controller
         echo CJSON::encode(Editable::source(Budget::model()->findAll(), 'ID_BUDGET', 'NAME'));
     }
 
+
+    public function statusOk($text=''){
+        return '<span class="label label-success"><i class="fa fa-check"></i>'.$text.'</span>';
+    }
+
+    public  function statusFail($text=''){
+        return '<span class="label label-danger"><i class="fa fa-times"></i>'.$text.'</span>';
+    }
+
+    public function statusSpinner(){
+        return '<i class="fa fa-spinner fa-spin"></i>';
+    }
 }

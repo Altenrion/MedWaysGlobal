@@ -6,22 +6,50 @@
  * Time: 13:26
  * To change this template use File | Settings | File Templates.
  */
+/* @var $this AutorisedController */
 
+
+
+
+$mod_one = '';
+$mod_two = '';
+$mod_three= '';
+$mod_four= '';
+$no_edit = false;
 if(isset($data) && !is_null($data)){
-    if(isset($data[0]['roles'])){
-        $role = $data[0]['roles'];
-        switch($role){
-            case 'Dev': $data[0]['roles'] = 'Разработчик';break;
-            case 'Manager': $data[0]['roles'] = 'Представитель проекта';break;
-            case 'Exp': $data[0]['roles'] = 'Эксперт';break;
-            case 'Exp1': $data[0]['roles'] = 'Эксперт';break;
-            case 'Exp2': $data[0]['roles'] = 'Эксперт';break;
-            case 'Exp3': $data[0]['roles'] = 'Эксперт';break;
-        }
-    }
-}
 
-var_dump($data);
+        $first_mod = $data[0]['FIRST_LAVEL_APPROVAL'];
+        switch($first_mod){
+
+            case '1': $mod_one = $this->statusOk();  $mod_two = $this->statusSpinner() ; $no_edit = true;  break;
+            case '2': $mod_one = $this->statusSpinner() ;  $mod_two = $this->statusFail('доработка'); break;
+            case '3': $mod_one = $this->statusOk();  $mod_two = $this->statusOk(); $no_edit = true; break;
+            case '9': $mod_one = $this->statusFail('отклонена'); $mod_two = $this->statusFail('отклонена');  $no_edit = true; break;
+            default: $mod_one = $this->statusSpinner() ;  $mod_two = $this->statusSpinner() ;  break;
+
+        }
+        $third_mod = $data[0]['SECOND_LAVEL_RATING'];
+        if(!is_null($third_mod)){
+            $mod_three = $this->statusOk();
+        }else{
+            $mod_three = $this->statusSpinner();
+        }
+        $fourth_mod = $data[0]['THIRD_LAVEL_RATING'];
+        if(!is_null($fourth_mod)){
+            $mod_four = $this->statusOk();
+        }else{
+            $mod_four = $this->statusSpinner();
+        }
+
+
+    }
+
+
+
+
+
+
+//var_dump($data);
 ?>
 
     <div id="content" class="col-lg-12 col-sm-12 col-xs-12">
@@ -40,55 +68,49 @@ var_dump($data);
                 <div class="well">
 
                     <ul id="yw0" class="nav nav-list">
-                        <li class="nav-header"><strong>Статусы экспертиз</strong></li>
-                        </br>
-                        <li>
-                            <p> Подача заявки <span class="label label-success"><i class="fa fa-check"></i></span></p>
-                        </li>
-                        <li>
-                            <p> Проверка заявки <i class="fa fa-spinner fa-spin"></i></p>
-
-                        </li>
-                        <li>
-                            <p> Окружная <i class="fa fa-spinner fa-spin"></i></p>
-
-                        </li>
-                        <li>
-                            <p> Федеральная <span class="label label-danger"><i class="fa fa-times"></i> доработка</span></p>
-
-                        </li>
-
-                        </br>
-
-
-                        </br>
                         <li class="nav-header"><strong>Управление проектом</strong></li>
                         </br>
 
                         <li>
-                            <p> Добавить бизнесплан <button type="button" class="btn btn-xs btn-primary">Выбрать PDF</button></span></p>
-
-
+                            <p> Добавить бизнесплан
+                                <a data-toggle="modal" href="#PDF_Modal" class="btn btn-xs btn-primary">
+                                    Выбрать PDF
+                                </a>
+                            </p>
 
                         </li>
                         <li>
-                            <?
-                            $form = $this->beginWidget(
-                                'CActiveForm',
-                                array(
-                                    'id' => 'upload-form',
-                                    'enableAjaxValidation' => false,
-                                    'htmlOptions' => array('enctype' => 'multipart/form-data'),
-                                )
-                            );
-                            echo '<button type="button" class="btn btn-xs btn-primary">Выбрать PDF</button>';
-                            
-                            $this->endWidget();
-                            ?>
+                            <p> Заявить проект
+                                <a data-toggle="modal" href="#Pull" class="btn btn-xs btn-primary">
+                                    Отправить
+                                </a></p>
+                        </li>
+                        </br>
+                        </br>
+
+                        <li class="nav-header"><strong>Статусы экспертиз</strong></li>
+                        </br>
+                        <li>
+                            <p> Подача заявки <?=$mod_one?></p>
                         </li>
                         <li>
-                            <p> Заявить проект <button type="button" class="btn btn-xs btn-primary">Отправить</button></span></p>
+                            <p> Проверка заявки <?=$mod_two?></p>
+
                         </li>
+                        <li>
+                            <p> Окружная <?=$mod_three?></p>
+
+                        </li>
+                        <li>
+                            <p> Федеральная <?=$mod_four?></p>
+
+                        </li>
+
+                        </br>
+
+
+                        </br>
+
                     </ul>
 
                 </div>
@@ -99,15 +121,19 @@ var_dump($data);
 
     <div class="col-sm-12 col-md-7 col-lg-7 ">
 
-    <div class="alert alert-info  alert-dismissable">
+    <? if($data[0]['FIRST_LAVEL_COMMENT'] !== null && $data[0]['FIRST_LAVEL_COMMENT'] !== '' ){ ?>
+    <div class="alert alert-warning  alert-dismissable">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-        <strong>Внимание! </strong> Ваш id "<?=(isset($data))?('найден'):('---')?>"
+        <strong>Комментарий эксперта: </strong> <?=$data[0]['FIRST_LAVEL_COMMENT']?>
     </div>
-
+    <? } ?>
     <div class="panel panel-info">
     <div class="panel-heading">
         <h3 class="panel-title">Проектные данные
+
+            <? if(!$no_edit){ ?>
             <button id="enable" class="btn btn-xs btn-primary pull-right"><i class="fa  fa-edit"> </i> редактировать</button>
+            <? } ?>
         </h3>
     </div>
     <div class="panel-body persona">
@@ -421,34 +447,89 @@ var_dump($data);
 
 
 
+    <!-- модальное окно для добавления PDF -->
 
-    <div class="modal fade" id="myModal">
+    <div class="modal fade" id="PDF_Modal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title">Выберите фотографию</h4>
+                    <h4 class="modal-title">Выберите файл с аннотацией к проекту</h4>
                 </div>
                 <div class="modal-body">
-                    <form role="form">
-                        <div class="form-group">
-                            <label for="exampleInputFile"> </label>
-                            <input type="file" id="exampleInputFile">
-                            <p class="help-block">Выберите фотографию для аватара. Пропорции изображения 50х50 . Рекомендуемое разрешение кадра :  300 x 300 - 500 x 500 px. </p>
-                        </div>
+                    <div id="upload-wrapper">
+                        <div align="center">
 
-                        <button type="submit" class="btn btn-default">Загрузить</button>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" data-dismiss="modal" class="btn">Закрыть</a>
-                    <a href="#" class="btn btn-primary">Сохранить</a>
+                            <h4>Загрузка PDF документа </br></br>
+                                <small> Файл аннотации должен являться PDF документом и содержать всю необходимую информацию,
+                                    которую вы можете предоставить, для непредвзятой оценки вашего проекта  экспертной группой </small></h4>
+                            </br>
+                            <form action="<?=Yii::app()->createUrl('Images/uploadPDF')?>" method="post" enctype="multipart/form-data" id="MyUploadForm">
+                                <input name="pdf_file" id="imageInput" type="file"  />
+                                <input type="submit"  id="submit-btn" value="Загрузить" class="btn btn-primary" />
+                                <img src="<?=Yii::app()->baseUrl?>/images/ajax-loader.gif" id="loading-img" style="display:none;" alt="Please Wait"/>
+                            </form>
+                            <div id="output"></div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <a href="#" data-dismiss="modal" id="RebootAva"class="btn">Закрыть</a>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
 
-    </div><!--/col-->
+    </div><!--/PDF-->
+
+
+    <!-- модальное окно для отображения инфы при заявке проекта -->
+
+    <div class="modal fade" id="Pull_Modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Внимание! Вы не ввели необходимую информацию! </h4>
+                </div>
+                <div class="modal-body">
+                    <div id="upload-wrapper">
+                        <div >
+
+                            <h4 align="center">Уважаемый пользователь!  </h4>
+                                <h4><small> Если вы видителе это сообщение, значит вы попытались отправить свой проект на участие в эстафете.
+                                    К сожалению, вы не заполнили некоторые поля при регистрации.</br></br>
+                                    Убедительная просьба, проверьте внимательно пропущенные поля в персональной форме регистрации, и в форме регистрации проекта.
+                                    Возможность заявить проект на участие предоставляется при заполнении всей информации.
+                                </small></h4>
+
+<!--                            <form action="--><?//=Yii::app()->createUrl('Images/uploadPDF')?><!--" method="post" enctype="multipart/form-data" id="MyUploadForm">-->
+<!--                                <input name="pdf_file" id="imageInput" type="file"  />-->
+<!--                                <input type="submit"  id="submit-btn" value="Загрузить" class="btn btn-primary" />-->
+<!--                                <img src="--><?//=Yii::app()->baseUrl?><!--/images/ajax-loader.gif" id="loading-img" style="display:none;" alt="Please Wait"/>-->
+<!--                            </form>-->
+                            <div id="output"></div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <a href="#" data-dismiss="modal" id="RebootAva"class="btn">Закрыть</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div><!--/PDF-->
+
+
+
+
+
+
 
     </div><!--/profile-->
 
@@ -461,4 +542,6 @@ $base_url = Yii::app()->baseUrl;
 $cs = Yii::app()->getClientScript();
 $cs->registerScriptFile( $base_url.'/assets/3160b985/js/bootstrap-datetimepicker.js', CClientScript::POS_END);
 $cs->registerScriptFile($base_url.'/adminka/js/MyEditsToEditable.js', CClientScript::POS_END);
+$cs->registerScriptFile($base_url.'/adminka/js/jquery.form.min.js', CClientScript::POS_END);
+$cs->registerScriptFile($base_url.'/adminka/js/avatar_upload.js', CClientScript::POS_END);
 ?>
