@@ -288,6 +288,29 @@ class ShowCaseController extends Controller
 
             if($user_exist){
 
+                if($user_exist->roles == 'Manager'){
+
+
+                    $id= $user_exist->id;
+                    $project = ProjectRegistry::model()->find("ID_REPRESENTATIVE='".$id."'");
+
+
+
+
+////                    $project_exist = $project->find("ID_REPRESENTATIVE='".$user_exist->id."'");
+//
+                    if($project == null){
+                        $proj = new ProjectRegistry();
+
+                        $proj->ID_REPRESENTATIVE = $id;
+                        $proj->save();
+
+
+                        var_dump($proj);
+                        echo "I'm here";
+                        Yii::app()->end();
+                    }
+                }
                 $_POST['pk']= $user_exist->id ;
                 $_POST['name']= 'AKTIV_KEY';
                 $_POST['value']= '100';

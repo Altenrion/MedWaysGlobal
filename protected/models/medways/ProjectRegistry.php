@@ -54,7 +54,7 @@ class ProjectRegistry extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('ID_REPRESENTATIVE, REG_DATE', 'required'),
+			array('ID_REPRESENTATIVE', 'required'),
 			array('ID_REPRESENTATIVE,YEAR_BUDGET, LONG_BUDGET, CO_FINANCING ,ID_STAGE, ID_PHASE, ID_BUDGET, EXECUTERS_NUM, UN_THIRTY_FIVE, STUDY, PUBLICATIONS, FORIN_PUBL, START_YEAR, END_YEAR, PRIVACY_P, FIRST_LAVEL_APPROVAL, SECOND_LAVEL_RATING, THIRD_LAVEL_RATING', 'numerical', 'integerOnly'=>true),
 			array('NAME', 'length', 'max'=>400),
             array('ROADMAP_PROJECT','safe','on'=>'update'),
