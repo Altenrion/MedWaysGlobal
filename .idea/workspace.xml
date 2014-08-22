@@ -88,7 +88,7 @@
     <file path="$PROJECT_DIR$/../ajax-image-upload-sample/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408354533765" ignored="false" />
     <file path="$PROJECT_DIR$/../ajax-image-upload-sample/processupload.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408354952220" ignored="false" />
     <file path="/ImagesConroller.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408359265627" ignored="false" />
-    <file path="/ImagesController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408542178518" ignored="false" />
+    <file path="/ImagesController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408716869577" ignored="false" />
     <file path="/avatar_upload.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408540027978" ignored="false" />
     <file path="/_ajaxAvatar.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408361927818" ignored="false" />
     <file path="/avatar_upload.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408537254073" ignored="false" />
@@ -117,10 +117,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ShowCaseController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ShowCaseController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="311" column="21" selection-start="7804" selection-end="7804" vertical-scroll-proportion="0.7139423">
+            <state line="300" column="41" selection-start="7476" selection-end="7497" vertical-scroll-proportion="-7.980392">
               <folding />
             </state>
           </provider>
@@ -221,10 +221,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImagesController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ImagesController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/controllers/ImagesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="8" selection-start="957" selection-end="957" vertical-scroll-proportion="24.076923">
+            <state line="86" column="83" selection-start="3192" selection-end="3192" vertical-scroll-proportion="0.697783">
               <folding>
                 <element signature="e#6#159#0" expanded="true" />
               </folding>
@@ -244,7 +244,7 @@
       <file leaf-file-name="AutorizedController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="29" selection-start="2063" selection-end="2063" vertical-scroll-proportion="-10.980392">
+            <state line="88" column="45" selection-start="2011" selection-end="2031" vertical-scroll-proportion="-6.980392">
               <folding />
             </state>
           </provider>
@@ -253,7 +253,7 @@
       <file leaf-file-name="ProjectRegistry.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="23" selection-start="3333" selection-end="3343" vertical-scroll-proportion="-17.807692">
+            <state line="91" column="34" selection-start="3370" selection-end="3387" vertical-scroll-proportion="-8.653846">
               <folding />
             </state>
           </provider>
@@ -276,7 +276,6 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php" />
         <option value="$PROJECT_DIR$/adminka/css/avatar_upload.css" />
         <option value="$PROJECT_DIR$/adminka/js/avatar_upload.js" />
-        <option value="$PROJECT_DIR$/protected/controllers/ImagesController.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php" />
         <option value="$PROJECT_DIR$/protected/models/medways/Users.php" />
         <option value="$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php" />
@@ -285,6 +284,7 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php" />
         <option value="$PROJECT_DIR$/adminka/js/MyEditsToEditable.js" />
         <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/ImagesController.php" />
       </list>
     </option>
   </component>
@@ -772,15 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/ImagesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="8" selection-start="957" selection-end="957" vertical-scroll-proportion="24.076923">
-          <folding>
-            <element signature="e#6#159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="41" selection-start="1387" selection-end="1403" vertical-scroll-proportion="-13.076923">
@@ -798,20 +789,6 @@
     <entry file="file://$PROJECT_DIR$/js/activate_submit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="41" selection-start="674" selection-end="679" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="23" selection-start="3333" selection-end="3343" vertical-scroll-proportion="-17.807692">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="29" selection-start="2063" selection-end="2063" vertical-scroll-proportion="-10.980392">
           <folding />
         </state>
       </provider>
@@ -889,10 +866,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="34" selection-start="3370" selection-end="3387" vertical-scroll-proportion="-8.653846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="45" selection-start="2011" selection-end="2031" vertical-scroll-proportion="-6.980392">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="311" column="21" selection-start="7804" selection-end="7804" vertical-scroll-proportion="0.7139423">
+        <state line="300" column="41" selection-start="7476" selection-end="7497" vertical-scroll-proportion="-7.980392">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ImagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="83" selection-start="3192" selection-end="3192" vertical-scroll-proportion="0.697783">
+          <folding>
+            <element signature="e#6#159#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

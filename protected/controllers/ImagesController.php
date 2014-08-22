@@ -44,24 +44,7 @@ class ImagesController extends Controller{
                 Yii::app()->end();
             }
 
-//            //uploaded file info we need to proceed
-//            $pdf_name = $_FILES['pdf_file']['name']; //file name
-//            $pdf_temp = $_FILES['pdf_file']['tmp_name']; //file temp
 //
-////            //Get file extension and name to construct new file name
-//
-//                $pdf_info = pathinfo($pdf_name);
-//                $pdf_extension = strtolower($pdf_info["extension"]); //image extension
-//                $pdf_name_only = strtolower($pdf_info["filename"]);//file name only, no extension
-//
-//            if($pdf_extension !== 'pdf'){
-//                echo "Загружаемый документ должен быть в формате PDF";
-//                Yii::app()->end();
-//            }
-//            $new_file_name = 'roadmap_'.$this->user_id.'.'.$pdf_extension;
-//            $pdf_save_folder 	= $this->destination_folder .'_'. $new_file_name;
-
-
             $whitelist = array( ".pdf");
             $data = array();
             $error = true;
@@ -84,21 +67,25 @@ class ImagesController extends Controller{
 
                         /// Сохраняю инфу в таблицу с проектом.
 
-                        $_POST['pk']= Yii::app()->user->id;
-                        $_POST['name']= 'ROADMAP_PROJECT';
-                        $_POST['value']= $new_file_name;
+                        $project = ProjectRegistry::model()->find("ID_REPRESENTATIVE='".$this->user_id."'");
+//                        var_dump($project);
+//                        Yii::app()->end();
 
-                        $this->forward('Autorized/updateProject',false);
-                        //////
+                        if($project !== null){
+                            $_POST['pk']= $project->ID_PROJECT;
+                            $_POST['name']= 'ROADMAP_PROJECT';
+                            $_POST['value']= $new_file_name;
 
+                            $this->forward('Autorized/updateProject',false);
 
+                            echo '<div class="alert alert-success">';
+                            echo '<strong>Ваш документ успешно загружен!</strong>';
+                            echo '</div>';
 
-                        echo '<div class="alert alert-success">';
-                        echo '<strong>Ваш документ успешно загружен!</strong>';
-                        echo '</div>';
-
+                            Yii::app()->end();
+                        }
+                        echo "Проект не создан, обратитесь в техническую поддержку.";
                         Yii::app()->end();
-
 
 
                     }

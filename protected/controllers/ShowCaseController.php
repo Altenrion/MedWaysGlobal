@@ -290,7 +290,6 @@ class ShowCaseController extends Controller
 
                 if($user_exist->roles == 'Manager'){
 
-
                     $id= $user_exist->id;
                     $project = ProjectRegistry::model()->find("ID_REPRESENTATIVE='".$id."'");
 
