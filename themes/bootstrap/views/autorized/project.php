@@ -81,9 +81,9 @@ if(isset($data) && !is_null($data)){
                         </li>
                         <li>
                             <p> Заявить проект
-                                <a data-toggle="modal" href="#Pull" class="btn btn-xs btn-primary">
+                                <a data-toggle="modal"  id="Pull" href="" class="btn btn-xs btn-primary">
                                     Отправить
-                                </a></p>
+                                    <i class="fa"></i></a> </p>
                         </li>
                         </br>
                         </br>
@@ -91,10 +91,10 @@ if(isset($data) && !is_null($data)){
                         <li class="nav-header"><strong>Статусы экспертиз</strong></li>
                         </br>
                         <li>
-                            <p> Подача заявки <?=$mod_one?></p>
+                            <p id="first_check"> Подача заявки <?=$mod_one?></p>
                         </li>
                         <li>
-                            <p> Проверка заявки <?=$mod_two?></p>
+                            <p id="exp_check"> Проверка заявки <?=$mod_two?></p>
 
                         </li>
                         <li>
@@ -121,7 +121,7 @@ if(isset($data) && !is_null($data)){
 
     <div class="col-sm-12 col-md-7 col-lg-7 ">
 
-    <? if($data[0]['FIRST_LAVEL_COMMENT'] !== null && $data[0]['FIRST_LAVEL_COMMENT'] !== '' ){ ?>
+    <? if($data[0]['FIRST_LAVEL_APPROVAL'] == '2' ){ ?>
     <div class="alert alert-warning  alert-dismissable">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
         <strong>Комментарий эксперта: </strong> <?=$data[0]['FIRST_LAVEL_COMMENT']?>
@@ -533,7 +533,9 @@ if(isset($data) && !is_null($data)){
 
     </div><!--/profile-->
 
-
+    <script type="text/javascript">
+        var Url = '<?=Yii::app()->createUrl('Autorized/checkFullInfo')?>';
+    </script>
 
 
     </div>

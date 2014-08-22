@@ -74,20 +74,23 @@ class AutorizedController extends Controller
         $user_info = $user->findProfileData(Yii::app()->user->id);
         $proj_info = $project->findProjectData(Yii::app()->user->id);
 
-        $flag = 'Отправляй';
-        $flag_one = '';
-        $flag_two = '';
-
-
+//        var_dump($proj_info);
         foreach($user_info[0] as $i_k=>$i_v){
-            if($i_v == null && $i_v == ''){  echo 'fail'; Yii::app()->end();  }
+            if($i_v == null && $i_v == ''){  echo json_encode('fail'); Yii::app()->end();  }
         }
 
-        foreach ($proj_info as $info_two) {
-            if($info_two == null && $info_two == ''){  echo 'fail'; Yii::app()->end();   }
+        foreach ($proj_info as $in_k=>$in_v) {
+            if($in_v == null && $in_v == ''){  echo json_encode('fail'); Yii::app()->end();   }
         }
 
-            echo 'ok';
+
+
+        $_POST['pk']=  $proj_info[0]['id'];
+        $_POST['name']= 'FIRST_LAVEL_APPROVAL';
+        $_POST['value']= '1';
+
+        $this->forward('Autorized/updateProject',false);
+        echo json_encode('ok');
             Yii::app()->end();
 
     }
@@ -119,11 +122,11 @@ class AutorizedController extends Controller
 
 
     public function statusOk($text=''){
-        return '<span class="label label-success"><i class="fa fa-check"></i>'.$text.'</span>';
+        return '<i class="fa fa-check"></i>';
     }
 
     public  function statusFail($text=''){
-        return '<span class="label label-danger"><i class="fa fa-times"></i>'.$text.'</span>';
+        return '<i class="fa fa-times"></i>';
     }
 
     public function statusSpinner(){

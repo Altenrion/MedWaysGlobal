@@ -69,27 +69,37 @@ $(document).ready(function () {
     }
 
     $('#Pull').click(function(){
+        console.log('Я тут');
+
+        console.log(Url);
+
+//        $('#Pull_Modal').modal('show');
+
+        $('#Pull>i').addClass('fa-spinner fa-spin');
+//        $('#Pull_Modal').delay('1000');
         $.ajax({
             type: 'post',
-            url: Yii.app.createUrl('Autorized/CheckFullInfo'),
-            data: $(form).serialize(),
+            url:  Url,
             dataType : 'json',
             success: function(data){
-                if(data == 'email'){
-                    succsess.css("display", "none");
-                    error.css("display", "block");
-                    error.html('Указанный email уже занят!');
-                }
-                if(data == 'succsess'){
-                    error.css("display", "none");
-                    succsess.css("display", "block");
-                    succsess.html('Вы зарегестрированы. На указанный email отправлено письмо активации.');
-                }
                 if(data == 'fail'){
-                    succsess.css("display", "none");
-                    error.css("display", "block");
-                    error.html('Произошла техническая ошибка. Приносим извенения.');
+
+//                    console.log('я тут 2 ');
+                    setTimeout(function() {
+                        $('#Pull>i').removeClass('fa-spinner fa-spin').addClass('fa-times');
+                        $('#Pull_Modal').modal('show')
+                    }, 1500);
+
                 }
+                if(data == 'ok'){
+//                    console.log('Я тут 3');
+                    setTimeout(function() {
+                        $('#Pull>i').removeClass('fa-spinner fa-spin');
+                        $('#first_check>i').removeClass('fa-spinner fa-spin').addClass('fa-check');
+                        $('#exp_check>i').removeClass('fa fa-times').addClass('fa fa-spinner fa-spin');
+                    }, 1500);
+                }
+
 
 
             }
