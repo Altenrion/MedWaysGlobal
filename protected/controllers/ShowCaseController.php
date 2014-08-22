@@ -306,9 +306,9 @@ class ShowCaseController extends Controller
                         $proj->save();
 
 
-                        var_dump($proj);
-                        echo "I'm here";
-                        Yii::app()->end();
+//                        var_dump($proj);
+//                        echo "I'm here";
+//                        Yii::app()->end();
                     }
                 }
                 $_POST['pk']= $user_exist->id ;

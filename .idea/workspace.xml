@@ -117,19 +117,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ShowCaseController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ShowCaseController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="317" column="64" selection-start="7817" selection-end="8015" vertical-scroll-proportion="-11.6470585">
+            <state line="311" column="21" selection-start="7804" selection-end="7804" vertical-scroll-proportion="0.7139423">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyEditsToEditable.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MyEditsToEditable.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/adminka/js/MyEditsToEditable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="36" selection-start="2979" selection-end="2979" vertical-scroll-proportion="0.4801812">
+            <state line="88" column="89" selection-start="3076" selection-end="3076" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -279,12 +279,12 @@
         <option value="$PROJECT_DIR$/protected/controllers/ImagesController.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php" />
         <option value="$PROJECT_DIR$/protected/models/medways/Users.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
         <option value="$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php" />
         <option value="$PROJECT_DIR$/adminka/js/MyJs.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php" />
         <option value="$PROJECT_DIR$/adminka/js/MyEditsToEditable.js" />
+        <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
       </list>
     </option>
   </component>
@@ -802,13 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="317" column="64" selection-start="7817" selection-end="8015" vertical-scroll-proportion="-11.6470585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="23" selection-start="3333" selection-end="3343" vertical-scroll-proportion="-17.807692">
@@ -891,7 +884,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/adminka/js/MyEditsToEditable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="36" selection-start="2979" selection-end="2979" vertical-scroll-proportion="0.4801812">
+        <state line="88" column="89" selection-start="3076" selection-end="3076" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="311" column="21" selection-start="7804" selection-end="7804" vertical-scroll-proportion="0.7139423">
           <folding />
         </state>
       </provider>
