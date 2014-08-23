@@ -98,29 +98,35 @@
                 </ul>
             </li>
         </ul>
-        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+
+
+        <!--!!!!!!!!!!!!!!!!!!!!!! Боковое меню начинается тута!!!!!!!!!!!!! -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav side-nav">
-                <li>
-                    <a href="<?=Yii::app()->createUrl('Autorized/profile')?>"><i class="fa fa-fw fa-user"></i> Профиль</a>
-                </li>
-                <li class="border">
-                    <a href="<?=Yii::app()->createUrl('Autorized/project')?>"><i class="fa fa-fw fa-graduation-cap"></i> Проект</a>
-                </li>
 
-                <li>
-                    <a href="<?=Yii::app()->createUrl('Autorized/projectStatistics')?>"><i class="fa fa-fw fa-bar-chart-o"></i> Статистика</a>
-                </li>
+                <? if($this->checkRole(array('Dev','Manager','Exp','Exp1','Exp2','Exp3'))): ?>
+                    <li><a href="<?=Yii::app()->createUrl('Autorized/profile')?>"><i class="fa fa-fw fa-user"></i> Профиль</a></li>
+                <? endif; ?>
 
-                <li>
-                    <a href="<?=Yii::app()->createUrl('Autorized/info')?>"><i class="fa fa-fw fa-info"></i> Информация</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-fw fa-pencil"></i> Обратная связь</a>
-                </li>
-                <li>
-                    <a href="<?=Yii::app()->createUrl('Autorized/news')?>"><i class="fa fa-fw fa-calendar"></i> Новости</a>
-                </li>
+                <? if($this->checkRole(array('Dev','Manager'))): ?>
+                    <li class="border"><a href="<?=Yii::app()->createUrl('Autorized/project')?>"><i class="fa fa-fw fa-graduation-cap"></i> Проект</a></li>
+                <? endif; ?>
+
+                <? if($this->checkRole(array('Dev','Manager','Exp','Exp1','Exp2','Exp3'))): ?>
+                    <li><a href="<?=Yii::app()->createUrl('Autorized/statistics')?>"><i class="fa fa-fw fa-bar-chart-o"></i> Статистика</a></li>
+                <? endif; ?>
+
+                <? if($this->checkRole(array('Dev','Manager','Exp','Exp1','Exp2','Exp3'))): ?>
+                    <li><a href="<?=Yii::app()->createUrl('Autorized/info')?>"><i class="fa fa-fw fa-info"></i> Информация</a></li>
+                <? endif; ?>
+
+                <? if($this->checkRole(array('Dev','Manager','Exp','Exp1','Exp2','Exp3'))): ?>
+                    <li><a href="<?=Yii::app()->createUrl('Autorized/feedback')?>"><i class="fa fa-fw fa-pencil"></i> Обратная связь</a></li>
+                <? endif; ?>
+
+                <? if($this->checkRole(array('Dev','Manager','Exp','Exp1','Exp2','Exp3'))): ?>
+                    <li><a href="<?=Yii::app()->createUrl('Autorized/news')?>"><i class="fa fa-fw fa-calendar"></i> Новости</a></li>
+                <? endif; ?>
 
             </ul>
         </div>

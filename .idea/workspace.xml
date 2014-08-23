@@ -42,7 +42,7 @@
     <file path="/my.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406882924462" ignored="false" />
     <file path="/info_FAQ.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406888578176" ignored="false" />
     <file path="/organizers.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408342790496" ignored="false" />
-    <file path="/feedback.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408343629338" ignored="false" />
+    <file path="/feedback.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408789212121" ignored="false" />
     <file path="/error.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407259053013" ignored="false" />
     <file path="/registration.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407616601356" ignored="false" />
     <file path="/registration.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407316915486" ignored="false" />
@@ -63,7 +63,7 @@
     <file path="/CUserIdentity.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407569744508" ignored="false" />
     <file path="/Users.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408388711568" ignored="false" />
     <file path="/MyTraits.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407570938843" ignored="false" />
-    <file path="/AutorizedController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408784702024" ignored="false" />
+    <file path="/AutorizedController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408789580255" ignored="false" />
     <file path="/Users_old.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407620556572" ignored="false" />
     <file path="/regist.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407659269252" ignored="false" />
     <file path="/Subscriber.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407657729038" ignored="false" />
@@ -76,7 +76,7 @@
     <file path="/tests.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407878560404" ignored="false" />
     <file path="/UserIdentity.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407929092355" ignored="false" />
     <file path="$PROJECT_DIR$/adminka/font-awesome-4.1.0/less/font-awesome.less" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407927659262" ignored="false" />
-    <file path="/Adminka.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408226818690" ignored="false" />
+    <file path="/Adminka.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408789968925" ignored="false" />
     <file path="/stylings.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408050002125" ignored="false" />
     <file path="/profile.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408537165656" ignored="false" />
     <file path="/Bootstrap.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408173524166" ignored="false" />
@@ -120,7 +120,7 @@
       <file leaf-file-name="ShowCaseController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="300" column="41" selection-start="7476" selection-end="7497" vertical-scroll-proportion="0.0">
+            <state line="20" column="7" selection-start="304" selection-end="304" vertical-scroll-proportion="-13.076923">
               <folding />
             </state>
           </provider>
@@ -147,7 +147,7 @@
       <file leaf-file-name="UserIdentity.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="41" selection-start="1387" selection-end="1403" vertical-scroll-proportion="0.0">
+            <state line="50" column="41" selection-start="1387" selection-end="1403" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
@@ -156,7 +156,7 @@
       <file leaf-file-name="project.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="84" selection-start="3865" selection-end="3865" vertical-scroll-proportion="0.0">
+            <state line="95" column="28" selection-start="2979" selection-end="2979" vertical-scroll-proportion="-1.9615384">
               <folding>
                 <marker date="1408695227825" expanded="true" signature="1485:3828" placeholder="..." />
                 <marker date="1408695227825" expanded="true" signature="1514:1606" placeholder="..." />
@@ -222,7 +222,7 @@
       <file leaf-file-name="ImagesController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/ImagesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="49" selection-start="2372" selection-end="2372" vertical-scroll-proportion="0.0">
+            <state line="50" column="0" selection-start="1558" selection-end="1558" vertical-scroll-proportion="-21.576923">
               <folding />
             </state>
           </provider>
@@ -237,19 +237,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutorizedController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AutorizedController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="29" selection-start="2234" selection-end="2234" vertical-scroll-proportion="0.6149358">
+            <state line="24" column="14" selection-start="491" selection-end="491" vertical-scroll-proportion="-7.8461537">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectRegistry.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
+      <file leaf-file-name="Adminka.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="191" column="41" selection-start="7423" selection-end="7443" vertical-scroll-proportion="0.0">
+            <state line="120" column="28" selection-start="5439" selection-end="5439" vertical-scroll-proportion="0.4842474">
+              <folding>
+                <marker date="1408790094614" expanded="true" signature="4766:4800" placeholder="..." />
+                <marker date="1408790094614" expanded="true" signature="5032:5066" placeholder="..." />
+                <marker date="1408790094614" expanded="true" signature="5302:5336" placeholder="..." />
+                <marker date="1408790094614" expanded="true" signature="5559:5593" placeholder="..." />
+                <marker date="1408790094614" expanded="true" signature="5826:5860" placeholder="..." />
+                <marker date="1408790094614" expanded="true" signature="6072:6391" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyTraits.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/components/MyTraits.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="26" selection-start="273" selection-end="278" vertical-scroll-proportion="-4.576923">
               <folding />
             </state>
           </provider>
@@ -265,11 +281,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
-        <option value="$PROJECT_DIR$/css/style_adoptive.css" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
         <option value="$PROJECT_DIR$/adminka/css/style.css" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php" />
         <option value="$PROJECT_DIR$/adminka/css/avatar_upload.css" />
         <option value="$PROJECT_DIR$/adminka/js/avatar_upload.js" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php" />
@@ -280,7 +293,10 @@
         <option value="$PROJECT_DIR$/adminka/js/MyEditsToEditable.js" />
         <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ImagesController.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/feedback.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/news.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php" />
       </list>
     </option>
   </component>
@@ -429,18 +445,12 @@
               <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -454,11 +464,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
+              <option name="myItemId" value="themes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autorized" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -473,14 +509,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="medways" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -565,11 +593,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\MedWaysGlobal\themes\bootstrap\views\autorized" />
       <recent name="C:\wamp\www\MedWaysGlobal\adminka\css" />
       <recent name="C:\wamp\www\MedWaysGlobal\adminka\img" />
       <recent name="C:\wamp\www\MedWaysGlobal\adminka\js" />
       <recent name="C:\wamp\www\MedWaysGlobal\images" />
-      <recent name="C:\wamp\www\MedWaysGlobal\themes\bootstrap\views\autorized" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp\www\MedWaysGlobal\images\avatars" />
@@ -726,33 +754,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="41" selection-start="7423" selection-end="7443" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/fileInput.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="1" selection-start="526" selection-end="526" vertical-scroll-proportion="-0.42468855" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/statistics.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/web/auth/CPhpAuthManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="4" selection-start="6558" selection-end="6664" vertical-scroll-proportion="0.32322055" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/PhpAuthManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="45" selection-start="118" selection-end="118" vertical-scroll-proportion="0.13885647" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/production.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.1341891" />
@@ -761,13 +762,6 @@
     <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="114" column="68" selection-start="4368" selection-end="4368" vertical-scroll-proportion="0.12718786" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="41" selection-start="1387" selection-end="1403" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
@@ -784,9 +778,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/adminka/js/MyEditsToEditable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="54" selection-start="3134" selection-end="3134" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="191" column="41" selection-start="7423" selection-end="7443" vertical-scroll-proportion="1.1611375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/feedback.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="63" selection-start="305" selection-end="305" vertical-scroll-proportion="0.18301435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="7" selection-start="304" selection-end="304" vertical-scroll-proportion="-13.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/news.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="50" selection-start="786" selection-end="786" vertical-scroll-proportion="0.39673278">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="23" selection-start="4547" selection-end="4788" vertical-scroll-proportion="0.56398106">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/MyTraits.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="26" selection-start="273" selection-end="278" vertical-scroll-proportion="-4.576923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="41" selection-start="1387" selection-end="1403" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="84" selection-start="3865" selection-end="3865" vertical-scroll-proportion="0.0">
+        <state line="95" column="28" selection-start="2979" selection-end="2979" vertical-scroll-proportion="-1.9615384">
           <folding>
             <marker date="1408695227825" expanded="true" signature="1485:3828" placeholder="..." />
             <marker date="1408695227825" expanded="true" signature="1514:1606" placeholder="..." />
@@ -848,38 +898,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="300" column="41" selection-start="7476" selection-end="7497" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/ImagesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="49" selection-start="2372" selection-end="2372" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminka/js/MyEditsToEditable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="54" selection-start="3134" selection-end="3134" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="41" selection-start="7423" selection-end="7443" vertical-scroll-proportion="0.0">
+        <state line="50" column="0" selection-start="1558" selection-end="1558" vertical-scroll-proportion="-21.576923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="29" selection-start="2234" selection-end="2234" vertical-scroll-proportion="0.6149358">
+        <state line="24" column="14" selection-start="491" selection-end="491" vertical-scroll-proportion="-7.8461537">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="28" selection-start="5439" selection-end="5439" vertical-scroll-proportion="0.4842474">
+          <folding>
+            <marker date="1408790094614" expanded="true" signature="4766:4800" placeholder="..." />
+            <marker date="1408790094614" expanded="true" signature="5032:5066" placeholder="..." />
+            <marker date="1408790094614" expanded="true" signature="5302:5336" placeholder="..." />
+            <marker date="1408790094614" expanded="true" signature="5559:5593" placeholder="..." />
+            <marker date="1408790094614" expanded="true" signature="5826:5860" placeholder="..." />
+            <marker date="1408790094614" expanded="true" signature="6072:6391" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

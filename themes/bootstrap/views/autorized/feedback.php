@@ -13,18 +13,18 @@
 
 
 			<ol class="breadcrumb">
-			   	<li class="active"><i class="fa fa-fw fa-calendar"></i> Новости</li>
+			   	<li class="active"><i class="fa fa-fw fa-pencil"></i> Обратная связь</li>
 			</ol>
 
 
 			<div class="row profile">
 
 				<div class="col-sm-12 col-md-7 col-lg-7 bord">
-                    <div class="alert alert-info   alert-dismissable">
+                    <div class="alert alert-warning alert-dismissable">
                         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                         <strong>Warning!</strong> Better check yourself, you're not looking too good.
                     </div>
-                    <div class="panel panel-info  ">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">Личные данные</h3>
                         </div>

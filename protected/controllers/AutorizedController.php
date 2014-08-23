@@ -8,9 +8,46 @@ class AutorizedController extends Controller
     public  $layout = '//layouts/Adminka';
     public $defaultAction = 'index';
 
+    public function filters()
+    {
+        return array(
+            'accessControl',
+        );
+    }
+
+
+    public function accessRules()
+    {
+        return array(
+            array('deny',
+                'actions'=>array('index', 'profile','info','news','project','statistics'),
+                'users'=>array('?'),
+            ),
+            array('allow',
+                'actions'=>array('profile','news',),
+                'roles'=>array('Dev','Manager','Exp','Exp1','Exp2','Exp3'),
+            ),
+            array('deny',
+                'actions'=>array('index','project','statistics'),
+                'users'=>array('*'),
+            ),
+        );
+    }
+
+
 	public function actionIndex()
 	{
 		$this->render('index');
+	}
+
+    public function actionStatistics()
+	{
+		$this->render('statistics');
+	}
+
+    public function actionFeedback()
+	{
+		$this->render('feedback');
 	}
 
 	public function actionProject()
@@ -26,10 +63,6 @@ class AutorizedController extends Controller
         ));
 	}
 
-	public function actionProjectStatistics()
-	{
-		$this->render('project_statistics');
-	}
 
 	public function actionInfo()
 	{
