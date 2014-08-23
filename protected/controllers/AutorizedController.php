@@ -80,6 +80,10 @@ class AutorizedController extends Controller
         }
 
         foreach ($proj_info[0] as $in_k=>$in_v) {
+
+            if($in_k == 'FIRST_LAVEL_APPROVAL' || $in_k == 'SECOND_LAVEL_RATING' || $in_k == 'THIRD_LAVEL_RATING'){
+                $in_v = 'not_count';
+            }
             if($in_v == null && $in_v == ''){  echo json_encode('fail'); Yii::app()->end();   }
         }
 
