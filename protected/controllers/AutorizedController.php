@@ -79,7 +79,7 @@ class AutorizedController extends Controller
             if($i_v == null && $i_v == ''){  echo json_encode('fail'); Yii::app()->end();  }
         }
 
-        foreach ($proj_info as $in_k=>$in_v) {
+        foreach ($proj_info[0] as $in_k=>$in_v) {
             if($in_v == null && $in_v == ''){  echo json_encode('fail'); Yii::app()->end();   }
         }
 
