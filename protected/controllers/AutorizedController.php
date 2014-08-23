@@ -20,7 +20,7 @@ class AutorizedController extends Controller
     {
         return array(
             array('deny',
-                'actions'=>array('index', 'profile','info','news','project','statistics','projects'),
+                'actions'=>array('index', 'profile','info','news','project','statistics','projects','experts'),
                 'users'=>array('?'),
             ),
             array('allow',
@@ -37,7 +37,7 @@ class AutorizedController extends Controller
             ),
 
             array('deny',
-                'actions'=>array('index', 'profile','info','news','project','statistics','projects','projects'),
+                'actions'=>array('index', 'profile','info','news','project','statistics','projects'),
                 'users'=>array('*'),
             ),
         );
@@ -53,6 +53,7 @@ class AutorizedController extends Controller
 	{
 		$this->render('statistics');
 	}
+
 
     public function actionExperts()
 	{
