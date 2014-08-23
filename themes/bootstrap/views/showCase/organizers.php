@@ -27,49 +27,49 @@
 
                     <ul class="post-list">
                         <li>
-                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
+                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/org/o_minzdrav.jpg" alt=""> </a> </div>
                             <div class="meta">
                                 <h6><a href="#@#"> Министерство здравоохранения Российской Федерации  </a></h6>
                                 <em>Россия, Москва</em> </div>
                         </li>
                         <li>
-                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
+                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/org/o_minobr.jpg" alt=""> </a> </div>
                             <div class="meta">
                                 <h6><a href="#@#"> Министерство образования и науки Российской Федерации </a></h6>
                                 <em>Россия, Москва</em> </div>
                         </li>
                         <li>
-                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
+                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/org/o_sovet_rectorov.jpg" alt=""> </a> </div>
                             <div class="meta">
                                 <h6><a href="#@#"> Совет ректоров медицинских и фармацевтических вузов России </a></h6>
                                 <em>Россия</em> </div>
                         </li>
                         <li>
-                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
+                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/org/o_ran.jpg" alt=""> </a> </div>
                             <div class="meta">
                                 <h6><a href="#@#"> Российская академия наук </a></h6>
                                 <em>Россия, Москва</em> </div>
                         </li>
                         <li>
-                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
+                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/org/o_pmgmu.jpg" alt=""> </a> </div>
                             <div class="meta">
                                 <h6><a href="#@#"> ГБОУ ВПО Первый Московский государственный медицинский университет имени И.М. Сеченова Минздрава России </a></h6>
                                 <em>Россия, Москва</em> </div>
                         </li>
                         <li>
-                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
+                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/org/o_liga.jpg" alt=""> </a> </div>
                             <div class="meta">
                                 <h6><a href="#@#"> Всероссийская общественная организация «Медицинская Лига России» </a></h6>
                                 <em>Россия</em> </div>
                         </li>
                         <li>
-                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
+                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/org/o_rosmu.jpg" alt=""> </a> </div>
                             <div class="meta">
                                 <h6><a href="#@#"> Общероссийская общественная организация «Российский союз молодых ученых» </a></h6>
                                 <em>Россия</em> </div>
                         </li>
                         <li>
-                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
+                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/org/o_opm.jpg" alt=""> </a> </div>
                             <div class="meta">
                                 <h6><a href="#@#"> МОО «Общество персонализированной медицины» </a></h6>
                                 <em>Россия, Москва</em> </div>
@@ -83,22 +83,56 @@
 
             <div class="col-sm-6">
                 <h3 class="section-title bm30">Базовые вузы</h3>
+                <div class="sidebox widget">
+                <ul class="post-list">
 
-                <ul class="circled">
+                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/univers/u_ryazgmu.jpg" alt=""> </a> </div>
+                        <div class="meta">
+                            <h6><a href="#@#">Центральный федеральный округ – ГБОУ ВПО Рязанский государственный медицинский университет имени академика И.П. Павлова Минздрава России</a></h6>
 
-                    <li>Центральный федеральный округ – ГБОУ ВПО Рязанский государственный медицинский университет имени академика И.П. Павлова Минздрава России</li>
-                    <li>Южный федеральный округ – ГБОУ ВПО Кубанский государственный медицинский университет Минздрава России</li>
-                    <li>Северо-Западный федеральный округ – ГБОУ ВПО Санкт-Петербургский государственный медицинский университет имени академика И.П. Павлова Минздрава России</li>
-                    <li>Дальневосточный федеральный округ – ГБОУ ВПО Дальневосточный государственный медицинский университет Минздрава России</li>
-                    <li>Сибирский федеральный округ – ГБОУ ВПО Красноярский государственный Медицинский университет имени профессора В.Ф. Войно-Ясенецкого Минздрава России</li>
-                    <li>Уральский федеральный округ – ГБОУ ВПО Челябинская государственная медицинская академия Минздрава России</li>
-                    <li>Приволжский федеральный округ – ГБОУ ВПО  Самарский государственный медицинский университет Минздрава России</li>
-                    <li>Северо-Кавказский федеральный округ – ГБОУ ВПО Ставропольский государственный медицинский университет Минздрава России</li>
+                        </div>
+                    </li>
+                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/univers/u_kgmu.jpg" alt=""> </a> </div>
+                        <div class="meta">
+                            <h6><a href="#@#">Южный федеральный округ – ГБОУ ВПО Кубанский государственный медицинский университет Минздрава России</a></h6>
+                        </div>
+                    </li>
+                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/univers/u_spbgmu.jpg" alt=""> </a> </div>
+                        <div class="meta">
+                            <h6><a href="#@#">Северо-Западный федеральный округ – ГБОУ ВПО Санкт-Петербургский государственный медицинский университет имени академика И.П. Павлова Минздрава России</a></h6>
+                        </div>
+                    </li>
+                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/univers/u_dvgmu.jpg" alt=""> </a> </div>
+                        <div class="meta">
+                            <h6><a href="#@#">Дальневосточный федеральный округ – ГБОУ ВПО Дальневосточный государственный медицинский университет Минздрава России</a></h6>
+                        </div>
+                    </li>
+                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/univers/u_krasgmu.jpg" alt=""> </a> </div>
+                        <div class="meta">
+                            <h6><a href="#@#">Сибирский федеральный округ – ГБОУ ВПО Красноярский государственный Медицинский университет имени профессора В.Ф. Войно-Ясенецкого Минздрава России</a></h6>
+                        </div>
+                    </li>
+                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/univers/u_uugmu.jpg" alt=""> </a> </div>
+                        <div class="meta">
+                            <h6><a href="#@#">Уральский федеральный округ – ГБОУ ВПО Южно-Уральский государственный медицинский университет Минздрава России</a></h6>
+                        </div>
+                    </li>
+                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/univers/u_samgmu.jpg" alt=""> </a> </div>
+                        <div class="meta">
+                            <h6><a href="#@#">Приволжский федеральный округ – ГБОУ ВПО  Самарский государственный медицинский университет Минздрава России</a></h6>
+                        </div>
+                    </li>
+                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/univers/u_stavgmu.jpg" alt=""> </a> </div>
+                        <div class="meta">
+                            <h6><a href="#@#">Северо-Кавказский федеральный округ – ГБОУ ВПО Ставропольский государственный медицинский университет Минздрава России</a></h6>
+                        </div>
+                    </li>
                 </ul>
 
             </div>
+            </div>
 
-        </div>
+                </div>
 
 
 
@@ -117,65 +151,74 @@
     <div class="lm10 rm10">
         <div id="owl-blog" class="owl-carousel carousel-th">
             <div class="item">
-                <figure class="icon-overlay icn-link"><a href="#"><img src="<?=Yii::app()->baseUrl?>/images/art/b1.jpg" alt="" /></a></figure>
+                <figure class="icon-overlay icn-link"><a href="http://www.fesmu.ru" target="_blank" ><img src="<?=Yii::app()->baseUrl?>/images/univers/p_dvgmu.jpg" alt="" /></a></figure>
                 <div class="bordered no-top-border">
                     <div class="info">
-                        <h3 class="post-title"><a href="#">Tortor Ullamcorper Fringi</a></h3>
-                        <div class="meta"> <span class="date">21 May 2013</span> <span class="category"><a href="#">Macro</a>, <a href="#">Photography</a></span> <span class="like"><a href="#">27 <i class="icon-heart"></i></a></span> </div>
+                        <h3 class="post-title"><a href="#">ДВГМУ Минздрава России</a></h3>
+                        <div class="meta"> <span class="date">ДФО</span> <span class="category"><a  target="_blank" href="http://www.fesmu.ru">www.fesmu.ru</a></span> </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <figure class="icon-overlay icn-link"><a href="#"><img src="<?=Yii::app()->baseUrl?>/images/art/b2.jpg" alt="" /></a></figure>
+                <figure class="icon-overlay icn-link"><a href="#"  target="_blank"><img src="<?=Yii::app()->baseUrl?>/images/univers/p_kgmu.jpg" alt="" /></a></figure>
                 <div class="bordered no-top-border">
                     <div class="info">
-                        <h3 class="post-title"><a href="#">Nullam Lorem Aenean</a></h3>
-                        <div class="meta"> <span class="date">14 Apr 2013</span> <span class="category"><a href="#">Flyer</a>, <a href="#">Poster</a></span> <span class="like"><a href="#">12 <i class="icon-heart"></i></a></span> </div>
+                        <h3 class="post-title"><a href="http://www.ksma.ru">КубГМУ Минздрава России</a></h3>
+                        <div class="meta"> <span class="date">ЮФО</span> <span class="category"><a  target="_blank" href="http://www.ksma.ru">www.ksma.ru</a></span> </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <figure class="icon-overlay icn-link"><a href="#"><img src="<?=Yii::app()->baseUrl?>/images/art/b3.jpg" alt="" /></a></figure>
+                <figure class="icon-overlay icn-link"><a href="http://krasgmu.ru/"  target="_blank"><img src="<?=Yii::app()->baseUrl?>/images/univers/p_krasgmu.jpg" alt="" /></a></figure>
                 <div class="bordered no-top-border">
                     <div class="info">
-                        <h3 class="post-title"><a href="#">Etiam Cursus Tellus Purus</a></h3>
-                        <div class="meta"> <span class="date">08 Apr 2013</span> <span class="category"><a href="#">Vintage</a>, <a href="#">Poster</a></span> <span class="like"><a href="#">18 <i class="icon-heart"></i></a></span> </div>
+                        <h3 class="post-title"><a href="#"> КрасГМУ им. проф. В.Ф.Войно-Ясенецкого</a></h3>
+                        <div class="meta"> <span class="date">СФО</span> <span class="category"><a target="_blank" href="http://krasgmu.ru/">krasgmu.ru</a></span> </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <figure class="icon-overlay icn-link"><a href="#"><img src="<?=Yii::app()->baseUrl?>/images/art/b4.jpg" alt="" /></a></figure>
+                <figure class="icon-overlay icn-link"><a href="http://www.rzgmu.ru/"  target="_blank"><img src="<?=Yii::app()->baseUrl?>/images/univers/p_ryazgmu.jpg" alt="" /></a></figure>
                 <div class="bordered no-top-border">
                     <div class="info">
-                        <h3 class="post-title"><a href="#">Vehicula Lorem Nullam</a></h3>
-                        <div class="meta"> <span class="date">03 March 2013</span> <span class="category"><a href="#">Typography</a>, <a href="#">Journal</a></span> <span class="like"><a href="#">11 <i class="icon-heart"></i></a></span> </div>
+                        <h3 class="post-title"><a href="#"> РязГМУ Минздрава России </a></h3>
+                        <div class="meta"> <span class="date">ЦФО</span> <span class="category"><a target="_blank" href="http://www.rzgmu.ru/">www.rzgmu.ru</a></span> </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <figure class="icon-overlay icn-link"><a href="#"><img src="<?=Yii::app()->baseUrl?>/images/art/b5.jpg" alt="" /></a></figure>
+                <figure class="icon-overlay icn-link"><a href="http://www.samsmu.ru/"  target="_blank"><img src="<?=Yii::app()->baseUrl?>/images/univers/p_samgmu.jpg" alt="" /></a></figure>
                 <div class="bordered no-top-border">
                     <div class="info">
-                        <h3 class="post-title"><a href="#">Euismod Malesuada Tristique</a></h3>
-                        <div class="meta"> <span class="date">21 Feb 2013</span> <span class="category"><a href="#">Logo</a>, <a href="#">Illustration</a></span> <span class="like"><a href="#">08 <i class="icon-heart"></i></a></span> </div>
+                        <h3 class="post-title"><a href="#">СамГМУ Минздрава России </a></h3>
+                        <div class="meta"> <span class="date">ПФО</span> <span class="category"><a target="_blank" href="http://www.samsmu.ru/">www.samsmu.ru</a></span> </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <figure class="icon-overlay icn-link"><a href="#"><img src="<?=Yii::app()->baseUrl?>/images/art/b6.jpg" alt="" /></a></figure>
+                <figure class="icon-overlay icn-link"><a href="http://www.spb-gmu.ru/"  target="_blank"><img src="<?=Yii::app()->baseUrl?>/images/univers/p_spbgmu.jpg" alt="" /></a></figure>
                 <div class="bordered no-top-border">
                     <div class="info">
-                        <h3 class="post-title"><a href="#">Risus Egestas Adipiscing Fringilla</a></h3>
-                        <div class="meta"> <span class="date">14 Feb 2013</span> <span class="category"><a href="#">Typography</a>, <a href="#">Flyer</a></span> <span class="like"><a href="#">22 <i class="icon-heart"></i></a></span> </div>
+                        <h3 class="post-title"><a href="#">СПбГМУ им. И.П.Павлова  Минздрава России  </a></h3>
+                        <div class="meta"> <span class="date">СЗФО</span> <span class="category"><a target="_blank" href="http://www.spb-gmu.ru/">www.spb-gmu.ru</a> </span> </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <figure class="icon-overlay icn-link"><a href="#"><img src="<?=Yii::app()->baseUrl?>/images/art/b7.jpg" alt="" /></a></figure>
+                <figure class="icon-overlay icn-link"><a href="http://stgmu.ru/"  target="_blank"><img src="<?=Yii::app()->baseUrl?>/images/univers/p_stavgmu.jpg" alt="" /></a></figure>
                 <div class="bordered no-top-border">
                     <div class="info">
-                        <h3 class="post-title"><a href="#">Sem Egestas Euismod</a></h3>
-                        <div class="meta"> <span class="date">12 Jan 2013</span> <span class="category"><a href="#">Poster</a>, <a href="#">Vintage</a></span> <span class="like"><a href="#">19 <i class="icon-heart"></i></a></span> </div>
+                        <h3 class="post-title"><a href="#">СтГМУ  Минздрава России    </a></h3>
+                        <div class="meta"> <span class="date">СКФО</span> <span class="category"><a target="_blank" href="http://stgmu.ru/">stgmu.ru</a></span> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="icon-overlay icn-link"><a href="http://www.chelsma.ru/"  target="_blank"><img src="<?=Yii::app()->baseUrl?>/images/univers/p_uugmu.jpg" alt="" /></a></figure>
+                <div class="bordered no-top-border">
+                    <div class="info">
+                        <h3 class="post-title"><a href="#">ЮУГМУ Минздрава России </a></h3>
+                        <div class="meta"> <span class="date">УФО</span> <span class="category"><a target="_blank" href="http://www.chelsma.ru/">www.chelsma.ru</a></span> </div>
                     </div>
                 </div>
             </div>

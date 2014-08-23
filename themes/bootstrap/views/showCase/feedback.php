@@ -165,8 +165,8 @@
                 <address>
                     <strong>Центр трансфера технологий</strong><br>
                     Томск, Московский тракт, д. 2<br>
-                    <abbr title="Руководитель департамента">Рудко Татьяна Владимировна : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">okr@ssmu.ru</a><br>
-                    <abbr title="Руководитель департамента">Зима Анастасия Павловна : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">strateg@ssmu.ru</a>
+                    <abbr >Рудко Татьяна Владимировна : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">okr@ssmu.ru</a><br>
+                    <abbr >Зима Анастасия Павловна : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">strateg@ssmu.ru</a>
                 </address>
             </div>
           <!-- /.post-list -->
@@ -183,8 +183,8 @@
                   <address>
                       <strong>Университетский технопарк</strong><br>
                       Москва, Трубецкая ул., д.8, стр.2<br>
-                      <abbr title="Руководитель департамента">Кузнецова Юлия Евгеньевна : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">kuznetsova.yulia@bk.ru</a><br>
-                      <abbr title="Руководитель департамента">Барышев Никита Владимирович : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">administration@altenrion.ru</a>
+                      <abbr >Кузнецова Юлия Евгеньевна : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">kuznetsova.yulia@bk.ru</a><br>
+                      <abbr >Барышев Никита Владимирович : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">administration@altenrion.ru</a>
                   </address>
               </div>
               <!-- /.post-list -->
