@@ -20,15 +20,24 @@ class AutorizedController extends Controller
     {
         return array(
             array('deny',
-                'actions'=>array('index', 'profile','info','news','project','statistics'),
+                'actions'=>array('index', 'profile','info','news','project','statistics','projects'),
                 'users'=>array('?'),
             ),
             array('allow',
-                'actions'=>array('profile','news',),
+                'actions'=>array('profile','news','info'),
                 'roles'=>array('Dev','Manager','Exp','Exp1','Exp2','Exp3'),
             ),
+            array('allow',
+                'actions'=>array('project'),
+                'roles'=>array('Manager'),
+            ),
+            array('allow',
+                'actions'=>array('projects','statistics'),
+                'roles'=>array('Exp1','Exp2','Exp3','Dev',),
+            ),
+
             array('deny',
-                'actions'=>array('index','project','statistics'),
+                'actions'=>array('index', 'profile','info','news','project','statistics','projects','projects'),
                 'users'=>array('*'),
             ),
         );
@@ -45,10 +54,11 @@ class AutorizedController extends Controller
 		$this->render('statistics');
 	}
 
-    public function actionFeedback()
+    public function actionExperts()
 	{
-		$this->render('feedback');
+		$this->render('experts');
 	}
+
 
 	public function actionProject()
 	{
@@ -67,6 +77,11 @@ class AutorizedController extends Controller
 	public function actionInfo()
 	{
 		$this->render('info');
+	}
+
+    public function actionProjects()
+	{
+		$this->render('projects');
 	}
 
 	public function actionNews()

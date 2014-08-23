@@ -11,12 +11,12 @@ if(isset($data) && !is_null($data)){
     if(isset($data[0]['roles'])){
         $role = $data[0]['roles'];
         switch($role){
-            case 'Dev': $data[0]['roles'] = 'Разработчик';break;
-            case 'Manager': $data[0]['roles'] = 'Представитель проекта';break;
-            case 'Exp': $data[0]['roles'] = 'Эксперт';break;
-            case 'Exp1': $data[0]['roles'] = 'Эксперт';break;
-            case 'Exp2': $data[0]['roles'] = 'Эксперт';break;
-            case 'Exp3': $data[0]['roles'] = 'Эксперт';break;
+            case 'Dev': $data[0]['role'] = 'Разработчик';break;
+            case 'Manager': $data[0]['role'] = 'Представитель проекта';break;
+            case 'Exp': $data[0]['role'] = 'Эксперт';break;
+            case 'Exp1': $data[0]['role'] = 'Эксперт';break;
+            case 'Exp2': $data[0]['role'] = 'Эксперт';break;
+            case 'Exp3': $data[0]['role'] = 'Эксперт';break;
         }
     }
 }
@@ -50,10 +50,24 @@ if(isset($data) && !is_null($data)){
                                 <div class="col-xs-7 col-sm-6 col-md-12">
                                     <ul class="vcard-details">
 
+
                                         <li class="vcard-detail">
-                                            <div><i class="fa fa-fw fa-child"></i> <?=(isset($data))?($data[0]['roles']):('')?></div>
+                                            <div><i class="fa fa-fw fa-child"></i> <?=(isset($data))?($data[0]['role']):('')?></div>
 
                                         </li >
+                                        <? if($this->checkRole(array('Exp','Exp1','Exp2','Exp3'))): ?>
+                                            <li class="vcard-detail">
+                                                <div>
+                                                    <i class="fa fa-fw fa-certificate"></i>
+                                                    <?
+                                                    if (isset($data) && isset($data[0])){
+                                                        if($data[0]['roles']== 'Exp'){ echo 'подтверждение статуса';}
+                                                        else {echo 'статус подтвержден';}
+                                                    }
+                                                    ?>
+                                                </div>
+                                            </li >
+                                        <? endif; ?>
                                         <li class="vcard-detail">
                                             <div><i class="fa fa-fw fa-envelope"></i> <?=(isset($data))?($data[0]['EMAIL']):('')?></div>
 
@@ -79,11 +93,13 @@ if(isset($data) && !is_null($data)){
 
 				<div class="col-sm-12 col-md-7 col-lg-6 data bord">
 
-                    <div class="alert alert-info  alert-dismissable">
-                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                        <strong>Внимание! </strong> Ваш id "<?=(isset($data))?('найден'):('---')?>"
-                    </div>
-
+                    <? if($this->checkRole(array('Exp'))): ?>
+                        <div class="alert alert-info  alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            <strong>Внимание! </strong> Уважаемый пользователь, ваш статус "Эксперт" находиться на согласовании.
+                             Результат будет известен в течении суток. Ожидайте оповещения по почте, указанной при регистрации.
+                        </div>
+                    <? endif; ?>
                     <div class="panel panel-info">
                         <div class="panel-heading">
                             <h3 class="panel-title">Личные данные

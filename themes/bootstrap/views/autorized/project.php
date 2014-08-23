@@ -55,7 +55,7 @@ if(isset($data) && !is_null($data)){
     <div id="content" class="col-lg-12 col-sm-12 col-xs-12">
 
     <ol class="breadcrumb">
-        <li class="active"><i class="fa fa-fw fa-graduation-cap"></i> Проект</li>
+        <li class="active"><i class="fa fa-fw fa-graduation-cap"></i> Проект <?=(isset($data[0]['id']))?('- регистрационный номер: '.$data[0]['id'].''):('')?></li>
     </ol>
 
     <div class="row profile">

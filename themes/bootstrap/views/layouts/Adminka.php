@@ -108,20 +108,24 @@
                     <li><a href="<?=Yii::app()->createUrl('Autorized/profile')?>"><i class="fa fa-fw fa-user"></i> Профиль</a></li>
                 <? endif; ?>
 
-                <? if($this->checkRole(array('Dev','Manager'))): ?>
+                <? if($this->checkRole(array('Dev'))): ?>
+                    <li><a href="<?=Yii::app()->createUrl('Autorized/experts')?>"><i class="fa fa-fw fa-group"></i> Эксперты</a></li>
+                <? endif; ?>
+
+                <? if($this->checkRole(array('Manager'))): ?>
                     <li class="border"><a href="<?=Yii::app()->createUrl('Autorized/project')?>"><i class="fa fa-fw fa-graduation-cap"></i> Проект</a></li>
                 <? endif; ?>
 
-                <? if($this->checkRole(array('Dev','Manager','Exp','Exp1','Exp2','Exp3'))): ?>
+                <? if($this->checkRole(array('Exp1','Exp2','Exp3','Dev'))): ?>
+                    <li class="border"><a href="<?=Yii::app()->createUrl('Autorized/projects')?>"><i class="fa fa-fw fa-graduation-cap"></i> Проекты</a></li>
+                <? endif; ?>
+
+                <? if($this->checkRole(array('Dev','Exp1','Exp2','Exp3'))): ?>
                     <li><a href="<?=Yii::app()->createUrl('Autorized/statistics')?>"><i class="fa fa-fw fa-bar-chart-o"></i> Статистика</a></li>
                 <? endif; ?>
 
                 <? if($this->checkRole(array('Dev','Manager','Exp','Exp1','Exp2','Exp3'))): ?>
                     <li><a href="<?=Yii::app()->createUrl('Autorized/info')?>"><i class="fa fa-fw fa-info"></i> Информация</a></li>
-                <? endif; ?>
-
-                <? if($this->checkRole(array('Dev','Manager','Exp','Exp1','Exp2','Exp3'))): ?>
-                    <li><a href="<?=Yii::app()->createUrl('Autorized/feedback')?>"><i class="fa fa-fw fa-pencil"></i> Обратная связь</a></li>
                 <? endif; ?>
 
                 <? if($this->checkRole(array('Dev','Manager','Exp','Exp1','Exp2','Exp3'))): ?>
