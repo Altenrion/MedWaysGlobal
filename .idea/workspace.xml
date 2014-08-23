@@ -128,10 +128,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginForm.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LoginForm.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/models/LoginForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="51" selection-start="1827" selection-end="1827" vertical-scroll-proportion="0.6009335">
+            <state line="49" column="34" selection-start="1074" selection-end="1074" vertical-scroll-proportion="-2.8076923">
               <folding />
             </state>
           </provider>
@@ -216,10 +216,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="devel.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="devel.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="148" column="30" selection-start="5606" selection-end="5619" vertical-scroll-proportion="-27.423077">
+            <state line="60" column="43" selection-start="2083" selection-end="2083" vertical-scroll-proportion="0.57409567">
               <folding />
             </state>
           </provider>
@@ -277,7 +277,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/adminka/js/avatar_upload.js" />
         <option value="$PROJECT_DIR$/protected/models/medways/Users.php" />
         <option value="$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php" />
         <option value="$PROJECT_DIR$/adminka/js/MyJs.php" />
@@ -293,6 +292,7 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/experts.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
         <option value="$PROJECT_DIR$/protected/models/LoginForm.php" />
+        <option value="$PROJECT_DIR$/protected/config/devel.php" />
       </list>
     </option>
   </component>
@@ -699,13 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="30" selection-start="5606" selection-end="5619" vertical-scroll-proportion="-27.423077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/MyTraits.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="26" selection-start="273" selection-end="278" vertical-scroll-proportion="0.13885647">
@@ -916,7 +909,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/LoginForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="51" selection-start="1827" selection-end="1827" vertical-scroll-proportion="0.6009335">
+        <state line="49" column="34" selection-start="1074" selection-end="1074" vertical-scroll-proportion="-2.8076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="43" selection-start="2083" selection-end="2083" vertical-scroll-proportion="0.57409567">
           <folding />
         </state>
       </provider>
