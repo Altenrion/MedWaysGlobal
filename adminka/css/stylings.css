@@ -1,3 +1,15 @@
+
+.panel .panel-heading .break {
+    border-left: 1px solid #fcfcfc;
+    border-right: 1px solid #ddd;
+    margin: -12px 10px -10px 10px;
+    padding: 12px 0 10px 0;
+}
+.panel .panel-heading .panel-icon {
+    float: right;
+    margin-top: 1px;
+}
+
 .persona{
     padding: 0px;
 }
@@ -22,7 +34,6 @@
     .clos{
         display:none;
     }
-
 }
 .panel-heading {
     padding: 15px 15px;

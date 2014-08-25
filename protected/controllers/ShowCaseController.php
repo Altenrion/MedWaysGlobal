@@ -151,7 +151,7 @@ class ShowCaseController extends Controller
         ));
         $message = new YiiMailMessage;
         $message->setBody($mail, 'text/html');
-        $message->subject = 'My Subject';
+        $message->subject = 'Активация пароля';
         $message->addTo($email);
         $message->from = Yii::app()->params['adminEmail'];
         Yii::app()->mail->send($message);

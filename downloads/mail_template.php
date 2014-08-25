@@ -86,7 +86,7 @@
                                 <td align="left" valign="top" style="padding-top:0;padding-bottom:15px;padding-left:23px;padding-right:23px;margin:0;">
                                     <span style="font-family:Arial,Verdana,Helvetica;color:#6f6f6f;font-size:12px; font-style:italic;">
                                        Если вы не регистрировались на это мероприятие, просто проигнорируйте это сообщение, и не забудьте удалить его.
-									   Кроме того, мы будем вам признательны если вы сообщите нам об этом по адрему  Administration@altenrion.ru
+									   Кроме того, мы будем вам признательны если вы сообщите нам об этом по адрему  Administration@medways.ru
                                     </span>
                                 </td>
                             </tr>

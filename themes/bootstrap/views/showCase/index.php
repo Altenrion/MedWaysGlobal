@@ -10,7 +10,7 @@ $this->breadcrumbs=array(
 <div class="fullwidthbanner-container revolution">
     <div class="fullwidthbanner">
         <ul>
-            <li data-transition="fade"> <img src="<?=Yii::app()->baseUrl; ?>/images/art/docs.png" alt="" />
+            <li data-transition="fade"> <img src="<?=Yii::app()->baseUrl; ?>/images/art/docs_.png" alt="" />
                 <div class="caption sft bold opacity-bg" data-x="550" data-y="215" data-speed="500" data-start="2000" data-easing="Sine.easeOut">Эстафета вузовской науки </div>
                 <div class="caption sfr bold opacity-bg" data-x="550" data-y="280" data-speed="500" data-start="2500" data-easing="Sine.easeOut">Используй свой шанс!</div>
                 <div class="caption sfb" data-x="550" data-y="340" data-speed="500" data-start="3000" data-easing="Sine.easeOut"><a href="<?=Yii::app()->createUrl('ShowCase/login')?>" class="btn btn-large">Регистрация</a></div>
@@ -31,7 +31,7 @@ $this->breadcrumbs=array(
 <!--                <div class="caption sfr bold opacity-bg" data-x="35" data-y="245" data-speed="500" data-start="2000" data-easing="Sine.easeOut">Retina-ready design</div>-->
 <!--                <div class="caption sfb" data-x="35" data-y="310" data-speed="500" data-start="2500" data-easing="Sine.easeOut"><a href="#" class="btn btn-green btn-large">Get in Touch</a></div>-->
 <!--            </li>-->
-            <li data-transition="fade"> <img src="<?=Yii::app()->baseUrl; ?>/images/art/doc_.png" alt="" />
+            <li data-transition="fade"> <img src="<?=Yii::app()->baseUrl; ?>/images/art/doc__.png" alt="" />
                 <div class="caption sft bold opacity-bg" data-x="center" data-y="205" data-speed="500" data-start="500" data-easing="Sine.easeOut">Медицинский форум </div>
                 <div class="caption sfb lite opacity-bg" data-x="center" data-y="271" data-speed="500" data-start="1000" data-easing="Sine.easeOut"><strong>MedWAYS</strong> - перспективные научные направления 2014</div>
                 <div class="caption sfb" data-x="center" data-y="339" data-speed="500" data-start="1500" data-easing="Sine.easeOut"><img src="<?=Yii::app()->baseUrl; ?>/images/buttons/mw.png" alt="" /></div>
