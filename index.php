@@ -2,7 +2,9 @@
 
 
 
-require_once('browser_test.php');
+
+
+        include('browser_test.php');
 
 
         defined('APPLICATION_ENV')

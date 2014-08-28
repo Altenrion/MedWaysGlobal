@@ -2,451 +2,318 @@
 /**
  * Created by JetBrains PhpStorm.
  * User: User
- * Date: 14.08.14
- * Time: 13:26
+ * Date: 27.08.14
+ * Time: 20:38
  * To change this template use File | Settings | File Templates.
  */
+/* @var $this AutorizedController */
 
-if(isset($data) && !is_null($data)){
-    if(isset($data[0]['roles'])){
-        $role = $data[0]['roles'];
-        switch($role){
-            case 'Dev': $data[0]['role'] = 'Разработчик';break;
-            case 'Manager': $data[0]['role'] = 'Представитель проекта';break;
-            case 'Exp': $data[0]['role'] = 'Эксперт';break;
-            case 'Exp1': $data[0]['role'] = 'Эксперт';break;
-            case 'Exp2': $data[0]['role'] = 'Эксперт';break;
-            case 'Exp3': $data[0]['role'] = 'Эксперт';break;
-        }
-    }
-}
+$assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet.assets'));
+
 
 ?>
 
+<!-- BEGIN CONTENT HEADER -->
+<section class="content-header">
+    <i class="fa fa-user"></i>
+    <span>Профиль пользователя</span>
+    <ol class="breadcrumb">
+        <li><a href="">Кабинет</a></li>
+        <li class="active"><a href="">Профиль</a></li>
+    </ol>
+</section>
+<!-- END CONTENT HEADER -->
+
+<!-- BEGIN MAIN CONTENT -->
+<section class="content">
+<div class="row">
+<!-- BEGIN USER PROFILE -->
+<div class="col-md-12">
 
 
-<div id="content" class="col-lg-12 col-sm-12 col-xs-12">
+    <?php if(Yii::app()->user->hasFlash('CONTACT_EMAIL')):?>
+        <div class="alert alert-info alert-dismissable" style="display:none;">
+            <?php  echo Yii::app()->user->getFlash('CONTACT_EMAIL'); ?>
+        </div>
+    <?php
+        Yii::app()->clientScript->registerScript(
+            'myShowHideEffect',
+            '$(".alert").slideDown("slow", function(){$(".alert").animate({opacity: 1.0}, 5000).fadeOut("slow");});',
+            CClientScript::POS_READY
+        );
+    ?>
+    <?php endif; ?>
 
-			<ol class="breadcrumb">
-			   	<li class="active"><i class="fa fa-fw fa-user"></i> Профиль</li>
-			</ol>
 
-			<div class="row profile">
+    <div class="grid profile">
 
-				<div class="col-sm-12 col-md-4 col-lg-3 bord">
 
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 image-block">
-                            <a data-toggle="modal" href="#myModal" class="">
-							    <img class="profile-image" height="200" width="200" src="<?=Yii::app()->baseUrl?>/images/avatars/<?=(isset($data) && !is_null($data[0]['AVATAR']))?($data[0]['AVATAR']):('new.png')?>">
-                            </a>
+
+        <div class="grid-header">
+            <div class="col-xs-9">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-2">
+                        <img data-toggle="modal" data-target="#modalPrimary3" src="<?=Yii::app()->baseUrl ?>/images/avatars/<?=$this->getAvatar();?>" class="img-circle avatar" alt="">
+                    </div>
+                    <div class="col-xs-12 col-sm-7 persnal">
+                        <h3><?=Yii::app()->user->name?></h3>
+                        <p><i class="fa fa-fw fa-child"></i> <?= isset($role)?($role):('')?></p>
+                        <p><i class="fa fa-fw fa-envelope"></i> <?=Yii::app()->user->email ?></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3 text-right visio">
+                <p><a href="" title="Everyone can see your profile"><i class="fa fa-globe"></i> Виден всем</a></p>
+            </div>
+        </div>
+
+
+
+        <div class="grid-body">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#profile" data-toggle="tab">Профиль</a></li>
+                <li><a href="#timeline" data-toggle="tab">Timeline</a></li>
+                <li><a href="#photos" data-toggle="tab">Photos</a></li>
+                <li><a href="#settings" data-toggle="tab">Настройки</a></li>
+            </ul>
+            <div class="tab-content">
+                <!-- BEGIN PROFILE -->
+                <div class="tab-pane active" id="profile">
+                    <p class="lead">Мои данные  <span> &nbsp;&nbsp;&nbsp;</span><button id="enable" class="btn btn-xs btn-primary "><i class="fa  fa-edit"> </i> редактировать</button></p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p><strong>Имя:</strong> тест </p>
+                            <p><strong>Фамилия:</strong> тест </p>
+                            <p><strong>Отчество:</strong> Web Designer / UI Designer</p>
+                            <p><strong>Пол:</strong> website</p>
+                            <p><strong>Дата рождения:</strong> July 24<sup>th</sup>, 2010</p>
+                            <p><strong>Телефон:</strong> (917) 544-7768</p>
                         </div>
-						<div class="col-xs-12 col-sm-12">
-                            <div class="row image-block">
-                                <div class="col-xs-5 col-sm-4 col-sm-offset-1 col-md-12 name">
-                                    <h3><?=(isset($data))?($data[0]['F_NAME']):('')?></br>
-                                        <small><?=(isset($data))?($data[0]['L_NAME']):('')?> <?=(isset($data))?($data[0]['S_NAME']):('')?></small>
-                                    </h3></div>
-                                <div class="col-xs-7 col-sm-6 col-md-12">
-                                    <ul class="vcard-details">
-
-
-                                        <li class="vcard-detail">
-                                            <div><i class="fa fa-fw fa-child"></i> <?=(isset($data))?($data[0]['role']):('')?></div>
-
-                                        </li >
-                                        <? if($this->checkRole(array('Exp','Exp1','Exp2','Exp3'))): ?>
-                                            <li class="vcard-detail">
-                                                <div>
-                                                    <i class="fa fa-fw fa-certificate"></i>
-                                                    <?
-                                                    if (isset($data) && isset($data[0])){
-                                                        if($data[0]['roles']== 'Exp'){ echo 'подтверждение статуса';}
-                                                        else {echo 'статус подтвержден';}
-                                                    }
-                                                    ?>
-                                                </div>
-                                            </li >
-                                        <? endif; ?>
-                                        <li class="vcard-detail">
-                                            <div><i class="fa fa-fw fa-envelope"></i> <?=(isset($data))?($data[0]['EMAIL']):('')?></div>
-
-                                        </li>
-                                        <li class="vcard-detail">
-                                            <div><i class="fa fa-fw fa-clock-o"></i>
-                                                <span class="join-label"> В проекте с </span>
-                                                <span class="join-date"><?=(isset($data))?(date('d.m.Y', strtotime($data[0]['REG_DATE']))):('')?></span> </div>
-
-                                        </li>
-                                    </ul>
-
-                                </div>
-
-                            </div>
+                        <div class="col-sm-6">
+                            <p><strong>Ученая степень:</strong> Специалист</p>
+                            <p><strong>Ученое звание:</strong> Специалист</p>
+                            <p><strong>Округ:</strong> ЦФО</p>
+                            <p><strong>Вуз:</strong> НИЯУ МИФИ</p>
+                            <p><strong>Должность:</strong> НИЯУ МИФИ</p>
+                            <p><strong>Специальность:</strong> НИЯУ МИФИ</p>
+                            <p><strong>Индекс Хирша:</strong> НИЯУ МИФИ</p>
 
 
 
-						</div>
-					</div><!--/row-->
-
-				</div><!--/col-->
-
-				<div class="col-sm-12 col-md-7 col-lg-6 data bord">
-
-                    <? if($this->checkRole(array('Exp'))): ?>
-                        <div class="alert alert-info  alert-dismissable">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                            <strong>Внимание! </strong> Уважаемый пользователь, ваш статус "Эксперт" находиться на согласовании.
-                             Результат будет известен в течении суток. Ожидайте оповещения по почте, указанной при регистрации.
-                        </div>
-                    <? endif; ?>
-                    <div class="panel panel-info">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Личные данные
-                            <button id="enable" class="btn btn-xs btn-primary pull-right"><i class="fa  fa-edit"> </i> редактировать</button>
-                            </h3>
-                        </div>
-                        <div class="panel-body persona">
-                            <table   class="table table-hover">
-                                <tbody>
-                                <tr>
-                                    <th width="30%">Фамилия</th>
-                                    <td>
-                                        <?
-                                        $this->widget('editable.Editable', array(
-                                            'type'      => 'text',
-                                            'pk'        => $data[0]['id'],
-                                            'name'      => 'F_NAME',
-                                            'text'      => CHtml::encode($data[0]['F_NAME']),
-                                            'url'       => $this->createUrl('Autorized/updateProfile'),
-                                            'title'     => 'Введите фамилию',
-                                            'placement' => 'right',
-                                            'options' => array(
-                                                'disabled'=>true,
-                                                'class'=>'edit',
-                                            ),
-                                        ));
-
-                                        ?>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Имя</th>
-                                    <td>
-                                        <?
-                                        $this->widget('editable.Editable', array(
-                                            'type'      => 'text',
-                                            'pk'        => $data[0]['id'],
-                                            'name'      => 'L_NAME',
-                                            'text'      => CHtml::encode($data[0]['L_NAME']),
-                                            'url'       => $this->createUrl('Autorized/updateProfile'),
-                                            'title'     => 'Введите фамилию',
-                                            'placement' => 'right',
-                                            'options' => array(
-                                                'disabled'=>true,
-                                            ),
-                                        ));
-
-                                        ?>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Отчество</th>
-                                    <td>
-                                        <?
-                                        $this->widget('editable.Editable', array(
-                                            'type'      => 'text',
-                                            'pk'        => $data[0]['id'],
-                                            'name'      => 'S_NAME',
-                                            'text'      => CHtml::encode($data[0]['S_NAME']),
-                                            'url'       => $this->createUrl('Autorized/updateProfile'),
-                                            'title'     => 'Введите фамилию',
-                                            'placement' => 'right',
-                                            'options' => array(
-                                                'disabled'=>true,
-                                            ),
-                                        ));
-
-                                        ?>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Дата рождения</th>
-                                    <td>
-                                        <?
-                                        $this->widget('editable.Editable', array(
-                                            'type'      => 'combodate',
-                                            'name'      => 'BIRTH_DATE',
-                                            'pk'        => $data[0]['id'],
-                                            'text'      => CHtml::encode(date('d / m / Y', strtotime($data[0]['BIRTH_DATE']))),
-                                            'url'       => $this->createUrl('Autorized/updateProfile'),
-//                                            'format'      => 'yyyy-mm-dd', //format in which date is expected from model and submitted to server
-                                            'format'      => 'YYYY-MM-DD', //in this format date sent to server
-                                            'viewformat'  => 'DD / MM / YYYY', //in this format date is displayed
-                                            'template'    => 'DD / MM / YYYY', //template for dropdowns
-                                            'combodate'   => array('minYear' => 1930, 'maxYear' => 2015),
-                                            'options'     => array(
-                                                'datepicker' => array('language' => 'ru'),
-                                                'disabled'=>true,
-                                            )
-                                        ));
-
-
-//
-
-                                        ?>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Пол</th>
-                                    <td>
-                                        <?
-                                        $this->widget('editable.Editable', array(
-                                            'type'      => 'select',
-                                            'name'      => 'SEX',
-                                            'pk'        => $data[0]['id'],
-                                            'text'      => CHtml::encode(($data[0]['SEX'])=='1'?'M':'Ж'),
-                                            'url'       => $this->createUrl('Autorized/updateProfile'),
-                                            'source'    => Editable::source(array(1 => 'М', 2 => 'Ж')),
-                                            'title'     => 'Enter title',
-                                            'placement' => 'right',
-                                            'options'     => array(
-                                                'disabled'=>true,
-                                                'showbuttons'=>false,
-                                            )
-                                        ));
-
-                                        ?>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Телефон</th>
-                                    <td>
-                                        <?
-                                        $this->widget('editable.Editable', array(
-                                            'type'      => 'text',
-                                            'pk'        => $data[0]['id'],
-                                            'name'      => 'PHONE',
-                                            'text'      => CHtml::encode($data[0]['PHONE']),
-                                            'url'       => $this->createUrl('Autorized/updateProfile'),
-                                            'title'     => 'Введите фамилию',
-                                            'placement' => 'right',
-                                            'options' => array(
-                                                'disabled'=>true,
-                                            ),
-                                        ));
-
-                                        ?>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <th>Ученая степень</th>
-                                    <td>
-                                        <?
-                                        $this->widget('editable.Editable', array(
-                                            'type'      => 'select',
-                                            'name'      => 'DEGREE',
-                                            'pk'        => $data[0]['id'],
-                                            'text'      => CHtml::encode($data[0]['DEGREE']),
-                                            'url'       => $this->createUrl('Autorized/updateProfile'),
-                                            'source'    => Editable::source(array('тестовая степень 1'=>'тестовая степень 1' , 'тестовая степень 2'=>'тестовая степень 2')),
-                                            'title'     => 'Enter title',
-                                            'placement' => 'right',
-                                            'options'     => array(
-                                                'disabled'=>true,
-                                                'showbuttons'=>false,
-                                            )
-                                        ));
-                                        ?>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Ученое звание</th>
-                                    <td>
-                                        <?
-                                        $this->widget('editable.Editable', array(
-                                            'type'      => 'select',
-                                            'name'      => 'ACADEMIC_TITLE',
-                                            'pk'        => $data[0]['id'],
-                                            'text'      => CHtml::encode($data[0]['ACADEMIC_TITLE']),
-                                            'url'       => $this->createUrl('Autorized/updateProfile'),
-                                            'source'    => Editable::source(array('тестовое звание 1'=>'тестовое звание 1' , 'тестовое звание 2'=>'тестовое звание 2')),
-                                            'title'     => 'Enter title',
-                                            'placement' => 'right',
-                                            'options'     => array(
-                                                'disabled'=>true,
-                                                'showbuttons'=>false,
-                                            )
-                                        ));
-
-
-
-                                        ?>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Округ</th>
-                                    <td>
-                                        <?
-                                        $this->widget('editable.Editable', array(
-                                            'type'      => 'select',
-                                            'name'      => 'ID_DISTRICT',
-                                            'pk'        => $data[0]['id'],
-                                            'text'      => CHtml::encode($data[0]['ID_DISTRICT']),
-                                            'url'       => $this->createUrl('Autorized/updateProfile'),
-                                            'source'    => $this->createUrl('Autorized/getDistricts'),
-                                            'title'     => 'Enter title',
-                                            'placement' => 'right',
-                                            'options' => array(
-                                                'disabled'=>true,
-                                            ),
-
-                                        ));
-
-
-
-                                        ?>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Вуз</th>
-                                    <td>
-                                        <?
-                                        $this->widget('editable.Editable', array(
-                                            'type'      => 'select',
-                                            'name'      => 'ID_UNIVER',
-                                            'pk'        => $data[0]['id'],
-                                            'text'      => CHtml::encode($data[0]['ID_UNIVER']),
-                                            'url'       => $this->createUrl('Autorized/updateProfile'),
-                                            'source'    => $this->createUrl('Autorized/getUniversities'),
-                                            'title'     => 'Enter title',
-                                            'placement' => 'right',
-                                            'options' => array(
-                                                'disabled'=>true,
-                                            ),
-
-                                        ));
-
-                                        ?>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Должность</th>
-                                    <td>
-                                        <?
-                                        $this->widget('editable.Editable', array(
-                                            'type'      => 'text',
-                                            'pk'        => $data[0]['id'],
-                                            'name'      => 'W_POSITION',
-                                            'text'      => CHtml::encode($data[0]['W_POSITION']),
-                                            'url'       => $this->createUrl('Autorized/updateProfile'),
-                                            'title'     => 'Введите фамилию',
-                                            'placement' => 'right',
-                                            'options' => array(
-                                                'disabled'=>true,
-                                            ),
-                                        ));
-
-                                        ?>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Специальность основная</th>
-                                    <td>
-                                        <?
-                                        $this->widget('editable.Editable', array(
-                                            'type'      => 'select',
-                                            'name'      => 'ID_SPECIALITY',
-                                            'pk'        => $data[0]['id'],
-                                            'text'      => CHtml::encode($data[0]['ID_SPECIALITY']),
-                                            'url'       => $this->createUrl('Autorized/updateProfile'),
-                                            'source'    => $this->createUrl('Autorized/getSpecialities'),
-                                            'title'     => 'Enter title',
-                                            'placement' => 'right',
-                                            'options' => array(
-                                                'disabled'=>true,
-                                            ),
-
-                                        ));
-
-                                        ?>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Индекс Хирша</th>
-                                    <td>
-                                        <?
-                                        $this->widget('editable.Editable', array(
-                                            'type'      => 'text',
-                                            'pk'        => $data[0]['id'],
-                                            'name'      => 'HIRSH',
-                                            'text'      => CHtml::encode($data[0]['HIRSH']),
-                                            'url'       => $this->createUrl('Autorized/updateProfile'),
-                                            'title'     => 'Введите фамилию',
-                                            'placement' => 'right',
-                                            'options' => array(
-                                                'disabled'=>true,
-                                            ),
-                                        ));
-
-                                        ?>
-                                    </td>
-                                </tr>
-
-                                </tbody>
-                            </table>
+<!--                            <p><strong>Rating:</strong> <span class="text-yellow"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></p>-->
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-4 stats">
+                            <h1>46,2K</h1>
+                            <span>Followes</span>
+                            <button class="btn btn-success"><i class="fa fa-plus-circle"></i> Follow</button>
+                        </div>
+                        <div class="col-sm-4 stats">
+                            <h1>127</h1>
+                            <span>Following</span>
+                            <button class="btn btn-info"><i class="fa fa-user"></i> View Profile</button>
+                        </div>
+                        <div class="col-sm-4 stats">
+                            <h1>10,9K</h1>
+                            <span>Subscribers</span>
+                            <button class="btn btn-danger"><i class="fa fa-rss"></i> Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PROFILE -->
+                <!-- BEGIN TIMELINE -->
+                <div class="tab-pane" id="timeline">
+                    <p class="lead">My Timeline</p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="timeline-centered">
+                                <article class="timeline-entry">
+                                    <div class="timeline-entry-inner">
+                                        <time class="timeline-time" datetime="2014-01-10T03:45"><span>11:41 AM</span> <span>Today</span></time>
 
+                                        <div class="timeline-icon bg-primary">
+                                            <i class="fa fa-home"></i>
+                                        </div>
 
-
-
-                    <div class="modal fade" id="myModal">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                    <h4 class="modal-title">Выберите фотографию</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <div id="upload-wrapper">
-                                        <div align="center">
-
-                                            <h4>Загрузка персонального изображения <small>Рекомендуемое разрешение кадра : 300 x 300 - 500 x 500 px</small></h4>
-                                            </br>
-                                            <form action="<?=Yii::app()->createUrl('Images/upload')?>" method="post" enctype="multipart/form-data" id="MyUploadForm">
-                                                <input name="image_file" id="imageInput" type="file"  onchange="return doSomething();"/>
-<!--                                                <input type="submit"  id="submit-btn" value="Загрузить" class="btn btn-primary" />-->
-                                                <button type="submit" id="submit-btn" class="btn btn-sm btn-primary">Загрузить</button>
-
-                                                <img src="<?=Yii::app()->baseUrl?>/images/ajax-loader.gif" id="loading-img" style="display:none;" alt="Please Wait"/>
-                                            </form>
-                                            <div id="output"></div>
+                                        <div class="timeline-label">
+                                            <h2><a href="#">Jeffrey Williams</a> <span>posted a status update</span></h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                         </div>
                                     </div>
+                                </article>
 
-                                <div class="modal-footer">
-                                    <a href="#" data-dismiss="modal" class="btn">Закрыть</a>
-                                    <a href="#" id="RebootAva" class="btn btn-primary">Применить</a>
+                                <article class="timeline-entry left-aligned">
+                                    <div class="timeline-entry-inner">
+                                        <time class="timeline-time" datetime="2014-01-10T03:45"><span>08:12 AM</span> <span>Today</span></time>
+
+                                        <div class="timeline-icon bg-warning">
+                                            <i class="fa fa-bell"></i>
+                                        </div>
+
+                                        <div class="timeline-label">
+                                            <h2><a href="#">Job Meeting</a></h2>
+                                            <p>You have a meeting at <strong>10:00 AM</strong> in the <strong>Meeting Room</strong>.</p>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="timeline-entry">
+                                    <div class="timeline-entry-inner">
+                                        <time class="timeline-time" datetime="2014-01-10T03:45"><span>02:10 AM</span> <span>15/06/2014</span></time>
+
+                                        <div class="timeline-icon bg-danger">
+                                            <i class="fa fa-user"></i>
+                                        </div>
+
+                                        <div class="timeline-label">
+                                            <h2><a href="#">Larry Gardner</a> <span>changed his</span> <a href="#">Profile Picture</a></h2>
+                                            <blockquote>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</blockquote>
+                                            <img src="<?=$assetsUrl?>/img/gallery/1.jpg" class="img-responsive img-rounded full-width" alt="">
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="timeline-entry begin">
+                                    <div class="timeline-entry-inner">
+                                        <div class="timeline-icon bg-default">
+                                            <i class="fa fa-laptop"></i>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END TIMELINE -->
+                <!-- BEGIN PHOTOS -->
+                <div class="tab-pane" id="photos"></div>
+                <!-- END PHOTOS -->
+                <!-- BEGIN SETTINGS -->
+                <div class="tab-pane" id="settings">
+                    <p class="lead">Мои настройки</p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Global Notifications</label>
+                                    <div class="col-sm-2">
+                                        <input type="checkbox" class="js-switch" checked>
+                                    </div>
+                                    <label class="col-sm-2 control-label">Email Notifications</label>
+                                    <div class="col-sm-2">
+                                        <input type="checkbox" class="js-switch" checked>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Phone Notifications</label>
+                                    <div class="col-sm-2">
+                                        <input type="checkbox" class="js-switch">
+                                    </div>
+                                    <label class="col-sm-2 control-label">Mail Notifications</label>
+                                    <div class="col-sm-2">
+                                        <input type="checkbox" class="js-switch">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Subscribe Newsletters</label>
+                                    <div class="col-sm-2">
+                                        <input type="checkbox" class="js-switch" checked>
+                                    </div>
+                                    <label class="col-sm-2 control-label">RSS Feeds</label>
+                                    <div class="col-sm-2">
+                                        <input type="checkbox" class="js-switch">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <!-- END SETTINGS -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END USER PROFILE -->
+</div>
+</section>
+<!-- END MAIN CONTENT -->
 
-                </div><!--/col-->
 
-			</div><!--/profile-->
+    <div class="modal fade" id="modalPrimary3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel14" aria-hidden="true">
+        <div class="modal-wrapper">
+            <div class="modal-dialog">
+                <div class="modal-content bg-blue">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel14">Выбор фотографии</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Здравствуйте <?=Yii::app()->user->name ?>! В данном окне вы можете выбрать и загрузить фотографию для своей учетной записи. Напоминаем вам что
+                            рекомендуемый размер фотографий : 500x500 пикс. ; Если вы уже загружали изображение ранее, применено для вашей
+                            учетной записи будет последнее.
+
+                        </p>
+                        <form action="<?=Yii::app()->createUrl('Images/upload')?>" method="post" enctype="multipart/form-data" id="MyUploadForm">
+                            <input name="image_file" id="imageInput" type="file"  onchange="return doSomething();"/>
+                            <button type="submit" id="submit-btn" class="btn btn-sm btn-primary">Загрузить</button>
+
+                            <i class="fa fa-refresh fa-spin" id="loading-img" style="display:none;"   ></i>
+                        </form>
+                        <div id="output" ></div>
 
 
 
+                    </div>
+                    <div class="modal-footer">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                            <button type="button" id="RebootAva" class="btn btn-default">Применить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-			</div>
+
 <?
-$base_url = Yii::app()->baseUrl;
-$cs = Yii::app()->getClientScript();
-$cs->registerScriptFile( $base_url.'/assets/3160b985/js/bootstrap-datetimepicker.js', CClientScript::POS_END);
-$cs->registerScriptFile($base_url.'/adminka/js/MyEditsToEditable.js', CClientScript::POS_END);
-$cs->registerScriptFile($base_url.'/adminka/js/jquery.form.min.js', CClientScript::POS_END);
-$cs->registerScriptFile($base_url.'/adminka/js/avatar_upload.js', CClientScript::POS_END);
+
+    Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/avatar_upload.css', CClientScript::POS_BEGIN );
+    Yii::app()->clientScript->registerScriptFile($assetsUrl.'/js/switch.js', CClientScript::POS_END );
+    Yii::app()->clientScript->registerScriptFile($assetsUrl.'/js/jquery.form.min.js', CClientScript::POS_END );
+    Yii::app()->clientScript->registerScriptFile($assetsUrl.'/js/avatar_upload.js', CClientScript::POS_END );
+
+
+
+    if(isset($messages) && !is_null($messages)){
+        $gritter_init = "function initNotification() { $(window).load(function(){";
+        $timer = '';
+
+        foreach ($messages as $mes) {
+            $timer= $timer+1000;
+            $gritter_init .= "setTimeout(function(){
+                                $.gritter.add({
+                                    class_name: '".$mes[0]."',
+                                    title: '".$mes[1]."',
+                                    text: '".$mes[2]."',
+
+                                    time: ''
+                                });
+                                return false;
+                            }, ".$timer.");" ;
+
+        }
+        $gritter_init .= "}); } $(function() {  'use strict';  initNotification();   });";
+        Yii::app()->clientScript->registerScript('griiter_show',$gritter_init, CClientScript::POS_READY);
+
+
+    }
+
+
+
 ?>

@@ -5,8 +5,14 @@ class AutorizedController extends Controller
 
     use MyTraits;
 
-    public  $layout = '//layouts/Adminka';
+    public  $layout = '//layouts/Cabinet';
     public $defaultAction = 'index';
+
+//    public function init() {
+//        parent::init();
+//        Yii::app()->errorHandler->errorAction= $this->actionError();
+//    }
+
 
     public function filters()
     {
@@ -43,6 +49,16 @@ class AutorizedController extends Controller
         );
     }
 
+//    public function actionError()
+//    {
+//        if($error=Yii::app()->errorHandler->error)
+//        {
+//            if(Yii::app()->request->isAjaxRequest)
+//                echo $error['message'];
+//            else
+//                $this->render('error', $error);
+//        }
+//    }
 
 	public function actionIndex()
 	{
@@ -74,6 +90,33 @@ class AutorizedController extends Controller
         ));
 	}
 
+    public function actionUnlockScreen()
+    {
+        {
+            $model=new LoginForm;
+
+            // collect user input data
+            if(isset($_POST['LoginForm']))
+            {
+                $model->attributes=$_POST['LoginForm'];
+                // validate user input and redirect to the previous page if valid
+                if($model->validate() && $model->login()){
+
+                    $this->redirect(Yii::app()->createUrl('Autorized/profile'));
+                }
+            }
+            $this->renderPartial('lockScreen',array('model'=>$model));
+        }
+
+    }
+    public function actionLogout()
+    {
+        Yii::app()->user->logout();
+        $this->redirect(Yii::app()->createUrl('ShowCase/login'));
+    }
+
+
+
 
 	public function actionInfo()
 	{
@@ -91,6 +134,13 @@ class AutorizedController extends Controller
 	}
 
 
+    public function actionLockScreen()
+	{
+
+		$this->renderPartial('lockScreen');
+	}
+
+
     public function actionUpdateProject(){
         $edit = new EditableSaver('ProjectRegistry');
         $edit->scenario = 'update';
@@ -104,16 +154,36 @@ class AutorizedController extends Controller
 
     public function actionProfile()
 	{
+        $messsages = array();
         $model = new Users;
         if(!Yii::app()->user->isGuest){
             $data = $model->findProfileData(Yii::app()->user->id);
-        }
 
+            if(!is_null($data[0]['roles'])){
+                $role = $this->cleanRole($data[0]['roles']);
+//                if($role== 'Разработчик'){
+//                    Yii::app()->user->setFlash("CONTACT_EMAIL", 'Имэйл отправлен');
+//                }
+            }
+
+            if(Yii::app()->user->role == 'Dev'){
+                $messsages[] = ['success','Уважаемый эксперт','Ваш статус находится на согласовании. Ожидайте оповещения по почте указанной при регистрации.'];
+                $messsages[] = ['primary','Уважаемый пользователь','Ваш проект успешно отправлен на согласование. Ожидайте оповещения по почте.'];
+            }
+
+
+        }
+        else{
+            $this->redirect(Yii::app()->createUrl('showCase/login'));
+        }
         $this->render('profile',array(
             'data'=>$data,
             'model'=>$model,
+            'role'=>$role,
+            'messages'=>$messsages,
         ));
 	}
+
 
 
     public function actionCheckFullInfo(){
@@ -171,6 +241,28 @@ class AutorizedController extends Controller
 
     public function actionGetBudget(){
         echo CJSON::encode(Editable::source(Budget::model()->findAll(), 'ID_BUDGET', 'NAME'));
+    }
+
+    public function getAvatar(){
+        if(is_null(Yii::app()->user->ava)){
+            $ava = 'new.png';
+        }
+        else{ $ava = 'thumb_'.Yii::app()->user->ava;
+        }
+
+        return $ava;
+    }
+
+    public function cleanRole($role){
+        switch($role){
+            case 'Dev': $clean_role = 'Разработчик'; break;
+            case 'Manager': $clean_role = 'Руководитель проекта'; break;
+            case 'Exp':
+            case 'Exp1':
+            case 'Exp2':
+            case 'Exp3': $clean_role = 'Эксперт'; break;
+        }
+        return $clean_role;
     }
 
 

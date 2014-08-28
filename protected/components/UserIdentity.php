@@ -68,6 +68,11 @@ public function authenticate()
                 $this->errorCode = self::ERROR_NONE;
                 $this->_id = $users->id;
                 $this->setState('name', $users->F_NAME.' '.$users->L_NAME);
+                $this->setState('email', $users->EMAIL);
+                if(is_null($users->AVATAR) ){
+                    $this->setState('ava', 'new.png');
+                }
+                else{ $this->setState('ava', $users->AVATAR); }
         }
 
         return $this->errorCode == self::ERROR_NONE;

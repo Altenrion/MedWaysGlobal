@@ -651,6 +651,8 @@ class CHttpRequest extends CApplicationComponent
 		return isset($_SERVER['HTTP_REFERER'])?$_SERVER['HTTP_REFERER']:null;
 	}
 
+
+
 	/**
 	 * Returns the user agent, null if not present.
 	 * @return string user agent, null if not present

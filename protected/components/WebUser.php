@@ -10,7 +10,7 @@ class WebUser extends CWebUser {
     private $_model = null;
     //protected $_roles;
     //public $role;
-    
+
     function getRole() {
         if($user = $this->getModel()){
             // в таблице Users есть поле roles

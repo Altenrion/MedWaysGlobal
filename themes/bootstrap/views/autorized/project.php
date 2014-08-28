@@ -122,17 +122,18 @@ if(isset($data) && !is_null($data)){
     <div class="col-sm-12 col-md-7 col-lg-7 ">
 
     <? if($data[0]['FIRST_LAVEL_APPROVAL'] == '2' ){ ?>
-    <div class="alert alert-warning  alert-dismissable">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-        <strong>Комментарий эксперта: </strong> <?=$data[0]['FIRST_LAVEL_COMMENT']?>
-    </div>
+        <div class="alert alert-warning  alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <strong>Комментарий эксперта: </strong> <?=$data[0]['FIRST_LAVEL_COMMENT']?>
+        </div>
     <? } ?>
+
     <div class="panel panel-info">
     <div class="panel-heading">
         <h3 class="panel-title">Проектные данные
 
             <? if(!$no_edit){ ?>
-            <button id="enable" class="btn btn-xs btn-primary pull-right"><i class="fa  fa-edit"> </i> редактировать</button>
+                <button id="enable" class="btn btn-xs btn-primary pull-right"><i class="fa  fa-edit"> </i> редактировать</button>
             <? } ?>
         </h3>
     </div>

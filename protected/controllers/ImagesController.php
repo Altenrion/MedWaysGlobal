@@ -188,20 +188,17 @@ class ImagesController extends Controller{
                         Yii::app()->end();
                     }
 
-
+/////////////////////////// переделать этот грязный способ на метод из трейта для всех контроллеров //////////////////////////
                     $_POST['pk']= Yii::app()->user->id;
                     $_POST['name']= 'AVATAR';
                     $_POST['value']= $new_file_name;
 
                     $this->forward('Autorized/updateProfile',false);
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-//                    $user_update = $user->findByPk(Yii::app()->user->id);
-//                    $user_update->AVATAR = $new_file_name;
-//                    if(!$user_update->save()){
-//                        echo "Error saving avatar";
-//                        Yii::app()->end();
-//                    }
+                    ///// Переприсваиваем к глобальному методу Yii::app()->user свойство ava с новой картинкой. /////
+                    Yii::app()->user->setState('ava', $new_file_name );
 
                     /* We have succesfully resized and created thumbnail image
                     We can now output image to user's browser or store information in the database*/
