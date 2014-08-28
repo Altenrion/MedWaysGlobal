@@ -60,8 +60,6 @@ if(isset($data) && !is_null($data)){
 
 <div class="grid profile">
 
-
-
 <div class="grid-header">
     <div class="col-xs-9">
         <div class="row">
@@ -77,7 +75,6 @@ if(isset($data) && !is_null($data)){
     <div class="col-xs-3 text-right visio">
     </div>
 </div>
-
 
 <div class="grid-body">
 <ul class="nav nav-tabs">
@@ -286,8 +283,6 @@ if(isset($data) && !is_null($data)){
 </div>
 
 <div class="row">
-
-
         <div class="col-sm-3 stats">
             <h1 id="first_check"><?=$mod_one?></h1>
             <span> Подача заявки  </span>
@@ -310,12 +305,9 @@ if(isset($data) && !is_null($data)){
             <span>Федеральная экспертиза</span>
             <button class="btn btn-primary"><i class="fa fa-flag"></i> Федеральная</button>
         </div>
-
 </div>
 </div>
-
 <!-- END PROFILE -->
-
 
 <!-- BEGIN SETTINGS -->
 <div class="tab-pane" id="settings">
@@ -369,21 +361,6 @@ if(isset($data) && !is_null($data)){
 <!-- END USER PROFILE -->
 </div>
 </section>
-
-
-
-
-
-
-<!--    --><?// if($data[0]['FIRST_LAVEL_APPROVAL'] == '2' ){ ?>
-<!--        <div class="alert alert-warning  alert-dismissable">-->
-<!--            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>-->
-<!--            <strong>Комментарий эксперта: </strong> --><?//=$data[0]['FIRST_LAVEL_COMMENT']?>
-<!--        </div>-->
-<!--    --><?// } ?>
-
-
-
 
     <!-- модальное окно для добавления PDF -->
 
