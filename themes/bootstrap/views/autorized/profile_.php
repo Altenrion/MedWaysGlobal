@@ -416,7 +416,7 @@ if(isset($data) && !is_null($data)){
                                             <h4>Загрузка персонального изображения <small>Рекомендуемое разрешение кадра : 300 x 300 - 500 x 500 px</small></h4>
                                             </br>
                                             <form action="<?=Yii::app()->createUrl('Images/upload')?>" method="post" enctype="multipart/form-data" id="MyUploadForm">
-                                                <input name="image_file" id="imageInput" type="file"  onchange="return doSomething();"/>
+                                                <input name="image_file" id="imageInput" type="file" />
 <!--                                                <input type="submit"  id="submit-btn" value="Загрузить" class="btn btn-primary" />-->
                                                 <button type="submit" id="submit-btn" class="btn btn-sm btn-primary">Загрузить</button>
 

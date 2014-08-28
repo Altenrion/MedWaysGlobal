@@ -202,10 +202,10 @@ class ImagesController extends Controller{
 
                     /* We have succesfully resized and created thumbnail image
                     We can now output image to user's browser or store information in the database*/
-                    echo '<div align="center">';
-                    echo '<img src="'.Yii::app()->baseUrl.'/images/avatars/'.$this->thumb_prefix . $new_file_name.'" alt="Thumbnail">';
-                    echo '<br />';
-                    echo '<img src="'.Yii::app()->baseUrl.'/images/avatars/'. $new_file_name.'" alt="Resized Image">';
+                    echo '<div align="center"><br />';
+                    echo '<img src="'.Yii::app()->baseUrl.'/images/avatars/'.$this->thumb_prefix . $new_file_name.'" alt="Превью">';
+                    echo '<br /><br />';
+                    echo '<img src="'.Yii::app()->baseUrl.'/images/avatars/'. $new_file_name.'" alt="Аватар">';
                     echo '</div>';
                 }
 

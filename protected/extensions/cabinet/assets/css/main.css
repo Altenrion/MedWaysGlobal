@@ -3663,3 +3663,7 @@ img.img-circle.avatar {
 button#enable {
     font-size: 0.6em;
 }
+
+@media screen and (max-width: 32em) {
+    body { font-size: 95%; }
+}

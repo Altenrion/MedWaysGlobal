@@ -30,7 +30,7 @@ class AutorizedController extends Controller
                 'users'=>array('?'),
             ),
             array('allow',
-                'actions'=>array('profile','news','info'),
+                'actions'=>array('profile','news','info','project'),
                 'roles'=>array('Dev','Manager','Exp','Exp1','Exp2','Exp3'),
             ),
             array('allow',
@@ -154,36 +154,59 @@ class AutorizedController extends Controller
 
     public function actionProfile()
 	{
+        $role = '';
         $messsages = array();
         $model = new Users;
+
         if(!Yii::app()->user->isGuest){
             $data = $model->findProfileData(Yii::app()->user->id);
+            $clean_data=$data[0];
 
-            if(!is_null($data[0]['roles'])){
+            if(!is_null($clean_data['roles'])){
                 $role = $this->cleanRole($data[0]['roles']);
-//                if($role== 'Разработчик'){
-//                    Yii::app()->user->setFlash("CONTACT_EMAIL", 'Имэйл отправлен');
-//                }
             }
 
             if(Yii::app()->user->role == 'Dev'){
                 $messsages[] = ['success','Уважаемый эксперт','Ваш статус находится на согласовании. Ожидайте оповещения по почте указанной при регистрации.'];
                 $messsages[] = ['primary','Уважаемый пользователь','Ваш проект успешно отправлен на согласование. Ожидайте оповещения по почте.'];
+//              Yii::app()->user->setFlash("CONTACT_EMAIL", 'Имэйл отправлен');
             }
 
+            $perc_prof = $this->CheckInfoPercentage($clean_data);
 
         }
         else{
             $this->redirect(Yii::app()->createUrl('showCase/login'));
         }
         $this->render('profile',array(
-            'data'=>$data,
+            'data'=>$clean_data,
             'model'=>$model,
             'role'=>$role,
             'messages'=>$messsages,
+            'perc_prof'=>$perc_prof,
         ));
 	}
 
+    public function CheckInfoPercentage($arr){
+        $key = 0;
+        foreach($arr as $ar_k=>$ar_v){
+
+            if( $ar_k !== 'FIRST_LAVEL_APPROVAL' ||
+                $ar_k !== 'SECOND_LAVEL_RATING'  ||
+                $ar_k !== 'THIRD_LAVEL_RATING'   ){
+                if(empty($ar_v) || $ar_v == "" || $ar_v == " " || is_null( $ar_v) ){
+                    $key++;
+                }
+            }
+        }
+
+        $num = count($arr);
+        $percentage = (($num - $key)/$num)*100;
+        return $percentage;
+
+
+
+    }
 
 
     public function actionCheckFullInfo(){
@@ -193,7 +216,6 @@ class AutorizedController extends Controller
         $user_info = $user->findProfileData(Yii::app()->user->id);
         $proj_info = $project->findProjectData(Yii::app()->user->id);
 
-//        var_dump($proj_info);
         foreach($user_info[0] as $i_k=>$i_v){
             if($i_v == null && $i_v == ''){  echo json_encode('fail'); Yii::app()->end();  }
         }
@@ -253,6 +275,11 @@ class AutorizedController extends Controller
         return $ava;
     }
 
+    public function DaysIn($date){
+        $dnei_nazad = (int)((strtotime($date) - time())/86400) * -1;
+        return $dnei_nazad;
+    }
+
     public function cleanRole($role){
         switch($role){
             case 'Dev': $clean_role = 'Разработчик'; break;
@@ -264,13 +291,19 @@ class AutorizedController extends Controller
         }
         return $clean_role;
     }
-
-
-    public function statusOk($text=''){
-        return '<i class="fa fa-check"></i>';
+    public function MakeOrder($id){
+        if(strlen($id)==1){$order = '000'.$id;}
+        if(strlen($id)==2){$order = '00'.$id;}
+        if(strlen($id)==3){$order = '0'.$id;}
+        if(strlen($id)==4){$order = $id;}
+        return $order;
     }
 
-    public  function statusFail($text=''){
+    public function statusOk(){
+        return '<i class="fa fa-check" style="color:green;"></i>';
+    }
+
+    public  function statusFail(){
         return '<i class="fa fa-times"></i>';
     }
 

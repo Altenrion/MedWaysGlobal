@@ -8,23 +8,21 @@
  */
 /* @var $this AutorisedController */
 
-
-
-
 $mod_one = '';
 $mod_two = '';
 $mod_three= '';
 $mod_four= '';
 $no_edit = false;
+$no_buttons = false;
 if(isset($data) && !is_null($data)){
 
         $first_mod = $data[0]['FIRST_LAVEL_APPROVAL'];
         switch($first_mod){
 
             case '1': $mod_one = $this->statusOk();  $mod_two = $this->statusSpinner() ; $no_edit = true;  break;
-            case '2': $mod_one = $this->statusSpinner() ;  $mod_two = $this->statusFail('доработка'); break;
+            case '2': $mod_one = $this->statusSpinner() ;  $mod_two = $this->statusFail(); break;
             case '3': $mod_one = $this->statusOk();  $mod_two = $this->statusOk(); $no_edit = true; break;
-            case '9': $mod_one = $this->statusFail('отклонена'); $mod_two = $this->statusFail('отклонена');  $no_edit = true; break;
+            case '9': $mod_one = $this->statusFail(); $mod_two = $this->statusFail();  $no_edit = true;  $no_buttons=true; break;
             default: $mod_one = $this->statusSpinner() ;  $mod_two = $this->statusSpinner() ;  break;
 
         }
@@ -40,112 +38,75 @@ if(isset($data) && !is_null($data)){
         }else{
             $mod_four = $this->statusSpinner();
         }
-
-
     }
 
-
-
-
-
-
-//var_dump($data);
 ?>
 
-    <div id="content" class="col-lg-12 col-sm-12 col-xs-12">
+    <!-- BEGIN CONTENT HEADER -->
+    <section class="content-header">
+        <i class="fa fa-graduation-cap"></i>
+        <span>Проект пользователя</span>
+        <ol class="breadcrumb">
+            <li><a href="">Кабинет</a></li>
+            <li class="active"><a href="">Проект</a></li>
+        </ol>
+    </section>
+    <!-- END CONTENT HEADER -->
 
-    <ol class="breadcrumb">
-        <li class="active"><i class="fa fa-fw fa-graduation-cap"></i> Проект <?=(isset($data[0]['id']))?('- регистрационный номер: '.$data[0]['id'].''):('')?></li>
-    </ol>
+<section class="content">
+<div class="row">
+<!-- BEGIN USER PROFILE -->
+<div class="col-md-12">
 
-    <div class="row profile">
+<div class="grid profile">
 
-    <div class="col-sm-12 col-md-4 col-lg-3 bord">
 
+
+<div class="grid-header">
+    <div class="col-xs-9">
         <div class="row">
-
-            <div class="col-xs-12 col-sm-12">
-                <div class="well">
-
-                    <ul id="yw0" class="nav nav-list">
-                        <li class="nav-header"><strong>Управление проектом</strong></li>
-                        </br>
-
-                        <li>
-                            <p> Добавить бизнесплан
-                                <a data-toggle="modal" href="#PDF_Modal" class="btn btn-xs btn-primary">
-                                    Выбрать PDF
-                                </a>
-                            </p>
-
-                        </li>
-                        <li>
-                            <p> Заявить проект
-                                <a data-toggle="modal"  id="Pull" href="" class="btn btn-xs btn-primary">
-                                    Отправить
-                                    <i class="fa"></i></a> </p>
-                        </li>
-                        </br>
-                        </br>
-
-                        <li class="nav-header"><strong>Статусы экспертиз</strong></li>
-                        </br>
-                        <li>
-                            <p id="first_check"> Подача заявки <?=$mod_one?></p>
-                        </li>
-                        <li>
-                            <p id="exp_check"> Проверка заявки <?=$mod_two?></p>
-
-                        </li>
-                        <li>
-                            <p> Окружная <?=$mod_three?></p>
-
-                        </li>
-                        <li>
-                            <p> Федеральная <?=$mod_four?></p>
-
-                        </li>
-
-                        </br>
-
-
-                        </br>
-
-                    </ul>
-
-                </div>
+            <div class="col-xs-12 col-sm-1">
             </div>
-        </div><!--/row-->
-
-    </div><!--/col-->
-
-    <div class="col-sm-12 col-md-7 col-lg-7 ">
-
-    <? if($data[0]['FIRST_LAVEL_APPROVAL'] == '2' ){ ?>
-        <div class="alert alert-warning  alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-            <strong>Комментарий эксперта: </strong> <?=$data[0]['FIRST_LAVEL_COMMENT']?>
+            <div class="col-xs-12 col-sm-8 persnal">
+                <h3>Проект</h3>
+                <p><i class="fa fa-fw fa-sort-numeric-asc"></i> <?= $this->MakeOrder($data[0]['id']) //isset($role)?($role):('')?></p>
+<!--                <p><i class="fa fa-fw fa-envelope"></i> --><?//=Yii::app()->user->email ?><!--</p>-->
+            </div>
         </div>
-    <? } ?>
-
-    <div class="panel panel-info">
-    <div class="panel-heading">
-        <h3 class="panel-title">Проектные данные
-
-            <? if(!$no_edit){ ?>
-                <button id="enable" class="btn btn-xs btn-primary pull-right"><i class="fa  fa-edit"> </i> редактировать</button>
-            <? } ?>
-        </h3>
     </div>
-    <div class="panel-body persona">
-    <table   class="table table-hover">
-    <tbody>
-    <tr>
-        <th width="40%">Научная платформа</th>
-        <td>
-            <? if(isset($data[0])){
+    <div class="col-xs-3 text-right visio">
+    </div>
+</div>
 
-                $this->widget('editable.Editable', array(
+
+<div class="grid-body">
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#profile" data-toggle="tab">Проект</a></li>
+    <li><a href="#settings" data-toggle="tab">Оценки</a></li>
+</ul>
+<div class="tab-content">
+
+
+<!-- BEGIN PROFILE -->
+
+<div class="tab-pane active" id="profile">
+<p class="lead">Проектные данные  <span> &nbsp;&nbsp;&nbsp;</span>
+
+    <? if(!$no_edit){ ?>
+        <button id="enable" class="btn btn-xs btn-primary "><i class="fa  fa-edit"> </i> редактировать</button>
+    <? } ?>
+    <? if(!$no_buttons){ ?>
+    <button  data-toggle="modal" data-target="#modalPrimaryPDF" class="btn btn-xs btn-primary " style="font-size:0.6em;"><i class="fa  fa-cloud-upload"> </i> загрузить аннотацию</button>
+    <button id="Pull" data-toggle="modal"  class="btn btn-xs btn-primary " style="font-size:0.6em;"><i class="fa  fa-trophy" > </i> зарегистрировать</button>
+    <? } ?>
+    </p>
+    <hr>
+<div class="row">
+    <?if(isset($data) && !is_null($data)){?>
+
+        <div class="col-sm-6">
+            <p><strong>Научная платформа:</strong>
+                <? $this->widget('editable.Editable', array(
                     'type'      => 'select',
                     'name'      => 'ID_STAGE',
                     'pk'        => $data[0]['id'],
@@ -154,60 +115,32 @@ if(isset($data) && !is_null($data)){
                     'source'    => $this->createUrl('Autorized/getStages'),
                     'title'     => 'Enter title',
                     'placement' => 'right',
-                    'options' => array(
-                        'disabled'=>true,
-                    ),
-
-                ));
-
-            } ?>
-        </td>
-    </tr>
-    <tr>
-        <th>Название проекта</th>
-        <td>
-            <? if(isset($data[0])){
-            $this->widget('editable.Editable', array(
-                'type'      => 'textarea',
-                'pk'        => $data[0]['id'],
-                'name'      => 'NAME',
-                'text'      => CHtml::encode($data[0]['NAME']),
-                'url'       => $this->createUrl('Autorized/updateProject'),
-                'title'     => 'Введите фамилию',
-                'placement' => 'right',
-                'options' => array(
-                    'disabled'=>true,
-                ),
-            ));
-
-            } ?>
-        </td>
-    </tr>
-    <tr>
-        <th>Количество исполнителей</th>
-        <td>
-            <? if(isset($data[0])){
-            $this->widget('editable.Editable', array(
-                'type'      => 'text',
-                'pk'        => $data[0]['id'],
-                'name'      => 'EXECUTERS_NUM',
-                'text'      => CHtml::encode($data[0]['EXECUTERS_NUM']),
-                'url'       => $this->createUrl('Autorized/updateProject'),
-                'title'     => 'Введите фамилию',
-                'placement' => 'right',
-                'options' => array(
-                    'disabled'=>true,
-                ),
-            ));
-
-            } ?>
-        </td>
-    </tr>
-    <tr>
-        <th>Из них до 35 лет</th>
-        <td>
-            <? if(isset($data[0])){
-                $this->widget('editable.Editable', array(
+                    'options' => array( 'disabled'=>true, ), ));  ?>
+            </p>
+            <p><strong>Название проекта:</strong>
+                <? $this->widget('editable.Editable', array(
+                    'type'      => 'textarea',
+                    'pk'        => $data[0]['id'],
+                    'name'      => 'NAME',
+                    'text'      => CHtml::encode($data[0]['NAME']),
+                    'url'       => $this->createUrl('Autorized/updateProject'),
+                    'title'     => 'Введите фамилию',
+                    'placement' => 'right',
+                    'options' => array( 'disabled'=>true, ),  )); ?>
+            </p>
+            <p><strong>Количество исполнителей:</strong>
+                <? $this->widget('editable.Editable', array(
+                    'type'      => 'text',
+                    'pk'        => $data[0]['id'],
+                    'name'      => 'EXECUTERS_NUM',
+                    'text'      => CHtml::encode($data[0]['EXECUTERS_NUM']),
+                    'url'       => $this->createUrl('Autorized/updateProject'),
+                    'title'     => 'Введите фамилию',
+                    'placement' => 'right',
+                    'options' => array( 'disabled'=>true, ),  )); ?>
+            </p>
+            <p><strong>Из них до 35 лет:</strong>
+                <? $this->widget('editable.Editable', array(
                     'type'      => 'text',
                     'pk'        => $data[0]['id'],
                     'name'      => 'UN_THIRTY_FIVE',
@@ -215,23 +148,10 @@ if(isset($data) && !is_null($data)){
                     'url'       => $this->createUrl('Autorized/updateProject'),
                     'title'     => 'Введите фамилию',
                     'placement' => 'right',
-                    'options' => array(
-                        'disabled'=>true,
-                    ),
-                ));
-
-            }
-
-         ?>
-        </td>
-    </tr>
-    <tr>
-        <th>Из них обучающихся</th>
-        <td>
-            <?
-
-            if(isset($data[0])){
-                $this->widget('editable.Editable', array(
+                    'options'     => array( 'disabled'=>true, ) )); ?>
+            </p>
+            <p><strong>Из них обучающихся:</strong>
+                <? $this->widget('editable.Editable', array(
                     'type'      => 'text',
                     'pk'        => $data[0]['id'],
                     'name'      => 'STUDY',
@@ -239,40 +159,22 @@ if(isset($data) && !is_null($data)){
                     'url'       => $this->createUrl('Autorized/updateProject'),
                     'title'     => 'Введите фамилию',
                     'placement' => 'right',
-                    'options' => array(
-                        'disabled'=>true,
-                    ),
-                ));
+                    'options' => array( 'disabled'=>true, ), )); ?>
+            </p>
+            <p><strong>Суммарное кол-во публикаций:</strong>
+                <? $this->widget('editable.Editable', array(
+                    'type'      => 'text',
+                    'pk'        => $data[0]['id'],
+                    'name'      => 'PUBLICATIONS',
+                    'text'      => CHtml::encode($data[0]['PUBLICATIONS']),
+                    'url'       => $this->createUrl('Autorized/updateProject'),
+                    'title'     => 'Введите фамилию',
+                    'placement' => 'right',
+                    'options' => array( 'disabled'=>true, ),)); ?>
+            </p>
 
-            }  ?>
-        </td>
-    </tr>
-    <tr>
-        <th>Суммарное кол-во публикаций</th>
-        <td>
-            <? if(isset($data[0])){
-            $this->widget('editable.Editable', array(
-                'type'      => 'text',
-                'pk'        => $data[0]['id'],
-                'name'      => 'PUBLICATIONS',
-                'text'      => CHtml::encode($data[0]['PUBLICATIONS']),
-                'url'       => $this->createUrl('Autorized/updateProject'),
-                'title'     => 'Введите фамилию',
-                'placement' => 'right',
-                'options' => array(
-                    'disabled'=>true,
-                ),
-            ));
-
-            } ?>
-        </td>
-    </tr>
-
-    <tr>
-        <th>Из них в зарубежных изданиях</th>
-        <td>
-            <? if(isset($data[0])){
-                $this->widget('editable.Editable', array(
+            <p><strong>Из них в зарубежных изданиях:</strong>
+                <?  $this->widget('editable.Editable', array(
                     'type'      => 'text',
                     'pk'        => $data[0]['id'],
                     'name'      => 'FORIN_PUBL',
@@ -280,270 +182,287 @@ if(isset($data) && !is_null($data)){
                     'url'       => $this->createUrl('Autorized/updateProject'),
                     'title'     => 'Введите фамилию',
                     'placement' => 'right',
-                    'options' => array(
-                        'disabled'=>true,
-                    ),
-                ));
-            }  ?>
-        </td>
-    </tr>
-    <tr>
-        <th>Год начала</th>
-        <td>
-            <? if(isset($data[0])){
-                $this->widget('editable.Editable', array(
-                'type'      => 'combodate',
-                'name'      => 'START_YEAR',
-                'pk'        => $data[0]['id'],
-                'text'      => CHtml::encode($data[0]['START_YEAR']),
-                'url'       => $this->createUrl('Autorized/updateProject'),
-//                                            'format'      => 'yyyy-mm-dd', //format in which date is expected from model and submitted to server
-                'format'      => 'YYYY', //in this format date sent to server
-                'viewformat'  => 'YYYY', //in this format date is displayed
-                'template'    => 'YYYY', //template for dropdowns
-                'combodate'   => array('minYear' => 1980, 'maxYear' => 2015),
-                'options'     => array(
-                    'datepicker' => array('language' => 'ru'),
-                    'disabled'=>true,
-                )
-            ));
-
-            } ?>
-        </td>
-    </tr>
-    <tr>
-        <th>Год окончания</th>
-        <td>
-            <? if(isset($data[0])){
-                $this->widget('editable.Editable', array(
+                    'options' => array( 'disabled'=>true, ), )); ?>
+            </p>
+        </div>
+        <div class="col-sm-6">
+            <p><strong>Год начала:</strong>
+                <? $this->widget('editable.Editable', array(
+                    'type'      => 'combodate',
+                    'name'      => 'START_YEAR',
+                    'pk'        => $data[0]['id'],
+                    'text'      => CHtml::encode($data[0]['START_YEAR']),
+                    'url'       => $this->createUrl('Autorized/updateProject'),
+                    'format'      => 'YYYY', //in this format date sent to server
+                    'viewformat'  => 'YYYY', //in this format date is displayed
+                    'template'    => 'YYYY', //template for dropdowns
+                    'combodate'   => array('minYear' => 1980, 'maxYear' => 2015),
+                    'options'     => array( 'disabled'=>true, ) )); ?>
+            </p>
+            <p><strong>Год окончания:</strong>
+                <?  $this->widget('editable.Editable', array(
                     'type'      => 'combodate',
                     'name'      => 'END_YEAR',
                     'pk'        => $data[0]['id'],
                     'text'      => CHtml::encode($data[0]['END_YEAR']),
                     'url'       => $this->createUrl('Autorized/updateProject'),
-//                                            'format'      => 'yyyy-mm-dd', //format in which date is expected from model and submitted to server
                     'format'      => 'YYYY', //in this format date sent to server
                     'viewformat'  => 'YYYY', //in this format date is displayed
                     'template'    => 'YYYY', //template for dropdowns
                     'combodate'   => array('minYear' => 1980, 'maxYear' => 2030),
-                    'options'     => array(
-                        'datepicker' => array('language' => 'ru'),
-                        'disabled'=>true,
-                    )
-                ));
-            } ?>
-        </td>
-    </tr>
-    <tr>
-        <th>Стадия развития проекта</th>
-        <td>
-        <? if(isset($data[0])){
+                    'options'     => array('disabled'=>true, ) )); ?>
+            </p>
+            <p><strong>Стадия развития проекта:</strong>
+                <? $this->widget('editable.Editable', array(
+                    'type'      => 'select',
+                    'name'      => 'ID_PHASE',
+                    'pk'        => $data[0]['id'],
+                    'text'      => CHtml::encode($data[0]['ID_PHASE']),
+                    'url'       => $this->createUrl('Autorized/updateProject'),
+                    'source'    => $this->createUrl('Autorized/getPhases'),
+                    'title'     => 'Enter title',
+                    'placement' => 'right',
+                    'options' => array( 'disabled'=>true, ), ));  ?>
+            </p>
+            <p><strong>Объем финансирования на период реализации:</strong>
+                <? $this->widget('editable.Editable', array(
+                    'type'      => 'select',
+                    'name'      => 'ID_BUDGET',
+                    'pk'        => $data[0]['id'],
+                    'text'      => CHtml::encode($data[0]['ID_BUDGET']),
+                    'url'       => $this->createUrl('Autorized/updateProject'),
+                    'source'    => $this->createUrl('Autorized/getBudget'),
+                    'title'     => 'Enter title',
+                    'placement' => 'right',
+                    'options' => array( 'disabled'=>true, ), )); ?>
+            </p>
+            <p><strong>Объем финансирования на календарный год:</strong>
+                <? $this->widget('editable.Editable', array(
+                    'type'      => 'text',
+                    'pk'        => $data[0]['id'],
+                    'name'      => 'YEAR_BUDGET',
+                    'text'      => CHtml::encode($data[0]['YEAR_BUDGET']),
+                    'url'       => $this->createUrl('Autorized/updateProject'),
+                    'title'     => 'Введите фамилию',
+                    'placement' => 'right',
+                    'options' => array( 'disabled'=>true, ),  )); ?>
+            </p>
+            <p><strong>Доля предполагаемого coфинансирования:</strong>
+                <?  $this->widget('editable.Editable', array(
+                    'type'      => 'text',
+                    'pk'        => $data[0]['id'],
+                    'name'      => 'CO_FINANCING',
+                    'text'      => CHtml::encode($data[0]['CO_FINANCING']),
+                    'url'       => $this->createUrl('Autorized/updateProject'),
+                    'title'     => 'Введите фамилию',
+                    'placement' => 'right',
+                    'options' => array( 'disabled'=>true, ),  )); ?>
+            </p>
+            <p><strong>Аннотация:</strong>
+                <?   $this->widget('editable.Editable', array(
+                    'type'      => 'textarea',
+                    'pk'        => $data[0]['id'],
+                    'name'      => 'DESCR_PROJECT',
+                    'text'      => CHtml::encode($data[0]['DESCR_PROJECT']),
+                    'url'       => $this->createUrl('Autorized/updateProject'),
+                    'title'     => 'Введите фамилию',
+                    'placement' => 'right',
+                    'options' => array( 'disabled'=>true, ),  )); ?>
+            </p>
 
-            $this->widget('editable.Editable', array(
-                'type'      => 'select',
-                'name'      => 'ID_PHASE',
-                'pk'        => $data[0]['id'],
-                'text'      => CHtml::encode($data[0]['ID_PHASE']),
-                'url'       => $this->createUrl('Autorized/updateProject'),
-                'source'    => $this->createUrl('Autorized/getPhases'),
-                'title'     => 'Enter title',
-                'placement' => 'right',
-                'options' => array(
-                    'disabled'=>true,
-                ),
+        </div>
+    <? }else { ?>
+        <div class="grid-body">
+            <div class="alert alert-danger fade in">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <h4>Внимание! Осторожно! </h4>
+                <p>По не установленным причинам на сервере произошел технический сбой! Убедительная просьба перезайти в сой кабинет,
+                    и если ошибка повториться сообщите об этом администрации.</p>
 
-            ));
+            </div>
+        </div>
+    <? }  ?>
 
-        }    ?>
-        </td>
-    </tr>
+</div>
 
-    <tr>
-        <th>Объем финансирования на период реализации</th>
-        <td>
-    <? if(isset($data[0])){
-        $this->widget('editable.Editable', array(
-            'type'      => 'select',
-            'name'      => 'ID_BUDGET',
-            'pk'        => $data[0]['id'],
-            'text'      => CHtml::encode($data[0]['ID_BUDGET']),
-            'url'       => $this->createUrl('Autorized/updateProject'),
-            'source'    => $this->createUrl('Autorized/getBudget'),
-            'title'     => 'Enter title',
-            'placement' => 'right',
-            'options' => array(
-                'disabled'=>true,
-            ),
+<div class="row">
 
-        ));
 
-    } ?>
-        </td>
-    </tr>
-    <tr>
-        <th>Объем финансирования на календарный год</th>
-        <td>
-        <? if(isset($data[0])){
-            $this->widget('editable.Editable', array(
-                'type'      => 'text',
-                'pk'        => $data[0]['id'],
-                'name'      => 'YEAR_BUDGET',
-                'text'      => CHtml::encode($data[0]['YEAR_BUDGET']),
-                'url'       => $this->createUrl('Autorized/updateProject'),
-                'title'     => 'Введите фамилию',
-                'placement' => 'right',
-                'options' => array(
-                    'disabled'=>true,
-                ),
-            ));
+        <div class="col-sm-3 stats">
+            <h1 id="first_check"><?=$mod_one?></h1>
+            <span> Подача заявки  </span>
+            <button class="btn btn-primary"><i class="fa fa-flag-o"></i> Подача </button>
+        </div>
+        <div class="col-sm-3 stats">
+            <h1 id="exp_check"> <?=$mod_two?></h1>
+            <span> Проверка заявки </span>
+            <button class="btn btn-primary"><i class="fa fa-legal"></i> Проверка </button>
+        </div>
+        <div class="col-sm-3 stats">
 
-        }  ?>
-        </td>
-    </tr>
-    <tr>
-        <th>Доля предполагаемого coфинансирования</th>
-        <td>
-        <? if(isset($data[0])){
-            $this->widget('editable.Editable', array(
-                'type'      => 'text',
-                'pk'        => $data[0]['id'],
-                'name'      => 'CO_FINANCING',
-                'text'      => CHtml::encode($data[0]['CO_FINANCING']),
-                'url'       => $this->createUrl('Autorized/updateProject'),
-                'title'     => 'Введите фамилию',
-                'placement' => 'right',
-                'options' => array(
-                    'disabled'=>true,
-                ),
-            ));
+            <h1><?=$mod_three?></h1>
+            <span>Окружная экспертиза</span>
+            <button class="btn btn-primary"><i class="fa fa-flag-checkered"></i> Окружная</button>
+        </div>
+        <div class="col-sm-3 stats">
 
-        }  ?>
-        </td>
-    </tr>
-    <tr>
-        <th>Аннотация</th>
-        <td>
-        <? if(isset($data[0])){
-            $this->widget('editable.Editable', array(
-                'type'      => 'textarea',
-                'pk'        => $data[0]['id'],
-                'name'      => 'DESCR_PROJECT',
-                'text'      => CHtml::encode($data[0]['DESCR_PROJECT']),
-                'url'       => $this->createUrl('Autorized/updateProject'),
-                'title'     => 'Введите фамилию',
-                'placement' => 'right',
-                'options' => array(
-                    'disabled'=>true,
-                ),
-            ));
+            <h1><?=$mod_four?></h1>
+            <span>Федеральная экспертиза</span>
+            <button class="btn btn-primary"><i class="fa fa-flag"></i> Федеральная</button>
+        </div>
 
-        }  ?>
-        </td>
-    </tr>
+</div>
+</div>
 
-    </tbody>
-    </table>
+<!-- END PROFILE -->
+
+
+<!-- BEGIN SETTINGS -->
+<div class="tab-pane" id="settings">
+    <p class="lead">Оценки проекта</p>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="grid no-border">
+
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Имя</th>
+                                <th>Статус</th>
+                                <th>Оценка</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Александр Стаханов</td>
+                                <td>Эксперт</td>
+                                <td><span class="text-yellow"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Аркадий Гайдар</td>
+                                <td>Эксперт</td>
+                                <td><span class="text-yellow"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Иларион Арденгард</td>
+                                <td>Инвестор</td>
+                                <td><span class="text-yellow"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+        </div>
     </div>
-    </div>
+</div>
+<!-- END SETTINGS -->
+</div>
+</div>
+</div>
+</div>
+<!-- END USER PROFILE -->
+</div>
+</section>
+
+
+
+
+
+
+<!--    --><?// if($data[0]['FIRST_LAVEL_APPROVAL'] == '2' ){ ?>
+<!--        <div class="alert alert-warning  alert-dismissable">-->
+<!--            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>-->
+<!--            <strong>Комментарий эксперта: </strong> --><?//=$data[0]['FIRST_LAVEL_COMMENT']?>
+<!--        </div>-->
+<!--    --><?// } ?>
+
 
 
 
     <!-- модальное окно для добавления PDF -->
 
-    <div class="modal fade" id="PDF_Modal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title">Выберите файл с аннотацией к проекту</h4>
-                </div>
-                <div class="modal-body">
-                    <div id="upload-wrapper">
-                        <div align="center">
-
-                            <h4>Загрузка PDF документа </br></br>
-                                <small> Файл аннотации должен являться PDF документом и содержать всю необходимую информацию,
-                                    которую вы можете предоставить, для непредвзятой оценки вашего проекта  экспертной группой </small></h4>
+        <div class="modal fade" id="modalPrimaryPDF" tabindex="-1" role="dialog" aria-labelledby="myModalLabel14" aria-hidden="true">
+            <div class="modal-wrapper">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-blue">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel14">Загрузка PDF документа</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p style="font-size:13px;">
+                                Файл аннотации должен являться PDF документом и содержать всю необходимую информацию,
+                                которую вы можете предоставить, для непредвзятой оценки вашего проекта  экспертной группой
+                            </p>
                             </br>
                             <form action="<?=Yii::app()->createUrl('Images/uploadPDF')?>" method="post" enctype="multipart/form-data" id="MyUploadForm">
-                                <input name="pdf_file" id="imageInput" type="file"  />
-                                <input type="submit"  id="submit-btn" value="Загрузить" class="btn btn-primary" />
-                                <img src="<?=Yii::app()->baseUrl?>/images/ajax-loader.gif" id="loading-img" style="display:none;" alt="Please Wait"/>
-                            </form>
-                            <div id="output"></div>
-                        </div>
-                    </div>
+                                <input name="pdf_file" id="imageInput" type="file"  style="float:left;"/>
+                                <button type="submit" id="submit-btn" class="btn btn-sm btn-primary">Загрузить</button>
 
-                    <div class="modal-footer">
-                        <a href="#" data-dismiss="modal" id="RebootAva"class="btn">Закрыть</a>
+                                <i class="fa fa-refresh fa-spin" id="loading-img" style="display:none;"   ></i>
+                            </form>
+                            <div id="output" ></div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-    </div>
 
-    </div><!--/PDF-->
+
+    <!--/PDF-->
 
 
     <!-- модальное окно для отображения инфы при заявке проекта -->
 
-    <div class="modal fade" id="Pull_Modal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title">Внимание! Вы не ввели необходимую информацию! </h4>
-                </div>
-                <div class="modal-body">
-                    <div id="upload-wrapper">
-                        <div >
-
-                            <h4 align="center">Уважаемый пользователь!  </h4>
-                                <h4><small> Если вы видителе это сообщение, значит вы попытались отправить свой проект на участие в эстафете.
-                                    К сожалению, вы не заполнили некоторые поля при регистрации.</br></br>
-                                    Убедительная просьба, проверьте внимательно пропущенные поля в персональной форме регистрации, и в форме регистрации проекта.
-                                    Возможность заявить проект на участие предоставляется при заполнении всей информации.
-                                </small></h4>
-
-<!--                            <form action="--><?//=Yii::app()->createUrl('Images/uploadPDF')?><!--" method="post" enctype="multipart/form-data" id="MyUploadForm">-->
-<!--                                <input name="pdf_file" id="imageInput" type="file"  />-->
-<!--                                <input type="submit"  id="submit-btn" value="Загрузить" class="btn btn-primary" />-->
-<!--                                <img src="--><?//=Yii::app()->baseUrl?><!--/images/ajax-loader.gif" id="loading-img" style="display:none;" alt="Please Wait"/>-->
-<!--                            </form>-->
-                            <div id="output"></div>
+        <div class="modal fade" id="Pull_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel14" aria-hidden="true">
+            <div class="modal-wrapper">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-red">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel14">Уважаемый пользователь!</h4>
                         </div>
-                    </div>
-
-                    <div class="modal-footer">
-                        <a href="#" data-dismiss="modal" id="RebootAva"class="btn">Закрыть</a>
+                        <div class="modal-body">
+                            <p style="font-size:13px;">
+                                Если вы видителе это сообщение, значит вы попытались отправить свой проект на участие в эстафете.
+                                К сожалению, вы не заполнили некоторые поля при регистрации.</br></br>
+                                Убедительная просьба, проверьте внимательно пропущенные поля в персональной форме регистрации, и в форме регистрации проекта.
+                                Возможность заявить проект на участие предоставляется при заполнении всей информации.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-    </div>
+    <!--/PDF-->
 
-    </div><!--/PDF-->
-
-
-
-
-
-
-
-    </div><!--/profile-->
 
     <script type="text/javascript">
         var Url = '<?=Yii::app()->createUrl('Autorized/checkFullInfo')?>';
     </script>
 
 
-    </div>
 <?
 $base_url = Yii::app()->baseUrl;
 $cs = Yii::app()->getClientScript();
-$cs->registerScriptFile( $base_url.'/assets/3160b985/js/bootstrap-datetimepicker.js', CClientScript::POS_END);
 $cs->registerScriptFile($base_url.'/adminka/js/MyEditsToEditable.js', CClientScript::POS_END);
 $cs->registerScriptFile($base_url.'/adminka/js/jquery.form.min.js', CClientScript::POS_END);
 $cs->registerScriptFile($base_url.'/adminka/js/avatar_upload.js', CClientScript::POS_END);

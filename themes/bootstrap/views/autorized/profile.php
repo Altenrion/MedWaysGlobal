@@ -73,56 +73,234 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#profile" data-toggle="tab">Профиль</a></li>
                 <li><a href="#timeline" data-toggle="tab">Timeline</a></li>
-                <li><a href="#photos" data-toggle="tab">Photos</a></li>
                 <li><a href="#settings" data-toggle="tab">Настройки</a></li>
             </ul>
             <div class="tab-content">
+
+
                 <!-- BEGIN PROFILE -->
+
                 <div class="tab-pane active" id="profile">
                     <p class="lead">Мои данные  <span> &nbsp;&nbsp;&nbsp;</span><button id="enable" class="btn btn-xs btn-primary "><i class="fa  fa-edit"> </i> редактировать</button></p>
                     <hr>
                     <div class="row">
+                        <?if(isset($data) && !is_null($data)){?>
+
                         <div class="col-sm-6">
-                            <p><strong>Имя:</strong> тест </p>
-                            <p><strong>Фамилия:</strong> тест </p>
-                            <p><strong>Отчество:</strong> Web Designer / UI Designer</p>
-                            <p><strong>Пол:</strong> website</p>
-                            <p><strong>Дата рождения:</strong> July 24<sup>th</sup>, 2010</p>
-                            <p><strong>Телефон:</strong> (917) 544-7768</p>
+                            <p><strong>Фамилия:</strong>
+                                <? $this->widget('editable.Editable', array(
+                                        'type'      => 'text',
+                                        'pk'        => $data['id'],
+                                        'name'      => 'F_NAME',
+                                        'text'      => CHtml::encode($data['F_NAME']),
+                                        'url'       => $this->createUrl('Autorized/updateProfile'),
+                                        'title'     => 'Введите фамилию',
+                                        'placement' => 'right',
+                                        'options' => array( 'disabled'=>true, 'class'=>'edit',  ),  ));  ?>
+                            </p>
+                            <p><strong>Имя:</strong>
+                                <? $this->widget('editable.Editable', array(
+                                        'type'      => 'text',
+                                        'pk'        => $data['id'],
+                                        'name'      => 'L_NAME',
+                                        'text'      => CHtml::encode($data['L_NAME']),
+                                        'url'       => $this->createUrl('Autorized/updateProfile'),
+                                        'title'     => 'Введите фамилию',
+                                        'placement' => 'right',
+                                        'options' => array( 'disabled'=>true, ),  )); ?>
+                            </p>
+                            <p><strong>Отчество:</strong>
+                                <? $this->widget('editable.Editable', array(
+                                        'type'      => 'text',
+                                        'pk'        => $data['id'],
+                                        'name'      => 'S_NAME',
+                                        'text'      => CHtml::encode($data['S_NAME']),
+                                        'url'       => $this->createUrl('Autorized/updateProfile'),
+                                        'title'     => 'Введите фамилию',
+                                        'placement' => 'right',
+                                        'options' => array( 'disabled'=>true, ),  )); ?>
+                            </p>
+                            <p><strong>Пол:</strong>
+                                <? $this->widget('editable.Editable', array(
+                                        'type'      => 'select',
+                                        'name'      => 'SEX',
+                                        'pk'        => $data['id'],
+                                        'text'      => CHtml::encode(($data['SEX'])=='1'?'M':'Ж'),
+                                        'url'       => $this->createUrl('Autorized/updateProfile'),
+                                        'source'    => Editable::source(array(1 => 'М', 2 => 'Ж')),
+                                        'title'     => 'Enter title',
+                                        'placement' => 'right',
+                                        'options'     => array( 'disabled'=>true, 'showbuttons'=>false, ) )); ?>
+                            </p>
+                            <p><strong>Дата рождения:</strong>
+                                <? $this->widget('editable.Editable', array(
+                                        'type'      => 'combodate',
+                                        'name'      => 'BIRTH_DATE',
+                                        'pk'        => $data['id'],
+                                        'text'      => CHtml::encode(date('d / m / Y', strtotime($data['BIRTH_DATE']))),
+                                        'url'       => $this->createUrl('Autorized/updateProfile'),
+                                        'format'      => 'YYYY-MM-DD', //in this format date sent to server
+                                        'viewformat'  => 'DD / MM / YYYY', //in this format date is displayed
+                                        'template'    => 'DD / MM / YYYY', //template for dropdowns
+                                        'combodate'   => array('minYear' => 1930, 'maxYear' => 2015),
+                                        'options'     => array( 'datepicker' => array('language' => 'ru'), 'disabled'=>true, )  )); ?>
+                            </p>
+                            <p><strong>Телефон:</strong>
+                                <? $this->widget('editable.Editable', array(
+                                        'type'      => 'text',
+                                        'pk'        => $data['id'],
+                                        'name'      => 'PHONE',
+                                        'text'      => CHtml::encode($data['PHONE']),
+                                        'url'       => $this->createUrl('Autorized/updateProfile'),
+                                        'title'     => 'Введите фамилию',
+                                        'placement' => 'right',
+                                        'options' => array( 'disabled'=>true, ),)); ?>
+                            </p>
                         </div>
                         <div class="col-sm-6">
-                            <p><strong>Ученая степень:</strong> Специалист</p>
-                            <p><strong>Ученое звание:</strong> Специалист</p>
-                            <p><strong>Округ:</strong> ЦФО</p>
-                            <p><strong>Вуз:</strong> НИЯУ МИФИ</p>
-                            <p><strong>Должность:</strong> НИЯУ МИФИ</p>
-                            <p><strong>Специальность:</strong> НИЯУ МИФИ</p>
-                            <p><strong>Индекс Хирша:</strong> НИЯУ МИФИ</p>
-
-
-
+                            <p><strong>Ученая степень:</strong>
+                                <?  $this->widget('editable.Editable', array(
+                                        'type'      => 'select',
+                                        'name'      => 'DEGREE',
+                                        'pk'        => $data['id'],
+                                        'text'      => CHtml::encode($data['DEGREE']),
+                                        'url'       => $this->createUrl('Autorized/updateProfile'),
+                                        'source'    => Editable::source(array('тестовая степень 1'=>'тестовая степень 1' , 'тестовая степень 2'=>'тестовая степень 2')),
+                                        'title'     => 'Enter title',
+                                        'placement' => 'right',
+                                        'options'     => array( 'disabled'=>true, 'showbuttons'=>false,  ) )); ?>
+                            </p>
+                            <p><strong>Ученое звание:</strong>
+                                <?$this->widget('editable.Editable', array(
+                                        'type'      => 'select',
+                                        'name'      => 'ACADEMIC_TITLE',
+                                        'pk'        => $data['id'],
+                                        'text'      => CHtml::encode($data['ACADEMIC_TITLE']),
+                                        'url'       => $this->createUrl('Autorized/updateProfile'),
+                                        'source'    => Editable::source(array('тестовое звание 1'=>'тестовое звание 1' , 'тестовое звание 2'=>'тестовое звание 2')),
+                                        'title'     => 'Enter title',
+                                        'placement' => 'right',
+                                        'options'     => array( 'disabled'=>true,'showbuttons'=>false, )  )); ?>
+                            </p>
+                            <p><strong>Округ:</strong>
+                                <? $this->widget('editable.Editable', array(
+                                        'type'      => 'select',
+                                        'name'      => 'ID_DISTRICT',
+                                        'pk'        => $data['id'],
+                                        'text'      => CHtml::encode($data['ID_DISTRICT']),
+                                        'url'       => $this->createUrl('Autorized/updateProfile'),
+                                        'source'    => $this->createUrl('Autorized/getDistricts'),
+                                        'title'     => 'Enter title',
+                                        'placement' => 'right',
+                                        'options' => array( 'disabled'=>true, ), )); ?>
+                            </p>
+                            <p><strong>Вуз:</strong>
+                                <? $this->widget('editable.Editable', array(
+                                        'type'      => 'select',
+                                        'name'      => 'ID_UNIVER',
+                                        'pk'        => $data['id'],
+                                        'text'      => CHtml::encode($data['ID_UNIVER']),
+                                        'url'       => $this->createUrl('Autorized/updateProfile'),
+                                        'source'    => $this->createUrl('Autorized/getUniversities'),
+                                        'title'     => 'Enter title',
+                                        'placement' => 'right',
+                                        'options' => array( 'disabled'=>true, ), ));  ?>
+                            </p>
+                            <p><strong>Должность:</strong>
+                                <? $this->widget('editable.Editable', array(
+                                        'type'      => 'text',
+                                        'pk'        => $data['id'],
+                                        'name'      => 'W_POSITION',
+                                        'text'      => CHtml::encode($data['W_POSITION']),
+                                        'url'       => $this->createUrl('Autorized/updateProfile'),
+                                        'title'     => 'Введите фамилию',
+                                        'placement' => 'right',
+                                        'options' => array( 'disabled'=>true, ), )); ?>
+                            </p>
+                            <p><strong>Специальность:</strong>
+                                <? $this->widget('editable.Editable', array(
+                                    'type'      => 'select',
+                                    'name'      => 'ID_SPECIALITY',
+                                    'pk'        => $data['id'],
+                                    'text'      => CHtml::encode($data['ID_SPECIALITY']),
+                                    'url'       => $this->createUrl('Autorized/updateProfile'),
+                                    'source'    => $this->createUrl('Autorized/getSpecialities'),
+                                    'title'     => 'Enter title',
+                                    'placement' => 'right',
+                                    'options' => array( 'disabled'=>true, ),  )); ?>
+                            </p>
+                            <p><strong>Индекс Хирша:</strong>
+                                <? $this->widget('editable.Editable', array(
+                                    'type'      => 'text',
+                                    'pk'        => $data['id'],
+                                    'name'      => 'HIRSH',
+                                    'text'      => CHtml::encode($data['HIRSH']),
+                                    'url'       => $this->createUrl('Autorized/updateProfile'),
+                                    'title'     => 'Введите фамилию',
+                                    'placement' => 'right',
+                                    'options' => array( 'disabled'=>true, ),  )); ?>
+                            </p>
 <!--                            <p><strong>Rating:</strong> <span class="text-yellow"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></p>-->
                         </div>
+                    <? }else { ?>
+                            <div class="grid-body">
+                                <div class="alert alert-danger fade in">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                    <h4>Внимание! Осторожно! </h4>
+                                    <p>По не установленным причинам на сервере произошел технический сбой! Убедительная просьба перезайти в сой кабинет,
+                                        и если ошибка повториться сообщите об этом администрации.</p>
+
+                                </div>
+                            </div>
+                    <? }  ?>
+
                     </div>
+
                     <div class="row">
+
+
                         <div class="col-sm-4 stats">
-                            <h1>46,2K</h1>
-                            <span>Followes</span>
-                            <button class="btn btn-success"><i class="fa fa-plus-circle"></i> Follow</button>
+                            <h1><?=round($perc_prof)?> %</h1>
+                            <span>Заполненность профиля</span>
+                            <button class="btn btn-primary"><i class="fa fa-user"></i> Профиль</button>
                         </div>
+
+                        <?if($this->checkRole(array('Manager'))):?>
                         <div class="col-sm-4 stats">
-                            <h1>127</h1>
-                            <span>Following</span>
-                            <button class="btn btn-info"><i class="fa fa-user"></i> View Profile</button>
+
+                                <h1> 0 %</h1>
+                                <span>Заполненность проекта</span>
+                                <button class="btn btn-info"><i class="fa fa-graduation-cap"></i> Проект</button>
                         </div>
+                        <? endif; ?>
+                        <?if($this->checkRole(array('Exp','Exp1','Exp2','Exp3'))):?>
                         <div class="col-sm-4 stats">
-                            <h1>10,9K</h1>
-                            <span>Subscribers</span>
-                            <button class="btn btn-danger"><i class="fa fa-rss"></i> Subscribe</button>
+
+                                <h1> 0 </h1>
+                                <span>Поступило проектов</span>
+                                <button class="btn btn-info"><i class="fa fa-graduation-cap"></i> Проектов</button>
+                        </div>
+                        <? endif; ?>
+                        <?if($this->checkRole(array('Dev'))):?>
+                            <div class="col-sm-4 stats">
+
+                                <h1> 0 </h1>
+                                <span>Обращений</span>
+                                <button class="btn btn-info"><i class="fa fa-envelope"></i> Обращений</button>
+                            </div>
+                        <? endif; ?>
+
+                        <div class="col-sm-4 stats">
+                            <h1><?=$this->DaysIn($data['REG_DATE'])?></h1>
+                            <span>Дней</span>
+                            <button class="btn btn-primary"><i class="fa fa-calendar"></i> Дней в проекте</button>
                         </div>
                     </div>
                 </div>
+
                 <!-- END PROFILE -->
+
+
                 <!-- BEGIN TIMELINE -->
                 <div class="tab-pane" id="timeline">
                     <p class="lead">My Timeline</p>
@@ -188,9 +366,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                     </div>
                 </div>
                 <!-- END TIMELINE -->
-                <!-- BEGIN PHOTOS -->
-                <div class="tab-pane" id="photos"></div>
-                <!-- END PHOTOS -->
+
                 <!-- BEGIN SETTINGS -->
                 <div class="tab-pane" id="settings">
                     <p class="lead">Мои настройки</p>
@@ -252,14 +428,15 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                         <h4 class="modal-title" id="myModalLabel14">Выбор фотографии</h4>
                     </div>
                     <div class="modal-body">
-                        <p>
+                        <p style="font-size:13px;">
                             Здравствуйте <?=Yii::app()->user->name ?>! В данном окне вы можете выбрать и загрузить фотографию для своей учетной записи. Напоминаем вам что
                             рекомендуемый размер фотографий : 500x500 пикс. ; Если вы уже загружали изображение ранее, применено для вашей
                             учетной записи будет последнее.
 
                         </p>
+                        </br>
                         <form action="<?=Yii::app()->createUrl('Images/upload')?>" method="post" enctype="multipart/form-data" id="MyUploadForm">
-                            <input name="image_file" id="imageInput" type="file"  onchange="return doSomething();"/>
+                            <input name="image_file" id="imageInput" type="file"  style="float:left;"/>
                             <button type="submit" id="submit-btn" class="btn btn-sm btn-primary">Загрузить</button>
 
                             <i class="fa fa-refresh fa-spin" id="loading-img" style="display:none;"   ></i>
@@ -286,7 +463,9 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
     Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/avatar_upload.css', CClientScript::POS_BEGIN );
     Yii::app()->clientScript->registerScriptFile($assetsUrl.'/js/switch.js', CClientScript::POS_END );
     Yii::app()->clientScript->registerScriptFile($assetsUrl.'/js/jquery.form.min.js', CClientScript::POS_END );
+    Yii::app()->clientScript->registerScriptFile($assetsUrl.'/js/MyEditsToEditable.js', CClientScript::POS_END );
     Yii::app()->clientScript->registerScriptFile($assetsUrl.'/js/avatar_upload.js', CClientScript::POS_END );
+
 
 
 
@@ -306,7 +485,6 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                 });
                                 return false;
                             }, ".$timer.");" ;
-
         }
         $gritter_init .= "}); } $(function() {  'use strict';  initNotification();   });";
         Yii::app()->clientScript->registerScript('griiter_show',$gritter_init, CClientScript::POS_READY);
