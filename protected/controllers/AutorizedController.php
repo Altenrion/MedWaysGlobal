@@ -67,6 +67,10 @@ class AutorizedController extends Controller
 
     public function actionStatistics()
 	{
+
+
+
+
 		$this->render('statistics');
 	}
 

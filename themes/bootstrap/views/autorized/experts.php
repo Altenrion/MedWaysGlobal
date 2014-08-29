@@ -52,8 +52,8 @@
                                     <td>1</td>
                                     <td>Mark Otto</td>
                                     <td><i class="fa fa-database"></i> Database Migration <span class="label label-primary">12</span></td>
-                                    <td>08/06/2014</td>
-                                    <td><div class="progress"><div class="progress-bar progress-bar-success xs" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60%</span></div></div></td>
+                                    <td>5300x...</td>
+                                    <td>Общий отчет (Время: 0.08254с, Память: 5,529Кб)</td>
                                     <td><span class="text-green"><i class="fa fa-angle-up"></i>30%</span></td>
                                     <td>
                                         <a href="#"><i class="fa fa-pencil bg-blue action"></i></a>
@@ -64,8 +64,8 @@
                                     <td>2</td>
                                     <td>Jacob Thornton</td>
                                     <td><i class="fa fa-paper-plane"></i> Mobile Development <span class="label label-warning">74</span></td>
-                                    <td>21/03/2014</td>
-                                    <td><div class="progress progress-striped active"><div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"><span class="sr-only">30%</span></div></div></td>
+                                    <td>3000x...</td>
+                                    <td>Общий отчет (Время: 0.07999с, Память: 5,530Кб)</td>
                                     <td><span class="text-red"><i class="fa fa-angle-down"></i>12%</span></td>
                                     <td>
                                         <a href="#"><i class="fa fa-check bg-green action"></i></a>
@@ -77,8 +77,8 @@
                                     <td>3</td>
                                     <td>Larry the Bird</td>
                                     <td><i class="fa fa-cloud"></i> Server Upgrade</td>
-                                    <td>14/05/2014</td>
-                                    <td><div class="progress"><div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;"><span class="sr-only">45%</span></div></div></td>
+                                    <td>2500x...</td>
+                                    <td>Общий отчет (Время: 0.09851с, Память: 5,530Кб)</td>
                                     <td><span class="text-green"><i class="fa fa-angle-up"></i>40%</span></td>
                                     <td>
                                         <a href="#"><i class="fa fa-pencil bg-blue action"></i></a>

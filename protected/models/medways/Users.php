@@ -259,6 +259,27 @@ class Users extends CActiveRecord
 
     }
 
+    public function getDistrictProjectsPoints(){
+        $data = Yii::app()->db->createCommand("SELECT
+                  `ID_DISTRICT` , COUNT(*)
+                  FROM `m_w_users`
+                  WHERE `AKTIV_KEY`='100'
+                    AND roles='Manager'
+                    AND ID_DISTRICT is not NULL
+                  GROUP BY ID_DISTRICT")->queryAll();
+        return $data;
+    }
+    public function getDistrictUniversPoints(){
+        $data = Yii::app()->db->createCommand("SELECT
+                  `ID_UNIVER` , COUNT(*)
+                  FROM `m_w_users`
+                  WHERE `AKTIV_KEY`='100'
+                    AND roles='Manager'
+                    AND ID_UNIVER is not NULL
+                  GROUP BY ID_UNIVER")->queryAll();
+        return $data;
+    }
+
 
 
 }
