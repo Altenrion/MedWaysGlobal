@@ -230,7 +230,7 @@ class ShowCaseController extends Controller
         if ($filename !== NULL) {
             // некоторая логика по обработке пути из url в путь до файла на сервере
 
-            $currentFile = Yii::getPathOfAlias('webroot.images.avatars').DIRECTORY_SEPARATOR.$filename;
+            $currentFile = Yii::getPathOfAlias('webroot.downloads').DIRECTORY_SEPARATOR.$filename;
 
             if (file_exists($currentFile)) {
                     Yii::app()->request->sendFile($filename, file_get_contents(Yii::getPathOfAlias('webroot.downloads').DIRECTORY_SEPARATOR.$filename));

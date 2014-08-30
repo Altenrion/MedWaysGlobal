@@ -147,19 +147,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ShowCaseController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
+      <file leaf-file-name="info.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="37" selection-start="1015" selection-end="1015" vertical-scroll-proportion="-18.961538">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="17" selection-start="892" selection-end="892" vertical-scroll-proportion="0.3222749">
+            <state line="203" column="109" selection-start="9998" selection-end="9998" vertical-scroll-proportion="0.03033839">
               <folding />
             </state>
           </provider>
@@ -238,13 +229,13 @@
         <option value="$PROJECT_DIR$/protected/components/MapStat.php" />
         <option value="$PROJECT_DIR$/protected/config/devel.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/partners.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/organizers.php" />
         <option value="$PROJECT_DIR$/IE.html" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
       </list>
     </option>
   </component>
@@ -371,7 +362,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
+              <option name="myItemId" value="showCase" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -417,7 +408,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -431,11 +422,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="adaptive" />
+              <option name="myItemId" value="avatars" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="downloads" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -683,48 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="203" column="109" selection-start="9998" selection-end="9998" vertical-scroll-proportion="0.49124855">
-          <folding>
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409425176286" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="37" selection-start="1015" selection-end="1015" vertical-scroll-proportion="-18.961538">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="91" selection-start="523" selection-end="606" vertical-scroll-proportion="-8.5">
@@ -757,7 +720,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="17" selection-start="892" selection-end="892" vertical-scroll-proportion="0.3222749">
+        <state line="14" column="104" selection-start="579" selection-end="579" vertical-scroll-proportion="0.28199053">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="232" column="98" selection-start="5802" selection-end="5802" vertical-scroll-proportion="0.61899036">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="203" column="109" selection-start="9998" selection-end="9998" vertical-scroll-proportion="0.03033839">
           <folding />
         </state>
       </provider>
