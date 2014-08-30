@@ -166,23 +166,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="392" column="30" selection-start="18116" selection-end="18116" vertical-scroll-proportion="-0.0">
-              <folding>
-                <element signature="e#6#159#0" expanded="true" />
-                <element signature="e#3136#3160#0" expanded="true" />
-                <element signature="e#3302#3326#0" expanded="true" />
-                <element signature="e#17172#17195#0" expanded="true" />
-                <element signature="e#17742#17761#0" expanded="true" />
-                <element signature="e#17967#17988#0" expanded="true" />
-                <element signature="e#19227#19250#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -203,13 +186,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="statistics.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="statistics.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="516" selection-end="1062" vertical-scroll-proportion="0.57526255">
+            <state line="46" column="18" selection-start="1301" selection-end="1301" vertical-scroll-proportion="-26.153847">
               <folding>
                 <element signature="e#493#539#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yiic" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/yiic">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yiic.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/yiic.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="28" selection-start="78" selection-end="78" vertical-scroll-proportion="0.059509918">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -251,7 +252,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css" />
         <option value="$PROJECT_DIR$/protected/controllers/ImagesController.php" />
         <option value="$PROJECT_DIR$/protected/extensions/cabinet/assets/js/MyEditsToEditable.js" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/experts.php" />
@@ -267,6 +267,7 @@
         <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
         <option value="$PROJECT_DIR$/protected/components/MapStat.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
+        <option value="$PROJECT_DIR$/protected/yiic.php" />
       </list>
     </option>
   </component>
@@ -332,86 +333,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="uploads" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="showCase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -610,22 +531,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/js/notification.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="20" selection-start="2061" selection-end="2061" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="109" selection-start="3985" selection-end="3985" vertical-scroll-proportion="0.18803419">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="103" column="17" selection-start="4193" selection-end="4193" vertical-scroll-proportion="-10.461538">
@@ -723,10 +628,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="516" selection-end="1062" vertical-scroll-proportion="0.57526255">
+        <state line="46" column="18" selection-start="1301" selection-end="1301" vertical-scroll-proportion="-26.153847">
           <folding>
             <element signature="e#493#539#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/yiic">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/yiic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="28" selection-start="78" selection-end="78" vertical-scroll-proportion="0.059509918">
+          <folding />
         </state>
       </provider>
     </entry>
