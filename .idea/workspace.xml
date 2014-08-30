@@ -128,7 +128,6 @@
     <file path="/MapStat.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409394956425" ignored="false" />
     <file path="/clients.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409338102036" ignored="false" />
     <file path="/yiic.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409398404323" ignored="false" />
-    <file path="$PROJECT_DIR$/uploads/clients.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409426100606" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +159,7 @@
       <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="217" column="141" selection-start="14238" selection-end="14238" vertical-scroll-proportion="0.43838862">
+            <state line="220" column="45" selection-start="14449" selection-end="14449" vertical-scroll-proportion="0.49881518">
               <folding />
             </state>
           </provider>
@@ -310,6 +309,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="uploads" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="themes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -391,6 +404,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="downloads" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -706,7 +733,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="217" column="141" selection-start="14238" selection-end="14238" vertical-scroll-proportion="0.43838862">
+        <state line="220" column="45" selection-start="14449" selection-end="14449" vertical-scroll-proportion="0.49881518">
           <folding />
         </state>
       </provider>
