@@ -175,15 +175,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/config/console.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="2" selection-start="2149" selection-end="2149" vertical-scroll-proportion="0.96032673">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GenMapCommand.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/commands/GenMapCommand.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -193,10 +184,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="devel.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
+      <file leaf-file-name="console.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/config/console.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="48" selection-start="1640" selection-end="1640" vertical-scroll-proportion="-15.307693">
+            <state line="55" column="0" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.7024504">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/config/production.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="114" column="0" selection-start="3204" selection-end="4404" vertical-scroll-proportion="-27.461538">
               <folding />
             </state>
           </provider>
@@ -320,6 +320,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -627,13 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/production.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="18" selection-start="4403" selection-end="4403" vertical-scroll-proportion="0.047841307">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="48" selection-start="1640" selection-end="1640" vertical-scroll-proportion="-15.307693">
@@ -641,9 +652,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/production.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="0" selection-start="3204" selection-end="4404" vertical-scroll-proportion="-27.461538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/console.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="2" selection-start="2149" selection-end="2149" vertical-scroll-proportion="0.96032673">
+        <state line="55" column="0" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.7024504">
           <folding />
         </state>
       </provider>

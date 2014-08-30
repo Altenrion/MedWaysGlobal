@@ -27,14 +27,33 @@ return array(
 //    'defaultController'=>'ShowCase',
 	// application components
 	'components'=>array(
+        'db'=>array(
+            'connectionString' => 'mysql:host=localhost;dbname=altenrion_medway',
+            'emulatePrepare' => true,
+            'username' => 'altenrion_medway',
+            'password' => 'sBJ9RUYW',
+            'charset' => 'utf8',
+            'enableProfiling'=>true,
+            // показываем значения параметров
+            'enableParamLogging' => true,
+        ),
 
-		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=testdrive',
-			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '',
-			'charset' => 'utf8',
-		),
+        'mail' => array(
+            'class' => 'ext.yii-mail.YiiMail',
+            'transportType' => 'php',
+//                    'transportType' => 'smtp',
+//                    'transportOptions'=>array(
+//                        'host'=>'smtp.timeweb.ru',
+//                        //'encryption'=>'tls',
+//                        'username'=>'administration@altenrion.ru',
+//                        'password'=>'Altenrion',
+//                        'port'=>25,
+//                    ),
+            'viewPath' => 'application.views.mail',
+            'logging' => true,
+            'dryRun' => false
+        ),
+
 
 //        'user'=>array(
 //            // enable cookie-based authentication
