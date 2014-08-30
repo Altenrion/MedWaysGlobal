@@ -206,7 +206,7 @@ $this->breadcrumbs=array(
         <div class="container inner">
 
             <div class="clearfix"></div>
-            <div class="section-title text-center">Последние новости</div>
+            <div class="section-title text-center">НОВОСТИ</div>
 
             <div class="row classic-blog">
                 <div class="col-sm-9 col-sm-offset-1 content">
@@ -221,31 +221,15 @@ $this->breadcrumbs=array(
                             <!-- /.format -->
 
                             <div class="post-content">
-                                <h2 class="post-title"><a href="blog-post.html">В скором времени будет дан старт эстафеты</a></h2>
-                                <div class="meta"> <span class="category"><a href="#">MedWAYS</a>, <a href="#">Daily</a></span> <span class="comments"><a href="#">23 Авг, 2014</a></span> <span class="like"><a href="#">25 <i class="icon-eye"></i></a></span> </div>
+                                <h2 class="post-title"><a href="blog-post.html">Старт Эстафеты вузовской науки 2014!</a></h2>
+                                <div class="meta"> <span class="category"><a href="#">MedWAYS</a>, <a href="#">Daily</a></span> <span class="comments"><a href="#">4 июля, 2014</a></span> <span class="like"><a href="#">25 <i class="icon-eye"></i></a></span> </div>
                                 <!-- /.meta -->
-                                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                            </div>
-                            <!-- /.post-content -->
-                        </div>
-                        <!-- /.post .format-standard -->
-                        <div class="post format-quote">
-                            <div class="date-wrapper"> <a href="blog-post.html" class="date"><span class="day">18</span> <span class="month">Авг</span></a> </div>
-                            <!-- /.date-wrapper -->
-                            <div class="format-wrapper"> <i class="icon-quote"></i> </div>
-                            <!-- /.format -->
-
-                            <div class="post-content">
-                                <blockquote>
-                                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis parturient montes. <small>Very important person</small></p>
-                                </blockquote>
+                                <p>Сибирский государственный медицинский университет дал старт общероссийскому научно-практическому мероприятию «Эстафета вузовской науки - 2014». Эстафета проводится среди медицинских высших образовательных учреждений России в федеральных округах в формате Конкурса научно-инновационных проектов по тематике научных платформ. Регистрация проектов начнется 1 сентября 2014 года.</p>
                             </div>
                             <!-- /.post-content -->
                         </div>
 
-
-
-
+                       <? if(false){?>
                         <div class="post format-link">
                             <div class="date-wrapper"> <a href="blog-post.html" class="date"><span class="day">14</span> <span class="month">Авг</span> </a> </div>
                             <!-- /.date-wrapper -->
@@ -261,7 +245,7 @@ $this->breadcrumbs=array(
                             <!-- /.post-content -->
                         </div>
                         <!-- /.post .format-link -->
-
+                    <? } ?>
                     </div>
                     <!-- /.posts -->
 
