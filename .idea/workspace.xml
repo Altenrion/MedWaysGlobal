@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="163" mnemonic="1" />
-    <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="81" mnemonic="2" />
-    <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="244" mnemonic="3" />
+    <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="164" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="82" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="245" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" name="Default" comment="" />
@@ -18,7 +18,7 @@
     <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409393278605" ignored="false" />
     <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409412561657" ignored="false" />
     <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408512630498" ignored="false" />
-    <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409412487089" ignored="false" />
+    <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409417645189" ignored="false" />
     <file path="/login.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407829978865" ignored="false" />
     <file path="/dummy.xml" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409412896325" ignored="false" />
     <file path="/partners.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409084203530" ignored="false" />
@@ -128,6 +128,7 @@
     <file path="/MapStat.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409394956425" ignored="false" />
     <file path="/clients.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409338102036" ignored="false" />
     <file path="/yiic.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409398404323" ignored="false" />
+    <file path="$PROJECT_DIR$/uploads/clients.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409417668495" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,34 +151,26 @@
       <file leaf-file-name="ShowCaseController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="929" selection-end="929" vertical-scroll-proportion="-8.6470585">
+            <state line="41" column="37" selection-start="1015" selection-end="1015" vertical-scroll-proportion="-18.961538">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="76" selection-start="265" selection-end="265" vertical-scroll-proportion="-7.8461537">
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#3;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state line="22" column="206" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.22156398">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="statistics.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="statistics.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="50" selection-start="611" selection-end="611" vertical-scroll-proportion="0.37689614">
-              <folding>
-                <element signature="n#style#0;n#i#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#h1#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="25" column="50" selection-start="611" selection-end="611" vertical-scroll-proportion="-12.423077">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -185,7 +178,7 @@
       <file leaf-file-name="devel.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="0" selection-start="2541" selection-end="2541" vertical-scroll-proportion="-29.692308">
+            <state line="71" column="0" selection-start="2541" selection-end="2541" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -194,7 +187,7 @@
       <file leaf-file-name="Proto.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="180" column="0" selection-start="10299" selection-end="10299" vertical-scroll-proportion="-11.538462">
+            <state line="180" column="0" selection-start="10299" selection-end="10299" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -203,10 +196,8 @@
       <file leaf-file-name="yiic.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/yiic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="47" selection-start="730" selection-end="730" vertical-scroll-proportion="-18.307692">
-              <folding>
-                <element signature="e#7#49#0" expanded="true" />
-              </folding>
+            <state line="28" column="47" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -214,7 +205,7 @@
       <file leaf-file-name="Users.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="265" column="34" selection-start="8612" selection-end="8621" vertical-scroll-proportion="-24.192308">
+            <state line="265" column="34" selection-start="8612" selection-end="8621" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -223,7 +214,7 @@
       <file leaf-file-name="MapStat.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/components/MapStat.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="34" selection-start="1173" selection-end="1173" vertical-scroll-proportion="-13.346154">
+            <state line="47" column="34" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -232,7 +223,7 @@
       <file leaf-file-name="production.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/config/production.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="0" selection-start="3204" selection-end="4404" vertical-scroll-proportion="-27.461538">
+            <state line="114" column="0" selection-start="3204" selection-end="4404" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -241,7 +232,7 @@
       <file leaf-file-name="cron.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/cron.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="23" selection-start="273" selection-end="273" vertical-scroll-proportion="-5.8846154">
+            <state line="9" column="23" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -270,9 +261,9 @@
         <option value="$PROJECT_DIR$/protected/components/MapStat.php" />
         <option value="$PROJECT_DIR$/protected/config/devel.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
       </list>
     </option>
   </component>
@@ -433,9 +424,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Testing" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -522,10 +513,9 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15731573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13553895" sideWeight="0.84268427" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13713981" sideWeight="0.84268427" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -534,6 +524,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15731573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -611,9 +602,7 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_3.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="725" column="9" selection-start="18134" selection-end="18134" vertical-scroll-proportion="0.3430572">
-          <folding />
-        </state>
+        <state line="725" column="9" selection-start="18134" selection-end="18134" vertical-scroll-proportion="0.3430572" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
@@ -627,65 +616,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/framework/yiic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="838" selection-end="838" vertical-scroll-proportion="0.5157526">
-          <folding />
-        </state>
+        <state line="36" column="0" selection-start="838" selection-end="838" vertical-scroll-proportion="0.5157526" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="80" selection-start="678" selection-end="678" vertical-scroll-proportion="0.47607934">
-          <folding />
-        </state>
+        <state line="24" column="80" selection-start="678" selection-end="678" vertical-scroll-proportion="0.47607934" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/cron.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="273" selection-end="273" vertical-scroll-proportion="-5.8846154">
+        <state line="9" column="23" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/production.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="0" selection-start="3204" selection-end="4404" vertical-scroll-proportion="-27.461538">
+        <state line="114" column="0" selection-start="3204" selection-end="4404" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/yiic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="47" selection-start="730" selection-end="730" vertical-scroll-proportion="-18.307692">
-          <folding>
-            <element signature="e#7#49#0" expanded="true" />
-          </folding>
+        <state line="28" column="47" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/MapStat.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="34" selection-start="1173" selection-end="1173" vertical-scroll-proportion="-13.346154">
+        <state line="47" column="34" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="2541" selection-end="2541" vertical-scroll-proportion="-29.692308">
+        <state line="71" column="0" selection-start="2541" selection-end="2541" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="0" selection-start="10299" selection-end="10299" vertical-scroll-proportion="-11.538462">
+        <state line="180" column="0" selection-start="10299" selection-end="10299" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="265" column="34" selection-start="8612" selection-end="8621" vertical-scroll-proportion="-24.192308">
+        <state line="265" column="34" selection-start="8612" selection-end="8621" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -697,32 +680,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="50" selection-start="611" selection-end="611" vertical-scroll-proportion="-12.423077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="929" selection-end="929" vertical-scroll-proportion="-8.6470585">
+        <state line="41" column="37" selection-start="1015" selection-end="1015" vertical-scroll-proportion="-18.961538">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="76" selection-start="265" selection-end="265" vertical-scroll-proportion="-7.8461537">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#3;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="50" selection-start="611" selection-end="611" vertical-scroll-proportion="0.37689614">
-          <folding>
-            <element signature="n#style#0;n#i#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#h1#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="22" column="206" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.22156398">
+          <folding />
         </state>
       </provider>
     </entry>
