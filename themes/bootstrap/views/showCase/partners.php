@@ -23,8 +23,10 @@
                         <li>
                             <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
                             <div class="meta">
-                                <h6><a href="#@#"> Сколково  </a></h6>
-                                <em>Россия, Москва</em> </div>
+                                <h6><a href="#@#"> Фонд развития Центра разработки и коммерциализации новых технологий</br>
+                                        Фонд «Сколково»
+                                    </a></h6>
+                                <em><a href="http://sk.ru" target="_blank">sk.ru</a></em> </div>
                         </li>
 
                     </ul>
