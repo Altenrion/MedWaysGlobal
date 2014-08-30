@@ -45,7 +45,7 @@ class MapStat {
         $model = $this->_model;
         $points = $model->getDistrictUniversPoints();
         foreach ($points as $p) {
-            $clean[$p['ID_UNIVER']] = $p['NUM'];
+            $clean[$p['ID_DISTRICT']] = $p['NUM'];
         }
         $this->_points = $clean;
         $this->_generate = $this->_destination.'in_a.png';

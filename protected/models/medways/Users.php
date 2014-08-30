@@ -271,12 +271,13 @@ class Users extends CActiveRecord
     }
     public function getDistrictUniversPoints(){
         $data = Yii::app()->db->createCommand("SELECT
-                  `ID_UNIVER` , COUNT(*)  as `NUM`
+                  `ID_DISTRICT`,  COUNT(DISTINCT `ID_UNIVER`)  as `NUM`
                   FROM `m_w_users`
                   WHERE `AKTIV_KEY`='100'
                     AND roles='Manager'
                     AND ID_UNIVER is not NULL
-                  GROUP BY ID_UNIVER")->queryAll();
+					AND ID_DISTRICT is not NULL
+                  GROUP BY ID_DISTRICT")->queryAll();
         return $data;
     }
 
