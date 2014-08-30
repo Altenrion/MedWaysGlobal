@@ -65,16 +65,16 @@ class MapStat {
         $white = 0xffffff;        $black = 0x000000;        $red = 0xff0000;
 
         //Cам текст
-        $text =  [  1=>'0',
-                    2=>'0',
-                    3=>'0',
-                    4=>'0',
-                    5=>'0',
-                    6=>'0',
-                    7=>'0',
-                    8=>'0',
-                    9=>'0'
-        ];
+        $text =  array( 1=>'0',
+                        2=>'0',
+                        3=>'0',
+                        4=>'0',
+                        5=>'0',
+                        6=>'0',
+                        7=>'0',
+                        8=>'0',
+                        9=>'0'
+                );
 
         foreach ($this->_points as $p_k=>$p_v) {
             $text[$p_k]= $p_v;
@@ -87,7 +87,7 @@ class MapStat {
         //Централизация шрифта
         $sz = imagettfbbox( $fontsize, 0 , $font , $text[1]);
 
-        $x=[
+        $x=array(
             1=>'284',
             2=>'238',
             3=>'540',
@@ -97,11 +97,11 @@ class MapStat {
             7=>'445',
             8=>'137',
             9=>'55',
-        ];
+        );
 
         $this->correct_coordinates($x,$text);
 
-        $y=[
+        $y=array(
             1=>'282',
             2=>'414',
             3=>'232',
@@ -111,7 +111,7 @@ class MapStat {
             7=>'376',
             8=>'508',
             9=>'377',
-        ];
+        );
 
         //Делаем изображение прозрачным
         imagesavealpha($image,true);

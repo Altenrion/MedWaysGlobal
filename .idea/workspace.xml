@@ -125,7 +125,7 @@
     <file path="/CHttpRequest.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409136998308" ignored="false" />
     <file path="$PROJECT_DIR$/../Testing/test_serialize.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409224251209" ignored="false" />
     <file path="/test_serialize.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409224139161" ignored="false" />
-    <file path="/MapStat.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409384402647" ignored="false" />
+    <file path="/MapStat.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409394956425" ignored="false" />
     <file path="/clients.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409338102036" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -184,10 +184,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="console.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/config/console.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="0" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.7024504">
+            <state line="55" column="0" selection-start="1899" selection-end="1899" vertical-scroll-proportion="-23.153847">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapStat.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/components/MapStat.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="138" column="9" selection-start="4015" selection-end="4015" vertical-scroll-proportion="0.96032673">
               <folding />
             </state>
           </provider>
@@ -247,7 +256,6 @@
         <option value="$PROJECT_DIR$/protected/models/medways/Users.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/statistics.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
-        <option value="$PROJECT_DIR$/protected/components/MapStat.php" />
         <option value="$PROJECT_DIR$/protected/yiic.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
         <option value="$PROJECT_DIR$/protected/config/devel.php" />
@@ -255,6 +263,7 @@
         <option value="$PROJECT_DIR$/protected/commands/GenMapCommand.php" />
         <option value="$PROJECT_DIR$/protected/cron.php" />
         <option value="$PROJECT_DIR$/protected/config/console.php" />
+        <option value="$PROJECT_DIR$/protected/components/MapStat.php" />
       </list>
     </option>
   </component>
@@ -355,7 +364,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="commands" />
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -369,7 +378,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commands" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -571,13 +584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/MapStat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="13" selection-start="4126" selection-end="4126" vertical-scroll-proportion="0.67444575">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="26" selection-start="0" selection-end="580" vertical-scroll-proportion="0.3570595">
@@ -661,7 +667,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/console.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.7024504">
+        <state line="55" column="0" selection-start="1899" selection-end="1899" vertical-scroll-proportion="-23.153847">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/MapStat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="9" selection-start="4015" selection-end="4015" vertical-scroll-proportion="0.96032673">
           <folding />
         </state>
       </provider>
