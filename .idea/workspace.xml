@@ -156,10 +156,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="devel.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="devel.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="73" selection-start="303" selection-end="346" vertical-scroll-proportion="-3.9230769">
+            <state line="71" column="12" selection-start="2553" selection-end="2553" vertical-scroll-proportion="0.9008168">
               <folding />
             </state>
           </provider>
@@ -196,10 +196,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MapStat.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MapStat.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/components/MapStat.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="34" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.40490082">
+            <state line="47" column="34" selection-start="1173" selection-end="1173" vertical-scroll-proportion="-13.346154">
               <folding />
             </state>
           </provider>
@@ -249,7 +249,6 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/statistics.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
-        <option value="$PROJECT_DIR$/protected/config/devel.php" />
         <option value="$PROJECT_DIR$/protected/commands/todayCommand.php" />
         <option value="$PROJECT_DIR$/protected/commands/GenMapCommand.php" />
         <option value="$PROJECT_DIR$/protected/config/console.php" />
@@ -258,6 +257,7 @@
         <option value="$PROJECT_DIR$/protected/yiic.php" />
         <option value="$PROJECT_DIR$/protected/models/medways/Users.php" />
         <option value="$PROJECT_DIR$/protected/components/MapStat.php" />
+        <option value="$PROJECT_DIR$/protected/config/devel.php" />
       </list>
     </option>
   </component>
@@ -607,13 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="73" selection-start="303" selection-end="346" vertical-scroll-proportion="-3.9230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework/yiic.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="0" selection-start="838" selection-end="838" vertical-scroll-proportion="0.5157526">
@@ -660,7 +653,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/MapStat.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="34" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.40490082">
+        <state line="47" column="34" selection-start="1173" selection-end="1173" vertical-scroll-proportion="-13.346154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="12" selection-start="2553" selection-end="2553" vertical-scroll-proportion="0.9008168">
           <folding />
         </state>
       </provider>

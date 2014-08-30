@@ -45,50 +45,60 @@ return array(
 	// application components
 	'components'=>array(
 
-        'user'=>array(
-            // enable cookie-based authentication
-            'class'=> 'WebUser',
-            'allowAutoLogin'=>true,
-            'authTimeout'=>3600,
-            'loginUrl'=>array('ShowCase/login'),
-        ),
+                'editable' => array(
+                    'class'     => 'editable.EditableConfig',
+                    'form'      => 'bootstrap',        //form style: 'bootstrap', 'jqueryui', 'plain'
+                    'mode'      => 'inline',            //mode: 'popup' or 'inline'
+                    'defaults'  => array(              //default settings for all editable elements
+                       'emptytext' => 'не указано'
+                    ),
 
-        'authManager' => array(
-            // Будем использовать свой менеджер авторизации
-            'class' => 'PhpAuthManager',
-            // Роль по умолчанию. Все, кто не админы, модераторы и юзеры — гости.
-            'defaultRoles' => array('guest'),
-        ),
+                ),
 
-        'bootstrap'=>array(
-            'class'=>'bootstrap.components.Bootstrap',
-        ),
+                'user'=>array(
+                    // enable cookie-based authentication
+                        'class'=> 'WebUser',
+                        'allowAutoLogin'=>true,
+                        'authTimeout'=>3600,
+                        'loginUrl'=>array('ShowCase/login'),
+                ),
 
-        'urlManager'=>array(
-            'showScriptName' => false,
-            'urlFormat'=>'path',
+                'authManager' => array(
+                        // Будем использовать свой менеджер авторизации
+                        'class' => 'PhpAuthManager',
+                        // Роль по умолчанию. Все, кто не админы, модераторы и юзеры — гости.
+                        'defaultRoles' => array('guest'),
+                ),
+            
+                'bootstrap'=>array(
+                        'class'=>'bootstrap.components.Bootstrap',
+                 ),
 
-            'rules'=>array(
-                '<controller:\w+>/<id:\d+>'=>'<controller>/view',
-                '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-                '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-            ),
-        ),
+                'urlManager'=>array(
+                        'showScriptName' => false,
+                        'urlFormat'=>'path',
 
-        'db'=>array(
-            'connectionString' => 'mysql:host=localhost;dbname=altenrion_medway',
-            'emulatePrepare' => true,
-            'username' => 'altenrion_medway',
-            'password' => 'sBJ9RUYW',
-            'charset' => 'utf8',
-            'enableProfiling'=>true,
-            // показываем значения параметров
-            'enableParamLogging' => true,
-        ),
+                    'rules'=>array(
+                        '<controller:\w+>/<id:\d+>'=>'<controller>/view',
+                        '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+                        '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+                    ),
+                ),
 
-        'mail' => array(
-            'class' => 'ext.yii-mail.YiiMail',
-            'transportType' => 'php',
+                'db'=>array(
+                        'connectionString' => 'mysql:host=localhost;dbname=medwaysglobal',
+                        'emulatePrepare' => true,
+                        'username' => 'root',
+                        'password' => '',
+                        'charset' => 'utf8',
+                                    'enableProfiling'=>true,
+                                    // показываем значения параметров
+                                    'enableParamLogging' => true,
+                ),
+
+                'mail' => array(
+                    'class' => 'ext.yii-mail.YiiMail',
+                    'transportType' => 'php',
 //                    'transportType' => 'smtp',
 //                    'transportOptions'=>array(
 //                        'host'=>'smtp.timeweb.ru',
@@ -97,20 +107,19 @@ return array(
 //                        'password'=>'Altenrion',
 //                        'port'=>25,
 //                    ),
-            'viewPath' => 'application.views.mail',
-            'logging' => true,
-            'dryRun' => false
-        ),
+                    'viewPath' => 'application.views.mail',
+                    'logging' => true,
+                    'dryRun' => false
+                ),
 
 
-        'errorHandler'=>array(
-            // use 'site/error' action to display errors
-            'errorAction'=>'ShowCase/error',
-            'adminInfo'=>'landerfeld@gmail.com'
-        ),
+                'errorHandler'=>array(
+                        // use 'site/error' action to display errors
+                        'errorAction'=>'ShowCase/error',
+                        'adminInfo'=>'landerfeld@gmail.com'
+                ),
 
-
-        'log'=>array(
+                'log'=>array(
                         'class'=>'CLogRouter',
                         'routes'=>array(
                                 array(
