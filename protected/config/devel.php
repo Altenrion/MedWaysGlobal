@@ -69,7 +69,7 @@ return array(
                         // Роль по умолчанию. Все, кто не админы, модераторы и юзеры — гости.
                         'defaultRoles' => array('guest'),
                 ),
-            
+
                 'bootstrap'=>array(
                         'class'=>'bootstrap.components.Bootstrap',
                  ),

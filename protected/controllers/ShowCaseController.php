@@ -37,8 +37,9 @@ class ShowCaseController extends Controller
 
     public function actionIndex()
 	{
+        $projects = Users::model()->count("roles = 'Manager' AND AKTIV_KEY = 100");
+		$this->render('index',array('projects'=>$projects));
 
-		$this->render('index');
 	}
 
 

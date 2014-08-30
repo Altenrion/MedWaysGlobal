@@ -22,7 +22,8 @@
 				<div class="col-sm-12 col-md-7 col-lg-7 bord">
                     <div class="panel">
 
-                    Привет
+                        <h1><i class="fa fa-graduation-cap" style="font-size:500px;"></i></h1>
+                        <h1><i class="fa fa-trophy" style="font-size:500px;"></i></h1>
                     </div>
 				</div><!--/col-->
 

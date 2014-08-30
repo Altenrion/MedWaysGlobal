@@ -199,7 +199,7 @@
 
     <div class="sub-footer">
         <div class="container">
-            <p class="pull-left">© <?=date('Y')?> MedWays. Все права защищены.</p>
+                <p class="pull-left"> © <?=date('Y')?> MedWAYS, &nbsp;&nbsp; Nikita Barishev &nbsp;&nbsp;   Все права защищены.</p>
             <ul class="footer-menu pull-right">
                 <li><a href="<?= Yii::app()->createUrl('ShowCase/index')?>">Главная</a></li>
                 <li><a href="<?= Yii::app()->createUrl('ShowCase/info')?>">Информация</a></li>
