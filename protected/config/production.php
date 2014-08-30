@@ -60,6 +60,7 @@ return array(
                     // enable cookie-based authentication
                         'class'=> 'WebUser',
                         'allowAutoLogin'=>true,
+                        'authTimeout'=>3600,
                         'loginUrl'=>array('ShowCase/login'),
                 ),
 

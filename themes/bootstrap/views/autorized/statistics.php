@@ -23,18 +23,16 @@
                     <div class="panel">
                         <?
 
-                        $model= new Users();
-                        $dest = Yii::getPathOfAlias('webroot.images.art').DIRECTORY_SEPARATOR.'in.png';
-                        $overlay = Yii::getPathOfAlias('webroot.images.art').DIRECTORY_SEPARATOR.'m_overlay_p.png';
-
-//                        $src = Yii::app()->baseUrl.DIRECTORY_SEPARATOR.'images/art/in.png'
-//                        print_r($dest);
-
-                        
-                        $map= new MapStat($model,$dest,$overlay);
-                        $map->getProjectsPointsData();
-                        var_dump($map);
-
+//                        $model= new Users();
+//                        $dest_folder = Yii::getPathOfAlias('webroot.images.art').DIRECTORY_SEPARATOR;
+//                        $overlay = Yii::getPathOfAlias('webroot.images.art').DIRECTORY_SEPARATOR.'m_overlay_p.png';
+//
+//                        $map= new MapStat($model,$dest_folder,$overlay);
+//                        $map->getProjectsPointsData();
+//                        $map->generateMapPoints();
+//
+//                        $map->getUniversPointsData();
+//                        $map->generateMapPoints();
 
                         ?>
 <!--                        <img src=' --><?//=$src ?><!-- ' width="300" height="auto" alt=""/>-->

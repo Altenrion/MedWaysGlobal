@@ -72,7 +72,6 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
         <div class="grid-body">
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#profile" data-toggle="tab">Профиль</a></li>
-                <li><a href="#timeline" data-toggle="tab">Timeline</a></li>
                 <li><a href="#settings" data-toggle="tab">Настройки</a></li>
             </ul>
             <div class="tab-content">
@@ -301,71 +300,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                 <!-- END PROFILE -->
 
 
-                <!-- BEGIN TIMELINE -->
-                <div class="tab-pane" id="timeline">
-                    <p class="lead">My Timeline</p>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="timeline-centered">
-                                <article class="timeline-entry">
-                                    <div class="timeline-entry-inner">
-                                        <time class="timeline-time" datetime="2014-01-10T03:45"><span>11:41 AM</span> <span>Today</span></time>
 
-                                        <div class="timeline-icon bg-primary">
-                                            <i class="fa fa-home"></i>
-                                        </div>
-
-                                        <div class="timeline-label">
-                                            <h2><a href="#">Jeffrey Williams</a> <span>posted a status update</span></h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="timeline-entry left-aligned">
-                                    <div class="timeline-entry-inner">
-                                        <time class="timeline-time" datetime="2014-01-10T03:45"><span>08:12 AM</span> <span>Today</span></time>
-
-                                        <div class="timeline-icon bg-warning">
-                                            <i class="fa fa-bell"></i>
-                                        </div>
-
-                                        <div class="timeline-label">
-                                            <h2><a href="#">Job Meeting</a></h2>
-                                            <p>You have a meeting at <strong>10:00 AM</strong> in the <strong>Meeting Room</strong>.</p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="timeline-entry">
-                                    <div class="timeline-entry-inner">
-                                        <time class="timeline-time" datetime="2014-01-10T03:45"><span>02:10 AM</span> <span>15/06/2014</span></time>
-
-                                        <div class="timeline-icon bg-danger">
-                                            <i class="fa fa-user"></i>
-                                        </div>
-
-                                        <div class="timeline-label">
-                                            <h2><a href="#">Larry Gardner</a> <span>changed his</span> <a href="#">Profile Picture</a></h2>
-                                            <blockquote>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</blockquote>
-                                            <img src="<?=$assetsUrl?>/img/gallery/1.jpg" class="img-responsive img-rounded full-width" alt="">
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="timeline-entry begin">
-                                    <div class="timeline-entry-inner">
-                                        <div class="timeline-icon bg-default">
-                                            <i class="fa fa-laptop"></i>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- END TIMELINE -->
 
                 <!-- BEGIN SETTINGS -->
                 <div class="tab-pane" id="settings">
@@ -375,35 +310,35 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                         <div class="col-md-12">
                             <div class="form-horizontal">
                                 <div class="form-group">
-                                    <label class="col-sm-4 control-label">Global Notifications</label>
+                                    <label class="col-sm-4 control-label">Дублировать оповещения по email</label>
                                     <div class="col-sm-2">
                                         <input type="checkbox" class="js-switch" checked>
                                     </div>
-                                    <label class="col-sm-2 control-label">Email Notifications</label>
+                                    <label class="col-sm-2 control-label"> Подписаться на новости</label>
                                     <div class="col-sm-2">
                                         <input type="checkbox" class="js-switch" checked>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-4 control-label">Phone Notifications</label>
+                                    <label class="col-sm-4 control-label">Дублировать обращениия по email</label>
                                     <div class="col-sm-2">
                                         <input type="checkbox" class="js-switch">
                                     </div>
-                                    <label class="col-sm-2 control-label">Mail Notifications</label>
-                                    <div class="col-sm-2">
-                                        <input type="checkbox" class="js-switch">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-sm-4 control-label">Subscribe Newsletters</label>
-                                    <div class="col-sm-2">
-                                        <input type="checkbox" class="js-switch" checked>
-                                    </div>
-                                    <label class="col-sm-2 control-label">RSS Feeds</label>
+                                    <label class="col-sm-2 control-label">SMS оповещения</label>
                                     <div class="col-sm-2">
                                         <input type="checkbox" class="js-switch">
                                     </div>
                                 </div>
+<!--                                <div class="form-group">-->
+<!--                                    <label class="col-sm-4 control-label">Subscribe Newsletters</label>-->
+<!--                                    <div class="col-sm-2">-->
+<!--                                        <input type="checkbox" class="js-switch" checked>-->
+<!--                                    </div>-->
+<!--                                    <label class="col-sm-2 control-label">RSS Feeds</label>-->
+<!--                                    <div class="col-sm-2">-->
+<!--                                        <input type="checkbox" class="js-switch">-->
+<!--                                    </div>-->
+<!--                                </div>-->
                             </div>
                         </div>
                     </div>

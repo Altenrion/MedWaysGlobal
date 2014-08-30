@@ -68,7 +68,7 @@ Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/skins.css');
 
     <!-- BEGIN NEWS TICKER -->
     <div class="ticker">
-        <strong>Новости:</strong>
+        <strong>Важно:</strong>
         <ul>
             <li>Очень важная новость для всех всех всех ! </li>
             <li>Очень важная новость 2 для всех всех всех ! Очень важная новость 2 для всех всех всех ! .</li>

@@ -37,9 +37,9 @@
                     <img  src="<?=Yii::app()->baseUrl?>/images/art/map_overlay.png" width="770" height="477" alt="">
 
                     <img id="overlay_proj" src="<?=Yii::app()->baseUrl?>/images/art/m_overlay_p.png"  class="up"  width="770" height="477" alt="" style="display:none;">
-                    <img id="proj_stat" src="<?=Yii::app()->baseUrl?>/images/art/in.png"  class="up"  width="770" height="477" alt="" style="display:none;">
+                    <img id="proj_stat" src="<?=Yii::app()->baseUrl?>/images/art/in_p.png"  class="up"  width="770" height="477" alt="" style="display:none;">
                     <img id="overlay_activ" src="<?=Yii::app()->baseUrl?>/images/art/m_overlay_a.png"  class="up"  width="770" height="477" alt="" style="display:none;">
-                    <img id="activ_stat" src="<?=Yii::app()->baseUrl?>/images/art/in.png"  class="up"  width="770" height="477" alt="" style="display:none;">
+                    <img id="activ_stat" src="<?=Yii::app()->baseUrl?>/images/art/in_a.png"  class="up"  width="770" height="477" alt="" style="display:none;">
 
 
                 </figure>

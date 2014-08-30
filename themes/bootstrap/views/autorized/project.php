@@ -101,7 +101,20 @@ if(isset($data) && !is_null($data)){
 <div class="row">
     <?if(isset($data) && !is_null($data)){?>
 
-        <div class="col-sm-6">
+        <div class="col-sm-12">
+            <p><strong>Название проекта:</strong>
+                <? $this->widget('editable.Editable', array(
+                    'type'      => 'textarea',
+                    'pk'        => $data[0]['id'],
+                    'name'      => 'NAME',
+                    'text'      => CHtml::encode($data[0]['NAME']),
+                    'url'       => $this->createUrl('Autorized/updateProject'),
+                    'title'     => 'Введите фамилию',
+                    'placement' => 'right',
+                    'options' => array( 'disabled'=>true, ),  )); ?>
+            </p>
+            </div>
+            <div class="col-sm-6">
             <p><strong>Научная платформа:</strong>
                 <? $this->widget('editable.Editable', array(
                     'type'      => 'select',
@@ -114,17 +127,7 @@ if(isset($data) && !is_null($data)){
                     'placement' => 'right',
                     'options' => array( 'disabled'=>true, ), ));  ?>
             </p>
-            <p><strong>Название проекта:</strong>
-                <? $this->widget('editable.Editable', array(
-                    'type'      => 'textarea',
-                    'pk'        => $data[0]['id'],
-                    'name'      => 'NAME',
-                    'text'      => CHtml::encode($data[0]['NAME']),
-                    'url'       => $this->createUrl('Autorized/updateProject'),
-                    'title'     => 'Введите фамилию',
-                    'placement' => 'right',
-                    'options' => array( 'disabled'=>true, ),  )); ?>
-            </p>
+
             <p><strong>Количество исполнителей:</strong>
                 <? $this->widget('editable.Editable', array(
                     'type'      => 'text',
@@ -244,7 +247,7 @@ if(isset($data) && !is_null($data)){
                     'placement' => 'right',
                     'options' => array( 'disabled'=>true, ),  )); ?>
             </p>
-            <p><strong>Доля предполагаемого coфинансирования:</strong>
+            <p><strong>Объем предполагаемого coфинансирования:</strong>
                 <?  $this->widget('editable.Editable', array(
                     'type'      => 'text',
                     'pk'        => $data[0]['id'],
@@ -255,7 +258,9 @@ if(isset($data) && !is_null($data)){
                     'placement' => 'right',
                     'options' => array( 'disabled'=>true, ),  )); ?>
             </p>
-            <p><strong>Аннотация:</strong>
+            </div>
+            <div class="col-sm-12">
+            <p><strong>Краткая аннотация (1500) :</strong>
                 <?   $this->widget('editable.Editable', array(
                     'type'      => 'textarea',
                     'pk'        => $data[0]['id'],
@@ -267,7 +272,7 @@ if(isset($data) && !is_null($data)){
                     'options' => array( 'disabled'=>true, ),  )); ?>
             </p>
 
-        </div>
+            </div>
     <? }else { ?>
         <div class="grid-body">
             <div class="alert alert-danger fade in">
