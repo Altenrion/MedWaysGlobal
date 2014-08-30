@@ -20,7 +20,7 @@ $this->breadcrumbs=array(
                 <div class="caption fade" data-x="35" data-y="440" data-speed="500" data-start="300" data-easing="Sine.easeOut"><img src="<?=Yii::app()->baseUrl; ?>/images/art/slider-shadow.png" alt="" /></div>
                 <div class="caption sft" data-x="35" data-y="97" data-speed="900" data-start="800" data-easing="Sine.easeOut"><img src="<?=Yii::app()->baseUrl; ?>/images/art/slider-middle.png" alt="" /></div>
                 <div class="caption sft" data-x="60" data-y="105" data-speed="900" data-start="1300" data-easing="Sine.easeOut"><img src="<?=Yii::app()->baseUrl; ?>/images/art/slider-first.png" alt="" /></div>
-                <div class="caption sfr bold opacity-bg" data-x="620" data-y="270" data-speed="500" data-start="2500" data-easing="Sine.easeOut">В эстафете уже <?=(isset($clean_num))?($clean_num):('500') ?> ! </div>
+                <div class="caption sfr bold opacity-bg" data-x="620" data-y="270" data-speed="500" data-start="2500" data-easing="Sine.easeOut">В эстафете уже <?=(isset($projects))?($projects):('500') ?> проектов! </div>
                 <div class="caption sfb" data-x="620" data-y="335" data-speed="500" data-start="3000" data-easing="Sine.easeOut"><a href="<?=Yii::app()->createUrl('ShowCase/statistics')?>" class="btn btn-large">Статистика</a></div>
             </li>
 <!--            <li data-transition="fade"> <img src="--><?//=Yii::app()->baseUrl; ?><!--/images/art/slider-bg3.jpg" alt="" />-->

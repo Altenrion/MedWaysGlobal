@@ -38,8 +38,7 @@ class ShowCaseController extends Controller
     public function actionIndex()
 	{
         $projects = Users::model()->count("roles = 'Manager' AND AKTIV_KEY = 100");
-        $clean_num = $this->getTermination($projects);
-		$this->render('index',array('clean_num'=>$clean_num));
+		$this->render('index',array('projects'=>$projects));
 
 	}
 
@@ -339,24 +338,4 @@ class ShowCaseController extends Controller
     }
 
 
-    public function getTermination ($num)
-    {
-        //Оставляем две последние цифры от $num
-        $number = substr($num, -2);
-
-        if($number > 10 and $number < 21)
-        {
-            $term = "ов";
-        }
-        else
-        {
-            $number = substr($number, -1);
-
-            if($number == 0) {$term = "ов";}
-            if($number == 1 ) {$term = "";}
-            if($number > 1 ) {$term = "а";}
-            if($number > 4 ) {$term = "ов";}
-        }
-        return  $num.' проект'.$term;
-    }
 }

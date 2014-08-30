@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="164" mnemonic="1" />
-    <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="82" mnemonic="2" />
-    <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="245" mnemonic="3" />
+    <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="163" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="81" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="244" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" name="Default" comment="" />
@@ -18,7 +18,7 @@
     <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409393278605" ignored="false" />
     <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409412561657" ignored="false" />
     <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408512630498" ignored="false" />
-    <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409417286271" ignored="false" />
+    <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409412487089" ignored="false" />
     <file path="/login.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407829978865" ignored="false" />
     <file path="/dummy.xml" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409412896325" ignored="false" />
     <file path="/partners.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409084203530" ignored="false" />
@@ -123,8 +123,8 @@
     <file path="/WebUser.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409131987929" ignored="false" />
     <file path="/main.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409161649898" ignored="false" />
     <file path="/CHttpRequest.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409136998308" ignored="false" />
-    <file path="$PROJECT_DIR$/../Testing/test_serialize.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409417151164" ignored="false" />
-    <file path="/test_serialize.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409417006735" ignored="false" />
+    <file path="$PROJECT_DIR$/../Testing/test_serialize.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409224251209" ignored="false" />
+    <file path="/test_serialize.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409224139161" ignored="false" />
     <file path="/MapStat.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409394956425" ignored="false" />
     <file path="/clients.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409338102036" ignored="false" />
     <file path="/yiic.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409398404323" ignored="false" />
@@ -147,10 +147,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ShowCaseController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ShowCaseController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="359" column="37" selection-start="9355" selection-end="9355" vertical-scroll-proportion="0.83653843">
+            <state line="40" column="0" selection-start="929" selection-end="929" vertical-scroll-proportion="-8.6470585">
               <folding />
             </state>
           </provider>
@@ -159,12 +159,24 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="180" selection-start="2008" selection-end="2018" vertical-scroll-proportion="-14.384615">
+            <state line="12" column="76" selection-start="265" selection-end="265" vertical-scroll-proportion="-7.8461537">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#3;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="statistics.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="50" selection-start="611" selection-end="611" vertical-scroll-proportion="0.37689614">
+              <folding>
+                <element signature="n#style#0;n#i#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#h1#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -258,9 +270,9 @@
         <option value="$PROJECT_DIR$/protected/components/MapStat.php" />
         <option value="$PROJECT_DIR$/protected/config/devel.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
       </list>
     </option>
   </component>
@@ -685,19 +697,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="50" selection-start="611" selection-end="611" vertical-scroll-proportion="0.37689614">
-          <folding>
-            <element signature="n#style#0;n#i#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#h1#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="40" column="0" selection-start="929" selection-end="929" vertical-scroll-proportion="-8.6470585">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="180" selection-start="2008" selection-end="2018" vertical-scroll-proportion="-14.384615">
+        <state line="12" column="76" selection-start="265" selection-end="265" vertical-scroll-proportion="-7.8461537">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -707,10 +716,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="359" column="37" selection-start="9355" selection-end="9355" vertical-scroll-proportion="0.83653843">
-          <folding />
+        <state line="25" column="50" selection-start="611" selection-end="611" vertical-scroll-proportion="0.37689614">
+          <folding>
+            <element signature="n#style#0;n#i#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#h1#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
