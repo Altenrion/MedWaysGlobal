@@ -13,10 +13,10 @@
     <file path="/style.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1405683779993" ignored="false" />
     <file path="/fontello.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407341663248" ignored="false" />
     <file path="/main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407487814422" ignored="false" />
-    <file path="/Proto.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409410770209" ignored="false" />
+    <file path="/Proto.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409424086882" ignored="false" />
     <file path="/Autentification_main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406121974522" ignored="false" />
     <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409393278605" ignored="false" />
-    <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409412561657" ignored="false" />
+    <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409423893213" ignored="false" />
     <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408512630498" ignored="false" />
     <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409417645189" ignored="false" />
     <file path="/login.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407829978865" ignored="false" />
@@ -30,7 +30,7 @@
     <file path="$PROJECT_DIR$/../validation/jquery-steps-master/demo/index.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406449650964" ignored="false" />
     <file path="$PROJECT_DIR$/../validation/jquery-steps-master/build/jquery.steps.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406449177579" ignored="false" />
     <file path="/jquery.steps.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406449172658" ignored="false" />
-    <file path="/info.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408278107165" ignored="false" />
+    <file path="/info.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409425049008" ignored="false" />
     <file path="/info_docs.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406888431655" ignored="false" />
     <file path="$PROJECT_DIR$/../test_scroll/index.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406877007052" ignored="false" />
     <file path="$PROJECT_DIR$/../test_scroll/js/mootools-1.2.3-core.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406873920366" ignored="false" />
@@ -128,7 +128,7 @@
     <file path="/MapStat.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409394956425" ignored="false" />
     <file path="/clients.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409338102036" ignored="false" />
     <file path="/yiic.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409398404323" ignored="false" />
-    <file path="$PROJECT_DIR$/uploads/clients.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409423181000" ignored="false" />
+    <file path="$PROJECT_DIR$/uploads/clients.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409425436675" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,13 +157,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="partners.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/partners.php">
+      <file leaf-file-name="info.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="36" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.36255923">
+            <state line="203" column="109" selection-start="9998" selection-end="9998" vertical-scroll-proportion="-16.192308">
               <folding>
-                <element signature="n#style#0;n#li#4;n#ol#0;n#fieldset#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <marker date="1409425176286" expanded="true" signature="4244:4475" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="4395:4475" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="4731:4957" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="4877:4957" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="5202:5465" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="5237:5465" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="5385:5465" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="5730:5958" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="5878:5958" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="6196:6426" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="6346:6426" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="6670:6900" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="6820:6900" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="7156:7421" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="7191:7421" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="7341:7421" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="7683:7913" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="7833:7913" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="8178:8405" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="8325:8405" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="8666:8891" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="8811:8891" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="9160:9423" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="9195:9423" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="9343:9423" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="9741:9967" placeholder="..." />
+                <marker date="1409425176286" expanded="true" signature="9887:9967" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="organizers.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/organizers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="216" column="0" selection-start="14086" selection-end="14086" vertical-scroll-proportion="0.7666278">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,16 +215,7 @@
       <file leaf-file-name="devel.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="0" selection-start="2541" selection-end="2541" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Proto.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="180" column="0" selection-start="10299" selection-end="10299" vertical-scroll-proportion="0.0">
+            <state line="71" column="0" selection-start="2541" selection-end="2541" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
@@ -231,15 +257,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cron.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/cron.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="23" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -250,7 +267,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/statistics.php" />
         <option value="$PROJECT_DIR$/protected/commands/todayCommand.php" />
         <option value="$PROJECT_DIR$/protected/commands/GenMapCommand.php" />
         <option value="$PROJECT_DIR$/protected/config/console.php" />
@@ -260,12 +276,13 @@
         <option value="$PROJECT_DIR$/protected/models/medways/Users.php" />
         <option value="$PROJECT_DIR$/protected/components/MapStat.php" />
         <option value="$PROJECT_DIR$/protected/config/devel.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/organizers.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/partners.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/organizers.php" />
       </list>
     </option>
   </component>
@@ -439,11 +456,11 @@
       <recent name="C:\wamp\www\MedWaysGlobal\images\univers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\MedWaysGlobal\downloads" />
       <recent name="C:\wamp\www\MedWaysGlobal\css" />
       <recent name="C:\wamp\www\MedWaysGlobal\images\org" />
       <recent name="C:\wamp\www\MedWaysGlobal\images\avatars" />
       <recent name="C:\wamp\www\MedWaysGlobal\adminka" />
-      <recent name="C:\wamp\www\MedWaysGlobal\themes\bootstrap\views\showCase" />
     </key>
   </component>
   <component name="RunManager">
@@ -595,15 +612,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="312" column="99" selection-start="17861" selection-end="17861" vertical-scroll-proportion="20.5">
-          <folding>
-            <element signature="e#6#159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework/yiic.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="0" selection-start="838" selection-end="838" vertical-scroll-proportion="0.5157526" />
@@ -642,20 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="2541" selection-end="2541" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="0" selection-start="10299" selection-end="10299" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="265" column="34" selection-start="8612" selection-end="8621" vertical-scroll-proportion="0.0">
@@ -679,15 +673,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="48" selection-start="2482" selection-end="2482" vertical-scroll-proportion="0.3021327">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/organizers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="178" selection-start="9359" selection-end="9359" vertical-scroll-proportion="0.39673278">
-          <folding />
+        <state line="124" column="197" selection-start="9664" selection-end="9664" vertical-scroll-proportion="0.8353081">
+          <folding>
+            <element signature="n#style#0;n#t#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#3;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -700,10 +693,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/partners.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="36" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.36255923">
+        <state line="23" column="161" selection-start="765" selection-end="765" vertical-scroll-proportion="0.29383886">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="182" selection-start="3700" selection-end="3700" vertical-scroll-proportion="0.44312796">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="0" selection-start="2541" selection-end="2541" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="203" column="109" selection-start="9998" selection-end="9998" vertical-scroll-proportion="-16.192308">
           <folding>
-            <element signature="n#style#0;n#li#4;n#ol#0;n#fieldset#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <marker date="1409425176286" expanded="true" signature="4244:4475" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="4395:4475" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="4731:4957" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="4877:4957" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="5202:5465" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="5237:5465" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="5385:5465" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="5730:5958" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="5878:5958" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="6196:6426" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="6346:6426" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="6670:6900" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="6820:6900" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="7156:7421" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="7191:7421" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="7341:7421" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="7683:7913" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="7833:7913" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="8178:8405" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="8325:8405" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="8666:8891" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="8811:8891" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="9160:9423" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="9195:9423" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="9343:9423" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="9741:9967" placeholder="..." />
+            <marker date="1409425176286" expanded="true" signature="9887:9967" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/organizers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="216" column="0" selection-start="14086" selection-end="14086" vertical-scroll-proportion="0.7666278">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -160,20 +160,30 @@
                 </div>
             </div>
             <div class="item">
-                <figure class="icon-overlay icn-link"><a href="http://www.spb-gmu.ru/"  target="_blank"><img src="<?=Yii::app()->baseUrl?>/images/univers/p_spbgmu.jpg" alt="" /></a></figure>
+                <figure class="icon-overlay icn-link"><a href="http://stgmu.ru/"  target="_blank"><img src="<?=Yii::app()->baseUrl?>/images/univers/p_stavgmu.jpg" alt="" /></a></figure>
                 <div class="bordered no-top-border">
                     <div class="info">
-                        <h3 class="post-title"><a href="#">СПбГМУ им. И.П.Павлова  Минздрава России  </a></h3>
-                        <div class="meta"> <span class="date">СЗФО</span> <span class="category"><a target="_blank" href="http://www.spb-gmu.ru/">www.spb-gmu.ru</a> </span> </div>
+                        <h3 class="post-title"><a href="#">СтГМУ  Минздрава России    </a></h3>
+                        <div class="meta"> <span class="date">СКФО</span> <span class="category"><a target="_blank" href="http://stgmu.ru/">stgmu.ru</a></span> </div>
                     </div>
                 </div>
             </div>
+
             <div class="item">
                 <figure class="icon-overlay icn-link"><a href="http://www.fesmu.ru" target="_blank" ><img src="<?=Yii::app()->baseUrl?>/images/univers/p_dvgmu.jpg" alt="" /></a></figure>
                 <div class="bordered no-top-border">
                     <div class="info">
                         <h3 class="post-title"><a href="#">ДВГМУ Минздрава России</a></h3>
                         <div class="meta"> <span class="date">ДФО</span> <span class="category"><a  target="_blank" href="http://www.fesmu.ru">www.fesmu.ru</a></span> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="icon-overlay icn-link"><a href="http://www.spb-gmu.ru/"  target="_blank"><img src="<?=Yii::app()->baseUrl?>/images/univers/p_spbgmu.jpg" alt="" /></a></figure>
+                <div class="bordered no-top-border">
+                    <div class="info">
+                        <h3 class="post-title"><a href="#">СПбГМУ им. И.П.Павлова  Минздрава России  </a></h3>
+                        <div class="meta"> <span class="date">СЗФО</span> <span class="category"><a target="_blank" href="http://www.spb-gmu.ru/">www.spb-gmu.ru</a> </span> </div>
                     </div>
                 </div>
             </div>
@@ -205,15 +215,6 @@
                 </div>
             </div>
 
-            <div class="item">
-                <figure class="icon-overlay icn-link"><a href="http://stgmu.ru/"  target="_blank"><img src="<?=Yii::app()->baseUrl?>/images/univers/p_stavgmu.jpg" alt="" /></a></figure>
-                <div class="bordered no-top-border">
-                    <div class="info">
-                        <h3 class="post-title"><a href="#">СтГМУ  Минздрава России    </a></h3>
-                        <div class="meta"> <span class="date">СКФО</span> <span class="category"><a target="_blank" href="http://stgmu.ru/">stgmu.ru</a></span> </div>
-                    </div>
-                </div>
-            </div>
             <div class="item">
                 <figure class="icon-overlay icn-link"><a href="http://www.chelsma.ru/"  target="_blank"><img src="<?=Yii::app()->baseUrl?>/images/univers/p_uugmu.jpg" alt="" /></a></figure>
                 <div class="bordered no-top-border">

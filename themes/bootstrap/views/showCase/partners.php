@@ -21,7 +21,7 @@
 
                     <ul class="post-list">
                         <li>
-                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/z2.jpg" alt=""> </a> </div>
+                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/art/part_sk.jpg" alt=""> </a> </div>
                             <div class="meta">
                                 <h6><a href="#@#"> Фонд развития Центра разработки и коммерциализации новых технологий</br>
                                         Фонд «Сколково»

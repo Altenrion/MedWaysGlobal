@@ -74,7 +74,7 @@ $this->breadcrumbs=array(
 
             </div>
             <div class="col-sm-6">
-                <div class="section-title">Этапы <span>Эстафета проходит в три этапа</span></div>
+                <div class="section-title">Этапы <span ><t style="text-transform: uppercase">Э</t>стафета проходит в три этапа</span></div>
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -86,7 +86,7 @@ $this->breadcrumbs=array(
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle collapsed" data-parent="#accordion" href="#collapseTwo">2. Конкурсный отбор проектов (ФО) </a> </h4>
+                            <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle collapsed" data-parent="#accordion" href="#collapseTwo">2. Региональный конкурсный отбор проектов </a> </h4>
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse" style="height: 0px;">
                             <div class="panel-body ">
@@ -122,7 +122,7 @@ $this->breadcrumbs=array(
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle collapsed" data-parent="#accordion" href="#collapseThree">3. финальный конкурсный отбор </a> </h4>
+                            <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle collapsed" data-parent="#accordion" href="#collapseThree">3. Федеральный конкурсный отбор проектов </a> </h4>
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse" style="height: 0px;">
                             <div class="panel-body">
