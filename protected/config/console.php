@@ -9,7 +9,6 @@ Yii::setPathOfAlias('cabinet', dirname(__FILE__).'/../extensions/cabinet');
 
 return array(
     'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-    'theme'=>'bootstrap',
     'name'=>'',
     'language' => 'ru',
 
