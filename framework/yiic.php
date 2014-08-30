@@ -31,3 +31,6 @@ if(!empty($env))
 	$app->commandRunner->addCommands($env);
 
 $app->run();
+
+
+

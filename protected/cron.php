@@ -7,7 +7,7 @@
  * To change this template use File | Settings | File Templates.
  */
 $config=dirname(__FILE__).DIRECTORY_SEPARATOR.'config'.DIRECTORY_SEPARATOR.'console.php';
-$yiic=dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'framework'.DIRECTORY_SEPARATOR.'yiic.php';
+$yiic=dirname(__FILE__).DIRECTORY_SEPARATOR.'yiic.php';
 
 require_once($yiic);
 
