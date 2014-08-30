@@ -15,14 +15,14 @@
     <file path="/main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407487814422" ignored="false" />
     <file path="/Proto.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409339544594" ignored="false" />
     <file path="/Autentification_main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406121974522" ignored="false" />
-    <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408359351260" ignored="false" />
+    <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409393278605" ignored="false" />
     <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409181554847" ignored="false" />
     <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408512630498" ignored="false" />
     <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409383855106" ignored="false" />
     <file path="/login.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407829978865" ignored="false" />
     <file path="/dummy.xml" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409298679462" ignored="false" />
     <file path="/partners.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409084203530" ignored="false" />
-    <file path="/statistics.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409384643829" ignored="false" />
+    <file path="/statistics.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409392717179" ignored="false" />
     <file path="/team.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406804278906" ignored="false" />
     <file path="/myscripts.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407769137762" ignored="false" />
     <file path="/tabs.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406405672507" ignored="false" />
@@ -149,19 +149,8 @@
       <file leaf-file-name="ShowCaseController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="285" column="56" selection-start="7239" selection-end="7239" vertical-scroll-proportion="-9.313725">
+            <state line="290" column="34" selection-start="6975" selection-end="7387" vertical-scroll-proportion="-8.980392">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AutorizedController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="11" selection-start="196" selection-end="197" vertical-scroll-proportion="-3.6666667">
-              <folding>
-                <marker date="1409341946613" expanded="true" signature="8331:8343" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -177,40 +166,58 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MapStat.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/components/MapStat.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="13" selection-start="4126" selection-end="4126" vertical-scroll-proportion="-22.23077">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="statistics.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="18" selection-start="1301" selection-end="1301" vertical-scroll-proportion="-26.153847">
-              <folding>
-                <element signature="e#493#539#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="yiic" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/yiic">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="yiic.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="yiic.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/yiic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="28" selection-start="78" selection-end="78" vertical-scroll-proportion="0.059509918">
+            <state line="7" column="0" selection-start="171" selection-end="171" vertical-scroll-proportion="-4.576923">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/config/console.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="36" selection-start="861" selection-end="861" vertical-scroll-proportion="-6.8076925">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenMapCommand.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/commands/GenMapCommand.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="12" selection-start="13" selection-end="19" vertical-scroll-proportion="0.03967328">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="devel.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="110" column="0" selection-start="3607" selection-end="3607" vertical-scroll-proportion="-43.423077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/config/production.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="121" column="0" selection-start="1950" selection-end="4650" vertical-scroll-proportion="-6.8076925">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cron.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/cron.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="-5.230769">
+              <folding>
+                <element signature="e#6#159#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -233,15 +240,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cabinet.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="131" selection-start="3209" selection-end="3209" vertical-scroll-proportion="-21.192308">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -252,11 +250,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/controllers/ImagesController.php" />
-        <option value="$PROJECT_DIR$/protected/extensions/cabinet/assets/js/MyEditsToEditable.js" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/experts.php" />
-        <option value="$PROJECT_DIR$/protected/config/production.php" />
-        <option value="$PROJECT_DIR$/uploads/clients.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php" />
@@ -266,8 +259,13 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/statistics.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
         <option value="$PROJECT_DIR$/protected/components/MapStat.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
         <option value="$PROJECT_DIR$/protected/yiic.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
+        <option value="$PROJECT_DIR$/protected/cron.php" />
+        <option value="$PROJECT_DIR$/protected/config/console.php" />
+        <option value="$PROJECT_DIR$/protected/config/devel.php" />
+        <option value="$PROJECT_DIR$/protected/commands/todayCommand.php" />
+        <option value="$PROJECT_DIR$/protected/commands/GenMapCommand.php" />
       </list>
     </option>
   </component>
@@ -347,6 +345,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commands" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -531,54 +547,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="17" selection-start="4193" selection-end="4193" vertical-scroll-proportion="-10.461538">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="392" column="30" selection-start="18116" selection-end="18116" vertical-scroll-proportion="-0.0">
-          <folding>
-            <element signature="e#6#159#0" expanded="true" />
-            <element signature="e#3136#3160#0" expanded="true" />
-            <element signature="e#3302#3326#0" expanded="true" />
-            <element signature="e#17172#17195#0" expanded="true" />
-            <element signature="e#17742#17761#0" expanded="true" />
-            <element signature="e#17967#17988#0" expanded="true" />
-            <element signature="e#19227#19250#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="131" selection-start="3209" selection-end="3209" vertical-scroll-proportion="-21.192308">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="11" selection-start="196" selection-end="197" vertical-scroll-proportion="-3.6666667">
-          <folding>
-            <marker date="1409341946613" expanded="true" signature="8331:8343" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/art/m_overlay_p.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/art/m_overlay_a.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="273" column="28" selection-start="8920" selection-end="8929" vertical-scroll-proportion="-21.192308">
@@ -603,16 +571,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
+    <entry file="file://$PROJECT_DIR$/protected/components/MapStat.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="285" column="56" selection-start="7239" selection-end="7239" vertical-scroll-proportion="-9.313725">
+        <state line="142" column="13" selection-start="4126" selection-end="4126" vertical-scroll-proportion="0.67444575">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/MapStat.php">
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="13" selection-start="4126" selection-end="4126" vertical-scroll-proportion="-22.23077">
+        <state line="24" column="26" selection-start="0" selection-end="580" vertical-scroll-proportion="0.3570595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/yiic">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -626,25 +601,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
+    <entry file="file://$PROJECT_DIR$/protected/yiic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="18" selection-start="1301" selection-end="1301" vertical-scroll-proportion="-26.153847">
-          <folding>
-            <element signature="e#493#539#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/yiic">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="7" column="0" selection-start="171" selection-end="171" vertical-scroll-proportion="-4.576923">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/yiic.php">
+    <entry file="file://$PROJECT_DIR$/protected/config/production.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="28" selection-start="78" selection-end="78" vertical-scroll-proportion="0.059509918">
+        <state line="121" column="0" selection-start="1950" selection-end="4650" vertical-scroll-proportion="-6.8076925">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="0" selection-start="3607" selection-end="3607" vertical-scroll-proportion="-43.423077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/console.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="36" selection-start="861" selection-end="861" vertical-scroll-proportion="-6.8076925">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="11" selection-start="196" selection-end="197" vertical-scroll-proportion="-3.6666667">
+          <folding>
+            <marker date="1409341946613" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="290" column="34" selection-start="6975" selection-end="7387" vertical-scroll-proportion="-8.980392">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/cron.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="-5.230769">
+          <folding>
+            <element signature="e#6#159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/commands/GenMapCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="12" selection-start="13" selection-end="19" vertical-scroll-proportion="0.03967328">
           <folding />
         </state>
       </provider>

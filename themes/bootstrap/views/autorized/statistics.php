@@ -21,22 +21,8 @@
 
 				<div class="col-sm-12 col-md-7 col-lg-7 bord">
                     <div class="panel">
-                        <?
 
-//                        $model= new Users();
-//                        $dest_folder = Yii::getPathOfAlias('webroot.images.art').DIRECTORY_SEPARATOR;
-//                        $overlay = Yii::getPathOfAlias('webroot.images.art').DIRECTORY_SEPARATOR.'m_overlay_p.png';
-//
-//                        $map= new MapStat($model,$dest_folder,$overlay);
-//                        $map->getProjectsPointsData();
-//                        $map->generateMapPoints();
-//
-//                        $map->getUniversPointsData();
-//                        $map->generateMapPoints();
-
-                        ?>
-<!--                        <img src=' --><?//=$src ?><!-- ' width="300" height="auto" alt=""/>-->
-                        
+                    Привет
                     </div>
 				</div><!--/col-->
 
