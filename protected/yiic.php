@@ -26,7 +26,7 @@ $env=@getenv('YII_CONSOLE_COMMANDS');
 if(!empty($env))
     $app->commandRunner->addCommands($env);
 
-Yii::setPathOfAlias('webroot', dirname(__DIR__).'/../../');
+Yii::setPathOfAlias('webroot', dirname(__DIR__));
 
 $app->run();
 
