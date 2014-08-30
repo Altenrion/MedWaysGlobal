@@ -175,10 +175,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="console.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/config/console.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="36" selection-start="835" selection-end="835" vertical-scroll-proportion="-17.0">
+            <state line="73" column="2" selection-start="2149" selection-end="2149" vertical-scroll-proportion="0.96032673">
               <folding />
             </state>
           </provider>
@@ -196,25 +196,16 @@
       <file leaf-file-name="devel.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="0" selection-start="3607" selection-end="3607" vertical-scroll-proportion="-43.423077">
+            <state line="52" column="48" selection-start="1640" selection-end="1640" vertical-scroll-proportion="-15.307693">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/config/production.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="0" selection-start="1950" selection-end="4650" vertical-scroll-proportion="-6.8076925">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cron.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="cron.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/cron.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="363" selection-end="363" vertical-scroll-proportion="0.19836639">
+            <state line="10" column="0" selection-start="363" selection-end="363" vertical-scroll-proportion="-6.5384617">
               <folding />
             </state>
           </provider>
@@ -262,8 +253,8 @@
         <option value="$PROJECT_DIR$/protected/config/devel.php" />
         <option value="$PROJECT_DIR$/protected/commands/todayCommand.php" />
         <option value="$PROJECT_DIR$/protected/commands/GenMapCommand.php" />
-        <option value="$PROJECT_DIR$/protected/config/console.php" />
         <option value="$PROJECT_DIR$/protected/cron.php" />
+        <option value="$PROJECT_DIR$/protected/config/console.php" />
       </list>
     </option>
   </component>
@@ -592,13 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="0" selection-start="3607" selection-end="3607" vertical-scroll-proportion="-43.423077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="11" selection-start="196" selection-end="197" vertical-scroll-proportion="-3.6666667">
@@ -611,20 +595,6 @@
     <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="290" column="34" selection-start="6975" selection-end="7387" vertical-scroll-proportion="-8.980392">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/production.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="0" selection-start="1950" selection-end="4650" vertical-scroll-proportion="-6.8076925">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/console.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="36" selection-start="835" selection-end="835" vertical-scroll-proportion="-17.0">
           <folding />
         </state>
       </provider>
@@ -652,7 +622,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/cron.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="363" selection-end="363" vertical-scroll-proportion="0.19836639">
+        <state line="10" column="0" selection-start="363" selection-end="363" vertical-scroll-proportion="-6.5384617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/production.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="18" selection-start="4403" selection-end="4403" vertical-scroll-proportion="0.047841307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="48" selection-start="1640" selection-end="1640" vertical-scroll-proportion="-15.307693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/console.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="2" selection-start="2149" selection-end="2149" vertical-scroll-proportion="0.96032673">
           <folding />
         </state>
       </provider>

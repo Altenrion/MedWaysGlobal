@@ -24,7 +24,7 @@ return array(
         'ext.yii-mail.YiiMailMessage',
     ),
 
-    'defaultController'=>'ShowCase',
+//    'defaultController'=>'ShowCase',
 	// application components
 	'components'=>array(
 
@@ -36,20 +36,20 @@ return array(
 			'charset' => 'utf8',
 		),
 
-        'user'=>array(
-            // enable cookie-based authentication
-            'class'=> 'WebUser',
-            'allowAutoLogin'=>true,
-            'authTimeout'=>3600,
-            'loginUrl'=>array('ShowCase/login'),
-        ),
+//        'user'=>array(
+//            // enable cookie-based authentication
+//            'class'=> 'WebUser',
+//            'allowAutoLogin'=>true,
+//            'authTimeout'=>3600,
+//            'loginUrl'=>array('ShowCase/login'),
+//        ),
 
-        'authManager' => array(
-            // Будем использовать свой менеджер авторизации
-            'class' => 'PhpAuthManager',
-            // Роль по умолчанию. Все, кто не админы, модераторы и юзеры — гости.
-            'defaultRoles' => array('guest'),
-        ),
+//        'authManager' => array(
+//            // Будем использовать свой менеджер авторизации
+//            'class' => 'PhpAuthManager',
+//            // Роль по умолчанию. Все, кто не админы, модераторы и юзеры — гости.
+//            'defaultRoles' => array('guest'),
+//        ),
         'urlManager'=>array(
             'showScriptName' => false,
             'urlFormat'=>'path',
