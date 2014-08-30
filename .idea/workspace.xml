@@ -16,7 +16,7 @@
     <file path="/Proto.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409424086882" ignored="false" />
     <file path="/Autentification_main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406121974522" ignored="false" />
     <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409393278605" ignored="false" />
-    <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409425939211" ignored="false" />
+    <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409426124181" ignored="false" />
     <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408512630498" ignored="false" />
     <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409417645189" ignored="false" />
     <file path="/login.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407829978865" ignored="false" />
@@ -128,7 +128,7 @@
     <file path="/MapStat.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409394956425" ignored="false" />
     <file path="/clients.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409338102036" ignored="false" />
     <file path="/yiic.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409398404323" ignored="false" />
-    <file path="$PROJECT_DIR$/uploads/clients.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409425948677" ignored="false" />
+    <file path="$PROJECT_DIR$/uploads/clients.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409426100606" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +160,7 @@
       <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="208" column="42" selection-start="13806" selection-end="13810" vertical-scroll-proportion="0.31753555">
+            <state line="217" column="141" selection-start="14238" selection-end="14238" vertical-scroll-proportion="0.43838862">
               <folding />
             </state>
           </provider>
@@ -706,7 +706,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="208" column="42" selection-start="13806" selection-end="13810" vertical-scroll-proportion="0.31753555">
+        <state line="217" column="141" selection-start="14238" selection-end="14238" vertical-scroll-proportion="0.43838862">
           <folding />
         </state>
       </provider>

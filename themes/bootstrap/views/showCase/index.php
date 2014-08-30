@@ -215,7 +215,7 @@ $this->breadcrumbs=array(
                         <!-- /.post .format-gallery -->
 
                         <div class="post format-standard">
-                            <div class="date-wrapper"> <a href="blog-post.html" class="date"><span class="day">23</span> <span class="month">Авг</span> </a> </div>
+                            <div class="date-wrapper"> <a href="blog-post.html" class="date"><span class="day">4</span> <span class="month">Июл</span> </a> </div>
                             <!-- /.date-wrapper -->
                             <div class="format-wrapper"> <i class="icon-pencil"></i> </div>
                             <!-- /.format -->
