@@ -16,7 +16,7 @@
     <file path="/Proto.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409517497941" ignored="false" />
     <file path="/Autentification_main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406121974522" ignored="false" />
     <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409495049327" ignored="false" />
-    <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409518456382" ignored="false" />
+    <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409518684827" ignored="false" />
     <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408512630498" ignored="false" />
     <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409511471303" ignored="false" />
     <file path="/login.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407829978865" ignored="false" />
@@ -153,10 +153,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="225" column="108" selection-start="14895" selection-end="14895" vertical-scroll-proportion="0.54383886">
+            <state line="223" column="166" selection-start="14642" selection-end="14642" vertical-scroll-proportion="3.2692308">
               <folding>
                 <element signature="n#style#0;n#t#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -164,6 +164,15 @@
                 <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#3;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Proto.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="120" column="33" selection-start="6256" selection-end="6256" vertical-scroll-proportion="0.2748815">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -191,9 +200,9 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
       </list>
     </option>
   </component>
@@ -321,6 +330,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="showCase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -477,7 +512,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22091782" sideWeight="0.84268427" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22091782" sideWeight="0.84268427" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -645,13 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="177" selection-start="3887" selection-end="3887" vertical-scroll-proportion="0.2014218">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="0" selection-start="2140" selection-end="2140" vertical-scroll-proportion="0.33722287">
@@ -668,7 +696,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="225" column="108" selection-start="14895" selection-end="14895" vertical-scroll-proportion="0.54383886">
+        <state line="223" column="166" selection-start="14642" selection-end="14642" vertical-scroll-proportion="3.2692308">
           <folding>
             <element signature="n#style#0;n#t#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -676,6 +704,13 @@
             <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#3;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="33" selection-start="6256" selection-end="6256" vertical-scroll-proportion="0.2748815">
+          <folding />
         </state>
       </provider>
     </entry>

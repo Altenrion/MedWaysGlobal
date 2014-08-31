@@ -221,7 +221,7 @@ $this->breadcrumbs=array(
 
                             <div class="post-content">
                                 <h2 class="post-title"><a href="blog-post.html">Открытие регистрации проектов</a></h2>
-                                <div class="meta"> <span class="category"><a href="#">MedWAYS</a>, <a href="#">Daily</a></span> <span class="comments"><a href="#">1 Сент, 2014</a></span> <span class="like"><a href="#">5 <i class="icon-eye"></i></a></span> </div>
+                                <div class="meta"> <span class="category"><a href="#">MedWAYS</a>, <a href="#">Daily</a></span> <span class="comments"><a href="#">1 сент, 2014</a></span> <span class="like"><a href="#">5 <i class="icon-eye"></i></a></span> </div>
                                 <!-- /.meta -->
                                 <p> С сегодняшнего дня по 15 октября 2014 года открыта регистрация проектов, учавствующих в региональном конкурсном отборе. Информация о базовых вузах представлена в соответствующем разделе.  </p>
                             </div>
