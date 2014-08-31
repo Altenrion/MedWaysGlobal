@@ -205,6 +205,13 @@ class AutorizedController extends Controller
                 $messsages[] = ['warning','Уважаемый пользователь','Ваш проект успешно отправлен на согласование. Ожидайте оповещения по почте.'];
 //              Yii::app()->user->setFlash("CONTACT_EMAIL", 'Имэйл отправлен');
             }
+            if(Yii::app()->user->role == 'Exp'){
+                $messsages[] = ['success','Уважаемый эксперт','Ваш статус находится на согласовании. Ожидайте оповещения по почте указанной при регистрации.'];
+            }
+            if(Yii::app()->user->role == 'Manager'){
+                $messsages[] = ['success','Уважаемый пользователь','Вам необходимо внести всю недостающую информацию в разделы "Профиль пользователя" и "Проект".'];
+            }
+
 
             $perc_prof = $this->CheckInfoPercentage($clean_data);
 

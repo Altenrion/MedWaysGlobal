@@ -77,7 +77,7 @@
             <div class="col-sm-9 ">
                 <p class="lead tp3 bm0 text-center">Скачать все локальные документы одним архивом</p>
             </div>
-            <div class="col-sm-3"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=local_docs.rar" class="btn bm0"><i class="icon-download"></i> Скачать</a></div>
+            <div class="col-sm-3"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=loc.rar" class="btn bm0"><i class="icon-download"></i> Скачать</a></div>
         </div>
         <div class="row" id="PLATF"></div>
         </div>
@@ -225,7 +225,7 @@
             <div class="col-sm-9 ">
                 <p class="lead tp3 bm0 text-center">Скачать информацию о платформах одним архивом</p>
             </div>
-            <div class="col-sm-3"><a href="#" class="btn bm0"><i class="icon-download"></i> Скачать</a></div>
+            <div class="col-sm-3"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=stage.rar" class="btn bm0"><i class="icon-download"></i> Скачать</a></div>
         </div>
         <div class="row" id="NPB"></div>
     </div>
@@ -349,7 +349,7 @@
             <div class="col-sm-9">
                 <p class="lead tp3 bm0 text-center">Скачать все документы нормативно-правовой базы  </p>
             </div>
-            <div class="col-sm-3"><a href="#" class="btn bm0"> Скачать</a></div>
+            <div class="col-sm-3"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=law.rar" class="btn bm0"><i class="icon-download"></i> Скачать</a></div>
         </div>
         </div>
     </div>
