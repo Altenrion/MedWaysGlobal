@@ -242,7 +242,7 @@
         <div class="services">
             <div class="row">
                 <div class="col-sm-4 step">
-                    <div class="icon"> <i class="icon-download icn"></i> </div>
+                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=273_OBR_RF.pdf"> <i class="icon-download icn"> </i> </a></div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Образование в Российской Федерации</h4>
@@ -252,7 +252,7 @@
                 </div>
                 <!-- /.col-sm-4 -->
                 <div class="col-sm-4 step">
-                    <div class="icon"> <i class="icon-download icn"></i> </div>
+                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=127.pdf"> <i class="icon-download icn"> </i> </a></div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Наука и государственная научно-техническая политика</h4>
@@ -262,11 +262,11 @@
                 </div>
                 <!-- /.col-sm-4 -->
                 <div class="col-sm-4 step">
-                    <div class="icon"> <i class="icon-download icn"></i> </div>
+                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=281.pdf"> <i class="icon-download icn"> </i> </a></div>
                     <!-- /.icon -->
                     <div class="text">
-                        <h4>Высшее и послевузовское профессиональное образование</h4>
-                        <p>Федеральный закон от 22.08.1996 г. № 125-ФЗ «О высшем и послевузовском профессиональном образовании» </p>
+                        <h4>Научные платформы</h4>
+                        <p>Приказ Минздрава России от 30.04.2013 N 281 "Об утверждении научных платформ медицинской науки" </p>
                     </div>
                     <!-- /.text -->
                 </div>
@@ -281,7 +281,7 @@
             <div class="divide20"></div>
             <div class="row">
                 <div class="col-sm-4 step">
-                    <div class="icon"> <i class="icon-download icn"></i> </div>
+                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=598.pdf"> <i class="icon-download icn"> </i> </a></div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Совершенствование государственной политики в сфере здравоохранения</h4>
@@ -291,7 +291,7 @@
                 </div>
                 <!-- /.col-sm-4 -->
                 <div class="col-sm-4 step">
-                    <div class="icon"> <i class="icon-download icn"></i> </div>
+                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=599.pdf"> <i class="icon-download icn"> </i> </a></div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Меры по реализации государственной политики</h4>
@@ -301,7 +301,7 @@
                 </div>
                 <!-- /.col-sm-4 -->
                 <div class="col-sm-4 step">
-                    <div class="icon"> <i class="icon-download icn"></i> </div>
+                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=2580.pdf"> <i class="icon-download icn"> </i> </a></div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Утверждение Стратегии развития медицинской науки в РФ </h4>
@@ -315,17 +315,17 @@
 
             <div class="row">
                 <div class="col-sm-4 step">
-                    <div class="icon"> <i class="icon-download icn"></i> </div>
+                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=301.pdf"> <i class="icon-download icn"> </i> </a></div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Утверждение государственной программы РФ </h4>
-                        <p>Распоряжение Правительства РФ от 20.12.2012 г. № 2433-р «Об утверждении государственной программы Российской Федерации «Развитие науки и технологий»</p>
+                        <p>Постановление Правительства РФ от 15.04.2014 N 301 "Об утверждении государственной программы Российской Федерации "Развитие науки и технологий" на 2013 - 2020 годы"</p>
                     </div>
                     <!-- /.text -->
                 </div>
                 <!-- /.col-sm-4 -->
                 <div class="col-sm-4 step">
-                    <div class="icon"> <i class="icon-download icn"></i> </div>
+                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=INNOVATION.pdf"> <i class="icon-download icn"> </i> </a></div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Утверждение Стратегии инновационного  развития РФ </h4>

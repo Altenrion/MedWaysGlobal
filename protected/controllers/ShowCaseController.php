@@ -136,7 +136,7 @@ class ShowCaseController extends Controller
 	}
 
 
-    public function mailAktivation($name,$role,$email,$password){
+    public function mailAktivation($name,$sname,$role,$email,$password){
 
         $tpl_file = Yii::getPathOfAlias('webroot.downloads').DIRECTORY_SEPARATOR.'mail_template.php';
         $tpl = file_get_contents($tpl_file);
@@ -146,6 +146,7 @@ class ShowCaseController extends Controller
 
         $mail = strtr($mail, array(
             "{name}"   => $name,
+            "{sname}" => $sname,
             "{role}" => $role,
             "{email}" => $email,
             "{password}" => $password,
@@ -153,9 +154,9 @@ class ShowCaseController extends Controller
         ));
         $message = new YiiMailMessage;
         $message->setBody($mail, 'text/html');
-        $message->subject = 'Активация пароля';
+        $message->subject = 'Активация пароля - Этафета вузовской науки';
         $message->addTo($email);
-        $message->from = Yii::app()->params['adminEmail'];
+        $message->from = 'MedWAYS';
         Yii::app()->mail->send($message);
 
     }
@@ -172,6 +173,7 @@ class ShowCaseController extends Controller
 
             $model->attributes=$_POST['RegForm'];
 
+            $sname = $_POST['RegForm']['S_NAME'];
             $name = $_POST['RegForm']['L_NAME'];
             $role = $_POST['RegForm']['roles'];
             $password = $_POST['RegForm']['password'];
@@ -190,7 +192,7 @@ class ShowCaseController extends Controller
             }
 
             if($model->save()){
-                $this->mailAktivation($name,$role,$email,$password);
+                $this->mailAktivation($name,$sname,$role,$email,$password);
 
                 $success= 'succsess';
                 echo json_encode($success);

@@ -10,30 +10,27 @@
 ?>
 
 
+
 <!-- BEGIN CONTENT HEADER -->
 <section class="content-header">
     <i class="fa fa-user"></i>
-    <span>Статистика мероприятия</span>
+    <span>Панель управления</span>
     <ol class="breadcrumb">
         <li><a href="">Кабинет</a></li>
-        <li class="active"><a href="">Статистика</a></li>
+        <li class="active"><a href="">Панель</a></li>
     </ol>
 </section>
 <!-- END CONTENT HEADER -->
 
-
-
 <section class="content">
-
 			<div class="row ">
+                <div class="col-md-12">
 
-				<div class="col-md-12 ">
 
+                </div>
 
-				</div><!--/col-->
 
 			</div><!--/profile-->
 
-
-
 </section>
+

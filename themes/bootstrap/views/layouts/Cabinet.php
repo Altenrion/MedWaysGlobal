@@ -70,10 +70,8 @@ Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/skins.css');
     <div class="ticker">
         <strong>Важно:</strong>
         <ul>
-            <li>Очень важная новость для всех всех всех ! </li>
-            <li>Очень важная новость 2 для всех всех всех ! Очень важная новость 2 для всех всех всех ! .</li>
-            <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </li>
-            <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+            <li>Регистрация проектов открыта до 15 октября! </li>
+            <li>К конкурсу допускаются подтвержденные вузом проекты.</li>
         </ul>
     </div>
     <!-- END NEWS TICKER -->
@@ -126,66 +124,50 @@ Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/skins.css');
             </div>
            </br>
             <ul class="sidebar-menu">
-                <li>
-                    <a href="<?=Yii::app()->createUrl('Autorized/dashboard')?>">
-                        <i class="fa fa-dashboard "></i><span>Панель управления</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?=Yii::app()->createUrl('Autorized/profile')?>">
-                        <i class="fa fa-user"></i><span>Профиль</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?=Yii::app()->createUrl('Autorized/experts')?>">
-                        <i class="fa fa-group"></i><span>Эксперты</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?=Yii::app()->createUrl('Autorized/project')?>">
-                        <i class="fa fa-graduation-cap"></i><span>Проект</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?=Yii::app()->createUrl('Autorized/projects')?>">
-                        <i class="fa fa-graduation-cap"></i><span>Проекты</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?=Yii::app()->createUrl('Autorized/statistics')?>">
-                        <i class="fa fa-bar-chart-o"></i><span>Статистика</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?=Yii::app()->createUrl('Autorized/info')?>">
-                        <i class="fa fa-info"></i><span>Информация</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?=Yii::app()->createUrl('Autorized/news')?>">
-                        <i class="fa fa-calendar"></i><span>Новости</span>
-                    </a>
-                </li>
+                <? if($this->checkRole(array('Dev'))): ?>
+                    <li><a href="<?=Yii::app()->createUrl('Autorized/dashboard')?>"><i class="fa fa-dashboard "></i><span>Панель управления</span></a></li>
+                <? endif; ?>
+                <? if($this->checkRole(array('Dev','Manager','Exp','Exp1','Exp2','Exp3'))): ?>
+                    <li><a href="<?=Yii::app()->createUrl('Autorized/profile')?>"><i class="fa fa-user"></i><span>Профиль</span></a></li>
+                <? endif; ?>
+                <? if($this->checkRole(array('Dev'))): ?>
+                    <li><a href="<?=Yii::app()->createUrl('Autorized/experts')?>"><i class="fa fa-group"></i><span>Эксперты</span></a></li>
+                <? endif; ?>
+                <? if($this->checkRole(array('Dev','Manager'))): ?>
+                    <li><a href="<?=Yii::app()->createUrl('Autorized/project')?>"><i class="fa fa-graduation-cap"></i><span>Проект</span></a></li>
+                <? endif; ?>
+                <? if($this->checkRole(array('Exp1','Exp2','Exp3','Dev'))): ?>
+                    <li><a href="<?=Yii::app()->createUrl('Autorized/projects')?>"><i class="fa fa-graduation-cap"></i><span>Проекты</span></a></li>
+                <? endif; ?>
+                <? if($this->checkRole(array('Dev','Exp1','Exp2','Exp3'))): ?>
+                    <li><a href="<?=Yii::app()->createUrl('Autorized/statistics')?>"><i class="fa fa-bar-chart-o"></i><span>Статистика</span></a></li>
+                <? endif; ?>
+                <? if($this->checkRole(array('Dev','Manager','Exp','Exp1','Exp2','Exp3'))): ?>
+                    <li><a href="<?=Yii::app()->createUrl('Autorized/info')?>"><i class="fa fa-info"></i><span>Информация</span></a></li>
+                <? endif; ?>
+                <? if($this->checkRole(array('Dev','Manager','Exp','Exp1','Exp2','Exp3'))): ?>
+                    <li><a href="<?=Yii::app()->createUrl('Autorized/news')?>"><i class="fa fa-calendar"></i><span>Новости</span></a></li>
+                <? endif; ?>
 
-
-<!--                <li class="menu">-->
-<!--                    <a href="#">-->
-<!--                        <i class="fa fa-laptop"></i><span>UI Elements</span>-->
-<!--                        <i class="fa fa-angle-left pull-right"></i>-->
-<!--                    </a>-->
-<!--                    <ul class="sub-menu">-->
-<!--                        <li><a href="ui-general.html">General</a></li>-->
-<!--                        <li><a href="ui-buttons.html">Buttons</a></li>-->
-<!--                        <li><a href="ui-grid.html">Grid</a></li>-->
-<!--                        <li><a href="ui-group-list.html">Group List</a></li>-->
-<!--                        <li><a href="ui-icons.html">Icons</a></li>-->
-<!--                        <li><a href="ui-messages.html">Messages & Notifications</a></li>-->
-<!--                        <li><a href="ui-modals.html">Modals</a></li>-->
-<!--                        <li><a href="ui-tabs.html">Tabs & Accordions</a></li>-->
-<!--                        <li><a href="ui-typography.html">Typography</a></li>-->
-<!--                    </ul>-->
-<!--                </li>-->
-
+                <? if($this->checkRole(array('Dev'))): ?>
+                <li class="menu">
+                    <a href="#">
+                        <i class="fa fa-laptop"></i><span>UI Elements</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="">General</a></li>
+                        <li><a href="">Buttons</a></li>
+                        <li><a href="">Grid</a></li>
+                        <li><a href="">Group List</a></li>
+                        <li><a href="">Icons</a></li>
+                        <li><a href="">Messages & Notifications</a></li>
+                        <li><a href="">Modals</a></li>
+                        <li><a href="">Tabs & Accordions</a></li>
+                        <li><a href="">Typography</a></li>
+                    </ul>
+                </li>
+                <? endif; ?>
             </ul>
         </section>
     </aside>

@@ -1,7 +1,7 @@
 <!-- 2_3 -->
-<body style="margin:0; background-color:#DBF3FD; margin-top:20px;" >
+<body style="margin:0; background-color:#FFF; margin-top:20px;" >
 <div style="height:100%;  ">
-<table width="100%" bgcolor="#DBF3FD" cellpadding="0" cellspacing="0" border="0">
+<table width="100%" bgcolor="#FFF" cellpadding="0" cellspacing="0" border="0">
     <tr>
         <td align="center" valign="top" style="margin:0;padding:0;">
             <table align="center" border="0" cellspacing="0" cellpadding="0" width="555" bgcolor="#ffffff">
@@ -30,7 +30,7 @@
                             <tr>
                                 <td align="left" valign="top" style="padding-top:20px;padding-bottom:23px;padding-left:23px;padding-right:0;margin:0;">
                                     <span style="font-family:'Trebuchet MS',sans-serif;color: #F73C38;font-size:18px;font-weight:bold; text-transform: uppercase; ">
-                                        	<center>Добро пожаловать</center>
+                                        	<center>Добро пожаловать !</center>
                                     </span>
                                 </td>
                             </tr>
@@ -43,8 +43,9 @@
                             <tr>
                                 <td align="left" valign="top" style="padding-top:0;padding-bottom:25px;padding-left:23px;padding-right:23px;margin:0;">
                                     <span style="font-family:'Trebuchet MS',sans-serif;font-size:13px;  text-indent:0; color: rgb(136, 136, 136);">
-                                       <p>Здравствуйте {name}! Вы зарегистрировались на участие в Эстафете межвузовской науки на портале <b>vuznauka2014.medways.ru</b>. Выбранная вами форма участия - {role}.
-                                           Мы благодарны вам за проявленное внимание к нашему проекту.
+                                       <p>Здравствуйте {name} {sname}! Вы зарегистрировались на участие в Общероссийском научно-практическом мероприятии
+                                           «ЭСТАФЕТА ВУЗОВСКОЙ НАУКИ» на портале <b>vuznauka2014.medways.ru</b>. Выбранная Вами форма участия - {role}.
+                                           Мы благодарны за проявленное внимание к нашему проекту.
 
                                            Указанные при регистрации данные для входа:</p>
 
@@ -52,7 +53,7 @@
                                         <p>Пароль: {password} </p>
                                         </br>
 
-                                        <p>Для того что бы войти в систему вам необходимо активировать аккаунт.<p>
+                                        <p>Для входа в систему необходимо активировать аккаунт.<p>
                                     </span>
                                 </td>
                             </tr>
@@ -86,8 +87,8 @@
                             <tr>
                                 <td align="left" valign="top" style="padding-top:0;padding-bottom:15px;padding-left:23px;padding-right:23px;margin:0;">
                                     <span style="font-family:Arial,Verdana,Helvetica;color:#6f6f6f;font-size:10px; font-style:italic;">
-                                       Если вы не регистрировались на это мероприятие, просто проигнорируйте это сообщение, и не забудьте удалить его.
-									   Кроме того, мы будем вам признательны если вы сообщите нам об этом по адрему  Administration@medways.ru
+                                       Если Вы не регистрировались на это мероприятие, просто проигнорируйте и удалите это сообщение.
+									   Мы будем признательны, если Вы сообщите об этом по адресу Administration@medways.ru
                                     </span>
                                 </td>
                             </tr>
