@@ -2,7 +2,7 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php" line="247" mnemonic="3" />
-    <bookmark url="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php" line="237" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php" line="238" mnemonic="1" />
     <bookmark url="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php" line="34" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
@@ -30,7 +30,7 @@
     <file path="$PROJECT_DIR$/../validation/jquery-steps-master/demo/index.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406449650964" ignored="false" />
     <file path="$PROJECT_DIR$/../validation/jquery-steps-master/build/jquery.steps.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406449177579" ignored="false" />
     <file path="/jquery.steps.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406449172658" ignored="false" />
-    <file path="/info.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409515981564" ignored="false" />
+    <file path="/info.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409516543706" ignored="false" />
     <file path="/info_docs.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406888431655" ignored="false" />
     <file path="$PROJECT_DIR$/../test_scroll/index.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406877007052" ignored="false" />
     <file path="$PROJECT_DIR$/../test_scroll/js/mootools-1.2.3-core.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406873920366" ignored="false" />
@@ -153,10 +153,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="info.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="69" selection-start="1656" selection-end="1656" vertical-scroll-proportion="-27.461538">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ShowCaseController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="156" column="71" selection-start="4032" selection-end="4032" vertical-scroll-proportion="-9.431373">
+            <state line="143" column="46" selection-start="3591" selection-end="3591" vertical-scroll-proportion="-10.09804">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Proto.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="71" column="0" selection-start="4476" selection-end="4476" vertical-scroll-proportion="0.7049763">
               <folding />
             </state>
           </provider>
@@ -173,10 +193,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cabinet.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Cabinet.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="55" selection-start="2899" selection-end="2899" vertical-scroll-proportion="0.7537923">
+            <state line="52" column="0" selection-start="2140" selection-end="2140" vertical-scroll-proportion="-11.115385">
               <folding />
             </state>
           </provider>
@@ -237,7 +257,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/components/GridView.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/experts.php" />
         <option value="$PROJECT_DIR$/protected/extensions/cabinet/assets/js/avatar_upload.js" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php" />
@@ -245,7 +264,6 @@
         <option value="$PROJECT_DIR$/protected/config/production.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
         <option value="$PROJECT_DIR$/downloads/mail_template.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/dashboard.php" />
@@ -253,6 +271,8 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/news.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
       </list>
     </option>
   </component>
@@ -379,7 +399,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="autorized" />
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -430,6 +450,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="downloads" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -614,13 +648,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/config/production.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="55" selection-start="5764" selection-end="5773" vertical-scroll-proportion="0.781797">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/downloads/mail_template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="98" selection-start="3726" selection-end="3726" vertical-scroll-proportion="0.5437573">
@@ -661,23 +688,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="332" column="26" selection-start="16147" selection-end="16147" vertical-scroll-proportion="0.36522755">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="135" column="94" selection-start="5929" selection-end="6007" vertical-scroll-proportion="0.6646919">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="71" selection-start="4032" selection-end="4032" vertical-scroll-proportion="-9.431373">
           <folding />
         </state>
       </provider>
@@ -726,9 +739,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="69" selection-start="1656" selection-end="1656" vertical-scroll-proportion="-27.461538">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="55" selection-start="2899" selection-end="2899" vertical-scroll-proportion="0.7537923">
+        <state line="52" column="0" selection-start="2140" selection-end="2140" vertical-scroll-proportion="-11.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="143" column="46" selection-start="3591" selection-end="3591" vertical-scroll-proportion="-10.09804">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="0" selection-start="4476" selection-end="4476" vertical-scroll-proportion="0.7049763">
           <folding />
         </state>
       </provider>

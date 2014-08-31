@@ -32,24 +32,25 @@
 
             <div class="row">
                 <div class="col-sm-4 step">
-                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=kontent_1_EVN.docx"> <i class="icon-attach icn"> </i> </a></div>
+                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=info_evn.pdf"> <i class="icon-attach icn"> </i> </a></div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Информационное письмо </h4>
-                        <p>Опиание мероприятия и .....</p>
+                        <p>Опиание мероприятия и время проведения</p>
                     </div>
                     <!-- /.text -->
                 </div>
                 <!-- /.col-sm-4 -->
                 <div class="col-sm-4 step">
-                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=kontent_1_EVN.docx"> <i class="icon-attach icn"></i></a> </div>
+                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=polojenie_evn.pdf"> <i class="icon-attach icn"></i></a> </div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Положение об Эстафете вузовской науки </h4>
-                        <p>Положение об Эстафете вузовской науки .......</p>
+                        <p>Положение об Эстафете вузовской науки 2014</p>
                     </div>
                     <!-- /.text -->
                 </div>
+                <? if(false): ?>
                 <!-- /.col-sm-4 -->
                 <div class="col-sm-4 step">
                     <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=u1.jpg"> <i class="icon-attach icn"></i></a> </div>
@@ -61,7 +62,7 @@
                     <!-- /.text -->
                 </div>
                 <!-- /.col-sm-4 -->
-
+                <? endif; ?>
             </div>
             <!-- /.row -->
 
