@@ -161,7 +161,7 @@ if(isset($data) && !is_null($data)){
                     'placement' => 'right',
                     'options' => array( 'disabled'=>true, ), )); ?>
             </p>
-            <p><strong>Суммарное кол-во публикаций:</strong>
+            <p><strong>Суммарное кол-во публикаций по теме:</strong>
                 <? $this->widget('editable.Editable', array(
                     'type'      => 'text',
                     'pk'        => $data[0]['id'],
@@ -209,7 +209,7 @@ if(isset($data) && !is_null($data)){
                     'format'      => 'YYYY', //in this format date sent to server
                     'viewformat'  => 'YYYY', //in this format date is displayed
                     'template'    => 'YYYY', //template for dropdowns
-                    'combodate'   => array('minYear' => 1980, 'maxYear' => 2030),
+                    'combodate'   => array('minYear' => 2014, 'maxYear' => 2030),
                     'options'     => array('disabled'=>true, ) )); ?>
             </p>
             <p><strong>Стадия развития проекта:</strong>
@@ -224,7 +224,7 @@ if(isset($data) && !is_null($data)){
                     'placement' => 'right',
                     'options' => array( 'disabled'=>true, ), ));  ?>
             </p>
-            <p><strong>Объем финансирования на период реализации:</strong>
+            <p><strong>Объем финансирования на период реализации (руб):</strong>
                 <? $this->widget('editable.Editable', array(
                     'type'      => 'select',
                     'name'      => 'ID_BUDGET',
@@ -236,7 +236,7 @@ if(isset($data) && !is_null($data)){
                     'placement' => 'right',
                     'options' => array( 'disabled'=>true, ), )); ?>
             </p>
-            <p><strong>Объем финансирования на календарный год:</strong>
+            <p><strong>Объем финансирования на календарный год (руб):</strong>
                 <? $this->widget('editable.Editable', array(
                     'type'      => 'text',
                     'pk'        => $data[0]['id'],
@@ -247,7 +247,7 @@ if(isset($data) && !is_null($data)){
                     'placement' => 'right',
                     'options' => array( 'disabled'=>true, ),  )); ?>
             </p>
-            <p><strong>Объем предполагаемого coфинансирования:</strong>
+            <p><strong>Объем предполагаемого coфинансирования (руб):</strong>
                 <?  $this->widget('editable.Editable', array(
                     'type'      => 'text',
                     'pk'        => $data[0]['id'],
@@ -260,7 +260,7 @@ if(isset($data) && !is_null($data)){
             </p>
             </div>
             <div class="col-sm-12">
-            <p><strong>Краткая аннотация (1500) :</strong>
+            <p><strong>Краткая аннотация (1500 знаков) :</strong>
                 <?   $this->widget('editable.Editable', array(
                     'type'      => 'textarea',
                     'pk'        => $data[0]['id'],
@@ -272,7 +272,10 @@ if(isset($data) && !is_null($data)){
                     'options' => array( 'disabled'=>true, ),  )); ?>
             </p>
 
+
             </div>
+
+
     <? }else { ?>
         <div class="grid-body">
             <div class="alert alert-danger fade in">
@@ -282,11 +285,19 @@ if(isset($data) && !is_null($data)){
                     и если ошибка повториться сообщите об этом администрации.</p>
 
             </div>
+
         </div>
     <? }  ?>
 
 </div>
 
+<div class="row">
+    <div class="col-sm-12">
+        <div class="alert alert-info">
+            Для завершения регистрации проекта загрузите полную аннотацию в PDF формате.
+        </div>
+    </div>
+</div>
 <div class="row">
         <div class="col-sm-3 stats">
             <h1 id="first_check"><?=$mod_one?></h1>

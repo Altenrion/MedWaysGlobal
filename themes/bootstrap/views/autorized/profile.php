@@ -191,7 +191,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                         'source'    => $this->createUrl('Autorized/getDistricts'),
                                         'title'     => 'Enter title',
                                         'placement' => 'right',
-                                        'options' => array( 'disabled'=>true, ), )); ?>
+                                        'options' => array( 'disabled'=>true,  'showbuttons'=>false, ), )); ?>
                             </p>
                             <p><strong>Вуз:</strong>
                                 <? $this->widget('editable.Editable', array(
@@ -203,7 +203,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                         'source'    => $this->createUrl('Autorized/getUniversities'),
                                         'title'     => 'Enter title',
                                         'placement' => 'right',
-                                        'options' => array( 'disabled'=>true, ), ));  ?>
+                                        'options' => array( 'disabled'=>true,  'showbuttons'=>false, ), ));  ?>
                             </p>
                             <p><strong>Должность:</strong>
                                 <? $this->widget('editable.Editable', array(
@@ -226,7 +226,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                     'source'    => $this->createUrl('Autorized/getSpecialities'),
                                     'title'     => 'Enter title',
                                     'placement' => 'right',
-                                    'options' => array( 'disabled'=>true, ),  )); ?>
+                                    'options' => array( 'disabled'=>true,  'showbuttons'=>false),  )); ?>
                             </p>
                             <p><strong>Индекс Хирша:</strong>
                                 <? $this->widget('editable.Editable', array(

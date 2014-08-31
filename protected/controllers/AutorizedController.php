@@ -77,6 +77,7 @@ class AutorizedController extends Controller
 
     public function actionExperts()
 	{
+
         $criteria = new CDbCriteria();
         $count = Users::model()->count($criteria);
         $pages = new CPagination($count);
@@ -85,9 +86,16 @@ class AutorizedController extends Controller
         $pages->applyLimit($criteria);
 
         $sort = new CSort();
-        $sort->attributes = array('id');
+        $sort->attributes = array('id','F_NAME','L_NAME','S_NAME','EMAIL');
         $sort->applyOrder($criteria);
         $models = Users::model()->findAll($criteria);
+
+
+
+
+
+
+
 
 
 
@@ -272,7 +280,10 @@ class AutorizedController extends Controller
         echo CJSON::encode(Editable::source(Speciality::model()->findAll(), 'ID_SPECIALITY', 'NAME'));
     }
     public function actionGetUniversities(){
-        echo CJSON::encode(Editable::source(University::model()->findAll(), 'ID_UNIVER', 'NAME_UNIVER'));
+
+     $district = Users::model()->find('id='.Yii::app()->user->id);
+     $d = $district->ID_DISTRICT;
+        echo CJSON::encode(Editable::source(University::model()->findAll('ID_DISTRICT='.$d), 'ID_UNIVER', 'NAME_UNIVER'));
     }
     public function actionGetDistricts(){
         echo CJSON::encode(Editable::source(District::model()->findAll(), 'ID_DISTRICT', 'NAME'));
