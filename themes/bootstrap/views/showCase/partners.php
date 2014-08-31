@@ -58,7 +58,7 @@
                                         <input id="nocomment" value="" name="partners_request">
                                     </li>
                                     <li class="button-row">
-                                        <input type="submit" value="Submit" name="submit" class="btn btn-submit bm0">
+                                        <input type="submit" value="Отправить" name="submit" class="btn btn-submit bm0">
                                         <span class="response alert alert-success"></span>
 
                                     </li>
