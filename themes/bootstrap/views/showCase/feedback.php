@@ -157,7 +157,7 @@
       <aside class="col-sm-4 sidebar lp30">
         <div class="sidebox widget">
           <h3 class="section-title">Координаторы проректа</h3>
-            <figure class="media-wrapper bm0"><img src="<?=Yii::app()->baseUrl?>/images/art/p5-f.jpg" alt=""></figure>
+            <figure class="media-wrapper bm0"><img src="<?=Yii::app()->baseUrl?>/images/art/po_sibsmu.jpg" alt=""></figure>
             <div class="bordered no-top-border ">
                 <h3>проведения регионального этапа </h3>
                 <p>ГБОУ ВПО Сибирский государственный медицинский университет Минздрава России
@@ -175,7 +175,7 @@
 
 
           <div class="sidebox widget">
-              <figure class="media-wrapper bm0"><img src="<?=Yii::app()->baseUrl?>/images/art/p5-f.jpg" alt=""></figure>
+              <figure class="media-wrapper bm0"><img src="<?=Yii::app()->baseUrl?>/images/art/po_msmu2.jpg" alt=""></figure>
               <div class="bordered no-top-border ">
                   <h3>проведения финального этапа и техническая поддержка</h3>
                   <p>ГБОУ ВПО Первый Московский государственный медицинский университет имени И.М. Сеченова Минздрава России

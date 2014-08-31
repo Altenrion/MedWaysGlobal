@@ -42,7 +42,7 @@
     <file path="/my.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406882924462" ignored="false" />
     <file path="/info_FAQ.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406888578176" ignored="false" />
     <file path="/organizers.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409422925879" ignored="false" />
-    <file path="/feedback.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408789212121" ignored="false" />
+    <file path="/feedback.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409486940931" ignored="false" />
     <file path="/error.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407259053013" ignored="false" />
     <file path="/registration.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407616601356" ignored="false" />
     <file path="/registration.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407316915486" ignored="false" />
@@ -148,10 +148,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="experts.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="experts.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/experts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="15" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.42473745">
+            <state line="34" column="21" selection-start="1104" selection-end="1104" vertical-scroll-proportion="-9.423077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="feedback.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/feedback.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="159" column="105" selection-start="13975" selection-end="13975" vertical-scroll-proportion="0.36255923">
               <folding />
             </state>
           </provider>
@@ -196,7 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/yiic.php" />
         <option value="$PROJECT_DIR$/protected/models/medways/Users.php" />
         <option value="$PROJECT_DIR$/protected/components/MapStat.php" />
         <option value="$PROJECT_DIR$/protected/config/devel.php" />
@@ -212,6 +220,7 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/organizers.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/experts.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/feedback.php" />
       </list>
     </option>
   </component>
@@ -338,7 +347,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="autorized" />
+              <option name="myItemId" value="showCase" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -402,7 +411,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="downloads" />
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="art" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -431,11 +458,11 @@
       <recent name="C:\wamp\www\MedWaysGlobal\protected\extensions\cabinet\assets\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\MedWaysGlobal\images\art" />
       <recent name="C:\wamp\www\MedWaysGlobal\downloads" />
       <recent name="C:\wamp\www\MedWaysGlobal\css" />
       <recent name="C:\wamp\www\MedWaysGlobal\images\org" />
       <recent name="C:\wamp\www\MedWaysGlobal\images\avatars" />
-      <recent name="C:\wamp\www\MedWaysGlobal\adminka" />
     </key>
   </component>
   <component name="RunManager">
@@ -503,13 +530,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17289221" sideWeight="0.84268427" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17289221" sideWeight="0.84268427" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -587,11 +614,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/downloads/mail_template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="148" selection-start="3098" selection-end="3106" vertical-scroll-proportion="0.89264876" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IE.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="14" selection-start="966" selection-end="966" vertical-scroll-proportion="0.3222749" />
@@ -686,7 +708,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/experts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="15" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.42473745">
+        <state line="34" column="21" selection-start="1104" selection-end="1104" vertical-scroll-proportion="-9.423077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/feedback.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="159" column="105" selection-start="13975" selection-end="13975" vertical-scroll-proportion="0.36255923">
           <folding />
         </state>
       </provider>
