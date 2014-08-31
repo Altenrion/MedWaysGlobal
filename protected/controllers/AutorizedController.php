@@ -77,7 +77,25 @@ class AutorizedController extends Controller
 
     public function actionExperts()
 	{
-		$this->render('experts');
+        $criteria = new CDbCriteria();
+        $count = Users::model()->count($criteria);
+        $pages = new CPagination($count);
+
+        $pages->pageSize = 5;
+        $pages->applyLimit($criteria);
+
+        $sort = new CSort();
+        $sort->attributes = array('id');
+        $sort->applyOrder($criteria);
+        $models = Users::model()->findAll($criteria);
+
+
+
+		$this->render('experts', array(
+            'models'=>$models,
+            'pages'=>$pages,
+            'sort'=>$sort,
+        ));
 	}
 
 

@@ -24,6 +24,7 @@
 
 			<div class="row profile">
                 <div class="col-md-12">
+
                     <div class="grid no-border">
                         <div class="grid-header">
                             <i class="fa fa-table"></i>
@@ -38,79 +39,24 @@
                             <table class="table table-hover">
                                 <thead>
                                 <tr>
-                                    <th>#</th>
-                                    <th>User</th>
-                                    <th>Task</th>
-                                    <th>Date</th>
-                                    <th>Progress</th>
-                                    <th>Stat</th>
-                                    <th>Action</th>
+                                    <th><?= $sort->link('id') ?></th>
+                                    <th>Message</th>
+
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Mark Otto</td>
-                                    <td><i class="fa fa-database"></i> Database Migration <span class="label label-primary">12</span></td>
-                                    <td>5300x...</td>
-                                    <td>Общий отчет (Время: 0.08254с, Память: 5,529Кб)</td>
-                                    <td><span class="text-green"><i class="fa fa-angle-up"></i>30%</span></td>
-                                    <td>
-                                        <a href="#"><i class="fa fa-pencil bg-blue action"></i></a>
-                                        <a href="#"><i class="fa fa-times bg-red action"></i></a>
-                                    </td>
-                                </tr>
-                                <tr class="info">
-                                    <td>2</td>
-                                    <td>Jacob Thornton</td>
-                                    <td><i class="fa fa-paper-plane"></i> Mobile Development <span class="label label-warning">74</span></td>
-                                    <td>3000x...</td>
-                                    <td>Общий отчет (Время: 0.07999с, Память: 5,530Кб)</td>
-                                    <td><span class="text-red"><i class="fa fa-angle-down"></i>12%</span></td>
-                                    <td>
-                                        <a href="#"><i class="fa fa-check bg-green action"></i></a>
-                                        <a href="#"><i class="fa fa-pencil bg-blue action"></i></a>
-                                        <a href="#"><i class="fa fa-times bg-red action"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Larry the Bird</td>
-                                    <td><i class="fa fa-cloud"></i> Server Upgrade</td>
-                                    <td>2500x...</td>
-                                    <td>Общий отчет (Время: 0.09851с, Память: 5,530Кб)</td>
-                                    <td><span class="text-green"><i class="fa fa-angle-up"></i>40%</span></td>
-                                    <td>
-                                        <a href="#"><i class="fa fa-pencil bg-blue action"></i></a>
-                                        <a href="#"><i class="fa fa-times bg-red action"></i></a>
-                                    </td>
-                                </tr>
-                                <tr class="success">
-                                    <td>4</td>
-                                    <td>Jeffery Williams</td>
-                                    <td><i class="fa fa-gavel"></i> App Deployment</td>
-                                    <td>01/01/2014</td>
-                                    <td><div class="progress progress-striped active"><div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"><span class="sr-only">90%</span></div></div></td>
-                                    <td><span class="text-blue"><i class="fa">-</i>0%</span></td>
-                                    <td>
-                                        <a href="#"><i class="fa fa-pencil bg-blue action"></i></a>
-                                        <a href="#"><i class="fa fa-times bg-red action"></i></a>
-                                    </td>
-                                </tr>
-                                <tr class="danger">
-                                    <td>5</td>
-                                    <td>Elaine Hernandez</td>
-                                    <td><i class="fa fa-flag"></i> Backup Data <span class="label label-danger">1024</span></td>
-                                    <td>07/02/2014</td>
-                                    <td><div class="progress"><div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100" style="width: 76%;"><span class="sr-only">76%</span></div></div></td>
-                                    <td><span class="text-red"><i class="fa fa-angle-down"></i>10%</span></td>
-                                    <td>
-                                        <a href="#"><i class="fa fa-pencil bg-blue action"></i></a>
-                                        <a href="#"><i class="fa fa-times bg-red action"></i></a>
-                                    </td>
-                                </tr>
+                                <? foreach($models as $model): ?>
+                                    <tr>
+                                        <td><?= $model->id  ?></td>
+                                        <td> Привет </td>
+                                    </tr>
+                                <? endforeach; ?>
                                 </tbody>
                             </table>
+                            <ul class="pagination">
+                                <? $this->widget('CLinkPager', array('pages'=>$pages)) ?>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
