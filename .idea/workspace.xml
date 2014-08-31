@@ -177,10 +177,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Proto.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Proto.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="202" column="119" selection-start="11132" selection-end="11132" vertical-scroll-proportion="0.549763">
+            <state line="202" column="119" selection-start="11132" selection-end="11132" vertical-scroll-proportion="-17.846153">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="browser_test.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/browser_test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="78" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.5157526">
               <folding />
             </state>
           </provider>
@@ -196,7 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php" />
         <option value="$PROJECT_DIR$/protected/config/production.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
         <option value="$PROJECT_DIR$/downloads/mail_template.php" />
@@ -212,6 +220,7 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/statistics.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/partners.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
+        <option value="$PROJECT_DIR$/browser_test.php" />
       </list>
     </option>
   </component>
@@ -599,13 +608,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="24" selection-start="754" selection-end="754" vertical-scroll-proportion="0.37806302">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="105" column="21" selection-start="3242" selection-end="3242" vertical-scroll-proportion="0.6646919">
@@ -719,7 +721,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="119" selection-start="11132" selection-end="11132" vertical-scroll-proportion="0.549763">
+        <state line="202" column="119" selection-start="11132" selection-end="11132" vertical-scroll-proportion="-17.846153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser_test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="78" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.5157526">
           <folding />
         </state>
       </provider>

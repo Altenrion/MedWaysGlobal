@@ -24,6 +24,6 @@ elseif ( strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7') ){ $user_agent = 'no';
 
 
 
-    if($user_agent == 'no'){ header( 'Location:http://medways.altenrion.ru/IE.html' ); }
+    if($user_agent == 'no'){ header( 'Location:http://vuznauka2014.medways.ru/IE.html' ); }
 
 ?>
