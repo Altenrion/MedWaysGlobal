@@ -164,7 +164,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                         'pk'        => $data['id'],
                                         'text'      => CHtml::encode($data['DEGREE']),
                                         'url'       => $this->createUrl('Autorized/updateProfile'),
-                                        'source'    => Editable::source(array('тестовая степень 1'=>'тестовая степень 1' , 'тестовая степень 2'=>'тестовая степень 2')),
+                                        'source'    => Editable::source(array('кандидат наук'=>'кандидат наук' , 'доктор наук'=>'доктор наук','нет'=>'нет')),
                                         'title'     => 'Enter title',
                                         'placement' => 'right',
                                         'options'     => array( 'disabled'=>true, 'showbuttons'=>false,  ) )); ?>
@@ -176,7 +176,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                         'pk'        => $data['id'],
                                         'text'      => CHtml::encode($data['ACADEMIC_TITLE']),
                                         'url'       => $this->createUrl('Autorized/updateProfile'),
-                                        'source'    => Editable::source(array('тестовое звание 1'=>'тестовое звание 1' , 'тестовое звание 2'=>'тестовое звание 2')),
+                                        'source'    => Editable::source(array('доцент'=>'доцент' , 'профессор'=>'профессор','нет'=>'нет')),
                                         'title'     => 'Enter title',
                                         'placement' => 'right',
                                         'options'     => array( 'disabled'=>true,'showbuttons'=>false, )  )); ?>
