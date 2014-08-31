@@ -186,7 +186,8 @@
                     <strong>Университетский технопарк</strong>
                     <div class="divide10"></div>
 
-                    <i class="icon-mail contact"></i> <a href="#">kuznetsova.yulia@bk.ru, administration@altenrion.ru</a>
+                    <i class="icon-mail contact"></i> <a href="#">kuznetsova.yulia@bk.ru,</a></br>
+                    <i class="icon-mail contact"></i> <a href="#">administration@medways.ru</a>
                 </section>
 
 

@@ -13,7 +13,7 @@
     <file path="/style.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1405683779993" ignored="false" />
     <file path="/fontello.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407341663248" ignored="false" />
     <file path="/main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407487814422" ignored="false" />
-    <file path="/Proto.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409424086882" ignored="false" />
+    <file path="/Proto.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409466174965" ignored="false" />
     <file path="/Autentification_main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406121974522" ignored="false" />
     <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409393278605" ignored="false" />
     <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409426124181" ignored="false" />
@@ -72,7 +72,7 @@
     <file path="/activate_submit.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407830021735" ignored="false" />
     <file path="/html-newsletter-template-predesigned61-97.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407858548464" ignored="false" />
     <file path="/mail_template.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407864241786" ignored="false" />
-    <file path="/mail_template.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408831268337" ignored="false" />
+    <file path="/mail_template.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409464701398" ignored="false" />
     <file path="/tests.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407878560404" ignored="false" />
     <file path="/UserIdentity.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409135316489" ignored="false" />
     <file path="$PROJECT_DIR$/adminka/font-awesome-4.1.0/less/font-awesome.less" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407927659262" ignored="false" />
@@ -128,6 +128,7 @@
     <file path="/MapStat.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409394956425" ignored="false" />
     <file path="/clients.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409338102036" ignored="false" />
     <file path="/yiic.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409398404323" ignored="false" />
+    <file path="$PROJECT_DIR$/../Testing/mail_template.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409464921837" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,10 +148,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="info.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="info.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="203" column="109" selection-start="9998" selection-end="9998" vertical-scroll-proportion="0.03033839">
+            <state line="209" column="0" selection-start="10182" selection-end="10182" vertical-scroll-proportion="-4.923077">
               <folding />
             </state>
           </provider>
@@ -168,7 +169,16 @@
       <file leaf-file-name="Proto.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="91" selection-start="523" selection-end="606" vertical-scroll-proportion="-8.5">
+            <state line="184" column="84" selection-start="10459" selection-end="10459" vertical-scroll-proportion="-22.23077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style_adoptive.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/style_adoptive.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="281" column="21" selection-start="5001" selection-end="5001" vertical-scroll-proportion="0.74252874">
               <folding />
             </state>
           </provider>
@@ -220,8 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/commands/GenMapCommand.php" />
-        <option value="$PROJECT_DIR$/protected/config/console.php" />
         <option value="$PROJECT_DIR$/framework/yiic.php" />
         <option value="$PROJECT_DIR$/protected/cron.php" />
         <option value="$PROJECT_DIR$/protected/yiic.php" />
@@ -229,13 +237,15 @@
         <option value="$PROJECT_DIR$/protected/components/MapStat.php" />
         <option value="$PROJECT_DIR$/protected/config/devel.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/partners.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/organizers.php" />
-        <option value="$PROJECT_DIR$/IE.html" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
+        <option value="$PROJECT_DIR$/IE.html" />
+        <option value="$PROJECT_DIR$/downloads/mail_template.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
+        <option value="$PROJECT_DIR$/css/style_adoptive.css" />
       </list>
     </option>
   </component>
@@ -440,7 +450,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="downloads" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -462,11 +472,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\MedWaysGlobal\downloads" />
       <recent name="C:\wamp\www\MedWaysGlobal\images\anti_ie" />
       <recent name="C:\wamp\www\MedWaysGlobal\type\fontello" />
       <recent name="C:\wamp\www\MedWaysGlobal\protected\extensions\cabinet\assets\js" />
       <recent name="C:\wamp\www\MedWaysGlobal\protected\extensions\cabinet\assets\css" />
-      <recent name="C:\wamp\www\MedWaysGlobal\protected\extensions\cabinet" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp\www\MedWaysGlobal\downloads" />
@@ -625,20 +635,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/config/production.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="0" selection-start="3204" selection-end="4404" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/yiic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="47" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/MapStat.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="34" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.0">
@@ -688,27 +684,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="91" selection-start="523" selection-end="606" vertical-scroll-proportion="-8.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/anti_ie/h.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IE.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="41" selection-start="2290" selection-end="2290" vertical-scroll-proportion="0.47741148">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/adaptive/jquery.isotope.min.js">
@@ -732,9 +710,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/downloads/mail_template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="148" selection-start="3098" selection-end="3106" vertical-scroll-proportion="0.89264876">
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IE.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="14" selection-start="966" selection-end="966" vertical-scroll-proportion="0.3222749">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="203" column="109" selection-start="9998" selection-end="9998" vertical-scroll-proportion="0.03033839">
+        <state line="209" column="0" selection-start="10182" selection-end="10182" vertical-scroll-proportion="-4.923077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="184" column="84" selection-start="10459" selection-end="10459" vertical-scroll-proportion="-22.23077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style_adoptive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="281" column="21" selection-start="5001" selection-end="5001" vertical-scroll-proportion="0.74252874">
           <folding />
         </state>
       </provider>
