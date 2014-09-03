@@ -13,6 +13,9 @@ var dataSet5 = [
 ]
 var clients ={  "Chrome":0, "Firefox":0, 'Safari':0, 'Opera':0, 'MSIE6':0, 'MSIE7':0, 'MSIE8':0, 'MSIE9':0, 'MSIE10':0, 'Trident/7':0 } ;
 
+function labelFormatter(label, series) {
+    return "<div style='font-size:8pt; text-align:center; padding:2px; color:white;'>" + label + "<br/>" + Math.round(series.percent) + "%</div>";
+}
 
 function initFlot() {
 
@@ -20,15 +23,17 @@ function initFlot() {
         series: {
             pie: {
                 show: true,
-                innerRadius: 0.3,
-                radius: 0.7,
+//                innerRadius: 0.3,
+                radius: 500,
                 label: {
-                    radius: 1
+                    show: true,
+                    formatter: labelFormatter,
+                    threshold: 0.1
                 }
             }
         },
         legend: {
-            show: true
+            show: false
         },
         grid: {
             hoverable: true
