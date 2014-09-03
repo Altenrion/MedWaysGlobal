@@ -12,6 +12,70 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
 
 
 ?>
+    <style type="text/css">
+
+        .profile-nav .user-heading p {
+            font-size: 12px;
+        }
+        p {
+            margin: 0 0 10px;
+        }
+        .user-heading.alt {
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+        }
+
+        .profile-nav .user-heading h1 {
+            font-size: 22px;
+            font-weight: 300;
+            margin-bottom: 5px;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+        .user-heading.alt a img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+        }
+        .user-heading.alt {
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+        }
+        a, a:hover, a:focus {
+            text-decoration: none;
+            outline: none;
+        }
+        .user-heading.alt a {
+            float: left;
+            margin-right: 15px;
+            margin-left: -10px;
+            display: inline-block;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+        }
+
+        .user-heading.alt {
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+        }
+        .profile-nav .user-heading {
+            color: #fff;
+
+        }
+
+        .profile .grid-header img {
+             margin: 0em 0em;
+        }
+    </style>
+
+
 
 <!-- BEGIN CONTENT HEADER -->
 <section class="content-header">
@@ -51,16 +115,17 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
 
         <div class="grid-header">
             <div class="col-xs-9">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-2">
-                        <img data-toggle="modal" data-target="#modalPrimary3" src="<?=Yii::app()->baseUrl ?>/images/avatars/<?=$this->getAvatar();?>" class="img-circle avatar" alt="">
-                    </div>
-                    <div class="col-xs-12 col-sm-7 persnal">
-                        <h3><?=Yii::app()->user->name?></h3>
-                        <p><i class="fa fa-fw fa-child"></i> <?= isset($role)?($role):('')?></p>
-                        <p><i class="fa fa-fw fa-envelope"></i> <?=Yii::app()->user->email ?></p>
-                    </div>
-                </div>
+                <aside class="profile-nav alt green-border">
+
+                        <div class="user-heading alt ">
+                            <a href="#">
+                                <img data-toggle="modal" data-target="#modalPrimary3" src="<?=Yii::app()->baseUrl ?>/images/avatars/<?=$this->getAvatar();?>">
+                            </a>
+                            <h1><?=Yii::app()->user->name?></h1>
+                            <p><i class="fa fa-fw fa-child"></i> <?= isset($role)?($role):('')?></p>
+                            <p><i class="fa fa-fw fa-envelope"></i> <?=Yii::app()->user->email ?></p>
+                        </div>
+                </aside>
             </div>
             <div class="col-xs-3 text-right visio">
                 <p><a href="" title="Everyone can see your profile"><i class="fa fa-globe"></i> Виден всем</a></p>
