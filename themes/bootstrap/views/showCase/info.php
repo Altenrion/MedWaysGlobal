@@ -32,7 +32,7 @@
 
             <div class="row">
                 <div class="col-sm-4 step">
-                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=info_evn.pdf"> <i class="icon-attach icn"> </i> </a></div>
+                    <div class="icon"><a href="<?=Yii::app()->baseUrl.'/downloads/info_evn.pdf'?>" target="_blank"> <i class="icon-attach icn"> </i> </a></div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Информационное письмо </h4>
@@ -42,7 +42,7 @@
                 </div>
                 <!-- /.col-sm-4 -->
                 <div class="col-sm-4 step">
-                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=polojenie_evn.pdf"> <i class="icon-attach icn"></i></a> </div>
+                    <div class="icon"><a href="<?=Yii::app()->baseUrl.'/downloads/polojenie_evn.pdf'?>" target="_blank"> <i class="icon-attach icn"></i></a> </div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Положение об Эстафете вузовской науки </h4>
@@ -53,7 +53,7 @@
                 <? if(false): ?>
                 <!-- /.col-sm-4 -->
                 <div class="col-sm-4 step">
-                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=u1.jpg"> <i class="icon-attach icn"></i></a> </div>
+                    <div class="icon"><a href="<?=Yii::app()->baseUrl.'/downloads/u1.jpg'?>" target="_blank"> <i class="icon-attach icn"></i></a> </div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Рекомендации по регистрации проекта</h4>
@@ -243,7 +243,7 @@
         <div class="services">
             <div class="row">
                 <div class="col-sm-4 step">
-                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=273_OBR_RF.pdf"> <i class="icon-download icn"> </i> </a></div>
+                    <div class="icon"><a href="<?=Yii::app()->baseUrl.'/downloads/273_OBR_RF.pdf'?>" target="_blank"> <i class="icon-download icn"> </i> </a></div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Образование в Российской Федерации</h4>
@@ -253,7 +253,7 @@
                 </div>
                 <!-- /.col-sm-4 -->
                 <div class="col-sm-4 step">
-                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=127.pdf"> <i class="icon-download icn"> </i> </a></div>
+                    <div class="icon"><a href="<?=Yii::app()->baseUrl.'/downloads/127.pdf'?>" target="_blank"> <i class="icon-download icn"> </i> </a></div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Наука и государственная научно-техническая политика</h4>
@@ -263,7 +263,7 @@
                 </div>
                 <!-- /.col-sm-4 -->
                 <div class="col-sm-4 step">
-                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=281.pdf"> <i class="icon-download icn"> </i> </a></div>
+                    <div class="icon"><a href="<?=Yii::app()->baseUrl.'/downloads/281.pdf'?>" target="_blank"> <i class="icon-download icn"> </i> </a></div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Научные платформы</h4>
@@ -282,7 +282,7 @@
             <div class="divide20"></div>
             <div class="row">
                 <div class="col-sm-4 step">
-                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=598.pdf"> <i class="icon-download icn"> </i> </a></div>
+                    <div class="icon"><a href="<?=Yii::app()->baseUrl.'/downloads/598.pdf'?>" target="_blank"> <i class="icon-download icn"> </i> </a></div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Совершенствование государственной политики в сфере здравоохранения</h4>
@@ -292,7 +292,7 @@
                 </div>
                 <!-- /.col-sm-4 -->
                 <div class="col-sm-4 step">
-                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=599.pdf"> <i class="icon-download icn"> </i> </a></div>
+                    <div class="icon"><a href="<?=Yii::app()->baseUrl.'/downloads/599.pdf'?>" target="_blank"> <i class="icon-download icn"> </i> </a></div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Меры по реализации государственной политики</h4>
@@ -302,7 +302,7 @@
                 </div>
                 <!-- /.col-sm-4 -->
                 <div class="col-sm-4 step">
-                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=2580.pdf"> <i class="icon-download icn"> </i> </a></div>
+                    <div class="icon"><a href="<?=Yii::app()->baseUrl.'/downloads/2580.pdf'?>" target="_blank"> <i class="icon-download icn"> </i> </a></div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Утверждение Стратегии развития медицинской науки в РФ </h4>
@@ -316,7 +316,7 @@
 
             <div class="row">
                 <div class="col-sm-4 step">
-                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=301.pdf"> <i class="icon-download icn"> </i> </a></div>
+                    <div class="icon"><a href="<?=Yii::app()->baseUrl.'/downloads/301.pdf'?>" target="_blank"> <i class="icon-download icn"> </i> </a></div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Утверждение государственной программы РФ </h4>
@@ -326,7 +326,7 @@
                 </div>
                 <!-- /.col-sm-4 -->
                 <div class="col-sm-4 step">
-                    <div class="icon"><a href="<?=Yii::app()->createUrl('ShowCase/getFile')?>?filename=INNOVATION.pdf"> <i class="icon-download icn"> </i> </a></div>
+                    <div class="icon"><a href="<?=Yii::app()->baseUrl.'/downloads/INNOVATION.pdf'?>" target="_blank"> <i class="icon-download icn"> </i> </a></div>
                     <!-- /.icon -->
                     <div class="text">
                         <h4>Утверждение Стратегии инновационного  развития РФ </h4>
