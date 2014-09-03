@@ -972,6 +972,9 @@ ul.navbar-nav li.navbar-menu .dropdown-menu {
     .right-side > .content {
         padding: 0px 5px 5px 5px;
     }
+    .profile-nav .user-heading h1 {
+        font-size: 18px;!important;
+    }
 
     body > .header {
 		position: fixed;

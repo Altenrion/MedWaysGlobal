@@ -73,6 +73,11 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
         .profile .grid-header img {
              margin: 0em 0em;
         }
+        @media screen and (max-width: 560px) {
+            .profile-nav .user-heading h1 {
+                font-size: 18px;!important;
+            }
+        }
     </style>
 
 
@@ -127,7 +132,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                         </div>
                 </aside>
             </div>
-            
+
         </div>
 
 
