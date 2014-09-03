@@ -58,22 +58,31 @@ if(isset($data) && !is_null($data)){
 <!-- BEGIN USER PROFILE -->
 <div class="col-md-12">
 
-<div class="grid profile">
+<div class="grid ">
 
-<div class="grid-header">
-    <div class="col-xs-9">
-        <div class="row">
-            <div class="col-xs-12 col-sm-1">
-            </div>
-            <div class="col-xs-12 col-sm-8 persnal">
-                <h3>Проект</h3>
-                <p><i class="fa fa-fw fa-sort-numeric-asc"></i> <?= $this->MakeOrder($data[0]['id']) //isset($role)?($role):('')?></p>
-<!--                <p><i class="fa fa-fw fa-envelope"></i> --><?//=Yii::app()->user->email ?><!--</p>-->
-            </div>
+<div class="grid-header" style="border:0px;">
+    <div class="grid-header" style="border:0px;">
+        <i class="fa fa-graduation-cap"></i>
+        <span class="grid-title">Проект <small style="font-size: 11px;"><?= $this->MakeOrder($data[0]['id']) ?></small> </span>
+        <div class="pull-right grid-tools">
+            <a data-widget="collapse" title="Collapse"><i class="fa fa-chevron-up"></i></a>
+            <a data-widget="reload" title="Reload"><i class="fa fa-refresh"></i></a>
+            <a data-widget="remove" title="Remove"><i class="fa fa-times"></i></a>
         </div>
     </div>
-    <div class="col-xs-3 text-right visio">
-    </div>
+<!--    <div class="col-xs-9">-->
+<!--        <div class="row">-->
+<!--            <div class="col-xs-12 col-sm-1">-->
+<!--            </div>-->
+<!--            <div class="col-xs-12 col-sm-8 persnal">-->
+<!--                <h3>Проект</h3>-->
+<!--                <p><i class="fa fa-fw fa-sort-numeric-asc"></i> --><?//= $this->MakeOrder($data[0]['id']) //isset($role)?($role):('')?><!--</p>-->
+<!--<!--                <p><i class="fa fa-fw fa-envelope"></i> --><?////=Yii::app()->user->email ?><!--<!--</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="col-xs-3 text-right visio">-->
+<!--    </div>-->
 </div>
 
 <div class="grid-body">

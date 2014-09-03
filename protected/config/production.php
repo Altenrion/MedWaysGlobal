@@ -6,7 +6,6 @@ Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 Yii::setPathOfAlias('editable', dirname(__FILE__).'/../extensions/x-editable');
 Yii::setPathOfAlias('cabinet', dirname(__FILE__).'/../extensions/cabinet');
 
-
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
@@ -25,6 +24,7 @@ return array(
 		        'application.components.*',
                 'editable.*',
                 'ext.yii-mail.YiiMailMessage',
+                'cabinet.widgets.BrowserCounter'
 	    ),
 
         'defaultController'=>'ShowCase',

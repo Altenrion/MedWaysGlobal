@@ -25,10 +25,9 @@
 <section class="content">
 			<div class="row ">
                 <div class="col-md-12">
-
+                    <? $this->widget("cabinet.widgets.BrowserCounter") ?>
 
                 </div>
-
 
 			</div><!--/profile-->
 

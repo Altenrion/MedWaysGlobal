@@ -20,7 +20,7 @@
     <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408512630498" ignored="false" />
     <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409511471303" ignored="false" />
     <file path="/login.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407829978865" ignored="false" />
-    <file path="/dummy.xml" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409507774703" ignored="false" />
+    <file path="/dummy.xml" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409683777357" ignored="false" />
     <file path="/partners.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409519042368" ignored="false" />
     <file path="/statistics.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409518978936" ignored="false" />
     <file path="/team.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406804278906" ignored="false" />
@@ -63,7 +63,7 @@
     <file path="/CUserIdentity.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407569744508" ignored="false" />
     <file path="/Users.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409382158423" ignored="false" />
     <file path="/MyTraits.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407570938843" ignored="false" />
-    <file path="/AutorizedController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409517053936" ignored="false" />
+    <file path="/AutorizedController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409679866491" ignored="false" />
     <file path="/Users_old.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407620556572" ignored="false" />
     <file path="/regist.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407659269252" ignored="false" />
     <file path="/Subscriber.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407657729038" ignored="false" />
@@ -81,7 +81,7 @@
     <file path="/profile.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409341652810" ignored="false" />
     <file path="/Bootstrap.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408173524166" ignored="false" />
     <file path="/MyEditsToEditable.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409264261303" ignored="false" />
-    <file path="/project.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409507770570" ignored="false" />
+    <file path="/project.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409672625502" ignored="false" />
     <file path="/news.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409515819423" ignored="false" />
     <file path="/project_statistics.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408293137756" ignored="false" />
     <file path="/ProjectRegistry.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408514143945" ignored="false" />
@@ -111,7 +111,7 @@
     <file path="$PROJECT_DIR$/../Coming_soon/js/modernizr.custom.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409081621641" ignored="false" />
     <file path="$PROJECT_DIR$/../Coming_soon/js/bootstrap.min.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409081646363" ignored="false" />
     <file path="$PROJECT_DIR$/../Coming_soon/js/soon/plugins.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409081677813" ignored="false" />
-    <file path="$PROJECT_DIR$/../Coming_soon/js/soon/custom.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409083493397" ignored="false" />
+    <file path="$PROJECT_DIR$/../Coming_soon/js/soon/custom.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409674045443" ignored="false" />
     <file path="$PROJECT_DIR$/../Coming_soon/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409082520316" ignored="false" />
     <file path="$PROJECT_DIR$/../Coming_soon/log_emails.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409082262517" ignored="false" />
     <file path="/log_emails.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409082259350" ignored="false" />
@@ -120,7 +120,7 @@
     <file path="/404.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409125046474" ignored="false" />
     <file path="/lockScreen.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409137779037" ignored="false" />
     <file path="/lockscreen.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409131650084" ignored="false" />
-    <file path="/WebUser.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409131987929" ignored="false" />
+    <file path="/WebUser.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409678999263" ignored="false" />
     <file path="/main.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409161649898" ignored="false" />
     <file path="/CHttpRequest.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409136998308" ignored="false" />
     <file path="$PROJECT_DIR$/../Testing/test_serialize.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409224251209" ignored="false" />
@@ -129,11 +129,15 @@
     <file path="/clients.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409338102036" ignored="false" />
     <file path="/yiic.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409398404323" ignored="false" />
     <file path="$PROJECT_DIR$/../Testing/mail_template.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409511095424" ignored="false" />
-    <file path="/pager.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409495538134" ignored="false" />
+    <file path="/pager.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409685472593" ignored="false" />
     <file path="$PROJECT_DIR$/../Testing/tes.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409505465511" ignored="false" />
     <file path="/tes.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409505263337" ignored="false" />
     <file path="$PROJECT_DIR$/../Testing/insert_spec.sql" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409505474393" ignored="false" />
-    <file path="/dashboard.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409515445264" ignored="false" />
+    <file path="/dashboard.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409679214317" ignored="false" />
+    <file path="/BrowserCounter.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409719769085" ignored="false" />
+    <file path="/body.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409730494311" ignored="false" />
+    <file path="/browser_counter.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409728504801" ignored="false" />
+    <file path="/browser_counter.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409686354115" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,43 +157,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
+      <file leaf-file-name="BrowserCounter.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/BrowserCounter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="223" column="166" selection-start="14642" selection-end="14642" vertical-scroll-proportion="3.2692308">
+            <state line="25" column="0" selection-start="957" selection-end="957" vertical-scroll-proportion="-12.423077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="body.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/views/body.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="-0.0">
               <folding>
-                <element signature="n#style#0;n#t#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#3;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="partners.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/partners.php">
+      <file leaf-file-name="browser_counter.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/assets/browser_counter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="41" selection-start="2803" selection-end="2803" vertical-scroll-proportion="-8.843137">
+            <state line="69" column="0" selection-start="2041" selection-end="2041" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Proto.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
+      <file leaf-file-name="dashboard.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="202" column="119" selection-start="11132" selection-end="11132" vertical-scroll-proportion="-17.846153">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="browser_test.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/browser_test.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="78" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.5157526">
+            <state line="28" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="0.43640608">
               <folding />
             </state>
           </provider>
@@ -205,22 +205,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/config/production.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
-        <option value="$PROJECT_DIR$/downloads/mail_template.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/dashboard.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/info.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/news.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/cabinet/widgets/BrowserCounter/views/body.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/cabinet/widgets/BrowserCounter/assets/browser_counter.js" />
+        <option value="$PROJECT_DIR$/protected/extensions/cabinet/widgets/BrowserCounter/assets/browser_counter.css" />
+        <option value="$PROJECT_DIR$/protected/config/devel.php" />
+        <option value="$PROJECT_DIR$/protected/components/WebUser.php" />
+        <option value="$PROJECT_DIR$/protected/components/UserIdentity.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/statistics.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/partners.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
-        <option value="$PROJECT_DIR$/browser_test.php" />
+        <option value="$PROJECT_DIR$/uploads/clients.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/css/pager.css" />
+        <option value="$USER_HOME$/Downloads/products-WB048905J/html/charts.html" />
+        <option value="$PROJECT_DIR$/protected/extensions/cabinet/widgets/BrowserCounter.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/cabinet/widgets/assets/browser_counter.js" />
+        <option value="$PROJECT_DIR$/protected/extensions/cabinet/widgets/assets/browser_counter.css" />
+        <option value="$PROJECT_DIR$/protected/extensions/cabinet/widgets/views/body.php" />
+        <option value="$PROJECT_DIR$/protected/config/production.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/dashboard.php" />
       </list>
     </option>
   </component>
@@ -347,33 +347,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="showCase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
+              <option name="myItemId" value="autorized" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -419,11 +393,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -436,7 +406,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.updates" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Testing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Coming_soon" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="GoToClass.includeJavaFiles" value="false" />
@@ -445,18 +415,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\MedWaysGlobal\protected\extensions\cabinet\widgets\assets" />
       <recent name="C:\wamp\www\MedWaysGlobal\themes\bootstrap\views\autorized" />
       <recent name="C:\wamp\www\MedWaysGlobal\downloads" />
       <recent name="C:\wamp\www\MedWaysGlobal\images\anti_ie" />
       <recent name="C:\wamp\www\MedWaysGlobal\type\fontello" />
-      <recent name="C:\wamp\www\MedWaysGlobal\protected\extensions\cabinet\assets\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\MedWaysGlobal\protected\extensions\cabinet\widgets" />
+      <recent name="C:\wamp\www\MedWaysGlobal\protected\extensions\cabinet\widgets\BrowserCounter" />
       <recent name="C:\wamp\www\MedWaysGlobal\downloads" />
       <recent name="C:\wamp\www\MedWaysGlobal\images\art" />
       <recent name="C:\wamp\www\MedWaysGlobal\css" />
-      <recent name="C:\wamp\www\MedWaysGlobal\images\org" />
-      <recent name="C:\wamp\www\MedWaysGlobal\images\avatars" />
     </key>
   </component>
   <component name="RunManager">
@@ -524,13 +494,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22091782" sideWeight="0.84268427" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15848452" sideWeight="0.84268427" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -608,127 +578,126 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/css/pager.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="21" selection-start="3242" selection-end="3242" vertical-scroll-proportion="0.6646919">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Adminka.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="94" selection-start="5929" selection-end="6007" vertical-scroll-proportion="0.6646919">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="18" selection-start="607" selection-end="607" vertical-scroll-proportion="-17.653847">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="-14.384615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/news.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="698" selection-end="698" vertical-scroll-proportion="-17.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="48" selection-start="416" selection-end="416" vertical-scroll-proportion="-7.8461537">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="211" column="89" selection-start="5422" selection-end="5422" vertical-scroll-proportion="-22.884615">
-          <folding>
-            <marker date="1409517441298" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="577" selection-end="736" vertical-scroll-proportion="-17.653847">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="227" column="104" selection-start="10662" selection-end="10662" vertical-scroll-proportion="0.46441072">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="2140" selection-end="2140" vertical-scroll-proportion="0.33722287">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="46" selection-start="3591" selection-end="3591" vertical-scroll-proportion="0.61899036">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/statistics.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="2642" selection-end="2642" vertical-scroll-proportion="0.7049763">
-          <folding>
-            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="223" column="166" selection-start="14642" selection-end="14642" vertical-scroll-proportion="3.2692308">
-          <folding>
-            <element signature="n#style#0;n#t#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#3;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/partners.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="41" selection-start="2803" selection-end="2803" vertical-scroll-proportion="-8.843137">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="119" selection-start="11132" selection-end="11132" vertical-scroll-proportion="-17.846153">
+        <state line="3" column="10" selection-start="13" selection-end="13" vertical-scroll-proportion="0.057757646">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/browser_test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="78" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.5157526">
+        <state line="15" column="88" selection-start="1007" selection-end="1018" vertical-scroll-proportion="0.2975496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="27" selection-start="160" selection-end="160" vertical-scroll-proportion="-2.6153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/assets/jquery-flot/excanvas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1398051820000" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/views/body.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/production.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="16" selection-start="968" selection-end="968" vertical-scroll-proportion="0.5157526">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="14" selection-start="966" selection-end="1000" vertical-scroll-proportion="-1.6779463">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/products-WB048905J/html/assets/js/chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="386" column="45" selection-start="8302" selection-end="8345" vertical-scroll-proportion="0.2751982">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1408812432000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/products-WB048905J/html/charts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="621" column="30" selection-start="22662" selection-end="22662" vertical-scroll-proportion="0.7139423">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="91" selection-start="198" selection-end="290" vertical-scroll-proportion="0.08056872">
+          <folding>
+            <element signature="e#844#865#0" expanded="true" />
+            <element signature="e#20735#20758#0" expanded="true" />
+            <element signature="e#21418#21437#0" expanded="true" />
+            <element signature="e#21635#21656#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/BrowserCounter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="957" selection-end="957" vertical-scroll-proportion="-12.423077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploads/clients.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/assets/browser_counter.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/assets/browser_counter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="0" selection-start="2041" selection-end="2041" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="0.43640608">
           <folding />
         </state>
       </provider>

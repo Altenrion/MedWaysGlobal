@@ -69,7 +69,7 @@ function beforeSubmit(){
         //Allowed file size is less than 1 MB (1048576)
         if(fsize>1048576)
         {
-            $("#output").html("<b>"+bytesToSize(fsize) +"</b> Too big Image file! <br />Please reduce the size of your photo using an image editor.");
+            $("#output").html("<b>"+bytesToSize(fsize) +"</b> Объем файла превышает 1 МБ! <br />");
             return false
         }
 

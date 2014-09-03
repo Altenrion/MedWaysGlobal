@@ -24,6 +24,7 @@ return array(
 		        'application.components.*',
                 'editable.*',
                 'ext.yii-mail.YiiMailMessage',
+                'cabinet.widgets.BrowserCounter'
 	    ),
 
         'defaultController'=>'ShowCase',

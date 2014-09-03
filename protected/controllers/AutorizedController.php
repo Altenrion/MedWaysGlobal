@@ -310,7 +310,7 @@ class AutorizedController extends Controller
     }
 
     public function getAvatar(){
-        if(is_null(Yii::app()->user->ava)){
+        if(is_null(Yii::app()->user->getState('ava'))){
             $ava = 'new.png';
         }
         else{ $ava = 'thumb_'.Yii::app()->user->ava;
