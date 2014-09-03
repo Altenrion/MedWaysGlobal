@@ -114,7 +114,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
 
 
         <div class="grid-header">
-            <div class="col-xs-9">
+            <div class="col-xs-12">
                 <aside class="profile-nav alt green-border">
 
                         <div class="user-heading alt ">
@@ -127,9 +127,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                         </div>
                 </aside>
             </div>
-            <div class="col-xs-3 text-right visio">
-                <p><a href="" title="Everyone can see your profile"><i class="fa fa-globe"></i> Виден всем</a></p>
-            </div>
+            
         </div>
 
 
