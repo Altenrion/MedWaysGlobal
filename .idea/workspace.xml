@@ -177,19 +177,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="browser_counter.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="browser_counter.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/assets/browser_counter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="0" selection-start="2041" selection-end="2041" vertical-scroll-proportion="0.0">
+            <state line="51" column="27" selection-start="1569" selection-end="1569" vertical-scroll-proportion="0.5186863">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="dashboard.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="0.43640608">
+            <state line="28" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="-14.384615">
               <folding />
             </state>
           </provider>
@@ -216,11 +216,11 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/css/pager.css" />
         <option value="$USER_HOME$/Downloads/products-WB048905J/html/charts.html" />
         <option value="$PROJECT_DIR$/protected/extensions/cabinet/widgets/BrowserCounter.php" />
-        <option value="$PROJECT_DIR$/protected/extensions/cabinet/widgets/assets/browser_counter.js" />
         <option value="$PROJECT_DIR$/protected/extensions/cabinet/widgets/assets/browser_counter.css" />
         <option value="$PROJECT_DIR$/protected/extensions/cabinet/widgets/views/body.php" />
         <option value="$PROJECT_DIR$/protected/config/production.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/dashboard.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/cabinet/widgets/assets/browser_counter.js" />
       </list>
     </option>
   </component>
@@ -380,20 +380,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -688,16 +674,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/assets/browser_counter.js">
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="2041" selection-end="2041" vertical-scroll-proportion="0.0">
+        <state line="28" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="-14.384615">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/dashboard.php">
+    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/assets/browser_counter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="0.43640608">
+        <state line="51" column="27" selection-start="1569" selection-end="1569" vertical-scroll-proportion="0.5186863">
           <folding />
         </state>
       </provider>

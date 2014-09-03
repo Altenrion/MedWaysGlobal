@@ -59,11 +59,11 @@ jQuery(function($){
                 $.each(clients, function(k, val){
 
                     dataSet5[i]['data'][1]= val;
-                    console.log(dataSet5[i])
+//                    console.log(dataSet5[i])
 
                     i++;
                 })
-                    console.log(dataSet5);
+//                    console.log(dataSet5);
                 initFlot();
         })}, 3000);
     });
