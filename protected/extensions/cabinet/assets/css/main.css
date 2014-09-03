@@ -969,7 +969,11 @@ ul.navbar-nav li.navbar-menu .dropdown-menu {
 }
 
 @media screen and (max-width: 560px) {
-	body > .header {
+    .right-side > .content {
+        padding: 0px 5px 5px 5px;
+    }
+
+    body > .header {
 		position: fixed;
 	}
 	body > .header .navbar {
