@@ -88,7 +88,7 @@
                                 <td align="left" valign="top" style="padding-top:0;padding-bottom:15px;padding-left:23px;padding-right:23px;margin:0;">
                                     <span style="font-family:Arial,Verdana,Helvetica;color:#6f6f6f;font-size:10px; font-style:italic;">
                                        Если Вы не регистрировались на это мероприятие, просто проигнорируйте и удалите это сообщение.
-									   Мы будем признательны, если Вы сообщите об этом по адресу Administration@medways.ru
+									   Мы будем признательны, если Вы сообщите об этом по адресу administration@medways.ru
                                     </span>
                                 </td>
                             </tr>

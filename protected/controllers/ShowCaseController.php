@@ -156,7 +156,7 @@ class ShowCaseController extends Controller
         $message->setBody($mail, 'text/html');
         $message->subject = 'Активация пароля - Этафета вузовской науки';
         $message->addTo($email);
-        $message->from = 'MedWAYS';
+        $message->from = Yii::app()->params['adminEmail'];
         Yii::app()->mail->send($message);
 
     }

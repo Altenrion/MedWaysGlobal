@@ -26,7 +26,7 @@ class AutorizedController extends Controller
     {
         return array(
             array('deny',
-                'actions'=>array('index', 'profile','info','news','project','statistics','projects','experts'),
+                'actions'=>array('index','dashboard', 'profile','info','news','project','statistics','projects','experts'),
                 'users'=>array('?'),
             ),
             array('allow',
@@ -38,12 +38,16 @@ class AutorizedController extends Controller
                 'roles'=>array('Manager'),
             ),
             array('allow',
+                'actions'=>array('dashboard'),
+                'roles'=>array('Dev'),
+            ),
+            array('allow',
                 'actions'=>array('projects','statistics'),
                 'roles'=>array('Exp1','Exp2','Exp3','Dev',),
             ),
 
             array('deny',
-                'actions'=>array('index', 'profile','info','news','project','statistics','projects'),
+                'actions'=>array('index','dashboard', 'profile','info','news','project','statistics','projects'),
                 'users'=>array('*'),
             ),
         );

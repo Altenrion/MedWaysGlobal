@@ -148,7 +148,7 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		        'adminEmail'=>'Administration@altenrion.ru',
+		        'adminEmail'=>'Administration@medways.ru',
                 'hash_site_key' => 'dlfkgknbcvjkbsdkjflsdkhfdf34534jkHL$@#K$^kb',
                 'postsPerPage' => 10,
                 'downloads'=>Yii::app()->basePath,
