@@ -8,12 +8,12 @@
  */
 
 class BrowserCounter extends CWidget{
-    private $clientsFile;
+    private $method;
 
     public function init(){
         $assetDir = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet.widgets.assets') );
 
-        $this->clientsFile = Yii::app()->getBaseUrl().'/uploads/clients.php';
+        $this->method = Yii::app()->createUrl('Autorized/getBrowser');
 
         $cs = Yii::app()->getClientScript();
         $cs->registerScriptFile($assetDir.'/jquery-flot/jquery.flot.js', CClientScript::POS_END);
@@ -29,7 +29,7 @@ class BrowserCounter extends CWidget{
     public function run(){
 
          $this->render('body',array(
-             'clientsFile'=>$this->clientsFile,
+             'method'=>$this->method,
          ));
     }
 

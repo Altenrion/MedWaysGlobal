@@ -8,11 +8,6 @@ class AutorizedController extends Controller
     public  $layout = '//layouts/Cabinet';
     public $defaultAction = 'index';
 
-//    public function init() {
-//        parent::init();
-//        Yii::app()->errorHandler->errorAction= $this->actionError();
-//    }
-
 
     public function filters()
     {
@@ -311,6 +306,9 @@ class AutorizedController extends Controller
 
     public function actionGetBudget(){
         echo CJSON::encode(Editable::source(Budget::model()->findAll(), 'ID_BUDGET', 'NAME'));
+    }
+    public function actionGetBrowser(){
+        echo Browser::getBrowsers();
     }
 
     public function getAvatar(){

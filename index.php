@@ -1,16 +1,14 @@
 <?php
 
-
-
-
-
-        include('browser_test.php');
-
+        /**
+         * Определение среды
+        */
 
         defined('APPLICATION_ENV')
         || define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'production'));
         // Подключаем Yii
         $yii=dirname(__FILE__).'/framework/yii.php';
+
 
         /**
          * Включим дебаг если мы разработчики
@@ -21,9 +19,20 @@
             defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL', 3);
         }
 
-        // А вот так мы подключим нужную нам конфигурацию
+        /**
+         * А вот так мы подключим нужную нам конфигурацию
+         */
         $config = dirname(__FILE__).'/protected/config/'.APPLICATION_ENV.'.php';
 
         require_once($yii);
-        Yii::createWebApplication($config)->run();
+
+        $YiiApp = Yii::createWebApplication($config);
+
+
+        /**
+         * Тут можно подключить много всяких штук, но каунтер браузеров
+         *  перенесен в beforeAction класса Controller
+         */
+
+        $YiiApp->run();
 

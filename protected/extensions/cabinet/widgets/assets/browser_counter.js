@@ -9,9 +9,9 @@ var dataSet5 = [
     { label: "MSIE8", data: [1,10], color: "rgba(73, 125, 255, 0.7)" },
     { label: "MSIE9", data: [1,10], color: "rgba(58, 114, 255, 0.7)" },
     { label: "MSIE10", data: [1,10], color: "rgba(25, 90, 255, 0.7)" },
-    { label: "Trident/7", data: [1,10], color: "rgba(64, 64, 64, 0.7)" }
+    { label: "Others", data: [1,10], color: "rgba(64, 64, 64, 0.7)" }
 ]
-var clients ={  "Chrome":0, "Firefox":0, 'Safari':0, 'Opera':0, 'MSIE6':0, 'MSIE7':0, 'MSIE8':0, 'MSIE9':0, 'MSIE10':0, 'Trident/7':0 } ;
+var clients ={  "Chrome":0, "Firefox":0, 'Safari':0, 'Opera':0, 'MSIE6':0, 'MSIE7':0, 'MSIE8':0, 'MSIE9':0, 'MSIE10':0, 'Others':0 } ;
 
 function labelFormatter(label, series) {
     return "<div style='font-size:8pt; text-align:center; padding:2px; color:white;'>" + label + "<br/>" + Math.round(series.percent) + "%</div>";
@@ -48,7 +48,7 @@ $(function(){
 jQuery(function($){
     $(".browser_counter").each(function(){
 
-        var ClientsUrl = $(this).data("file");
+        var ClientsUrl = $(this).data("browsers");
 
         setInterval(function() {
 

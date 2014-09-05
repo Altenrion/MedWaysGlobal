@@ -1,4 +1,4 @@
-<div class="col-md-6 browser_counter" data-file="<?=$clientsFile ?>" >
+<div class="col-md-6 browser_counter" data-browsers="<?=$method ?>" >
     <div class="grid">
         <div class="grid-header">
             <i class="fa fa-bar-chart-o"></i>
