@@ -29,19 +29,6 @@
 
                 </div>
 
-                <?
-
-                $browsers= json_decode(file_get_contents('uploads/clients.php'));
-
-                $cli = 'Chrome';
-
-                var_dump($browsers->$cli++);
-                var_dump($browsers);
-
-//                file_put_contents('uploads/clients.php',json_encode($browsers));
-
-                ?>
-
 			</div><!--/profile-->
 
 </section>
