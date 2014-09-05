@@ -99,7 +99,7 @@
     <file path="/indd.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408531985550" ignored="false" />
     <file path="/MyJs.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408690568987" ignored="false" />
     <file path="/projects.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409769170220" ignored="false" />
-    <file path="/experts.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409501684730" ignored="false" />
+    <file path="/experts.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409953929541" ignored="false" />
     <file path="$PROJECT_DIR$/../Coming_soon/index.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409081957455" ignored="false" />
     <file path="$PROJECT_DIR$/../Coming_soon/css/bootstrap.min.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409081413472" ignored="false" />
     <file path="$PROJECT_DIR$/../Coming_soon/css/bootstrap-reset.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409081434185" ignored="false" />
@@ -160,10 +160,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dashboard.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="dashboard.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="654" selection-end="654" vertical-scroll-proportion="0.47607934">
+            <state line="29" column="22" selection-start="653" selection-end="653" vertical-scroll-proportion="-15.038462">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="experts.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/experts.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="79" column="28" selection-start="3574" selection-end="3574" vertical-scroll-proportion="0.5635939">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tables-basic.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/products-WB048905J/html/tables-basic.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="735" column="20" selection-start="24032" selection-end="25337" vertical-scroll-proportion="-19.019608">
               <folding />
             </state>
           </provider>
@@ -189,12 +207,12 @@
         <option value="$PROJECT_DIR$/protected/config/devel.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/dashboard.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/experts.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php" />
         <option value="$PROJECT_DIR$/protected/components/UserIdentity.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/lockScreen.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
         <option value="$PROJECT_DIR$/protected/components/Controller.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/experts.php" />
       </list>
     </option>
   </component>
@@ -604,13 +622,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/BrowserCounter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="952" selection-end="952" vertical-scroll-proportion="0.41656944">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="0" selection-start="951" selection-end="951" vertical-scroll-proportion="0.69428235">
@@ -703,13 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/experts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="3394" selection-end="3394" vertical-scroll-proportion="0.7024504">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="97" column="26" selection-start="3862" selection-end="3862" vertical-scroll-proportion="0.43640608">
@@ -719,7 +723,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="654" selection-end="654" vertical-scroll-proportion="0.47607934">
+        <state line="29" column="22" selection-start="653" selection-end="653" vertical-scroll-proportion="-15.038462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/products-WB048905J/html/tables-basic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="735" column="20" selection-start="24032" selection-end="25337" vertical-scroll-proportion="-19.019608">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/experts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="28" selection-start="3574" selection-end="3574" vertical-scroll-proportion="0.5635939">
           <folding />
         </state>
       </provider>

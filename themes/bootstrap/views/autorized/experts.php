@@ -37,7 +37,8 @@
                             </div>
                         </div>
                         <div class="grid-body">
-                            <table class="table table-hover">
+                            <div class="table-responsive">
+                            <table class="table table-striped">
                                 <thead>
                                 <tr>
                                     <th><?= $sort->link('id') ?></th>
@@ -45,6 +46,7 @@
                                     <th><?= $sort->link('L_NAME','Имя') ?></th>
                                     <th><?= $sort->link('S_NAME','Отчество') ?></th>
                                     <th><?= $sort->link('EMAIL','email') ?></th>
+                                    <th><?= $sort->link('roles','Роль') ?></th>
                                     <th>Управление</th>
 
                                 </tr>
@@ -57,6 +59,7 @@
                                         <td><?= $model->L_NAME  ?></td>
                                         <td><?= $model->S_NAME  ?></td>
                                         <td><?= $model->EMAIL  ?></td>
+                                        <td><?= $model->roles  ?></td>
                                         <td>
                                             <a href="#"><i class="fa fa-check bg-green action"></i></a>
                                             <a href="#"><i class="fa fa-pencil bg-blue action"></i></a>
@@ -74,8 +77,11 @@
 //                                    'class'=>'CLinkPager',
                                 )) ?>
 
+                            </div>
                         </div>
                     </div>
+
+
 
 
 
