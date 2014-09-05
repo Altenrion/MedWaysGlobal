@@ -75,7 +75,9 @@ if(isset($data) && !is_null($data)){
     <div class="grid-body">
     <ul class="nav nav-tabs">
         <li class="active"><a href="#profile" data-toggle="tab">Проект</a></li>
-        <li><a href="#settings" data-toggle="tab">Оценки</a></li>
+        <li class="disabled">
+            <a href="#settings_" data-toggle="tab">Оценки</a>
+        </li>
     </ul>
     <div class="tab-content">
 
