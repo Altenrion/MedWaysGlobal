@@ -8,30 +8,35 @@ class Controller extends CController
 
     protected function beforeAction($action)
     {
+
+
+
         /**
          * Узнаем к какому экшену идет обращение
          */
         $action_to_run = $action->getId();
 
-
         /**
          * Подключаем проверку браузера,
          */
         $browser_client =  $this->browserChecker($_SERVER['HTTP_USER_AGENT']);
-
-
+        /**
+         * Если не к экшену с каунтером то делаем каунт ;)
+         */
         if($action_to_run !== 'getBrowser'){
             Browser::setBrowser($browser_client[1]);
 //            return true;
         }
-
         if($browser_client[0] == 'no'){ header( 'Location:http://vuznauka2014.medways.ru/IE.html' ); }
 
 
+        if(Yii::app()->controller->id == 'autorized'){
+            if(Yii::app()->user->lock == 'locked' && $action_to_run !== 'lockScreen' && $action_to_run !== 'unlockScreen' ){
 
-        /**
-         * Если к экшену с каунтером то не делаем каунт ;)
-         */
+                $this->redirect(array('Autorized/lockScreen'));
+            }
+        }
+
 
 
         return true;

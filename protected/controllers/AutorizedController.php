@@ -133,7 +133,7 @@ class AutorizedController extends Controller
                 $model->attributes=$_POST['LoginForm'];
                 // validate user input and redirect to the previous page if valid
                 if($model->validate() && $model->login()){
-
+                    Yii::app()->user->setState('lock','unlocked');
                     $this->redirect(Yii::app()->createUrl('Autorized/profile'));
                 }
             }
@@ -168,6 +168,7 @@ class AutorizedController extends Controller
 
     public function actionLockScreen()
 	{
+        Yii::app()->user->setState('lock','locked');
 
 		$this->renderPartial('lockScreen');
 	}

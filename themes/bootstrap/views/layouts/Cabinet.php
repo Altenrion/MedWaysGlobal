@@ -94,9 +94,9 @@ Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/skins.css');
                         <a href="<?=Yii::app()->createUrl('ShowCase/index')?>"><i class="fa fa-eye"></i>На сайт</a>
                     </li>
 
-<!--                    <li>-->
-<!--                        <a target="_blank"  href="--><?//=Yii::app()->createUrl('Autorized/lockScreen')?><!--"><i class="fa fa-lock"></i>Заблокировать</a>-->
-<!--                    </li>-->
+                    <li>
+                        <a  href="<?=Yii::app()->createUrl('Autorized/lockScreen')?>"><i class="fa fa-lock"></i>Заблокировать</a>
+                    </li>
                     <li>
                         <a href="<?=Yii::app()->createUrl('Autorized/logout')?>"><i class="fa fa-power-off"></i>Выйти</a>
                     </li>

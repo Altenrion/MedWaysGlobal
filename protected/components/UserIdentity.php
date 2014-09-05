@@ -42,6 +42,7 @@ public function authenticate()
         {
                 $this->errorCode = self::ERROR_NONE;
                 $this->_id = $users->id;
+                $this->setState('lock', 'unlocked');
                 $this->setState('name', $users->F_NAME.' '.$users->L_NAME);
                 $this->setState('email', $users->EMAIL);
                 if(is_null($users->AVATAR) ){
