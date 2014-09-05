@@ -56,7 +56,7 @@
     <file path="/in.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409380658193" ignored="false" />
     <file path="$PROJECT_DIR$/../SPPR/protected/controllers/SiteController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407439509253" ignored="false" />
     <file path="/Constants.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407484976558" ignored="false" />
-    <file path="/Controller.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409947197547" ignored="false" />
+    <file path="/Controller.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409948871281" ignored="false" />
     <file path="$PROJECT_DIR$/../Testing/browser_test.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407492404868" ignored="false" />
     <file path="/browser_test.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409181660560" ignored="false" />
     <file path="/IE.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409814259540" ignored="false" />
@@ -160,10 +160,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dashboard.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="dashboard.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="654" selection-end="654" vertical-scroll-proportion="0.47607934">
+            <state line="30" column="0" selection-start="654" selection-end="654" vertical-scroll-proportion="-15.692307">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/components/Controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="0" selection-start="642" selection-end="642" vertical-scroll-proportion="0.5157526">
               <folding />
             </state>
           </provider>
@@ -207,12 +216,12 @@
         <option value="$PROJECT_DIR$/protected/components/Browser.php" />
         <option value="$PROJECT_DIR$/browser_test.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
-        <option value="$PROJECT_DIR$/protected/components/Controller.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/protected/extensions/cabinet/widgets/assets/browser_counter.js" />
         <option value="$PROJECT_DIR$/protected/config/production.php" />
         <option value="$PROJECT_DIR$/protected/config/devel.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/dashboard.php" />
+        <option value="$PROJECT_DIR$/protected/components/Controller.php" />
       </list>
     </option>
   </component>
@@ -377,6 +386,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -581,13 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="720" selection-end="720" vertical-scroll-proportion="0.59057075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/browser_test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="16" selection-start="59" selection-end="86" vertical-scroll-proportion="0.119019836">
@@ -673,7 +693,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="654" selection-end="654" vertical-scroll-proportion="0.47607934">
+        <state line="30" column="0" selection-start="654" selection-end="654" vertical-scroll-proportion="-15.692307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="642" selection-end="642" vertical-scroll-proportion="0.5157526">
           <folding />
         </state>
       </provider>

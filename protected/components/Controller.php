@@ -8,24 +8,31 @@ class Controller extends CController
 
     protected function beforeAction($action)
     {
+        /**
+         * Узнаем к какому экшену идет обращение
+         */
+        $action_to_run = $action->getId();
+
 
         /**
          * Подключаем проверку браузера,
          */
         $browser_client =  $this->browserChecker($_SERVER['HTTP_USER_AGENT']);
 
-        /**
-         * Узнаем к какому экшену идет обращение
-         */
-        $action_to_run = $action->getId();
+
+        if($action_to_run !== 'getBrowser'){
+            Browser::setBrowser($browser_client[1]);
+//            return true;
+        }
+
+        if($browser_client[0] == 'no'){ header( 'Location:http://vuznauka2014.medways.ru/IE.html' ); }
+
+
 
         /**
          * Если к экшену с каунтером то не делаем каунт ;)
          */
-        if($action_to_run !== 'getBrowser'){
-             Browser::setBrowser($browser_client);
-            return true;
-        }
+
 
         return true;
     }
@@ -65,8 +72,7 @@ class Controller extends CController
         elseif ( strpos($agent, 'MSIE 10.0') )     { $user_agent = 'Yes';  $cli = 'MSIE10';    }
         else{                                        $user_agent = 'Yes';  $cli = 'Others';    }
 
-        if($user_agent == 'no'){ header( 'Location:http://vuznauka2014.medways.ru/IE.html' ); }
-        if($user_agent == 'Yes'){ return $cli; }
+        return array($user_agent,$cli );
 
     }
 
