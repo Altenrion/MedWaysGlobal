@@ -107,12 +107,12 @@ class ShowCaseController extends Controller
                 $model->SUBJECT = $data->getPost('subject');
                 $model->QUESTION = $data->getPost('question');
 
-                $email_exist = $model->find("email='$email'");
-
-                if($email_exist){
-                    echo 'Вопрос не отправлен. Указанный email уже использовался';
-                    Yii::app()->end();
-                }
+//                $email_exist = $model->find("email='$email'");
+//
+//                if($email_exist){
+//                    echo 'Вопрос не отправлен. Указанный email уже использовался';
+//                    Yii::app()->end();
+//                }
                 if($model->save()){
                     echo 'Вопрос зарегистрирован. Ответ будет отправлен на указанный email';
                     Yii::app()->end();

@@ -26,94 +26,102 @@
 
       <h3 class="section-title">Часто задаваемые вопросы</h3>
 
-  <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus.</p>
+  <p>В настящем разделе вы сможете найти информацию о часто задаваемых вопросах.</p>
   <div class="divide30"></div>
 
         <div class="panel-group" id="accordion">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseOne"> 1. Donec ullamcorper nulla non metus auctor fringilla id nibh ultricies vehicula ut id elit? </a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseOne"> Что такое «Эстафета вузовской науки»? </a> </h4>
             </div>
             <div id="collapseOne" class="panel-collapse collapse">
-              <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+              <div class="panel-body">
+                  <p>Общероссийское научно-практическое мероприятие «Эстафета вузовской науки» (далее Эстафета) – это многоэтапный проект, направленный на выявление наукоемких биомедицинских научно-исследовательских проектов по приоритетным направлениям, предусмотренным Стратегией развития медицинской науки. Проекты отбираются путем проведения ряда конкурсов по всем медицинским вузам и организациям аффилированным с образовательными ведомственными медицинскими учреждениями.
+                  </p><p>Основная цель - поддержка ведущих научных коллективов, привлечение передовых исследовательских технологий в вузовскую (научно-образовательную) среду; создание условий продуктивной коммуникации медицинской науки и бизнеса для успешного вовлечения молодых ученых в эффективное научное сообщество.
+                  </p>
+              </div>
             </div>
           </div>
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseTwo"> 2. Integer posuere erat a ante venenatis dapibus malesuada magna mollis euismod? </a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseTwo"> Зачем участвовать в мероприятии?  </a> </h4>
             </div>
             <div id="collapseTwo" class="panel-collapse collapse">
-              <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+              <div class="panel-body"><p> Участниками Эстафеты являются медицинские образовательные учреждения и научные проекты.</p>
+
+                  <p><b class="section-title">ВУЗ-ПОБЕДИТЕЛЬ</b>: По результатам регионального этапа определяется вуз, максимальное количество научных проектов которого представлено к финальной экспертизе.</p>
+
+                  <p><b class="section-title">ПРОЕКТ-ПОБЕДИТЕЛЬ:</b> К очной презентации и церемонии награждения приглашаются проекты прошедшие региональный и федеральный конкурсные отборы.</p>
+                  <p>Победители будут награждены призами партнеров и дополнительно получат возможность привлечь внимание к проекту, одномоментно презентовать идею представителям нескольких фондов, инвесторам, представителям бизнес сообщества.</p>
+              </div>
             </div>
           </div>
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseThree"> 3. Duis mollis, est non commodo porta sem malesuada magna mollis euismod? </a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseThree"> Как проходит мероприятие? </a> </h4>
             </div>
             <div id="collapseThree" class="panel-collapse collapse">
-              <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+              <div class="panel-body"><p> Эстафета проходит в несколько этапов:</p>
+                  <ol>
+                      <li>Открытие Эстафеты: на этом этапе начинается массовое информирование о мероприятии.</li>
+                      <li>Региональный конкурсный отбор проектов: на этом этапе осуществляется регистрация научно-инновационных проектов по тематикам научных платформ (01.09.2014 – 15.10.2014); проводится региональная экспертиза (15.10.2014 – 01.11.2014). Лучшие работы подлежат экспертизе финального этапа.</li>
+                      <li>Федеральный конкурсный отбор проектов: на этом этапе проводится экспертиза проектов, победивших по результатам регионального этапа по всем Федеральным округам (01.11.2014 – 15.11.2014).</li>
+                  </ol>
+
+                 <p>По три проекта каждой научной платформы приглашаются для награждения и очной презентации в рамках Медицинского Форума «MedWAYS – ПЕРСПЕКТИВНЫЕ НАУЧНЫЕ НАПРАВЛЕНИЯ – 2014» 4-5 декабря 2014 года в ГБОУ ВПО Первый МГМУ им. И.М. Сеченова Минздрава России.</p>
+              </div>
             </div>
-          </div>
+            </div>
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseFour"> 4. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh? </a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseFour">Что значит аффилированный к вузу научный коллектив?   </a> </h4>
             </div>
             <div id="collapseFour" class="panel-collapse collapse">
-              <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+              <div class="panel-body"><p> Аффилированные к вузу учреждения - это научные коллективы прочих организации, позволяющие использовать собственные результаты интеллектуальной деятельности в научно-образовательных целях конкретному образовательному учреждению. В случае участия в Эстафете проектов аффилированных организаций, при регистрации необходимо указывать соответствующий вуз, в компетенции сотрудника которого будет подтверждение легитимности проекта.
+                  </p>
+              </div>
             </div>
           </div>
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseFive"> 5. Integer posuere erat a ante venenatis dapibus posuere velit aliquet? </a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseFive">Кто может участвовать в мероприятии?    </a> </h4>
             </div>
             <div id="collapseFive" class="panel-collapse collapse">
-              <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+              <div class="panel-body"><p>В Эстафете могут участвовать:
+                  <ul>
+                      <li>научные коллективы, команды которых представлены сотрудниками и/или обучающимися ведомственных
+                          медицинских учреждений;
+                      </li>
+                      <li>научные коллективы прочих организации, позволяющие использовать собственные результаты интеллектуальной деятельности в научно-образовательных целях конкретному образовательному учреждению.</li>
+                  </ul>
+
+                  </p>
+              </div>
             </div>
-          </div>
+            </div>
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseSix"> 6. Nullam id dolor id nibh ultricies sagittis lacus vel augue laoreet rutrum? </a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseSix"> Что необходимо описать в аннотации к проекту?    </a> </h4>
             </div>
             <div id="collapseSix" class="panel-collapse collapse">
-              <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+              <div class="panel-body"><p>Для завершения регистрации проекта необходимо загрузить полную аннотацию в PDF формате. В данном документе необходимо отразить следующие параметры:</p>
+                  <ul>
+                      <li>Соответствие проекта тематике заявленной научной платформы</li>
+                      <li>Актуальность исследования</li>
+                      <li>Научный коллектив</li>
+                      <li>Финансовая модель</li>
+                      <li>Конкурентные преимущества проекта</li>
+                      <li>Инновационность</li>
+                      <li>Информация о профильных публикациях, грантах и соисолнителях</li>
+                  </ul>
+              </div>
             </div>
           </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseSeven"> 7. Curabitur blandit tempus porttitor alacinia bibendum nulla consectetur? </a> </h4>
-            </div>
-            <div id="collapseSeven" class="panel-collapse collapse">
-              <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseEight"> 8. Etiam porta sem malesuada magna mollis euismod at eros? </a> </h4>
-            </div>
-            <div id="collapseEight" class="panel-collapse collapse">
-              <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseNine"> 9. Pellentesque ornare sem lacinia quam venenatis vestibulum? </a> </h4>
-            </div>
-            <div id="collapseNine" class="panel-collapse collapse">
-              <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseTen"> 10. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum? </a> </h4>
-            </div>
-            <div id="collapseTen" class="panel-collapse collapse">
-              <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
-            </div>
-          </div>
+
         </div>
         <div class="divide70"></div>
-        <h3>Couldn't find what you are looking for? Get in touch with us.</h3>
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        <h3>Есть другой вопрос? Задайте его нам:</h3>
+        <p> Воспользуйтесь формой ниже для отправки своего ворпоса, либо свяжитесь с организаторами по контактным данным указанным в правой части страницы.  </p>
         <div class="divide20"></div>
         <div class="form-container">
           <form class="forms" action="<?=Yii::app()->createUrl('ShowCase/feedbackQuestions')?>" method="post">
@@ -138,7 +146,7 @@
                   <input id="nocomment" value="" name="question_form" />
                 </li>
                 <li class="button-row">
-                  <input type="submit" value="Submit" name="submit" class="btn btn-submit bm0" />
+                  <input type="submit" value="Отправить" name="submit" class="btn btn-submit bm0" />
                   <span class="response alert alert-success"></span>
                 </li>
               </ol>

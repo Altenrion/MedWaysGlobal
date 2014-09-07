@@ -88,7 +88,7 @@ class AutorizedController extends Controller
         $pages->applyLimit($criteria);
 
         $sort = new CSort();
-        $sort->attributes = array('id','F_NAME','L_NAME','S_NAME','EMAIL');
+        $sort->attributes = array('id','F_NAME','L_NAME','S_NAME','EMAIL','roles');
         $sort->applyOrder($criteria);
         $models = Users::model()->findAll($criteria);
 
