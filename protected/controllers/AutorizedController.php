@@ -84,20 +84,13 @@ class AutorizedController extends Controller
         $count = Users::model()->count($criteria);
         $pages = new CPagination($count);
 
-        $pages->pageSize = 5;
+        $pages->pageSize = 10;
         $pages->applyLimit($criteria);
 
         $sort = new CSort();
         $sort->attributes = array('id','F_NAME','L_NAME','S_NAME','EMAIL','roles');
         $sort->applyOrder($criteria);
         $models = Users::model()->findAll($criteria);
-
-
-
-
-
-
-
 
 
 

@@ -187,11 +187,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Proto.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Proto.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="0" selection-start="4473" selection-end="4473" vertical-scroll-proportion="0.28199053">
+            <state line="71" column="0" selection-start="4473" selection-end="4473" vertical-scroll-proportion="-42.5">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AutorizedController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="95" column="0" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.39439908">
+              <folding>
+                <marker date="1410123022434" expanded="false" signature="9726:9738" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -218,10 +229,10 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/lockScreen.php" />
         <option value="$PROJECT_DIR$/protected/components/Controller.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/experts.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/feedback.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
       </list>
     </option>
   </component>
@@ -661,15 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="80" selection-start="2209" selection-end="2209" vertical-scroll-proportion="0.57526255">
-          <folding>
-            <marker date="1409954431847" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/experts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="62" selection-start="1950" selection-end="1955" vertical-scroll-proportion="0.72228706">
@@ -700,8 +702,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="4473" selection-end="4473" vertical-scroll-proportion="0.28199053">
+        <state line="71" column="0" selection-start="4473" selection-end="4473" vertical-scroll-proportion="-42.5">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="0" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.39439908">
+          <folding>
+            <marker date="1410123022434" expanded="false" signature="9726:9738" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
