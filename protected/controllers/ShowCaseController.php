@@ -333,7 +333,7 @@ class ShowCaseController extends Controller
                 $_POST['name']= 'AKTIV_KEY';
                 $_POST['value']= '100';
 
-                $this->forward('Autorized/updateProfile',false);
+                $this->forward('ShowCase/updateProfile',false);
                 //$this->redirect(Yii::app()->createUrl('ShowCase/login'));
             }
         }
@@ -360,4 +360,11 @@ class ShowCaseController extends Controller
         }
         return  $num.' проект'.$term;
     }
+
+    public function actionUpdateProfile(){
+        $edit = new EditableSaver('Users');
+        $edit->scenario = 'update';
+        $edit->update();
+    }
+
 }
