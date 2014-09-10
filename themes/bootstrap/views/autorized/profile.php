@@ -472,28 +472,28 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
 
 
 
-    if(isset($messages) && !is_null($messages)){
-        $gritter_init = "function initNotification() { $(window).load(function(){";
-        $timer = '';
-
-        foreach ($messages as $mes) {
-            $timer= $timer+1000;
-            $gritter_init .= "setTimeout(function(){
-                                $.gritter.add({
-                                    class_name: '".$mes[0]."',
-                                    title: '".$mes[1]."',
-                                    text: '".$mes[2]."',
-
-                                    time: ''
-                                });
-                                return false;
-                            }, ".$timer.");" ;
-        }
-        $gritter_init .= "}); } $(function() {  'use strict';  initNotification();   });";
-        Yii::app()->clientScript->registerScript('griiter_show',$gritter_init, CClientScript::POS_READY);
-
-
-    }
+//    if(isset($messages) && !is_null($messages)){
+//        $gritter_init = "function initNotification() { $(window).load(function(){";
+//        $timer = '';
+//
+//        foreach ($messages as $mes) {
+//            $timer= $timer+1000;
+//            $gritter_init .= "setTimeout(function(){
+//                                $.gritter.add({
+//                                    class_name: '".$mes[0]."',
+//                                    title: '".$mes[1]."',
+//                                    text: '".$mes[2]."',
+//
+//                                    time: ''
+//                                });
+//                                return false;
+//                            }, ".$timer.");" ;
+//        }
+//        $gritter_init .= "}); } $(function() {  'use strict';  initNotification();   });";
+//        Yii::app()->clientScript->registerScript('griiter_show',$gritter_init, CClientScript::POS_READY);
+//
+//
+//    }
 
 
 

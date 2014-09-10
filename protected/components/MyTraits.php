@@ -24,6 +24,13 @@ trait MyTraits {
 
     }
 
+    public function setParams($array){
+        foreach($array as $ar_k=>$ar_v){
+
+            $_POST[$ar_k] = $ar_v;
+        }
+    }
+
 
 
 

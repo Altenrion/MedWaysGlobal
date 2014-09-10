@@ -99,4 +99,3 @@
             </table><br/><br/>
 </body>
 
-http://vuznauka2014.medways.ru/ShowCase/aktivation?email=nekit_001@mail.ru
