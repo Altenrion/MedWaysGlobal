@@ -15,14 +15,14 @@
     <file path="/main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407487814422" ignored="false" />
     <file path="/Proto.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409519208839" ignored="false" />
     <file path="/Autentification_main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406121974522" ignored="false" />
-    <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409495049327" ignored="false" />
+    <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410333628235" ignored="false" />
     <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410123613394" ignored="false" />
     <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408512630498" ignored="false" />
     <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409862514704" ignored="false" />
     <file path="/login.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407829978865" ignored="false" />
-    <file path="/dummy.xml" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409683777357" ignored="false" />
+    <file path="/dummy.xml" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410183480288" ignored="false" />
     <file path="/partners.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409519042368" ignored="false" />
-    <file path="/statistics.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409518978936" ignored="false" />
+    <file path="/statistics.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410352421901" ignored="false" />
     <file path="/team.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406804278906" ignored="false" />
     <file path="/myscripts.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407769137762" ignored="false" />
     <file path="/tabs.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406405672507" ignored="false" />
@@ -62,7 +62,7 @@
     <file path="/IE.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409814259540" ignored="false" />
     <file path="/CUserIdentity.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407569744508" ignored="false" />
     <file path="/Users.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409382158423" ignored="false" />
-    <file path="/MyTraits.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407570938843" ignored="false" />
+    <file path="/MyTraits.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410270754405" ignored="false" />
     <file path="/AutorizedController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409952107065" ignored="false" />
     <file path="/Users_old.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407620556572" ignored="false" />
     <file path="/regist.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407659269252" ignored="false" />
@@ -121,7 +121,7 @@
     <file path="/lockScreen.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409953320280" ignored="false" />
     <file path="/lockscreen.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409131650084" ignored="false" />
     <file path="/WebUser.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409678999263" ignored="false" />
-    <file path="/main.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409772700498" ignored="false" />
+    <file path="/main.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410184993481" ignored="false" />
     <file path="/CHttpRequest.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409136998308" ignored="false" />
     <file path="$PROJECT_DIR$/../Testing/test_serialize.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409224251209" ignored="false" />
     <file path="/test_serialize.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409224139161" ignored="false" />
@@ -141,8 +141,16 @@
     <file path="/yii.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409901905541" ignored="false" />
     <file path="/production.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409903279546" ignored="false" />
     <file path="/Browser.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409910026055" ignored="false" />
-    <file path="$PROJECT_DIR$/../testing/timestamp.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410170707254" ignored="false" />
-    <file path="/timestamp.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410170706303" ignored="false" />
+    <file path="$PROJECT_DIR$/../testing/timestamp.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410181830288" ignored="false" />
+    <file path="/timestamp.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410181640692" ignored="false" />
+    <file path="$USER_HOME$/simbix/user/adm.tmksrv.kbpm.ru/altenrion/lk/index2.tpl" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410183826240" ignored="false" />
+    <file path="$USER_HOME$/simbix/user/adm.tmksrv.kbpm.ru/altenrion/lk/index2.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410182015789" ignored="false" />
+    <file path="/index2.tpl" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410183824752" ignored="false" />
+    <file path="$USER_HOME$/simbix/user/adm.tmksrv.kbpm.ru/altenrion/lk/main.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410184994764" ignored="false" />
+    <file path="/NotifyController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410270284314" ignored="false" />
+    <file path="/Notify.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410352748075" ignored="false" />
+    <file path="/Notificator.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410346011583" ignored="false" />
+    <file path="/notify.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410350982667" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,26 +173,93 @@
       <file leaf-file-name="dashboard.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="22" selection-start="653" selection-end="653" vertical-scroll-proportion="-0.65384614">
+            <state line="27" column="73" selection-start="575" selection-end="629" vertical-scroll-proportion="-13.730769">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="feedback.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/feedback.php">
+      <file leaf-file-name="Notify.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/components/Notify.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="64" selection-start="9075" selection-end="9075" vertical-scroll-proportion="-0.65384614">
+            <state line="92" column="5" selection-start="3076" selection-end="3076" vertical-scroll-proportion="0.5557206">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mail_template.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/downloads/mail_template.php">
+      <file leaf-file-name="NotificationStorage.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/models/medways/NotificationStorage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="0" selection-start="6358" selection-end="6358" vertical-scroll-proportion="0.85572845">
+            <state line="38" column="50" selection-start="1049" selection-end="1049" vertical-scroll-proportion="-11.115385">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="490" column="11" selection-start="24960" selection-end="24960" vertical-scroll-proportion="-16.884615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AutorizedController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="11" selection-start="66" selection-end="66" vertical-scroll-proportion="113.11539">
+              <folding>
+                <marker date="1410165112107" expanded="false" signature="9726:9738" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="statistics.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="39" selection-start="618" selection-end="618" vertical-scroll-proportion="-13.307693">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Notificator.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/Notificator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="37" selection-start="1057" selection-end="1057" vertical-scroll-proportion="-13.076923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notify.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/views/notify.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="31" selection-start="1123" selection-end="1129" vertical-scroll-proportion="-10.692307">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cabinet.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="177" column="58" selection-start="8127" selection-end="8127" vertical-scroll-proportion="-12.153846">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notification.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/js/notification.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="12" selection-start="685" selection-end="698" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -199,15 +274,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/extensions/cabinet/widgets/assets/browser_counter.js" />
-        <option value="$PROJECT_DIR$/protected/config/production.php" />
-        <option value="$PROJECT_DIR$/protected/config/devel.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/dashboard.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php" />
-        <option value="$PROJECT_DIR$/protected/components/UserIdentity.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/lockScreen.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/experts.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/feedback.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
@@ -215,6 +281,15 @@
         <option value="$PROJECT_DIR$/protected/components/Controller.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
         <option value="$PROJECT_DIR$/downloads/mail_template.php" />
+        <option value="$PROJECT_DIR$/protected/components/MyTraits.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/NotifyController.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/cabinet/widgets/Notificator.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/cabinet/widgets/views/notify.php" />
+        <option value="$PROJECT_DIR$/protected/models/medways/NotificationStorage.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
+        <option value="$PROJECT_DIR$/protected/components/Notify.php" />
       </list>
     </option>
   </component>
@@ -322,6 +397,32 @@
               <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autorized" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -337,6 +438,154 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -346,7 +595,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.updates" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../testing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="GoToClass.includeJavaFiles" value="false" />
@@ -366,18 +615,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp\www\MedWaysGlobal\protected\extensions\cabinet\widgets\views" />
+      <recent name="D:\wamp\www\MedWaysGlobal\protected\extensions\cabinet\widgets" />
       <recent name="C:\wamp\www\MedWaysGlobal\protected\extensions\cabinet\widgets\assets" />
       <recent name="C:\wamp\www\MedWaysGlobal\themes\bootstrap\views\autorized" />
       <recent name="C:\wamp\www\MedWaysGlobal\downloads" />
-      <recent name="C:\wamp\www\MedWaysGlobal\images\anti_ie" />
-      <recent name="C:\wamp\www\MedWaysGlobal\type\fontello" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\wamp\www\MedWaysGlobal\protected\components" />
       <recent name="C:\wamp\www\MedWaysGlobal\downloads" />
       <recent name="C:\wamp\www\MedWaysGlobal\protected\extensions\cabinet\widgets" />
       <recent name="C:\wamp\www\MedWaysGlobal\protected\extensions\cabinet\widgets\BrowserCounter" />
       <recent name="C:\wamp\www\MedWaysGlobal\images\art" />
-      <recent name="C:\wamp\www\MedWaysGlobal\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -447,14 +696,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="916" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51778656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16216215" sideWeight="0.6710671" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24388674" sideWeight="0.48221344" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -463,7 +713,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15731573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -532,102 +781,118 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/medways/Stage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="27" selection-start="2683" selection-end="2683" vertical-scroll-proportion="0.47607934" />
+        <state line="101" column="26" selection-start="2838" selection-end="2930" vertical-scroll-proportion="0.941691">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/lockScreen.php">
+    <entry file="file://$PROJECT_DIR$/protected/components/MapStat.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="70" selection-start="1756" selection-end="1756" vertical-scroll-proportion="0.3570595" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
+    <entry file="file://$PROJECT_DIR$/protected/components/MyTraits.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="52" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.57526255" />
+        <state line="32" column="0" selection-start="668" selection-end="668" vertical-scroll-proportion="0.6251768">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
+    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/BrowserCounter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="26" selection-start="3862" selection-end="3862" vertical-scroll-proportion="0.43640608" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/experts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="62" selection-start="1950" selection-end="1955" vertical-scroll-proportion="0.72228706" />
+        <state line="36" column="1" selection-start="0" selection-end="1078" vertical-scroll-proportion="0.7434402">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="22" selection-start="653" selection-end="653" vertical-scroll-proportion="-0.65384614">
+        <state line="27" column="73" selection-start="575" selection-end="629" vertical-scroll-proportion="-13.730769">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
+    <entry file="file://$PROJECT_DIR$/protected/extensions/x-editable/EditableSaver.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="132" selection-start="4330" selection-end="4330" vertical-scroll-proportion="0.72511846" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/yiic">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="41" selection-start="351" selection-end="354" vertical-scroll-proportion="0.09618105">
+        <state line="98" column="7" selection-start="2027" selection-end="2027" vertical-scroll-proportion="0.5947522">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework/yiic.php">
+    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/Notificator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="18" selection-start="525" selection-end="525" vertical-scroll-proportion="0.24045262">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/yiic">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="44" selection-start="70" selection-end="70" vertical-scroll-proportion="0.072135784">
+        <state line="26" column="37" selection-start="1057" selection-end="1057" vertical-scroll-proportion="-13.076923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="363" column="42" selection-start="9533" selection-end="9533" vertical-scroll-proportion="0.71145684">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="51" selection-start="872" selection-end="881" vertical-scroll-proportion="0.024045262">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="4473" selection-end="4473" vertical-scroll-proportion="0.024495678">
+        <state line="15" column="17" selection-start="229" selection-end="229" vertical-scroll-proportion="-2.3454812">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="3" selection-start="4060" selection-end="4210" vertical-scroll-proportion="0.024045262">
+        <state line="5" column="11" selection-start="66" selection-end="66" vertical-scroll-proportion="113.11539">
+          <folding>
+            <marker date="1410165112107" expanded="false" signature="9726:9738" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/js/notification.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="12" selection-start="685" selection-end="698" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="177" column="58" selection-start="8127" selection-end="8127" vertical-scroll-proportion="-12.153846">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/feedback.php">
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="64" selection-start="9075" selection-end="9075" vertical-scroll-proportion="-0.65384614">
+        <state line="490" column="11" selection-start="24960" selection-end="24960" vertical-scroll-proportion="-16.884615">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/downloads/mail_template.php">
+    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/views/notify.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="0" selection-start="6358" selection-end="6358" vertical-scroll-proportion="0.85572845">
+        <state line="30" column="31" selection-start="1123" selection-end="1129" vertical-scroll-proportion="-10.692307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/medways/NotificationStorage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="50" selection-start="1049" selection-end="1049" vertical-scroll-proportion="-11.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="39" selection-start="618" selection-end="618" vertical-scroll-proportion="-13.307693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/Notify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="5" selection-start="3076" selection-end="3076" vertical-scroll-proportion="0.5557206">
           <folding />
         </state>
       </provider>

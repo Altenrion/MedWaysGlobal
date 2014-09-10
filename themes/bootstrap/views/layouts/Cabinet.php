@@ -175,6 +175,7 @@ Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/skins.css');
 
     <!-- BEGIN CONTENT -->
     <aside class="right-side">
+        <? $this->widget("cabinet.widgets.Notificator") ?>
                     <?php echo $content; ?>
     </aside>
     <!-- END CONTENT -->
