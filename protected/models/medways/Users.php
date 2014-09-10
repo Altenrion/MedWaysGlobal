@@ -261,7 +261,7 @@ class Users extends CActiveRecord
 
     public function getDistrictProjectsPoints(){
         $data = Yii::app()->db->createCommand("SELECT
-                  `ID_DISTRICT` , COUNT(*) as `NUM`
+                  `ID_DISTRICT` , COUNT(*) as NUM
                   FROM `m_w_users`
                   WHERE `AKTIV_KEY`='100'
                     AND roles='Manager'
@@ -271,7 +271,7 @@ class Users extends CActiveRecord
     }
     public function getDistrictUniversPoints(){
         $data = Yii::app()->db->createCommand("SELECT
-                  `ID_DISTRICT`,  COUNT(DISTINCT `ID_UNIVER`)  as `NUM`
+                  `ID_DISTRICT`,  COUNT(DISTINCT `ID_UNIVER`)  as NUM
                   FROM `m_w_users`
                   WHERE `AKTIV_KEY`='100'
                     AND roles='Manager'
