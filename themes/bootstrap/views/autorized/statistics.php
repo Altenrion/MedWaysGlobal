@@ -32,11 +32,11 @@
 
 
                 <?
-                $notify = new Notify();
-
-                $notify->SetNotify($address='Dev',$user_id=0,$title='Text2Text2',$text='Text3',$type='quick',$repeat='regular');
-
-//                var_dump($notify->GetNotify('Exp',2));
+//                $notify = new Notify();
+//
+//                $notify->SetNotify($address='Dev',$user_id=0,$title='Text2Text2',$text='Text3',$type='quick',$repeat='regular');
+//
+////                var_dump($notify->GetNotify('Exp',2));
 
                 ?>
 
