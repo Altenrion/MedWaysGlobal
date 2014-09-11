@@ -84,7 +84,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
         .col-sm-7.col-xs-6 {
             margin-left: -17px;
         }
-        label.col-sm-4.col-xs-4.control-label {
+        label.control-label {
             text-transform: uppercase;
         }
         select.form-control.input-sm {

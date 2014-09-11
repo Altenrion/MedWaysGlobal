@@ -20,9 +20,9 @@
     <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408512630498" ignored="false" />
     <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409862514704" ignored="false" />
     <file path="/login.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407829978865" ignored="false" />
-    <file path="/dummy.xml" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410183480288" ignored="false" />
+    <file path="/dummy.xml" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410469558548" ignored="false" />
     <file path="/partners.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409519042368" ignored="false" />
-    <file path="/statistics.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410444760369" ignored="false" />
+    <file path="/statistics.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410469816534" ignored="false" />
     <file path="/team.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406804278906" ignored="false" />
     <file path="/myscripts.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407769137762" ignored="false" />
     <file path="/tabs.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406405672507" ignored="false" />
@@ -198,24 +198,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="22" selection-start="2071" selection-end="2071" vertical-scroll-proportion="0.5841232">
+            <state line="86" column="13" selection-start="2062" selection-end="2062" vertical-scroll-proportion="-18.961538">
               <folding>
-                <element signature="e#4959#4985#0" expanded="true" />
-                <element signature="e#6072#6098#0" expanded="true" />
-                <element signature="e#7163#7189#0" expanded="true" />
-                <element signature="e#8257#8283#0" expanded="true" />
-                <element signature="e#9485#9511#0" expanded="true" />
-                <element signature="e#10971#10997#0" expanded="true" />
-                <element signature="e#12229#12255#0" expanded="true" />
-                <element signature="e#13467#13493#0" expanded="true" />
-                <element signature="e#14711#14737#0" expanded="true" />
-                <element signature="e#15859#15885#0" expanded="true" />
-                <element signature="e#17005#17031#0" expanded="true" />
-                <element signature="e#18035#18061#0" expanded="true" />
-                <element signature="e#19161#19187#0" expanded="true" />
+                <element signature="e#4941#4967#0" expanded="true" />
+                <element signature="e#6054#6080#0" expanded="true" />
+                <element signature="e#7145#7171#0" expanded="true" />
+                <element signature="e#8239#8265#0" expanded="true" />
+                <element signature="e#9467#9493#0" expanded="true" />
+                <element signature="e#10953#10979#0" expanded="true" />
+                <element signature="e#12211#12237#0" expanded="true" />
+                <element signature="e#13449#13475#0" expanded="true" />
+                <element signature="e#14693#14719#0" expanded="true" />
+                <element signature="e#15841#15867#0" expanded="true" />
+                <element signature="e#16987#17013#0" expanded="true" />
+                <element signature="e#18017#18043#0" expanded="true" />
+                <element signature="e#19143#19169#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -248,10 +248,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="statistics.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="statistics.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="30" selection-start="674" selection-end="1033" vertical-scroll-proportion="-14.807693">
+            <state line="48" column="38" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.6042654">
               <folding />
             </state>
           </provider>
@@ -289,9 +289,9 @@
         <option value="$PROJECT_DIR$/protected/models/medways/NewsStorage.php" />
         <option value="$PROJECT_DIR$/protected/components/News.php" />
         <option value="$PROJECT_DIR$/protected/components/MyTraits.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
         <option value="$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
       </list>
     </option>
   </component>
@@ -800,13 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="30" selection-start="674" selection-end="1033" vertical-scroll-proportion="-14.807693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="970" column="5" selection-start="16744" selection-end="16744" vertical-scroll-proportion="-30.96">
@@ -823,22 +816,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="22" selection-start="2071" selection-end="2071" vertical-scroll-proportion="0.5841232">
+        <state line="86" column="13" selection-start="2062" selection-end="2062" vertical-scroll-proportion="-18.961538">
           <folding>
-            <element signature="e#4959#4985#0" expanded="true" />
-            <element signature="e#6072#6098#0" expanded="true" />
-            <element signature="e#7163#7189#0" expanded="true" />
-            <element signature="e#8257#8283#0" expanded="true" />
-            <element signature="e#9485#9511#0" expanded="true" />
-            <element signature="e#10971#10997#0" expanded="true" />
-            <element signature="e#12229#12255#0" expanded="true" />
-            <element signature="e#13467#13493#0" expanded="true" />
-            <element signature="e#14711#14737#0" expanded="true" />
-            <element signature="e#15859#15885#0" expanded="true" />
-            <element signature="e#17005#17031#0" expanded="true" />
-            <element signature="e#18035#18061#0" expanded="true" />
-            <element signature="e#19161#19187#0" expanded="true" />
+            <element signature="e#4941#4967#0" expanded="true" />
+            <element signature="e#6054#6080#0" expanded="true" />
+            <element signature="e#7145#7171#0" expanded="true" />
+            <element signature="e#8239#8265#0" expanded="true" />
+            <element signature="e#9467#9493#0" expanded="true" />
+            <element signature="e#10953#10979#0" expanded="true" />
+            <element signature="e#12211#12237#0" expanded="true" />
+            <element signature="e#13449#13475#0" expanded="true" />
+            <element signature="e#14693#14719#0" expanded="true" />
+            <element signature="e#15841#15867#0" expanded="true" />
+            <element signature="e#16987#17013#0" expanded="true" />
+            <element signature="e#18017#18043#0" expanded="true" />
+            <element signature="e#19143#19169#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="38" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.6042654">
+          <folding />
         </state>
       </provider>
     </entry>
