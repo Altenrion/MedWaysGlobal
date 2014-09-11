@@ -14,6 +14,12 @@ class Notify {
 
         $notify = new Notify();
         $notify->SetNotify($address='Dev',$user_id=0,$title='Text2Text2',$text='Text3',$type='quick',$repeat='regular',$color='primary');
+
+        Присер получения оповещений
+
+        $notify->GetNotify('Exp',2);
+
+
    */
 
 
