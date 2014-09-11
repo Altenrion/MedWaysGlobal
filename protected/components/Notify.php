@@ -9,21 +9,15 @@
 
 class Notify {
 
-
-/**
+    /**
         Пример сохранения оповещения
 
-        $params = array('address'=>'Dev','user_id'=>'0','title'=>'Text','text'=>'Text2','type'=>'quick','repeat'=>'regular','color'=>'primary');
-        $this->setParams($params);
-
-        $this->forward('Notify/SetNotify',false);
-
-
+        $notify = new Notify();
+        $notify->SetNotify($address='Dev',$user_id=0,$title='Text2Text2',$text='Text3',$type='quick',$repeat='regular',$color='primary');
    */
 
-    /**
-     * Пачка констант, и внутренние атрибуты
-     */
+
+    /**  Пачка констант, и внутренние атрибуты  */
     private $_notifies;
 
 //    private $_title;        private $_text;
@@ -85,9 +79,6 @@ class Notify {
         if($storage->save()){
             return true;
         }else
-//
-//            var_dump($storage);
-//            Yii::app()->end();
         throw new CHttpException(404,'При сохранении записи произошла ошибка');
 
     }
