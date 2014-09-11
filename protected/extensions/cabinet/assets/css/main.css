@@ -966,6 +966,9 @@ ul.navbar-nav li.navbar-menu .dropdown-menu {
 	.ticker {
 		display: none;	
 	}
+    .form-horizontal .editable {
+        padding-top: 0px;
+    }
 }
 
 @media screen and (max-width: 560px) {

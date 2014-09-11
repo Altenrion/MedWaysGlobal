@@ -28,6 +28,28 @@
 			<div class="row ">
 
 				<div class="col-md-12 ">
+                    <div class="col-sm-6">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Password</label>
+                            <div class="col-sm-7">
+                                <input type="password" name="password" id="password" class="form-control" placeholder="Your Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Confirm Password</label>
+                            <div class="col-sm-7">
+                                <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="Your Password (again)">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Email</label>
+                            <div class="col-sm-7">
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Your Email">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                 <?
                 $news = new News;
                 $post = $news->getNews();
