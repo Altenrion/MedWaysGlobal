@@ -32,6 +32,30 @@ trait MyTraits {
     }
 
 
+    public function checkMonth($date){
+
+        $month = array(
+            'January'=>'янв',
+            'February'=>'фев',
+            'March'=>'мар',
+            'April'=>'апр',
+            'May'=>'м',
+            'June'=>'июн',
+            'July'=>'июл',
+            'August'=>'авг',
+            'September'=>'сент',
+            'October'=>'окт',
+            'November'=>'нов',
+            'December'=>'дек',
+
+        );
+
+        foreach($month as $m_k=>$m_v){
+            $date = str_replace( $m_k,$m_v ,$date);
+        }
+        return $date;
+    }
+
 
 
 
