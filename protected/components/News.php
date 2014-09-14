@@ -21,7 +21,7 @@ class News {
         if($news->save()){
             return true;
         }
-        else throw new CHttpException(404,'При сохранении новости произошла ошибка');
+        else return false;
     }
 
     public function getNews($num=5){

@@ -85,7 +85,7 @@ class Notify {
         if($storage->save()){
             return true;
         }else
-        throw new CHttpException(404,'При сохранении записи произошла ошибка');
+            return false;
 
     }
 
@@ -115,7 +115,7 @@ class Notify {
 
         if(!is_null($this->_notifies)){
             return $this->_notifies;
-        } else  throw new CHttpException(404,'При поиске оповещений произошла ошибка');
+        } //else  throw new CHttpException(404,'При поиске оповещений произошла ошибка');
     }
 
     public function packNotifies($array){

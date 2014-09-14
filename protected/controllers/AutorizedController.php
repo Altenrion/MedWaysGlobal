@@ -33,7 +33,7 @@ class AutorizedController extends Controller
                 'roles'=>array('Manager'),
             ),
             array('allow',
-                'actions'=>array('dashboard'),
+                'actions'=>array('dashboard','manage_news','manage_notifies'),
                 'roles'=>array('Dev'),
             ),
             array('allow',
@@ -158,6 +158,68 @@ class AutorizedController extends Controller
 		$this->render('news');
 	}
 
+    public function actionManageNews()
+	{
+        if( Yii::app()->request->isAjaxRequest) {
+
+            if( Yii::app()->request->getPost('type') == 'news'){
+                $news = new News;
+                $title = Yii::app()->request->getPost('title');
+                $text = Yii::app()->request->getPost('content');
+
+                if($title != '' && $text != '<p><br></p>'){
+                    if($news->setNews($title,$text)){
+                        echo CJSON::encode('ok');
+                        Yii::app()->end();
+                    }
+                }
+                else {
+                    echo CJSON::encode('fail');
+                    Yii::app()->end();
+                }
+
+
+            }
+            if( Yii::app()->request->getPost('type') == 'notify'){
+                $notify = new Notify();
+
+                $address = Yii::app()->request->getPost('address');
+                $user_id = Yii::app()->request->getPost('user_id');
+
+
+                $title = Yii::app()->request->getPost('title');
+                $text = Yii::app()->request->getPost('content');
+
+                $type = Yii::app()->request->getPost('notify_type');
+                $repeat = Yii::app()->request->getPost('repeat');
+                $color = Yii::app()->request->getPost('color');
+
+                if($title != '' && $text != '<p><br></p>'){
+                    if($notify->SetNotify($address,$user_id,$title,$text,$type,$repeat,$color)){
+                        echo CJSON::encode('ok');
+                        Yii::app()->end();
+                    }
+                }
+                else {
+                    echo CJSON::encode('fail');
+                    Yii::app()->end();
+                }
+            }
+//            var_dump($_POST);
+            Yii::app()->end();
+        }
+
+		$this->render('manage_news');
+	}
+
+    public function actionManageNotifies()
+	{
+		$this->render('manage_notifies');
+	}
+    public function actionManageUsers()
+	{
+		$this->render('manage_users');
+	}
 
     public function actionLockScreen()
 	{

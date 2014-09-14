@@ -41,6 +41,18 @@ if(isset($data) && !is_null($data)){
     }
 
 ?>
+    <style type="text/css">
+        .form-group {
+            margin-bottom: 5px;
+        }
+        .col-sm-7.col-xs-6 {
+            margin-left: -17px;
+        }
+        label.control-label {
+            text-transform: uppercase;
+            color:#1C4DA5;
+        }
+    </style>
 
     <!-- BEGIN CONTENT HEADER -->
     <section class="content-header">
@@ -85,7 +97,7 @@ if(isset($data) && !is_null($data)){
     <!-- BEGIN PROFILE -->
 
     <div class="tab-pane active" id="profile">
-    <p class="lead">Проектные данные  <span> &nbsp;&nbsp;&nbsp;</span>
+    <p class="lead">Управление  <span> &nbsp;&nbsp;&nbsp;</span>
 
         <? if(!$no_edit){ ?>
             <button id="enable" class="btn btn-xs btn-primary "><i class="fa  fa-edit"> </i> редактировать</button>
@@ -100,7 +112,7 @@ if(isset($data) && !is_null($data)){
         <?if(isset($data) && !is_null($data)){?>
 
             <div class="col-sm-12">
-                <p><strong>Название проекта:</strong>
+                <p class="lead">Название проекта </p>
                     <? $this->widget('editable.Editable', array(
                         'type'      => 'textarea',
                         'pk'        => $data[0]['id'],
@@ -111,80 +123,108 @@ if(isset($data) && !is_null($data)){
                         'placement' => 'right',
                         'options' => array( 'disabled'=>true, ),  )); ?>
                 </p>
+                <hr>
                 </div>
-                <div class="col-sm-6">
-                <p><strong>Научная платформа:</strong>
-                    <? $this->widget('editable.Editable', array(
-                        'type'      => 'select',
-                        'name'      => 'ID_STAGE',
-                        'pk'        => $data[0]['id'],
-                        'text'      => CHtml::encode($data[0]['ID_STAGE']),
-                        'url'       => $this->createUrl('Autorized/updateProject'),
-                        'source'    => $this->createUrl('Autorized/getStages'),
-                        'title'     => 'Enter title',
-                        'placement' => 'right',
-                        'options' => array( 'disabled'=>true, ), ));  ?>
-                </p>
-
-                <p><strong>Количество исполнителей:</strong>
-                    <? $this->widget('editable.Editable', array(
-                        'type'      => 'text',
-                        'pk'        => $data[0]['id'],
-                        'name'      => 'EXECUTERS_NUM',
-                        'text'      => CHtml::encode($data[0]['EXECUTERS_NUM']),
-                        'url'       => $this->createUrl('Autorized/updateProject'),
-                        'title'     => 'Введите фамилию',
-                        'placement' => 'right',
-                        'options' => array( 'disabled'=>true, ),  )); ?>
-                </p>
-                <p><strong>Из них до 35 лет:</strong>
-                    <? $this->widget('editable.Editable', array(
-                        'type'      => 'text',
-                        'pk'        => $data[0]['id'],
-                        'name'      => 'UN_THIRTY_FIVE',
-                        'text'      => CHtml::encode($data[0]['UN_THIRTY_FIVE']),
-                        'url'       => $this->createUrl('Autorized/updateProject'),
-                        'title'     => 'Введите фамилию',
-                        'placement' => 'right',
-                        'options'     => array( 'disabled'=>true, ) )); ?>
-                </p>
-                <p><strong>Из них обучающихся:</strong>
-                    <? $this->widget('editable.Editable', array(
-                        'type'      => 'text',
-                        'pk'        => $data[0]['id'],
-                        'name'      => 'STUDY',
-                        'text'      => CHtml::encode($data[0]['STUDY']),
-                        'url'       => $this->createUrl('Autorized/updateProject'),
-                        'title'     => 'Введите фамилию',
-                        'placement' => 'right',
-                        'options' => array( 'disabled'=>true, ), )); ?>
-                </p>
-                <p><strong>Суммарное кол-во публикаций по теме:</strong>
-                    <? $this->widget('editable.Editable', array(
-                        'type'      => 'text',
-                        'pk'        => $data[0]['id'],
-                        'name'      => 'PUBLICATIONS',
-                        'text'      => CHtml::encode($data[0]['PUBLICATIONS']),
-                        'url'       => $this->createUrl('Autorized/updateProject'),
-                        'title'     => 'Введите фамилию',
-                        'placement' => 'right',
-                        'options' => array( 'disabled'=>true, ),)); ?>
-                </p>
-
-                <p><strong>Из них в зарубежных изданиях:</strong>
-                    <?  $this->widget('editable.Editable', array(
-                        'type'      => 'text',
-                        'pk'        => $data[0]['id'],
-                        'name'      => 'FORIN_PUBL',
-                        'text'      => CHtml::encode($data[0]['FORIN_PUBL']),
-                        'url'       => $this->createUrl('Autorized/updateProject'),
-                        'title'     => 'Введите фамилию',
-                        'placement' => 'right',
-                        'options' => array( 'disabled'=>true, ), )); ?>
-                </p>
+            <div class="col-sm-12">
+                <p class="lead">Основная информация </p>
             </div>
             <div class="col-sm-6">
-                <p><strong>Год начала:</strong>
+
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-5 col-xs-6 control-label" style="text-align:right ;">Научная платформа:</label>
+                    <div class="col-sm-7 col-xs-6">
+                        <? $this->widget('editable.Editable', array(
+                            'type'      => 'select',
+                            'name'      => 'ID_STAGE',
+                            'pk'        => $data[0]['id'],
+                            'text'      => CHtml::encode($data[0]['ID_STAGE']),
+                            'url'       => $this->createUrl('Autorized/updateProject'),
+                            'source'    => $this->createUrl('Autorized/getStages'),
+                            'title'     => 'Enter title',
+                            'placement' => 'right',
+                            'options' => array( 'disabled'=>true, ), ));  ?>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-5 col-xs-6 control-label" style="text-align:right ;">Количество исполнителей:</label>
+                    <div class="col-sm-7 col-xs-6">
+                        <? $this->widget('editable.Editable', array(
+                            'type'      => 'text',
+                            'pk'        => $data[0]['id'],
+                            'name'      => 'EXECUTERS_NUM',
+                            'text'      => CHtml::encode($data[0]['EXECUTERS_NUM']),
+                            'url'       => $this->createUrl('Autorized/updateProject'),
+                            'title'     => 'Введите фамилию',
+                            'placement' => 'right',
+                            'options' => array( 'disabled'=>true, ),  )); ?>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-5 col-xs-6 control-label" style="text-align:right ;">Из них до 35 лет:</label>
+                    <div class="col-sm-7 col-xs-6">
+                        <? $this->widget('editable.Editable', array(
+                            'type'      => 'text',
+                            'pk'        => $data[0]['id'],
+                            'name'      => 'UN_THIRTY_FIVE',
+                            'text'      => CHtml::encode($data[0]['UN_THIRTY_FIVE']),
+                            'url'       => $this->createUrl('Autorized/updateProject'),
+                            'title'     => 'Введите фамилию',
+                            'placement' => 'right',
+                            'options'     => array( 'disabled'=>true, ) )); ?>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-5 col-xs-6 control-label" style="text-align:right ;">Из них обучающихся:</label>
+                    <div class="col-sm-7 col-xs-6">
+                        <? $this->widget('editable.Editable', array(
+                            'type'      => 'text',
+                            'pk'        => $data[0]['id'],
+                            'name'      => 'STUDY',
+                            'text'      => CHtml::encode($data[0]['STUDY']),
+                            'url'       => $this->createUrl('Autorized/updateProject'),
+                            'title'     => 'Введите фамилию',
+                            'placement' => 'right',
+                            'options' => array( 'disabled'=>true, ), )); ?>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-5 col-xs-6 control-label" style="text-align:right ;">Суммарное кол-во публикаций по теме:</label>
+                    <div class="col-sm-7 col-xs-6">
+                        <? $this->widget('editable.Editable', array(
+                            'type'      => 'text',
+                            'pk'        => $data[0]['id'],
+                            'name'      => 'PUBLICATIONS',
+                            'text'      => CHtml::encode($data[0]['PUBLICATIONS']),
+                            'url'       => $this->createUrl('Autorized/updateProject'),
+                            'title'     => 'Введите фамилию',
+                            'placement' => 'right',
+                            'options' => array( 'disabled'=>true, ),)); ?>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-5 col-xs-6 control-label" style="text-align:right ;">Из них в зарубежных изданиях:</label>
+                    <div class="col-sm-7 col-xs-6">
+                        <?  $this->widget('editable.Editable', array(
+                            'type'      => 'text',
+                            'pk'        => $data[0]['id'],
+                            'name'      => 'FORIN_PUBL',
+                            'text'      => CHtml::encode($data[0]['FORIN_PUBL']),
+                            'url'       => $this->createUrl('Autorized/updateProject'),
+                            'title'     => 'Введите фамилию',
+                            'placement' => 'right',
+                            'options' => array( 'disabled'=>true, ), )); ?>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="col-sm-6">
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-5 col-xs-6 control-label" style="text-align:right ;">Год начала:</label>
+                    <div class="col-sm-7 col-xs-6">
                     <? $this->widget('editable.Editable', array(
                         'type'      => 'combodate',
                         'name'      => 'START_YEAR',
@@ -196,8 +236,11 @@ if(isset($data) && !is_null($data)){
                         'template'    => 'YYYY', //template for dropdowns
                         'combodate'   => array('minYear' => 1980, 'maxYear' => 2015),
                         'options'     => array( 'disabled'=>true, ) )); ?>
-                </p>
-                <p><strong>Год окончания:</strong>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-5 col-xs-6 control-label" style="text-align:right ;">Год окончания:</label>
+                    <div class="col-sm-7 col-xs-6">
                     <?  $this->widget('editable.Editable', array(
                         'type'      => 'combodate',
                         'name'      => 'END_YEAR',
@@ -209,8 +252,11 @@ if(isset($data) && !is_null($data)){
                         'template'    => 'YYYY', //template for dropdowns
                         'combodate'   => array('minYear' => 2014, 'maxYear' => 2030),
                         'options'     => array('disabled'=>true, ) )); ?>
-                </p>
-                <p><strong>Стадия развития проекта:</strong>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-5 col-xs-6 control-label" style="text-align:right ;">Стадия развития проекта:</label>
+                    <div class="col-sm-7 col-xs-6">
                     <? $this->widget('editable.Editable', array(
                         'type'      => 'select',
                         'name'      => 'ID_PHASE',
@@ -221,8 +267,11 @@ if(isset($data) && !is_null($data)){
                         'title'     => 'Enter title',
                         'placement' => 'right',
                         'options' => array( 'disabled'=>true, ), ));  ?>
-                </p>
-                <p><strong>Объем финансирования на период реализации (руб):</strong>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-5 col-xs-6 control-label" style="text-align:right ;">Объем финансирования на период реализации (руб):</label>
+                    <div class="col-sm-7 col-xs-6">
                     <? $this->widget('editable.Editable', array(
                         'type'      => 'select',
                         'name'      => 'ID_BUDGET',
@@ -233,8 +282,11 @@ if(isset($data) && !is_null($data)){
                         'title'     => 'Enter title',
                         'placement' => 'right',
                         'options' => array( 'disabled'=>true, ), )); ?>
-                </p>
-                <p><strong>Объем финансирования на календарный год (руб):</strong>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-5 col-xs-6 control-label" style="text-align:right ;">Объем финансирования на календарный год (руб):</label>
+                    <div class="col-sm-7 col-xs-6">
                     <? $this->widget('editable.Editable', array(
                         'type'      => 'text',
                         'pk'        => $data[0]['id'],
@@ -244,8 +296,12 @@ if(isset($data) && !is_null($data)){
                         'title'     => 'Введите фамилию',
                         'placement' => 'right',
                         'options' => array( 'disabled'=>true, ),  )); ?>
-                </p>
-                <p><strong>Объем предполагаемого coфинансирования (руб):</strong>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-5 col-xs-6 control-label" style="text-align:right ;">Объем предполагаемого coфинансирования (руб):</label>
+                    <div class="col-sm-7 col-xs-6">
+
                     <?  $this->widget('editable.Editable', array(
                         'type'      => 'text',
                         'pk'        => $data[0]['id'],
@@ -255,10 +311,15 @@ if(isset($data) && !is_null($data)){
                         'title'     => 'Введите фамилию',
                         'placement' => 'right',
                         'options' => array( 'disabled'=>true, ),  )); ?>
-                </p>
+                    </div>
                 </div>
-                <div class="col-sm-12">
-                <p><strong>Краткая аннотация (1500 знаков) :</strong>
+
+                </div>
+                </div>
+
+            <div class="col-sm-12">
+                <hr>
+                <p class="lead">Краткая аннотация (1500 знаков) </p>
                     <?   $this->widget('editable.Editable', array(
                         'type'      => 'textarea',
                         'pk'        => $data[0]['id'],
@@ -270,7 +331,7 @@ if(isset($data) && !is_null($data)){
                         'options' => array( 'disabled'=>true, ),  )); ?>
                 </p>
 
-
+                <hr>
                 </div>
 
 

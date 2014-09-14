@@ -7,11 +7,15 @@ Yii::app()->clientScript->registerCssFile($assetsUrl.'/plugins/bootstrap/css/boo
 Yii::app()->clientScript->registerCssFile($assetsUrl.'/plugins/font-awesome/css/font-awesome.min.css');
 
 /* @ BEGIN CSS PLUGIN */
+
+Yii::app()->clientScript->registerCssFile($assetsUrl.'/plugins/icheck/skins/square/blue.css');
 Yii::app()->clientScript->registerCssFile($assetsUrl.'/plugins/pace/pace-theme-minimal.css');
 Yii::app()->clientScript->registerCssFile($assetsUrl.'/plugins/jquery-magnific-popup/magnific-popup.css');
 Yii::app()->clientScript->registerCssFile($assetsUrl.'/plugins/switchery/switchery.min.css');
 Yii::app()->clientScript->registerCssFile($assetsUrl.'/plugins/jquery-niftymodal/css/component.css');
 Yii::app()->clientScript->registerCssFile($assetsUrl.'/plugins/jquery-gritter/css/jquery.gritter.css');
+Yii::app()->clientScript->registerCssFile($assetsUrl.'/plugins/bootstrap-summernote/summernote.css');
+Yii::app()->clientScript->registerCssFile($assetsUrl.'/plugins/bootstrap-summernote/summernote-bs3.css');
 
 /* @ BEGIN CSS TEMPLATE */
 Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/main.css');
@@ -152,19 +156,15 @@ Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/skins.css');
                 <? if($this->checkRole(array('Dev'))): ?>
                 <li class="menu">
                     <a href="#">
-                        <i class="fa fa-laptop"></i><span>UI Elements</span>
+                        <i class="fa fa-laptop"></i><span>Админ раздел</span>
                         <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="sub-menu">
-                        <li><a href="">General</a></li>
-                        <li><a href="">Buttons</a></li>
-                        <li><a href="">Grid</a></li>
-                        <li><a href="">Group List</a></li>
-                        <li><a href="">Icons</a></li>
-                        <li><a href="">Messages & Notifications</a></li>
-                        <li><a href="">Modals</a></li>
-                        <li><a href="">Tabs & Accordions</a></li>
-                        <li><a href="">Typography</a></li>
+                        <li><a href="<?=Yii::app()->createUrl('Autorized/manageNews')?>">Создание записей</a></li>
+                        <li><a href="<?=Yii::app()->createUrl('Autorized/manageNotifies')?>">Просмотр записей</a></li>
+                        <li><a href="<?=Yii::app()->createUrl('Autorized/manageUsers')?>">Просмотр пользователей</a></li>
+                        <li><a href="<?=Yii::app()->createUrl('Autorized/manageUsers')?>">Просмотр проектов</a></li>
+                        <li><a href="">Что либо еще</a></li>
                     </ul>
                 </li>
                 <? endif; ?>
@@ -195,6 +195,8 @@ Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/skins.css');
 <!-- END JS FRAMEWORK -->
 
 <!-- BEGIN JS PLUGIN -->
+<script src="<?=$assetsUrl ?>/plugins/icheck/icheck.js"></script>
+
 <script src="<?=$assetsUrl ?>/plugins/pace/pace.min.js"></script>
 <script src="<?=$assetsUrl ?>/plugins/jquery-totemticker/jquery.totemticker.min.js"></script>
 <script src="<?=$assetsUrl ?>/plugins/jquery-resize/jquery.ba-resize.min.js"></script>
@@ -204,9 +206,18 @@ Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/skins.css');
 <script src="<?=$assetsUrl ?>/plugins/jquery-niftymodal/js/classie.js"></script>
 <script src="<?=$assetsUrl ?>/plugins/jquery-niftymodal/js/modalEffects.js"></script>
 <script src="<?=$assetsUrl ?>/plugins/jquery-gritter/js/jquery.gritter.min.js"></script>
+<script src="<?=$assetsUrl ?>/plugins/bootstrap-summernote/summernote.min.js"></script>
 <script src="<?=$assetsUrl ?>/js/notification.js"></script>
 <!-- END JS PLUGIN -->
-
+<script type="text/javascript">
+    /* SUMMERNOTE WYSIWYG */
+    $('#news_content').summernote({
+        height: 200
+    });
+    $('#notify_content').summernote({
+        height: 200
+    });
+</script>
 <!-- BEGIN JS TEMPLATE -->
 <script src="<?=$assetsUrl ?>/js/main.js"></script>
 <script src="<?=$assetsUrl ?>/js/skin-selector.js"></script>

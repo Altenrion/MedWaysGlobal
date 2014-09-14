@@ -86,6 +86,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
         }
         label.control-label {
             text-transform: uppercase;
+            color:#1C4DA5;
         }
         select.form-control.input-sm {
             max-width: 300px;
@@ -258,11 +259,6 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                                 'options' => array( 'disabled'=>true, ),)); ?>
                                     </div>
                                 </div>
-
-
-
-
-
 
                             </div>
                         </div>
