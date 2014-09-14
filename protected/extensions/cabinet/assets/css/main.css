@@ -3297,7 +3297,7 @@ img {
 	display: block;
 	width: 4px;
 	background: #fff;
-	left: 50%;
+	left: 10%;
 	top: 20px;
 	bottom: 20px;
 	margin-left: -4px;
@@ -3305,7 +3305,7 @@ img {
 
 .timeline-centered .timeline-entry {
 	position: relative;
-	width: 50%;
+	width: 90%;
 	float: right;
 	margin-bottom: 70px;
 	clear: both;

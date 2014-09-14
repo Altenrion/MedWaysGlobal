@@ -28,6 +28,7 @@
 
                     <? $this->widget("cabinet.widgets.BrowserCounter") ?>
 
+
                 </div>
 
 			</div><!--/profile-->

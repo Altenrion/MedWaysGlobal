@@ -213,35 +213,7 @@ $this->breadcrumbs=array(
 
                         <!-- /.post .format-gallery -->
 
-                        <div class="post format-standard">
-                            <div class="date-wrapper"> <a href="blog-post.html" class="date"><span class="day">1</span> <span class="month">Сент</span> </a> </div>
-                            <!-- /.date-wrapper -->
-                            <div class="format-wrapper"> <i class="icon-pencil"></i> </div>
-                            <!-- /.format -->
-
-                            <div class="post-content">
-                                <h2 class="post-title"><a href="blog-post.html">Открытие регистрации проектов</a></h2>
-                                <div class="meta"> <span class="category"><a href="#">MedWAYS</a>, <a href="#">Daily</a></span> <span class="comments"><a href="#">1 сент, 2014</a></span> <span class="like"><a href="#">5 <i class="icon-eye"></i></a></span> </div>
-                                <!-- /.meta -->
-                                <p> С сегодняшнего дня по 15 октября 2014 года открыта регистрация проектов, учавствующих в региональном конкурсном отборе. Информация о базовых вузах представлена в соответствующем разделе.  </p>
-                            </div>
-                            <!-- /.post-content -->
-                        </div>
-
-                        <div class="post format-standard">
-                            <div class="date-wrapper"> <a href="blog-post.html" class="date"><span class="day">4</span> <span class="month">Июл</span> </a> </div>
-                            <!-- /.date-wrapper -->
-                            <div class="format-wrapper"> <i class="icon-pencil"></i> </div>
-                            <!-- /.format -->
-
-                            <div class="post-content">
-                                <h2 class="post-title"><a href="blog-post.html">Старт Эстафеты вузовской науки 2014!</a></h2>
-                                <div class="meta"> <span class="category"><a href="#">MedWAYS</a>, <a href="#">Daily</a></span> <span class="comments"><a href="#">4 июля, 2014</a></span> <span class="like"><a href="#">25 <i class="icon-eye"></i></a></span> </div>
-                                <!-- /.meta -->
-                                <p>Сибирский государственный медицинский университет дал старт общероссийскому научно-практическому мероприятию «Эстафета вузовской науки - 2014». Эстафета проводится среди медицинских высших образовательных учреждений России в федеральных округах в формате Конкурса научно-инновационных проектов по тематике научных платформ. Регистрация проектов начнется 1 сентября 2014 года.</p>
-                            </div>
-                            <!-- /.post-content -->
-                        </div>
+                        <? $this->widget("cabinet.widgets.NewsLine",array('count'=>5)) ?>
 
                        <? if(false){?>
                         <div class="post format-link">

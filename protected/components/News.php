@@ -27,11 +27,12 @@ class News {
     public function getNews($num=5){
 
         $condition = 'block = 0';
-        if($num ==5){$limit=$num;} else{$limit = false;}
+        if($num ==0){$limit = '-1';} else{$limit=$num;}
+
 
         $criteria = new CDbCriteria(array(
             'condition' => $condition,
-            'order' => 'id ASC',
+            'order' => 'id DESC',
             'limit' => $limit,
         ));
         $news = NewsStorage::model()->findAll($criteria);

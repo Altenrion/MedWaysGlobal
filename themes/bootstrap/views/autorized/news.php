@@ -27,10 +27,19 @@
     <div class="row ">
 
         <div class="col-sm-12 ">
-            <div class="alert alert-info">
-                <strong></strong> Необходимая информация будет размещена в близжайшее время.
-            </div>
+            <div class="col-md-12">
+                <div class="timeline-centered">
+                    <? $this->widget("cabinet.widgets.NewsLine",array('count'=>0)) ?>
 
+                    <article class="timeline-entry begin">
+                        <div class="timeline-entry-inner">
+                            <div class="timeline-icon bg-default">
+                                <i class="fa fa-laptop"></i>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
 
 
 
