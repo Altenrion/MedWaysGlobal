@@ -143,7 +143,7 @@ if(isset($data) && !is_null($data)){
                             'source'    => $this->createUrl('Autorized/getStages'),
                             'title'     => 'Enter title',
                             'placement' => 'right',
-                            'options' => array( 'disabled'=>true, ), ));  ?>
+                            'options' => array( 'disabled'=>true, 'showbuttons'=>false,), ));  ?>
                     </div>
                 </div>
                 <div class="form-group">
