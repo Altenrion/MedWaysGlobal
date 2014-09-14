@@ -253,19 +253,10 @@
       <file leaf-file-name="project.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="87" selection-start="5684" selection-end="5684" vertical-scroll-proportion="0.52369666">
+            <state line="283" column="82" selection-start="14122" selection-end="14122" vertical-scroll-proportion="-0.38270143">
               <folding>
                 <element signature="e#6#159#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="228" column="111" selection-start="9241" selection-end="9262" vertical-scroll-proportion="-13.076923">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -896,7 +887,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="87" selection-start="5684" selection-end="5684" vertical-scroll-proportion="0.52369666">
+        <state line="283" column="82" selection-start="14122" selection-end="14122" vertical-scroll-proportion="-0.38270143">
           <folding>
             <element signature="e#6#159#0" expanded="true" />
           </folding>

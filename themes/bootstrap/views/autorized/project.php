@@ -266,7 +266,7 @@ if(isset($data) && !is_null($data)){
                         'source'    => $this->createUrl('Autorized/getPhases'),
                         'title'     => 'Enter title',
                         'placement' => 'right',
-                        'options' => array( 'disabled'=>true, ), ));  ?>
+                        'options' => array( 'disabled'=>true, 'showbuttons'=>false,), ));  ?>
                     </div>
                 </div>
                 <div class="form-group">
@@ -281,7 +281,7 @@ if(isset($data) && !is_null($data)){
                         'source'    => $this->createUrl('Autorized/getBudget'),
                         'title'     => 'Enter title',
                         'placement' => 'right',
-                        'options' => array( 'disabled'=>true, ), )); ?>
+                        'options' => array( 'disabled'=>true,'showbuttons'=>false, ), )); ?>
                     </div>
                 </div>
                 <div class="form-group">
