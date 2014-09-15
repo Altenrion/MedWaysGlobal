@@ -150,7 +150,7 @@ return array(
 		// this is used in contact page
 		        'adminEmail'=>'Administration@altenrion.ru',
                 'hash_site_key' => 'dlfkgknbcvjkbsdkjflsdkhfdf34534jkHL$@#K$^kb',
-                'postsPerPage' => 10,
+                'postsPerPage' => 5,
                 'downloads'=>Yii::app()->basePath,
 	),
 );

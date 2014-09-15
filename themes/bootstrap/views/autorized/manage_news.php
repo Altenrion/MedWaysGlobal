@@ -12,7 +12,7 @@
 <!-- BEGIN CONTENT HEADER -->
 <section class="content-header">
     <i class="fa fa-user"></i>
-    <span>Управление новостями</span>
+    <span>Создание записей</span>
     <ol class="breadcrumb">
         <li><a href="">Кабинет</a></li>
         <li class="active"><a href="">Управление</a></li>

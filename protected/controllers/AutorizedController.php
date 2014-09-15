@@ -79,27 +79,8 @@ class AutorizedController extends Controller
 
     public function actionExperts()
 	{
-
-        $criteria = new CDbCriteria();
-        $count = Users::model()->count($criteria);
-        $pages = new CPagination($count);
-
-        $pages->pageSize = 10;
-        $pages->applyLimit($criteria);
-
-        $sort = new CSort();
-        $sort->attributes = array('id','F_NAME','L_NAME','S_NAME','EMAIL','roles');
-        $sort->applyOrder($criteria);
-        $models = Users::model()->findAll($criteria);
-
-
-
-		$this->render('experts', array(
-            'models'=>$models,
-            'pages'=>$pages,
-            'sort'=>$sort,
-        ));
-	}
+        $this->render('experts');
+  	}
 
 
 	public function actionProject()
@@ -212,13 +193,70 @@ class AutorizedController extends Controller
 		$this->render('manage_news');
 	}
 
+
+
     public function actionManageNotifies()
 	{
-		$this->render('manage_notifies');
+
+        $this->render('manage_notifies',array(
+        ));
 	}
+
     public function actionManageUsers()
 	{
-		$this->render('manage_users');
+
+        $criteria_exp = new CDbCriteria();
+        $criteria_exp->condition = "roles='Exp' OR roles='Exp1' OR roles='Exp2' OR roles='Exp3'";
+
+        $count_exp = Users::model()->count($criteria_exp);
+        $pages_exp = new CPagination($count_exp);
+        $pages_exp->pageSize = 10;
+        $pages_exp->applyLimit($criteria_exp);
+
+        $sort_exp = new CSort();
+        $sort_exp->attributes = array('id','F_NAME','L_NAME','S_NAME','EMAIL','roles');
+        $sort_exp->applyOrder($criteria_exp);
+
+        $experts = Users::model()->findAll($criteria_exp);
+
+
+
+        $criteria_man = new CDbCriteria();
+        $criteria_man->condition = "roles='Manager' ";
+
+        $count_man = Users::model()->count($criteria_man);
+        $pages_man = new CPagination($count_man);
+        $pages_man->pageSize = 5;
+        $pages_man->applyLimit($criteria_man);
+
+        $sort_man = new CSort();
+        $sort_man->attributes = array('id','F_NAME','L_NAME','S_NAME','EMAIL','roles');
+        $sort_man->applyOrder($criteria_man);
+
+        $managers = Users::model()->findAll($criteria_man);
+
+
+        $dataProvider = new CActiveDataProvider('Users', array(
+            'criteria' => $criteria_man,
+
+            'pagination' => array(
+                'pageSize' => Yii::app()->params['postsPerPage'],
+            )
+        ));
+
+
+        $this->render('manage_users', array(
+            'manags'=>$managers,
+            'pags'=>$pages_man,
+            'sortm'=>$sort_man,
+
+            'models'=>$experts,
+            'pages'=>$pages_exp,
+            'sort'=>$sort_exp,
+
+            'dataProvider' => $dataProvider,
+        ));
+
 	}
 
     public function actionLockScreen()

@@ -156,14 +156,14 @@ Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/skins.css');
                 <? if($this->checkRole(array('Dev'))): ?>
                 <li class="menu">
                     <a href="#">
-                        <i class="fa fa-laptop"></i><span>Админ раздел</span>
+                        <i class="fa fa-laptop"></i><span>Управление</span>
                         <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="sub-menu">
                         <li><a href="<?=Yii::app()->createUrl('Autorized/manageNews')?>">Создание записей</a></li>
-                        <li><a href="<?=Yii::app()->createUrl('Autorized/manageNotifies')?>">Просмотр записей</a></li>
-                        <li><a href="<?=Yii::app()->createUrl('Autorized/manageUsers')?>">Просмотр пользователей</a></li>
-                        <li><a href="<?=Yii::app()->createUrl('Autorized/manageUsers')?>">Просмотр проектов</a></li>
+                        <li><a href="<?=Yii::app()->createUrl('Autorized/manageNotifies')?>">Управление записями</a></li>
+                        <li><a href="<?=Yii::app()->createUrl('Autorized/manageUsers')?>">Управление пользователями</a></li>
+                        <li><a href="<?=Yii::app()->createUrl('Autorized/manageUsers')?>">Управление проектами</a></li>
                         <li><a href="">Что либо еще</a></li>
                     </ul>
                 </li>
