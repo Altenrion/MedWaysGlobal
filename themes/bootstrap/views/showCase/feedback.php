@@ -174,7 +174,7 @@
                     <strong>Центр трансфера технологий</strong><br>
                     Томск, Московский тракт, д. 2<br>
                     <abbr >Рудко Татьяна Владимировна : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">okr@ssmu.ru</a><br>
-                    <abbr >Зима Анастасия Павловна : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">strateg@ssmu.ru</a>
+
                 </address>
             </div>
           <!-- /.post-list -->

@@ -74,6 +74,12 @@
                                 <h6><a href="#@#"> МОО «Общество персонализированной медицины» </a></h6>
                                 <em></em> </div>
                         </li>
+                        <li>
+                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/org/u_sibgmu.jpg" alt=""> </a> </div>
+                            <div class="meta">
+                                <h6><a href="#@#">ГБОУ ВПО Сибирский государственный медицинский университет Минздрава России </a></h6>
+                                <em></em> </div>
+                        </li>
 
                     </ul>
                     <!-- /.post-list -->

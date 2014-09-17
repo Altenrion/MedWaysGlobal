@@ -159,7 +159,6 @@
                         <a href="#" style="font-size: 12pt;">Фармакология</a>
                         <a href="#" style="font-size: 9pt;">Профилактическая среда</a>
                         <a href="#" style="font-size: 15pt;">Репродуктивное здоровье</a>
-                        <a href="#" style="font-size: 13pt;">Регенеративная медицина</a>
                         <a href="#" style="font-size: 11pt;">Регенеративная медицина</a>
                         <a href="#" style="font-size: 9pt;">Инвазивные технологии</a>
                         <a href="#" style="font-size: 12pt;">Инновационные фундаментальные технологии в медицине</a>
@@ -176,7 +175,7 @@
                     <strong>Центр трансфера технологий</strong>
                     <div class="divide5"></div>
 
-                    <i class="icon-mail contact"></i> <a href="#">okr@ssmu.ru, strateg@ssmu.ru</a>
+                    <i class="icon-mail contact"></i> <a href="#">okr@ssmu.ru</a>
                     <div class="divide20"></div>
 
                     <strong>Финальный этап мероприятия:</strong>

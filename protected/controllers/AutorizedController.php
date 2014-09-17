@@ -205,6 +205,7 @@ class AutorizedController extends Controller
     public function actionManageUsers()
 	{
 
+
         $criteria_exp = new CDbCriteria();
         $criteria_exp->condition = "roles='Exp' OR roles='Exp1' OR roles='Exp2' OR roles='Exp3'";
 
@@ -226,7 +227,7 @@ class AutorizedController extends Controller
 
         $count_man = Users::model()->count($criteria_man);
         $pages_man = new CPagination($count_man);
-        $pages_man->pageSize = 5;
+        $pages_man->pageSize = 10;
         $pages_man->applyLimit($criteria_man);
 
         $sort_man = new CSort();

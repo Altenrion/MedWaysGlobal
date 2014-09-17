@@ -50,19 +50,19 @@
                     </div>
                     <!-- /.text -->
                 </div>
-                <? if(false): ?>
+
                 <!-- /.col-sm-4 -->
                 <div class="col-sm-4 step">
-                    <div class="icon"><a href="<?=Yii::app()->baseUrl.'/downloads/u1.jpg'?>" target="_blank"> <i class="icon-attach icn"></i></a> </div>
+                    <div class="icon"><a href="<?=Yii::app()->baseUrl.'/downloads/instuct.pdf'?>" target="_blank"> <i class="icon-attach icn"></i></a> </div>
                     <!-- /.icon -->
                     <div class="text">
-                        <h4>Рекомендации по регистрации проекта</h4>
+                        <h4>Рекомендации по регистрации </h4>
                         <p>Правила заполнения данных для оценки проектов экспертной коммиссией. </p>
                     </div>
                     <!-- /.text -->
                 </div>
                 <!-- /.col-sm-4 -->
-                <? endif; ?>
+
             </div>
             <!-- /.row -->
 
