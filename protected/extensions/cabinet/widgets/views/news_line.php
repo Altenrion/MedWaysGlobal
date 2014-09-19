@@ -1,3 +1,13 @@
+<style type="text/css">
+
+    @media (max-width: 1200px){
+        .timeline-time{
+            font-size: 10px;
+            margin-left: 30px;
+        }
+    }
+</style>
+
 <?php
 /**
  * Created by JetBrains PhpStorm.
@@ -21,12 +31,6 @@ foreach($news_line as $news_k=>$news_v) {
 
     $dd = str_replace(',',' ',$date);
     $date_f = explode(' ',$dd);
-
-
-//    var_dump($controller);
-//    var_dump($date);
-//    var_dump($date_f);
-//    Yii::app()->end();
 
     if($controller == 'autorized'){
 
