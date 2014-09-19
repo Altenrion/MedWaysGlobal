@@ -17,16 +17,23 @@
         .timeline-time{
             font-size: 0.9em;
             margin-left: 70px;
+
         }
     }
 
     @media (max-width: 565px){
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon{
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 1em;
+        }
 
         .timeline-centered:before {
             margin-left: 20px;
         }
         .timeline-icon.bg-default, .timeline-icon.bg-primary{
-            margin-left:20px;
+            margin-left:29px;
         }
     }
 
