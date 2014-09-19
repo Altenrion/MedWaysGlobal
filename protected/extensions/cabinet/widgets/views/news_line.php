@@ -6,11 +6,22 @@
             margin-left: 30px;
         }
     }
-    @media (max-width: 565px){
+    @media (min-width: 510px) and (max-width: 565px) {
+        .timeline-time{
+            font-size: 10px;!important;
+            margin-left: 50px;
+        }
+    }
+
+    @media (max-width: 510px){
         .timeline-time{
             font-size: 0.9em;
             margin-left: 70px;
         }
+    }
+
+    @media (max-width: 565px){
+
         .timeline-centered:before {
             margin-left: 20px;
         }
