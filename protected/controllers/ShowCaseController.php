@@ -92,9 +92,7 @@ class ShowCaseController extends Controller
 		$this->render('info');
 	}
 
-    public function actionTests(){
-        $this->render('tests');
-    }
+
     public function actionFeedbackQuestions()
         {
             $model = new Questions();
