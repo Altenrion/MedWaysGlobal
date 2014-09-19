@@ -4,12 +4,13 @@ if(isset($notifies) && !is_null($notifies)){
 
     $gritter_init = "function initNotification() { $(window).load(function(){";
     $timer = '';
-    $type = '';
+
 
     foreach ($notifies as $noty) {
     $timer= $timer+1000;
-
+    $type = '';
     if($noty['type'] == 'sticky'){ $type = 'sticky: true,';}
+    if($noty['type'] == 'quick'){ $type = '';}
 
     $gritter_init .= "setTimeout(function(){
                                 $.gritter.add({
