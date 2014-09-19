@@ -6,6 +6,20 @@
             margin-left: 30px;
         }
     }
+    @media (max-width: 565px){
+        .timeline-time{
+            font-size: 0.9em;
+            margin-left: 70px;
+        }
+        .timeline-centered:before {
+            margin-left: 20px;
+        }
+        .timeline-icon.bg-default, .timeline-icon.bg-primary{
+            margin-left:20px;
+        }
+    }
+
+
 </style>
 
 <?php

@@ -157,7 +157,7 @@
     <file path="/manage_users.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410987577792" ignored="false" />
     <file path="/manage_news.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410767887407" ignored="false" />
     <file path="/NewsLine.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410727417149" ignored="false" />
-    <file path="/news_line.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1411155531288" ignored="false" />
+    <file path="/news_line.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1411156088732" ignored="false" />
     <file path="/pages-timeline.html" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410729083195" ignored="false" />
     <file path="/_exp_grid.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410771132555" ignored="false" />
     <file path="/UsersController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410813521012" ignored="false" />
@@ -242,7 +242,7 @@
       <file leaf-file-name="news_line.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/views/news_line.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="30" selection-start="140" selection-end="140" vertical-scroll-proportion="0.1007109">
+            <state line="16" column="33" selection-start="393" selection-end="393" vertical-scroll-proportion="0.3222749">
               <folding />
             </state>
           </provider>
@@ -822,7 +822,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/views/news_line.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="30" selection-start="140" selection-end="140" vertical-scroll-proportion="0.1007109">
+        <state line="16" column="33" selection-start="393" selection-end="393" vertical-scroll-proportion="0.3222749">
           <folding />
         </state>
       </provider>
