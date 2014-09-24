@@ -219,13 +219,13 @@ class AutorizedController extends Controller
         $pagination = new EDTPagination();
 //        $pagination->pageSize = 5;
 
-        $dataProvider = new CActiveDataProvider('university', array(
+        $dataProvider = new CActiveDataProvider('University', array(
             'criteria'      => $criteria,
             'pagination'    => $pagination,
             'sort'          => $sort,
         ));
         $widget = $this->createWidget('ext.EDatatables.EDataTables', array(
-            'id'            => 'university',
+            'id'            => 'University',
             'dataProvider'  => $dataProvider,
             'ajaxUrl'       => $this->createUrl('managers'),
             'columns'       => $cols,
