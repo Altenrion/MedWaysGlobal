@@ -1,13 +1,3 @@
-<?php
-/**
- * Created by JetBrains PhpStorm.
- * User: User
- * Date: 14.08.14
- * Time: 13:26
- * To change this template use File | Settings | File Templates.
- */
-
-?>
 
 <!-- BEGIN CONTENT HEADER -->
 <section class="content-header">
@@ -41,7 +31,7 @@
                     </div>
                     <div class="tab-pane" id="profile">
                         <p class="lead">Basic Tabs 2</p>
-                        <? $this->actionManagers(); ?>
+<!--                        --><?// $this->actionManagers(); ?>
                     </div>
                     <div class="tab-pane" id="messages">
                         <p class="lead">Basic Tabs 3</p>
