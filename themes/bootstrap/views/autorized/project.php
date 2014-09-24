@@ -528,9 +528,11 @@ if(isset($data) && !is_null($data)){
 
 
 <?
-$base_url = Yii::app()->baseUrl;
-$cs = Yii::app()->getClientScript();
-$cs->registerScriptFile($base_url.'/adminka/js/MyEditsToEditable.js', CClientScript::POS_END);
-$cs->registerScriptFile($base_url.'/adminka/js/jquery.form.min.js', CClientScript::POS_END);
-$cs->registerScriptFile($base_url.'/adminka/js/avatar_upload.js', CClientScript::POS_END);
+$assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet.assets'));
+
+Yii::app()->clientScript->registerScriptFile($assetsUrl.'/js/jquery.form.min.js', CClientScript::POS_END );
+Yii::app()->clientScript->registerScriptFile($assetsUrl.'/js/MyEditsToEditable.js', CClientScript::POS_END );
+Yii::app()->clientScript->registerScriptFile($assetsUrl.'/js/avatar_upload.js', CClientScript::POS_END );
+
+
 ?>
