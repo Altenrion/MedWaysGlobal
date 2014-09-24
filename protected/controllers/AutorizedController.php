@@ -214,7 +214,7 @@ class AutorizedController extends Controller
             $criteria->addSearchCondition('NAME_UNIVER', $_REQUEST['sSearch']);
         }
 
-        $sort = new EDTSort('university', $columns);
+        $sort = new EDTSort('University', $columns);
         $sort->defaultOrder = 'ID_UNIVER';
         $pagination = new EDTPagination();
 //        $pagination->pageSize = 5;
