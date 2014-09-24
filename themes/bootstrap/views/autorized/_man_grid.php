@@ -44,8 +44,9 @@
                         <td><?= $model->roles  ?></td>
                         <td>
                             <a href="#"><i class="fa fa-check bg-green action"></i></a>
-                            <a href="#"><i class="fa fa-pencil bg-blue action"></i></a>
-                            <a href="#"><i class="fa fa-crop bg-red action"></i></a>
+                            <a href="#"><i class="fa fa-pencil bg-orange action"></i></a>
+                            <a href="#"><i class="fa fa-times bg-red action"></i></a>
+<!--                            <a href="#"><i class="fa fa-file-pdf-o bg-default action" style="color:red;"></i></a>-->
                         </td>
 
                     </tr>

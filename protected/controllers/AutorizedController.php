@@ -193,13 +193,94 @@ class AutorizedController extends Controller
 		$this->render('manage_news');
 	}
 
+    public function actionManagers(){
+        $columns = array(
+                'ID_UNIVER',
+                'NAME_UNIVER',
+                'ID_DISTRICT'
+            );
+        $cols = array(
+            'ID_UNIVER:number:#',
+            'NAME_UNIVER:text:Название Универа',
+            'ID_DISTRICT:number:Округ'
+        );
 
+        $criteria = new CDbCriteria;
+//        $criteria->condition =  "roles='Manager' ";
+
+        if (isset($_REQUEST['sSearch']) && isset($_REQUEST['sSearch']{0})) {
+
+
+            $criteria->addSearchCondition('NAME_UNIVER', $_REQUEST['sSearch']);
+        }
+
+        $sort = new EDTSort('university', $columns);
+        $sort->defaultOrder = 'ID_UNIVER';
+        $pagination = new EDTPagination();
+//        $pagination->pageSize = 5;
+
+        $dataProvider = new CActiveDataProvider('university', array(
+            'criteria'      => $criteria,
+            'pagination'    => $pagination,
+            'sort'          => $sort,
+        ));
+        $widget = $this->createWidget('ext.EDatatables.EDataTables', array(
+            'id'            => 'university',
+            'dataProvider'  => $dataProvider,
+            'ajaxUrl'       => $this->createUrl('managers'),
+            'columns'       => $cols,
+            'options' => array(
+                'bStateSave'    => false,
+                'bPaginate'     => true,
+            ),
+        ));
+
+        if (!Yii::app()->getRequest()->getIsAjaxRequest()) {
+            $this->renderPartial('managers', array('widget' => $widget,),false, false);
+            return;
+        } else {
+            echo json_encode($widget->getFormattedData(intval($_REQUEST['sEcho'])));
+            Yii::app()->end();
+        }
+
+
+//
+//        $this->renderPartial('managers',array(
+//                'model' => $model,
+//            )
+//        );
+
+    }
 
     public function actionManageNotifies()
 	{
 
+
+//        $model = new Users('search');
+//        $model->unsetAttributes();  // clear any default values
+//        if (isset($_GET['Users'])) {
+//            $model->attributes = $_GET['Users'];
+//        }
+//        $criteria_exp = new CDbCriteria();
+//        $criteria_exp->condition =  "roles='Manager' ";
+//
+//        $model = new CActiveDataProvider('Users', array(
+//            'criteria' => $criteria_exp,
+//            'pagination'=>array(
+//                'pageSize'=>3,
+//            ),
+//        ));
+//
+//        if (isset($_GET['Users_page'])) {
+//            echo 'hi';
+//            Yii::app()->end();
+//        }
+
+
         $this->render('manage_notifies',array(
-        ));
+//                'model' => $model,
+            )
+        );
 	}
 
     public function actionManageUsers()
@@ -357,7 +438,7 @@ class AutorizedController extends Controller
 
         foreach ($proj_info[0] as $in_k=>$in_v) {
 
-            if($in_k == 'FIRST_LAVEL_APPROVAL' || $in_k == 'SECOND_LAVEL_RATING' || $in_k == 'THIRD_LAVEL_RATING'){
+            if($in_k == 'FIRST_LAVEL_APPROVAL' || $in_k == 'SECOND_LAVEL_RATING' || $in_k == 'THIRD_LAVEL_RATING' || $in_k == 'LONG_BUDGET' ){
                 $in_v = 'not_count';
             }
             if($in_v == null || $in_v == '' || $in_v == ' '){  echo json_encode('fail'); Yii::app()->end();   }
