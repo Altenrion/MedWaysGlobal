@@ -207,13 +207,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutorizedController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AutorizedController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="226" column="45" selection-start="6178" selection-end="6178" vertical-scroll-proportion="-10.980392">
+            <state line="437" column="166" selection-start="12827" selection-end="12827" vertical-scroll-proportion="0.47596154">
               <folding>
                 <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                <marker date="1411580346200" expanded="true" signature="15376:15388" placeholder="..." />
+                <marker date="1411580774115" expanded="true" signature="15400:15412" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -228,19 +228,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="production.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/config/production.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="36" selection-start="4889" selection-end="5157" vertical-scroll-proportion="0.26604435">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="c.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/config/c.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="28" selection-start="74" selection-end="74" vertical-scroll-proportion="17.0">
+            <state line="127" column="40" selection-start="4896" selection-end="4896" vertical-scroll-proportion="-6.1538463">
               <folding />
             </state>
           </provider>
@@ -270,8 +261,8 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/_man_grid.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_notifies.php" />
         <option value="$PROJECT_DIR$/protected/config/c.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
         <option value="$PROJECT_DIR$/protected/config/production.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
       </list>
     </option>
   </component>
@@ -748,23 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="226" column="45" selection-start="6178" selection-end="6178" vertical-scroll-proportion="-10.980392">
-          <folding>
-            <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1411580346200" expanded="true" signature="15376:15388" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="28" selection-start="74" selection-end="74" vertical-scroll-proportion="17.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="36" selection-start="1039" selection-end="1039" vertical-scroll-proportion="-18.307692">
@@ -774,8 +748,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/production.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="36" selection-start="4889" selection-end="5157" vertical-scroll-proportion="0.26604435">
+        <state line="127" column="40" selection-start="4896" selection-end="4896" vertical-scroll-proportion="-6.1538463">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="437" column="166" selection-start="12827" selection-end="12827" vertical-scroll-proportion="0.47596154">
+          <folding>
+            <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <marker date="1411580774115" expanded="true" signature="15400:15412" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
