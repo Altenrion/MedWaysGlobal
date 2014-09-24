@@ -125,16 +125,21 @@ return array(
                 'log'=>array(
                         'class'=>'CLogRouter',
                         'routes'=>array(
-                                array(
-                                    'class' => 'CWebLogRoute',
-                                    'categories' => 'application',
-                                    'levels'=>'error, warning, trace, profile, info',
-                                ),
+//                                array(
+//                                    'class' => 'CWebLogRoute',
+//                                    'categories' => 'application',
+//                                    'levels'=>'error, warning, trace, profile, info',
+//                                ),
 				                array(
                                         'class'=>'CProfileLogRoute',
                                          'levels'=>'profile',
                                          'enabled'=>true,
 				                ),
+                                array(
+                                    'class'=>'CFileLogRoute',
+                                    'levels'=>'trace, info,error, warning',
+                                    'categories'=>'system.*',
+                                ),
 //
 //
 ////				             uncomment the following to show log messages on web pages
