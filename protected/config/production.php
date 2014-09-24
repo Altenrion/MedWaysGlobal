@@ -125,11 +125,11 @@ return array(
                 'log'=>array(
                         'class'=>'CLogRouter',
                         'routes'=>array(
-                                array(
-                                    'class' => 'CWebLogRoute',
-//                                    'categories' => 'application',
-                                    'levels'=>'error, warning, trace, profile, info',
-                                ),
+//                                array(
+//                                    'class' => 'CWebLogRoute',
+////                                    'categories' => 'application',
+//                                    'levels'=>'error, warning, trace, profile, info',
+//                                ),
 //				                array(
 //                                        'class'=>'CProfileLogRoute',
 //                                         'levels'=>'profile',
