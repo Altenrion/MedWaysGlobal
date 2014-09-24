@@ -31,7 +31,7 @@
                     </div>
                     <div class="tab-pane" id="profile">
                         <p class="lead">Basic Tabs 2</p>
-<!--                        --><?// $this->actionManagers(); ?>
+                        <? $this->actionManagers(); ?>
                     </div>
                     <div class="tab-pane" id="messages">
                         <p class="lead">Basic Tabs 3</p>
