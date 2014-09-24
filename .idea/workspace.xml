@@ -63,7 +63,7 @@
     <file path="/CUserIdentity.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407569744508" ignored="false" />
     <file path="/Users.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409382158423" ignored="false" />
     <file path="/MyTraits.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410444711664" ignored="false" />
-    <file path="/AutorizedController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1411306885847" ignored="false" />
+    <file path="/AutorizedController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1411581053356" ignored="false" />
     <file path="/Users_old.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407620556572" ignored="false" />
     <file path="/regist.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407659269252" ignored="false" />
     <file path="/Subscriber.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407657729038" ignored="false" />
@@ -210,10 +210,10 @@
       <file leaf-file-name="AutorizedController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="441" column="11" selection-start="12620" selection-end="13014" vertical-scroll-proportion="0.5576923">
+            <state line="440" column="86" selection-start="12971" selection-end="12971" vertical-scroll-proportion="0.53725964">
               <folding>
                 <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                <marker date="1411580959930" expanded="true" signature="15414:15426" placeholder="..." />
+                <marker date="1411581069425" expanded="true" signature="15405:15417" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -755,10 +755,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="441" column="11" selection-start="12620" selection-end="13014" vertical-scroll-proportion="0.5576923">
+        <state line="440" column="86" selection-start="12971" selection-end="12971" vertical-scroll-proportion="0.53725964">
           <folding>
             <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1411580959930" expanded="true" signature="15414:15426" placeholder="..." />
+            <marker date="1411581069425" expanded="true" signature="15405:15417" placeholder="..." />
           </folding>
         </state>
       </provider>

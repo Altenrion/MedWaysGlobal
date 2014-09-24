@@ -429,17 +429,17 @@ class AutorizedController extends Controller
         $user_info = $user->findProfileData(Yii::app()->user->id);
         $proj_info = $project->findProjectData(Yii::app()->user->id);
 
-        foreach($user_info[0] as $i_k=>$i_v){
-            if($i_v == null || $i_v == '' || $i_v == ' '){  echo json_encode('fail'); Yii::app()->end();  }
-        }
-
-//        foreach ($proj_info[0] as $in_k=>$in_v) {
-//
-//            if($in_k == 'FIRST_LAVEL_APPROVAL' || $in_k == 'SECOND_LAVEL_RATING' || $in_k == 'THIRD_LAVEL_RATING' || $in_k == 'LONG_BUDGET' || $in_k == 'PRIVACY_P' ){
-//                $in_v = 'not_count';
-//            }
-//            if($in_v == null || $in_v == '' || $in_v == ' '){  echo json_encode('fail'); Yii::app()->end();   }
+//        foreach($user_info[0] as $i_k=>$i_v){
+//            if($i_v == null || $i_v == '' || $i_v == ' '){  echo json_encode('fail'); Yii::app()->end();  }
 //        }
+
+        foreach ($proj_info[0] as $in_k=>$in_v) {
+
+            if($in_k == 'FIRST_LAVEL_APPROVAL' || $in_k == 'SECOND_LAVEL_RATING' || $in_k == 'THIRD_LAVEL_RATING' || $in_k == 'LONG_BUDGET' || $in_k == 'PRIVACY_P' ){
+                $in_v = 'not_count';
+            }
+            if($in_v == null || $in_v == '' || $in_v == ' '){  echo json_encode($in_k); Yii::app()->end();   }
+        }
 
 
 
