@@ -277,10 +277,7 @@ class AutorizedController extends Controller
 //        }
 
 
-        $this->render('manage_notifies',array(
-//                'model' => $model,
-            )
-        );
+        $this->render('manage_notifies');
 	}
 
     public function actionManageUsers()
