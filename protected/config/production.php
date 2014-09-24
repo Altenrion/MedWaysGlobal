@@ -6,6 +6,7 @@ Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 Yii::setPathOfAlias('editable', dirname(__FILE__).'/../extensions/x-editable');
 Yii::setPathOfAlias('cabinet', dirname(__FILE__).'/../extensions/cabinet');
 
+
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
@@ -121,19 +122,19 @@ return array(
                         'adminInfo'=>'landerfeld@gmail.com'
                 ),
 
-//                'log'=>array(
-//                        'class'=>'CLogRouter',
-//                        'routes'=>array(
-//                                array(
-//                                    'class' => 'CWebLogRoute',
-//                                    'categories' => 'application',
-//                                    'levels'=>'error, warning, trace, profile, info',
-//                                ),
-//				                array(
-//                                        'class'=>'CProfileLogRoute',
-//                                         'levels'=>'profile',
-//                                         'enabled'=>true,
-//				                ),
+                'log'=>array(
+                        'class'=>'CLogRouter',
+                        'routes'=>array(
+                                array(
+                                    'class' => 'CWebLogRoute',
+                                    'categories' => 'application',
+                                    'levels'=>'error, warning, trace, profile, info',
+                                ),
+				                array(
+                                        'class'=>'CProfileLogRoute',
+                                         'levels'=>'profile',
+                                         'enabled'=>true,
+				                ),
 //
 //
 ////				             uncomment the following to show log messages on web pages
@@ -141,8 +142,8 @@ return array(
 //                                    'class'=>'CWebLogRoute',
 //                                ),
 //
-//			        ),
-//		        )
+			        ),
+		        )
 	),
 
 	// application-level parameters that can be accessed

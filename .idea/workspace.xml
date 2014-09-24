@@ -187,10 +187,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="manage_notifies.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="manage_notifies.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_notifies.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="54" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.6646919">
+            <state line="33" column="54" selection-start="1083" selection-end="1083" vertical-scroll-proportion="-21.576923">
               <folding />
             </state>
           </provider>
@@ -210,7 +210,7 @@
       <file leaf-file-name="AutorizedController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="195" column="0" selection-start="5163" selection-end="5163" vertical-scroll-proportion="-2.0392158">
+            <state line="195" column="0" selection-start="5163" selection-end="5163" vertical-scroll-proportion="-10.666667">
               <folding>
                 <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionManagers#0;n#AutorizedController#0;n#!!top" expanded="false" />
@@ -223,16 +223,16 @@
       <file leaf-file-name="devel.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="36" selection-start="1039" selection-end="1039" vertical-scroll-proportion="-18.307692">
+            <state line="28" column="36" selection-start="1039" selection-end="1039" vertical-scroll-proportion="54.26923">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="production.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/config/production.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="349" selection-end="349" vertical-scroll-proportion="-4.576923">
+            <state line="124" column="29" selection-start="4767" selection-end="4767" vertical-scroll-proportion="0.42473745">
               <folding />
             </state>
           </provider>
@@ -261,9 +261,9 @@
         <option value="$PROJECT_DIR$/protected/extensions/edatatables/assets/js/jdatatable.js" />
         <option value="$PROJECT_DIR$/protected/extensions/edatatables/EDataTables.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/_man_grid.php" />
-        <option value="$PROJECT_DIR$/protected/config/production.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_notifies.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
+        <option value="$PROJECT_DIR$/protected/config/production.php" />
       </list>
     </option>
   </component>
@@ -691,20 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/production.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="349" selection-end="349" vertical-scroll-proportion="-4.576923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="36" selection-start="1039" selection-end="1039" vertical-scroll-proportion="-18.307692">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/managers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="306" selection-end="306" vertical-scroll-proportion="-8.5">
@@ -714,9 +700,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_notifies.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="54" selection-start="1083" selection-end="1083" vertical-scroll-proportion="-21.576923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="0" selection-start="5163" selection-end="5163" vertical-scroll-proportion="-2.0392158">
+        <state line="195" column="0" selection-start="5163" selection-end="5163" vertical-scroll-proportion="-10.666667">
           <folding>
             <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionManagers#0;n#AutorizedController#0;n#!!top" expanded="false" />
@@ -725,9 +718,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_notifies.php">
+    <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="54" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.6646919">
+        <state line="28" column="36" selection-start="1039" selection-end="1039" vertical-scroll-proportion="54.26923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/production.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="29" selection-start="4767" selection-end="4767" vertical-scroll-proportion="0.42473745">
           <folding />
         </state>
       </provider>
