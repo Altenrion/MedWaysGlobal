@@ -210,10 +210,10 @@
       <file leaf-file-name="AutorizedController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="437" column="166" selection-start="12827" selection-end="12827" vertical-scroll-proportion="0.47596154">
+            <state line="441" column="11" selection-start="12620" selection-end="13014" vertical-scroll-proportion="0.5576923">
               <folding>
                 <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                <marker date="1411580774115" expanded="true" signature="15400:15412" placeholder="..." />
+                <marker date="1411580959930" expanded="true" signature="15414:15426" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -755,10 +755,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="437" column="166" selection-start="12827" selection-end="12827" vertical-scroll-proportion="0.47596154">
+        <state line="441" column="11" selection-start="12620" selection-end="13014" vertical-scroll-proportion="0.5576923">
           <folding>
             <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1411580774115" expanded="true" signature="15400:15412" placeholder="..." />
+            <marker date="1411580959930" expanded="true" signature="15414:15426" placeholder="..." />
           </folding>
         </state>
       </provider>
