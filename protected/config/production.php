@@ -125,19 +125,19 @@ return array(
                 'log'=>array(
                         'class'=>'CLogRouter',
                         'routes'=>array(
-//                                array(
-//                                    'class' => 'CWebLogRoute',
+                                array(
+                                    'class' => 'CWebLogRoute',
 //                                    'categories' => 'application',
-//                                    'levels'=>'error, warning, trace, profile, info',
-//                                ),
-				                array(
-                                        'class'=>'CProfileLogRoute',
-                                         'levels'=>'profile',
-                                         'enabled'=>true,
-				                ),
+                                    'levels'=>'error, warning, trace, profile, info',
+                                ),
+//				                array(
+//                                        'class'=>'CProfileLogRoute',
+//                                         'levels'=>'profile',
+//                                         'enabled'=>true,
+//				                ),
                                 array(
                                     'class'=>'CFileLogRoute',
-                                    'levels'=>'trace, info,error, warning',
+                                    'levels'=>'trace, info, error, warning',
                                     'categories'=>'system.*',
                                 ),
 //

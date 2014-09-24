@@ -232,7 +232,7 @@
       <file leaf-file-name="production.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/config/production.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="36" selection-start="5155" selection-end="5155" vertical-scroll-proportion="0.5635939">
+            <state line="130" column="83" selection-start="5106" selection-end="5110" vertical-scroll-proportion="0.5437573">
               <folding />
             </state>
           </provider>
@@ -727,7 +727,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/production.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="36" selection-start="5155" selection-end="5155" vertical-scroll-proportion="0.5635939">
+        <state line="130" column="83" selection-start="5106" selection-end="5110" vertical-scroll-proportion="0.5437573">
           <folding />
         </state>
       </provider>
