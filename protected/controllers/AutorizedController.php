@@ -224,7 +224,7 @@ class AutorizedController extends Controller
             'pagination'    => $pagination,
             'sort'          => $sort,
         ));
-        $widget = $this->createWidget('ext.EDatatables.EDataTables', array(
+        $widget = $this->createWidget('ext.edatatables.EDataTables', array(
             'id'            => 'University',
             'dataProvider'  => $dataProvider,
             'ajaxUrl'       => $this->createUrl('managers'),
