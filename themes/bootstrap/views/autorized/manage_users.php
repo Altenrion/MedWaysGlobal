@@ -36,7 +36,9 @@
             </ul>
             <div class="tab-content">
                 <div class="tab-pane active" id="home">
-                    <? $this->renderPartial('_exp_grid',array('sort'=>$sort,'pages'=>$pages,'models'=>$models)); ?>
+                    <? $this->actionExpertsList(); ?>
+
+<!--                    --><?// $this->renderPartial('_exp_grid',array('sort'=>$sort,'pages'=>$pages,'models'=>$models)); ?>
                 </div>
                 <div class="tab-pane" id="profile">
                     <? $this->renderPartial('_man_grid',array('sortm'=>$sortm,'pags'=>$pags,'manags'=>$manags)); ?>

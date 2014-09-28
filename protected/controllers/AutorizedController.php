@@ -7,7 +7,27 @@ class AutorizedController extends Controller
 
     public  $layout = '//layouts/Cabinet';
     public $defaultAction = 'index';
+    public $TableOptions= array(
+        'bStateSave'    => false,
+        'bPaginate'     => true,
+        'oLanguage'     => array(
+            "sEmptyTable" => "Не найдено ничегошеньки",
+            'sProcessing' => 'Загрузка...',
+            'sInfo' => 'Показано от _START_ до _END_ из общих _TOTAL_',
+            'sLengthMenu' => 'показано _MENU_ записей',
+            'sSearch'=>'поиск',
+            'sRefresh'=>'обновить',
+            'oPaginate' => array(
 
+                'sFirst' => '&laquo;',
+                'sPrevious' => '&laquo; назад',
+                'sNext' => 'далее &raquo;',
+                'sLast' => '&raquo;',
+
+            ),
+
+        ),
+    );
 
     public function filters()
     {
@@ -47,17 +67,6 @@ class AutorizedController extends Controller
             ),
         );
     }
-
-//    public function actionError()
-//    {
-//        if($error=Yii::app()->errorHandler->error)
-//        {
-//            if(Yii::app()->request->isAjaxRequest)
-//                echo $error['message'];
-//            else
-//                $this->render('error', $error);
-//        }
-//    }
 
 	public function actionIndex()
 	{
@@ -193,88 +202,84 @@ class AutorizedController extends Controller
 		$this->render('manage_news');
 	}
 
-    public function actionManagers(){
-        $columns = array(
-                'ID_UNIVER',
-                'NAME_UNIVER',
-                'ID_DISTRICT'
-            );
-        $cols = array(
-            'ID_UNIVER:number:#',
-            'NAME_UNIVER:text:Название Универа',
-            'ID_DISTRICT:number:Округ'
-        );
-
-        $criteria = new CDbCriteria;
-//        $criteria->condition =  "roles='Manager' ";
-
-        if (isset($_REQUEST['sSearch']) && isset($_REQUEST['sSearch']{0})) {
-
-
-            $criteria->addSearchCondition('NAME_UNIVER', $_REQUEST['sSearch']);
-        }
-
-        $sort = new EDTSort('University', $columns);
-        $sort->defaultOrder = 'ID_UNIVER';
-        $pagination = new EDTPagination();
-//        $pagination->pageSize = 5;
-
-        $dataProvider = new CActiveDataProvider('University', array(
-            'criteria'      => $criteria,
-            'pagination'    => $pagination,
-            'sort'          => $sort,
-        ));
-        $widget = $this->createWidget('ext.edatatables.EDataTables', array(
-            'id'            => 'University',
-            'dataProvider'  => $dataProvider,
-            'ajaxUrl'       => $this->createUrl('managers'),
-            'columns'       => $cols,
-            'options' => array(
-                'bStateSave'    => false,
-                'bPaginate'     => true,
-            ),
-        ));
-
-        if (!Yii::app()->getRequest()->getIsAjaxRequest()) {
-            $this->renderPartial('managers', array('widget' => $widget,),false, false);
-            return;
-        } else {
-            echo json_encode($widget->getFormattedData(intval($_REQUEST['sEcho'])));
-            Yii::app()->end();
-        }
-
-
-//
-//        $this->renderPartial('managers',array(
-//                'model' => $model,
-//            )
-//        );
-
+    /**
+     * Метод для присваевания полей сортировки. Не используется.
+     * @param array $columns
+     */
+    public function setSortColumns(array $columns){
+        $this->sortColumns = $columns;
     }
+
+    /**
+     * Метод для присваевания полей таблицы. Не используется.
+     * @param array $columns
+     */
+    public function setTableColumns(array $columns){
+        $cols = $columns['simple_cols'];
+
+        if(isset($columns['button_cols'])){
+            $button_column =  array( 'class' => 'EButtonColumn' );
+
+            $template = '';
+            foreach($columns['button_cols'] as $but_k=>$but_v){
+                $template .= '{'.$but_v.'}&nbsp;';
+            }
+            $button_column['template'] = $template;
+
+            $buttons = array();
+            foreach($columns['button_cols'] as $but_k=>$but_v){
+
+                switch ($but_v){
+                    case 'email'        : $button = array(
+                        'label'=>'<i class="fa fa-envelope"></i>',
+                        'url'=>'Yii::app()->createUrl("users/email", array("id"=>$data->id))',
+                        'options' => array(
+                            'rel' => 'tooltip',
+                            'data-toggle' => 'tooltip',
+                            'title'       => 'Отправить сообщение', ),
+                    );
+                        break;
+
+                    case 'showNotify'   : $button = array(
+                        'label'=>'<i class="fa fa-pencil"></i>',
+                        'url'=>'Yii::app()->createUrl("users/email", array("id"=>$data->id))',
+                        'options' => array(
+                            'rel' => 'tooltip',
+                            'data-toggle' => 'tooltip',
+                            'title'       => 'Отправить сообщение', ),
+                    );
+                        break;
+                    case  'update'      : $button =  array(
+                        'label'=> ' <a href="#"><i class="fa fa-check bg-green action"></i></a>',
+                        'url' => 'Yii::app()->createUrl("/edit/$data->id")',
+                    );
+                        break;
+                    case  'delete'      : $button = array(
+                        'url' => 'Yii::app()->createUrl("/delete/$data->id")',
+                    );
+                        break;
+
+
+                }
+
+                $buttons[$but_v]= $button;
+            }
+            $button_column['buttons'] = $buttons;
+            $cols[] = $button_column;
+
+            $this->tableColumns = $cols;
+
+        }
+    }
+
+
+
+
+
 
     public function actionManageNotifies()
 	{
 
-
-//        $model = new Users('search');
-//        $model->unsetAttributes();  // clear any default values
-//        if (isset($_GET['Users'])) {
-//            $model->attributes = $_GET['Users'];
-//        }
-//        $criteria_exp = new CDbCriteria();
-//        $criteria_exp->condition =  "roles='Manager' ";
-//
-//        $model = new CActiveDataProvider('Users', array(
-//            'criteria' => $criteria_exp,
-//            'pagination'=>array(
-//                'pageSize'=>3,
-//            ),
-//        ));
-//
-//        if (isset($_GET['Users_page'])) {
-//            echo 'hi';
-//            Yii::app()->end();
-//        }
 
 
         $this->render('manage_notifies');
@@ -371,20 +376,6 @@ class AutorizedController extends Controller
                 $role = $this->cleanRole($data[0]['roles']);
             }
 
-            if(Yii::app()->user->role == 'Dev'){
-                $messsages[] = ['success','Уважаемый эксперт','Ваш статус находится на согласовании. Ожидайте оповещения по почте указанной при регистрации.'];
-                $messsages[] = ['primary','Уважаемый пользователь','Ваш проект успешно отправлен на согласование. Ожидайте оповещения по почте.'];
-                $messsages[] = ['warning','Уважаемый пользователь','Ваш проект успешно отправлен на согласование. Ожидайте оповещения по почте.'];
-//              Yii::app()->user->setFlash("CONTACT_EMAIL", 'Имэйл отправлен');
-            }
-            if(Yii::app()->user->role == 'Exp'){
-                $messsages[] = ['success','Уважаемый эксперт','Ваш статус находится на согласовании. Ожидайте оповещения по почте указанной при регистрации.'];
-            }
-            if(Yii::app()->user->role == 'Manager'){
-                $messsages[] = ['success','Уважаемый пользователь','Вам необходимо внести всю недостающую информацию в разделы "Профиль пользователя" и "Проект".'];
-            }
-
-
             $perc_prof = $this->CheckInfoPercentage($clean_data);
 
         }
@@ -456,8 +447,240 @@ class AutorizedController extends Controller
 
 
 
+    /**
+     * Метод для отрисовки таблицы новостей
+     */
+    public function actionNewsList(){
+        $columns = array('id','title','content');
+
+        $cols = array( 'id:number:#', 'title:text:Заголовок',
+            array(
+                'name'=>'Текст',
+                'type'=>'text',
+                'value'=>'substr($data->content  , 0, 150).\'... \'',
+            ),
+            array(
+                'class' => 'EButtonColumn',
+                'template' => '{edit}&nbsp;{delete}',
+                'buttons' => array(
+
+                    'edit' => array(
+                        'label'=> 'Редактировать',
+                        //здесь должен быть url для редактирования записи
+                        'url' => '',
+                    ),
+                    'delete' => array(
+                        //здесь должен быть url для удаления записи
+                        'url' => 'Yii::app()->createUrl("/delete/$data->id")',
+                    ),
+                ),
+            ),
+        );
+
+        $criteria = new CDbCriteria;
+
+        if (isset($_REQUEST['sSearch']) && isset($_REQUEST['sSearch']{0})) {
+            $criteria->addSearchCondition('content', $_REQUEST['sSearch']);
+        }
+
+        $sort = new EDTSort('NewsStorage', $columns);
+        $sort->defaultOrder = 'id';
+
+        $pagination = new EDTPagination();
+
+        $dataProvider = new CActiveDataProvider('NewsStorage', array(
+            'criteria'      => $criteria,
+            'pagination'    => $pagination,
+            'sort'          => $sort,
+        ));
+        $widget = $this->createWidget('ext.edatatables.EDataTables', array(
+            'id'            => 'NewsStorage',
+            'dataProvider'  => $dataProvider,
+            'ajaxUrl'       => $this->createUrl('NewsList'),
+            'columns'       => $cols,
+            'buttons' => array(
+                'refresh' => array(
+                    'tagName' => 'a',
+                    'label' => '<i class="fa fa-refresh "></i>',
+                    'htmlClass' => 'btn',
+                    'htmlOptions' => array('rel' => 'tooltip', 'title' => 'Обновить'),
+                    'init' => 'js:function(){}',
+                    'callback' => 'js:function(e){e.data.that.eDataTables("refresh"); return false;}',
+                ),
+            ),
+            'options' => $this->TableOptions,
+        ));
+
+        if (!Yii::app()->getRequest()->getIsAjaxRequest()) {
+            $this->renderPartial('_NewsList', array('widget' => $widget,),false, false);
+            return;
+        } else {
+            echo json_encode($widget->getFormattedData(intval($_REQUEST['sEcho'])));
+            Yii::app()->end();
+        }
 
 
+    }
+
+    /**
+     * Метод для отрисовки таблицы оповещений
+     */
+    public function actionNotifiesList(){
+        $columns = array('id','title','text','address');
+
+        $cols = array( 'id:number:#', 'title:text:Заголовок','text:text:Текст','address:text:Адресат','user_id:number:ID пользователя',
+            array(
+                'class' => 'EButtonColumn',
+                'template' => '{edit}&nbsp;{delete}',
+                'buttons' => array(
+
+                    'edit' => array(
+                        'label'=> 'Редактировать',
+                        'url' => '',
+                    ),
+                    'delete' => array(
+                        'url' => 'Yii::app()->createUrl("/delete/$data->id")',
+                    ),
+                ),
+            ),
+        );
+
+        $criteria = new CDbCriteria;
+//        $criteria->condition =  "roles='Manager' ";
+
+        if (isset($_REQUEST['sSearch']) && isset($_REQUEST['sSearch']{0})) {
+            $criteria->addSearchCondition('text', $_REQUEST['sSearch']);
+        }
+
+        $sort = new EDTSort('NotificationStorage', $columns);
+        $sort->defaultOrder = 'id';
+
+        $pagination = new EDTPagination();
+
+        $dataProvider = new CActiveDataProvider('NotificationStorage', array(
+            'criteria'      => $criteria,
+            'pagination'    => $pagination,
+            'sort'          => $sort,
+        ));
+        $widget = $this->createWidget('ext.edatatables.EDataTables', array(
+            'id'            => 'NotificationStorage',
+            'dataProvider'  => $dataProvider,
+            'ajaxUrl'       => $this->createUrl('NotifiesList'),
+            'columns'       => $cols,
+            'options' => $this->TableOptions,
+        ));
+
+        if (!Yii::app()->getRequest()->getIsAjaxRequest()) {
+            $this->renderPartial('_NotifiesList', array('widget' => $widget,),false, false);
+            return;
+        } else {
+            echo json_encode($widget->getFormattedData(intval($_REQUEST['sEcho'])));
+            Yii::app()->end();
+        }
+
+
+    }
+
+
+    /**
+     * Метод для отрисовки таблицы Эксертов
+     */
+    public function actionExpertsList(){
+
+
+        $columns = array('id','F_NAME','L_NAME','S_NAME','ID_DISTRICT','ID_UNIVER','ID_STAGE','roles');
+
+        $cols = array(
+           'id:number:#', 'F_NAME:text:Фамилия','L_NAME:text:Имя','S_NAME:text:Отчество',
+
+            array(
+                'name'=>'ID_DISTRICT',
+                'type'=>'text',
+                'value'=>'$this->getDistrict($data->ID_DISTRICT)',
+            ),
+            array(
+                'name'=>'ID_UNIVER',
+                'type'=>'text',
+                'value'=>'$this->getUniver($data->ID_UNIVER)',
+            ),
+            array(
+                'name'=>'ID_STAGE',
+                'type'=>'text',
+                'value'=>'$this->getStage($data->ID_STAGE)',
+            ),
+            array(
+                'name'=>'roles',
+                'type'=>'text',
+                'value'=>'$this->getRole($data->roles)',
+            ),
+
+            array(
+                'class' => 'EButtonColumn',
+                'template' => '{edit}&nbsp;{delete}',
+                'buttons' => array(
+
+                    'edit' => array(
+                        'label'=> 'Редактировать',
+                        'url' => '',
+                    ),
+                    'delete' => array(
+                        'url' => 'Yii::app()->createUrl("/delete/$data->id")',
+                    ),
+                ),
+            ),
+        );
+
+        $criteria = new CDbCriteria;
+        $criteria->condition =  "roles='Exp' OR roles='Exp1' OR roles='Exp2' OR roles='Exp3'";
+
+        if (isset($_REQUEST['sSearch']) && isset($_REQUEST['sSearch']{0})) {
+            $criteria->addSearchCondition('L_NAME', $_REQUEST['sSearch']);
+        }
+
+        $sort = new EDTSort('Users', $columns);
+        $sort->defaultOrder = 'id';
+
+        $pagination = new EDTPagination();
+
+        $dataProvider = new CActiveDataProvider('Users', array(
+            'criteria'      => $criteria,
+            'pagination'    => $pagination,
+            'sort'          => $sort,
+        ));
+        $widget = $this->createWidget('ext.edatatables.EDataTables', array(
+            'id'            => 'Users',
+            'dataProvider'  => $dataProvider,
+            'ajaxUrl'       => $this->createUrl('ExpertsList'),
+            'columns'       => $cols,
+            'buttons' => array(
+                'refresh' => array(
+                    'tagName' => 'a',
+                    'label' => '<i class="fa fa-refresh "></i>',
+                    'htmlClass' => 'btn',
+                    'htmlOptions' => array('rel' => 'tooltip', 'title' => Yii::t('EDataTables.edt',"Refresh")),
+                    'init' => 'js:function(){}',
+                    'callback' => 'js:function(e){e.data.that.eDataTables("refresh"); return false;}',
+                ),
+            ),
+            'options' => $this->TableOptions,
+        ));
+
+        if (!Yii::app()->getRequest()->getIsAjaxRequest()) {
+            $this->renderPartial('_ExpertsList', array('widget' => $widget,),false, false);
+            return;
+        } else {
+            echo json_encode($widget->getFormattedData(intval($_REQUEST['sEcho'])));
+            Yii::app()->end();
+        }
+
+
+    }
+
+    public function getDistrict($id_district){
+        $dist =  District::model()->findByPk($id_district);
+        return $dist->NAME;
+
+    }
     public function actionGetSpecialities(){
         echo CJSON::encode(Editable::source(Speciality::model()->findAll(), 'ID_SPECIALITY', 'NAME'));
     }

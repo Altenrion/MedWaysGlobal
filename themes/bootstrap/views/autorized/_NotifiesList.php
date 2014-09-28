@@ -1,0 +1,2 @@
+
+<?php $widget->run(); ?>

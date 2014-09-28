@@ -53,4 +53,36 @@ class EDataColumn extends CDataColumn {
 		$this->renderDataCellContent($row,$this->grid->dataProvider->data[$row]);
 		return ob_get_clean();
 	}
+
+    public function getDistrict($id_district){
+        $dist =  District::model()->findByPk($id_district);
+        return $dist['NAME'];
+    }
+
+    public function getStage($id_stage){
+        $st =  Stage::model()->findByPk($id_stage);
+        return $st['NAME_STAGE'];
+
+    }
+    public function getUniver($id_univer){
+        $univer = University::model()->findByPk($id_univer);
+        return $univer['NAME_UNIVER'];
+
+    }
+    public function getRole($role){
+
+        switch($role){
+            case 'Dev': $rol = 'Разработчик'; break;
+            case 'Manager': $rol = 'Руководитель проекта'; break;
+            case 'Exp':$rol = 'Эксперт 0'; break;
+            case 'Exp1':$rol = 'Эксперт 1'; break;
+            case 'Exp2':$rol = 'Эксперт 2'; break;
+            case 'Exp3': $rol = 'Эксперт 3'; break;
+        }
+
+        return $rol;
+
+    }
+
+
 }
