@@ -425,8 +425,8 @@ class AutorizedController extends Controller
             }
 
             if($i_v == null || $i_v == '' || $i_v == ' '){
-                var_dump($i_k);
-                Yii::app()->end();
+//                var_dump($i_k);
+//                Yii::app()->end();
 
                 echo json_encode('fail'); Yii::app()->end();  }
         }
@@ -438,8 +438,8 @@ class AutorizedController extends Controller
             }
             if($in_v == null || $in_v == '' || $in_v == ' '){
 
-                var_dump($i_k);
-                Yii::app()->end();
+//                var_dump($i_k);
+//                Yii::app()->end();
                 echo json_encode('fail'); Yii::app()->end();   }
         }
 
