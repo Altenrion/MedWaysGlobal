@@ -389,23 +389,22 @@ class AutorizedController extends Controller
      */
     public function CheckInfoPercentage($arr){
         $key = 0;
+
+        unset($arr['PRIVACY']);
+
         foreach($arr as $ar_k=>$ar_v){
 
-            if( $ar_k !== 'FIRST_LAVEL_APPROVAL' ||
-                $ar_k !== 'SECOND_LAVEL_RATING'  ||
-                $ar_k !== 'THIRD_LAVEL_RATING'   ){
+            if( $ar_k !== 'FIRST_LAVEL_APPROVAL' || $ar_k !== 'SECOND_LAVEL_RATING'  || $ar_k !== 'THIRD_LAVEL_RATING'  || $ar_k !== 'PRIVACY'   ){
+
                 if(empty($ar_v) || $ar_v == "" || $ar_v == " " || is_null( $ar_v) ){
                     $key++;
+//
                 }
             }
         }
-
         $num = count($arr);
         $percentage = (($num - $key)/$num)*100;
         return $percentage;
-
-
-
     }
 
     /**

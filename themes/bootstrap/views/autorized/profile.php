@@ -244,16 +244,6 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                                 'combodate'   => array('minYear' => 1930, 'maxYear' => 2015),
                                                 'title'     => 'Выберите дату рождения',
                                                 'options'     => array(  'disabled'=>true, )  )); ?>
-<?
-//                                       @media (min-width: 768px)
-//    .form-inline .form-group {
-//        display: inline-block;
-//        margin-bottom: 0;
-//vertical-align: middle;
-//padding-left: 20px;
-//padding-right: 20px;
-  ?>
-
 
                                     </div>
                                 </div>
