@@ -326,8 +326,8 @@ if(isset($data) && !is_null($data)){
                         'name'      => 'DESCR_PROJECT',
                         'text'      => CHtml::encode($data[0]['DESCR_PROJECT']),
                         'url'       => $this->createUrl('Autorized/updateProject'),
-                        'title'     => 'Введите фамилию',
-                        'placement' => 'right',
+                        'title'     => 'Введите краткую аннотацию ',
+                        'placement' => 'top',
                         'options' => array( 'disabled'=>true, ),  )); ?>
                 </p>
 
