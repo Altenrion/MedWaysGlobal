@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php" line="601" mnemonic="1" />
-    <bookmark url="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php" line="606" mnemonic="2" />
-    <bookmark url="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php" line="611" mnemonic="3" />
-    <bookmark url="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php" line="616" mnemonic="4" />
+    <bookmark url="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php" line="609" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php" line="614" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php" line="619" mnemonic="3" />
+    <bookmark url="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php" line="624" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" name="Default" comment="" />
@@ -64,7 +64,7 @@
     <file path="/CUserIdentity.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407569744508" ignored="false" />
     <file path="/Users.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409382158423" ignored="false" />
     <file path="/MyTraits.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410444711664" ignored="false" />
-    <file path="/AutorizedController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412018011904" ignored="false" />
+    <file path="/AutorizedController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412021515389" ignored="false" />
     <file path="/Users_old.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407620556572" ignored="false" />
     <file path="/regist.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407659269252" ignored="false" />
     <file path="/Subscriber.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407657729038" ignored="false" />
@@ -193,13 +193,13 @@
     <favorites_list name="MedWaysGlobal" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.9">
+    <splitter split-orientation="horizontal" split-proportion="0.8452508">
       <split-first>
         <leaf>
           <file leaf-file-name="AutorizedController.php" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="432" column="36" selection-start="12223" selection-end="12223" vertical-scroll-proportion="0.74038464">
+                <state line="433" column="49" selection-start="12067" selection-end="12067" vertical-scroll-proportion="0.515625">
                   <folding>
                     <element signature="n#setSortColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
                     <element signature="n#setTableColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
@@ -212,7 +212,7 @@
                     <element signature="n#actionManagersList#0;n#AutorizedController#0;n#!!top" expanded="false" />
                     <element signature="n#actionExpertProjectsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
                     <element signature="n#actionJuliaList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                    <marker date="1412020569346" expanded="true" signature="36084:36096" placeholder="..." />
+                    <marker date="1412021982344" expanded="true" signature="36250:36262" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -303,7 +303,7 @@
           <file leaf-file-name="Users.php" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="88" column="50" selection-start="2541" selection-end="2541" vertical-scroll-proportion="0.38270143">
+                <state line="236" column="27" selection-start="7556" selection-end="7556" vertical-scroll-proportion="0.46327013">
                   <folding />
                 </state>
               </provider>
@@ -915,14 +915,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="50" selection-start="2541" selection-end="2541" vertical-scroll-proportion="0.38270143">
+        <state line="236" column="27" selection-start="7556" selection-end="7556" vertical-scroll-proportion="0.46327013">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="432" column="36" selection-start="12223" selection-end="12223" vertical-scroll-proportion="0.74038464">
+        <state line="433" column="49" selection-start="12067" selection-end="12067" vertical-scroll-proportion="0.515625">
           <folding>
             <element signature="n#setSortColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#setTableColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
@@ -935,7 +935,7 @@
             <element signature="n#actionManagersList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionExpertProjectsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionJuliaList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1412020569346" expanded="true" signature="36084:36096" placeholder="..." />
+            <marker date="1412021982344" expanded="true" signature="36250:36262" placeholder="..." />
           </folding>
         </state>
       </provider>

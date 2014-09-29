@@ -25,6 +25,11 @@ Yii::import('zii.widgets.grid.CGridColumn');
  */
 class CButtonColumn extends CGridColumn
 {
+
+    /**
+     * @var boolean whether the ID in the button options should be evaluated.
+     */
+    public $evaluateID = false;
 	/**
 	 * @var array the HTML options for the data cell tags.
 	 */
@@ -316,6 +321,12 @@ EOD;
 		ob_start();
 		foreach($this->buttons as $id=>$button)
 		{
+
+        if($this->evaluateID and isset($button['options']['id']))
+        {
+            $button['options']['id'] = $this->evaluateExpression($button['options']['id'], array('row'=>$row,'data'=>$data));
+        }
+
 			$this->renderButton($id,$button,$row,$data);
 			$tr['{'.$id.'}']=ob_get_contents();
 			ob_clean();
@@ -323,6 +334,14 @@ EOD;
 		ob_end_clean();
 		echo strtr($this->template,$tr);
 	}
+//
+//
+//        if($this->evaluateID and isset($button['options']['id']))
+//        {
+//        $button['options']['id'] = $this->evaluateExpression($button['options']['id'], array('row'=>$row,'data'=>$data));
+//        }
+
+
 
 	/**
 	 * Renders a link button.

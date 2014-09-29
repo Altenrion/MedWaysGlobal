@@ -1,2 +1,3 @@
-
-<?php $widget->run(); ?>
+<div class="table-responsive">
+    <?php $widget->run(); ?>
+</div>

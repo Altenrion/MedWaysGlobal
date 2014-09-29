@@ -420,11 +420,15 @@ class AutorizedController extends Controller
         $proj_info = $project->findProjectData(Yii::app()->user->id);
 
         foreach($user_info[0] as $i_k=>$i_v){
-            if($i_v == 'PRIVACY' || $i_v == 'ID_STAGE' || $i_v == 'AVATAR' ){
+            if($i_k == 'PRIVACY' || $i_k == 'ID_STAGE' || $i_k == 'AVATAR' ){
                 $i_v = 'not_count';
             }
 
-            if($i_v == null || $i_v == '' || $i_v == ' '){  echo json_encode('fail'); Yii::app()->end();  }
+            if($i_v == null || $i_v == '' || $i_v == ' '){
+                var_dump($i_k);
+                Yii::app()->end();
+
+                echo json_encode('fail'); Yii::app()->end();  }
         }
 
         foreach ($proj_info[0] as $in_k=>$in_v) {
@@ -432,7 +436,11 @@ class AutorizedController extends Controller
             if($in_k == 'FIRST_LAVEL_APPROVAL' || $in_k == 'FIRST_LAVEL_COMMENT' || $in_k == 'SECOND_LAVEL_RATING' || $in_k == 'THIRD_LAVEL_RATING' || $in_k == 'LONG_BUDGET' || $in_k == 'PRIVACY_P' ){
                 $in_v = 'not_count';
             }
-            if($in_v == null || $in_v == '' || $in_v == ' '){  echo json_encode('fail'); Yii::app()->end();   }
+            if($in_v == null || $in_v == '' || $in_v == ' '){
+
+                var_dump($i_k);
+                Yii::app()->end();
+                echo json_encode('fail'); Yii::app()->end();   }
         }
 
 
