@@ -87,7 +87,7 @@ class Users extends CActiveRecord
 //            array('AVATAR', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
 //            array('password','unsafe','on'=>'update'),
             array('AVATAR','safe','on'=>'update'),
-            array('BIRTH_DATE', 'date', 'format'=>'yyyy-M-d','on'=>'update'),
+            array('BIRTH_DATE', 'date', 'format'=>'yyyy-M-d'),
 			array('DEGREE, ACADEMIC_TITLE, W_POSITION', 'length', 'max'=>200),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.

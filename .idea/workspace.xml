@@ -16,7 +16,7 @@
     <file path="/main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407487814422" ignored="false" />
     <file path="/Proto.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409519208839" ignored="false" />
     <file path="/Autentification_main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406121974522" ignored="false" />
-    <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1411926813500" ignored="false" />
+    <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412027002915" ignored="false" />
     <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410123613394" ignored="false" />
     <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408512630498" ignored="false" />
     <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409862514704" ignored="false" />
@@ -64,7 +64,7 @@
     <file path="/CUserIdentity.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407569744508" ignored="false" />
     <file path="/Users.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409382158423" ignored="false" />
     <file path="/MyTraits.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410444711664" ignored="false" />
-    <file path="/AutorizedController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412021515389" ignored="false" />
+    <file path="/AutorizedController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412023875112" ignored="false" />
     <file path="/Users_old.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407620556572" ignored="false" />
     <file path="/regist.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407659269252" ignored="false" />
     <file path="/Subscriber.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407657729038" ignored="false" />
@@ -79,7 +79,7 @@
     <file path="$PROJECT_DIR$/adminka/font-awesome-4.1.0/less/font-awesome.less" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407927659262" ignored="false" />
     <file path="/Adminka.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409122170999" ignored="false" />
     <file path="/stylings.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408935518054" ignored="false" />
-    <file path="/profile.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410671542535" ignored="false" />
+    <file path="/profile.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412024954290" ignored="false" />
     <file path="/Bootstrap.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408173524166" ignored="false" />
     <file path="/MyEditsToEditable.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409264261303" ignored="false" />
     <file path="/project.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410722095155" ignored="false" />
@@ -170,6 +170,7 @@
     <file path="/EDataColumn.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1411985866228" ignored="false" />
     <file path="/_ExpertsList.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1411984590811" ignored="false" />
     <file path="/_ExpertProjectsList.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1411984698649" ignored="false" />
+    <file path="/editable.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412026910804" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,89 +194,13 @@
     <favorites_list name="MedWaysGlobal" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.8452508">
+    <splitter split-orientation="horizontal" split-proportion="0.57846355">
       <split-first>
         <leaf>
-          <file leaf-file-name="AutorizedController.php" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="440" column="16" selection-start="12404" selection-end="12458" vertical-scroll-proportion="0.7199519">
-                  <folding>
-                    <element signature="n#setSortColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                    <element signature="n#setTableColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                    <element signature="n#actionManageUsers#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                    <element signature="n#actionLockScreen#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                    <element signature="n#CheckInfoPercentage#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                    <element signature="n#actionNewsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                    <element signature="n#actionNotifiesList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                    <element signature="n#actionExpertsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                    <element signature="n#actionManagersList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                    <element signature="n#actionExpertProjectsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                    <element signature="n#actionJuliaList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                    <marker date="1412023047799" expanded="true" signature="36258:36270" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="statistics.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="30" column="47" selection-start="604" selection-end="604" vertical-scroll-proportion="-15.692307">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="info.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="44" column="70" selection-start="1322" selection-end="1342" vertical-scroll-proportion="-15.038462">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_exp_grid.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_exp_grid.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="83" selection-start="451" selection-end="451" vertical-scroll-proportion="-5.8846154">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="manage_users.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_users.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="38" column="53" selection-start="1055" selection-end="1089" vertical-scroll-proportion="-20.038462">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_ExpertsList.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertsList.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="30" selection-start="0" selection-end="30" vertical-scroll-proportion="-0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_ExpertProjectsList.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertProjectsList.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="2" column="6" selection-start="62" selection-end="62" vertical-scroll-proportion="-1.3076923">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="EDataColumn.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="57" column="20" selection-start="1530" selection-end="1530" vertical-scroll-proportion="-7.9615383">
+                <state line="57" column="20" selection-start="1530" selection-end="1530" vertical-scroll-proportion="-13.846154">
                   <folding>
                     <element signature="n#getRole#0;n#EDataColumn#0;n#!!top" expanded="false" />
                     <element signature="n#getStatus#0;n#EDataColumn#0;n#!!top" expanded="false" />
@@ -284,14 +209,59 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="projects.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php">
+          <file leaf-file-name="AutorizedController.php" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="34" column="54" selection-start="1024" selection-end="1024" vertical-scroll-proportion="-18.307692">
+                <state line="345" column="0" selection-start="9664" selection-end="9664" vertical-scroll-proportion="0.52369666">
                   <folding>
-                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#small#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+                    <element signature="n#setSortColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
+                    <element signature="n#setTableColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
+                    <element signature="n#actionManageUsers#0;n#AutorizedController#0;n#!!top" expanded="false" />
+                    <element signature="n#actionLockScreen#0;n#AutorizedController#0;n#!!top" expanded="false" />
+                    <element signature="n#CheckInfoPercentage#0;n#AutorizedController#0;n#!!top" expanded="false" />
+                    <element signature="n#actionNotifiesList#0;n#AutorizedController#0;n#!!top" expanded="false" />
+                    <element signature="n#actionExpertsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
+                    <element signature="n#actionManagersList#0;n#AutorizedController#0;n#!!top" expanded="false" />
+                    <element signature="n#actionExpertProjectsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
+                    <element signature="n#actionJuliaList#0;n#AutorizedController#0;n#!!top" expanded="false" />
+                    <marker date="1412029172120" expanded="false" signature="36258:36270" placeholder="..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="project.php" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="122" column="43" selection-start="4461" selection-end="4461" vertical-scroll-proportion="-7.1923075">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="240" column="70" selection-start="10231" selection-end="10231" vertical-scroll-proportion="-10.692307">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="3679" column="0" selection-start="63808" selection-end="63808" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ProjectRegistry.php" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="116" column="57" selection-start="4411" selection-end="4411" vertical-scroll-proportion="-18.961538">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -303,7 +273,7 @@
           <file leaf-file-name="Users.php" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="236" column="27" selection-start="7556" selection-end="7556" vertical-scroll-proportion="0.46327013">
+                <state line="89" column="60" selection-start="2602" selection-end="2602" vertical-scroll-proportion="0.23459716">
                   <folding />
                 </state>
               </provider>
@@ -321,21 +291,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/managersList.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/DataTableList.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/QQQ.php" />
-        <option value="$PROJECT_DIR$/../QQQ.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/managers.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_notifies.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_users.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php" />
-        <option value="$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertsList.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertProjectsList.php" />
         <option value="$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php" />
         <option value="$PROJECT_DIR$/framework/zii/widgets/grid/CButtonColumn.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
+        <option value="$PROJECT_DIR$/protected/components/Controller.php" />
+        <option value="$PROJECT_DIR$/adminka/js/MyEditsToEditable.js" />
+        <option value="$PROJECT_DIR$/protected/config/devel.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/x-editable/messages/ru/editable.php" />
+        <option value="$PROJECT_DIR$/protected/config/production.php" />
+        <option value="$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php" />
         <option value="$PROJECT_DIR$/protected/models/medways/Users.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
       </list>
     </option>
@@ -430,98 +400,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="showCase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autorized" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="protected" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -602,7 +480,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="edatatables" />
+              <option name="myItemId" value="x-editable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -620,7 +498,175 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="x-editable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="x-editable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap-editable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="x-editable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap-editable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -727,9 +773,10 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5170517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14140876" sideWeight="0.4829483" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18729989" sideWeight="0.4829483" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -738,7 +785,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5170517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -807,74 +853,67 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php">
+    <entry file="file://$PROJECT_DIR$/protected/extensions/x-editable/Editable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="119" selection-start="2450" selection-end="2458" vertical-scroll-proportion="-9.346154">
+        <state line="66" column="61" selection-start="1762" selection-end="1762" vertical-scroll-proportion="0.26942354">
           <folding>
-            <element signature="e#2386#2410#0" expanded="true" />
+            <element signature="e#6#209#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/edatatables/EButtonColumn.php">
+    <entry file="file://$PROJECT_DIR$/protected/config/production.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="46" selection-start="3149" selection-end="3149" vertical-scroll-proportion="2.0862699">
+        <state line="53" column="41" selection-start="1760" selection-end="1760" vertical-scroll-proportion="0.16267942">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework/zii/widgets/grid/CButtonColumn.php">
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile_.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="31" selection-start="799" selection-end="920" vertical-scroll-proportion="0.46780074">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="47" selection-start="5556" selection-end="5571" vertical-scroll-proportion="0.14896215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="70" selection-start="1322" selection-end="1342" vertical-scroll-proportion="-15.038462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_exp_grid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="83" selection-start="451" selection-end="451" vertical-scroll-proportion="-5.8846154">
+        <state line="191" column="43" selection-start="8981" selection-end="10373" vertical-scroll-proportion="0.7049763">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="53" selection-start="1055" selection-end="1089" vertical-scroll-proportion="-20.038462">
+        <state line="38" column="53" selection-start="1055" selection-end="1089" vertical-scroll-proportion="0.60793465">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertsList.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="30" selection-start="0" selection-end="30" vertical-scroll-proportion="0.0">
+        <state line="0" column="30" selection-start="0" selection-end="30" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="24" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.19836639">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/x-editable/messages/ru/editable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="27" selection-start="147" selection-end="147" vertical-scroll-proportion="0.07934656">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertProjectsList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="62" selection-end="62" vertical-scroll-proportion="0.03967328">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="54" selection-start="1024" selection-end="1024" vertical-scroll-proportion="-18.307692">
+        <state line="34" column="54" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.5554259">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#small#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
@@ -882,16 +921,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertProjectsList.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="62" selection-end="62" vertical-scroll-proportion="-1.3076923">
+        <state line="116" column="57" selection-start="4411" selection-end="4411" vertical-scroll-proportion="-18.961538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3679" column="0" selection-start="63808" selection-end="63808" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="60" selection-start="2602" selection-end="2602" vertical-scroll-proportion="0.23459716">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="20" selection-start="1530" selection-end="1530" vertical-scroll-proportion="-7.9615383">
+        <state line="57" column="20" selection-start="1530" selection-end="1530" vertical-scroll-proportion="-13.846154">
           <folding>
             <element signature="n#getRole#0;n#EDataColumn#0;n#!!top" expanded="false" />
             <element signature="n#getStatus#0;n#EDataColumn#0;n#!!top" expanded="false" />
@@ -899,43 +952,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_JuliaList.php">
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="122" column="43" selection-start="4461" selection-end="4461" vertical-scroll-proportion="-7.1923075">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="47" selection-start="604" selection-end="604" vertical-scroll-proportion="-15.692307">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="236" column="27" selection-start="7556" selection-end="7556" vertical-scroll-proportion="0.46327013">
+        <state line="240" column="70" selection-start="10231" selection-end="10231" vertical-scroll-proportion="-10.692307">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="440" column="16" selection-start="12404" selection-end="12458" vertical-scroll-proportion="0.7199519">
+        <state line="345" column="0" selection-start="9664" selection-end="9664" vertical-scroll-proportion="0.52369666">
           <folding>
             <element signature="n#setSortColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#setTableColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionManageUsers#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionLockScreen#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#CheckInfoPercentage#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionNewsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionNotifiesList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionExpertsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionManagersList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionExpertProjectsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionJuliaList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1412023047799" expanded="true" signature="36258:36270" placeholder="..." />
+            <marker date="1412029172120" expanded="false" signature="36258:36270" placeholder="..." />
           </folding>
         </state>
       </provider>

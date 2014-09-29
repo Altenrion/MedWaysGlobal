@@ -3677,3 +3677,8 @@ button#enable {
 @media screen and (max-width: 32em) {
     body { font-size: 95%; }
 }
+
+.form-inline .form-group {
+        padding-left: 20px;
+        padding-right: 20px;
+}

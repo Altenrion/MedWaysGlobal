@@ -69,11 +69,9 @@ $(document).ready(function () {
     }
 
     $('#Pull').click(function(){
-        console.log('Я тут');
+//        console.log('Я тут');
+//        console.log(Url);
 
-        console.log(Url);
-
-//        $('#Pull_Modal').modal('show');
 
         $('#Pull>i').addClass('fa-spinner fa-spin');
 //        $('#Pull_Modal').delay('1000');

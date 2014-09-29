@@ -119,8 +119,8 @@ if(isset($data) && !is_null($data)){
                         'name'      => 'NAME',
                         'text'      => CHtml::encode($data[0]['NAME']),
                         'url'       => $this->createUrl('Autorized/updateProject'),
-                        'title'     => 'Введите фамилию',
-                        'placement' => 'right',
+                        'title'     => 'Введите название проекта',
+                        'placement' => 'top',
                         'options' => array( 'disabled'=>true, ),  )); ?>
                 </p>
                 <hr>
@@ -141,8 +141,8 @@ if(isset($data) && !is_null($data)){
                             'text'      => CHtml::encode($data[0]['ID_STAGE']),
                             'url'       => $this->createUrl('Autorized/updateProject'),
                             'source'    => $this->createUrl('Autorized/getStages'),
-                            'title'     => 'Enter title',
-                            'placement' => 'right',
+                            'title'     => 'Выберите научную платформу',
+                            'placement' => 'top',
                             'options' => array( 'disabled'=>true, 'showbuttons'=>false,), ));  ?>
                     </div>
                 </div>
@@ -155,8 +155,8 @@ if(isset($data) && !is_null($data)){
                             'name'      => 'EXECUTERS_NUM',
                             'text'      => CHtml::encode($data[0]['EXECUTERS_NUM']),
                             'url'       => $this->createUrl('Autorized/updateProject'),
-                            'title'     => 'Введите фамилию',
-                            'placement' => 'right',
+                            'title'     => 'Введите кол-во исполнителей',
+                            'placement' => 'top',
                             'options' => array( 'disabled'=>true, ),  )); ?>
                     </div>
                 </div>
@@ -169,8 +169,8 @@ if(isset($data) && !is_null($data)){
                             'name'      => 'UN_THIRTY_FIVE',
                             'text'      => CHtml::encode($data[0]['UN_THIRTY_FIVE']),
                             'url'       => $this->createUrl('Autorized/updateProject'),
-                            'title'     => 'Введите фамилию',
-                            'placement' => 'right',
+                            'title'     => 'Кол-во исполнителей до 35 лет',
+                            'placement' => 'top',
                             'options'     => array( 'disabled'=>true, ) )); ?>
                     </div>
                 </div>
@@ -183,8 +183,8 @@ if(isset($data) && !is_null($data)){
                             'name'      => 'STUDY',
                             'text'      => CHtml::encode($data[0]['STUDY']),
                             'url'       => $this->createUrl('Autorized/updateProject'),
-                            'title'     => 'Введите фамилию',
-                            'placement' => 'right',
+                            'title'     => 'Кол-во исполнителей на обучении',
+                            'placement' => 'top',
                             'options' => array( 'disabled'=>true, ), )); ?>
                     </div>
                 </div>
@@ -197,8 +197,8 @@ if(isset($data) && !is_null($data)){
                             'name'      => 'PUBLICATIONS',
                             'text'      => CHtml::encode($data[0]['PUBLICATIONS']),
                             'url'       => $this->createUrl('Autorized/updateProject'),
-                            'title'     => 'Введите фамилию',
-                            'placement' => 'right',
+                            'title'     => 'Кол-во публикаций по теме',
+                            'placement' => 'top',
                             'options' => array( 'disabled'=>true, ),)); ?>
                     </div>
                 </div>
@@ -211,8 +211,8 @@ if(isset($data) && !is_null($data)){
                             'name'      => 'FORIN_PUBL',
                             'text'      => CHtml::encode($data[0]['FORIN_PUBL']),
                             'url'       => $this->createUrl('Autorized/updateProject'),
-                            'title'     => 'Введите фамилию',
-                            'placement' => 'right',
+                            'title'     => 'Кол-во публикаций в зарубежных изданиях',
+                            'placement' => 'top',
                             'options' => array( 'disabled'=>true, ), )); ?>
                     </div>
                 </div>
@@ -264,8 +264,8 @@ if(isset($data) && !is_null($data)){
                         'text'      => CHtml::encode($data[0]['ID_PHASE']),
                         'url'       => $this->createUrl('Autorized/updateProject'),
                         'source'    => $this->createUrl('Autorized/getPhases'),
-                        'title'     => 'Enter title',
-                        'placement' => 'right',
+                        'title'     => 'Выберите стадию развития проекта',
+                        'placement' => 'top',
                         'options' => array( 'disabled'=>true, 'showbuttons'=>false,), ));  ?>
                     </div>
                 </div>
@@ -279,8 +279,8 @@ if(isset($data) && !is_null($data)){
                         'text'      => CHtml::encode($data[0]['ID_BUDGET']),
                         'url'       => $this->createUrl('Autorized/updateProject'),
                         'source'    => $this->createUrl('Autorized/getBudget'),
-                        'title'     => 'Enter title',
-                        'placement' => 'right',
+                        'title'     => 'Выберите объем финансирования',
+                        'placement' => 'top',
                         'options' => array( 'disabled'=>true,'showbuttons'=>false, ), )); ?>
                     </div>
                 </div>
@@ -293,8 +293,8 @@ if(isset($data) && !is_null($data)){
                         'name'      => 'YEAR_BUDGET',
                         'text'      => CHtml::encode($data[0]['YEAR_BUDGET']),
                         'url'       => $this->createUrl('Autorized/updateProject'),
-                        'title'     => 'Введите фамилию',
-                        'placement' => 'right',
+                        'title'     => 'Введите объем финансирования',
+                        'placement' => 'top',
                         'options' => array( 'disabled'=>true, ),  )); ?>
                     </div>
                 </div>
@@ -308,8 +308,8 @@ if(isset($data) && !is_null($data)){
                         'name'      => 'CO_FINANCING',
                         'text'      => CHtml::encode($data[0]['CO_FINANCING']),
                         'url'       => $this->createUrl('Autorized/updateProject'),
-                        'title'     => 'Введите фамилию',
-                        'placement' => 'right',
+                        'title'     => 'Введите объем финансирования',
+                        'placement' => 'top',
                         'options' => array( 'disabled'=>true, ),  )); ?>
                     </div>
                 </div>

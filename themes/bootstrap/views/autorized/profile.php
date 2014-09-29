@@ -167,7 +167,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                     <div class="row">
                         <?if(isset($data) && !is_null($data)){?>
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-4">
                             <div class="form-horizontal">
                                 <div class="form-group">
                                     <label class="col-sm-5 col-xs-4 control-label" style="text-align:right ;">Фамилия:</label>
@@ -193,7 +193,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                                 'name'      => 'L_NAME',
                                                 'text'      => CHtml::encode($data['L_NAME']),
                                                 'url'       => $this->createUrl('Autorized/updateProfile'),
-                                                'title'     => 'Введите фамилию',
+                                                'title'     => 'Введите имя',
                                                 'placement' => 'right',
                                                 'options' => array( 'disabled'=>true, ),  )); ?>
                                     </div>
@@ -209,7 +209,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                                 'name'      => 'S_NAME',
                                                 'text'      => CHtml::encode($data['S_NAME']),
                                                 'url'       => $this->createUrl('Autorized/updateProfile'),
-                                                'title'     => 'Введите фамилию',
+                                                'title'     => 'Введите отчество',
                                                 'placement' => 'right',
                                                 'options' => array( 'disabled'=>true, ),  )); ?>
                                     </div>
@@ -224,7 +224,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                                 'text'      => CHtml::encode(($data['SEX'])=='1'?'M':'Ж'),
                                                 'url'       => $this->createUrl('Autorized/updateProfile'),
                                                 'source'    => Editable::source(array(1 => 'М', 2 => 'Ж')),
-                                                'title'     => 'Enter title',
+                                                'title'     => 'Выберите пол',
                                                 'placement' => 'right',
                                                 'options'     => array( 'disabled'=>true, 'showbuttons'=>false, ) )); ?>
                                     </div>
@@ -242,7 +242,19 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                                 'viewformat'  => 'DD / MM / YYYY', //in this format date is displayed
                                                 'template'    => 'DD / MM / YYYY', //template for dropdowns
                                                 'combodate'   => array('minYear' => 1930, 'maxYear' => 2015),
-                                                'options'     => array( 'datepicker' => array('language' => 'ru'), 'disabled'=>true, )  )); ?>
+                                                'title'     => 'Выберите дату рождения',
+                                                'options'     => array(  'disabled'=>true, )  )); ?>
+<?
+//                                       @media (min-width: 768px)
+//    .form-inline .form-group {
+//        display: inline-block;
+//        margin-bottom: 0;
+//vertical-align: middle;
+//padding-left: 20px;
+//padding-right: 20px;
+  ?>
+
+
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -254,15 +266,15 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                                 'name'      => 'PHONE',
                                                 'text'      => CHtml::encode($data['PHONE']),
                                                 'url'       => $this->createUrl('Autorized/updateProfile'),
-                                                'title'     => 'Введите фамилию',
-                                                'placement' => 'right',
+                                                'title'     => 'Введите телефон',
+                                                'placement' => 'top',
                                                 'options' => array( 'disabled'=>true, ),)); ?>
                                     </div>
                                 </div>
 
                             </div>
                         </div>
-                        <div class="col-sm-9">
+                        <div class="col-sm-7">
                             <div class="form-horizontal">
                             <div class="form-group">
                                 <label class="col-sm-4 col-xs-4 control-label" style="text-align:right ;">Ученая степень:</label>
@@ -274,7 +286,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                             'text'      => CHtml::encode($data['DEGREE']),
                                             'url'       => $this->createUrl('Autorized/updateProfile'),
                                             'source'    => Editable::source(array('кандидат наук'=>'кандидат наук' , 'доктор наук'=>'доктор наук','нет'=>'нет')),
-                                            'title'     => 'Enter title',
+                                            'title'     => 'Выберите ученую степень',
                                             'placement' => 'right',
                                             'options'     => array( 'disabled'=>true, 'showbuttons'=>false,  ) )); ?>
                                 </div>
@@ -289,8 +301,8 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                             'text'      => CHtml::encode($data['ACADEMIC_TITLE']),
                                             'url'       => $this->createUrl('Autorized/updateProfile'),
                                             'source'    => Editable::source(array('доцент'=>'доцент' , 'профессор'=>'профессор','нет'=>'нет')),
-                                            'title'     => 'Enter title',
-                                            'placement' => 'right',
+                                            'title'     => 'Выберите ученое звание',
+                                            'placement' => 'top',
                                             'options'     => array( 'disabled'=>true,'showbuttons'=>false, )  )); ?>
                                     </div>
                                 </div>
@@ -304,8 +316,8 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                         'text'      => CHtml::encode($data['ID_DISTRICT']),
                                         'url'       => $this->createUrl('Autorized/updateProfile'),
                                         'source'    => $this->createUrl('Autorized/getDistricts'),
-                                        'title'     => 'Enter title',
-                                        'placement' => 'right',
+                                        'title'     => 'Выберите округ',
+                                        'placement' => 'top',
                                         'options' => array( 'disabled'=>true,  'showbuttons'=>false, ), )); ?>
                                     </div>
                                 </div>
@@ -319,8 +331,8 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                         'text'      => CHtml::encode($data['ID_UNIVER']),
                                         'url'       => $this->createUrl('Autorized/updateProfile'),
                                         'source'    => $this->createUrl('Autorized/getUniversities'),
-                                        'title'     => 'Enter title',
-                                        'placement' => 'right',
+                                        'title'     => 'Выберите вуз',
+                                        'placement' => 'top',
                                         'options' => array( 'disabled'=>true,  'showbuttons'=>false, ), ));  ?>
                                     </div>
                                 </div>
@@ -333,8 +345,8 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                         'name'      => 'W_POSITION',
                                         'text'      => CHtml::encode($data['W_POSITION']),
                                         'url'       => $this->createUrl('Autorized/updateProfile'),
-                                        'title'     => 'Введите фамилию',
-                                        'placement' => 'right',
+                                        'title'     => 'Введите должность',
+                                        'placement' => 'top',
                                         'options' => array( 'disabled'=>true, ), )); ?>
                                     </div>
                                 </div>
@@ -348,8 +360,8 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                     'text'      => CHtml::encode($data['ID_SPECIALITY']),
                                     'url'       => $this->createUrl('Autorized/updateProfile'),
                                     'source'    => $this->createUrl('Autorized/getSpecialities'),
-                                    'title'     => 'Enter title',
-                                    'placement' => 'right',
+                                    'title'     => 'Выберите специальность',
+                                    'placement' => 'top',
                                     'options' => array( 'disabled'=>true,  'showbuttons'=>false),  )); ?>
                                     </div>
                                 </div>
@@ -362,7 +374,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                             'name'      => 'HIRSH',
                                             'text'      => CHtml::encode($data['HIRSH']),
                                             'url'       => $this->createUrl('Autorized/updateProfile'),
-                                            'title'     => 'Введите фамилию',
+                                            'title'     => 'Введите индекс Хирша',
                                             'placement' => 'right',
                                             'options' => array( 'disabled'=>true, ),  )); ?>
                                     </div>

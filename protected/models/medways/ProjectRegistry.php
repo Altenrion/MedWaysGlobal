@@ -92,13 +92,13 @@ class ProjectRegistry extends CActiveRecord
 	{
 		return array(
 			'ID_PROJECT' => 'Id Project',
-			    'ID_REPRESENTATIVE' => 'Id Representative',
-			    'ID_STAGE' => 'Id Stage',
-			    'NAME' => 'Name',
-			    'DESCR_PROJECT' => 'Descr Project',
-			    'ROADMAP_PROJECT' => 'Roadmap Project',
-			    'ID_PHASE' => 'Id Phase',
-			'ID_BUDGET' => 'Id Budget',
+			    'ID_REPRESENTATIVE' => 'Представитель',
+			    'ID_STAGE' => 'Платформа',
+			    'NAME' => 'Название',
+			    'DESCR_PROJECT' => 'Описание проекта',
+			    'ROADMAP_PROJECT' => 'Аннотация',
+			    'ID_PHASE' => 'Стадия',
+			'ID_BUDGET' => 'Бюджет',
 			    'EXECUTERS_NUM' => ' Количество исполнителей',
 			    'UN_THIRTY_FIVE' => 'Кол',
 			    'STUDY' => 'Количество обучающиеся',
@@ -112,9 +112,9 @@ class ProjectRegistry extends CActiveRecord
 			    'PRIVACY_P' => 'Privacy',
 
 
-			'FIRST_LAVEL_APPROVAL' => 'First Lavel Approval',
-			'SECOND_LAVEL_RATING' => 'Second Lavel Rating',
-			'THIRD_LAVEL_RATING' => 'Third Lavel Rating',
+			'FIRST_LAVEL_APPROVAL' => 'Вузовская проверка',
+			'SECOND_LAVEL_RATING' => 'Окружная проверка',
+			'THIRD_LAVEL_RATING' => 'Федеральная проверка',
 
 
 			    'ID_DISTRICT' => 'Округ',
