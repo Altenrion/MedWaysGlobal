@@ -55,32 +55,59 @@ class EDataColumn extends CDataColumn {
 	}
 
     public function getDistrict($id_district){
-        $dist =  District::model()->findByPk($id_district);
-        return $dist['NAME'];
+        $distr = '';
+        switch($id_district){
+            case '1':  $distr= 'ЦФО';  break;
+            case '2':  $distr= 'ЮФО';  break;
+            case '3':  $distr= 'СЗФО';  break;
+            case '4':  $distr= 'ДФО';  break;
+            case '5':  $distr= 'СФО';  break;
+            case '6':  $distr= 'УФО';  break;
+            case '7':  $distr= 'ПФО';  break;
+            case '8':  $distr= 'СКФО';  break;
+            case '9':  $distr= 'КФО';  break;
+        }
+
+
+        return $distr;
     }
 
     public function getStage($id_stage){
         $st =  Stage::model()->findByPk($id_stage);
         return $st['NAME_STAGE'];
-
     }
+
     public function getUniver($id_univer){
         $univer = University::model()->findByPk($id_univer);
         return $univer['NAME_UNIVER'];
-
     }
+
+    /** Метод для получения роли пользователя в таблицу экспертов */
     public function getRole($role){
 
         switch($role){
             case 'Dev': $rol = 'Разработчик'; break;
             case 'Manager': $rol = 'Руководитель проекта'; break;
-            case 'Exp':$rol = 'Эксперт 0'; break;
-            case 'Exp1':$rol = 'Эксперт 1'; break;
-            case 'Exp2':$rol = 'Эксперт 2'; break;
-            case 'Exp3': $rol = 'Эксперт 3'; break;
+            case 'Exp':$rol = 'Эксперт0'; break;
+            case 'Exp1':$rol = 'Эксперт1'; break;
+            case 'Exp2':$rol = 'Эксперт2'; break;
+            case 'Exp3': $rol = 'Эксперт3'; break;
         }
 
         return $rol;
+
+    }
+
+    /** Метод для получения статуса проекта в таблицу экспертам */
+    public function getStatus($id_project){
+        $proj = ProjectRegistry::model()->findByPk($id_project);
+        $st = '';
+        if ($proj['FIRST_LAVEL_APPROVAL']== 0){$st = 'Зарегистрирован';}
+        if ($proj['FIRST_LAVEL_APPROVAL']== 1){$st = 'Подан';}
+        if ($proj['FIRST_LAVEL_APPROVAL']== 3){$st = 'Одобрен вузом';}
+        if (!is_null($proj['SECOND_LAVEL_RATING'])){$st = 'Окружная оценка';}
+        if (!is_null($proj['THIRD_LAVEL_RATING'])){$st = 'Федеральная оценка';}
+        return $st;
 
     }
 

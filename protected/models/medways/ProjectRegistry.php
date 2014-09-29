@@ -46,6 +46,8 @@ class ProjectRegistry extends CActiveRecord
 		return 'm_w_project_registry';
 	}
 
+    public $ID_DISTRICT;
+    public $ID_UNIVER;
 	/**
 	 * @return array validation rules for model attributes.
 	 */
@@ -59,10 +61,11 @@ class ProjectRegistry extends CActiveRecord
 			array('NAME', 'length', 'max'=>400),
             array('ROADMAP_PROJECT','safe','on'=>'update'),
 			array('DESCR_PROJECT' , 'length', 'max'=>1500),
-            array('FIRST_LAVEL_COMMENT', 'length', 'max'=>500),
+            array('FIRST_LAVEL_COMMENT,ID_UNIVER', 'length', 'max'=>500),
+            array('ID_UNIVER,ID_DISTRICT,ID_STAGE','safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID_PROJECT, ID_REPRESENTATIVE, ID_STAGE, NAME, DESCR_PROJECT, ROADMAP_PROJECT, ID_PHASE, ID_BUDGET, EXECUTERS_NUM, UN_THIRTY_FIVE, STUDY, PUBLICATIONS, FORIN_PUBL, START_YEAR, END_YEAR, YEAR_BUDGET, LONG_BUDGET, CO_FINANCING, PRIVACY_P, FIRST_LAVEL_APPROVAL, SECOND_LAVEL_RATING, THIRD_LAVEL_RATING', 'safe', 'on'=>'search'),
+			array('ID_PROJECT,ID_DISTRICT, ID_UNIVER, ID_STAGE, ID_REPRESENTATIVE, ID_STAGE, NAME, DESCR_PROJECT, ROADMAP_PROJECT, ID_PHASE, ID_BUDGET, EXECUTERS_NUM, UN_THIRTY_FIVE, STUDY, PUBLICATIONS, FORIN_PUBL, START_YEAR, END_YEAR, YEAR_BUDGET, LONG_BUDGET, CO_FINANCING, PRIVACY_P, FIRST_LAVEL_APPROVAL, SECOND_LAVEL_RATING, THIRD_LAVEL_RATING', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -74,10 +77,10 @@ class ProjectRegistry extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'iDREPRESENTATIVE' => array(self::BELONGS_TO, 'Users', 'ID_REPRESENTATIVE'),
-			'iDSTAGE' => array(self::BELONGS_TO, 'Stage', 'ID_STAGE'),
-			'iDPHASE' => array(self::BELONGS_TO, 'Phase', 'ID_PHASE'),
-			'iDBUDGET' => array(self::BELONGS_TO, 'Budget', 'ID_BUDGET'),
+			'manager' => array(self::BELONGS_TO, 'Users', 'ID_REPRESENTATIVE'),
+			'stage' => array(self::BELONGS_TO, 'Stage', 'ID_STAGE'),
+			'phase' => array(self::BELONGS_TO, 'Phase', 'ID_PHASE'),
+			'budget' => array(self::BELONGS_TO, 'Budget', 'ID_BUDGET'),
 			'secondLavelMarks' => array(self::HAS_MANY, 'SecondLavelMarks', 'ID_PROJECT'),
 		);
 	}
@@ -112,6 +115,11 @@ class ProjectRegistry extends CActiveRecord
 			'FIRST_LAVEL_APPROVAL' => 'First Lavel Approval',
 			'SECOND_LAVEL_RATING' => 'Second Lavel Rating',
 			'THIRD_LAVEL_RATING' => 'Third Lavel Rating',
+
+
+			    'ID_DISTRICT' => 'Округ',
+			    'ID_UNIVER' => 'Университет',
+			    'ID_STAGE' => 'Платформа',
 		);
 	}
 
@@ -132,7 +140,7 @@ class ProjectRegistry extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
-
+        $criteria->with = array('manager','stage');
 		$criteria->compare('ID_PROJECT',$this->ID_PROJECT);
 		$criteria->compare('ID_REPRESENTATIVE',$this->ID_REPRESENTATIVE);
 		    $criteria->compare('ID_STAGE',$this->ID_STAGE);
@@ -157,6 +165,8 @@ class ProjectRegistry extends CActiveRecord
 		$criteria->compare('THIRD_LAVEL_RATING',$this->THIRD_LAVEL_RATING);
         $criteria->compare('FIRST_LAVEL_COMMENT',$this->FIRST_LAVEL_COMMENT,true);
         $criteria->compare('REG_DATE',$this->REG_DATE,true);
+        $criteria->compare('manager.ID_DISTRICT',$this->ID_DISTRICT);
+        $criteria->compare('manager.ID_STAGE',$this->ID_STAGE,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

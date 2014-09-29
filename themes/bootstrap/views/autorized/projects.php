@@ -21,18 +21,19 @@
 </section>
 <!-- END CONTENT HEADER -->
 
-
-
 <section class="content">
+    <div class="row">
+        <!-- BEGIN MAIN CONTENT -->
+        <div class="col-md-12">
+            <div class="grid profile">
+                <div class="grid-header" style="border:0px; background: none; color: #777777">
+                    <i class="fa fa-graduation-cap"></i>
+                    <span class="grid-title">Проекты <small style="font-size: 11px;">доступные для проверки</small> </span>
 
-			<div class="row ">
-
-				<div class="col-sm-12 col-md-12 col-lg-12 bord">
-
-
-				</div><!--/col-->
-
-			</div>
-
-
+                    </div>
+                <div class="grid-body">
+                    <? $this->actionExpertProjectsList(); ?>
+			    </div>
+	        </div>
+	    </div>
 </section>

@@ -28,7 +28,7 @@
     <div class="row ">
 
         <div class="col-sm-12 ">
-
+<!--            <button type="button" class="btn btn-xs  btn-primary btn-radius"><i class="fa fa-envelope-o"></i></button>-->
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#home" data-toggle="tab">Эксперты</a></li>
                 <li class=""><a href="#profile" data-toggle="tab">Представители</a></li>
@@ -37,11 +37,11 @@
             <div class="tab-content">
                 <div class="tab-pane active" id="home">
                     <? $this->actionExpertsList(); ?>
-
 <!--                    --><?// $this->renderPartial('_exp_grid',array('sort'=>$sort,'pages'=>$pages,'models'=>$models)); ?>
                 </div>
                 <div class="tab-pane" id="profile">
-                    <? $this->renderPartial('_man_grid',array('sortm'=>$sortm,'pags'=>$pags,'manags'=>$manags)); ?>
+                    <? $this->actionManagersList(); ?>
+<!--                    --><?// $this->renderPartial('_man_grid',array('sortm'=>$sortm,'pags'=>$pags,'manags'=>$manags)); ?>
                 </div>
             </div>
 

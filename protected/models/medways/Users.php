@@ -87,7 +87,7 @@ class Users extends CActiveRecord
 //            array('AVATAR', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
 //            array('password','unsafe','on'=>'update'),
             array('AVATAR','safe','on'=>'update'),
-            array('BIRTH_DATE', 'date', 'format'=>'yyyy-M-d'),
+            array('BIRTH_DATE', 'date', 'format'=>'yyyy-M-d','on'=>'update'),
 			array('DEGREE, ACADEMIC_TITLE, W_POSITION', 'length', 'max'=>200),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -104,12 +104,12 @@ class Users extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'projectRegistries' => array(self::HAS_MANY, 'ProjectRegistry', 'ID_REPRESENTATIVE'),
+			'projectRegistry' => array(self::HAS_MANY, 'ProjectRegistry', 'ID_REPRESENTATIVE'),
 			'secondLavelMarks' => array(self::HAS_ONE, 'SecondLavelMarks', 'ID_EXPERT'),
-			'iDDISTRICT' => array(self::BELONGS_TO, 'District', 'ID_DISTRICT'),
-			'iDUNIVER' => array(self::BELONGS_TO, 'University', 'ID_UNIVER'),
-			'iDSTAGE' => array(self::BELONGS_TO, 'Stage', 'ID_STAGE'),
-			'iDSPECIALITY' => array(self::BELONGS_TO, 'Speciality', 'ID_SPECIALITY'),
+			'district' => array(self::BELONGS_TO, 'District', 'ID_DISTRICT'),
+			'univer' => array(self::BELONGS_TO, 'University', 'ID_UNIVER'),
+			'stage' => array(self::BELONGS_TO, 'Stage', 'ID_STAGE'),
+			'speciality' => array(self::BELONGS_TO, 'Speciality', 'ID_SPECIALITY'),
 		);
 	}
 

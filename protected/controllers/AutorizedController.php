@@ -285,25 +285,11 @@ class AutorizedController extends Controller
         $this->render('manage_notifies');
 	}
 
+    /**
+     * Главный метод страницы управления пользователями
+     */
     public function actionManageUsers()
 	{
-
-
-        $criteria_exp = new CDbCriteria();
-        $criteria_exp->condition = "roles='Exp' OR roles='Exp1' OR roles='Exp2' OR roles='Exp3'";
-
-        $count_exp = Users::model()->count($criteria_exp);
-        $pages_exp = new CPagination($count_exp);
-        $pages_exp->pageSize = 10;
-        $pages_exp->applyLimit($criteria_exp);
-
-        $sort_exp = new CSort();
-        $sort_exp->attributes = array('id','F_NAME','L_NAME','S_NAME','EMAIL','roles');
-        $sort_exp->applyOrder($criteria_exp);
-
-        $experts = Users::model()->findAll($criteria_exp);
-
-
 
         $criteria_man = new CDbCriteria();
         $criteria_man->condition = "roles='Manager' ";
@@ -333,16 +319,15 @@ class AutorizedController extends Controller
             'manags'=>$managers,
             'pags'=>$pages_man,
             'sortm'=>$sort_man,
-
-            'models'=>$experts,
-            'pages'=>$pages_exp,
-            'sort'=>$sort_exp,
-
             'dataProvider' => $dataProvider,
         ));
 
 	}
 
+
+    /**
+     * Метод блокировки экрана
+     */
     public function actionLockScreen()
 	{
         Yii::app()->user->setState('lock','locked');
@@ -356,12 +341,17 @@ class AutorizedController extends Controller
         $edit->scenario = 'update';
         $edit->update();
     }
+
     public function actionUpdateProfile(){
         $edit = new EditableSaver('Users');
         $edit->scenario = 'update';
         $edit->update();
     }
 
+
+    /**
+     * Метод Профиля пользователя
+     */
     public function actionProfile()
 	{
         $role = '';
@@ -391,6 +381,12 @@ class AutorizedController extends Controller
         ));
 	}
 
+    /**
+     * Метод для виджета показывающего процент заполненности информации
+     *
+     * @param $arr
+     * @return float
+     */
     public function CheckInfoPercentage($arr){
         $key = 0;
         foreach($arr as $ar_k=>$ar_v){
@@ -412,8 +408,11 @@ class AutorizedController extends Controller
 
     }
 
-
-    public function actionCheckFullInfo(){
+    /**
+     * Метод проверки заполненности данных в профиле и проекте,
+     * при регистрации проекта в эстафету.
+     */
+     public function actionCheckFullInfo(){
         $user = new Users();
         $project= new ProjectRegistry();
 
@@ -421,6 +420,10 @@ class AutorizedController extends Controller
         $proj_info = $project->findProjectData(Yii::app()->user->id);
 
         foreach($user_info[0] as $i_k=>$i_v){
+            if($i_v == 'PRIVACY' || $i_v == 'ID_STAGE' || $i_v == 'AVATAR' ){
+                $i_v = 'not_count';
+            }
+
             if($i_v == null || $i_v == '' || $i_v == ' '){  echo json_encode('fail'); Yii::app()->end();  }
         }
 
@@ -648,7 +651,7 @@ class AutorizedController extends Controller
             'sort'          => $sort,
         ));
         $widget = $this->createWidget('ext.edatatables.EDataTables', array(
-            'id'            => 'Users',
+            'id'            => 'Experts',
             'dataProvider'  => $dataProvider,
             'ajaxUrl'       => $this->createUrl('ExpertsList'),
             'columns'       => $cols,
@@ -676,11 +679,345 @@ class AutorizedController extends Controller
 
     }
 
-    public function getDistrict($id_district){
-        $dist =  District::model()->findByPk($id_district);
-        return $dist->NAME;
+    /**
+     * Метод для отрисовки таблицы Представителей
+     */
+    public function actionManagersList(){
+
+        $columns = array('id','F_NAME','L_NAME','S_NAME','ID_DISTRICT','ID_UNIVER','ID_STAGE');
+
+        $cols = array(
+           'id:number:#', 'F_NAME:text:Фамилия','L_NAME:text:Имя','S_NAME:text:Отчество',
+
+            array(
+                'name'=>'ID_DISTRICT',
+                'type'=>'text',
+                'value'=>'$this->getDistrict($data->ID_DISTRICT)',
+            ),
+            array(
+                'name'=>'ID_UNIVER',
+                'type'=>'text',
+                'value'=>'$this->getUniver($data->ID_UNIVER)',
+            ),
+            array(
+                'name'=>'ID_STAGE',
+                'type'=>'text',
+                'value'=>'$this->getStage($data->ID_STAGE)',
+            ),
+
+        );
+
+        $criteria = new CDbCriteria;
+        $criteria->condition =  "roles='Manager'  AND AKTIV_KEY='100'";
+
+        if (isset($_REQUEST['sSearch']) && isset($_REQUEST['sSearch']{0})) {
+            $criteria->addSearchCondition('L_NAME', $_REQUEST['sSearch']);
+        }
+
+        $sort = new EDTSort('Users', $columns);
+        $sort->defaultOrder = 'id';
+
+        $pagination = new EDTPagination();
+
+        $dataProvider = new CActiveDataProvider('Users', array(
+            'criteria'      => $criteria,
+            'pagination'    => $pagination,
+            'sort'          => $sort,
+        ));
+        $widget = $this->createWidget('ext.edatatables.EDataTables', array(
+            'id'            => 'Managers',
+            'dataProvider'  => $dataProvider,
+            'ajaxUrl'       => $this->createUrl('ManagersList'),
+            'columns'       => $cols,
+            'buttons' => array(
+                'refresh' => array(
+                    'tagName' => 'a',
+                    'label' => '<i class="fa fa-refresh "></i>',
+                    'htmlClass' => 'btn',
+                    'htmlOptions' => array('rel' => 'tooltip', 'title' => Yii::t('EDataTables.edt',"Refresh")),
+                    'init' => 'js:function(){}',
+                    'callback' => 'js:function(e){e.data.that.eDataTables("refresh"); return false;}',
+                ),
+            ),
+            'options' => $this->TableOptions,
+        ));
+
+        if (!Yii::app()->getRequest()->getIsAjaxRequest()) {
+            $this->renderPartial('_ManagersList', array('widget' => $widget,),false, false);
+            return;
+        } else {
+            echo json_encode($widget->getFormattedData(intval($_REQUEST['sEcho'])));
+            Yii::app()->end();
+        }
+
 
     }
+
+
+    /**
+     * Метод для отрисовки таблицы Проектов экспертам
+     */
+    public function actionExpertProjectsList(){
+
+        $columns = array('ID_PROJECT','NAME','ID_DISTRICT','ID_UNIVER','ID_STAGE');
+
+        $cols = array(
+           'ID_PROJECT:number:#',
+            'NAME:text:Название',
+
+
+            array(
+                'name'=>'ID_DISTRICT',
+                'type'=>'text',
+                'value'=>'$this->getDistrict( $data->ID_DISTRICT)',
+            ),
+            array(
+                'name'=>'ID_UNIVER',
+                'type'=>'text',
+                'value'=>'$this->getUniver($data->ID_UNIVER)',
+            ),
+            array(
+                'name'=>'ID_STAGE',
+                'type'=>'text',
+                'value'=>'$this->getStage($data->ID_STAGE)',
+            ),
+            array(
+                'name'=>'Статус',
+                'type'=>'text',
+                'value'=>'$this->getStatus($data->ID_PROJECT)',
+            ),
+            array(
+                'htmlOptions' => array('style' => 'width: 100px; text-align:center;'),
+                'filterHtmlOptions' => array('style' => 'width: 100px;'),
+                'class' => 'EButtonColumn',
+                'template' => '{pdf_pr}&nbsp;{pdf_an}',
+                'evaluateID'=>true,
+                'buttons' => array(
+
+//                    'email' => array
+//                    (
+//                        'label'=>'Send an e-mail to this user',
+//                        'imageUrl'=>Yii::app()->request->baseUrl.'/images/buttons/email.png',
+//                        'click'=>"function(){
+//                                    $.fn.yiiGridView.update('user-grid', {
+//                                        type:'POST',
+//                                        url:$(this).attr('href'),
+//                                        success:function(data) {
+//                                              $('#AjFlash').html(data).fadeIn().animate({opacity: 1.0}, 3000).fadeOut('slow');
+//
+//                                              $.fn.yiiGridView.update('user-grid');
+//                                        }
+//                                    })
+//                                    return false;
+//                              }
+//                     ",
+//                        'url'=>'Yii::app()->controller->createUrl("email",array("id"=>$data->primaryKey))',
+//                    ),
+                    'pdf_pr' => array(
+                        'label'=> 'PDF Проекта',
+                        'imageUrl'=>Yii::app()->request->baseUrl.'/images/buttons/pdf_pr.png',
+                        'url' => 'Yii::app()->baseUrl."/uploads/".$data->ROADMAP_PROJECT',
+                        'options'=>array(
+                            'target'=>'_blank',
+                            'id'=>'"button_for_id_1".$data->ID_PROJECT ',
+
+                        ),
+
+                    ),
+                    'pdf_an' => array(
+                        'label'=> 'PDF Аннотации',
+                        'imageUrl'=>Yii::app()->request->baseUrl.'/images/buttons/pdf_an.png',
+                        'url' => 'Yii::app()->baseUrl."/uploads/".$data->ROADMAP_PROJECT',
+                        'options'=>array(
+                            'target'=>'_blank',
+                            'id'=>'"button_for_id_1".$data->ID_PROJECT ',
+
+                        ),
+                    ),
+                ),
+            ),
+            array(
+                'htmlOptions' => array('style' => 'width: 120px;  text-align:center; '),
+                'filterHtmlOptions' => array('style' => 'width: 120px;'),
+                'class' => 'EButtonColumn',
+                'template' => '{check}&nbsp;{delete}',
+                'buttons' => array(
+                    'check' => array(
+                        'label'=> 'Подтвердить',
+                        'imageUrl'=>Yii::app()->request->baseUrl.'/images/buttons/check.png',
+                        'url' => '',
+                    ),
+//                    'edit' => array(
+//                        'label'=> 'Редактировать',
+//                        'imageUrl'=>Yii::app()->request->baseUrl.'/images/buttons/edit.png',
+//                        'url' => '',
+//                    ),
+                    'delete' => array(
+                        'label'=> 'Заблокировать',
+                        'imageUrl'=>Yii::app()->request->baseUrl.'/images/buttons/delete.png',
+                        'url' => 'Yii::app()->createUrl("/delete/$data->ID_PROJECT")',
+                    ),
+                ),
+            ),
+        );
+        $user = Users::model()->findByPk(Yii::app()->user->id);
+
+
+        /** Критерий поиска проектов по ролям  */
+        $criteria = new CDbCriteria;
+        $criteria->select = 't.ID_PROJECT,t.ROADMAP_PROJECT, t.ID_STAGE, t.NAME, us.ID_DISTRICT, us.ID_UNIVER ';
+        $criteria->join = 'LEFT JOIN  `m_w_users` `us` ON us.id = t.ID_REPRESENTATIVE';
+
+        switch(Yii::app()->user->role){
+
+            /** Критерий для эксперта 1 уровня (по универу) */
+            case 'Exp1' :
+                $criteria->condition = 'us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL = 1' ;
+                $criteria->params = array(":univ" => $user['ID_UNIVER']);
+            break;
+
+            /** Критерий для эксперта 2 уровня (по платформе и округу)*/
+            case 'Exp2' :
+                $criteria->condition = 't.ID_STAGE = :stage AND us.ID_DISTRICT = :dist';
+                $criteria->params = array(":stage" => $user['ID_STAGE'], ":dist" => $user['ID_DISTRICT']);
+            break;
+
+            /** Критерий для эксперта 3 уровня (по платформе) */
+            case 'Exp3' :
+                  $criteria->condition = 't.ID_STAGE = :stage';
+                  $criteria->params = array(":stage" => $user['ID_STAGE']);
+            break;
+
+            /** Критерий для разработчика */
+            case 'Dev' :
+            break;
+        }
+
+        if (isset($_REQUEST['sSearch']) && isset($_REQUEST['sSearch']{0})) {
+            $criteria->addSearchCondition('NAME', $_REQUEST['sSearch']);
+        }
+
+        $sort = new EDTSort('ProjectRegistry', $columns);
+        $sort->defaultOrder = 'ID_PROJECT';
+
+        $pagination = new EDTPagination();
+
+        $dataProvider = new CActiveDataProvider('ProjectRegistry', array(
+            'criteria'      => $criteria,
+            'pagination'    => $pagination,
+            'sort'          => $sort,
+        ));
+
+        $widget = $this->createWidget('ext.edatatables.EDataTables', array(
+            'id'            => 'ProjectRegistry',
+            'dataProvider'  => $dataProvider,
+            'ajaxUrl'       => $this->createUrl('ExpertProjectsList'),
+            'columns'       => $cols,
+            'buttons' => array(
+                'refresh' => array(
+                    'tagName' => 'a',
+                    'label' => '<i class="fa fa-refresh "></i>',
+                    'htmlClass' => 'btn',
+                    'htmlOptions' => array('rel' => 'tooltip', 'title' => Yii::t('EDataTables.edt',"Refresh")),
+                    'init' => 'js:function(){}',
+                    'callback' => 'js:function(e){e.data.that.eDataTables("refresh"); return false;}',
+                ),
+            ),
+            'options' => $this->TableOptions,
+        ));
+
+        if (!Yii::app()->getRequest()->getIsAjaxRequest()) {
+            $this->renderPartial('_ExpertProjectsList', array('widget' => $widget,),false, false);
+            return;
+        } else {
+            echo json_encode($widget->getFormattedData(intval($_REQUEST['sEcho'])));
+            Yii::app()->end();
+        }
+
+
+    }
+
+    /**
+     * Метод для отрисовки таблицы Представителей
+     */
+    public function actionJuliaList(){
+
+        $columns = array('ID_UNIVER','ID_DISTRICT');
+
+        $cols = array(
+
+            array(
+                'name'=>'ID_UNIVER',
+                'type'=>'text',
+                'value'=>'$this->getUniver($data->ID_UNIVER)',
+            ),
+            array(
+                'name'=>'ID_DISTRICT',
+                'type'=>'text',
+                'value'=>'$this->getDistrict($data->ID_DISTRICT)',
+            ),
+
+            array(
+                'name'=>'Эксперты',
+                'type'=>'text',
+                'value'=>'$data->ExpCount)',
+            ),
+            array(
+                'name'=>'Проекты',
+                'type'=>'text',
+                'value'=>'$data->ProjCount)',
+            ),
+
+        );
+
+        $criteria = new CDbCriteria;
+        $criteria->select = '  t.ID_PROJECT,t.ROADMAP_PROJECT, t.ID_STAGE, t.NAME, us.ID_DISTRICT, us.ID_UNIVER ';
+        $criteria->condition =  "roles='Manager'  AND AKTIV_KEY='100'";
+
+        if (isset($_REQUEST['sSearch']) && isset($_REQUEST['sSearch']{0})) {
+            $criteria->addSearchCondition('L_NAME', $_REQUEST['sSearch']);
+        }
+
+        $sort = new EDTSort('Users', $columns);
+//        $sort->defaultOrder = 'id';
+
+        $pagination = new EDTPagination();
+
+        $dataProvider = new CActiveDataProvider('Users', array(
+            'criteria'      => $criteria,
+            'pagination'    => $pagination,
+            'sort'          => $sort,
+        ));
+        $widget = $this->createWidget('ext.edatatables.EDataTables', array(
+            'id'            => 'JuliaList',
+            'dataProvider'  => $dataProvider,
+            'ajaxUrl'       => $this->createUrl('JuliaList'),
+            'columns'       => $cols,
+            'buttons' => array(
+                'refresh' => array(
+                    'tagName' => 'a',
+                    'label' => '<i class="fa fa-refresh "></i>',
+                    'htmlClass' => 'btn',
+                    'htmlOptions' => array('rel' => 'tooltip', 'title' => Yii::t('EDataTables.edt',"Refresh")),
+                    'init' => 'js:function(){}',
+                    'callback' => 'js:function(e){e.data.that.eDataTables("refresh"); return false;}',
+                ),
+            ),
+            'options' => $this->TableOptions,
+        ));
+
+        if (!Yii::app()->getRequest()->getIsAjaxRequest()) {
+            $this->renderPartial('_JuliaList', array('widget' => $widget,),false, false);
+            return;
+        } else {
+            echo json_encode($widget->getFormattedData(intval($_REQUEST['sEcho'])));
+            Yii::app()->end();
+        }
+
+
+    }
+
+
     public function actionGetSpecialities(){
         echo CJSON::encode(Editable::source(Speciality::model()->findAll(), 'ID_SPECIALITY', 'NAME'));
     }
@@ -707,6 +1044,10 @@ class AutorizedController extends Controller
         echo Browser::getBrowsers();
     }
 
+    /**
+     * Метод получения аватара
+     * @return string
+     */
     public function getAvatar(){
         if(is_null(Yii::app()->user->getState('ava'))){
             $ava = 'new.png';
@@ -717,11 +1058,22 @@ class AutorizedController extends Controller
         return $ava;
     }
 
+
+    /**
+     * Метод показывающий кол-во дней в проекте
+     * @param $date
+     * @return int
+     */
     public function DaysIn($date){
         $dnei_nazad = (int)((strtotime($date) - time())/86400) * -1;
         return $dnei_nazad;
     }
 
+    /**
+     * Метод преобразующий роль пользователя в профиле
+     * @param $role
+     * @return string
+     */
     public function cleanRole($role){
         switch($role){
             case 'Dev': $clean_role = 'Разработчик'; break;
@@ -733,6 +1085,12 @@ class AutorizedController extends Controller
         }
         return $clean_role;
     }
+
+    /**
+     * Метод формирующий номер Проекта
+     * @param $id
+     * @return string
+     */
     public function MakeOrder($id){
         if(strlen($id)==1){$order = '000'.$id;}
         if(strlen($id)==2){$order = '00'.$id;}
