@@ -42,6 +42,10 @@ class Users extends CActiveRecord
 	 */
 
     private $_old_password;
+    public $ExpCount;
+    public $ProjCount;
+
+
 
     protected function afterFind() // при чтении из базы
     {

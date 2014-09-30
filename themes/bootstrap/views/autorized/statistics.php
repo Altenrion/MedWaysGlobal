@@ -28,8 +28,9 @@
 			<div class="row ">
 
 				<div class="col-md-12 ">
-                <?= $this->actionJuliaList() ; ?>
-
+                    <? if($this->checkRole(array('Dev'))): ?>
+                        <?= $this->actionJuliaList() ; ?>
+                    <? endif; ?>
 				</div><!--/col-->
 
 			</div><!--/profile-->

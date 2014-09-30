@@ -967,22 +967,26 @@ class AutorizedController extends Controller
             array(
                 'name'=>'Эксперты',
                 'type'=>'text',
-                'value'=>'$data->ExpCount)',
+                'value'=>'$data->ExpCount',
             ),
             array(
                 'name'=>'Проекты',
                 'type'=>'text',
-                'value'=>'$data->ProjCount)',
+                'value'=>'$data->ProjCount',
             ),
 
         );
 
         $criteria = new CDbCriteria;
-        $criteria->select = '  t.ID_PROJECT,t.ROADMAP_PROJECT, t.ID_STAGE, t.NAME, us.ID_DISTRICT, us.ID_UNIVER ';
-        $criteria->condition =  "roles='Manager'  AND AKTIV_KEY='100'";
+        $criteria->select = 't.ID_UNIVER ,t.ID_DISTRICT ,
+        (SELECT COUNT(DISTINCT id) FROM `m_w_users` WHERE roles IN ("Exp","Exp1","Exp2","Exp3") AND ID_UNIVER = t.ID_UNIVER ) as ExpCount,
+        (SELECT COUNT(DISTINCT id) FROM m_w_users as u  Where roles IN ("Manager") AND ID_UNIVER = t.ID_UNIVER ) as ProjCount';
+        $criteria->condition =  "AKTIV_KEY='100' AND ID_UNIVER is not NULL AND ID_DISTRICT is not NULL";
+        $criteria->group = 'ID_UNIVER';
+//
 
         if (isset($_REQUEST['sSearch']) && isset($_REQUEST['sSearch']{0})) {
-            $criteria->addSearchCondition('L_NAME', $_REQUEST['sSearch']);
+            $criteria->addSearchCondition('ID_DISTRICT', $_REQUEST['sSearch']);
         }
 
         $sort = new EDTSort('Users', $columns);
@@ -1012,6 +1016,9 @@ class AutorizedController extends Controller
             ),
             'options' => $this->TableOptions,
         ));
+
+//        var_dump($widget);
+//        Yii::app()->end();
 
         if (!Yii::app()->getRequest()->getIsAjaxRequest()) {
             $this->renderPartial('_JuliaList', array('widget' => $widget,),false, false);
