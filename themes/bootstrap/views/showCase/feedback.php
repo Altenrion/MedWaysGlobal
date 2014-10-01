@@ -192,7 +192,7 @@
                       <strong>Университетский технопарк</strong><br>
                       Москва, Трубецкая ул., д.8, стр.2<br>
                       <abbr >Кузнецова Юлия Евгеньевна : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">kuznetsova.yulia@bk.ru</a><br>
-                      <abbr >Барышев Никита Владимирович : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">administration@altenrion.ru</a>
+                      <abbr >Барышев Никита Владимирович : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">administration@medways.ru</a>
                   </address>
               </div>
               <!-- /.post-list -->
