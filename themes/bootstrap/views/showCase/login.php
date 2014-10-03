@@ -42,7 +42,7 @@
                             <div class="control-group ">
                                 <label class="control-label" for="LoginForm_password">Пароль</label>
                                 <div class="controls">
-                                    <input name="LoginForm[password]" id="LoginForm_password" type="password">
+                                    <input name="LoginForm[password]" id="LoginForm_password" type="text">
                                     <span class="help-inline error"  style="display: none"></span>
                                 </div>
                             </div>

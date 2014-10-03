@@ -201,7 +201,7 @@
           <file leaf-file-name="AutorizedController.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="1019" column="28" selection-start="33755" selection-end="33755" vertical-scroll-proportion="-6.9607844">
+                <state line="1019" column="28" selection-start="33755" selection-end="33755" vertical-scroll-proportion="-20.960785">
                   <folding>
                     <element signature="n#setSortColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
                     <element signature="n#setTableColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
@@ -216,6 +216,15 @@
                     <element signature="n#actionExpertProjectsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
                     <marker date="1412058721859" expanded="true" signature="36632:36644" placeholder="..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="login.php" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="44" column="104" selection-start="2056" selection-end="2056" vertical-scroll-proportion="0.72296476">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -247,10 +256,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="feedback.php" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="feedback.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/feedback.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="194" column="132" selection-start="11562" selection-end="11562" vertical-scroll-proportion="0.76540285">
+                <state line="194" column="132" selection-start="11562" selection-end="11562" vertical-scroll-proportion="-24.846153">
                   <folding />
                 </state>
               </provider>
@@ -299,7 +308,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/framework/zii/widgets/grid/CButtonColumn.php" />
         <option value="$PROJECT_DIR$/protected/components/Controller.php" />
         <option value="$PROJECT_DIR$/adminka/js/MyEditsToEditable.js" />
         <option value="$PROJECT_DIR$/protected/config/devel.php" />
@@ -315,6 +323,7 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/_JuliaList.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/feedback.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php" />
       </list>
     </option>
   </component>
@@ -489,14 +498,6 @@
               <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autorized" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -508,11 +509,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
+              <option name="myItemId" value="protected" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -527,6 +524,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -628,7 +629,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -713,13 +714,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertProjectsList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="62" selection-end="62" vertical-scroll-proportion="0.03967328">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="54" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.5554259">
@@ -734,16 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="3694" column="12" selection-start="64091" selection-end="64091" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="20" selection-start="1530" selection-end="1530" vertical-scroll-proportion="0.430622">
-          <folding>
-            <element signature="n#getRole#0;n#EDataColumn#0;n#!!top" expanded="false" />
-            <element signature="n#getStatus#0;n#EDataColumn#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -810,9 +794,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_JuliaList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/feedback.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="194" column="132" selection-start="11562" selection-end="11562" vertical-scroll-proportion="-24.846153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="35" selection-start="1963" selection-end="1966" vertical-scroll-proportion="0.6483254">
+          <folding>
+            <element signature="n#getRole#0;n#EDataColumn#0;n#!!top" expanded="false" />
+            <element signature="n#getStatus#0;n#EDataColumn#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1019" column="28" selection-start="33755" selection-end="33755" vertical-scroll-proportion="-6.9607844">
+        <state line="1019" column="28" selection-start="33755" selection-end="33755" vertical-scroll-proportion="-20.960785">
           <folding>
             <element signature="n#setSortColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#setTableColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
@@ -830,16 +838,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_JuliaList.php">
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="-0.65384614">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/feedback.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="194" column="132" selection-start="11562" selection-end="11562" vertical-scroll-proportion="0.76540285">
+        <state line="44" column="104" selection-start="2056" selection-end="2056" vertical-scroll-proportion="0.72296476">
           <folding />
         </state>
       </provider>
