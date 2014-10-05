@@ -104,7 +104,7 @@ if(isset($data) && !is_null($data)){
         <? } ?>
         <? if(!$no_buttons){ ?>
         <button  data-toggle="modal" data-target="#modalPrimaryPDF" class="btn btn-xs btn-primary " style="font-size:0.6em;"><i class="fa  fa-cloud-upload"> </i> загрузить аннотацию</button>
-        <button id="Pull" data-toggle="modal"  class="btn btn-xs btn-primary " style="font-size:0.6em;"><i class="fa  fa-trophy" > </i> зарегистрировать</button>
+        <button id="Pull" data-toggle="modal"  class="btn btn-xs btn-primary " style="font-size:0.6em;"><i class="fa  fa-trophy" > </i> отправить на экспертизу</button>
         <? } ?>
         </p>
         <hr>
