@@ -136,7 +136,7 @@ Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/skins.css');
                 <? if($this->checkRole(array('Dev','Exp1','Exp2','Exp3'))): ?>
                     <li><a href="<?=Yii::app()->createUrl('Autorized/statistics')?>"><i class="fa fa-bar-chart-o"></i><span>Статистика</span></a></li>
                 <? endif; ?>
-                <? if($this->checkRole(array('Dev','Manager','Exp','Exp1','Exp2','Exp3'))): ?>
+                <? if(false): ?>
                     <li><a href="<?=Yii::app()->createUrl('Autorized/info')?>"><i class="fa fa-info"></i><span>Информация</span></a></li>
                 <? endif; ?>
                 <? if($this->checkRole(array('Dev','Manager','Exp','Exp1','Exp2','Exp3'))): ?>
