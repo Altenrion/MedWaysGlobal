@@ -221,7 +221,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                                 'type'      => 'select',
                                                 'name'      => 'SEX',
                                                 'pk'        => $data['id'],
-                                                'text'      => CHtml::encode(($data['SEX'])=='1'?'M':($data['SEX']=='Ж')?'Ж':'-'),
+                                                'text'      => CHtml::encode(($data['SEX'])=='1'?'M':(($data['SEX']=='2')?'Ж':'-')),
                                                 'url'       => $this->createUrl('Autorized/updateProfile'),
                                                 'source'    => Editable::source(array(1 => 'М', 2 => 'Ж')),
                                                 'title'     => 'Выберите пол',
