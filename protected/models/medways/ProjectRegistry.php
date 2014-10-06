@@ -91,7 +91,7 @@ class ProjectRegistry extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'ID_PROJECT' => 'Id Project',
+			'ID_PROJECT' => '#',
 			    'ID_REPRESENTATIVE' => 'Представитель',
 			    'ID_STAGE' => 'Платформа',
 			    'NAME' => 'Название',

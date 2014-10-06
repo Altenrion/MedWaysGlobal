@@ -11,12 +11,14 @@ class AutorizedController extends Controller
         'bStateSave'    => false,
         'bPaginate'     => true,
         'oLanguage'     => array(
-            "sEmptyTable" => "Не найдено ничегошеньки",
+            "sEmptyTable" => "Записей не найдено",
             'sProcessing' => 'Загрузка...',
             'sInfo' => 'Показано от _START_ до _END_ из общих _TOTAL_',
-            'sLengthMenu' => 'показано _MENU_ записей',
+            'sLengthMenu' => ' _MENU_ записей на странице',
             'sSearch'=>'поиск',
             'sRefresh'=>'обновить',
+            'sZeroRecords'=>'Записей нет',
+            'sInfoEmpty'=>'Показано 0 записей',
             'oPaginate' => array(
 
                 'sFirst' => '&laquo;',
@@ -283,6 +285,14 @@ class AutorizedController extends Controller
 
 
         $this->render('manage_notifies');
+	}
+
+    public function actionManageProject()
+	{
+
+
+
+        $this->render('manage_project');
 	}
 
     /**
@@ -769,7 +779,13 @@ class AutorizedController extends Controller
         $columns = array('ID_PROJECT','NAME','ID_DISTRICT','ID_UNIVER','ID_STAGE');
 
         $cols = array(
-           'ID_PROJECT:number:#',
+            array(
+                'name'=>'ID_PROJECT',
+                'type'=>'number',
+                'value'=>'$data->ID_PROJECT',
+                'htmlOptions'=>array('class'=> 'text-left')
+            ),
+//           'ID_PROJECT:number:#',
             'NAME:text:Название',
 
 
@@ -793,79 +809,57 @@ class AutorizedController extends Controller
                 'type'=>'text',
                 'value'=>'$this->getStatus($data->ID_PROJECT)',
             ),
-            array(
-                'htmlOptions' => array('style' => 'width: 100px; text-align:center;'),
-                'filterHtmlOptions' => array('style' => 'width: 100px;'),
-                'class' => 'EButtonColumn',
-                'template' => '{pdf_pr}&nbsp;{pdf_an}',
-                'evaluateID'=>true,
-                'buttons' => array(
-
-//                    'email' => array
-//                    (
-//                        'label'=>'Send an e-mail to this user',
-//                        'imageUrl'=>Yii::app()->request->baseUrl.'/images/buttons/email.png',
-//                        'click'=>"function(){
-//                                    $.fn.yiiGridView.update('user-grid', {
-//                                        type:'POST',
-//                                        url:$(this).attr('href'),
-//                                        success:function(data) {
-//                                              $('#AjFlash').html(data).fadeIn().animate({opacity: 1.0}, 3000).fadeOut('slow');
+//            array(
+//                'htmlOptions' => array('style' => 'width: 100px; text-align:center;'),
+//                'filterHtmlOptions' => array('style' => 'width: 100px;'),
+//                'class' => 'EButtonColumn',
+//                'template' => '{pdf_pr}&nbsp;{pdf_an}',
+//                'evaluateID'=>true,
+//                'buttons' => array(
 //
-//                                              $.fn.yiiGridView.update('user-grid');
-//                                        }
-//                                    })
-//                                    return false;
-//                              }
-//                     ",
-//                        'url'=>'Yii::app()->controller->createUrl("email",array("id"=>$data->primaryKey))',
+////                    'email' => array
+////                    (
+////                        'label'=>'Send an e-mail to this user',
+////                        'imageUrl'=>Yii::app()->request->baseUrl.'/images/buttons/email.png',
+////                        'click'=>"function(){
+////                                    $.fn.yiiGridView.update('user-grid', {
+////                                        type:'POST',
+////                                        url:$(this).attr('href'),
+////                                        success:function(data) {
+////                                              $('#AjFlash').html(data).fadeIn().animate({opacity: 1.0}, 3000).fadeOut('slow');
+////
+////                                              $.fn.yiiGridView.update('user-grid');
+////                                        }
+////                                    })
+////                                    return false;
+////                              }
+////                     ",
+////                        'url'=>'Yii::app()->controller->createUrl("email",array("id"=>$data->primaryKey))',
+////                    ),
+//                    'pdf_pr' => array(
+//                        'label'=> 'PDF Проекта',
+//                        'imageUrl'=>Yii::app()->request->baseUrl.'/images/buttons/pdf_pr.png',
+//                        'url' => 'Yii::app()->baseUrl."/uploads/".$data->ROADMAP_PROJECT',
+//                        'options'=>array(
+//                            'target'=>'_blank',
+//                            'id'=>'"button_for_id_1".$data->ID_PROJECT ',
+//
+//                        ),
+//
 //                    ),
-                    'pdf_pr' => array(
-                        'label'=> 'PDF Проекта',
-                        'imageUrl'=>Yii::app()->request->baseUrl.'/images/buttons/pdf_pr.png',
-                        'url' => 'Yii::app()->baseUrl."/uploads/".$data->ROADMAP_PROJECT',
-                        'options'=>array(
-                            'target'=>'_blank',
-                            'id'=>'"button_for_id_1".$data->ID_PROJECT ',
-
-                        ),
-
-                    ),
-                    'pdf_an' => array(
-                        'label'=> 'PDF Аннотации',
-                        'imageUrl'=>Yii::app()->request->baseUrl.'/images/buttons/pdf_an.png',
-                        'url' => 'Yii::app()->baseUrl."/uploads/".$data->ROADMAP_PROJECT',
-                        'options'=>array(
-                            'target'=>'_blank',
-                            'id'=>'"button_for_id_1".$data->ID_PROJECT ',
-
-                        ),
-                    ),
-                ),
-            ),
-            array(
-                'htmlOptions' => array('style' => 'width: 120px;  text-align:center; '),
-                'filterHtmlOptions' => array('style' => 'width: 120px;'),
-                'class' => 'EButtonColumn',
-                'template' => '{check}&nbsp;{delete}',
-                'buttons' => array(
-                    'check' => array(
-                        'label'=> 'Подтвердить',
-                        'imageUrl'=>Yii::app()->request->baseUrl.'/images/buttons/check.png',
-                        'url' => '',
-                    ),
-//                    'edit' => array(
-//                        'label'=> 'Редактировать',
-//                        'imageUrl'=>Yii::app()->request->baseUrl.'/images/buttons/edit.png',
-//                        'url' => '',
+//                    'pdf_an' => array(
+//                        'label'=> 'PDF Аннотации',
+//                        'imageUrl'=>Yii::app()->request->baseUrl.'/images/buttons/pdf_an.png',
+//                        'url' => 'Yii::app()->baseUrl."/uploads/".$data->ROADMAP_PROJECT',
+//                        'options'=>array(
+//                            'target'=>'_blank',
+//                            'id'=>'"button_for_id_1".$data->ID_PROJECT ',
+//
+//                        ),
 //                    ),
-                    'delete' => array(
-                        'label'=> 'Заблокировать',
-                        'imageUrl'=>Yii::app()->request->baseUrl.'/images/buttons/delete.png',
-                        'url' => 'Yii::app()->createUrl("/delete/$data->ID_PROJECT")',
-                    ),
-                ),
-            ),
+//                ),
+//            ),
+
         );
         $user = Users::model()->findByPk(Yii::app()->user->id);
 
@@ -920,12 +914,13 @@ class AutorizedController extends Controller
             'dataProvider'  => $dataProvider,
             'ajaxUrl'       => $this->createUrl('ExpertProjectsList'),
             'columns'       => $cols,
+
             'buttons' => array(
                 'refresh' => array(
                     'tagName' => 'a',
                     'label' => '<i class="fa fa-refresh "></i>',
                     'htmlClass' => 'btn',
-                    'htmlOptions' => array('rel' => 'tooltip', 'title' => Yii::t('EDataTables.edt',"Refresh")),
+                    'htmlOptions' => array('rel' => 'tooltip', 'title' => Yii::t('EDataTables.edt',"Обновить")),
                     'init' => 'js:function(){}',
                     'callback' => 'js:function(e){e.data.that.eDataTables("refresh"); return false;}',
                 ),

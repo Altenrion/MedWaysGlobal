@@ -20,17 +20,7 @@ Yii::app()->clientScript->registerCssFile($assetsUrl.'/plugins/bootstrap-summern
 /* @ BEGIN CSS TEMPLATE */
 Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/main.css');
 Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/skins.css');
-
-
-///* @ BEGIN JS FRAMEWORK */
-//Yii::app()->clientScript->registerScriptFile( $assetsUrl.'/plugins/jquery-2.1.0.min.js', CClientScript::POS_END);
-//Yii::app()->clientScript->registerScriptFile( $assetsUrl.'/plugins/bootstrap/js/bootstrap.min.js', CClientScript::POS_END);
-
-
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

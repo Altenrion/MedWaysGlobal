@@ -50,7 +50,7 @@ if(isset($data) && !is_null($data)){
         }
         label.control-label {
             text-transform: uppercase;
-            color:#1C4DA5;
+            color:#428bca;
         }
     </style>
 
@@ -75,6 +75,7 @@ if(isset($data) && !is_null($data)){
     <div class="grid-header" style="border:0px; background: none; color: #777777">
         <i class="fa fa-graduation-cap"></i>
         <span class="grid-title">Проект <small style="font-size: 11px;"><?= $this->MakeOrder($data[0]['id']) ?></small> </span>
+        <a href="<?= Yii::app()->createUrl('Autorized/ManageProject',array('project'=>'100'));?>" >тык</a>
         <div class="pull-right grid-tools">
             <a data-widget="collapse" title="Collapse"><i class="fa fa-chevron-up"></i></a>
             <a data-widget="reload" title="Reload"><i class="fa fa-refresh"></i></a>

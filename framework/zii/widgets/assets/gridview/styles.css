@@ -13,20 +13,23 @@
 	background: white;
 	border-collapse: collapse;
 	width: 100%;
-	border: 1px #D0E3EF solid;
+	border: 0;
 }
 
 .grid-view table.items th, .grid-view table.items td
 {
 	font-size: 0.9em;
-	border: 1px white solid;
+	border: 0px white solid;
 	padding: 0.3em;
 }
 
+
+
 .grid-view table.items th
 {
-	color: white;
-	background: url("bg.gif") repeat-x scroll left top white;
+	color: #535353;
+    background: #71B6F1;
+	/*background: url("bg.gif") repeat-x scroll left top white;*/
 	text-align: center;
 }
 
@@ -56,27 +59,27 @@
 
 .grid-view table.items tr.even
 {
-	background: #F8F8F8;
+	background: #FFFFFF;
 }
 
 .grid-view table.items tr.odd
 {
-	background: #E5F1F4;
+	background: #FFFFFF;
 }
 
 .grid-view table.items tr.selected
 {
-	background: #BCE774;
+	background: #82bef1;
 }
 
 .grid-view table.items tr:hover.selected
 {
-	background: #CCFF66;
+	background: #a7cfef;
 }
 
 .grid-view table.items tbody tr:hover
 {
-	background: #ECFBD4;
+	background: #a7cbef;
 }
 
 .grid-view .link-column img
