@@ -287,12 +287,20 @@ class AutorizedController extends Controller
         $this->render('manage_notifies');
 	}
 
-    public function actionManageProject()
+    public function actionManageProject($Project)
 	{
+//        var_dump($Project);
+
+        $projectData = ProjectRegistry::model()->findByPk($Project);
+//        var_dump($projectData);
+        $managerData = Users::model()->findByPk($projectData->ID_REPRESENTATIVE);
+//        var_dump($managerData);
 
 
-
-        $this->render('manage_project');
+        $this->render('manage_project',array(
+            'project'=>$projectData,
+            'manager'=>$managerData,
+        ));
 	}
 
     /**
@@ -301,37 +309,8 @@ class AutorizedController extends Controller
     public function actionManageUsers()
 	{
 
-        $criteria_man = new CDbCriteria();
-        $criteria_man->condition = "roles='Manager' ";
-
-        $count_man = Users::model()->count($criteria_man);
-        $pages_man = new CPagination($count_man);
-        $pages_man->pageSize = 10;
-        $pages_man->applyLimit($criteria_man);
-
-        $sort_man = new CSort();
-        $sort_man->attributes = array('id','F_NAME','L_NAME','S_NAME','EMAIL','roles');
-        $sort_man->applyOrder($criteria_man);
-
-        $managers = Users::model()->findAll($criteria_man);
-
-
-        $dataProvider = new CActiveDataProvider('Users', array(
-            'criteria' => $criteria_man,
-
-            'pagination' => array(
-                'pageSize' => Yii::app()->params['postsPerPage'],
-            )
-        ));
-
-
         $this->render('manage_users', array(
-            'manags'=>$managers,
-            'pags'=>$pages_man,
-            'sortm'=>$sort_man,
-            'dataProvider' => $dataProvider,
         ));
-
 	}
 
 
@@ -367,16 +346,23 @@ class AutorizedController extends Controller
         $role = '';
         $messsages = array();
         $model = new Users;
+        $proj = new ProjectRegistry;
 
         if(!Yii::app()->user->isGuest){
             $data = $model->findProfileData(Yii::app()->user->id);
+            $datap =  $proj->findProjectData(Yii::app()->user->id);
+
             $clean_data=$data[0];
+            $clean_datap=$datap[0];
 
             if(!is_null($clean_data['roles'])){
                 $role = $this->cleanRole($data[0]['roles']);
             }
 
             $perc_prof = $this->CheckInfoPercentage($clean_data);
+
+
+            $perc_proj = $this->CheckInfoPercentage($clean_datap);
 
         }
         else{
@@ -388,6 +374,7 @@ class AutorizedController extends Controller
             'role'=>$role,
             'messages'=>$messsages,
             'perc_prof'=>$perc_prof,
+            'perc_proj'=>$perc_proj,
         ));
 	}
 
@@ -399,21 +386,40 @@ class AutorizedController extends Controller
      */
     public function CheckInfoPercentage($arr){
         $key = 0;
-
         unset($arr['PRIVACY']);
+
+        if(isset($arr['ROADMAP_PROJECT'])){
+
+//        var_dump($arr);
+//        Yii::app()->end();
+        }
 
         foreach($arr as $ar_k=>$ar_v){
 
-            if( $ar_k !== 'FIRST_LAVEL_APPROVAL' || $ar_k !== 'SECOND_LAVEL_RATING'  || $ar_k !== 'THIRD_LAVEL_RATING'  || $ar_k !== 'PRIVACY'   ){
+                if( $ar_k == 'FIRST_LAVEL_APPROVAL' || $ar_k == 'SECOND_LAVEL_RATING' || $ar_k == 'FIRST_LAVEL_COMMENT' || $ar_k == 'LONG_BUDGET'  || $ar_k == 'THIRD_LAVEL_RATING'  || $ar_k == 'PRIVACY'   ){
+                    $ar_v = 'not_count';
+                }
 
                 if(empty($ar_v) || $ar_v == "" || $ar_v == " " || is_null( $ar_v) ){
                     $key++;
-//
+
                 }
             }
-        }
+
         $num = count($arr);
+
+        if(isset($arr['ROADMAP_PROJECT'])){
+//        var_dump($num);
+//        var_dump($key);
+        }
+
         $percentage = (($num - $key)/$num)*100;
+
+        if(isset($arr['ROADMAP_PROJECT'])){
+//            var_dump($percentage);
+//            Yii::app()->end();
+        }
+
         return $percentage;
     }
 

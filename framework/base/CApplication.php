@@ -53,7 +53,7 @@
  * the application will switch to its error handling logic and jump to step 6 afterwards.
  *
  * @property string $id The unique identifier for the application.
- * @property string $basePath The root directory of the application. Defaults to 'protected'.
+ * @property string Yii::app()->baseUrl."/uploads/".$basePath The root directory of the application. Defaults to 'protected'.
  * @property string $runtimePath The directory that stores runtime files. Defaults to 'protected/runtime'.
  * @property string $extensionPath The directory that contains all extensions. Defaults to the 'extensions' directory under 'protected'.
  * @property string $language The language that the user is using and the application should be targeted to.

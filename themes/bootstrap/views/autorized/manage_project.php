@@ -25,14 +25,13 @@
             text-align: right;
         }
 </style>
-
 <!-- BEGIN CONTENT HEADER -->
 <section class="content-header">
     <i class="fa fa-user"></i>
-    <span>Проект № 23</span>
+    <span>Проект № <?=$project->ID_PROJECT ?></span>
     <ol class="breadcrumb">
         <li><a href="">Кабинет</a></li>
-        <li><a href="">Проекты</a></li>
+        <li><a href="<?=Yii::app()->createUrl('Autorized/projects')?>">Проекты</a></li>
         <li class="active"><a href="">Управление проектами</a></li>
     </ol>
 </section>
@@ -43,7 +42,6 @@
 <section class="content">
 
     <div class="row ">
-
         <div class="col-sm-12 ">
                 <div class="grid">
                     <div class="grid-header">
@@ -56,7 +54,7 @@
                         </div>
                     </div>
                     <div class="grid-body">
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam asperiores cupiditate doloribus ducimus excepturi expedita illo iure molestiae molestias non, officia officiis perferendis provident temporibus ut veritatis voluptate? Ad aliquam at blanditiis eos, exercitationem magni quae voluptate! Ad fuga itaque, iusto officia possimus repudiandae voluptate. Ad adipisci alias architecto aspernatur atque autem beatae consequuntur deleniti dignissimos eaque est fugiat harum in iusto, necessitatibus, nemo non placeat quae quaerat quidem quis quisquam quo repudiandae sed sit sunt vitae. At autem consequatur, est harum, illo libero magni nam nemo neque obcaecati optio quae quo sint soluta vel veritatis voluptates! Reprehenderit!</p>
+                        <p><?=$project->NAME?></p>
                     </div>
             </div>
         </div><!--/col-->
@@ -80,14 +78,14 @@
                             <div class="form-group">
                                 <label class="col-sm-4 col-xs-4 control-label" style="text-align:right ;">Фамилия:</label>
                                 <div class="col-sm-8 col-xs-8">
-                                    Барышев
+                                    <?=$manager->F_NAME?>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label class="col-sm-4 col-xs-4 control-label" style="text-align:right ;">Имя:</label>
                                 <div class="col-sm-8 col-xs-8">
-                                    Никита
+                                    <?=$manager->L_NAME?>
                                 </div>
                             </div>
 
@@ -95,69 +93,86 @@
                             <div class="form-group">
                                 <label class="col-sm-4 col-xs-4 control-label" style="text-align:right ;">Отчество:</label>
                                 <div class="col-sm-8 col-xs-8">
-                                    Владимирович
+                                    <?=$manager->S_NAME?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-4 col-xs-4 control-label" style="text-align:right ;">Пол:</label>
                                 <div class="col-sm-8 col-xs-8">
-                                    M
+                                    <?=(($manager->F_NAME =='1')?'M':(($manager->F_NAME =='2')?'Ж':'-'))?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-4 col-xs-4 control-label" style="text-align:right ;">Дата рождения:</label>
                                 <div class="col-sm-8 col-xs-8">
-                                    12 / 09 / 1991
+                                    <?=$manager->BIRTH_DATE?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-4 col-xs-4 control-label" style="text-align:right ;">Телефон:</label>
                                 <div class="col-sm-8 col-xs-8">
-                                    89175447768
+                                    <?=$manager->PHONE?>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label class="col-sm-4 col-xs-4 control-label" style="text-align:right ;">Ученая степень:</label>
                                 <div class="col-sm-8 col-xs-8">
-                                    доктор наук
+                                    <?=$manager->DEGREE?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-4 col-xs-4 control-label" style="text-align:right ;">Ученое звание:</label>
                                 <div class="col-sm-8 col-xs-8">
-                                    доцент
+                                    <?=$manager->ACADEMIC_TITLE?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-4 col-xs-4 control-label" style="text-align:right ;">Округ:</label>
                                 <div class="col-sm-8 col-xs-8">
-                                    Центральный федеральный округ
+                                    <? $dist = District::model()->find(array(
+                                        'select'=>'NAME',
+                                        'condition'=>'ID_DISTRICT=:ID_DISTRICT',
+                                        'params'=>array(':ID_DISTRICT'=>$manager->ID_DISTRICT)
+                                    ));
+                                    echo $dist->NAME;
+                                    ?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-4 col-xs-4 control-label" style="text-align:right ;">Вуз:</label>
                                 <div class="col-sm-8 col-xs-8">
-                                    Крымский медицинский университет имени С.И. Георгиевского
-
+                                    <? $univ = University::model()->find(array(
+                                        'select'=>'NAME_UNIVER',
+                                        'condition'=>'ID_UNIVER=:ID_UNIVER',
+                                        'params'=>array(':ID_UNIVER'=>$manager->ID_UNIVER)
+                                    ));
+                                    echo $univ->NAME_UNIVER;
+                                    ?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-4 col-xs-4 control-label" style="text-align:right ;">Должность:</label>
                                 <div class="col-sm-8 col-xs-8">
-                                    Разработчик
+                                    <?=$manager->W_POSITION?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-4 col-xs-4 control-label" style="text-align:right ;">Специальность:</label>
                                 <div class="col-sm-8 col-xs-8">
-                                    Авиационная, космическая и морская медицина
+                                    <? $spec = Speciality::model()->find(array(
+                                        'select'=>'NAME',
+                                        'condition'=>'ID_SPECIALITY=:ID_SPECIALITY',
+                                        'params'=>array(':ID_SPECIALITY'=>$manager->ID_SPECIALITY)
+                                    ));
+                                    echo $spec->NAME;
+                                    ?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-4 col-xs-4 control-label" style="text-align:right ;">Индекс Хирша:</label>
                                 <div class="col-sm-8 col-xs-8">
-                                    1000
+                                    <?=$manager->HIRSH?>
                                 </div>
                             </div>
                         </div>
@@ -184,82 +199,93 @@
                             <div class="form-group">
                                 <label class="col-sm-6 col-xs-6 control-label" style="text-align:right ;">Научная платформа:</label>
                                 <div class="col-sm-6 col-xs-6">
-                                    Онкология
+                                    <? $st = Stage::model()->find(array(
+                                                'select'=>'NAME_STAGE',
+                                                'condition'=>'ID_STAGE=:ID_STAGE',
+                                                'params'=>array(':ID_STAGE'=>$project->ID_STAGE)
+                                            ));
+                                    echo $st->NAME_STAGE;
+                                    ?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-6 col-xs-6 control-label" style="text-align:right ;">Количество исполнителей:</label>
                                 <div class="col-sm-6 col-xs-6">
-                                    2
-
+                                    <?=$project->EXECUTERS_NUM;?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-6 col-xs-6 control-label" style="text-align:right ;">Из них до 35 лет:</label>
                                 <div class="col-sm-6 col-xs-6">
-                                    2
-
+                                    <?=$project->UN_THIRTY_FIVE;?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-6 col-xs-6 control-label" style="text-align:right ;">Из них обучающихся:</label>
                                 <div class="col-sm-6 col-xs-6">
-                                   0
-
+                                    <?=$project->STUDY;?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-6 col-xs-6 control-label" style="text-align:right ;">Суммарное кол-во публикаций по теме:</label>
                                 <div class="col-sm-6 col-xs-6">
-                                    5
+                                    <?=$project->PUBLICATIONS;?>
 
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-6 col-xs-6 control-label" style="text-align:right ;">Из них в зарубежных изданиях:</label>
                                 <div class="col-sm-6 col-xs-6">
-                                   4
+                                    <?=$project->FORIN_PUBL;?>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label class="col-sm-6 col-xs-6 control-label" style="text-align:right ;">Год начала:</label>
                                 <div class="col-sm-6 col-xs-6">
-                                   2011
-
+                                    <?=$project->START_YEAR;?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-6 col-xs-6 control-label" style="text-align:right ;">Год окончания:</label>
                                 <div class="col-sm-6 col-xs-6">
-                                   2017
-
+                                    <?=$project->END_YEAR;?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-6 col-xs-6 control-label" style="text-align:right ;">Стадия развития проекта:</label>
                                 <div class="col-sm-6 col-xs-6">
-                                    Lorem ipsum dolor sit ame
-
+                                    <? $phase = Phase::model()->find(array(
+                                                    'select'=>'NAME',
+                                                    'condition'=>'ID_PHASE=:ID_PHASE',
+                                                    'params'=>array(':ID_PHASE'=>$project->ID_PHASE)
+                                                ));
+                                    echo $phase->NAME;
+                                   ?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-6 col-xs-6 control-label" style="text-align:right ;">Объем финансирования на период реализации (руб):</label>
                                 <div class="col-sm-6 col-xs-6">
-                                    150000
-
+                                    <? $budget = Budget::model()->find(array(
+                                                    'select'=>'NAME',
+                                                    'condition'=>'ID_BUDGET=:ID_BUDGET',
+                                                    'params'=>array(':ID_BUDGET'=>$project->ID_BUDGET)
+                                                ));
+                                    echo $budget->NAME;
+                                    ?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-6 col-xs-6 control-label" style="text-align:right ;">Объем финансирования на календарный год (руб):</label>
                                 <div class="col-sm-6 col-xs-6">
-                                    160000
+                                    <?=$project->YEAR_BUDGET;?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-6 col-xs-6 control-label" style="text-align:right ;">Объем предполагаемого coфинансирования (руб):</label>
                                 <div class="col-sm-6 col-xs-6">
-                                    30000
+                                    <?=$project->CO_FINANCING;?>
 
                                 </div>
                             </div>
@@ -288,11 +314,10 @@
                 </div>
                 <div class="grid-body">
                     <p class="lead">Краткая аннотация</p>
-                    <p>
-                        Lorem ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor orem ipsum dolor ipsum dolor
-                    </p>
+                    <p><?=$project->DESCR_PROJECT?></p>
+
                     <p class="lead">Полная аннотация</p>
-                    <p>Для просмотра перейдите по ссылке : <a href="#"><i class="fa fa-lg fa-file-pdf-o" style="color:#D9534F"></i></a></p>
+                    <p>Для просмотра перейдите по ссылке : <a href="<?=Yii::app()->baseUrl."/uploads/".$project->ROADMAP_PROJECT?>" target='_blank' ><i class="fa fa-lg fa-file-pdf-o" style="color:#D9534F"></i></a></p>
                 </div>
             </div>
         </div><!--/col-->

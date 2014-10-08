@@ -4,11 +4,22 @@
 <script type="text/javascript">
     $(document).ready(function () {
 
-        var row_id = $('table.dataTable>tbody>tr>td:first').val();
+
+        console.log('ggg');
+
+        $('table.dataTable tbody tr').bind('click', function(){
+            var project_id = $(this).find('td:nth-child(1)').html();
+            console.log(project_id);
+
+            $.get("<?=Yii::app()->createUrl("Autorized/ManageProject")?>/", {
+                Project: project_id
+            }, function () {
+                document.location.href = '<?=Yii::app()->createUrl("Autorized/ManageProject")?>/Project/' + project_id;
+            });
 
 
 
-        console.log(row_id);
+        })
 
 
         $('table.values tr').bind('click', function () {
