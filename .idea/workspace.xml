@@ -173,7 +173,7 @@
     <file path="/editable.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412026910804" ignored="false" />
     <file path="/_JuliaList.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412073984606" ignored="false" />
     <file path="/devel.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412581372366" ignored="false" />
-    <file path="/manage_project.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412638098635" ignored="false" />
+    <file path="/manage_project.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412796354081" ignored="false" />
     <file path="/jquery.dataTables_themeroller.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412600919443" ignored="false" />
     <file path="/styles.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412598167847" ignored="false" />
     <file path="/jquery-ui-1.8.17.custom.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412597734097" ignored="false" />
@@ -201,10 +201,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AutorizedController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AutorizedController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="391" column="0" selection-start="10756" selection-end="10756" vertical-scroll-proportion="0.33211234">
+            <state line="391" column="0" selection-start="10756" selection-end="10756" vertical-scroll-proportion="-5.3333335">
               <folding>
                 <element signature="e#24952#24972#0" expanded="false" />
                 <marker date="1412792604898" expanded="true" signature="36143:36155" placeholder="..." />
@@ -308,10 +308,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage_project.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="manage_project.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="44" selection-start="2466" selection-end="2466" vertical-scroll-proportion="-24.846153">
+            <state line="29" column="28" selection-start="600" selection-end="600" vertical-scroll-proportion="0.46327013">
               <folding>
                 <element signature="e#6#159#0" expanded="true" />
               </folding>
@@ -351,9 +351,9 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertProjectsList.php" />
         <option value="$PROJECT_DIR$/framework/base/CApplication.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php" />
       </list>
     </option>
   </component>
@@ -831,15 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="44" selection-start="2466" selection-end="2466" vertical-scroll-proportion="-24.846153">
-          <folding>
-            <element signature="e#6#159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="186" column="20" selection-start="7302" selection-end="7302" vertical-scroll-proportion="-5.269231">
@@ -904,10 +895,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="391" column="0" selection-start="10756" selection-end="10756" vertical-scroll-proportion="0.33211234">
+        <state line="391" column="0" selection-start="10756" selection-end="10756" vertical-scroll-proportion="-5.3333335">
           <folding>
             <element signature="e#24952#24972#0" expanded="false" />
             <marker date="1412792604898" expanded="true" signature="36143:36155" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="28" selection-start="600" selection-end="600" vertical-scroll-proportion="0.46327013">
+          <folding>
+            <element signature="e#6#159#0" expanded="true" />
           </folding>
         </state>
       </provider>

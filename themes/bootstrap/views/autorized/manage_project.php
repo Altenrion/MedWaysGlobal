@@ -25,6 +25,8 @@
             text-align: right;
         }
 </style>
+
+<?// var_dump($manager);  ?>
 <!-- BEGIN CONTENT HEADER -->
 <section class="content-header">
     <i class="fa fa-user"></i>
@@ -99,7 +101,7 @@
                             <div class="form-group">
                                 <label class="col-sm-4 col-xs-4 control-label" style="text-align:right ;">Пол:</label>
                                 <div class="col-sm-8 col-xs-8">
-                                    <?=(($manager->F_NAME =='1')?'M':(($manager->F_NAME =='2')?'Ж':'-'))?>
+                                    <?=(($manager->SEX =='1')?'M':(($manager->F_NAME =='2')?'Ж':'-'))?>
                                 </div>
                             </div>
                             <div class="form-group">
