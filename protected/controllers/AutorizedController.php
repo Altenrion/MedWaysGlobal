@@ -350,10 +350,9 @@ class AutorizedController extends Controller
 
         if(!Yii::app()->user->isGuest){
             $data = $model->findProfileData(Yii::app()->user->id);
-            $datap =  $proj->findProjectData(Yii::app()->user->id);
 
             $clean_data=$data[0];
-            $clean_datap=$datap[0];
+
 
             if(!is_null($clean_data['roles'])){
                 $role = $this->cleanRole($data[0]['roles']);
@@ -361,9 +360,13 @@ class AutorizedController extends Controller
 
             $perc_prof = $this->CheckInfoPercentage($clean_data);
 
+            $perc_proj = '0';
 
-            $perc_proj = $this->CheckInfoPercentage($clean_datap);
-
+            if($this->checkRole(array('Manager'))){
+                $datap =  $proj->findProjectData(Yii::app()->user->id);
+                $clean_datap=$datap[0];
+                $perc_proj = $this->CheckInfoPercentage($clean_datap);
+            }
         }
         else{
             $this->redirect(Yii::app()->createUrl('showCase/login'));
