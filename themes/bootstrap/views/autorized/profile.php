@@ -406,7 +406,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                         <?if($this->checkRole(array('Exp','Exp1','Exp2','Exp3'))):?>
                         <div class="col-sm-4 stats">
 
-                                <h1> 0 </h1>
+                                <h1> <?=$count_proj?> </h1>
                                 <span>Поступило проектов</span>
                                 <button class="btn btn-info"><i class="fa fa-graduation-cap"></i> Проектов</button>
                         </div>
@@ -414,7 +414,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                         <?if($this->checkRole(array('Dev'))):?>
                             <div class="col-sm-4 stats">
 
-                                <h1> 0 </h1>
+                                <h1> <?=$count_quest?> </h1>
                                 <span>Обращений</span>
                                 <button class="btn btn-info"><i class="fa fa-envelope"></i> Обращений</button>
                             </div>

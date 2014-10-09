@@ -353,14 +353,26 @@ class AutorizedController extends Controller
 
             $clean_data=$data[0];
 
-
             if(!is_null($clean_data['roles'])){
                 $role = $this->cleanRole($data[0]['roles']);
             }
 
             $perc_prof = $this->CheckInfoPercentage($clean_data);
 
-            $perc_proj = '0';
+            $perc_proj = $count_quest = $count_proj = '0';
+
+            if($this->checkRole(array('Exp','Exp1','Exp2','Exp3'))){
+
+                $criteria = $this->getProjectByCriteria();
+                $proj = ProjectRegistry::model()->findAll($criteria);
+                $count_proj = count($proj);
+
+            }
+
+            if($this->checkRole(array('Dev'))){
+                $data_quest = Questions::model()->findAll();
+                $count_quest = count($data_quest);
+            }
 
             if($this->checkRole(array('Manager'))){
                 $datap =  $proj->findProjectData(Yii::app()->user->id);
@@ -378,8 +390,11 @@ class AutorizedController extends Controller
             'messages'=>$messsages,
             'perc_prof'=>$perc_prof,
             'perc_proj'=>$perc_proj,
+            'count_quest'=>$count_quest,
+            'count_proj'=>$count_proj,
         ));
 	}
+
 
     /**
      * Метод для виджета показывающего процент заполненности информации
@@ -390,12 +405,6 @@ class AutorizedController extends Controller
     public function CheckInfoPercentage($arr){
         $key = 0;
         unset($arr['PRIVACY']);
-
-        if(isset($arr['ROADMAP_PROJECT'])){
-
-//        var_dump($arr);
-//        Yii::app()->end();
-        }
 
         foreach($arr as $ar_k=>$ar_v){
 
@@ -411,17 +420,7 @@ class AutorizedController extends Controller
 
         $num = count($arr);
 
-        if(isset($arr['ROADMAP_PROJECT'])){
-//        var_dump($num);
-//        var_dump($key);
-        }
-
         $percentage = (($num - $key)/$num)*100;
-
-        if(isset($arr['ROADMAP_PROJECT'])){
-//            var_dump($percentage);
-//            Yii::app()->end();
-        }
 
         return $percentage;
     }
@@ -461,8 +460,6 @@ class AutorizedController extends Controller
                 echo json_encode('fail'); Yii::app()->end();   }
         }
 
-
-
         $_POST['pk']=  $proj_info[0]['id'];
         $_POST['name']= 'FIRST_LAVEL_APPROVAL';
         $_POST['value']= '1';
@@ -472,9 +469,6 @@ class AutorizedController extends Controller
             Yii::app()->end();
 
     }
-
-
-
 
     /**
      * Метод для отрисовки таблицы новостей
@@ -575,7 +569,6 @@ class AutorizedController extends Controller
         );
 
         $criteria = new CDbCriteria;
-//        $criteria->condition =  "roles='Manager' ";
 
         if (isset($_REQUEST['sSearch']) && isset($_REQUEST['sSearch']{0})) {
             $criteria->addSearchCondition('text', $_REQUEST['sSearch']);
@@ -780,6 +773,7 @@ class AutorizedController extends Controller
     }
 
 
+
     /**
      * Метод для отрисовки таблицы Проектов экспертам
      */
@@ -794,7 +788,6 @@ class AutorizedController extends Controller
                 'value'=>'$data->ID_PROJECT',
                 'htmlOptions'=>array('class'=> 'text-left')
             ),
-//           'ID_PROJECT:number:#',
             'NAME:text:Название',
 
 
@@ -870,38 +863,11 @@ class AutorizedController extends Controller
 //            ),
 
         );
-        $user = Users::model()->findByPk(Yii::app()->user->id);
+
 
 
         /** Критерий поиска проектов по ролям  */
-        $criteria = new CDbCriteria;
-        $criteria->select = 't.ID_PROJECT,t.ROADMAP_PROJECT, t.ID_STAGE, t.NAME, us.ID_DISTRICT, us.ID_UNIVER ';
-        $criteria->join = 'LEFT JOIN  `m_w_users` `us` ON us.id = t.ID_REPRESENTATIVE';
-
-        switch(Yii::app()->user->role){
-
-            /** Критерий для эксперта 1 уровня (по универу) */
-            case 'Exp1' :
-                $criteria->condition = 'us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL = 1' ;
-                $criteria->params = array(":univ" => $user['ID_UNIVER']);
-            break;
-
-            /** Критерий для эксперта 2 уровня (по платформе и округу)*/
-            case 'Exp2' :
-                $criteria->condition = 't.ID_STAGE = :stage AND us.ID_DISTRICT = :dist';
-                $criteria->params = array(":stage" => $user['ID_STAGE'], ":dist" => $user['ID_DISTRICT']);
-            break;
-
-            /** Критерий для эксперта 3 уровня (по платформе) */
-            case 'Exp3' :
-                  $criteria->condition = 't.ID_STAGE = :stage';
-                  $criteria->params = array(":stage" => $user['ID_STAGE']);
-            break;
-
-            /** Критерий для разработчика */
-            case 'Dev' :
-            break;
-        }
+        $criteria = $this->getProjectByCriteria();
 
         if (isset($_REQUEST['sSearch']) && isset($_REQUEST['sSearch']{0})) {
             $criteria->addSearchCondition('NAME', $_REQUEST['sSearch']);
@@ -987,14 +953,12 @@ class AutorizedController extends Controller
         (SELECT COUNT(DISTINCT id) FROM m_w_users as u  Where roles IN ("Manager") AND ID_UNIVER = t.ID_UNIVER ) as ProjCount';
         $criteria->condition =  "AKTIV_KEY='100' AND ID_UNIVER is not NULL AND ID_DISTRICT is not NULL";
         $criteria->group = 'ID_UNIVER';
-//
 
         if (isset($_REQUEST['sSearch']) && isset($_REQUEST['sSearch']{0})) {
             $criteria->addSearchCondition('ID_DISTRICT', $_REQUEST['sSearch']);
         }
 
         $sort = new EDTSort('Users', $columns);
-//        $sort->defaultOrder = 'id';
 
         $pagination = new EDTPagination();
 
@@ -1021,9 +985,6 @@ class AutorizedController extends Controller
             'options' => $this->TableOptions,
         ));
 
-//        var_dump($widget);
-//        Yii::app()->end();
-
         if (!Yii::app()->getRequest()->getIsAjaxRequest()) {
             $this->renderPartial('_JuliaList', array('widget' => $widget,),false, false);
             return;
@@ -1033,6 +994,49 @@ class AutorizedController extends Controller
         }
 
 
+    }
+
+    /** Метод получения критериев поиска проектов по ролям  */
+    public function getProjectByCriteria(){
+
+        $user = Users::model()->findByPk(Yii::app()->user->id);
+
+        $criteria = new CDbCriteria;
+        $criteria->select = 't.ID_PROJECT,t.ROADMAP_PROJECT, t.ID_STAGE, t.NAME, us.ID_DISTRICT, us.ID_UNIVER ';
+        $criteria->join = 'LEFT JOIN  `m_w_users` `us` ON us.id = t.ID_REPRESENTATIVE';
+
+        switch(Yii::app()->user->role){
+
+            /** Критерий для эксперта 1 уровня (по универу) */
+            case 'Exp' :
+                $criteria->condition = 'us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL = 1' ;
+                $criteria->params = array(":univ" => $user['ID_UNIVER']);
+                break;
+
+            /** Критерий для эксперта 1 уровня (по универу) */
+            case 'Exp1' :
+                $criteria->condition = 'us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL = 1' ;
+                $criteria->params = array(":univ" => $user['ID_UNIVER']);
+                break;
+
+            /** Критерий для эксперта 2 уровня (по платформе и округу)*/
+            case 'Exp2' :
+                $criteria->condition = 't.ID_STAGE = :stage AND us.ID_DISTRICT = :dist';
+                $criteria->params = array(":stage" => $user['ID_STAGE'], ":dist" => $user['ID_DISTRICT']);
+                break;
+
+            /** Критерий для эксперта 3 уровня (по платформе) */
+            case 'Exp3' :
+                $criteria->condition = 't.ID_STAGE = :stage';
+                $criteria->params = array(":stage" => $user['ID_STAGE']);
+                break;
+
+            /** Критерий для разработчика */
+            case 'Dev' :
+                break;
+        }
+
+        return $criteria;
     }
 
 
