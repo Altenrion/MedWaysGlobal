@@ -24,19 +24,19 @@ trait MyTraits {
 
     }
 
+    /** Метод для Update данные в профиле и проекте */
     public function Update($model ,array $posts){
 
         foreach($posts as $post_k=>$post_v){
             $_POST[$post_k] = $post_v;
         }
 
-
         $edit = new EditableSaver($model);
         $edit->scenario = 'update';
         $edit->update();
     }
 
-
+/** Кажется бесполезный метод который надо удалить, но пока не проверил. */
     public function setParams($array){
         foreach($array as $ar_k=>$ar_v){
 

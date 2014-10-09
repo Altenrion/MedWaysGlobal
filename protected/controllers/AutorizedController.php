@@ -470,6 +470,28 @@ class AutorizedController extends Controller
 
     }
 
+    public function actionVerifyProject(){
+
+        $id = Yii::app()->request->getPost('id');
+        $status = Yii::app()->request->getPost('status');
+
+        if(isset($id)){
+            $this->Update('ProjectRegistry',array(  'pk'=>$id,
+                                                    'name'=>'FIRST_LAVEL_APPROVAL',
+                                                    'value'=>$status,
+                                                ));
+            echo json_encode('ok');Yii::app()->end();
+        }
+        else{
+            echo json_encode('fail'); Yii::app()->end();
+        }
+    }
+
+    public function actionEvaluateProject(){
+
+    }
+
+
     /**
      * Метод для отрисовки таблицы новостей
      */

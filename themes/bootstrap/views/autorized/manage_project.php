@@ -345,11 +345,11 @@
                         <li><strong style="color:#D9534F">Заблокировать</strong> - одно из условий не соблюдено</li>
 
                     </ul>
-                    <button type="button" class="btn btn-primary"  title="">
+                    <button type="button" class="btn btn-primary" id="accept_button" title="">
                         Подтвердить
                     </button>
 
-                    <button type="button" class="btn btn-danger"  title="">
+                    <button type="button" class="btn btn-danger" id="denied_button"  title="">
                         Заблокировать
                     </button>
                 </div>
@@ -374,51 +374,129 @@
                         <div class="form-group">
                             <label class="col-sm-4 control-label">Соответствие проекта тематике заявленной научной платформы</label>
                             <div class="col-sm-7">
-                                <select class="form-control">
-                                    <option>-- не выбрано --</option>
-                                    <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                <select class="form-control"  id="mark_1">
+                                    <option value="">-- не выбрано --</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-4 control-label">Актуальность исследования</label>
                             <div class="col-sm-7">
-                                <select class="form-control">
-                                    <option>-- не выбрано --</option>
-                                    <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                <select class="form-control" id="mark_2">
+                                    <option value="">-- не выбрано --</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-4 control-label">Научный коллектив</label>
                             <div class="col-sm-7">
-                                <select class="form-control">
-                                    <option>-- не выбрано --</option>
-                                    <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
-                                    <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
-                                    <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                <select class="form-control" id="mark_3">
+                                    <option value="">-- не выбрано --</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-4 control-label">Финансовая модель</label>
                             <div class="col-sm-7">
-                                <select class="form-control">
-                                    <option>-- не выбрано --</option>
-                                    <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
-                                    <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
-                                    <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                <select class="form-control" id="mark_4">
+                                    <option value="">-- не выбрано --</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Оценка 5</label>
+                            <div class="col-sm-7">
+                                <select class="form-control" id="mark_5">
+                                    <option value="">-- не выбрано --</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Оценка 6</label>
+                            <div class="col-sm-7">
+                                <select class="form-control" id="mark_6">
+                                    <option value="">-- не выбрано --</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Оценка 7</label>
+                            <div class="col-sm-7">
+                                <select class="form-control" id="mark_7">
+                                    <option value="">-- не выбрано --</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Оценка 8</label>
+                            <div class="col-sm-7">
+                                <select class="form-control" id="mark_8">
+                                    <option value="">-- не выбрано --</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Оценка 9</label>
+                            <div class="col-sm-7">
+                                <select class="form-control" id="mark_9">
+                                    <option value="">-- не выбрано --</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Оценка 10</label>
+                            <div class="col-sm-7">
+                                <select class="form-control" id="mark_10">
+                                    <option value="">-- не выбрано --</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
                                 </select>
                             </div>
                         </div>
@@ -438,3 +516,144 @@
     </div><!--/text row-->
 
 </section>
+
+
+
+<div class="modal fade " id="accept" tabindex="-1" role="dialog" aria-labelledby="myModalLabel14" aria-hidden="true">
+    <div class="modal-wrapper">
+        <div class="modal-dialog">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel14"></h4>
+                </div>
+                <div class="modal-body">
+                    <p id="content" style="text-align: center">
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('#accept_button').click( function(){
+            var id_pr = <?=$project->ID_PROJECT ?> ;
+               accept(id_pr);
+        });
+
+        $('#denied_button').click( function(){
+            var id_pr = <?=$project->ID_PROJECT ?> ;
+            deny(id_pr);
+        });
+
+
+        function deny(id){
+            $.ajax({
+                type: 'post',
+                url:  '<?=Yii::app()->createUrl('Autorized/verifyProject')?>' ,
+                data: { id: id ,status: 9},
+                dataType : 'json',
+                success: function(data){
+                        if(data == 'ok'){
+                        $('div.modal-content').addClass('bg-green');
+                        $('p#content').html('<h4>Проект исключен из участия в Эстафете</h4><br>');
+
+                        setTimeout(function() {
+                            $('#accept').modal('show')
+                        }, 150);
+                    }
+                    if(data == 'fail'){
+                        $('div.modal-content').addClass('bg-red');
+                        $('p#content').html('<h4>База данных временно не доступна</h4><br>');
+
+                        setTimeout(function() {
+                            $('#accept').modal('show')
+                        }, 1500);
+                    }
+                }
+            });
+        }
+
+        function accept(id){
+            $.ajax({
+                type: 'post',
+                url:  '<?=Yii::app()->createUrl('Autorized/verifyProject')?>' ,
+                data: { id: id ,status: 3},
+                dataType : 'json',
+                success: function(data){
+
+                    if(data == 'ok'){
+                        $('div.modal-content').addClass('bg-green');
+                        $('p#content').html('<h4>Проект допущен к региональной экспертизе</h4><br>');
+
+                        setTimeout(function() {
+                            $('#accept').modal('show')
+                        }, 150);
+                    }
+                    if(data == 'fail'){
+                        $('div.modal-content').addClass('bg-red');
+                        $('p#content').html('<h4>База данных временно не доступна</h4><br>');
+
+                        setTimeout(function() {
+                            $('#accept').modal('show')
+                        }, 1500);
+                    }
+                }
+            });
+        }
+
+        function evaluate(id){
+//
+//            1) проверить есть ли пустые
+//            2) Если все выбраны, собрать значения и отправить на сервер.
+//            3) оповестить об успешном сохранении.
+//
+
+
+            $("#mark_10").val();
+
+
+
+            $.ajax({
+                type: 'post',
+                url:  '<?=Yii::app()->createUrl('Autorized/evaluateProject')?>' ,
+                data: { id: id ,status: 3},
+                dataType : 'json',
+                success: function(data){
+
+                    if(data == 'ok'){
+                        $('div.modal-content').addClass('bg-green');
+                        $('p#content').html('<h4>Проект допущен к региональной экспертизе</h4><br>');
+
+                        setTimeout(function() {
+                            $('#accept').modal('show')
+                        }, 150);
+                    }
+                    if(data == 'fail'){
+                        $('div.modal-content').addClass('bg-red');
+                        $('p#content').html('<h4>База данных временно не доступна</h4><br>');
+
+                        setTimeout(function() {
+                            $('#accept').modal('show')
+                        }, 1500);
+                    }
+                }
+            });
+
+        }
+
+
+
+
+
+
+    });
+
+</script>
+
+<!--Оценка проекта сохранена успешно-->
