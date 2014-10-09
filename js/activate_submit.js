@@ -31,7 +31,7 @@
                         if(data == 'succsess'){
                               error.css("display", "none");
                               succsess.css("display", "block");
-                              succsess.html('Вы зарегестрированы. На указанный email отправлено письмо активации.');
+                              succsess.html('Вы зарегистрированы. На указанный email отправлено письмо активации.');
                         }
                         if(data == 'fail'){
                             succsess.css("display", "none");

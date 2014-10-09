@@ -26,7 +26,7 @@
 
       <h3 class="section-title">Часто задаваемые вопросы</h3>
 
-  <p>В настящем разделе вы сможете найти информацию о часто задаваемых вопросах.</p>
+<!--  <p>В настящем разделе вы сможете найти информацию о часто задаваемых вопросах.</p>-->
   <div class="divide30"></div>
 
         <div class="panel-group" id="accordion">
@@ -74,10 +74,10 @@
             </div>
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseFour">Что значит аффилированный к вузу научный коллектив?   </a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseFour">Что значит аффилированный научный коллектив?   </a> </h4>
             </div>
             <div id="collapseFour" class="panel-collapse collapse">
-              <div class="panel-body"><p> Аффилированные к вузу учреждения - это научные коллективы прочих организации, позволяющие использовать собственные результаты интеллектуальной деятельности в научно-образовательных целях конкретному образовательному учреждению. В случае участия в Эстафете проектов аффилированных организаций, при регистрации необходимо указывать соответствующий вуз, в компетенции сотрудника которого будет подтверждение легитимности проекта.
+              <div class="panel-body"><p> Аффилированные учреждения - это научные коллективы прочих организаций, позволяющие использовать собственные результаты интеллектуальной деятельности в научно-образовательных целях конкретному образовательному учреждению. В случае участия в Эстафете проектов аффилированных организаций, при регистрации необходимо указывать соответствующий ВУЗ, в компетенции сотрудника которого будет подтверждение легитимности проекта.
                   </p>
               </div>
             </div>
@@ -112,7 +112,7 @@
                       <li>Финансовая модель</li>
                       <li>Конкурентные преимущества проекта</li>
                       <li>Инновационность</li>
-                      <li>Информация о профильных публикациях, грантах и соисолнителях</li>
+                      <li>Информация о профильных публикациях, грантах и соисполнителях</li>
                   </ul>
               </div>
             </div>
@@ -164,10 +164,10 @@
 
       <aside class="col-sm-4 sidebar lp30">
         <div class="sidebox widget">
-          <h3 class="section-title">Координаторы проректа</h3>
+          <h3 class="section-title">Координаторы проекта</h3>
             <figure class="media-wrapper bm0"><img src="<?=Yii::app()->baseUrl?>/images/art/po_sibsmu.jpg" alt=""></figure>
             <div class="bordered no-top-border ">
-                <h3>проведения регионального этапа </h3>
+                <h3>проведение регионального этапа </h3>
                 <p>ГБОУ ВПО Сибирский государственный медицинский университет Минздрава России
                 </p>
                 <address>
@@ -185,14 +185,14 @@
           <div class="sidebox widget">
               <figure class="media-wrapper bm0"><img src="<?=Yii::app()->baseUrl?>/images/art/po_msmu2.jpg" alt=""></figure>
               <div class="bordered no-top-border ">
-                  <h3>проведения финального этапа и техническая поддержка</h3>
+                  <h3>проведение финального этапа и техническая поддержка</h3>
                   <p>ГБОУ ВПО Первый Московский государственный медицинский университет имени И.М. Сеченова Минздрава России
                   </p>
                   <address>
                       <strong>Университетский технопарк</strong><br>
                       Москва, Трубецкая ул., д.8, стр.2<br>
-                      <abbr >Кузнецова Юлия Евгеньевна : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">kuznetsova.yulia@bk.ru</a><br>
-                      <abbr >Барышев Никита Владимирович : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">administration@medways.ru</a>
+                      <abbr >Кузнецова Юлия Евгеньевна: <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">kuznetsova.yulia@bk.ru</a><br>
+                      <abbr >Барышев Никита Владимирович: <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">administration@medways.ru</a>
                   </address>
               </div>
               <!-- /.post-list -->

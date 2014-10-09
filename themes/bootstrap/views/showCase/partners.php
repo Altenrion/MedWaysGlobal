@@ -71,14 +71,14 @@
                     <!-- /.form-container -->
 
                 <div class="sidebox widget">
-                    <h3>проведения мероприятия и техническая поддержка</h3>
+                    <h3>проведение мероприятия и техническая поддержка</h3>
                     <p>ГБОУ ВПО Первый Московский государственный медицинский университет имени И.М. Сеченова Минздрава России
                     </p>
                     <address>
                         <strong>Университетский технопарк</strong><br>
                         Москва, Трубецкая ул., д.8, стр.2<br>
-                        <abbr >Кузнецова Юлия Евгеньевна : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">kuznetsova.yulia@bk.ru</a><br>
-                        <abbr >Барышев Никита Владимирович : <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">administration@altenrion.ru</a>
+                        <abbr >Кузнецова Юлия Евгеньевна: <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">kuznetsova.yulia@bk.ru</a><br>
+                        <abbr >Барышев Никита Владимирович: <ssmu class="ru"></ssmu></abbr> <a href="mailto:#">administration@medways.ru</a>
                     </address>
                 </div>
 

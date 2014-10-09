@@ -13,7 +13,7 @@
 <!-- BEGIN CONTENT HEADER -->
 <section class="content-header">
     <i class="fa fa-user"></i>
-    <span>Информация пользования</span>
+    <span>Информация </span>
     <ol class="breadcrumb">
         <li><a href="">Кабинет</a></li>
         <li class="active"><a href="">Информация</a></li>
@@ -29,7 +29,7 @@
 
 				<div class="col-sm-12 ">
                     <div class="alert alert-info">
-                        <strong></strong> Необходимая информация будет размещена в близжайшее время.
+                        <strong></strong> Необходимая информация будет размещена в ближайшее время.
                     </div>
 
 
