@@ -8,6 +8,8 @@
  */
 
 class ImagesController extends Controller{
+    use MyTraits;
+
 
     public $image_name;
     public $user_id;
@@ -68,15 +70,14 @@ class ImagesController extends Controller{
                         /// Сохраняю инфу в таблицу с проектом.
 
                         $project = ProjectRegistry::model()->find("ID_REPRESENTATIVE='".$this->user_id."'");
-//                        var_dump($project);
-//                        Yii::app()->end();
 
                         if($project !== null){
-                            $_POST['pk']= $project->ID_PROJECT;
-                            $_POST['name']= 'ROADMAP_PROJECT';
-                            $_POST['value']= $new_file_name;
 
-                            $this->forward('Autorized/updateProject',false);
+                            $this->Update('ProjectRegistry',array(  'pk'=>$project->ID_PROJECT,
+                                                                    'name'=>'ROADMAP_PROJECT',
+                                                                    'value'=>$new_file_name,
+                                                                ));
+
 
                             echo '<div class="alert alert-success">';
                             echo '<strong>Ваш документ успешно загружен!</strong>';
@@ -188,13 +189,14 @@ class ImagesController extends Controller{
                         Yii::app()->end();
                     }
 
-/////////////////////////// переделать этот грязный способ на метод из трейта для всех контроллеров //////////////////////////
-                    $_POST['pk']= Yii::app()->user->id;
-                    $_POST['name']= 'AVATAR';
-                    $_POST['value']= $new_file_name;
+/////////////////////////// метод Update из трейта для всех контроллеров //////////////////////////
 
-                    $this->forward('Autorized/updateProfile',false);
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    $this->Update('Users',array(    'pk'=>Yii::app()->user->id,
+                                                    'name'=>'AVATAR',
+                                                    'value'=>$new_file_name,
+                                                ));
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
                     ///// Переприсваиваем к глобальному методу Yii::app()->user свойство ava с новой картинкой. /////

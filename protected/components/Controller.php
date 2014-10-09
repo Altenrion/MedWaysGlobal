@@ -9,8 +9,6 @@ class Controller extends CController
     protected function beforeAction($action)
     {
 
-
-
         /**
          * Узнаем к какому экшену идет обращение
          */
@@ -32,7 +30,6 @@ class Controller extends CController
 
         if(Yii::app()->controller->id == 'autorized'){
             if(Yii::app()->user->lock == 'locked' && $action_to_run !== 'lockScreen' && $action_to_run !== 'unlockScreen' ){
-
                 $this->redirect(array('Autorized/lockScreen'));
             }
         }

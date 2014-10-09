@@ -4,31 +4,61 @@
 <script type="text/javascript">
     $(document).ready(function () {
 
+        $('tbody').on('mousedown', 'tr', function(){
 
-        console.log('ggg');
+            var row_num = this.rowIndex-1;
+            bin(row_num);
 
-        $('table.dataTable tbody tr').bind('click', function(){
-            var project_id = $(this).find('td:nth-child(1)').html();
-            console.log(project_id);
-
-            $.get("<?=Yii::app()->createUrl("Autorized/ManageProject")?>/", {
-                Project: project_id
-            }, function () {
-                document.location.href = '<?=Yii::app()->createUrl("Autorized/ManageProject")?>/Project/' + project_id;
-            });
-
-
+            console.log(row_num);
+            bin();
 
         })
 
+        function bin (num){
+            $('tbody tr').eq(num).bind('click', function(){
+                var project_id = $(this).find('td:nth-child(1)').html();
+                console.log(project_id);
 
-        $('table.values tr').bind('click', function () {
-            var taskID = $(this).find('input.rowID').val();
-            $.get("/Task/Edit/", {
-                id: taskID
-            }, function () {
-                document.location.href = '/Task/Edit/' + taskID;
+                $.get("<?=Yii::app()->createUrl("Autorized/ManageProject")?>/", {
+                    Project: project_id
+                }, function () {
+                    document.location.href = '<?=Yii::app()->createUrl("Autorized/ManageProject")?>/Project/' + project_id;
+                });
             });
-        });
+        }
+
+        function accept(){
+            $.ajax({
+                type: 'post',
+                url:  <?=Yii::app()->createUrl('Autorized/')?>,
+                dataType : 'json',
+                success: function(data){
+                    if(data == 'fail'){
+
+                        setTimeout(function() {
+                            $('#Pull>i').removeClass('fa-spinner fa-spin').addClass('fa-times');
+                            $('#Pull_Modal').modal('show')
+                        }, 1500);
+
+                    }
+                    if(data == 'ok'){
+                        setTimeout(function() {
+                            $('#Pull>i').removeClass('fa-spinner fa-spin');
+                            $('#first_check>i').removeClass('fa-spinner fa-spin').addClass('fa-check');
+                            $('#first_check').text().css('color','green');
+                            $('#exp_check>i').removeClass('fa fa-times').addClass('fa fa-spinner fa-spin');
+                        }, 1500);
+                    }
+
+
+
+                }
+
+            });
+
+        }
+
+
+
     });
 </script>

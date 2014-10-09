@@ -460,11 +460,11 @@ class AutorizedController extends Controller
                 echo json_encode('fail'); Yii::app()->end();   }
         }
 
-        $_POST['pk']=  $proj_info[0]['id'];
-        $_POST['name']= 'FIRST_LAVEL_APPROVAL';
-        $_POST['value']= '1';
+         $this->Update('ProjectRegistry',array('pk'=>$proj_info[0]['id'],
+                                                'name'=>'FIRST_LAVEL_APPROVAL',
+                                                'value'=>'1',
+                                         ));
 
-        $this->forward('Autorized/updateProject',false);
         echo json_encode('ok');
             Yii::app()->end();
 

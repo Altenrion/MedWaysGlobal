@@ -310,29 +310,21 @@ class ShowCaseController extends Controller
                     $id= $user_exist->id;
                     $project = ProjectRegistry::model()->find("ID_REPRESENTATIVE='".$id."'");
 
-
-
-
-////                    $project_exist = $project->find("ID_REPRESENTATIVE='".$user_exist->id."'");
-//
                     if($project == null){
                         $proj = new ProjectRegistry();
 
                         $proj->ID_REPRESENTATIVE = $id;
                         $proj->save();
 
-
-//                        var_dump($proj);
-//                        echo "I'm here";
-//                        Yii::app()->end();
                     }
                 }
-                $_POST['pk']= $user_exist->id ;
-                $_POST['name']= 'AKTIV_KEY';
-                $_POST['value']= '100';
 
-                $this->forward('ShowCase/updateProfile',false);
-                //$this->redirect(Yii::app()->createUrl('ShowCase/login'));
+                $this->Update('Users',array(
+                                    'pk'=>$user_exist->id,
+                                    'name'=>'AKTIV_KEY',
+                                    'value'=>'100'
+                             ));
+
             }
         }
         $this->redirect(Yii::app()->createUrl('ShowCase/login'));
@@ -357,12 +349,6 @@ class ShowCaseController extends Controller
             if($number > 4 ) {$term = "ов";}
         }
         return  $num.' проект'.$term;
-    }
-
-    public function actionUpdateProfile(){
-        $edit = new EditableSaver('Users');
-        $edit->scenario = 'update';
-        $edit->update();
     }
 
 }

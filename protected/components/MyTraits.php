@@ -24,6 +24,19 @@ trait MyTraits {
 
     }
 
+    public function Update($model ,array $posts){
+
+        foreach($posts as $post_k=>$post_v){
+            $_POST[$post_k] = $post_v;
+        }
+
+
+        $edit = new EditableSaver($model);
+        $edit->scenario = 'update';
+        $edit->update();
+    }
+
+
     public function setParams($array){
         foreach($array as $ar_k=>$ar_v){
 
