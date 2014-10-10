@@ -325,6 +325,7 @@
         </div><!--/col-->
     </div><!--/text row-->
 
+    <? if($this->checkRole(array('Dev','Exp1'))): ?>
     <div class="row ">
         <div class="col-sm-12 ">
             <div class="grid">
@@ -356,7 +357,9 @@
             </div>
         </div><!--/col-->
     </div><!--/text row-->
+    <? endif; ?>
 
+    <? if($this->checkRole(array('Dev','Exp2','Exp3'))): ?>
     <div class="row ">
         <div class="col-sm-12 ">
             <div class="grid">
@@ -370,16 +373,16 @@
                     </div>
                 </div>
                 <div class="grid-body">
-                    <form class="form-horizontal" role="form">
+                    <form class="form-horizontal" id="mark_selectors" role="form">
                         <div class="form-group">
                             <label class="col-sm-4 control-label">Соответствие проекта тематике заявленной научной платформы</label>
                             <div class="col-sm-7">
                                 <select class="form-control"  id="mark_1">
                                     <option value="">-- не выбрано --</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
                                 </select>
                             </div>
                         </div>
@@ -388,11 +391,11 @@
                             <div class="col-sm-7">
                                 <select class="form-control" id="mark_2">
                                     <option value="">-- не выбрано --</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
                                 </select>
                             </div>
                         </div>
@@ -401,11 +404,11 @@
                             <div class="col-sm-7">
                                 <select class="form-control" id="mark_3">
                                     <option value="">-- не выбрано --</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
+                                    <option value="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
+                                    <option value="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
                                 </select>
                             </div>
                         </div>
@@ -414,11 +417,11 @@
                             <div class="col-sm-7">
                                 <select class="form-control" id="mark_4">
                                     <option value="">-- не выбрано --</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
+                                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
+                                    <option value="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
                                 </select>
                             </div>
                         </div>
@@ -427,11 +430,11 @@
                             <div class="col-sm-7">
                                 <select class="form-control" id="mark_5">
                                     <option value="">-- не выбрано --</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
+                                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
+                                    <option value="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
                                 </select>
                             </div>
                         </div>
@@ -440,11 +443,11 @@
                             <div class="col-sm-7">
                                 <select class="form-control" id="mark_6">
                                     <option value="">-- не выбрано --</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
+                                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
+                                    <option value="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
                                 </select>
                             </div>
                         </div>
@@ -453,11 +456,11 @@
                             <div class="col-sm-7">
                                 <select class="form-control" id="mark_7">
                                     <option value="">-- не выбрано --</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
+                                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
+                                    <option value="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
                                 </select>
                             </div>
                         </div>
@@ -466,11 +469,11 @@
                             <div class="col-sm-7">
                                 <select class="form-control" id="mark_8">
                                     <option value="">-- не выбрано --</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
+                                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
+                                    <option value="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
                                 </select>
                             </div>
                         </div>
@@ -479,11 +482,11 @@
                             <div class="col-sm-7">
                                 <select class="form-control" id="mark_9">
                                     <option value="">-- не выбрано --</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
+                                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
+                                    <option value="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
                                 </select>
                             </div>
                         </div>
@@ -492,18 +495,18 @@
                             <div class="col-sm-7">
                                 <select class="form-control" id="mark_10">
                                     <option value="">-- не выбрано --</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="xxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
+                                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
+                                    <option value="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
+                                    <option value="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm col-sm-10">
                                 <div >
-                                    <button type="submit" class="btn btn-primary">Сохранить оценку</button>
+                                    <button type="submit" id="evaluate_button" class="btn btn-primary">Сохранить оценку</button>
 
                                     <button type="reset" class="btn btn-default">Очистить форму</button>
                                 </div>
@@ -514,7 +517,7 @@
             </div>
         </div><!--/col-->
     </div><!--/text row-->
-
+    <? endif; ?>
 </section>
 
 
@@ -540,64 +543,56 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
+        var id_pr = <?=$project->ID_PROJECT ?> ;
 
         $('#accept_button').click( function(){
-            var id_pr = <?=$project->ID_PROJECT ?> ;
-               accept(id_pr);
+            VerifyProject(id_pr,'accept');
         });
 
         $('#denied_button').click( function(){
-            var id_pr = <?=$project->ID_PROJECT ?> ;
-            deny(id_pr);
+            VerifyProject(id_pr,'deny');
         });
 
 
-        function deny(id){
+        $('#evaluate_button').click( function(e){
+            e.preventDefault();
+            evaluate(id_pr);
+        });
+
+
+        /** Метод для оценки проектов Экспертом 1 уровня */
+
+        function VerifyProject(id,command){
+
+            var url = '<?=Yii::app()->createUrl('Autorized/verifyProject')?>';
+            switch (command){
+                case 'accept':
+                    var status = 3;
+                    var ok_text =  '<h4>Проект допущен к региональной экспертизе</h4><br>';
+                    var fail_text= '<h4>База данных временно не доступна</h4><br>';
+                    break;
+                case 'deny':
+                    var status = 9;
+                    var ok_text =  '<h4>Проект исключен из участия в Эстафете</h4><br>';
+                    var fail_text= '<h4>База данных временно не доступна</h4><br>';
+                    break;
+            }
             $.ajax({
                 type: 'post',
-                url:  '<?=Yii::app()->createUrl('Autorized/verifyProject')?>' ,
-                data: { id: id ,status: 9},
+                url:  url ,
+                data: { id: id ,status: status},
                 dataType : 'json',
                 success: function(data){
-                        if(data == 'ok'){
-                        $('div.modal-content').addClass('bg-green');
-                        $('p#content').html('<h4>Проект исключен из участия в Эстафете</h4><br>');
-
-                        setTimeout(function() {
-                            $('#accept').modal('show')
-                        }, 150);
-                    }
-                    if(data == 'fail'){
-                        $('div.modal-content').addClass('bg-red');
-                        $('p#content').html('<h4>База данных временно не доступна</h4><br>');
-
-                        setTimeout(function() {
-                            $('#accept').modal('show')
-                        }, 1500);
-                    }
-                }
-            });
-        }
-
-        function accept(id){
-            $.ajax({
-                type: 'post',
-                url:  '<?=Yii::app()->createUrl('Autorized/verifyProject')?>' ,
-                data: { id: id ,status: 3},
-                dataType : 'json',
-                success: function(data){
-
                     if(data == 'ok'){
                         $('div.modal-content').addClass('bg-green');
-                        $('p#content').html('<h4>Проект допущен к региональной экспертизе</h4><br>');
-
+                        $('p#content').html(ok_text);
                         setTimeout(function() {
                             $('#accept').modal('show')
                         }, 150);
                     }
                     if(data == 'fail'){
                         $('div.modal-content').addClass('bg-red');
-                        $('p#content').html('<h4>База данных временно не доступна</h4><br>');
+                        $('p#content').html(fail_text);
 
                         setTimeout(function() {
                             $('#accept').modal('show')
@@ -606,45 +601,92 @@
                 }
             });
         }
+
+
+        /** Метод для Экспертов 2 и 3 уровней
+         *
+         * Параметры :  id - id проекта
+         *              lavel - уровень экспертизы. Беру из роли эксперта.
+         * **/
+
+        <?
+            if(Yii::app()->user->role == 'Exp2'){ $level = 'second'; }
+            if(Yii::app()->user->role == 'Exp3'){ $level = 'third'; }
+            if(Yii::app()->user->role == 'Dev'){ $level = 'second'; }
+        ?>
 
         function evaluate(id){
-//
-//            1) проверить есть ли пустые
-//            2) Если все выбраны, собрать значения и отправить на сервер.
-//            3) оповестить об успешном сохранении.
-//
 
+            var missed_text = '<h4>Для некоторых критериев не указаны оценки!</h4><br>';
+            var saved_mark_text = '<h4>Оценка проекта успешно сохранена</h4><br>';
+            var warning_text = '<h4>Ваша оценка этого проекта уже зафиксирована. <br> Каждый эксперт может оценить проект лишь один раз.</h4><br>';
+            var error = '<h4>База данных временно не доступна</h4><br>';
 
-            $("#mark_10").val();
+            var counter = 0;
+            var url = '<?= Yii::app()->createUrl('Autorized/evaluateProject') ?>';
+            var json_data = {};
+            var level = '';
 
+            level = '<?=$level ?>';
 
+            json_data['id'] = id ;
+            json_data['level'] = level ;
 
-            $.ajax({
-                type: 'post',
-                url:  '<?=Yii::app()->createUrl('Autorized/evaluateProject')?>' ,
-                data: { id: id ,status: 3},
-                dataType : 'json',
-                success: function(data){
-
-                    if(data == 'ok'){
-                        $('div.modal-content').addClass('bg-green');
-                        $('p#content').html('<h4>Проект допущен к региональной экспертизе</h4><br>');
-
-                        setTimeout(function() {
-                            $('#accept').modal('show')
-                        }, 150);
-                    }
-                    if(data == 'fail'){
-                        $('div.modal-content').addClass('bg-red');
-                        $('p#content').html('<h4>База данных временно не доступна</h4><br>');
-
-                        setTimeout(function() {
-                            $('#accept').modal('show')
-                        }, 1500);
-                    }
+            $('#mark_selectors select').each(function(n,element){
+                if($(element).val() == "" ){
+                    counter++;
+                    console.log(element);console.log(counter);
+                }
+                else{
+                    json_data[$(element).attr('id')] =  $(element).val();
                 }
             });
+            console.log(json_data);
 
+            if(counter !== 0){
+
+                $('div.modal-content').addClass('bg-red');
+                $('p#content').html(missed_text);
+
+                setTimeout(function() {
+                    $('#accept').modal('show')
+                }, 150);
+
+                console.log('choose '+counter+' marks more');
+            }else{
+                $.ajax({
+                    type: 'post',
+                     url:  url,
+                    data:  json_data,
+                    dataType : 'json',
+                    success: function(data){
+                        if(data == 'ok'){
+                            $('div.modal-content').removeClass('bg-yellow').removeClass('bg-red').addClass('bg-green');
+                            $('p#content').html(saved_mark_text);
+
+                            setTimeout(function() {
+                                $('#accept').modal('show')
+                            }, 150);
+                        }
+                        if(data == 'evaluated'){
+                            $('div.modal-content').removeClass('bg-green').removeClass('bg-red').addClass('bg-yellow');
+                            $('p#content').html(warning_text);
+
+                            setTimeout(function() {
+                                $('#accept').modal('show')
+                            }, 150);
+                        }
+                        if(data == 'fail'){
+                            $('div.modal-content').removeClass('bg-green').removeClass('bg-yellow').addClass('bg-red');
+                            $('p#content').html(error);
+                            setTimeout(function() {
+                                $('#accept').modal('show')
+                            }, 1500);
+                        }
+                    }
+                });
+                console.log('send');
+            }
         }
 
 

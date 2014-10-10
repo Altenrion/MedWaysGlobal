@@ -488,7 +488,72 @@ class AutorizedController extends Controller
     }
 
     public function actionEvaluateProject(){
+        $level = $marks = '';
+        if(isset($_POST['level'])){ $level = $_POST['level']; }
 
+        switch($level){
+            case 'second': $marks_c = 'SecondLavelMarks'; break;
+            case 'third' : $marks_c = 'ThirdLavelMarks' ; break;
+        }
+
+        /** проверка на дублирование оценки  */
+        $check = $marks_c::model()->findAll('ID_EXPERT=:id_expert AND ID_PROJECT=:id_project',array(
+                                                                ':id_expert'=>Yii::app()->user->id,
+                                                                'id_project'=>$_POST['id']
+                                                            ));
+        if(count($check) > 0){
+            echo json_encode('evaluated'); Yii::app()->end();
+        }
+
+        if(isset($_POST['mark_1']) && isset($_POST['mark_10'])){
+
+            $marks = new $marks_c;
+            $marks->ID_EXPERT = Yii::app()->user->id;
+            $marks->ID_PROJECT = $_POST['id'];
+                unset($_POST['id']);
+                unset($_POST['level']);
+
+            foreach($_POST as $mark_k=>$mark_v){
+                $marks->$mark_k = $mark_v;
+            }
+            $marks->TOTAL_MARK = array_sum($_POST);
+
+
+            /**  Триггер для подсчета средней оценки в таблицу проектов. */
+
+            $trigger = $this->mark_trigger($level,$marks->ID_PROJECT, $marks->TOTAL_MARK);
+
+//            var_dump($trigger);
+//            Yii::app()->end();
+            if($marks->save() && $trigger){
+                echo json_encode('ok');Yii::app()->end();
+            }
+            else{
+                echo json_encode('fail'); Yii::app()->end();
+            }
+        }
+    }
+
+    /**  Метод для фиксирования среднего значения оценки в таблицу проекта.  */
+    public function mark_trigger($level,$id_project,$total){
+        switch($level){
+            case 'second': $field = 'SECOND_LAVEL_RATING'; break;
+            case 'third' : $field = 'THIRD_LAVEL_RATING' ; break;
+        }
+        $mark = ProjectRegistry::model()->find('ID_PROJECT=:id_project',array(':id_project'=>$id_project));
+        $current_mark = $mark->$field;
+        $average_mark = ($current_mark + $total) / 2;
+        $mark->$field = round($average_mark);
+
+//        var_dump($mark);
+//        Yii::app()->end();
+
+        if($mark->save()){
+            return true ;
+        }
+        else{
+            return false;
+        }
     }
 
 
