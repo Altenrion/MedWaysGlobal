@@ -365,7 +365,10 @@
             <div class="grid">
                 <div class="grid-header">
                     <i class="fa fa-bar-chart-o"></i>
-                    <span class="grid-title">Региональная оценка проекта</span>
+                    <span class="grid-title">
+                        <? if($this->checkRole(array('Dev','Exp2'))): ?>Региональная оценка проекта<? endif; ?>
+                        <? if($this->checkRole(array('Exp3'))): ?>Федеральная оценка проекта<? endif; ?>
+                    </span>
                     <div class="pull-right grid-tools">
                         <a data-widget="collapse" title="Collapse"><i class="fa fa-chevron-up"></i></a>
                         <a data-widget="reload" title="Reload"><i class="fa fa-refresh"></i></a>
@@ -618,10 +621,9 @@
          * **/
 
         <?
-            if(Yii::app()->user->role == 'Exp1'){ $level = 'second'; }
-            if(Yii::app()->user->role == 'Exp2'){ $level = 'second'; }
-            if(Yii::app()->user->role == 'Exp3'){ $level = 'third'; }
-            if(Yii::app()->user->role == 'Dev'){ $level = 'second'; }
+             $level='';
+             if($this->checkRole(array('Dev','Exp1','Exp2'))){$level = 'second'; }
+             if($this->checkRole(array('Exp3'))){$level = 'third'; }
         ?>
 
         function evaluate(id){
@@ -634,9 +636,7 @@
             var counter = 0;
             var url = '<?= Yii::app()->createUrl('Autorized/evaluateProject') ?>';
             var json_data = {};
-            var level = '';
-
-            level = '<?=$level ?>';
+            var level = '<?=$level ?>';
 
             json_data['id'] = id ;
             json_data['level'] = level ;
