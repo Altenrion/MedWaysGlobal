@@ -63,7 +63,7 @@
     <file path="/CUserIdentity.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407569744508" ignored="false" />
     <file path="/Users.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412057342995" ignored="false" />
     <file path="/MyTraits.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412847456280" ignored="false" />
-    <file path="/AutorizedController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412945151574" ignored="false" />
+    <file path="/AutorizedController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412947571295" ignored="false" />
     <file path="/Users_old.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407620556572" ignored="false" />
     <file path="/regist.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407659269252" ignored="false" />
     <file path="/Subscriber.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407657729038" ignored="false" />
@@ -172,7 +172,7 @@
     <file path="/editable.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412026910804" ignored="false" />
     <file path="/_JuliaList.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412073984606" ignored="false" />
     <file path="/devel.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412581372366" ignored="false" />
-    <file path="/manage_project.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412944621064" ignored="false" />
+    <file path="/manage_project.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412947270582" ignored="false" />
     <file path="/jquery.dataTables_themeroller.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412600919443" ignored="false" />
     <file path="/styles.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412598167847" ignored="false" />
     <file path="/jquery-ui-1.8.17.custom.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412597734097" ignored="false" />
@@ -200,13 +200,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AutorizedController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AutorizedController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="495" column="64" selection-start="14425" selection-end="14425" vertical-scroll-proportion="-4.352941">
+            <state line="482" column="0" selection-start="13946" selection-end="13946" vertical-scroll-proportion="0.31257632">
               <folding>
-                <element signature="e#28294#28314#0" expanded="false" />
-                <marker date="1412945296241" expanded="true" signature="39871:39883" placeholder="..." />
+                <element signature="e#28675#28695#0" expanded="false" />
+                <marker date="1412947580832" expanded="true" signature="40252:40264" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -230,10 +230,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage_project.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="manage_project.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="687" column="36" selection-start="36974" selection-end="36974" vertical-scroll-proportion="0.79620856">
+            <state line="593" column="40" selection-start="33463" selection-end="33471" vertical-scroll-proportion="-21.26923">
               <folding>
                 <element signature="e#6#159#0" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#!!top" expanded="true" />
@@ -266,7 +266,7 @@
                 <element signature="n#style#0;n#strong#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#3;n#section#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#strong#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#3;n#section#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1412944896228" expanded="true" signature="31543:31640" placeholder="..." />
+                <marker date="1412947280995" expanded="true" signature="31543:31640" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -295,9 +295,9 @@
         <option value="$PROJECT_DIR$/protected/config/devel.php" />
         <option value="$PROJECT_DIR$/protected/config/production.php" />
         <option value="$PROJECT_DIR$/protected/models/medways/SecondLavelMarks.php" />
+        <option value="$PROJECT_DIR$/protected/models/medways/ThirdLavelMarks.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
-        <option value="$PROJECT_DIR$/protected/models/medways/ThirdLavelMarks.php" />
       </list>
     </option>
   </component>
@@ -831,16 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="495" column="64" selection-start="14425" selection-end="14425" vertical-scroll-proportion="-4.352941">
-          <folding>
-            <element signature="e#28294#28314#0" expanded="false" />
-            <marker date="1412945296241" expanded="true" signature="39871:39883" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="22" selection-start="2614" selection-end="2614" vertical-scroll-proportion="-0.8844808">
@@ -872,7 +862,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="687" column="36" selection-start="36974" selection-end="36974" vertical-scroll-proportion="0.79620856">
+        <state line="593" column="40" selection-start="33463" selection-end="33471" vertical-scroll-proportion="-21.26923">
           <folding>
             <element signature="e#6#159#0" expanded="true" />
             <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#!!top" expanded="true" />
@@ -905,7 +895,17 @@
             <element signature="n#style#0;n#strong#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#3;n#section#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#strong#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#3;n#section#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1412944896228" expanded="true" signature="31543:31640" placeholder="..." />
+            <marker date="1412947280995" expanded="true" signature="31543:31640" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="482" column="0" selection-start="13946" selection-end="13946" vertical-scroll-proportion="0.31257632">
+          <folding>
+            <element signature="e#28675#28695#0" expanded="false" />
+            <marker date="1412947580832" expanded="true" signature="40252:40264" placeholder="..." />
           </folding>
         </state>
       </provider>

@@ -475,6 +475,18 @@ class AutorizedController extends Controller
         $id = Yii::app()->request->getPost('id');
         $status = Yii::app()->request->getPost('status');
 
+        /** проверка на дублирование оценки  */
+
+        $check = ProjectRegistry::model()->find('ID_PROJECT=:id_project',array(
+                                                        'id_project'=>$id
+                                                    ));
+
+        if($check->FIRST_LAVEL_APPROVAL == 3){
+            echo json_encode('verified'); Yii::app()->end();
+        }
+
+
+
         if(isset($id)){
             $this->Update('ProjectRegistry',array(  'pk'=>$id,
                                                     'name'=>'FIRST_LAVEL_APPROVAL',

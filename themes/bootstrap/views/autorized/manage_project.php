@@ -564,6 +564,7 @@
 
         function VerifyProject(id,command){
 
+            var verified_text = '<h4>Проект уже допущен к региональной экспертизе.<br> Оценка проекта проводится однократно.</h4><br>';
             var url = '<?=Yii::app()->createUrl('Autorized/verifyProject')?>';
             switch (command){
                 case 'accept':
@@ -584,14 +585,21 @@
                 dataType : 'json',
                 success: function(data){
                     if(data == 'ok'){
-                        $('div.modal-content').addClass('bg-green');
+                        $('div.modal-content').removeClass('bg-yellow').removeClass('bg-red').addClass('bg-green');
                         $('p#content').html(ok_text);
                         setTimeout(function() {
                             $('#accept').modal('show')
                         }, 150);
                     }
+                    if(data == 'verified'){
+                        $('div.modal-content').removeClass('bg-green').removeClass('bg-red').addClass('bg-yellow');
+                        $('p#content').html(verified_text);
+                        setTimeout(function() {
+                            $('#accept').modal('show')
+                        }, 150);
+                    }
                     if(data == 'fail'){
-                        $('div.modal-content').addClass('bg-red');
+                        $('div.modal-content').removeClass('bg-green').removeClass('bg-green').addClass('bg-red');
                         $('p#content').html(fail_text);
 
                         setTimeout(function() {
@@ -610,6 +618,7 @@
          * **/
 
         <?
+            if(Yii::app()->user->role == 'Exp1'){ $level = 'second'; }
             if(Yii::app()->user->role == 'Exp2'){ $level = 'second'; }
             if(Yii::app()->user->role == 'Exp3'){ $level = 'third'; }
             if(Yii::app()->user->role == 'Dev'){ $level = 'second'; }
