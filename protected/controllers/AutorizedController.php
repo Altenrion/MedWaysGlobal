@@ -737,7 +737,7 @@ class AutorizedController extends Controller
                                     \'pk\'        => $data[\'id\'],
                                     \'text\'      => CHtml::encode($this->getRole($data->roles)),
                                     \'url\'       => Yii::app()->createUrl(\'Autorized/updateProfile\'),
-                                    \'source\'    => array( \'Exp1\' => \'Эксперт1\', \'Exp2\' => \'Эксперт2\', \'Exp3\' => \'Эксперт3\'),
+                                    \'source\'    => array( \'Exp\' => \'Эксперт0\', \'Exp1\' => \'Эксперт1\', \'Exp2\' => \'Эксперт2\', \'Exp3\' => \'Эксперт3\'),
                                     \'title\'     => \'Выберите роль\',
                                     \'placement\' => \'top\',
                                     \'options\' => array( \'disabled\'=>false,  \'showbuttons\'=>false),  ),true);',

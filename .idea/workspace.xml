@@ -167,7 +167,7 @@
     <file path="/managersList.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1411891817805" ignored="false" />
     <file path="/DataTableList.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1411895512434" ignored="false" />
     <file path="/EDataColumn.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1411985866228" ignored="false" />
-    <file path="/_ExpertsList.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1413023585870" ignored="false" />
+    <file path="/_ExpertsList.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1413023998623" ignored="false" />
     <file path="/_ExpertProjectsList.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412849962554" ignored="false" />
     <file path="/editable.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412026910804" ignored="false" />
     <file path="/_JuliaList.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412073984606" ignored="false" />
@@ -203,7 +203,7 @@
       <file leaf-file-name="AutorizedController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="735" column="81" selection-start="22798" selection-end="22805" vertical-scroll-proportion="-13.884615">
+            <state line="738" column="103" selection-start="23029" selection-end="23079" vertical-scroll-proportion="-15.846154">
               <folding>
                 <element signature="n#actionVerifyProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionEvaluateProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
@@ -211,8 +211,8 @@
                 <element signature="n#actionNewsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionNotifiesList#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionManagersList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                <element signature="e#29058#29078#0" expanded="false" />
-                <marker date="1413021158445" expanded="true" signature="40635:40647" placeholder="..." />
+                <element signature="e#29083#29103#0" expanded="false" />
+                <marker date="1413023926907" expanded="true" signature="40660:40672" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -248,9 +248,9 @@
       <file leaf-file-name="_ExpertsList.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertsList.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="805" selection-end="805" vertical-scroll-proportion="0.4028436">
+            <state line="17" column="154" selection-start="578" selection-end="578" vertical-scroll-proportion="0.34241706">
               <folding>
-                <marker date="1413023680979" expanded="true" signature="286:334" placeholder="..." />
+                <marker date="1413024019856" expanded="true" signature="286:334" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -953,13 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertProjectsList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="9" selection-start="322" selection-end="850" vertical-scroll-proportion="-17.653847">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/js/MyEditsToEditable.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="17" selection-start="1715" selection-end="1716" vertical-scroll-proportion="0.0">
@@ -969,7 +962,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="735" column="81" selection-start="22798" selection-end="22805" vertical-scroll-proportion="-13.884615">
+        <state line="738" column="103" selection-start="23029" selection-end="23079" vertical-scroll-proportion="-15.846154">
           <folding>
             <element signature="n#actionVerifyProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionEvaluateProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
@@ -977,17 +970,24 @@
             <element signature="n#actionNewsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionNotifiesList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionManagersList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="e#29058#29078#0" expanded="false" />
-            <marker date="1413021158445" expanded="true" signature="40635:40647" placeholder="..." />
+            <element signature="e#29083#29103#0" expanded="false" />
+            <marker date="1413023926907" expanded="true" signature="40660:40672" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertProjectsList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="9" selection-start="322" selection-end="850" vertical-scroll-proportion="-17.653847">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertsList.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="805" selection-end="805" vertical-scroll-proportion="0.4028436">
+        <state line="17" column="154" selection-start="578" selection-end="578" vertical-scroll-proportion="0.34241706">
           <folding>
-            <marker date="1413023680979" expanded="true" signature="286:334" placeholder="..." />
+            <marker date="1413024019856" expanded="true" signature="286:334" placeholder="..." />
           </folding>
         </state>
       </provider>
