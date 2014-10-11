@@ -3,7 +3,7 @@
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php" line="327" mnemonic="2" />
     <bookmark url="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php" line="333" mnemonic="3" />
-    <bookmark url="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php" line="462" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php" line="458" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" name="Default" comment="" />
@@ -15,7 +15,7 @@
     <file path="/main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407487814422" ignored="false" />
     <file path="/Proto.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1409519208839" ignored="false" />
     <file path="/Autentification_main.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1406121974522" ignored="false" />
-    <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412845978274" ignored="false" />
+    <file path="/a.dummy" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412949524605" ignored="false" />
     <file path="/index.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412838898671" ignored="false" />
     <file path="/style_adoptive.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408512630498" ignored="false" />
     <file path="/ShowCaseController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412847532919" ignored="false" />
@@ -63,7 +63,7 @@
     <file path="/CUserIdentity.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407569744508" ignored="false" />
     <file path="/Users.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412057342995" ignored="false" />
     <file path="/MyTraits.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412847456280" ignored="false" />
-    <file path="/AutorizedController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412947571295" ignored="false" />
+    <file path="/AutorizedController.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1413015433925" ignored="false" />
     <file path="/Users_old.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407620556572" ignored="false" />
     <file path="/regist.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407659269252" ignored="false" />
     <file path="/Subscriber.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1407657729038" ignored="false" />
@@ -80,7 +80,7 @@
     <file path="/stylings.css" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408935518054" ignored="false" />
     <file path="/profile.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412837436072" ignored="false" />
     <file path="/Bootstrap.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408173524166" ignored="false" />
-    <file path="/MyEditsToEditable.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412030298563" ignored="false" />
+    <file path="/MyEditsToEditable.js" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1413016205444" ignored="false" />
     <file path="/project.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1412581115425" ignored="false" />
     <file path="/news.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1410729162176" ignored="false" />
     <file path="/project_statistics.php" changelist="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" time="1408293137756" ignored="false" />
@@ -203,19 +203,44 @@
       <file leaf-file-name="AutorizedController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="482" column="0" selection-start="13946" selection-end="13946" vertical-scroll-proportion="-5.019608">
+            <state line="873" column="53" selection-start="27993" selection-end="27993" vertical-scroll-proportion="-6.6923075">
               <folding>
-                <element signature="e#28675#28695#0" expanded="false" />
-                <marker date="1412947580832" expanded="true" signature="40252:40264" placeholder="..." />
+                <element signature="n#actionVerifyProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
+                <element signature="n#actionEvaluateProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
+                <element signature="n#mark_trigger#0;n#AutorizedController#0;n#!!top" expanded="false" />
+                <element signature="n#actionNewsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
+                <element signature="n#actionNotifiesList#0;n#AutorizedController#0;n#!!top" expanded="false" />
+                <element signature="n#actionExpertsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
+                <element signature="n#actionManagersList#0;n#AutorizedController#0;n#!!top" expanded="false" />
+                <element signature="e#28971#28991#0" expanded="false" />
+                <marker date="1413015444055" expanded="true" signature="40548:40560" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="projects.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php">
+      <file leaf-file-name="UserIdentity.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="31" selection-start="586" selection-end="586" vertical-scroll-proportion="-13.076923">
+            <state line="33" column="45" selection-start="1035" selection-end="1035" vertical-scroll-proportion="-17.653847">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CButtonColumn.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework/zii/widgets/grid/CButtonColumn.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="48" selection-start="1760" selection-end="1760" vertical-scroll-proportion="-23.73077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyEditsToEditable.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/js/MyEditsToEditable.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="87" column="50" selection-start="3261" selection-end="3261" vertical-scroll-proportion="0.6342016">
               <folding />
             </state>
           </provider>
@@ -224,52 +249,35 @@
       <file leaf-file-name="_ExpertProjectsList.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertProjectsList.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="309" selection-end="309" vertical-scroll-proportion="-8.5">
+            <state line="6" column="25" selection-start="157" selection-end="157" vertical-scroll-proportion="-3.9230769">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage_project.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php">
+      <file leaf-file-name="project.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="638" column="39" selection-start="35433" selection-end="35433" vertical-scroll-proportion="0.5343602">
-              <folding>
-                <element signature="e#6#159#0" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#4;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#5;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#7;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#8;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#9;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#10;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#11;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#12;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#4;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#5;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#7;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#8;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#9;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#10;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#11;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#p#3;n#div#1;n#div#0;n#div#0;n#div#2;n#section#1;n#!!top" expanded="true" />
-                <element signature="tag#div#3;tag#section#1" expanded="false" />
-                <element signature="n#style#0;n#strong#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#3;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#strong#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#3;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1412948216432" expanded="true" signature="31619:31644" placeholder="..." />
-                <marker date="1412948216432" expanded="true" signature="31754:31851" placeholder="..." />
-                <marker date="1412948216432" expanded="true" signature="31754:31851" placeholder="..." />
-              </folding>
+            <state line="36" column="42" selection-start="1319" selection-end="1319" vertical-scroll-proportion="299.69232">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditableColumn.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/extensions/x-editable/EditableColumn.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="26" selection-start="641" selection-end="641" vertical-scroll-proportion="-13.076923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="354" column="102" selection-start="18283" selection-end="19039" vertical-scroll-proportion="-18.076923">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -284,9 +292,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/info.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/partners.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/feedback.php" />
         <option value="$PROJECT_DIR$/protected/components/Controller.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
@@ -298,8 +303,11 @@
         <option value="$PROJECT_DIR$/protected/config/production.php" />
         <option value="$PROJECT_DIR$/protected/models/medways/SecondLavelMarks.php" />
         <option value="$PROJECT_DIR$/protected/models/medways/ThirdLavelMarks.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/x-editable/EditableColumn.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
+        <option value="$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/cabinet/assets/js/MyEditsToEditable.js" />
       </list>
     </option>
   </component>
@@ -568,7 +576,85 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -672,14 +758,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5170517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20277481" sideWeight="0.4829483" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20277481" sideWeight="0.4829483" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -756,76 +842,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/ui-modals.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1175" column="38" selection-start="60837" selection-end="61916" vertical-scroll-proportion="-9.392157">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/base/CModule.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="187" column="20" selection-start="5463" selection-end="5463" vertical-scroll-proportion="0.15985997">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/MyTraits.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="72" selection-start="920" selection-end="920" vertical-scroll-proportion="0.5075846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="492" column="0" selection-start="23862" selection-end="23862" vertical-scroll-proportion="0.1943128">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/js/MyEditsToEditable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="58" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.09626274">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/production.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="85" selection-start="3232" selection-end="3232" vertical-scroll-proportion="-24.846153">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/devel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="26" selection-start="3203" selection-end="3203" vertical-scroll-proportion="0.7339557">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertProjectsList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="309" selection-end="309" vertical-scroll-proportion="-8.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="67" selection-start="5746" selection-end="5797" vertical-scroll-proportion="-17.653847">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/medways/SecondLavelMarks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="40" selection-start="1115" selection-end="1125" vertical-scroll-proportion="-16.884615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/medways/ThirdLavelMarks.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="32" selection-start="1113" selection-end="1113" vertical-scroll-proportion="-11.769231">
@@ -848,33 +864,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="387" column="0" selection-start="21226" selection-end="21226" vertical-scroll-proportion="0.4229858">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="31" selection-start="586" selection-end="586" vertical-scroll-proportion="-13.076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="482" column="0" selection-start="13946" selection-end="13946" vertical-scroll-proportion="-5.019608">
-          <folding>
-            <element signature="e#28675#28695#0" expanded="false" />
-            <marker date="1412947580832" expanded="true" signature="40252:40264" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="638" column="39" selection-start="35433" selection-end="35433" vertical-scroll-proportion="0.5343602">
+        <state line="583" column="20" selection-start="33092" selection-end="33092" vertical-scroll-proportion="0.091232225">
           <folding>
             <element signature="e#6#159#0" expanded="true" />
             <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#!!top" expanded="true" />
@@ -907,10 +899,111 @@
             <element signature="n#style#0;n#strong#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#3;n#section#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#strong#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#3;n#section#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1412948216432" expanded="true" signature="31619:31644" placeholder="..." />
-            <marker date="1412948216432" expanded="true" signature="31754:31851" placeholder="..." />
-            <marker date="1412948216432" expanded="true" signature="31754:31851" placeholder="..." />
+            <marker date="1412948216432" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1412948216432" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1412948216432" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/zii/widgets/grid/CDataColumn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="28" selection-start="999" selection-end="999" vertical-scroll-proportion="0.3430572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/zii/widgets/grid/CGridColumn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="15" selection-start="918" selection-end="918" vertical-scroll-proportion="0.3430572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/zii/widgets/grid/CButtonColumn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="48" selection-start="1760" selection-end="1760" vertical-scroll-proportion="-23.73077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/edatatables/EButtonColumn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="36" selection-start="183" selection-end="196" vertical-scroll-proportion="0.100961536">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="31" selection-start="586" selection-end="586" vertical-scroll-proportion="0.39673278">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/x-editable/EditableColumn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="26" selection-start="641" selection-end="641" vertical-scroll-proportion="-13.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="354" column="102" selection-start="18283" selection-end="19039" vertical-scroll-proportion="-18.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertProjectsList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="25" selection-start="157" selection-end="157" vertical-scroll-proportion="-3.9230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="45" selection-start="1035" selection-end="1035" vertical-scroll-proportion="-17.653847">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="168" column="69" selection-start="6796" selection-end="6796" vertical-scroll-proportion="0.83886254">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="873" column="53" selection-start="27993" selection-end="27993" vertical-scroll-proportion="-6.6923075">
+          <folding>
+            <element signature="n#actionVerifyProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <element signature="n#actionEvaluateProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <element signature="n#mark_trigger#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <element signature="n#actionNewsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <element signature="n#actionNotifiesList#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <element signature="n#actionExpertsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <element signature="n#actionManagersList#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <element signature="e#28971#28991#0" expanded="false" />
+            <marker date="1413015444055" expanded="true" signature="40548:40560" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="42" selection-start="1319" selection-end="1319" vertical-scroll-proportion="299.69232">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/js/MyEditsToEditable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="50" selection-start="3261" selection-end="3261" vertical-scroll-proportion="0.6342016">
+          <folding />
         </state>
       </provider>
     </entry>

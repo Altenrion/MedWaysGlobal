@@ -442,8 +442,6 @@ class AutorizedController extends Controller
             }
 
             if($i_v == null || $i_v == '' || $i_v == ' '){
-//                var_dump($i_k);
-//                Yii::app()->end();
 
                 echo json_encode('fail'); Yii::app()->end();  }
         }
@@ -455,8 +453,6 @@ class AutorizedController extends Controller
             }
             if($in_v == null || $in_v == '' || $in_v == ' '){
 
-//                var_dump($i_k);
-//                Yii::app()->end();
                 echo json_encode('fail'); Yii::app()->end();   }
         }
 
@@ -465,11 +461,11 @@ class AutorizedController extends Controller
                                                 'value'=>'1',
                                          ));
 
-        echo json_encode('ok');
-            Yii::app()->end();
+        echo json_encode('ok'); Yii::app()->end();
 
     }
 
+    /** Метод для верификации проектов */
     public function actionVerifyProject(){
 
         $id = Yii::app()->request->getPost('id');
@@ -485,8 +481,6 @@ class AutorizedController extends Controller
             echo json_encode('verified'); Yii::app()->end();
         }
 
-
-
         if(isset($id)){
             $this->Update('ProjectRegistry',array(  'pk'=>$id,
                                                     'name'=>'FIRST_LAVEL_APPROVAL',
@@ -499,6 +493,7 @@ class AutorizedController extends Controller
         }
     }
 
+    /** Метод для оценки проекта Экспертами 2 и 3 ур */
     public function actionEvaluateProject(){
         $level = $marks = '';
         if(isset($_POST['level'])){ $level = $_POST['level']; }
@@ -513,6 +508,7 @@ class AutorizedController extends Controller
                                                                 ':id_expert'=>Yii::app()->user->id,
                                                                 'id_project'=>$_POST['id']
                                                             ));
+
         if(count($check) > 0){
             echo json_encode('evaluated'); Yii::app()->end();
         }
@@ -729,26 +725,23 @@ class AutorizedController extends Controller
                 'type'=>'text',
                 'value'=>'$this->getStage($data->ID_STAGE)',
             ),
+
             array(
                 'name'=>'roles',
-                'type'=>'text',
-                'value'=>'$this->getRole($data->roles)',
+                'type'=>'raw',
+                'value'=>'Yii::app()->controller->widget(\'editable.Editable\', array(
+                                    \'type\'      => \'select\',
+                                    \'name\'      => \'roles\',
+                                    \'pk\'        => $data[\'id\'],
+                                    \'text\'      => CHtml::encode($this->getRole($data->roles)),
+                                    \'url\'       => Yii::app()->createUrl(\'Autorized/updateProfile\'),
+                                    \'source\'    => array( \'Exp1\' => \'Эксперт1\', \'Exp2\' => \'Эксперт2\', \'Exp3\' => \'Эксперт3\'),
+                                    \'title\'     => \'Выберите роль\',
+                                    \'placement\' => \'top\',
+                                    \'options\' => array( \'disabled\'=>false,  \'showbuttons\'=>false),  ),true);',
             ),
 
-            array(
-                'class' => 'EButtonColumn',
-                'template' => '{edit}&nbsp;{delete}',
-                'buttons' => array(
 
-                    'edit' => array(
-                        'label'=> 'Редактировать',
-                        'url' => '',
-                    ),
-                    'delete' => array(
-                        'url' => 'Yii::app()->createUrl("/delete/$data->id")',
-                    ),
-                ),
-            ),
         );
 
         $criteria = new CDbCriteria;
@@ -878,7 +871,7 @@ class AutorizedController extends Controller
      */
     public function actionExpertProjectsList(){
 
-        $columns = array('ID_PROJECT','NAME','ID_DISTRICT','ID_UNIVER','ID_STAGE');
+        $columns = array('ID_PROJECT','NAME','ID_DISTRICT','ID_UNIVER','ID_STAGE','status');
 
         $cols = array(
             array(
@@ -906,7 +899,7 @@ class AutorizedController extends Controller
                 'value'=>'$this->getStage($data->ID_STAGE)',
             ),
             array(
-                'name'=>'Статус',
+                'name'=>'status',
                 'type'=>'text',
                 'value'=>'$this->getStatus($data->ID_PROJECT)',
             ),

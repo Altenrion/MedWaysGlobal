@@ -120,6 +120,7 @@ class ProjectRegistry extends CActiveRecord
 			    'ID_DISTRICT' => 'Округ',
 			    'ID_UNIVER' => 'Университет',
 			    'ID_STAGE' => 'Платформа',
+			    'status' => 'Статус',
 		);
 	}
 

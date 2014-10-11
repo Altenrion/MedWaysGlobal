@@ -24,6 +24,7 @@ class EditableColumn extends CDataColumn
     */
     public $editable = array();
 
+//    public $template='{view} {update} {delete}';
     public function init()
     {
         if (!$this->name) {

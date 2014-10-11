@@ -9,6 +9,10 @@
 
 $(document).ready(function () {
 
+    function scroll_to_bottom(speed) {
+        var height= $("body").height();
+        $("html,body").animate({"scrollTop":height},speed);
+    }
 
     $('#enable').click(function (e) {
 //        e.stopPropagation()
@@ -57,6 +61,8 @@ $(document).ready(function () {
     });
 
 
+    /** Метод для отправки проекта на экспертизу */
+
     $('#Pull').click(function(){
 //        console.log('Я тут');
 //        console.log(Url);
@@ -78,6 +84,9 @@ $(document).ready(function () {
                 if(data == 'ok'){
                     setTimeout(function() {
                         $('#Pull>i').removeClass('fa-spinner fa-spin');
+                            setTimeout(function(){
+                                scroll_to_bottom(1500);
+                            },150);
                         $('#first_check>i').removeClass('fa-spinner fa-spin').addClass('fa-check');
                         $('#first_check').text().css('color','green');
                         $('#exp_check>i').removeClass('fa fa-times').addClass('fa fa-spinner fa-spin');
