@@ -86,9 +86,13 @@ $(document).ready(function () {
                         $('#Pull>i').removeClass('fa-spinner fa-spin');
                             setTimeout(function(){
                                 scroll_to_bottom(1500);
-                            },150);
-                        $('#first_check>i').removeClass('fa-spinner fa-spin').addClass('fa-check');
-                        $('#first_check').text().css('color','green');
+                                setTimeout(function(){
+                                    $('#first_check').css('color','green');
+                                    $('#first_check>i').removeClass('fa-spinner fa-spin').addClass('fa-check');
+                                },1500);
+                            },250);
+
+
                         $('#exp_check>i').removeClass('fa fa-times').addClass('fa fa-spinner fa-spin');
                     }, 1500);
                 }
