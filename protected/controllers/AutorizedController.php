@@ -729,9 +729,11 @@ class AutorizedController extends Controller
             array(
                 'name'=>'roles',
                 'type'=>'raw',
+
                 'value'=>'Yii::app()->controller->widget(\'editable.Editable\', array(
                                     \'type\'      => \'select\',
                                     \'name\'      => \'roles\',
+                                    \'htmlOptions\' => array(\'class\'=>\'ExpEdit\'),
                                     \'pk\'        => $data[\'id\'],
                                     \'text\'      => CHtml::encode($this->getRole($data->roles)),
                                     \'url\'       => Yii::app()->createUrl(\'Autorized/updateProfile\'),
