@@ -152,9 +152,6 @@
                                     <select id="mail_address" class=" btn btn-primary"  style="width:200px">
                                         <optgroup label="Адресат ">
                                             <option value="Dev">Разработчики</option>
-                                            <option value="Users">Все пользователи</option>
-                                            <option value="id">Пользователь (id)</option>
-                                            <option value="Experts">Все эксперты</option>
                                             <option value="Exp">Эксперты 0</option>
                                             <option value="Exp1">Эксперты 1</option>
                                             <option value="Exp2">Эксперты 2</option>
