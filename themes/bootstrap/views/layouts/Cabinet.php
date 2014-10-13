@@ -207,6 +207,9 @@ Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/skins.css');
     $('#notify_content').summernote({
         height: 200
     });
+    $('#mail_content').summernote({
+        height: 200
+    });
 </script>
 <!-- BEGIN JS TEMPLATE -->
 <script src="<?=$assetsUrl ?>/js/main.js"></script>

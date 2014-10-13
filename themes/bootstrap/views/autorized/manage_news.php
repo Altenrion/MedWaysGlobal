@@ -130,7 +130,7 @@
                     <div class="grid">
                         <div class="grid-header">
                             <i class="fa fa-calendar"></i>
-                            <span class="grid-title">Создание Важного </span>
+                            <span class="grid-title">Создание рассылки</span>
                             <div class="pull-right grid-tools">
                                 <a data-widget="collapse" title="Collapse"><i class="fa fa-chevron-up"></i></a>
                                 <a data-widget="reload" title="Reload"><i class="fa fa-refresh"></i></a>
@@ -140,12 +140,32 @@
                         <div class="grid-body">
                             <form role="form">
                                 <div class="form-group">
-                                    <label>Текст Важности ^^</label>
-                                    <input type="text"  id="title" name="title" class="form-control" placeholder="Введите заголовок">
+                                    <label>Заголовок</label>
+                                    <input type="text"  id="mail_title" name="title" class="form-control" placeholder="Введите заголовок">
                                 </div>
+                                <div class="form-group">
+                                    <label>Основной текст</label>
+                                    <div id="mail_content"></div>
+                                </div>
+                                <div class="btn">
 
-                                <div class="btn-group">
-                                    <button type="" id="save_news" class="btn btn-primary">Сохранить</button>
+                                    <select id="mail_address" class=" btn btn-primary"  style="width:200px">
+                                        <optgroup label="Адресат ">
+                                            <option value="Dev">Разработчики</option>
+                                            <option value="Users">Все пользователи</option>
+                                            <option value="id">Пользователь (id)</option>
+                                            <option value="Experts">Все эксперты</option>
+                                            <option value="Exp">Эксперты 0</option>
+                                            <option value="Exp1">Эксперты 1</option>
+                                            <option value="Exp2">Эксперты 2</option>
+                                            <option value="Exp3">Эксперты 3</option>
+                                            <option value="Manager">Представители</option>
+                                        </optgroup>
+                                    </select>
+
+                                    <input type="text" id="mail_user_id" class="form-control btn btn-primary" style="width:70px; color:#fff;" placeholder="ID">
+
+                                    <button type="" id="save_mail" class="btn btn-primary">Отправить</button>
                                 </div>
                             </form>
                         </div>
@@ -159,7 +179,7 @@
     </div><!--/profile-->
 
 
-
+<div ><img style="visibility: hidden" class="octocat" src="<?=Yii::app()->baseUrl?>/images/octocat-spinner2.svg" alt=""/></div>
     <script type="text/javascript">
         $('#save_news').click(function(){
             var NewsTitle = $("#news_title").val();
@@ -256,6 +276,68 @@
                             NotyHolder.css({"background":"rgb(208, 255, 208)"});
                             NotyTitleHolder.css({"background":"rgb(208, 255, 208)"})
                         }, 100);
+                    }
+                }
+            });
+
+
+            return false;
+
+        });
+
+
+        $('#save_mail').click(function(){
+            var MailTitle = $("#mail_title").val();
+                var $obj = $("#mail_content");
+            var MailContent = $obj.next().children(".note-editable").html();
+
+            var MailHolder = $obj.next().children(".note-editable");
+            var MailTitleHolder = $("#mail_title");
+
+            var MailAddress = $("#mail_address").val();
+            var MailUserId = $("#mail_user_id").val();
+
+            console.log(MailTitle);
+            console.log(MailContent);
+            console.log(MailAddress);
+            console.log(MailUserId);
+
+
+            $('.md-overlay').css({"visibility": "visible"});
+            $('.octocat').css({"visibility": "visible","position":"fixed","width":"200px","display":"block","top":"50%","left":"50%", "margin-top":"-50px","margin-left": "-100px"});
+
+            $.ajax({
+                type: 'post',
+                url:  '<?=$this->createUrl('manageMails')?>' ,
+                dataType : 'json',
+                data: { address: MailAddress,
+                        user_id:MailUserId ,
+                        title: MailTitle,
+                        content:MailContent
+                },
+
+                success: function(data){
+                    if(data == 'fail'){
+                        console.log('фэил');
+                        setTimeout(function() {
+                            $('.md-overlay').css({"visibility": "hidden"});
+                            $('.octocat').css({"visibility": "hidden"});
+                            setTimeout(function() {
+                                MailHolder.css({"background":"rgb(255, 207, 214)"});
+                                MailTitleHolder.css({"background":"rgb(255, 207, 214)"})
+                            }, 450);
+                        }, 1100);
+                    }
+                    if(data == 'ok'){
+                        console.log('олл окей');
+                        setTimeout(function() {
+                            $('.md-overlay').css({"visibility": "hidden"});
+                            $('.octocat').css({"visibility": "hidden"});
+                            setTimeout(function() {
+                                MailHolder.css({"background":"rgb(208, 255, 208)"});
+                                MailTitleHolder.css({"background":"rgb(208, 255, 208)"})
+                            }, 450);
+                        }, 1100);
                     }
                 }
             });

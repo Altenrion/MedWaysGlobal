@@ -14,7 +14,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" align="center" data-editable="image">
                                         <tr>
                                             <td valign="top" align="center" style="padding:0;margin:0;border-style:solid;border-width:0px;border-color:#e2e2e2;">
-                                                <img src="http://medways.altenrion.ru/images/art/docs.png" alt="" width="570" height="234" border="0" style="display:block;">
+                                                <img src="http://vuznauka2014.medways.ru/images/art/docs.png" alt="" width="570" height="234" border="0" style="display:block;">
                                             </td>
                                         </tr>
                                     </table>

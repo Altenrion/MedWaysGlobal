@@ -565,6 +565,61 @@ class AutorizedController extends Controller
     }
 
 
+    public function actionManageMails(){
+
+//        var_dump($_POST);
+//        Yii::app()->end();
+
+        $address = Yii::app()->request->getPost('address');
+        $user_id = Yii::app()->request->getPost('user_id');
+        $title = Yii::app()->request->getPost('title');
+        $content = Yii::app()->request->getPost('content');
+
+        $tpl_file = Yii::getPathOfAlias('webroot.downloads').DIRECTORY_SEPARATOR.'mail_mail.php';
+        $tpl = file_get_contents($tpl_file);
+        $mail = $tpl;
+
+        $mail = strtr($mail, array(
+            "{title}"   => $title,
+            "{content}" => $content,
+        ));
+
+        $cheker = 0;
+
+        if($user_id == ''){
+            $emails = Users::model()->findAll("roles='".$address."'");
+
+            foreach($emails as $email ){
+                $message = new YiiMailMessage;
+                $message->setBody($mail, 'text/html');
+                $message->subject = 'Важные новости - Этафета вузовской науки';
+                $message->from = Yii::app()->params['adminEmail'];
+                $message->addTo($email->EMAIL);
+                if(!Yii::app()->mail->send($message)){
+                    $cheker++;
+                }
+            }
+
+        }
+        else{
+            $email = Users::model()->findByPk($user_id);
+
+            $message = new YiiMailMessage;
+            $message->setBody($mail, 'text/html');
+            $message->subject = 'Важные новости - Этафета вузовской науки';
+            $message->from = Yii::app()->params['adminEmail'];
+            $message->addTo($email->EMAIL);
+            if(!Yii::app()->mail->send($message)){
+                $cheker++;
+            }
+        }
+        if($cheker != 0 ){
+            echo json_encode('fail');  Yii::app()->end();
+        }else{
+            echo json_encode('ok');  Yii::app()->end();
+        }
+    }
+
     /**
      * Метод для отрисовки таблицы новостей
      */
@@ -578,20 +633,19 @@ class AutorizedController extends Controller
                 'value'=>'substr($data->content  , 0, 150).\'... \'',
             ),
             array(
-                'class' => 'EButtonColumn',
-                'template' => '{edit}&nbsp;{delete}',
-                'buttons' => array(
-
-                    'edit' => array(
-                        'label'=> 'Редактировать',
-                        //здесь должен быть url для редактирования записи
-                        'url' => '',
-                    ),
-                    'delete' => array(
-                        //здесь должен быть url для удаления записи
-                        'url' => 'Yii::app()->createUrl("/delete/$data->id")',
-                    ),
-                ),
+                'name'=>'mail',
+                'type'=>'raw',
+                'value'=>'Yii::app()->controller->widget(\'editable.Editable\', array(
+                                    \'type\'      => \'select\',
+                                    \'name\'      => $data[\'id\'],
+                                    \'htmlOptions\' => array(\'class\'=>\'ExpEdit\'),
+                                    \'pk\'        => $data[\'id\'],
+                                    \'text\'       => \'Отправить\',
+                                    \'url\'       => Yii::app()->createUrl(\'Autorized/sendNewsMail\'),
+                                    \'source\'    => array( \'Manager\'=>\'Руководители\' ,\'Exp\' => \'Эксперт0\', \'Exp1\' => \'Эксперт1\', \'Exp2\' => \'Эксперт2\', \'Exp3\' => \'Эксперт3\'),
+                                    \'title\'     => \'Адресат рассылки\',
+                                    \'placement\' => \'top\',
+                                    \'options\' => array( \'disabled\'=>false,  \'showbuttons\'=>false),  ),true);',
             ),
         );
 
