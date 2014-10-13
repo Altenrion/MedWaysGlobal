@@ -12,7 +12,7 @@
                             <tr>
                                 <td align="left" valign="top" style="padding-top:20px;padding-bottom:23px;padding-left:23px;padding-right:0;margin:0;">
                                     <span style="font-family:'Trebuchet MS',sans-serif;color: #F73C38;font-size:14px;font-weight:bold; text-transform: uppercase; ">
-                                        	<center> {title} !</center>
+                                        	<center> {title} </center>
                                     </span>
                                 </td>
                             </tr>

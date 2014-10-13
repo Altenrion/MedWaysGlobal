@@ -43,7 +43,7 @@ class AutorizedController extends Controller
     {
         return array(
             array('deny',
-                'actions'=>array('index','dashboard', 'profile','info','news','project','statistics','projects','experts','manageNotifies','manageNews','manageUsers','lockScreen'),
+                'actions'=>array('index','dashboard', 'profile','info','news','project','statistics','projects','experts','manageNotifies','manageNews','manageUsers','lockScreen','updateProject','updateProfile'),
                 'users'=>array('?'),
             ),
             array('allow',
