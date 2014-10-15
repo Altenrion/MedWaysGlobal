@@ -443,11 +443,11 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                 <div class="form-group">
                                     <label class="col-sm-4 control-label">Дублировать оповещения по email</label>
                                     <div class="col-sm-2">
-                                        <input type="checkbox" class="js-switch" checked>
+                                        <input type="checkbox" class="js-switch" >
                                     </div>
                                     <label class="col-sm-2 control-label"> Подписаться на новости</label>
                                     <div class="col-sm-2">
-                                        <input type="checkbox" class="js-switch" checked>
+                                        <input type="checkbox" class="js-switch" >
                                     </div>
                                 </div>
                                 <div class="form-group">
