@@ -37,26 +37,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AutorizedController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AutorizedController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.648149" vertical-offset="13928" max-vertical-offset="20366">
-              <caret line="959" column="42" selection-start-line="959" selection-start-column="33" selection-end-line="959" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.41383353" vertical-offset="17922" max-vertical-offset="20366">
+              <caret line="1165" column="118" selection-start-line="1165" selection-start-column="118" selection-end-line="1165" selection-end-column="118" />
               <folding>
                 <element signature="n#actionVerifyProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionEvaluateProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#mark_trigger#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                <marker date="1413445175959" expanded="true" signature="43031:43043" placeholder="..." />
+                <marker date="1413445839327" expanded="true" signature="43056:43068" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EDataColumn.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EDataColumn.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72985244" vertical-offset="1108" max-vertical-offset="2006">
-              <caret line="107" column="75" selection-start-line="107" selection-start-column="75" selection-end-line="107" selection-end-column="75" />
+            <state vertical-scroll-proportion="-18.846153" vertical-offset="1108" max-vertical-offset="2006">
+              <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -186,8 +186,8 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
         <option value="$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
       </list>
     </option>
   </component>
@@ -476,7 +476,7 @@
             <element signature="n#actionVerifyProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionEvaluateProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#mark_trigger#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1413445175959" expanded="true" signature="43031:43043" placeholder="..." />
+            <marker date="1413445839327" expanded="true" signature="43056:43068" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -741,24 +741,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.846153" vertical-offset="1108" max-vertical-offset="2006">
+          <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.648149" vertical-offset="13928" max-vertical-offset="20366">
-          <caret line="959" column="42" selection-start-line="959" selection-start-column="33" selection-end-line="959" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.41383353" vertical-offset="17922" max-vertical-offset="20366">
+          <caret line="1165" column="118" selection-start-line="1165" selection-start-column="118" selection-end-line="1165" selection-end-column="118" />
           <folding>
             <element signature="n#actionVerifyProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionEvaluateProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#mark_trigger#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1413445175959" expanded="true" signature="43031:43043" placeholder="..." />
+            <marker date="1413445839327" expanded="true" signature="43056:43068" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72985244" vertical-offset="1108" max-vertical-offset="2006">
-          <caret line="107" column="75" selection-start-line="107" selection-start-column="75" selection-end-line="107" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
