@@ -104,8 +104,8 @@ class EDataColumn extends CDataColumn {
         $st = '';
         if ($proj['FIRST_LAVEL_APPROVAL']== 0){$st = 'Зарегистрирован';}
         if ($proj['FIRST_LAVEL_APPROVAL']== 1){$st = 'Подан';}
-        if ($proj['FIRST_LAVEL_APPROVAL']== 3){$st = 'Одобрен вузом';}
-        if ($proj['FIRST_LAVEL_APPROVAL']== 9){$st = 'Заблокирован вузом';}
+        if ($proj['FIRST_LAVEL_APPROVAL']== 3){$st = 'Одобрен';}
+        if ($proj['FIRST_LAVEL_APPROVAL']== 9){$st = 'Заблокирован';}
         if (!is_null($proj['SECOND_LAVEL_RATING'])){$st = 'Окружная оценка';}
         if (!is_null($proj['THIRD_LAVEL_RATING'])){$st = 'Федеральная оценка';}
         return $st;

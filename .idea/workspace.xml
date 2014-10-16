@@ -37,10 +37,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AutorizedController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AutorizedController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3552169" vertical-offset="7840" max-vertical-offset="10863">
+            <state vertical-scroll-proportion="-5.611111" vertical-offset="7840" max-vertical-offset="10863">
               <caret line="479" column="47" selection-start-line="479" selection-start-column="47" selection-end-line="479" selection-end-column="47" />
               <folding>
                 <element signature="n#actionEvaluateProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
@@ -59,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EDataColumn.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EDataColumn.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.846153" vertical-offset="1108" max-vertical-offset="2006">
-              <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.72985244" vertical-offset="1108" max-vertical-offset="2006">
+              <caret line="107" column="69" selection-start-line="107" selection-start-column="69" selection-end-line="107" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -193,8 +193,8 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
-        <option value="$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php" />
       </list>
     </option>
   </component>
@@ -755,17 +755,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.846153" vertical-offset="1108" max-vertical-offset="2006">
-          <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3552169" vertical-offset="7840" max-vertical-offset="10863">
+        <state vertical-scroll-proportion="-5.611111" vertical-offset="7840" max-vertical-offset="10863">
           <caret line="479" column="47" selection-start-line="479" selection-start-column="47" selection-end-line="479" selection-end-column="47" />
           <folding>
             <element signature="n#actionEvaluateProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
@@ -780,6 +772,14 @@
             <element signature="n#getProjectByCriteria#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <marker date="1413446132269" expanded="true" signature="43110:43122" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72985244" vertical-offset="1108" max-vertical-offset="2006">
+          <caret line="107" column="69" selection-start-line="107" selection-start-column="69" selection-end-line="107" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>
