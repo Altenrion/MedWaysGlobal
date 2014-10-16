@@ -1163,7 +1163,7 @@ class AutorizedController extends Controller
 
             /** Критерий для эксперта 1 уровня (по универу) */
             case 'Exp1' :
-                $criteria->condition = 'us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL = 1' ;
+                $criteria->condition = 'us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL = 1 OR FIRST_LAVEL_APPROVAL = 9' ;
                 $criteria->params = array(":univ" => $user['ID_UNIVER']);
                 break;
 
