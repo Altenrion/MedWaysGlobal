@@ -392,7 +392,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                         <div class="col-sm-4 stats">
                             <h1><?=round($perc_prof)?> %</h1>
                             <span>Заполненность профиля</span>
-                            <button class="btn btn-primary"><i class="fa fa-user"></i> Профиль</button>
+                            <a class="btn btn-primary" href="<?=Yii::app()->createUrl('Autorized/profile')?>"><i class="fa fa-user"></i> Профиль</a>
                         </div>
 
                         <?if($this->checkRole(array('Manager'))):?>
@@ -400,7 +400,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
 
                                 <h1><?=round($perc_proj)?> %</h1>
                                 <span>Заполненность проекта</span>
-                                <button class="btn btn-info"><i class="fa fa-graduation-cap"></i> Проект</button>
+                                <a href="<?=Yii::app()->createUrl('Autorized/project')?>" class="btn btn-info"><i class="fa fa-graduation-cap"></i> Проект</a>
                         </div>
                         <? endif; ?>
                         <?if($this->checkRole(array('Exp','Exp1','Exp2','Exp3'))):?>
@@ -408,7 +408,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
 
                                 <h1> <?=$count_proj?> </h1>
                                 <span>Поступило проектов</span>
-                                <button class="btn btn-info"><i class="fa fa-graduation-cap"></i> Проектов</button>
+                                <a  href="<?=Yii::app()->createUrl('Autorized/projects')?>" class="btn btn-info"><i class="fa fa-graduation-cap"></i> Проектов</a>
                         </div>
                         <? endif; ?>
                         <?if($this->checkRole(array('Dev'))):?>
@@ -416,14 +416,14 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
 
                                 <h1> <?=$count_quest?> </h1>
                                 <span>Обращений</span>
-                                <button class="btn btn-info"><i class="fa fa-envelope"></i> Обращений</button>
+                                <a class="btn btn-info"><i class="fa fa-envelope"></i> Обращений</a>
                             </div>
                         <? endif; ?>
 
                         <div class="col-sm-4 stats">
                             <h1><?=$this->DaysIn($data['REG_DATE'])?></h1>
                             <span>Дней</span>
-                            <button class="btn btn-primary"><i class="fa fa-calendar"></i> Дней в проекте</button>
+                            <a  class="btn btn-primary"><i class="fa fa-calendar"></i> Дней в проекте</a>
                         </div>
                     </div>
                 </div>
