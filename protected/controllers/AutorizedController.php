@@ -477,7 +477,7 @@ class AutorizedController extends Controller
                                                         'id_project'=>$id
                                                     ));
 
-        if($check->FIRST_LAVEL_APPROVAL == 3){
+        if($check->FIRST_LAVEL_APPROVAL == 3 ){
             echo json_encode('verified'); Yii::app()->end();
         }
 
@@ -1163,7 +1163,7 @@ class AutorizedController extends Controller
 
             /** Критерий для эксперта 1 уровня (по универу) */
             case 'Exp1' :
-                $criteria->condition = 'us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL = 1 OR us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL = 9' ;
+                $criteria->condition = 'us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL = 1 OR us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL = 9 OR us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL = 3' ;
                 $criteria->params = array(":univ" => $user['ID_UNIVER']);
                 break;
 
