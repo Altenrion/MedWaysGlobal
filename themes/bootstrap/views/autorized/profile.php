@@ -403,12 +403,18 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                 <a href="<?=Yii::app()->createUrl('Autorized/project')?>" class="btn btn-info"><i class="fa fa-graduation-cap"></i> Проект</a>
                         </div>
                         <? endif; ?>
-                        <?if($this->checkRole(array('Exp','Exp1','Exp2','Exp3'))):?>
+                        <?if($this->checkRole(array('Exp'))):?>
                         <div class="col-sm-4 stats">
-
                                 <h1> <?=$count_proj?> </h1>
                                 <span>Поступило проектов</span>
-                                <a  href="<?=Yii::app()->createUrl('Autorized/projects')?>" class="btn btn-info"><i class="fa fa-graduation-cap"></i> Проектов</a>
+                                <a class="btn btn-info"><i class="fa fa-graduation-cap"></i> Проектов</a>
+                        </div>
+                        <? endif; ?>
+                        <?if($this->checkRole(array('Exp1','Exp2','Exp3'))):?>
+                        <div class="col-sm-4 stats">
+                                <h1> <?=$count_proj?> </h1>
+                                <span>Поступило проектов</span>
+                                <a href="<?=Yii::app()->createUrl('Autorized/projects')?>" class="btn btn-info"><i class="fa fa-graduation-cap"></i> Проектов</a>
                         </div>
                         <? endif; ?>
                         <?if($this->checkRole(array('Dev'))):?>
