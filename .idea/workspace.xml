@@ -41,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.59183675" vertical-offset="8505" max-vertical-offset="12529">
-              <caret line="771" column="93" selection-start-line="771" selection-start-column="39" selection-end-line="771" selection-end-column="93" />
+              <caret line="771" column="83" selection-start-line="771" selection-start-column="83" selection-end-line="771" selection-end-column="83" />
               <folding>
                 <element signature="n#actionEvaluateProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#mark_trigger#0;n#AutorizedController#0;n#!!top" expanded="false" />
@@ -52,7 +52,7 @@
                 <element signature="n#actionExpertProjectsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionJuliaList#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#getProjectByCriteria#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                <marker date="1413713355368" expanded="true" signature="43499:43511" placeholder="..." />
+                <marker date="1413713614928" expanded="true" signature="43505:43517" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -433,7 +433,7 @@
             <element signature="n#actionExpertProjectsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionJuliaList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#getProjectByCriteria#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1413713355368" expanded="true" signature="43499:43511" placeholder="..." />
+            <marker date="1413713614928" expanded="true" signature="43505:43517" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -492,7 +492,7 @@
             <element signature="n#actionExpertProjectsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionJuliaList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#getProjectByCriteria#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1413713355368" expanded="true" signature="43499:43511" placeholder="..." />
+            <marker date="1413713614928" expanded="true" signature="43505:43517" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -739,7 +739,7 @@
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.59183675" vertical-offset="8505" max-vertical-offset="12529">
-          <caret line="771" column="93" selection-start-line="771" selection-start-column="39" selection-end-line="771" selection-end-column="93" />
+          <caret line="771" column="83" selection-start-line="771" selection-start-column="83" selection-end-line="771" selection-end-column="83" />
           <folding>
             <element signature="n#actionEvaluateProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#mark_trigger#0;n#AutorizedController#0;n#!!top" expanded="false" />
@@ -750,7 +750,7 @@
             <element signature="n#actionExpertProjectsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionJuliaList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#getProjectByCriteria#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1413713355368" expanded="true" signature="43499:43511" placeholder="..." />
+            <marker date="1413713614928" expanded="true" signature="43505:43517" placeholder="..." />
           </folding>
         </state>
       </provider>
