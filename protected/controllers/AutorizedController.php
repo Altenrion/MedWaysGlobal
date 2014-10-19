@@ -758,11 +758,21 @@ class AutorizedController extends Controller
      */
     public function actionExpertsList(){
 
+        $assetsDir = dirname(__FILE__).'/../../assets';
 
+//        var_dump($assetsDir);
+//        Yii::app()->end();
         $columns = array('id','F_NAME','L_NAME','S_NAME','ID_DISTRICT','ID_UNIVER','ID_STAGE','roles');
 
         $cols = array(
-           'id:number:#', 'EMAIL:text:email','F_NAME:text:Фамилия','L_NAME:text:Имя','S_NAME:text:Отчество',
+           'id:number:#',
+            array(
+                'name'=>'Фото',
+                'type'=>'html',
+                'value'=>'CHtml::image(Yii::app()->baseUrl.\'/images/avatars/\'.$data->AVATAR,"",array("style"=>"width:40px;height:40px;"))',
+
+            ),
+            'EMAIL:text:email','F_NAME:text:Фамилия','L_NAME:text:Имя','S_NAME:text:Отчество',
 
             array(
                 'name'=>'ID_DISTRICT',
