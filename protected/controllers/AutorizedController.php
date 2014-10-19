@@ -998,6 +998,8 @@ class AutorizedController extends Controller
                 'name'=>'status',
                 'type'=>'text',
                 'value'=>'$this->getStatus($data->ID_PROJECT)',
+                'htmlOptions' => array('class' => 'status-left')
+
             ),
         );
 

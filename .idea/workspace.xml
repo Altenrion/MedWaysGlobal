@@ -32,18 +32,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AutorizedController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AutorizedController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.018518" vertical-offset="10761" max-vertical-offset="16252">
-              <caret line="989" column="62" selection-start-line="989" selection-start-column="51" selection-end-line="989" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.67760843" vertical-offset="10965" max-vertical-offset="16286">
+              <caret line="1000" column="64" selection-start-line="1000" selection-start-column="64" selection-end-line="1000" selection-end-column="64" />
               <folding>
                 <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#setTableColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionManageProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionExpertsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionManagersList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                <marker date="1413737845578" expanded="true" signature="43343:43355" placeholder="..." />
+                <marker date="1413738174384" expanded="true" signature="43409:43421" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -59,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9239374" vertical-offset="62295" max-vertical-offset="63274">
-              <caret line="3713" column="13" selection-start-line="3713" selection-start-column="13" selection-end-line="3713" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="62329" max-vertical-offset="63342">
+              <caret line="3715" column="12" selection-start-line="3715" selection-start-column="1" selection-end-line="3715" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -123,8 +123,8 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertsList.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php" />
         <option value="$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
         <option value="$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
       </list>
     </option>
   </component>
@@ -438,7 +438,7 @@
             <element signature="n#actionManageProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionExpertsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionManagersList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1413737845578" expanded="true" signature="43343:43355" placeholder="..." />
+            <marker date="1413738174384" expanded="true" signature="43409:43421" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -493,7 +493,7 @@
             <element signature="n#actionManageProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionExpertsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionManagersList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1413737845578" expanded="true" signature="43343:43355" placeholder="..." />
+            <marker date="1413738174384" expanded="true" signature="43409:43421" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -755,26 +755,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="62329" max-vertical-offset="63342">
+          <caret line="3715" column="12" selection-start-line="3715" selection-start-column="1" selection-end-line="3715" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.018518" vertical-offset="10761" max-vertical-offset="16252">
-          <caret line="989" column="62" selection-start-line="989" selection-start-column="51" selection-end-line="989" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.67760843" vertical-offset="10965" max-vertical-offset="16286">
+          <caret line="1000" column="64" selection-start-line="1000" selection-start-column="64" selection-end-line="1000" selection-end-column="64" />
           <folding>
             <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#setTableColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionManageProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionExpertsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionManagersList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1413737845578" expanded="true" signature="43343:43355" placeholder="..." />
+            <marker date="1413738174384" expanded="true" signature="43409:43421" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9239374" vertical-offset="62295" max-vertical-offset="63274">
-          <caret line="3713" column="13" selection-start-line="3713" selection-start-column="13" selection-end-line="3713" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
