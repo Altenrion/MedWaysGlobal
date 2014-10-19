@@ -524,15 +524,18 @@ class AutorizedController extends Controller
             }
             $marks->TOTAL_MARK = array_sum($_POST);
 
+            if($marks->save()){
 
-            /**  Триггер для подсчета средней оценки в таблицу проектов. */
+                /**  Триггер для подсчета средней оценки в таблицу проектов. */
+                $trigger = $this->mark_trigger($level,$marks->ID_PROJECT, $marks->TOTAL_MARK);
 
-            $trigger = $this->mark_trigger($level,$marks->ID_PROJECT, $marks->TOTAL_MARK);
+                if($trigger){
+                    echo json_encode('ok');Yii::app()->end();
+                }
+                else{
+                    echo json_encode('fail'); Yii::app()->end();
+                }
 
-//            var_dump($trigger);
-//            Yii::app()->end();
-            if($marks->save() && $trigger){
-                echo json_encode('ok');Yii::app()->end();
             }
             else{
                 echo json_encode('fail'); Yii::app()->end();
@@ -543,16 +546,25 @@ class AutorizedController extends Controller
     /**  Метод для фиксирования среднего значения оценки в таблицу проекта.  */
     public function mark_trigger($level,$id_project,$total){
         switch($level){
-            case 'second': $field = 'SECOND_LAVEL_RATING'; break;
-            case 'third' : $field = 'THIRD_LAVEL_RATING' ; break;
+            case 'second':  $marks_c = 'SecondLavelMarks'; $field = 'SECOND_LAVEL_RATING'; break;
+            case 'third' :  $marks_c = 'ThirdLavelMarks'; $field = 'THIRD_LAVEL_RATING' ; break;
         }
         $mark = ProjectRegistry::model()->find('ID_PROJECT=:id_project',array(':id_project'=>$id_project));
-        $current_mark = $mark->$field;
-        $average_mark = ($current_mark + $total) / 2;
-        $mark->$field = round($average_mark);
 
-//        var_dump($mark);
-//        Yii::app()->end();
+        $average = array();
+
+        $existace_marks = $marks_c::model()->findAll('ID_PROJECT='.$id_project);
+
+        if(count($existace_marks)<1){
+            $average_mark = $total;
+
+        }else{
+            foreach($existace_marks as $mark_k=>$mark_v){
+                $average[] = $mark_v->TOTAL_MARK;
+            }
+            $average_mark = round( array_sum($average) / count($average) );
+        }
+        $mark->$field = $average_mark;
 
         if($mark->save()){
             return true ;
@@ -564,9 +576,6 @@ class AutorizedController extends Controller
 
 
     public function actionManageMails(){
-
-//        var_dump($_POST);
-//        Yii::app()->end();
 
         $address = Yii::app()->request->getPost('address');
         $user_id = Yii::app()->request->getPost('user_id');
