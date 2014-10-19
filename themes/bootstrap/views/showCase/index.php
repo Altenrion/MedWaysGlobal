@@ -34,7 +34,7 @@ $this->breadcrumbs=array(
             <li data-transition="fade"> <img src="<?=Yii::app()->baseUrl; ?>/images/art/doc__.png" alt="" />
                 <div class="caption sft bold opacity-bg" data-x="center" data-y="205" data-speed="500" data-start="500" data-easing="Sine.easeOut">Медицинский форум </div>
                 <div class="caption sfb lite opacity-bg" data-x="center" data-y="271" data-speed="500" data-start="1000" data-easing="Sine.easeOut"><strong>MedWAYS</strong> - перспективные научные направления 2014</div>
-                <div class="caption sfb" data-x="center" data-y="339" data-speed="500" data-start="1500" data-easing="Sine.easeOut"><img src="<?=Yii::app()->baseUrl; ?>/images/buttons/mw.png" alt="" /></div>
+                <div class="caption sfb" data-x="center" data-y="339" data-speed="500" data-start="1500" data-easing="Sine.easeOut"><a href="http://medways.ru" class=""><img src="<?=Yii::app()->baseUrl; ?>/images/buttons/mw.png" alt="" /></a></div>
             </li>
         </ul>
         <div class="tp-bannertimer tp-bottom"></div>
