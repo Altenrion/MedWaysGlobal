@@ -13,8 +13,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="description" content="MedWays, Эстафета вузовской науки 2014, MedWAYS forum, Медицина, Молодые ученые, Инновации">
+        <meta name="author" content="Altenrion">
         <meta http-equiv="X-UA-Compatible" content="IE=9">
 
         <link rel="shortcut icon" href="<?=Yii::app()->baseUrl.'/images/favicon1.ico' ?> ">
