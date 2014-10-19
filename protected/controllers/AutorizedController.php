@@ -770,7 +770,8 @@ class AutorizedController extends Controller
             array(
                 'name'=>'Фото',
                 'type'=>'html',
-                'value'=>'CHtml::image(Yii::app()->baseUrl.\'/images/avatars/thumb_\'.$data->AVATAR,"",array("style"=>"width:40px;height:40px;"))',
+                'value'=>'is_null($data->AVATAR)? (CHtml::image(Yii::app()->baseUrl.\'/images/avatars/thumb_new.png\',"",array("style"=>"width:40px;height:40px;")))
+                 : CHtml::image(Yii::app()->baseUrl.\'/images/avatars/thumb_\'.$data->AVATAR,"",array("style"=>"width:40px;height:40px;"))',
 
             ),
             'EMAIL:text:email','F_NAME:text:Фамилия','L_NAME:text:Имя','S_NAME:text:Отчество',
@@ -885,7 +886,8 @@ class AutorizedController extends Controller
             array(
                 'name'=>'Фото',
                 'type'=>'html',
-                'value'=>'CHtml::image(Yii::app()->baseUrl.\'/images/avatars/thumb_\'.$data->AVATAR,"",array("style"=>"width:40px;height:40px;"))',
+                'value'=> 'is_null($data->AVATAR)? (CHtml::image(Yii::app()->baseUrl.\'/images/avatars/thumb_new.png\',"",array("style"=>"width:40px;height:40px;")))
+                 : CHtml::image(Yii::app()->baseUrl.\'/images/avatars/thumb_\'.$data->AVATAR,"",array("style"=>"width:40px;height:40px;"))',
 
             ),
             'F_NAME:text:Фамилия','L_NAME:text:Имя','S_NAME:text:Отчество',
