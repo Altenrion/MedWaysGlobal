@@ -1169,13 +1169,13 @@ class AutorizedController extends Controller
 
             /** Критерий для эксперта 2 уровня (по платформе и округу)*/
             case 'Exp2' :
-                $criteria->condition = 't.ID_STAGE = :stage AND us.ID_DISTRICT = :dist';
+                $criteria->condition = 't.ID_STAGE = :stage AND us.ID_DISTRICT = :dist AND FIRST_LAVEL_APPROVAL = 3';
                 $criteria->params = array(":stage" => $user['ID_STAGE'], ":dist" => $user['ID_DISTRICT']);
                 break;
 
             /** Критерий для эксперта 3 уровня (по платформе) */
             case 'Exp3' :
-                $criteria->condition = 't.ID_STAGE = :stage';
+                $criteria->condition = 't.ID_STAGE = :stage SECOND_LEVEL_RATING NOT NULL';
                 $criteria->params = array(":stage" => $user['ID_STAGE']);
                 break;
 
