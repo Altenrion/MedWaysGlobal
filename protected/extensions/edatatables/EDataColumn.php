@@ -77,6 +77,28 @@ class EDataColumn extends CDataColumn {
         return $st['NAME_STAGE'];
     }
 
+    public function getStageFromProject($id){
+
+        $pr = ProjectRegistry::model()->find("ID_REPRESENTATIVE = '$id'" );
+
+        $st =  Stage::model()->findByPk($pr->ID_STAGE);
+        return $st['NAME_STAGE'];
+    }
+
+    public function getStagesList(){
+        $st = Stage::model()->findAll();
+        $list = array();
+
+
+        foreach($st as $st_k=>$st_v){
+
+
+            $list[$st_v->ID_STAGE] = $st_v->NAME_STAGE ;
+        }
+    return  $list;
+
+    }
+
     public function getUniver($id_univer){
         $univer = University::model()->findByPk($id_univer);
         return $univer['NAME_UNIVER'];

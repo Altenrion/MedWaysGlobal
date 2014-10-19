@@ -758,10 +758,15 @@ class AutorizedController extends Controller
      */
     public function actionExpertsList(){
 
-        $columns = array('id','F_NAME','L_NAME','S_NAME','ID_DISTRICT','ID_UNIVER','ID_STAGE','roles');
+        $columns = array('id','AVATAR','EMAIL','F_NAME','L_NAME','S_NAME','ID_DISTRICT','ID_UNIVER','ID_STAGE','roles');
 
         $cols = array(
-           'id:number:#',
+            array(
+                'name'=>'id',
+                'type'=>'raw',
+                'value'=>'$data->id',
+                'htmlOptions' => array('style' => 'text-align: left; width: 40px;')
+            ),
             array(
                 'name'=>'Фото',
                 'type'=>'html',
@@ -777,15 +782,26 @@ class AutorizedController extends Controller
             ),
             array(
                 'name'=>'ID_UNIVER',
-                'type'=>'text',
+                'type'=>'raw',
                 'value'=>'$this->getUniver($data->ID_UNIVER)',
             ),
+
             array(
                 'name'=>'ID_STAGE',
-                'type'=>'text',
-                'value'=>'$this->getStage($data->ID_STAGE)',
-            ),
+                'type'=>'raw',
 
+                'value'=>'Yii::app()->controller->widget(\'editable.Editable\', array(
+                                    \'type\'      => \'select\',
+                                    \'name\'      => \'ID_STAGE\',
+                                    \'htmlOptions\' => array(\'class\'=>\'ExpEdit\'),
+                                    \'pk\'        => $data[\'id\'],
+                                    \'text\'      => (is_null($data->ID_STAGE)? \'не выбрано\' : CHtml::encode($this->getStage($data->ID_STAGE))),
+                                    \'url\'       => Yii::app()->createUrl(\'Autorized/updateProfile\'),
+                                    \'source\'    => $this->getStagesList(),
+                                    \'title\'     => \'Выберите платформу\',
+                                    \'placement\' => \'top\',
+                                    \'options\' => array( \'disabled\'=>false,  \'showbuttons\'=>false),  ),true);',
+            ),
             array(
                 'name'=>'roles',
                 'type'=>'raw',
@@ -857,10 +873,15 @@ class AutorizedController extends Controller
      */
     public function actionManagersList(){
 
-        $columns = array('id','F_NAME','L_NAME','S_NAME','ID_DISTRICT','ID_UNIVER','ID_STAGE');
+        $columns = array('id','AVATAR','F_NAME','L_NAME','S_NAME','ID_DISTRICT','ID_UNIVER','ID_STAGE');
 
         $cols = array(
-           'id:number:#',
+            array(
+                'name'=>'id',
+                'type'=>'raw',
+                'value'=>'$data->id',
+                'htmlOptions' => array('style' => 'text-align: left; width: 40px;')
+            ),
             array(
                 'name'=>'Фото',
                 'type'=>'html',
@@ -882,7 +903,7 @@ class AutorizedController extends Controller
             array(
                 'name'=>'ID_STAGE',
                 'type'=>'text',
-                'value'=>'$this->getStage($data->ID_STAGE)',
+                'value'=>'$this->getStageFromProject($data->id)',
             ),
 
         );

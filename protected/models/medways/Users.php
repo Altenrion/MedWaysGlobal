@@ -123,7 +123,7 @@ class Users extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID Пользователя',
+			'id' => 'ID ',
 			'F_NAME' => 'Фамилия',
 			'L_NAME' => 'Имя',
 			'S_NAME' => 'Отчество',
