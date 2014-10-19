@@ -260,10 +260,7 @@ class AutorizedController extends Controller
                         'url' => 'Yii::app()->createUrl("/delete/$data->id")',
                     );
                         break;
-
-
                 }
-
                 $buttons[$but_v]= $button;
             }
             $button_column['buttons'] = $buttons;
@@ -274,22 +271,13 @@ class AutorizedController extends Controller
         }
     }
 
-
-
-
-
-
     public function actionManageNotifies()
 	{
-
-
-
         $this->render('manage_notifies');
 	}
 
     public function actionManageProject($Project)
 	{
-//        var_dump($Project);
 
         $projectData = ProjectRegistry::model()->findByPk($Project);
 //        var_dump($projectData);
@@ -303,10 +291,6 @@ class AutorizedController extends Controller
         foreach($criteries as $cr_k=>$cr_v){
             $answ[$cr_k]= CJSON::decode(CJSON::encode(CrAnswers::model()->findAll('ID_CRITERIA='.++$cr_k)));
         }
-//        var_dump($answ);
-//        Yii::app()->end();
-
-
 
 
         $this->render('manage_project',array(
@@ -1003,6 +987,7 @@ class AutorizedController extends Controller
                 'name'=>'ID_UNIVER',
                 'type'=>'text',
                 'value'=>'$this->getUniver($data->ID_UNIVER)',
+                'htmlOptions' => array('class' => 'univer-left')
             ),
             array(
                 'name'=>'ID_STAGE',

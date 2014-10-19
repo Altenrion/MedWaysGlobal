@@ -35,22 +35,35 @@
       <file leaf-file-name="AutorizedController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.148148" vertical-offset="4799" max-vertical-offset="18683">
-              <caret line="305" column="7" selection-start-line="305" selection-start-column="7" selection-end-line="306" selection-end-column="28" />
+            <state vertical-scroll-proportion="-11.018518" vertical-offset="10761" max-vertical-offset="16252">
+              <caret line="989" column="62" selection-start-line="989" selection-start-column="51" selection-end-line="989" selection-end-column="62" />
               <folding>
+                <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
+                <element signature="n#setTableColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
+                <element signature="n#actionManageProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionExpertsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionManagersList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                <marker date="1413734999830" expanded="true" signature="43377:43389" placeholder="..." />
+                <marker date="1413737845578" expanded="true" signature="43343:43355" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EDataColumn.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.038462" vertical-offset="1397" max-vertical-offset="2380">
+              <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="62227" max-vertical-offset="63189">
-              <caret line="3700" column="16" selection-start-line="3700" selection-start-column="16" selection-end-line="3700" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.9239374" vertical-offset="62295" max-vertical-offset="63274">
+              <caret line="3713" column="13" selection-start-line="3713" selection-start-column="13" selection-end-line="3713" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -66,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage_project.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="manage_project.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7446084" vertical-offset="6025" max-vertical-offset="10217">
-              <caret line="399" column="0" selection-start-line="399" selection-start-column="0" selection-end-line="399" selection-end-column="0" />
+            <state vertical-scroll-proportion="-40.923077" vertical-offset="5311" max-vertical-offset="10217">
+              <caret line="381" column="67" selection-start-line="381" selection-start-column="67" selection-end-line="381" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -107,11 +120,11 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php" />
         <option value="$PROJECT_DIR$/protected/models/medways/Users.php" />
-        <option value="$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertsList.php" />
-        <option value="$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css" />
       </list>
     </option>
   </component>
@@ -197,10 +210,6 @@
               <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -212,37 +221,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autorized" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
+              <option name="myItemId" value="protected" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -257,6 +236,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edatatables" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -376,7 +381,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -385,7 +390,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15245202" sideWeight="0.4829483" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15245202" sideWeight="0.4829483" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -428,9 +433,12 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12461">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <element signature="n#setTableColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <element signature="n#actionManageProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionExpertsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionManagersList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1413734999830" expanded="true" signature="43377:43389" placeholder="..." />
+            <marker date="1413737845578" expanded="true" signature="43343:43355" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -480,9 +488,12 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15351">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <element signature="n#setTableColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <element signature="n#actionManageProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionExpertsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionManagersList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1413734999830" expanded="true" signature="43377:43389" placeholder="..." />
+            <marker date="1413737845578" expanded="true" signature="43343:43355" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -548,6 +559,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.83886254" vertical-offset="0" max-vertical-offset="0">
           <caret line="168" column="69" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -687,14 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3643587" vertical-offset="1243" max-vertical-offset="2380">
-          <caret line="96" column="9" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertsList.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35253456" vertical-offset="0" max-vertical-offset="868">
@@ -719,14 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="62227" max-vertical-offset="63189">
-          <caret line="3700" column="16" selection-start-line="3700" selection-start-column="16" selection-end-line="3700" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43663594" vertical-offset="6387" max-vertical-offset="9231">
@@ -743,22 +739,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-40.923077" vertical-offset="5311" max-vertical-offset="10217">
+          <caret line="381" column="67" selection-start-line="381" selection-start-column="67" selection-end-line="381" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.038462" vertical-offset="1397" max-vertical-offset="2380">
+          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.148148" vertical-offset="4799" max-vertical-offset="18683">
-          <caret line="305" column="7" selection-start-line="305" selection-start-column="7" selection-end-line="306" selection-end-column="28" />
+        <state vertical-scroll-proportion="-11.018518" vertical-offset="10761" max-vertical-offset="16252">
+          <caret line="989" column="62" selection-start-line="989" selection-start-column="51" selection-end-line="989" selection-end-column="62" />
           <folding>
+            <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <element signature="n#setTableColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <element signature="n#actionManageProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionExpertsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionManagersList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1413734999830" expanded="true" signature="43377:43389" placeholder="..." />
+            <marker date="1413737845578" expanded="true" signature="43343:43355" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php">
+    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7446084" vertical-offset="6025" max-vertical-offset="10217">
-          <caret line="399" column="0" selection-start-line="399" selection-start-column="0" selection-end-line="399" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.9239374" vertical-offset="62295" max-vertical-offset="63274">
+          <caret line="3713" column="13" selection-start-line="3713" selection-start-column="13" selection-end-line="3713" selection-end-column="13" />
           <folding />
         </state>
       </provider>

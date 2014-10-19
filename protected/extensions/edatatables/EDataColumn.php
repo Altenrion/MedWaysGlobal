@@ -101,7 +101,7 @@ class EDataColumn extends CDataColumn {
 
     public function getUniver($id_univer){
         $univer = University::model()->findByPk($id_univer);
-        return $univer['NAME_UNIVER'];
+        return $univer['CONTACTS_UNIVER'];
     }
 
     /** Метод для получения роли пользователя в таблицу экспертов */

@@ -3709,3 +3709,8 @@ a[rel^="NAME"] + div.popover> .arrow{
     text-align: left;
     width: 30px;
 }
+.univer-left{
+    text-align: left;
+    width: 150px;
+}
+
