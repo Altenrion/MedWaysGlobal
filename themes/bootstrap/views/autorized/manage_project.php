@@ -325,6 +325,33 @@
         </div><!--/col-->
     </div><!--/text row-->
 
+    <? if($this->checkRole(array('Dev','Exp2','Exp3'))): ?>
+        <div class="row ">
+            <div class="col-sm-12 ">
+                <div class="grid">
+                    <div class="grid-header">
+                        <i class="fa fa-bar-chart-o"></i>
+                        <span class="grid-title">Комментарии к проекту</span>
+                        <div class="pull-right grid-tools">
+                            <a data-widget="collapse" title="Collapse"><i class="fa fa-chevron-up"></i></a>
+                            <a data-widget="reload" title="Reload"><i class="fa fa-refresh"></i></a>
+                            <a data-widget="remove" title="Remove"><i class="fa fa-times"></i></a>
+                        </div>
+                    </div>
+                    <div class="grid-body">
+                        <textarea cols="12" rows="10" style="width: 100%" id="comment"/></textarea>
+                        </br>
+                        
+                        <button type="button" class="btn btn-primary" id="save_comment" title="">
+                            Сохранить комментарий
+                        </button>
+
+                    </div>
+                </div>
+            </div><!--/col-->
+        </div><!--/text row-->
+    <? endif; ?>
+
     <? if($this->checkRole(array('Dev','Exp1'))): ?>
     <div class="row ">
         <div class="col-sm-12 ">
@@ -448,6 +475,9 @@
             VerifyProject(id_pr,'deny');
         });
 
+        $('#save_comment').click( function(){
+            SaveComment(id_pr);
+        });
 
         $('#evaluate_button').click( function(e){
             e.preventDefault();
@@ -588,6 +618,43 @@
                 });
                 console.log('send');
             }
+        }
+
+        function SaveComment(id){
+
+            var comment_text = $('#comment').val();
+            var url = '<?= Yii::app()->createUrl('Autorized/SaveProjectComment') ?>';
+            var saved_comment_text  = '<h4>Ваш комментарий успешно сохранен</h4><br>';
+            var error = '<h4>Сервер временно не доступен. Перезайдите в личный кабинет.</h4><br>';
+
+
+            console.log(comment_text);
+            console.log(url);
+
+
+            $.ajax({
+                type: 'post',
+                url:  url,
+                data:  {'comment':comment_text,'project_id':id},
+                dataType : 'json',
+                success: function(data){
+                    if(data == 'ok'){
+                        $('div.modal-content').removeClass('bg-yellow').removeClass('bg-red').addClass('bg-green');
+                        $('p#content').html(saved_comment_text);
+
+                        setTimeout(function() {
+                            $('#accept').modal('show')
+                        }, 150);
+                    }
+                    if(data == 'fail'){
+                        $('div.modal-content').removeClass('bg-green').removeClass('bg-yellow').addClass('bg-red');
+                        $('p#content').html(error);
+                        setTimeout(function() {
+                            $('#accept').modal('show')
+                        }, 1500);
+                    }
+                }
+            });
         }
 
 

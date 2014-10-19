@@ -1187,6 +1187,20 @@ class AutorizedController extends Controller
         return $criteria;
     }
 
+    public function actionSaveProjectComment(){
+        if(isset($_POST['comment'])){
+            $comment = new CommentStorage();
+            $comment->text = $_POST['comment'];
+            $comment->project_id = $_POST['project_id'];
+            $comment->author_id = Yii::app()->user->id;
+            if($comment->save()){
+                echo json_encode('ok'); Yii::app()->end();
+            }else{
+                echo json_encode('fail'); Yii::app()->end();
+            }
+
+        }
+    }
 
     public function actionGetSpecialities(){
         echo CJSON::encode(Editable::source(Speciality::model()->findAll(), 'ID_SPECIALITY', 'NAME'));
