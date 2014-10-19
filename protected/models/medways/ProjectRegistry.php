@@ -112,7 +112,7 @@ class ProjectRegistry extends CActiveRecord
 			    'PRIVACY_P' => 'Privacy',
 
 
-			'FIRST_LAVEL_APPROVAL' => 'Вузовская проверка',
+			'FIRST_LAVEL_APPROVAL' => 'Статус',
 			'SECOND_LAVEL_RATING' => 'Окружная проверка',
 			'THIRD_LAVEL_RATING' => 'Федеральная проверка',
 

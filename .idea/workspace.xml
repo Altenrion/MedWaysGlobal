@@ -38,8 +38,8 @@
       <file leaf-file-name="AutorizedController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="8.277778" vertical-offset="13282" max-vertical-offset="14722">
-              <caret line="1191" column="0" selection-start-line="1191" selection-start-column="0" selection-end-line="1191" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.0555556" vertical-offset="8947" max-vertical-offset="14722">
+              <caret line="972" column="103" selection-start-line="972" selection-start-column="103" selection-end-line="972" selection-end-column="103" />
               <folding>
                 <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#setTableColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
@@ -51,7 +51,22 @@
                 <element signature="n#actionManageMails#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionNewsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionNotifiesList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                <marker date="1413748607670" expanded="true" signature="44307:44319" placeholder="..." />
+                <marker date="1413749704920" expanded="true" signature="44335:44347" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectRegistry.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6670507" vertical-offset="1359" max-vertical-offset="3910">
+              <caret line="114" column="45" selection-start-line="114" selection-start-column="45" selection-end-line="114" selection-end-column="45" />
+              <folding>
+                <marker date="1413749735429" expanded="true" signature="7388:8481" placeholder="SELECT proj...m_w_project_registry..." />
+                <marker date="1413749735429" expanded="true" signature="8056:8140" placeholder="SELECT stage..m_w_stage..." />
+                <marker date="1413749735429" expanded="true" signature="8173:8251" placeholder="SELECT phase..m_w_phase..." />
+                <marker date="1413749735429" expanded="true" signature="8283:8367" placeholder="SELECT budge..m_w_budget..." />
               </folding>
             </state>
           </provider>
@@ -87,10 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage_project.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="manage_project.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59477866" vertical-offset="9965" max-vertical-offset="11356">
+            <state vertical-scroll-proportion="-49.576923" vertical-offset="9200" max-vertical-offset="11356">
               <caret line="623" column="0" selection-start-line="623" selection-start-column="0" selection-end-line="623" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#div#3;n#section#1;n#!!top" expanded="true" />
@@ -118,7 +133,6 @@
         <option value="$PROJECT_DIR$/protected/models/medways/SecondLavelMarks.php" />
         <option value="$PROJECT_DIR$/protected/models/medways/ThirdLavelMarks.php" />
         <option value="$PROJECT_DIR$/protected/extensions/x-editable/EditableColumn.php" />
-        <option value="$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php" />
         <option value="$PROJECT_DIR$/protected/config/devel.php" />
         <option value="$PROJECT_DIR$/protected/extensions/cabinet/assets/js/MyEditsToEditable.js" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php" />
@@ -134,8 +148,9 @@
         <option value="$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php" />
         <option value="$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css" />
         <option value="$PROJECT_DIR$/protected/models/medways/CommentStorage.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
+        <option value="$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php" />
       </list>
     </option>
   </component>
@@ -250,7 +265,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="extensions" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -268,11 +283,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="extensions" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="edatatables" />
+              <option name="myItemId" value="medways" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -454,7 +469,7 @@
             <element signature="n#actionManageMails#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionNewsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionNotifiesList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1413748607670" expanded="true" signature="44307:44319" placeholder="..." />
+            <marker date="1413749704920" expanded="true" signature="44335:44347" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -514,7 +529,7 @@
             <element signature="n#actionManageMails#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionNewsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionNotifiesList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1413748607670" expanded="true" signature="44307:44319" placeholder="..." />
+            <marker date="1413749704920" expanded="true" signature="44335:44347" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -573,14 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39673278" vertical-offset="0" max-vertical-offset="0">
           <caret line="26" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83886254" vertical-offset="0" max-vertical-offset="0">
-          <caret line="168" column="69" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -784,10 +791,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-49.576923" vertical-offset="9200" max-vertical-offset="11356">
+          <caret line="623" column="0" selection-start-line="623" selection-start-column="0" selection-end-line="623" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#div#3;n#section#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="8.277778" vertical-offset="13282" max-vertical-offset="14722">
-          <caret line="1191" column="0" selection-start-line="1191" selection-start-column="0" selection-end-line="1191" selection-end-column="0" />
+        <state vertical-scroll-proportion="-3.0555556" vertical-offset="8947" max-vertical-offset="14722">
+          <caret line="972" column="103" selection-start-line="972" selection-start-column="103" selection-end-line="972" selection-end-column="103" />
           <folding>
             <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#setTableColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
@@ -799,17 +816,20 @@
             <element signature="n#actionManageMails#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionNewsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionNotifiesList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1413748607670" expanded="true" signature="44307:44319" placeholder="..." />
+            <marker date="1413749704920" expanded="true" signature="44335:44347" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59477866" vertical-offset="9965" max-vertical-offset="11356">
-          <caret line="623" column="0" selection-start-line="623" selection-start-column="0" selection-end-line="623" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6670507" vertical-offset="1359" max-vertical-offset="3910">
+          <caret line="114" column="45" selection-start-line="114" selection-start-column="45" selection-end-line="114" selection-end-column="45" />
           <folding>
-            <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#div#3;n#section#1;n#!!top" expanded="true" />
+            <marker date="1413749735429" expanded="true" signature="7388:8481" placeholder="SELECT proj...m_w_project_registry..." />
+            <marker date="1413749735429" expanded="true" signature="8056:8140" placeholder="SELECT stage..m_w_stage..." />
+            <marker date="1413749735429" expanded="true" signature="8173:8251" placeholder="SELECT phase..m_w_phase..." />
+            <marker date="1413749735429" expanded="true" signature="8283:8367" placeholder="SELECT budge..m_w_budget..." />
           </folding>
         </state>
       </provider>

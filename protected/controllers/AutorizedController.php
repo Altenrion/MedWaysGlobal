@@ -970,7 +970,7 @@ class AutorizedController extends Controller
      */
     public function actionExpertProjectsList(){
 
-        $columns = array('ID_PROJECT','NAME','ID_DISTRICT','ID_UNIVER','ID_STAGE','status');
+        $columns = array('ID_PROJECT','NAME','ID_DISTRICT','ID_UNIVER','ID_STAGE','FIRST_LAVEL_APPROVAL');
 
         $cols = array(
             array(
@@ -1004,7 +1004,7 @@ class AutorizedController extends Controller
                 'value'=>'$this->getStage($data->ID_STAGE)',
             ),
             array(
-                'name'=>'status',
+                'name'=>'FIRST_LAVEL_APPROVAL',
                 'type'=>'text',
                 'value'=>'$this->getStatus($data->ID_PROJECT)',
                 'htmlOptions' => array('class' => 'status-left')
