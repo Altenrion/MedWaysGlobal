@@ -377,135 +377,27 @@
                 </div>
                 <div class="grid-body">
                     <form class="form-horizontal" id="mark_selectors" role="form">
-                        <div class="form-group">
-                            <label class="col-sm-4 control-label">Соответствие проекта тематике заявленной научной платформы</label>
-                            <div class="col-sm-7">
-                                <select class="form-control"  id="mark_1">
-                                    <option value="">-- не выбрано --</option>
-                                    <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                </select>
+                        <?
+
+                        foreach($criteries as $cr_num=>$cr_val): ?>
+
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label"><?=$cr_val['NAME']?></label>
+                                <div class="col-sm-7">
+                                    <select class="form-control"  id="mark_<?=$cr_val['ID_CRITERIA']?>">
+                                        <option value="">-- не выбрано --</option>
+
+                                        <? foreach($answers[++$cr_num] as $ans_k => $ans_v): ?>
+                                            <option value="<?=$ans_v['INDEX']?>"><?=$ans_v['NAME']?></option>
+                                        <? endforeach; ?>
+
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-4 control-label">Актуальность исследования</label>
-                            <div class="col-sm-7">
-                                <select class="form-control" id="mark_2">
-                                    <option value="">-- не выбрано --</option>
-                                    <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-4 control-label">Научный коллектив</label>
-                            <div class="col-sm-7">
-                                <select class="form-control" id="mark_3">
-                                    <option value="">-- не выбрано --</option>
-                                    <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
-                                    <option value="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
-                                    <option value="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-4 control-label">Финансовая модель</label>
-                            <div class="col-sm-7">
-                                <select class="form-control" id="mark_4">
-                                    <option value="">-- не выбрано --</option>
-                                    <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
-                                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
-                                    <option value="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-4 control-label">Оценка 5</label>
-                            <div class="col-sm-7">
-                                <select class="form-control" id="mark_5">
-                                    <option value="">-- не выбрано --</option>
-                                    <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
-                                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
-                                    <option value="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-4 control-label">Оценка 6</label>
-                            <div class="col-sm-7">
-                                <select class="form-control" id="mark_6">
-                                    <option value="">-- не выбрано --</option>
-                                    <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
-                                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
-                                    <option value="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-4 control-label">Оценка 7</label>
-                            <div class="col-sm-7">
-                                <select class="form-control" id="mark_7">
-                                    <option value="">-- не выбрано --</option>
-                                    <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
-                                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
-                                    <option value="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-4 control-label">Оценка 8</label>
-                            <div class="col-sm-7">
-                                <select class="form-control" id="mark_8">
-                                    <option value="">-- не выбрано --</option>
-                                    <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
-                                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
-                                    <option value="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-4 control-label">Оценка 9</label>
-                            <div class="col-sm-7">
-                                <select class="form-control" id="mark_9">
-                                    <option value="">-- не выбрано --</option>
-                                    <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
-                                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
-                                    <option value="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-4 control-label">Оценка 10</label>
-                            <div class="col-sm-7">
-                                <select class="form-control" id="mark_10">
-                                    <option value="">-- не выбрано --</option>
-                                    <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do1</option>
-                                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do2</option>
-                                    <option value="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                    <option value="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</option>
-                                </select>
-                            </div>
-                        </div>
+                      <?
+                        endforeach;
+                      ?>
+
                         <div class="form-group">
                             <div class="col-sm col-sm-10">
                                 <div >

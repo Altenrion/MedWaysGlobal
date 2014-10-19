@@ -295,11 +295,25 @@ class AutorizedController extends Controller
 //        var_dump($projectData);
         $managerData = Users::model()->findByPk($projectData->ID_REPRESENTATIVE);
 //        var_dump($managerData);
+        $criteries = CJSON::decode(CJSON::encode(Creities::model()->findAll()));
+
+        $answers = CrAnswers::model()->findAll();
+
+
+        foreach($criteries as $cr_k=>$cr_v){
+            $answ[$cr_k]= CJSON::decode(CJSON::encode(CrAnswers::model()->findAll('ID_CRITERIA='.++$cr_k)));
+        }
+//        var_dump($answ);
+//        Yii::app()->end();
+
+
 
 
         $this->render('manage_project',array(
             'project'=>$projectData,
             'manager'=>$managerData,
+            'criteries'=>$criteries,
+            'answers'=>$answ
         ));
 	}
 
@@ -970,15 +984,20 @@ class AutorizedController extends Controller
                 'name'=>'ID_PROJECT',
                 'type'=>'number',
                 'value'=>'$data->ID_PROJECT',
-                'htmlOptions'=>array('class'=> 'text-left')
+                'htmlOptions' => array('class' => 'id-left')
             ),
-            'NAME:text:Название',
-
-
+            array(
+                'name'=>'NAME',
+                'type'=>'raw',
+                'value'=>'$data->NAME',
+                'htmlOptions' => array('class' => 'project-name-left')
+            ),
             array(
                 'name'=>'ID_DISTRICT',
                 'type'=>'text',
                 'value'=>'$this->getDistrict( $data->ID_DISTRICT)',
+                'htmlOptions' => array('class' => 'district-left'),
+
             ),
             array(
                 'name'=>'ID_UNIVER',
@@ -995,57 +1014,6 @@ class AutorizedController extends Controller
                 'type'=>'text',
                 'value'=>'$this->getStatus($data->ID_PROJECT)',
             ),
-//            array(
-//                'htmlOptions' => array('style' => 'width: 100px; text-align:center;'),
-//                'filterHtmlOptions' => array('style' => 'width: 100px;'),
-//                'class' => 'EButtonColumn',
-//                'template' => '{pdf_pr}&nbsp;{pdf_an}',
-//                'evaluateID'=>true,
-//                'buttons' => array(
-//
-////                    'email' => array
-////                    (
-////                        'label'=>'Send an e-mail to this user',
-////                        'imageUrl'=>Yii::app()->request->baseUrl.'/images/buttons/email.png',
-////                        'click'=>"function(){
-////                                    $.fn.yiiGridView.update('user-grid', {
-////                                        type:'POST',
-////                                        url:$(this).attr('href'),
-////                                        success:function(data) {
-////                                              $('#AjFlash').html(data).fadeIn().animate({opacity: 1.0}, 3000).fadeOut('slow');
-////
-////                                              $.fn.yiiGridView.update('user-grid');
-////                                        }
-////                                    })
-////                                    return false;
-////                              }
-////                     ",
-////                        'url'=>'Yii::app()->controller->createUrl("email",array("id"=>$data->primaryKey))',
-////                    ),
-//                    'pdf_pr' => array(
-//                        'label'=> 'PDF Проекта',
-//                        'imageUrl'=>Yii::app()->request->baseUrl.'/images/buttons/pdf_pr.png',
-//                        'url' => 'Yii::app()->baseUrl."/uploads/".$data->ROADMAP_PROJECT',
-//                        'options'=>array(
-//                            'target'=>'_blank',
-//                            'id'=>'"button_for_id_1".$data->ID_PROJECT ',
-//
-//                        ),
-//
-//                    ),
-//                    'pdf_an' => array(
-//                        'label'=> 'PDF Аннотации',
-//                        'imageUrl'=>Yii::app()->request->baseUrl.'/images/buttons/pdf_an.png',
-//                        'url' => 'Yii::app()->baseUrl."/uploads/".$data->ROADMAP_PROJECT',
-//                        'options'=>array(
-//                            'target'=>'_blank',
-//                            'id'=>'"button_for_id_1".$data->ID_PROJECT ',
-//
-//                        ),
-//                    ),
-//                ),
-//            ),
-
         );
 
 

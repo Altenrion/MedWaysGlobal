@@ -3695,3 +3695,17 @@ a[rel^="NAME"] + div.popover{
 a[rel^="NAME"] + div.popover> .arrow{
     left: 15%;
 }
+
+.id-left{
+    text-align: left;
+    width: 30px;
+}
+
+.project-name-left{
+    text-align: left;
+    width: 40%;
+}
+.district-left{
+    text-align: left;
+    width: 30px;
+}
