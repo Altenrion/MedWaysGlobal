@@ -76,7 +76,7 @@ class StatisticCharts {
             $studies[] = $m_v['STUDY'];
         }
         $study_managers = array_sum($studies);
-        $perc = (($total_managers/100) * $study_managers);
+        $perc = ((100/$total_managers) * $study_managers);
         $managersDATA[] = round($perc);
 
         $underManagers = CJSON::decode(CJSON::encode(ProjectRegistry::model()->findAll("UN_THIRTY_FIVE IS NOT NULL ")));
@@ -84,7 +84,7 @@ class StatisticCharts {
             $under[] = $u_v['UN_THIRTY_FIVE'];
         }
         $under_managers = array_sum($under);
-        $percu = (($total_managers/100) * $under_managers);
+        $percu = ((100/$total_managers) * $under_managers);
 
         $managersDATA[] = round($percu);
 
@@ -100,7 +100,7 @@ class StatisticCharts {
             $publs[] = $p_v['FORIN_PUBL'];
         }
         $forin_publs = array_sum($publs);
-        $percpubls = (($total_publs/100) * $forin_publs);
+        $percpubls = ((100/$total_publs) * $forin_publs);
 
         $managersDATA[] = round($percpubls);
 

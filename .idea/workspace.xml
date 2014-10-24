@@ -65,10 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="statistics.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="statistics.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40833333" vertical-offset="1782" max-vertical-offset="3468">
+            <state vertical-scroll-proportion="-6.351852" vertical-offset="1782" max-vertical-offset="3468">
               <caret line="125" column="224" selection-start-line="125" selection-start-column="224" selection-end-line="125" selection-end-column="224" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
@@ -81,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StatisticCharts.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StatisticCharts.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/components/StatisticCharts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077" vertical-offset="459" max-vertical-offset="2261">
-              <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.5981839" vertical-offset="1122" max-vertical-offset="2261">
+              <caret line="102" column="39" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -188,8 +188,8 @@
         <option value="$PROJECT_DIR$/protected/components/TopUnivers.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
         <option value="$PROJECT_DIR$/protected/components/RegistrationChart.php" />
-        <option value="$PROJECT_DIR$/protected/components/StatisticCharts.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
+        <option value="$PROJECT_DIR$/protected/components/StatisticCharts.php" />
       </list>
     </option>
   </component>
@@ -993,17 +993,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/StatisticCharts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077" vertical-offset="459" max-vertical-offset="2261">
-          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40833333" vertical-offset="1782" max-vertical-offset="3468">
+        <state vertical-scroll-proportion="-6.351852" vertical-offset="1782" max-vertical-offset="3468">
           <caret line="125" column="224" selection-start-line="125" selection-start-column="224" selection-end-line="125" selection-end-column="224" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
@@ -1012,6 +1004,14 @@
             <element signature="n#style#0;n#canvas#0;n#span#2;n#div#0;n#div#0;n#div#6;n#div#0;n#section#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#canvas#0;n#span#2;n#div#0;n#div#0;n#div#7;n#div#0;n#section#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/StatisticCharts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5981839" vertical-offset="1122" max-vertical-offset="2261">
+          <caret line="102" column="39" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
