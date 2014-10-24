@@ -123,8 +123,8 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                             <label class="col-sm-4 control-label"><?=$stage_v[1]?></label>
                                             <div class="col-sm-8 line-progress" >
                                                 <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="<?=$stage_v[0] + 20?>" aria-valuemin="0" aria-valuemax="100" style="width: <?=$stage_v[0] + 20?>%;">
-                                                        <span id="<?=$stage_v[1]?>"> <?=$stage_v[0]?>%</span>
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="<?=$stage_v[0] + $stage_v[0]?>" aria-valuemin="0" aria-valuemax="100" style="width: <?=$stage_v[0] + $stage_v[0]?>%;">
+                                                        <span id="<?=$stage_v[1]?>"><?=$stage_v[0]?> %</span>
                                                     </div>
                                                 </div>
                                             </div>
