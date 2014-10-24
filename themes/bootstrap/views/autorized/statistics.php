@@ -50,7 +50,12 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                         <div class="grid-body">
                             
                             <div class="row">
-                                <div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem consequatur cumque doloribus eum eveniet maiores nesciunt non odio omnis quas quo, quos recusandae sed sunt unde voluptas! Aut dolores et iure iusto labore, magni, molestias, nam nemo numquam placeat quis quod repudiandae tempora. Amet aperiam assumenda autem consectetur consequatur doloremque esse, expedita fuga id magni molestiae nam odit quas recusandae reiciendis similique tenetur ullam ut? Aliquid aspernatur, beatae commodi consequuntur corporis cum dignissimos, dolorem dolorum fugit ipsum labore nobis nostrum omnis reprehenderit tenetur? A accusantium ad adipisci alias architecto aspernatur autem, blanditiis deleniti, dolor excepturi harum hic molestiae nostrum placeat, provident sequi voluptate? Corporis, deserunt enim exercitationem libero nisi non perspiciatis porro quae quam quia quidem quis. Cum cupiditate eligendi hic illo ipsum provident repudiandae tempora totam. Aut et facilis fugit quos?</div>
+                                <div class="col-md-6">
+                                    В настоящем разделе приведена актуальная статистика мероприятия "Эстафета вузовской науки". В блоке справа вы можете видеть Вузы, лидирующие по количеству проектов.
+                                    По результатам экспертизы регионального этапа определятся Базовые вузы Эстафеты 2015 года. </br>
+                                    В блоках ниже приведены сводки распределения одобренных проектов по платформам,статистика по командам участников и заявленным бюджетам проектов.
+                                    Настоящая статистика будет пополняться по окончанию регионального и федерального этапа экспертизы.
+                                </div>
                                 <div class="col-md-6">
 
                                     <p class="lead">Лидеры Эстафеты вузовской науки</p>
