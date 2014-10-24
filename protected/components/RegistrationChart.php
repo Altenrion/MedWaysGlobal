@@ -39,12 +39,6 @@ class RegistrationChart {
             $day =  explode("-",$date[0]);
             $nday = $day[2];
 
-//            if($this->_day <= $nday){
-//                $this->_day=(int) $nday;
-//            }else{
-//                $nday += 30;
-//                $this->_day = (int) $nday;
-//            }
             if((int)$day[1] == 9){
                 $this->_day=(int) $nday;
             }
@@ -89,10 +83,15 @@ class RegistrationChart {
             $date = explode(" ",$p_v->REG_DATE);
             $day =  explode("-",$date[0]);
             $nday = $day[2];
-            if($this->_day <= $nday){
+            if((int)$day[1] == 9){
                 $this->_day=(int) $nday;
-            }else{
+            }
+            elseif((int)$day[1] == 10){
                 $nday += 30;
+                $this->_day = (int) $nday;
+            }
+            elseif((int)$day[1] == 11){
+                $nday += 61;
                 $this->_day = (int) $nday;
             }
             $arr[] = array($this->_day,(int)$count_proj);
