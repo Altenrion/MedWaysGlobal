@@ -27,16 +27,13 @@ class StatisticCharts {
             $vuzName = $vuz->CONTACTS_UNIVER;
 
             $counPr = ProjectRegistry::model()->count('FIRST_LAVEL_APPROVAL = 3');
-            $perc = (($counPr/100) * $val['id'])*100;
+            $perc = ($counPr/100) * $val['id'];
 
             $vuzDATA[] = array(round($perc),$vuzName);
 
         }
 
         return $vuzDATA;
-
-//        var_dump($vuzDATA);
-//        Yii::app()->end();
 
 
     }
@@ -62,9 +59,6 @@ class StatisticCharts {
 
             $stageDATA[] = array(round($perc),$stageName);
         }
-//        var_dump($stageDATA);
-//        Yii::app()->end();
-
         return $stageDATA;
     }
 
@@ -115,7 +109,6 @@ class StatisticCharts {
 
     public function getMoneyData(){
 
-
         $criteria = new CDbCriteria;
         $criteria->select = 'COUNT(ID_PROJECT) ID_PROJECT, ID_BUDGET  ';
         $criteria->group = 'ID_BUDGET';
@@ -123,15 +116,12 @@ class StatisticCharts {
         $criteria->order = 'ID_PROJECT';
         $money = CJSON::decode(CJSON::encode(ProjectRegistry::model()->findAll($criteria)));
         $total = CJSON::decode(CJSON::encode(ProjectRegistry::model()->count("ID_BUDGET IS NOT NULL")));
-//        var_dump($total);
-//        Yii::app()->end();
 
         foreach($money as $m_k=>$m_v){
 
             $num = $m_v['ID_PROJECT'];
             $perc = round((100/$total)*$num);
 
-//            var_dump($num);
             $monName = Budget::model()->findByPk($m_v['ID_BUDGET']);
             $moneyDATA[]= array($perc ,$monName->NAME);
         }
