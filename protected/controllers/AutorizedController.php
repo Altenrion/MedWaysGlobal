@@ -51,7 +51,7 @@ class AutorizedController extends Controller
                 'roles'=>array('Dev','Manager','Exp','Exp1','Exp2','Exp3'),
             ),
             array('allow',
-                'actions'=>array('project'),
+                'actions'=>array('project','statistics'),
                 'roles'=>array('Manager'),
             ),
             array('allow',
