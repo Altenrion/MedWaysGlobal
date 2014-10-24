@@ -55,7 +55,7 @@ class StatisticCharts {
             $stageName = $stage->NAME_STAGE;
 
             $counPr = ProjectRegistry::model()->count('FIRST_LAVEL_APPROVAL = 3');
-            $perc = (($counPr/100) * $val['ID_PROJECT'])*100;
+            $perc = ((100/$counPr) * $val['ID_PROJECT']);
 
             $stageDATA[] = array(round($perc),$stageName);
         }
