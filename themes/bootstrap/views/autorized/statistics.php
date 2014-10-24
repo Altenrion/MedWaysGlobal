@@ -55,17 +55,17 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
 
                                     <p class="lead">Лидеры Эстафеты вузовской науки</p>
                                     <p>Топ 5 вузов проекта</p>
-                                    <? //var_dump($topUnivers); ?>
+                                    <? $i = 30; ?>
 
                                     <? foreach($topUnivers as $vuz_k=>$vuz_v):?>
 
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="<?=$vuz_v[0] + 20?>" aria-valuemin="0" aria-valuemax="100" style="width: <?=$vuz_v[0]+20?>%;">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="<?=$vuz_v[0] + $i ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?=$vuz_v[0]+$i ?>%;">
                                                 <span class=""><?=$vuz_v[1]?> </span><span id="<?=$vuz_v[1]?>"><?=$vuz_v[0]?>%</span>
                                             </div>
                                         </div>
 
-                                    <?endforeach; ?>
+                                    <? $i -= 5; endforeach;  ?>
 
                                 </div>
                             </div>
