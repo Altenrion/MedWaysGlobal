@@ -21,11 +21,11 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
 </section>
 <!-- END CONTENT HEADER -->
 <section class="content">
-			<div class="row "> <? if($this->checkRole(array('Dev'))): ?>
+			<div class="row ">
 				<div class="col-md-12 ">
-
+                    <? if($this->checkRole(array('Dev'))): ?>
                         <?= $this->actionJuliaList() ; ?>
-
+                    <? endif; ?>
 				</div><!--/col-->
 
                 <div class="col-md-12">
@@ -185,7 +185,6 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                     </div>
                </div>
                <? endforeach; ?>
-                <? endif; ?>
 
 			</div><!--/profile-->
 
