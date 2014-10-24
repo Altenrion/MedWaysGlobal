@@ -27,7 +27,7 @@ class StatisticCharts {
             $vuzName = $vuz->CONTACTS_UNIVER;
 
             $counPr = ProjectRegistry::model()->count('FIRST_LAVEL_APPROVAL = 3');
-            $perc = ($counPr/100) * $val['id'];
+            $perc = (100/$counPr) * $val['id'];
 
             $vuzDATA[] = array(round($perc),$vuzName);
 
