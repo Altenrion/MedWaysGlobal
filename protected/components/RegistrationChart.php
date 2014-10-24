@@ -94,7 +94,7 @@ class RegistrationChart {
                 $nday += 61;
                 $this->_day = (int) $nday;
             }
-            $arr[] = array($this->_day,(int)$count_proj);
+            $arr[] = array($this->_day,(int)$count_proj+10);
         }
 //        var_dump($arr);
         return $arr;
