@@ -52,6 +52,7 @@ class StatisticCharts {
         foreach($ordered as $key=>$val){
 
             $stage = Stage::model()->findByPk($val['ID_STAGE']);
+
             $stageName = $stage->NAME_STAGE;
 
             $counPr = ProjectRegistry::model()->count('FIRST_LAVEL_APPROVAL = 3');
