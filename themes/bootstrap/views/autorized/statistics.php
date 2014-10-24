@@ -78,16 +78,16 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <div class="grid">
-                        <div class="grid-body">
-                            <blockquote>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
+<!--                <div class="col-md-12">-->
+<!--                    <div class="grid">-->
+<!--                        <div class="grid-body">-->
+<!--                            <blockquote>-->
+<!--                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>-->
+<!--                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>-->
+<!--                            </blockquote>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
                 <div class="col-md-12">
                     <div class="grid">
                         <div class="grid-body">
