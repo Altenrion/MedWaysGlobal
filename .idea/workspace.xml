@@ -65,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="statistics.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="statistics.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.87857145" vertical-offset="2628" max-vertical-offset="3468">
-              <caret line="198" column="0" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+            <state vertical-scroll-proportion="-10.12963" vertical-offset="2598" max-vertical-offset="3468">
+              <caret line="185" column="0" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#!!top" expanded="true" />
@@ -92,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegistrationChart.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RegistrationChart.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/components/RegistrationChart.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.5" vertical-offset="96" max-vertical-offset="1768">
-              <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.59477866" vertical-offset="224" max-vertical-offset="1972">
+              <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -185,12 +185,12 @@
         <option value="$PROJECT_DIR$/../Coming_soon/index.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
-        <option value="$PROJECT_DIR$/protected/components/RegistrationChart.php" />
         <option value="$PROJECT_DIR$/protected/extensions/cabinet/assets/js/statistic-charts.js" />
         <option value="$PROJECT_DIR$/protected/components/TopUnivers.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
         <option value="$PROJECT_DIR$/protected/components/StatisticCharts.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
+        <option value="$PROJECT_DIR$/protected/components/RegistrationChart.php" />
       </list>
     </option>
   </component>
@@ -994,18 +994,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/RegistrationChart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.5" vertical-offset="96" max-vertical-offset="1768">
-          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.87857145" vertical-offset="2628" max-vertical-offset="3468">
-          <caret line="198" column="0" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+        <state vertical-scroll-proportion="-10.12963" vertical-offset="2598" max-vertical-offset="3468">
+          <caret line="185" column="0" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#!!top" expanded="true" />
@@ -1014,6 +1006,14 @@
             <element signature="n#style#0;n#canvas#0;n#span#2;n#div#0;n#div#0;n#div#6;n#div#0;n#section#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#canvas#0;n#span#2;n#div#0;n#div#0;n#div#7;n#div#0;n#section#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/RegistrationChart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59477866" vertical-offset="224" max-vertical-offset="1972">
+          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
