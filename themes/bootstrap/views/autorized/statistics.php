@@ -55,7 +55,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
 
                                     <p class="lead">Лидеры Эстафеты вузовской науки</p>
                                     <p>Топ 5 вузов проекта</p>
-                                    <? $i = 30; ?>
+                                    <? $i = 40; ?>
 
                                     <? foreach($topUnivers as $vuz_k=>$vuz_v):?>
 
@@ -65,7 +65,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                             </div>
                                         </div>
 
-                                    <? $i -= 5; endforeach;  ?>
+                                    <? $i -= 3; endforeach;  ?>
 
                                 </div>
                             </div>
