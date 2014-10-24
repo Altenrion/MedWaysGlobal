@@ -60,7 +60,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                     <? foreach($topUnivers as $vuz_k=>$vuz_v):?>
 
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="<?=$vuz_v[0]?>" aria-valuemin="0" aria-valuemax="100" style="width: <?=$vuz_v[0]?>%;">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="<?=$vuz_v[0] + 20?>" aria-valuemin="0" aria-valuemax="100" style="width: <?=$vuz_v[0]+20?>%;">
                                                 <span class=""><?=$vuz_v[1]?> </span><span id="<?=$vuz_v[1]?>"><?=$vuz_v[0]?>%</span>
                                             </div>
                                         </div>
