@@ -43,7 +43,7 @@ class StatisticCharts {
         $criteria = new CDbCriteria;
         $criteria->select = 'COUNT(ID_PROJECT) ID_PROJECT, ID_STAGE  ';
         $criteria->group = 'ID_STAGE';
-        $criteria->condition = "SECOND_LAVEL_RATING IS NOT NULL";
+        $criteria->condition = "FIRST_LAVEL_APPROVAL = 3";
         $criteria->order = 'ID_PROJECT';
         $stages = ProjectRegistry::model()->findAll($criteria);
 
