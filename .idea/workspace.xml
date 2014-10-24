@@ -38,107 +38,109 @@
       <file leaf-file-name="AutorizedController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0555556" vertical-offset="8947" max-vertical-offset="14722">
-              <caret line="972" column="103" selection-start-line="972" selection-start-column="103" selection-end-line="972" selection-end-column="103" />
+            <state vertical-scroll-proportion="-11.796296" vertical-offset="1182" max-vertical-offset="16966">
+              <caret line="107" column="36" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
               <folding>
                 <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                <element signature="n#setTableColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionManageProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionCheckFullInfo#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionVerifyProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionEvaluateProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#mark_trigger#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                <element signature="n#actionManageMails#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionNewsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionNotifiesList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                <marker date="1413749704920" expanded="true" signature="44335:44347" placeholder="..." />
+                <marker date="1414136187113" expanded="false" signature="45120:45132" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectRegistry.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
+      <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.26923" vertical-offset="1359" max-vertical-offset="3910">
-              <caret line="114" column="45" selection-start-line="114" selection-start-column="45" selection-end-line="114" selection-end-column="45" />
+            <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="9231">
+              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="statistics.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.1666665" vertical-offset="2628" max-vertical-offset="3468">
+              <caret line="171" column="37" selection-start-line="171" selection-start-column="37" selection-end-line="171" selection-end-column="37" />
               <folding>
-                <marker date="1413749735429" expanded="true" signature="7388:8481" placeholder="SELECT proj...m_w_project_registry..." />
-                <marker date="1413749735429" expanded="true" signature="8056:8140" placeholder="SELECT stage..m_w_stage..." />
-                <marker date="1413749735429" expanded="true" signature="8173:8251" placeholder="SELECT phase..m_w_phase..." />
-                <marker date="1413749735429" expanded="true" signature="8283:8367" placeholder="SELECT budge..m_w_budget..." />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#section#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#canvas#0;n#span#2;n#div#0;n#div#0;n#div#5;n#div#0;n#section#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#canvas#0;n#span#2;n#div#0;n#div#0;n#div#6;n#div#0;n#section#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#canvas#0;n#span#2;n#div#0;n#div#0;n#div#7;n#div#0;n#section#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Coming_soon/index.php">
+      <file leaf-file-name="StatisticCharts.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/components/StatisticCharts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.7222223" vertical-offset="558" max-vertical-offset="1462">
-              <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.72985244" vertical-offset="1550" max-vertical-offset="2431">
+              <caret line="134" column="29" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
+      <file leaf-file-name="RegistrationChart.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/components/RegistrationChart.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.26923" vertical-offset="85" max-vertical-offset="4301">
-              <caret line="36" column="143" selection-start-line="36" selection-start-column="143" selection-end-line="36" selection-end-column="143" />
+            <state vertical-scroll-proportion="-10.692307" vertical-offset="708" max-vertical-offset="1768">
+              <caret line="63" column="62" selection-start-line="58" selection-start-column="8" selection-end-line="63" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Proto.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
+      <file leaf-file-name="statistic-charts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/js/statistic-charts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19585253" vertical-offset="0" max-vertical-offset="4063">
-              <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EDataColumn.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.038462" vertical-offset="1397" max-vertical-offset="2380">
-              <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="62329" max-vertical-offset="63342">
-              <caret line="3715" column="12" selection-start-line="3715" selection-start-column="1" selection-end-line="3715" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cabinet.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5" vertical-offset="2740" max-vertical-offset="3825">
-              <caret line="165" column="26" selection-start-line="165" selection-start-column="26" selection-end-line="165" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manage_project.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-49.576923" vertical-offset="9200" max-vertical-offset="11356">
-              <caret line="623" column="0" selection-start-line="623" selection-start-column="0" selection-end-line="623" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="3774">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
-                <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#div#3;n#section#1;n#!!top" expanded="true" />
+                <marker date="1414092995659" expanded="true" signature="2614:2673" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Browser.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/components/Browser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="680">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BrowserCounter.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/BrowserCounter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="612">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="browser_counter.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/assets/browser_counter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1377">
+              <caret line="54" column="48" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="48" />
+              <folding>
+                <marker date="1409947746470" expanded="false" signature="943:1002" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -178,12 +180,17 @@
         <option value="$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css" />
         <option value="$PROJECT_DIR$/protected/models/medways/CommentStorage.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
         <option value="$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php" />
         <option value="$PROJECT_DIR$/../Coming_soon/js/soon/custom.js" />
         <option value="$PROJECT_DIR$/../Coming_soon/index.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
+        <option value="$PROJECT_DIR$/protected/components/RegistrationChart.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/cabinet/assets/js/statistic-charts.js" />
+        <option value="$PROJECT_DIR$/protected/components/TopUnivers.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
+        <option value="$PROJECT_DIR$/protected/components/StatisticCharts.php" />
       </list>
     </option>
   </component>
@@ -291,32 +298,6 @@
               <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedWaysGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -346,7 +327,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="extensions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -364,11 +345,85 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="extensions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="medways" />
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MedWaysGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -497,7 +552,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15245202" sideWeight="0.4829483" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20788912" sideWeight="0.4829483" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -535,86 +590,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12461">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#setTableColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionManageProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionCheckFullInfo#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionVerifyProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionEvaluateProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#mark_trigger#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionManageMails#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionNewsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionNotifiesList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1413749704920" expanded="true" signature="44335:44347" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertsList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_news.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4865" max-vertical-offset="5899">
-          <caret line="328" column="48" selection-start-line="328" selection-start-column="48" selection-end-line="328" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="9129">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2740" max-vertical-offset="3825">
-          <caret line="173" column="26" selection-start-line="173" selection-start-column="19" selection-end-line="173" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6387" max-vertical-offset="9231">
-          <caret line="404" column="36" selection-start-line="404" selection-start-column="36" selection-end-line="404" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15351">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#setTableColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionManageProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionCheckFullInfo#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionVerifyProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionEvaluateProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#mark_trigger#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionManageMails#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionNewsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionNotifiesList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1413749704920" expanded="true" signature="44335:44347" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1411">
@@ -825,14 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43663594" vertical-offset="6387" max-vertical-offset="9231">
-          <caret line="404" column="36" selection-start-line="404" selection-start-column="36" selection-end-line="404" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5" vertical-offset="2740" max-vertical-offset="3825">
@@ -845,14 +812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.038462" vertical-offset="1397" max-vertical-offset="2380">
           <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="62329" max-vertical-offset="63342">
-          <caret line="3715" column="12" selection-start-line="3715" selection-start-column="1" selection-end-line="3715" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -875,39 +834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0555556" vertical-offset="8947" max-vertical-offset="14722">
-          <caret line="972" column="103" selection-start-line="972" selection-start-column="103" selection-end-line="972" selection-end-column="103" />
-          <folding>
-            <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#setTableColumns#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionManageProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionCheckFullInfo#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionVerifyProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionEvaluateProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#mark_trigger#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionManageMails#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionNewsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="n#actionNotifiesList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1413749704920" expanded="true" signature="44335:44347" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.26923" vertical-offset="1359" max-vertical-offset="3910">
-          <caret line="114" column="45" selection-start-line="114" selection-start-column="45" selection-end-line="114" selection-end-column="45" />
-          <folding>
-            <marker date="1413749735429" expanded="true" signature="7388:8481" placeholder="SELECT proj...m_w_project_registry..." />
-            <marker date="1413749735429" expanded="true" signature="8056:8140" placeholder="SELECT stage..m_w_stage..." />
-            <marker date="1413749735429" expanded="true" signature="8173:8251" placeholder="SELECT phase..m_w_phase..." />
-            <marker date="1413749735429" expanded="true" signature="8283:8367" placeholder="SELECT budge..m_w_budget..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Coming_soon/js/soon/custom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46857774" vertical-offset="0" max-vertical-offset="2363">
@@ -916,17 +842,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/js/chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.88395905" vertical-offset="7536" max-vertical-offset="8415">
+          <caret line="489" column="3" selection-start-line="483" selection-start-column="0" selection-end-line="489" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1408812432000" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35219398" vertical-offset="14791" max-vertical-offset="63342">
+          <caret line="888" column="38" selection-start-line="888" selection-start-column="0" selection-end-line="888" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/АДМИНКА - ПЛАТНАЯ/html/ui-general.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43452382" vertical-offset="9835" max-vertical-offset="13481">
+          <caret line="600" column="38" selection-start-line="594" selection-start-column="32" selection-end-line="600" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/АДМИНКА - ПЛАТНАЯ/html/assets/js/chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4002205" vertical-offset="6675" max-vertical-offset="8347">
+          <caret line="418" column="0" selection-start-line="418" selection-start-column="0" selection-end-line="418" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/АДМИНКА - ПЛАТНАЯ/html/charts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8405627" vertical-offset="9840" max-vertical-offset="10795">
+          <caret line="621" column="31" selection-start-line="621" selection-start-column="31" selection-end-line="621" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#aside#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../Coming_soon/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.7222223" vertical-offset="558" max-vertical-offset="1462">
+        <state vertical-scroll-proportion="0.36225086" vertical-offset="558" max-vertical-offset="1462">
           <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47119817" vertical-offset="1359" max-vertical-offset="3910">
+          <caret line="104" column="58" selection-start-line="104" selection-start-column="58" selection-end-line="104" selection-end-column="58" />
+          <folding>
+            <marker date="1413749735429" expanded="true" signature="-1:-1" placeholder="SELECT proj...m_w_project_registry..." />
+            <marker date="1413749735429" expanded="true" signature="-1:-1" placeholder="SELECT stage..m_w_stage..." />
+            <marker date="1413749735429" expanded="true" signature="-1:-1" placeholder="SELECT phase..m_w_phase..." />
+            <marker date="1413749735429" expanded="true" signature="-1:-1" placeholder="SELECT budge..m_w_budget..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.26923" vertical-offset="85" max-vertical-offset="4301">
+        <state vertical-scroll-proportion="0.60714287" vertical-offset="85" max-vertical-offset="4301">
           <caret line="36" column="143" selection-start-line="36" selection-start-column="143" selection-end-line="36" selection-end-column="143" />
           <folding />
         </state>
@@ -934,8 +918,101 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19585253" vertical-offset="0" max-vertical-offset="4063">
-          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.31336406" vertical-offset="0" max-vertical-offset="4063">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/Browser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="907">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/assets/browser_counter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1377">
+          <caret line="54" column="48" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="48" />
+          <folding>
+            <marker date="1409947746470" expanded="false" signature="943:1002" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="9231">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/BrowserCounter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="907">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/js/statistic-charts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="3774">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <marker date="1414092995659" expanded="true" signature="2614:2673" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/RegistrationChart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.692307" vertical-offset="708" max-vertical-offset="1768">
+          <caret line="63" column="62" selection-start-line="58" selection-start-column="8" selection-end-line="63" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.796296" vertical-offset="1182" max-vertical-offset="16966">
+          <caret line="107" column="36" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
+          <folding>
+            <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <element signature="n#actionManageProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <element signature="n#actionCheckFullInfo#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <element signature="n#actionVerifyProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <element signature="n#actionEvaluateProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <element signature="n#mark_trigger#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <element signature="n#actionNewsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <element signature="n#actionNotifiesList#0;n#AutorizedController#0;n#!!top" expanded="false" />
+            <marker date="1414136187113" expanded="false" signature="45120:45132" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.1666665" vertical-offset="2628" max-vertical-offset="3468">
+          <caret line="171" column="37" selection-start-line="171" selection-start-column="37" selection-end-line="171" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#canvas#0;n#span#2;n#div#0;n#div#0;n#div#5;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#canvas#0;n#span#2;n#div#0;n#div#0;n#div#6;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#canvas#0;n#span#2;n#div#0;n#div#0;n#div#7;n#div#0;n#section#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/StatisticCharts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72985244" vertical-offset="1550" max-vertical-offset="2431">
+          <caret line="134" column="29" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
           <folding />
         </state>
       </provider>

@@ -77,8 +77,37 @@ class AutorizedController extends Controller
 
     public function actionStatistics()
 	{
+        if(Yii::app()->request->isAjaxRequest){
 
-		$this->render('statistics');
+            if(isset($_GET['chart'])){
+
+                $chart = new RegistrationChart();
+                $chart_data = $chart->compileJsonData();
+
+                echo CJSON::encode($chart_data);
+                Yii::app()->end();
+            }
+
+
+            echo CJSON::encode('hi');
+            Yii::app()->end();
+        }
+
+        $charts = new StatisticCharts();
+
+        $topFive = $charts->getUniversData();
+        $stagesData = $charts->getStagesData();
+        $managersData = $charts->getManagersData();
+        $moneyData = $charts->getMoneyData();
+
+
+		$this->render('statistics',array(
+            'topUnivers'=>$topFive,
+            'stagesData'=>$stagesData,
+            'managersData'=>$managersData,
+            'moneyData'=>$moneyData,
+
+        ));
 	}
 
     public function actionDashboard()
