@@ -16,7 +16,7 @@ class RegistrationChart {
 
     public function getProjectRegInfo(){
         $this->_day = 1;
-
+        $this->_old_count = 0;
         $criteria = new CDbCriteria;
         $criteria->select = 'count(REG_DATE),REG_DATE';
         $criteria->group = 'DAY(REG_DATE)';
@@ -27,17 +27,17 @@ class RegistrationChart {
         $arr = array();
         foreach($proj_reg_day as $p_k=>$p_v){
 
+            $date = explode(" ",$p_v->REG_DATE);
+            $day =  explode("-",$date[0]);
+
             $criteria= new CDbCriteria();
             $criteria->select = 'REG_DATE';
-            $criteria->condition = 'REG_DATE <= :REG_DATE';
-            $criteria->params = array(':REG_DATE'=>$p_v->REG_DATE);
+            $criteria->condition = "REG_DATE LIKE '%$date[0]%'";
+//            $criteria->params = array(':REG_DATE'=>$p_v->REG_DATE);
 
             $count_proj = ProjectRegistry::model()->count($criteria);
 
-            $date = explode(" ",$p_v->REG_DATE);
 
-
-            $day =  explode("-",$date[0]);
             $nday = $day[2];
 
             if((int)$day[1] == 9){
@@ -52,8 +52,8 @@ class RegistrationChart {
                 $this->_day = (int) $nday;
             }
 
-
-            $arr[] = array($this->_day,(int)$count_proj);
+            $this->_old_count += (int)$count_proj;
+            $arr[] = array($this->_day,$this->_old_count);
 
         }
         return $arr;

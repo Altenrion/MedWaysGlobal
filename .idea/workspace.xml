@@ -88,8 +88,8 @@
       <file leaf-file-name="RegistrationChart.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/components/RegistrationChart.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6912599" vertical-offset="1108" max-vertical-offset="2159">
-              <caret line="106" column="49" selection-start-line="106" selection-start-column="49" selection-end-line="106" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.61748016" vertical-offset="306" max-vertical-offset="2159">
+              <caret line="55" column="58" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -962,8 +962,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/RegistrationChart.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6912599" vertical-offset="1108" max-vertical-offset="2159">
-          <caret line="106" column="49" selection-start-line="106" selection-start-column="49" selection-end-line="106" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.61748016" vertical-offset="306" max-vertical-offset="2159">
+          <caret line="55" column="58" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
           <folding />
         </state>
       </provider>
