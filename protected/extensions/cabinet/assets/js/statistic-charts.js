@@ -73,7 +73,7 @@ function initStatisticCharts() {
         $("<div id='tooltip'>" + contents + "</div>").css({
             position: "absolute",
             display: "none",
-            top: y + 5,
+            top: y - 30,
             left: x + 5,
             border: "1px solid #000",
             padding: "5px",
@@ -104,10 +104,10 @@ function initStatisticCharts() {
             points: {
                 show: true
             },
-            shadowSize: 2
+            shadowSize: 3
         },
         legend:{
-            show: true
+            show: false
         },
         grid: {
             labelMargin: 10,

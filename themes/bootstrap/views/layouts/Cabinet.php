@@ -61,13 +61,13 @@ Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/skins.css');
     </a>
 
     <!-- BEGIN NEWS TICKER -->
-    <div class="ticker">
-        <strong>Важно:</strong>
-        <ul>
-            <li>Регистрация проектов открыта до 15 октября! </li>
-            <li>К конкурсу допускаются подтвержденные вузом проекты.</li>
-        </ul>
-    </div>
+<!--    <div class="ticker">-->
+<!--        <strong>Важно:</strong>-->
+<!--        <ul>-->
+<!--            <li>Регистрация проектов открыта до 15 октября! </li>-->
+<!--            <li>К конкурсу допускаются подтвержденные вузом проекты.</li>-->
+<!--        </ul>-->
+<!--    </div>-->
     <!-- END NEWS TICKER -->
 
     <div class="navbar-right">
