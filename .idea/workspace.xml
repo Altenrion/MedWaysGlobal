@@ -35,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AutorizedController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AutorizedController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46547619" vertical-offset="510" max-vertical-offset="16966">
-              <caret line="53" column="55" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
+            <state vertical-scroll-proportion="-5.351852" vertical-offset="510" max-vertical-offset="16966">
+              <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
               <folding>
                 <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionManageProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
@@ -68,12 +68,10 @@
       <file leaf-file-name="statistics.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.574074" vertical-offset="2683" max-vertical-offset="3536">
-              <caret line="166" column="12" selection-start-line="166" selection-start-column="12" selection-end-line="166" selection-end-column="12" />
+            <state vertical-scroll-proportion="-5.1666665" vertical-offset="860" max-vertical-offset="3536">
+              <caret line="67" column="117" selection-start-line="67" selection-start-column="117" selection-end-line="67" selection-end-column="117" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#section#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#canvas#0;n#span#2;n#div#0;n#div#0;n#div#4;n#div#0;n#section#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#canvas#0;n#span#2;n#div#0;n#div#0;n#div#5;n#div#0;n#section#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#canvas#0;n#span#2;n#div#0;n#div#0;n#div#6;n#div#0;n#section#1;n#!!top" expanded="true" />
@@ -112,13 +110,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="statistic-charts.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="statistic-charts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/js/statistic-charts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="3774">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.70011026" vertical-offset="3122" max-vertical-offset="4029">
+              <caret line="221" column="0" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
               <folding>
-                <marker date="1414092995659" expanded="true" signature="2614:2673" placeholder="..." />
+                <marker date="1414265104764" expanded="true" signature="2614:2673" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -194,13 +192,13 @@
         <option value="$PROJECT_DIR$/../Coming_soon/index.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
-        <option value="$PROJECT_DIR$/protected/extensions/cabinet/assets/js/statistic-charts.js" />
         <option value="$PROJECT_DIR$/protected/components/TopUnivers.php" />
         <option value="$PROJECT_DIR$/protected/components/RegistrationChart.php" />
         <option value="$PROJECT_DIR$/protected/components/StatisticCharts.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/cabinet/assets/js/statistic-charts.js" />
       </list>
     </option>
   </component>
@@ -970,29 +968,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="9231">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/widgets/BrowserCounter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="907">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/js/statistic-charts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="3774">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <marker date="1414092995659" expanded="true" signature="2614:2673" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1012,21 +992,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.574074" vertical-offset="2683" max-vertical-offset="3536">
-          <caret line="166" column="12" selection-start-line="166" selection-start-column="12" selection-end-line="166" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#canvas#0;n#span#2;n#div#0;n#div#0;n#div#4;n#div#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#canvas#0;n#span#2;n#div#0;n#div#0;n#div#5;n#div#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#canvas#0;n#span#2;n#div#0;n#div#0;n#div#6;n#div#0;n#section#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.23077" vertical-offset="1873" max-vertical-offset="3825">
@@ -1035,10 +1000,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="9231">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46547619" vertical-offset="510" max-vertical-offset="16966">
-          <caret line="53" column="55" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
+        <state vertical-scroll-proportion="-5.351852" vertical-offset="510" max-vertical-offset="16966">
+          <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
           <folding>
             <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionManageProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
@@ -1049,6 +1022,29 @@
             <element signature="n#actionNewsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionNotifiesList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <marker date="1414167612276" expanded="false" signature="45133:45145" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.1666665" vertical-offset="860" max-vertical-offset="3536">
+          <caret line="67" column="117" selection-start-line="67" selection-start-column="117" selection-end-line="67" selection-end-column="117" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#canvas#0;n#span#2;n#div#0;n#div#0;n#div#4;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#canvas#0;n#span#2;n#div#0;n#div#0;n#div#5;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#canvas#0;n#span#2;n#div#0;n#div#0;n#div#6;n#div#0;n#section#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/cabinet/assets/js/statistic-charts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70011026" vertical-offset="3122" max-vertical-offset="4029">
+          <caret line="221" column="0" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+          <folding>
+            <marker date="1414265104764" expanded="true" signature="2614:2673" placeholder="..." />
           </folding>
         </state>
       </provider>

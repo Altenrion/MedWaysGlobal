@@ -208,10 +208,25 @@ function initKnob() {
         }
     });
 }
+function progress(percent, element) {
+
+    var progressBarWidth =  percent *element.parent().width() / 100;
+    element.animate({ width: progressBarWidth }, 500);
+
+}
 
 $(function($) {
     "use strict";
 
+    $('.progress-bar').each(function() {
+        var bar = $(this);
+        var max = $(this).attr('aria-valuenow');
+
+        progress(max, bar);
+    });
+
     initStatisticCharts();
     initKnob();
+
+
 });
