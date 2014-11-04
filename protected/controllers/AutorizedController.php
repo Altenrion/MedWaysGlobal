@@ -1228,7 +1228,21 @@ class AutorizedController extends Controller
     }
 
     public function checkFinanceBustersRole(){
-        return false;
+        $experts = [
+            ['id'=>'771','stages'=>['1','2','4','5']],
+            ['id'=>'775','stages'=>['6','10','11']],
+            ['id'=>'761','stages'=>['8','9']],
+        ];
+
+        $stages='';
+        foreach($experts as $expert_n=>$expert_data) {
+            if (Yii::app()->user->id == $expert_data['id']){
+                $stages = $expert_data['stages'];
+            }
+        }
+        if($stages != ''){
+            return $stages;
+        }else{return false;}
     }
 
 
