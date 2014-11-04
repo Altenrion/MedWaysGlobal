@@ -1234,6 +1234,8 @@ class AutorizedController extends Controller
     public function checkFinanceBustersRole(){
         $experts = [
 //            ['id'=>'1','stages'=>['1','2','4','5']],
+
+            ['id'=>'550','stages'=>['1','2','4','5']],
             ['id'=>'771','stages'=>['1','2','4','5']],
             ['id'=>'764','stages'=>['14','13']],
             ['id'=>'774','stages'=>['6','10','11']],
