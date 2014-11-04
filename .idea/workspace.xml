@@ -38,8 +38,8 @@
       <file leaf-file-name="AutorizedController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1162256" vertical-offset="13191" max-vertical-offset="16167">
-              <caret line="1243" column="27" selection-start-line="1243" selection-start-column="27" selection-end-line="1243" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.39240506" vertical-offset="13089" max-vertical-offset="16218">
+              <caret line="1200" column="0" selection-start-line="1200" selection-start-column="0" selection-end-line="1200" selection-end-column="0" />
               <folding>
                 <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionManageProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
@@ -50,7 +50,7 @@
                 <element signature="n#actionNewsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionNotifiesList#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionJuliaList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                <marker date="1415128000340" expanded="false" signature="45905:45917" placeholder="..." />
+                <marker date="1415129026668" expanded="false" signature="46179:46191" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -76,6 +76,17 @@
               <folding>
                 <marker date="1409947746470" expanded="false" signature="943:1002" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistrationChart.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/components/RegistrationChart.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="7.8461537" vertical-offset="901" max-vertical-offset="2159">
+              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+              <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -866,15 +877,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/RegistrationChart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.23129252" vertical-offset="901" max-vertical-offset="2159">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/StatisticCharts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.59183675" vertical-offset="430" max-vertical-offset="2278">
@@ -899,10 +901,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/RegistrationChart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.8461537" vertical-offset="901" max-vertical-offset="2159">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1162256" vertical-offset="13191" max-vertical-offset="16167">
-          <caret line="1243" column="27" selection-start-line="1243" selection-start-column="27" selection-end-line="1243" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.39240506" vertical-offset="13089" max-vertical-offset="16218">
+          <caret line="1200" column="0" selection-start-line="1200" selection-start-column="0" selection-end-line="1200" selection-end-column="0" />
           <folding>
             <element signature="n#actionManageNews#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionManageProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
@@ -913,7 +924,7 @@
             <element signature="n#actionNewsList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionNotifiesList#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionJuliaList#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1415128000340" expanded="false" signature="45905:45917" placeholder="..." />
+            <marker date="1415129026668" expanded="false" signature="46179:46191" placeholder="..." />
           </folding>
         </state>
       </provider>

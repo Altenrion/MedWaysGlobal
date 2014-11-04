@@ -1199,7 +1199,9 @@ class AutorizedController extends Controller
             /** Критерий для эксперта 2 уровня (по платформе и округу)*/
             case 'Exp2' :
 
-                if($this->checkFinanceBustersRole()){
+                if($cats = $this->checkFinanceBustersRole()){
+                    $criteria->condition = 't.ID_STAGE IN ('.$cats.')  AND us.ID_DISTRICT = :dist AND FIRST_LAVEL_APPROVAL = 3';
+                    $criteria->params = array(":dist" => $user['ID_DISTRICT']);
 
                 }
                 else{
@@ -1210,7 +1212,7 @@ class AutorizedController extends Controller
 
             /** Критерий для эксперта 3 уровня (по платформе) */
             case 'Exp3' :
-                if($this->checkFinanceBustersRole()){
+                if($cats = $this->checkFinanceBustersRole()){
 
                 }
                 else{
@@ -1230,7 +1232,8 @@ class AutorizedController extends Controller
     public function checkFinanceBustersRole(){
         $experts = [
             ['id'=>'771','stages'=>['1','2','4','5']],
-            ['id'=>'775','stages'=>['6','10','11']],
+            ['id'=>'764','stages'=>['14','13']],
+            ['id'=>'774','stages'=>['6','10','11']],
             ['id'=>'761','stages'=>['8','9']],
         ];
 
