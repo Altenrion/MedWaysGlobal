@@ -1200,7 +1200,9 @@ class AutorizedController extends Controller
             case 'Exp2' :
 
                 if($cats = $this->checkFinanceBustersRole()){
-                    $criteria->condition = 't.ID_STAGE IN ('.$cats.')  AND us.ID_DISTRICT = :dist AND FIRST_LAVEL_APPROVAL = 3';
+//                    var_dump(CJSON::encode($cats));
+//                    Yii::app()->end();
+                    $criteria->condition = 't.ID_STAGE IN ('.str_replace(['[',']'],' ',CJSON::encode($cats)).')  AND us.ID_DISTRICT = :dist AND FIRST_LAVEL_APPROVAL = 3';
                     $criteria->params = array(":dist" => $user['ID_DISTRICT']);
 
                 }
