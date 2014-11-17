@@ -1221,7 +1221,7 @@ class AutorizedController extends Controller
 //                    Yii::app()->end();
                 }
                 else{
-                $criteria->condition = 't.ID_STAGE = :stage AND t.SECOND_LAVEL_RATING IS NOT NULL';
+                $criteria->condition = 't.ID_STAGE = :stage AND t.SECOND_LAVEL_RATING IS NOT NULL AND t.ID_PROJECT IN (22, 27, 34, 36, 39, 43, 47, 48, 52, 53, 56, 57, 61, 63, 65, 70, 77, 98, 101, 102, 110, 114, 115, 121, 122, 124, 126, 129, 131, 132, 133, 135, 142, 146, 148, 150, 152, 155, 157, 158, 161, 162, 168, 169, 170, 171, 172, 173, 174, 177, 179, 180, 183, 185, 187, 188, 190, 191, 193, 195, 196, 197, 198, 199, 202, 206, 207, 209, 210, 211, 213, 218, 221, 222, 223, 232, 237, 240, 242, 246, 247, 248, 251, 252, 253, 255, 257, 258, 259, 261, 263, 264, 265, 267, 280, 281, 282, 283, 285, 286)';
                 $criteria->params = array(":stage" => $user['ID_STAGE']);
                 }
                 break;
@@ -1236,7 +1236,7 @@ class AutorizedController extends Controller
 
     public function checkFinanceBustersRole(){
         $experts = [
-            ['id'=>'1','stages'=>['1','2','4','5']],
+//            ['id'=>'1','stages'=>['1','2','4','5']],
 //            ['id'=>'550','stages'=>['1','2','4','5']],
             ['id'=>'771','stages'=>['1','2','4','5']],
             ['id'=>'764','stages'=>['14','13']],
