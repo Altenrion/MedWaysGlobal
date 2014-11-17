@@ -1215,10 +1215,13 @@ class AutorizedController extends Controller
             /** Критерий для эксперта 3 уровня (по платформе) */
             case 'Exp3' :
                 if($cats = $this->checkFinanceBustersRole()){
-
+                    $criteria->condition = 't.ID_STAGE IN ('.str_replace(['[',']'],' ',CJSON::encode($cats)).')  AND us.ID_DISTRICT = :dist AND FIRST_LAVEL_APPROVAL = 3';
+                    $criteria->params = array(":dist" => $user['ID_DISTRICT']);
+//                var_dump($cats);
+//                    Yii::app()->end();
                 }
                 else{
-                $criteria->condition = 't.ID_STAGE = :stage AND SECOND_LEVEL_RATING NOT NULL';
+                $criteria->condition = 't.ID_STAGE = :stage AND t.SECOND_LAVEL_RATING IS NOT NULL';
                 $criteria->params = array(":stage" => $user['ID_STAGE']);
                 }
                 break;
@@ -1233,8 +1236,7 @@ class AutorizedController extends Controller
 
     public function checkFinanceBustersRole(){
         $experts = [
-//            ['id'=>'1','stages'=>['1','2','4','5']],
-
+            ['id'=>'1','stages'=>['1','2','4','5']],
 //            ['id'=>'550','stages'=>['1','2','4','5']],
             ['id'=>'771','stages'=>['1','2','4','5']],
             ['id'=>'764','stages'=>['14','13']],
