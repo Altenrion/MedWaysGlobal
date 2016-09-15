@@ -14,7 +14,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" align="center" data-editable="image">
                                         <tr>
                                             <td valign="top" align="center" style="padding:0;margin:0;border-style:solid;border-width:0px;border-color:#e2e2e2;">
-                                                <img src="http://vuznauka2014.medways.ru/images/art/docs.png" alt="" width="570" height="234" border="0" style="display:block;">
+                                                <img src="http://Vuznauka2017.ru/images/art/docs.png" alt="" width="570" height="234" border="0" style="display:block;">
                                             </td>
                                         </tr>
                                     </table>
@@ -69,7 +69,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" align="center" data-editable="button">
                                         <tr>
                                             <td valign="top" width="300" bgcolor="#F9221B"   align="center" style="padding-top:13px;padding-bottom:14px;padding-left:0;padding-right:0;margin:0;">
-                                                <a href="http://vuznauka2014.medways.ru/ShowCase/aktivation?email={email}" style="font-family:Verdana,Arial,Helvetica;color:#ffffff;font-size:15px;text-decoration:none; text-transform: uppercase;">
+                                                <a href="http://Vuznauka2017.ru/ShowCase/aktivation?email={email}" style="font-family:Verdana,Arial,Helvetica;color:#ffffff;font-size:15px;text-decoration:none; text-transform: uppercase;">
                                                     Активировать сейчас &raquo;
                                                 </a>
                                             </td>

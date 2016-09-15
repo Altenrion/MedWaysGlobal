@@ -113,7 +113,7 @@
                                 <div class="controls">
                                     <select name="RegForm[roles]" id="RegForm_roles"  class="required">
                                         <option value="">...</option>
-<!--                                        <option value="Manager">Руководитель проекта</option>-->
+                                        <option value="Manager">Руководитель проекта</option>
                                         <option value="Exp">Эксперт</option>
 
                                     </select>
