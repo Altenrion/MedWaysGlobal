@@ -40,3 +40,4 @@ uploads/clients.php
 uploads/*
 assets/*
 .idea/*
+.idea/workspace.xml
