@@ -54,7 +54,7 @@ class EDataColumn extends CDataColumn {
 		return ob_get_clean();
 	}
 
-    public function getDistrict($id_district){
+    public static function getDistrict($id_district){
         $distr = '';
         switch($id_district){
             case '1':  $distr= 'ЦФО';  break;

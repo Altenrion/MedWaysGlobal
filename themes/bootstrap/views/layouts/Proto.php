@@ -60,15 +60,15 @@
                                 <li><a href="<?= (Yii::app()->controller->action->id == 'info')?('#DOCS'):(Yii::app()->createUrl('ShowCase/info').'#DOCS')     ?>">Локальные документы</a></li>
                                 <li><a href="<?= (Yii::app()->controller->action->id == 'info')?('#PLATF'):(Yii::app()->createUrl('ShowCase/info').'#PLATF')     ?>">Научные платформы</a></li>
                                 <li><a href="<?= (Yii::app()->controller->action->id == 'info')?('#NPB'):(Yii::app()->createUrl('ShowCase/info').'#NPB')     ?>">Нормативная база</a></li>
-                                <li><a href="<?=Yii::app()->createUrl('ShowCase/statistics')   ?>">Статистика</a></li>
+<!--                                <li><a href="--><?//=Yii::app()->createUrl('ShowCase/statistics')   ?><!--">Статистика</a></li>-->
                             </ul>
                         </li>
                         <li class="dropdown"><a href="<?=Yii::app()->createUrl('ShowCase/organizers')?>" class="dropdown-toggle">Организаторы</a>
 
                         </li>
-                        <li><a href="<?=Yii::app()->createUrl('ShowCase/partners')?>">Партнеры</a></li>
+<!--                        <li><a href="--><?//=Yii::app()->createUrl('ShowCase/partners')?><!--">Партнеры</a></li>-->
 
-                        <li><a href="<?=Yii::app()->createUrl('ShowCase/feedback')?>">Обратная связь </a></li>
+<!--                        <li><a href="--><?//=Yii::app()->createUrl('ShowCase/feedback')?><!--">Обратная связь </a></li>-->
 
                         <li class="mobi"><a href="<?=Yii::app()->createUrl('ShowCase/login')?>">Вход </a></li>
                     </ul>
@@ -96,16 +96,7 @@
 
     <div class="offset"></div>
 
-
-
-
-
             <?php echo $content; ?>
-
-
-
-
-
 
 
     <footer class="black-wrapper">
@@ -114,38 +105,26 @@
                 <section class="col-sm-3 widget">
                     <h3 class="section-title widget-title">Базовые вузы</h3>
                     <ul class="post-list" >
-
-
-                        <li>ЦФО – <a href="#" style="font-size: 9pt;">Рязанский государственный медицинский университет имени академика И.П. Павлова</a></li>
+                        <li>ЦФО – <a href="#" style="font-size: 9pt;">Воронежский государственный медицинский университет им. Н.Н. Бурденко</a></li>
                         <li>ЮФО – <a href="#" style="font-size: 9pt;">Кубанский государственный медицинский университет</a></li>
-                        <li>СЗФО – <a href="#" style="font-size: 9pt;">Санкт-Петербургский государственный медицинский университет имени академика И.П. Павлова</a></li>
-                        <li>ДФО – <a href="#" style="font-size: 9pt;">Дальневосточный государственный медицинский университет</a></li>
+                        <li>СЗФО – <a href="#" style="font-size: 9pt;">Северо-Западный государственный медицинский университет имени И.И. Мечникова</a></li>
                         <li>СФО – <a href="#" style="font-size: 9pt;">Красноярский государственный Медицинский университет имени профессора В.Ф. Войно-Ясенецкого</a></li>
-                        <li>УФО – <a href="#" style="font-size: 9pt;">Южно-Уральский государственный медицинский университет</a></li>
-                        <li>ПФО – <a href="#" style="font-size: 9pt;">Самарский государственный медицинский университет</a></li>
+                        <li>ДФО – <a href="#" style="font-size: 9pt;">Тихоокеанский государственный медицинский университет</a></li>
+                        <li>УФО – <a href="#" style="font-size: 9pt;">Уральский государственный медицинский университет</a></li>
+                        <li>ПФО – <a href="#" style="font-size: 9pt;">Саратовский государственный медицинский университет имени В. И. Разумовского</a></li>
                         <li>СКФО – <a href="#" style="font-size: 9pt;">Ставропольский государственный медицинский университет</a></li>
-
-<!--                        <li>-->
-<!--                            <a href="#">Онкология</a>-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <a href="#">Кардиология и ангиология</a>-->
-<!--                        <li>-->
-<!--                            <h6><a href="#">Неврология</a></h6>-->
                     </ul>
                     <!-- /.post-list -->
                 </section>
                 <!-- /.widget -->
-                <section class="col-sm-3 widget">
-                    <h3 class="section-title widget-title">О мероприятии</h3>
-                    <p>ЭСТАФЕТА ВУЗОВСКОЙ НАУКИ – проект федерального масштаба, основной целью которого является поддержка ведущих научных коллективов, осуществляющих исследовательскую деятельность в приоритетных направлениях развития медицинской науки, ориентированных на создание высокотехнологичных инновационных продуктов, обеспечивающих сохранение и укрепление здоровья населения;
-                        интеграция научно-инновационного опыта,  образовательной деятельности и лечебного процесса.</p>
-                </section>
+<!--                <section class="col-sm-3 widget">-->
+<!--                    <h3 class="section-title widget-title">О мероприятии</h3>-->
+<!--                    <p>ЭСТАФЕТА ВУЗОВСКОЙ НАУКИ – проект федерального масштаба, основной целью которого является поддержка ведущих научных коллективов, осуществляющих исследовательскую деятельность в приоритетных направлениях развития медицинской науки, ориентированных на создание высокотехнологичных инновационных продуктов, обеспечивающих сохранение и укрепление здоровья населения;-->
+<!--                        интеграция научно-инновационного опыта,  образовательной деятельности и лечебного процесса.</p>-->
+<!--                </section>-->
                 <!-- /.widget -->
                 <section class="col-sm-3 widget">
                     <h3 class="section-title widget-title">Научные платформы</h3>
-
-
 
                     <div class="tagcloud">
                         <a href="#" style="font-size: 12pt;">Онкология</a>
@@ -167,26 +146,35 @@
                 </section>
                 <!-- /.widget -->
                 <section class="col-sm-3 widget">
-                    <h3 class="section-title widget-title">Контакты</h3>
+                    <h3 class="section-title widget-title">Организаторы</h3>
                     <strong>Региональный этап мероприятия:</strong>
+                    <p>ФГБОУ ВО «Воронежский государственный медицинский университет им. Н.Н.
+                        Бурденко» Министерства здравоохранения Российской Федерации
+                    </p>
 
-
-                    <p>ГБОУ ВПО СибГМУ Минздрава России</p>
-                    <strong>Центр трансфера технологий</strong>
-                    <div class="divide5"></div>
-
-                    <i class="icon-mail contact"></i> <a href="#">okr@ssmu.ru</a>
                     <div class="divide20"></div>
 
                     <strong>Финальный этап мероприятия:</strong>
 
+                    <p>ФГБОУ ФО Первый МГМУ имени И.М. Сеченова Минздрава России</p>
 
-                    <p>ГБОУ ВПО Первый МГМУ имени И.М. Сеченова Минздрава России</p>
-                    <strong>Университетский технопарк</strong>
+
+                </section>
+                <section class="col-sm-3 widget">
+                    <h3 class="section-title widget-title">Контакты</h3>
+
+                    <strong>Контакты по научно организационным вопросам</strong>
+                    <div class="divide30"></div>
+
+                    <strong> Мешалкина Наталия Юрьевна:</strong>
+                    <div class="divide5"></div>
+                    <i class="icon-mail contact"></i> <a href="#">posrc12@yandex.ru</a></br>
+                    <i class="icon-phone contact"></i> <a href="#">+7(495) 622-95- 00</a></br>
+                    <div class="divide30"></div>
+
+                    <strong> Тимошенко Камилла Талгатовна:</strong>
                     <div class="divide10"></div>
-
-                    <i class="icon-mail contact"></i> <a href="#">kuznetsova.yulia@bk.ru,</a></br>
-                    <i class="icon-mail contact"></i> <a href="#">administration@medways.ru</a>
+                    <i class="icon-mail contact"></i> <a href="#">kamilla.timoshenko@gmail.com</a></br>
                 </section>
 
 
@@ -233,8 +221,5 @@
     <script src="<?=Yii::app()->baseUrl?>/js/adaptive/scripts.js"></script>
     <script src="<?=Yii::app()->baseUrl?>/js/skel/skel.min.js"></script>
     <script src="<?=Yii::app()->baseUrl?>/js/skel/init.js"></script>
-<!--    <script src="--><?//=Yii::app()->baseUrl?><!--/js/validator/jquery.validate.min.js"></script>-->
-    <!-- DEMO ONLY -->
-
     </body>
 </html>

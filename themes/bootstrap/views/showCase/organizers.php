@@ -86,6 +86,7 @@
                 </div>
             </div>
 
+            <? if(false): ?>
 
             <div class="col-sm-6">
                 <h3 class="section-title bm30">Базовые вузы</h3>
@@ -138,6 +139,7 @@
             </div>
             </div>
 
+            <? endif; ?>
                 </div>
 
 
@@ -146,6 +148,7 @@
 </div>
 
 
+<? if(false): ?>
 
 <div class="light-wrapper inner">
     <div class="container text-center">
@@ -237,3 +240,4 @@
     <!-- /.lm10 -->
 </div>
 <!-- /.light-wrapper -->
+<? endif; ?>
