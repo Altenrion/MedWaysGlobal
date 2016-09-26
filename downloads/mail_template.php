@@ -44,7 +44,7 @@
                                 <td align="left" valign="top" style="padding-top:0;padding-bottom:25px;padding-left:23px;padding-right:23px;margin:0;">
                                     <span style="font-family:'Trebuchet MS',sans-serif;font-size:13px;  text-indent:0; color: rgb(136, 136, 136);">
                                        <p>Здравствуйте {name} {sname}! Вы зарегистрировались на участие в Общероссийском научно-практическом мероприятии
-                                           «ЭСТАФЕТА ВУЗОВСКОЙ НАУКИ» на портале <b>vuznauka2014.medways.ru</b>. Выбранная Вами форма участия - {role}.
+                                           «ЭСТАФЕТА ВУЗОВСКОЙ НАУКИ» на портале <a href="http://vuznauka2017.ru/"><b>vuznauka2017.ru</b></a> . Выбранная Вами форма участия - {role}.
                                            Мы благодарны за проявленное внимание к нашему проекту.
 
                                            Указанные при регистрации данные для входа:</p>
@@ -88,7 +88,6 @@
                                 <td align="left" valign="top" style="padding-top:0;padding-bottom:15px;padding-left:23px;padding-right:23px;margin:0;">
                                     <span style="font-family:Arial,Verdana,Helvetica;color:#6f6f6f;font-size:10px; font-style:italic;">
                                        Если Вы не регистрировались на это мероприятие, просто проигнорируйте и удалите это сообщение.
-									   Мы будем признательны, если Вы сообщите об этом по адресу administration@medways.ru
                                     </span>
                                 </td>
                             </tr>

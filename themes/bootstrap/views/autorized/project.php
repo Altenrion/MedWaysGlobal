@@ -234,7 +234,7 @@ if(isset($data) && !is_null($data)){
                         'format'      => 'YYYY', //in this format date sent to server
                         'viewformat'  => 'YYYY', //in this format date is displayed
                         'template'    => 'YYYY', //template for dropdowns
-                        'combodate'   => array('minYear' => 1980, 'maxYear' => 2015),
+                        'combodate'   => array('minYear' => 2000, 'maxYear' => 2017),
                         'options'     => array( 'disabled'=>true, ) )); ?>
                     </div>
                 </div>
@@ -250,7 +250,7 @@ if(isset($data) && !is_null($data)){
                         'format'      => 'YYYY', //in this format date sent to server
                         'viewformat'  => 'YYYY', //in this format date is displayed
                         'template'    => 'YYYY', //template for dropdowns
-                        'combodate'   => array('minYear' => 2014, 'maxYear' => 2030),
+                        'combodate'   => array('minYear' => 2016, 'maxYear' => 2030),
                         'options'     => array('disabled'=>true, ) )); ?>
                     </div>
                 </div>

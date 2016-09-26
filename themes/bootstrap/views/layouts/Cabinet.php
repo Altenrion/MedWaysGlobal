@@ -50,7 +50,7 @@ Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/skins.css');
 <header class="header">
 <!-- BEGIN LOGO -->
 <a href="<?=Yii::app()->createUrl('Autorized/profile')?>" class="logo">
-    <img src="<?=$assetsUrl?>/img/logo.png" alt="Kertas" height="20">
+<!--    <img src="--><?//=$assetsUrl?><!--/img/logo.png" alt="Kertas" height="20">-->
 </a>
 <!-- END LOGO -->
 <!-- BEGIN NAVBAR -->
@@ -133,13 +133,13 @@ Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/skins.css');
                 <? if($this->checkRole(array('Exp1','Exp2','Exp3','Dev'))): ?>
                     <li><a href="<?=Yii::app()->createUrl('Autorized/projects')?>"><i class="fa fa-graduation-cap"></i><span>Проекты</span></a></li>
                 <? endif; ?>
-                <? if($this->checkRole(array('Dev','Exp1','Exp2','Exp3','Manager'))): ?>
+                <? if($this->checkRole(array('Dev'))): ?>
                     <li><a href="<?=Yii::app()->createUrl('Autorized/statistics')?>"><i class="fa fa-bar-chart-o"></i><span>Статистика</span></a></li>
                 <? endif; ?>
                 <? if(false): ?>
                     <li><a href="<?=Yii::app()->createUrl('Autorized/info')?>"><i class="fa fa-info"></i><span>Информация</span></a></li>
                 <? endif; ?>
-                <? if($this->checkRole(array('Dev','Manager','Exp','Exp1','Exp2','Exp3'))): ?>
+                <? if($this->checkRole(array('Dev'))): ?>
                     <li><a href="<?=Yii::app()->createUrl('Autorized/news')?>"><i class="fa fa-calendar"></i><span>Новости</span></a></li>
                 <? endif; ?>
 

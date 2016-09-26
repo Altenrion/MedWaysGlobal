@@ -2,12 +2,10 @@
 
 class ShowCaseController extends Controller
 {
-
-
     use MyTraits;
 
-
     public  $layout = '//layouts/Proto';
+
     public $defaultAction = 'index';
 
     public function filters()
@@ -43,12 +41,10 @@ class ShowCaseController extends Controller
 
 	}
 
-
-   public function actionPartners()
+    public function actionPartners()
 	{
 		$this->render('partners');
 	}
-
 
     public function actionRegPartners()
     {
@@ -78,20 +74,16 @@ class ShowCaseController extends Controller
         }
     }
 
-
-
 	public function actionStatistics()
 	{
 
 		$this->render('statistics');
 	}
 
-
     public function actionInfo()
 	{
 		$this->render('info');
 	}
-
 
     public function actionFeedbackQuestions()
         {
@@ -121,18 +113,15 @@ class ShowCaseController extends Controller
             }
         }
 
-
     public function actionFeedback()
 	{
 		$this->render('feedback');
 	}
 
-
     public function actionOrganizers()
 	{
 		$this->render('organizers');
 	}
-
 
     public function mailAktivation($name,$sname,$role,$email,$password){
 
@@ -158,8 +147,6 @@ class ShowCaseController extends Controller
         Yii::app()->mail->send($message);
 
     }
-
-
 
     public function actionRegistration()
 	{
@@ -209,11 +196,6 @@ class ShowCaseController extends Controller
 
 	}
 
-
-
-
-
-
     public function actionError()
     {
         if($error=Yii::app()->errorHandler->error)
@@ -241,7 +223,6 @@ class ShowCaseController extends Controller
             }
         }
     }
-
 
 	public function actionLogin()
 	{
@@ -277,7 +258,6 @@ class ShowCaseController extends Controller
         Yii::app()->user->logout();
         $this->redirect(Yii::app()->homeUrl);
     }
-
 
     public function actionGenerateMap(){
 
