@@ -49,7 +49,7 @@ class AutorizedController extends Controller
             ),
             array('allow',
                 'actions' => array('profile', 'news', 'info', 'project'),
-                'roles' => array('Dev', 'Manager', 'Exp', 'Exp1', 'Exp2', 'Exp3'),
+                'roles' => array('Dev', 'Manager', 'Exp', 'Exp1', 'Exp2', 'Exp3', 'Moder'),
             ),
             array('allow',
                 'actions' => array('project', 'statistics'),
@@ -374,6 +374,7 @@ class AutorizedController extends Controller
             $clean_data = $data[0];
 
             if (!is_null($clean_data['roles'])) {
+
                 $role = $this->cleanRole($data[0]['roles']);
             }
 
@@ -381,7 +382,7 @@ class AutorizedController extends Controller
 
             $perc_proj = $count_quest = $count_proj = '0';
 
-            if ($this->checkRole(array('Exp', 'Exp1', 'Exp2', 'Exp3'))) {
+            if ($this->checkRole(array('Moder', 'Exp', 'Exp1', 'Exp2', 'Exp3'))) {
 
                 $criteria = $this->getProjectByCriteria();
                 $proj = ProjectRegistry::model()->findAll($criteria);
@@ -399,8 +400,10 @@ class AutorizedController extends Controller
                 $clean_datap = $datap[0];
                 $perc_proj = $this->CheckInfoPercentage($clean_datap);
             }
+
         } else {
             $this->redirect(Yii::app()->createUrl('showCase/login'));
+
         }
         $this->render('profile', array(
             'data' => $clean_data,
@@ -1377,6 +1380,9 @@ class AutorizedController extends Controller
                 break;
             case 'Manager':
                 $clean_role = 'Руководитель проекта';
+                break;
+            case 'Moder':
+                $clean_role = 'Координатор от вуза';
                 break;
             case 'Exp':
             case 'Exp1':

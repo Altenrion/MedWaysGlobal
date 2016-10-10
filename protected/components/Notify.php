@@ -36,7 +36,7 @@ class Notify {
     const USERS         = 'Users';     const ID         = 'id';
     const EXPERT        = 'Exp';       const EXPERT1    = 'Exp1';
     const EXPERT2       = 'Exp2';      const EXPERT3    = 'Exp3';
-    const MANAGERS      = 'Manager';
+    const MANAGERS      = 'Manager';   const MODER      = 'Moder';
 
 
 
@@ -60,6 +60,7 @@ class Notify {
                     case self::EXPERT1: $storage->address = self::EXPERT1;break;
                     case self::EXPERT2: $storage->address = self::EXPERT2;break;
                     case self::EXPERT3: $storage->address = self::EXPERT3;break;
+                    case self::MODER: $storage->address = self::MODER;break;
 
                 }
             }
@@ -67,8 +68,6 @@ class Notify {
 
         /**  Проверяем правильность указания регулярности оповещений    */
         ($repeat == 'once')?($storage->repeat = $repeat):($storage->repeat = 'regular');
-
-
 
         /**  Проверяем правильность указания прилипания оповещений    */
         ($type == 'sticky')?($storage->type = $type):($storage->type = 'quick');
@@ -103,6 +102,7 @@ class Notify {
             $role_notifies = NotificationStorage::model()->findAll("address = '".$user_role."' OR address='".self::USERS."' AND block = 0");
         }
         if( $user_role ==  self::EXPERT ||
+            $user_role ==  self::MODER ||
             $user_role ==  self::EXPERT1 ||
             $user_role ==  self::EXPERT2 ||
             $user_role ==  self::EXPERT3) {

@@ -53,7 +53,13 @@ return array(
         'bizRule' => null,
         'data' => null
     ),
-    
+     'Moder' => array(
+        'type' => CAuthItem::TYPE_ROLE,
+        'description' => 'Moder',
+        'bizRule' => null,
+        'data' => null
+    ),
+
     'Dev' => array(
         'type' => CAuthItem::TYPE_ROLE,
         'description' => 'Девелопер',

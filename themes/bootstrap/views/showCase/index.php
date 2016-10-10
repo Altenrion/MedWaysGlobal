@@ -34,28 +34,25 @@ $this->breadcrumbs = array(
                      data-easing="Sine.easeOut"><img src="<?= Yii::app()->baseUrl; ?>/images/art/slider-first2.png"
                                                      alt=""/></div>
                 <div class="caption sfr bold opacity-bg" data-x="620" data-y="270" data-speed="500" data-start="2500"
-                     data-easing="Sine.easeOut"> Открыта подача проектов
-                    <!--                    data-easing="Sine.easeOut">В эстафете -->
-                    <? //= (isset($clean_num)) ? ($clean_num) : ('500') ?><!-- !-->
+                         data-easing="Sine.easeOut">В эстафете
+                    <?= (isset($clean_num)) ? ($clean_num) : ('500') ?>
                 </div>
                 <div class="caption sfb" data-x="620" data-y="335" data-speed="500" data-start="3000"
-                     data-easing="Sine.easeOut"><a href="<?= Yii::app()->createUrl('ShowCase/login') ?>"
-                                                   class="btn btn-large">Подать заявку</a></div>
-                <!--                     data-easing="Sine.easeOut"><a href="-->
-                <? //= Yii::app()->createUrl('ShowCase/statistics') ?><!--" class="btn btn-large">Статистика</a></div>-->
+                     data-easing="Sine.easeOut"><a href="<?= Yii::app()->createUrl('ShowCase/statistics') ?>"
+                                                   class="btn btn-large">Статистика</a></div>
             </li>
-            <!--            <li data-transition="fade"> <img src="-->
-            <!--                --><? //=Yii::app()->baseUrl; ?><!--/images/art/slider-bg3.jpg" alt="" />-->
-            <!--                <div class="caption sfl" data-x="450" data-y="115" data-speed="900" data-start="500" data-easing="Sine.easeOut"><img src="-->
-            <!--                --><? //=Yii::app()->baseUrl; ?><!--/images/art/slider-browser.png" alt="" /></div>-->
-            <!--                <div class="caption sfl" data-x="800" data-y="180" data-speed="900" data-start="900" data-easing="Sine.easeOut"><img src="-->
-            <!--                --><? //=Yii::app()->baseUrl; ?><!--/images/art/slider-tablet.png" alt="" /></div>-->
-            <!--                <div class="caption sfl" data-x="980" data-y="290" data-speed="900" data-start="1600" data-easing="Sine.easeOut"><img src="-->
-            <!--                --><? //=Yii::app()->baseUrl; ?><!--/images/art/slider-mobile.png" alt="" /></div>-->
-            <!--                <div class="caption sfl bold opacity-bg" data-x="35" data-y="180" data-speed="500" data-start="1500" data-easing="Sine.easeOut">100% Responsive</div>-->
-            <!--                <div class="caption sfr bold opacity-bg" data-x="35" data-y="245" data-speed="500" data-start="2000" data-easing="Sine.easeOut">Retina-ready design</div>-->
-            <!--                <div class="caption sfb" data-x="35" data-y="310" data-speed="500" data-start="2500" data-easing="Sine.easeOut"><a href="#" class="btn btn-green btn-large">Get in Touch</a></div>-->
-            <!--            </li>-->
+<!--                        <li data-transition="fade"> <img src="-->
+<!--                            --><?// //=Yii::app()->baseUrl; ?><!--/images/art/slider-bg3.jpg" alt="" />-->
+<!--                            <div class="caption sfl" data-x="450" data-y="115" data-speed="900" data-start="500" data-easing="Sine.easeOut"><img src="-->
+<!--                            --><?// //=Yii::app()->baseUrl; ?><!--/images/art/slider-browser.png" alt="" /></div>-->
+<!--                            <div class="caption sfl" data-x="800" data-y="180" data-speed="900" data-start="900" data-easing="Sine.easeOut"><img src="-->
+<!--                            --><?// //=Yii::app()->baseUrl; ?><!--/images/art/slider-tablet.png" alt="" /></div>-->
+<!--                            <div class="caption sfl" data-x="980" data-y="290" data-speed="900" data-start="1600" data-easing="Sine.easeOut"><img src="-->
+<!--                            --><?// //=Yii::app()->baseUrl; ?><!--/images/art/slider-mobile.png" alt="" /></div>-->
+<!--                            <div class="caption sfl bold opacity-bg" data-x="35" data-y="180" data-speed="500" data-start="1500" data-easing="Sine.easeOut">100% Responsive</div>-->
+<!--                            <div class="caption sfr bold opacity-bg" data-x="35" data-y="245" data-speed="500" data-start="2000" data-easing="Sine.easeOut">Retina-ready design</div>-->
+<!--                            <div class="caption sfb" data-x="35" data-y="310" data-speed="500" data-start="2500" data-easing="Sine.easeOut"><a href="#" class="btn btn-green btn-large">Get in Touch</a></div>-->
+<!--                        </li>-->
             <li data-transition="fade"><img src="<?= Yii::app()->baseUrl; ?>/images/art/doc__.png" alt=""/>
                 <div class="caption sft bold opacity-bg" data-x="center" data-y="250" data-speed="500" data-start="500"
                      data-easing="Sine.easeOut">Презентация проектов победителей
@@ -67,7 +64,7 @@ $this->breadcrumbs = array(
                      data-easing="Sine.easeOut"> 6-7 февраля 2017 года
                 </div>
                 <!--                <div class="caption sfb" data-x="center" data-y="339" data-speed="500" data-start="1500"-->
-                <!--                     data-easing="Sine.easeOut"><a href="http://medways.ru" class=""><img-->
+                <!--                     data-easing="Sine.easeOut"><a href="http://vuznauka2017.ru" class=""><img-->
                 <!--                            src="-->
                 <? //= Yii::app()->baseUrl; ?><!--/images/buttons/mw.png" alt=""/></a></div>-->
             </li>

@@ -99,28 +99,28 @@
             <div class="col-sm-3 no_r_pad">
                 <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/cardio.jpg" alt=""></figure>
                     <div class="bordered">
-                        <h3 class="post-title"><a href="<? //=Yii::app()->baseUrl.'/downloads/pril_cardio.pdf'?>" target="_blank">Кардиология и ангиология </a></h3>
+                        <h3 class="post-title"><a href="<?=Yii::app()->baseUrl.'/downloads/pril_cardio.pdf'?>" target="_blank">Кардиология и ангиология </a></h3>
 <!--                        <p>Приложение по научной платформе «Кардиология и ангиология»</p>-->
                     </div>
             </div>
             <div class="col-sm-3 no_r_pad">
                 <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/neurology.jpg" alt=""></figure>
                     <div class="bordered">
-                        <h3 class="post-title"><a href="<? //=Yii::app()->baseUrl.'/downloads/pril_neurology.pdf'?>" target="_blank">Неврология </a></h3>
+                        <h3 class="post-title"><a href="<?=Yii::app()->baseUrl.'/downloads/pril_neurology.pdf'?>" target="_blank">Неврология </a></h3>
 <!--                        <p>Приложение по научной платформе «Неврология»</p>-->
                     </div>
             </div>
             <div class="col-sm-3 no_r_pad">
                 <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/endocrinology.jpg" alt=""></figure>
                     <div class="bordered">
-                        <h3 class="post-title"><a href="<? //=Yii::app()->baseUrl.'/downloads/pril_endocrinology.pdf'?>" target="_blank">Эндокринология </a></h3>
+                        <h3 class="post-title"><a href="<?=Yii::app()->baseUrl.'/downloads/pril_endocrinology.pdf'?>" target="_blank">Эндокринология </a></h3>
 <!--                        <p>Приложение по научной платформе «Эндокринология»</p>-->
                     </div>
             </div>
             <div class="col-sm-3 no_r_pad">
                 <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/pediatry.jpg" alt=""></figure>
                     <div class="bordered">
-                        <h3 class="post-title"><a href="<? //=Yii::app()->baseUrl.'/downloads/pril_pediatry.pdf'?>" target="_blank">Педиатрия </a></h3>
+                        <h3 class="post-title"><a href="<?=Yii::app()->baseUrl.'/downloads/pril_pediatry.pdf'?>" target="_blank">Педиатрия </a></h3>
 <!--                        <p>Приложение по научной платформе «Педиатрия»</p>-->
                     </div>
             </div>
@@ -131,28 +131,28 @@
             <div class="col-sm-3">
                 <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/psychiatry.jpg" alt=""></figure>
                     <div class="bordered">
-                        <h3 class="post-title"><a href="<? //=Yii::app()->baseUrl.'/downloads/pril_psychiatry.pdf'?>" target="_blank">Психиатрия и зависимости  </a></h3>
+                        <h3 class="post-title"><a href="<?=Yii::app()->baseUrl.'/downloads/pril_psychiatry.pdf'?>" target="_blank">Психиатрия и зависимости  </a></h3>
 <!--                        <p>Приложение по научной платформе «Психиатрия и зависимости»</p>-->
                     </div>
             </div>
             <div class="col-sm-3">
                 <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/immunology.jpg" alt=""></figure>
                     <div class="bordered">
-                        <h3 class="post-title"><a href="<? //=Yii::app()->baseUrl.'/downloads/pril_immunology.pdf'?>" target="_blank">Иммунология </a></h3>
+                        <h3 class="post-title"><a href="<?=Yii::app()->baseUrl.'/downloads/pril_immunology.pdf'?>" target="_blank">Иммунология </a></h3>
 <!--                        <p>Приложение по научной платформе «Иммунология»</p>-->
                     </div>
             </div>
             <div class="col-sm-3">
                 <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/microbiology.jpg" alt=""></figure>
                     <div class="bordered">
-                        <h3 class="post-title"><a href="<? //=Yii::app()->baseUrl.'/downloads/pril_microbiology.pdf'?>" target="_blank">Микробиология </a></h3>
+                        <h3 class="post-title"><a href="<?=Yii::app()->baseUrl.'/downloads/pril_microbiology.pdf'?>" target="_blank">Микробиология </a></h3>
 <!--                        <p>Приложение по научной платформе «Микробиология»</p>-->
                     </div>
             </div>
             <div class="col-sm-3">
                 <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/Pharmacology.jpg" alt=""></figure>
                     <div class="bordered">
-                        <h3 class="post-title"><a href="<? //=Yii::app()->baseUrl.'/downloads/pril_pharmacology.pdf'?> " target="_blank">Фармакология </a></h3>
+                        <h3 class="post-title"><a href="<?=Yii::app()->baseUrl.'/downloads/pril_pharmacology.pdf'?> " target="_blank">Фармакология </a></h3>
 <!--                        <p>Приложение по научной платформе «Фармакология»</p>-->
                     </div>
             </div>
@@ -163,28 +163,28 @@
             <div class="col-sm-3">
                 <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/preventative.jpg" alt=""></figure>
                     <div class="bordered">
-                        <h3 class="post-title"><a href="<? //=Yii::app()->baseUrl.'/downloads/pril_preventative.pdf'?>" target="_blank">Профилактическая среда </a></h3>
+                        <h3 class="post-title"><a href="<?=Yii::app()->baseUrl.'/downloads/pril_preventative.pdf'?>" target="_blank">Профилактическая среда </a></h3>
 <!--                        <p>Приложение по научной платформе «Профилактическая среда»</p>-->
                     </div>
             </div>
             <div class="col-sm-3">
                 <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/reproduction.jpg" alt=""></figure>
                     <div class="bordered">
-                        <h3 class="post-title"><a href="<? //=Yii::app()->baseUrl.'/downloads/pril_reproduction.pdf'?> " target="_blank">Репродуктивное здоровье </a></h3>
+                        <h3 class="post-title"><a href="<?=Yii::app()->baseUrl.'/downloads/pril_reproduction.pdf'?> " target="_blank">Репродуктивное здоровье </a></h3>
 <!--                        <p>Приложение по научной платформе «Репродуктивное здоровье»</p>-->
                     </div>
             </div>
             <div class="col-sm-3">
                 <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/regenerat.jpg" alt=""></figure>
                     <div class="bordered">
-                        <h3 class="post-title"><a href="<? //=Yii::app()->baseUrl.'/downloads/pril_regenerat.pdf'?>" target="_blank">Регенеративная медицина </a></h3>
+                        <h3 class="post-title"><a href="<?=Yii::app()->baseUrl.'/downloads/pril_regenerat.pdf'?>" target="_blank">Регенеративная медицина </a></h3>
 <!--                        <p>Приложение по научной платформе «Регенеративная медицина»</p>-->
                     </div>
             </div>
             <div class="col-sm-3">
                 <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/invaziv.jpg" alt=""></figure>
                     <div class="bordered">
-                        <h3 class="post-title"><a href="<? //=Yii::app()->baseUrl.'/downloads/pril_invaziv.pdf'?> " target="_blank">Инвазивные технологии </a></h3>
+                        <h3 class="post-title"><a href="<?=Yii::app()->baseUrl.'/downloads/pril_invaziv.pdf'?> " target="_blank">Инвазивные технологии </a></h3>
 <!--                        <p>Приложение по научной платформе «Инвазивные технологии»</p>-->
                     </div>
             </div>
@@ -195,14 +195,14 @@
             <div class="col-sm-3">
                 <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/innovatoin.jpg" alt=""></figure>
                     <div class="bordered">
-                        <h3 class="post-title"><a href="<? //=Yii::app()->baseUrl.'/downloads/pril_innovation.pdf'?>" target="_blank">Инновационные фундаментальные технологии в медицине </a></h3>
+                        <h3 class="post-title"><a href="<?=Yii::app()->baseUrl.'/downloads/pril_innovation.pdf'?>" target="_blank">Инновационные фундаментальные технологии в медицине </a></h3>
 <!--                        <p>Приложение по научной платформе «Инновационные фундаментальные технологии в медицине»</p>-->
                     </div>
             </div>
             <div class="col-sm-3">
                 <figure><img src="<?=Yii::app()->baseUrl?>/images/platf/oncology.jpg" alt=""></figure>
                     <div class="bordered">
-                        <h3 class="post-title"><a href="<? //=Yii::app()->baseUrl.'/downloads/pril_oncology.pdf'?>" target="_blank">Онкология </a></h3>
+                        <h3 class="post-title"><a href="<?=Yii::app()->baseUrl.'/downloads/pril_oncology.pdf'?>" target="_blank">Онкология </a></h3>
 <!--                        <p>Приложение по научной платформе «Онкология»</p>-->
                     </div>
             </div>

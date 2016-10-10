@@ -17,6 +17,7 @@ if(isset($data) && !is_null($data)){
             case 'Exp1': $data[0]['role'] = 'Эксперт';break;
             case 'Exp2': $data[0]['role'] = 'Эксперт';break;
             case 'Exp3': $data[0]['role'] = 'Эксперт';break;
+            case 'Moder': $data[0]['role'] = 'Координатор от вуза'; break;
         }
     }
 }

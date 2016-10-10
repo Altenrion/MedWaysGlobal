@@ -91,12 +91,11 @@ class LoginForm extends CFormModel
             
             switch ($r){
                 case 1: 
-                    $route = 'Autorized/profile'; break;
                 case 2:
-                    $route = 'Autorized/profile'; break;
                 case 3:
-                    $route = 'Autorized/profile'; break;
-
+                case 4:
+                    $route = 'Autorized/profile';
+                break;
             }
             
             return $route;

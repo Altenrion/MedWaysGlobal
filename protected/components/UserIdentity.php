@@ -70,7 +70,10 @@ public function authenticate()
             return 2;
         if($users->roles == 'Exp' || $users->roles == 'Exp1'|| $users->roles == 'Exp2'|| $users->roles == 'Exp3' )
             return 3;
-        
+        if($users->roles == 'Moder')
+            return 4;
+
+
     }
     
     
