@@ -18,14 +18,8 @@
     </div>
 </div>
 
-
-
-
 <div class="light-wrapper" >
     <div class="container inner">
-
-
-
         <h3 class="section-title text-center">ЛОКАЛЬНЫЕ ДОКУМЕНТЫ</h3>
             <div class="services">
             <!--<div class="divide20"></div>-->
@@ -58,6 +52,15 @@
                     <div class="text">
                         <h4>Положение об Эстафете вузовской науки </h4>
                         <p>Положение об Эстафете вузовской науки</p>
+                    </div>
+                    <!-- /.text -->
+                </div>
+                <div class="col-sm-4 step">
+                    <div class="icon"><a href="<?=Yii::app()->baseUrl.'/downloads/obrasets_oformlenia_proekta.pdf'?>" target="_blank"> <i class="icon-attach icn"></i></a> </div>
+                    <!-- /.icon -->
+                    <div class="text">
+                        <h4>Образец оформления проекта</h4>
+                        <p>Образец оформления проекта</p>
                     </div>
                     <!-- /.text -->
                 </div>
