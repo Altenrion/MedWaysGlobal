@@ -13,7 +13,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="MedWays, Эстафета вузовской науки 2014, MedWAYS forum, Медицина, Молодые ученые, Инновации">
+        <meta name="description" content="Эстафета вузовской науки 2017, Медицина, Молодые ученые, Инновации">
         <meta name="author" content="Altenrion">
         <meta http-equiv="X-UA-Compatible" content="IE=9">
 
@@ -199,6 +199,8 @@
     </div>
     </footer>
     <!-- /footer -->
+
+    <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40209534 = new Ya.Metrika({ id:40209534, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40209534" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

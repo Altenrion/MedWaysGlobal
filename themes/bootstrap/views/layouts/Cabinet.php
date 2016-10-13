@@ -32,7 +32,7 @@ Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/skins.css');
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>MedWAYS - кабинет</title>
+    <title>Личный кабинет</title>
 
     <link rel="icon" href="<?=$assetsUrl?>/img/favicon.ico">
 
