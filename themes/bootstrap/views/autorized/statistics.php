@@ -28,6 +28,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                     <? endif; ?>
 				</div><!--/col-->
 
+<? if(false): ?>
                 <div class="col-md-12">
                     <div class="grid">
                         <div class="grid-header">
@@ -191,6 +192,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
 			</div><!--/profile-->
 
 
+<? endif; ?>
 
 </section>
 

@@ -38,8 +38,8 @@ $this->breadcrumbs = array(
                     <?= (isset($clean_num)) ? ($clean_num) : ('500') ?>
                 </div>
                 <div class="caption sfb" data-x="620" data-y="335" data-speed="500" data-start="3000"
-                     data-easing="Sine.easeOut"><a href="<?= Yii::app()->createUrl('ShowCase/statistics') ?>"
-                                                   class="btn btn-large">Статистика</a></div>
+                     data-easing="Sine.easeOut">
+<!--                    <a href="--><?//= Yii::app()->createUrl('ShowCase/statistics') ?><!--" class="btn btn-large">Статистика</a> </div>-->
             </li>
 <!--                        <li data-transition="fade"> <img src="-->
 <!--                            --><?// //=Yii::app()->baseUrl; ?><!--/images/art/slider-bg3.jpg" alt="" />-->
@@ -131,7 +131,7 @@ $this->breadcrumbs = array(
                                     научно-инновационных проектов по тематикам научных платформ.</p>
 
                                 <ul class="circled">
-                                    <li><a class="date">27.09.2016 - 01.11.2016</a>
+                                    <li><a class="date">27.09.2016 - 10.11.2016</a>
                                         <blockquote>
 
                                     <li>Формирование региональных экспертных советов</li>
@@ -140,7 +140,7 @@ $this->breadcrumbs = array(
 
                                     </li>
 
-                                    <li><a class="date">02.11.2016 – 19.11.2016</a>
+                                    <li><a class="date">11.11.2016 – 19.11.2016</a>
                                         <blockquote>
                                             <li>Экспертиза проектов в вузе</li>
                                         </blockquote>

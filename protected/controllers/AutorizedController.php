@@ -882,7 +882,7 @@ class AutorizedController extends Controller
         $criteria->condition = "roles='Exp' OR roles='Exp1' OR roles='Exp2' OR roles='Exp3' AND AKTIV_KEY='100'";
 
         if (isset($_REQUEST['sSearch']) && isset($_REQUEST['sSearch']{0})) {
-            $criteria->addSearchCondition('L_NAME', $_REQUEST['sSearch']);
+            $criteria->addSearchCondition('F_NAME', $_REQUEST['sSearch']);
         }
 
         $sort = new EDTSort('Users', $columns);
