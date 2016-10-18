@@ -217,21 +217,6 @@ class Users extends CActiveRecord
         return $this->encrypting($password)===$this->password;
     }
 
-
-
-    /**
-     * perform one-way encryption on the password before we store it in
-    the database
-     */
-//    protected function afterValidate()
-//    {
-//        parent::afterValidate();
-//        $this->password = $this->encrypting($this->password);
-//    }
-
-
-
-
     public function findProfileData($id){
         $data = Yii::app()->db->createCommand("SELECT
                 user.id,
@@ -255,7 +240,6 @@ class Users extends CActiveRecord
                 user.REG_DATE,
                 user.AVATAR
 
-
                 FROM m_w_users as user
                 WHERE user.id = $id")->queryAll();
 
@@ -270,6 +254,7 @@ class Users extends CActiveRecord
                   WHERE `AKTIV_KEY`='100'
                     AND roles='Manager'
                     AND ID_DISTRICT is not NULL
+                    AND REG_DATE > '2016-09-01'
                   GROUP BY ID_DISTRICT")->queryAll();
         return $data;
     }
@@ -281,6 +266,7 @@ class Users extends CActiveRecord
                     AND roles='Manager'
                     AND ID_UNIVER is not NULL
 					AND ID_DISTRICT is not NULL
+                    AND REG_DATE > '2016-09-01'
                   GROUP BY ID_DISTRICT")->queryAll();
         return $data;
     }
