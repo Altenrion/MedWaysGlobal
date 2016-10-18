@@ -133,7 +133,7 @@ Yii::app()->clientScript->registerCssFile($assetsUrl . '/css/skins.css');
                     <li><a href="<?= Yii::app()->createUrl('Autorized/projects') ?>"><i class="fa fa-graduation-cap"></i><span>Проекты</span></a></li>
                 <? endif; ?>
 
-                <? if ($this->checkRole(array('Dev'))): ?>
+                <? if ($this->checkRole(array('Dev', 'Admin'))): ?>
                     <li><a href="<?= Yii::app()->createUrl('Autorized/statistics') ?>"><i class="fa fa-bar-chart-o"></i><span>Статистика</span></a>
                     </li>
                 <? endif; ?>

@@ -29,9 +29,9 @@
                 <div class="grid-header" style="border:0px; background: none; color: #777777">
                     <i class="fa fa-graduation-cap"></i>
                     <span class="grid-title">Проекты <small style="font-size: 11px;">доступные для проверки</small>
-                    <button id="profileinfo" class="btn btn-xs btn-primary " ><i class="fa  fa-info"> </i>
-                        памятка по верификации
-                    </button>
+<!--                    <button id="profileinfo" class="btn btn-xs btn-primary " ><i class="fa  fa-info"> </i>-->
+<!--                        памятка по верификации-->
+<!--                    </button>-->
                     </span>
 
 

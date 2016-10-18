@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/AutorizedController.php" afterPath="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" afterPath="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" afterPath="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php" afterPath="$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php" afterPath="$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php" />
     </list>
     <ignored path="MedWaysGlobal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +34,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="200">
-      <file leaf-file-name="AutorizedController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AutorizedController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -415,7 +414,7 @@
       <file leaf-file-name="Users.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
+            <state relative-caret-position="393">
               <caret line="250" column="53" selection-start-line="250" selection-start-column="53" selection-end-line="250" selection-end-column="53" />
               <folding>
                 <marker date="1476827510227" expanded="true" signature="7187:8138" ph="SELECT user.... m_w_users" />
@@ -538,18 +537,28 @@
       <file leaf-file-name="Proto.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3111">
+            <state relative-caret-position="192">
               <caret line="189" column="83" selection-start-line="189" selection-start-column="83" selection-end-line="189" selection-end-column="83" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cabinet.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Cabinet.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2397">
-              <caret line="141" column="81" selection-start-line="141" selection-start-column="70" selection-end-line="141" selection-end-column="81" />
+            <state relative-caret-position="563">
+              <caret line="136" column="59" selection-start-line="136" selection-start-column="59" selection-end-line="136" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="projects.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="28" column="94" selection-start-line="28" selection-start-column="94" selection-end-line="28" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -598,7 +607,6 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/dashboard.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/error.php" />
         <option value="$PROJECT_DIR$/protected/extensions/cabinet/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php" />
         <option value="$PROJECT_DIR$/protected/config/auth.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ShowCaseController.php" />
@@ -607,7 +615,6 @@
         <option value="$PROJECT_DIR$/protected/models/medways/ProjectRegistry.php" />
         <option value="$PROJECT_DIR$/protected/extensions/edatatables/EDataColumn.php" />
         <option value="$PROJECT_DIR$/protected/components/RegistrationChart.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_users.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertsList.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php" />
@@ -619,6 +626,8 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php" />
       </list>
     </option>
   </component>
@@ -902,12 +911,12 @@
       <workItem from="1476638086997" duration="10954000" />
       <workItem from="1476723928032" duration="8892000" />
       <workItem from="1476764652385" duration="1059000" />
-      <workItem from="1476819267779" duration="9769000" />
+      <workItem from="1476819267779" duration="9990000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65706000" />
+    <option name="totallyTimeSpent" value="65927000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1190,22 +1199,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3111">
-          <caret line="189" column="83" selection-start-line="189" selection-start-column="83" selection-end-line="189" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="39" column="54" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/auth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1268,14 +1261,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2397">
-          <caret line="141" column="81" selection-start-line="141" selection-start-column="70" selection-end-line="141" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertProjectsList.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1315,18 +1300,6 @@
         <state relative-caret-position="255">
           <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/StatisticCharts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
-          <folding>
-            <marker date="1476826646670" expanded="true" signature="177:552" ph="select COUNT... m_w_project_registry" />
-            <marker date="1476826646670" expanded="true" signature="177:821" ph="select COUNT... m_w_project_registry" />
-            <marker date="1476826646670" expanded="true" signature="582:788" ph="select COUNT... m_w_project_registry" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1388,21 +1361,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="250" column="53" selection-start-line="250" selection-start-column="53" selection-end-line="250" selection-end-column="53" />
-          <folding>
-            <marker date="1476827510227" expanded="true" signature="7187:8138" ph="SELECT user.... m_w_users" />
-            <marker date="1476827510227" expanded="true" signature="7537:7621" ph="SELECT dist.... m_w_district" />
-            <marker date="1476827510227" expanded="true" signature="7656:7745" ph="SELECT univ.... m_w_university" />
-            <marker date="1476827510227" expanded="true" signature="7778:7868" ph="SELECT spec.... m_w_speciality" />
-            <marker date="1476827510227" expanded="true" signature="8284:8594" ph="SELECT `ID_D... m_w_users" />
-            <marker date="1476827510227" expanded="true" signature="8733:9094" ph="SELECT `ID_D... m_w_users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/MapStat.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
@@ -1431,14 +1389,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="173" column="21" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="36" column="47" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -1746,6 +1696,65 @@
             <marker date="1476829027637" expanded="false" signature="34144:34875" ph="..." />
             <marker date="1476829027637" expanded="false" signature="53376:53388" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/StatisticCharts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
+          <folding>
+            <marker date="1476826646670" expanded="true" signature="177:552" ph="select COUNT... m_w_project_registry" />
+            <marker date="1476826646670" expanded="true" signature="177:821" ph="select COUNT... m_w_project_registry" />
+            <marker date="1476826646670" expanded="true" signature="582:788" ph="select COUNT... m_w_project_registry" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" column="47" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="250" column="53" selection-start-line="250" selection-start-column="53" selection-end-line="250" selection-end-column="53" />
+          <folding>
+            <marker date="1476827510227" expanded="true" signature="7187:8138" ph="SELECT user.... m_w_users" />
+            <marker date="1476827510227" expanded="true" signature="7537:7621" ph="SELECT dist.... m_w_district" />
+            <marker date="1476827510227" expanded="true" signature="7656:7745" ph="SELECT univ.... m_w_university" />
+            <marker date="1476827510227" expanded="true" signature="7778:7868" ph="SELECT spec.... m_w_speciality" />
+            <marker date="1476827510227" expanded="true" signature="8284:8594" ph="SELECT `ID_D... m_w_users" />
+            <marker date="1476827510227" expanded="true" signature="8733:9094" ph="SELECT `ID_D... m_w_users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="189" column="83" selection-start-line="189" selection-start-column="83" selection-end-line="189" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="94" selection-start-line="28" selection-start-column="94" selection-end-line="28" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="136" column="59" selection-start-line="136" selection-start-column="59" selection-end-line="136" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
