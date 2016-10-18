@@ -248,7 +248,6 @@ class ShowCaseController extends Controller
                 }
             }
 
-
             $this->render('login', array('model' => $model));
         }
 

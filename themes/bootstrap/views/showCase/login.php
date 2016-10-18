@@ -71,7 +71,10 @@
                             <div class="form-actions">
                                 <p>Заполните краткую форму регистрации и выберите роль участия. Регистрация в нашей системе позволит вам получить доступ к участию в нашем мероприятии и
                                     отслеживать более подробную статистику проектов.
+
                                 </p>
+                                <i class="icon-question-sign contact"><a href="/downloads/vuznauka_project_registration.pdf" target="_blank">Инструкция по оформлению проекта </a></i>
+
                             </div>
                             <div class="control-group ">
                                 <label class="control-label" for="RegForm_F_NAME">Фамилия</label>

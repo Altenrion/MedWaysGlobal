@@ -92,6 +92,7 @@ class ProjectRegistry extends CActiveRecord
 	{
 		return array(
 			'ID_PROJECT' => '#',
+            'VERIFICATION'=> "Верификация",
 			    'ID_REPRESENTATIVE' => 'Представитель',
 			    'ID_STAGE' => 'Платформа',
 			    'NAME' => 'Название',

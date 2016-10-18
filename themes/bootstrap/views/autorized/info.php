@@ -15,8 +15,8 @@
     <i class="fa fa-user"></i>
     <span>Информация </span>
     <ol class="breadcrumb">
-        <li><a href="">Кабинет</a></li>
-        <li class="active"><a href="">Информация</a></li>
+        <li>Кабинет</li>
+        <li class="active">Информация</li>
     </ol>
 </section>
 <!-- END CONTENT HEADER -->

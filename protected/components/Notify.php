@@ -121,7 +121,7 @@ class Notify {
     public function packNotifies($array){
         $work_array = CJSON::decode(CJSON::encode($array));
 
-        if(!is_null($work_array)){
+        if(!is_null($work_array) && is_array($work_array)){
             $this->_notifies = array_merge($this->_notifies,$work_array);
         }
 

@@ -15,42 +15,37 @@
     <i class="fa fa-user"></i>
     <span>Управление пользователями</span>
     <ol class="breadcrumb">
-        <li><a href="">Кабинет</a></li>
-        <li class="active"><a href="">Управление</a></li>
+        <li>Кабинет</li>
+        <li class="active">Управление</li>
     </ol>
 </section>
 <!-- END CONTENT HEADER -->
 
 
-
 <section class="content">
-
     <div class="row ">
-
         <div class="col-sm-12 ">
-<!--            <button type="button" class="btn btn-xs  btn-primary btn-radius"><i class="fa fa-envelope-o"></i></button>-->
+            <!--            <button type="button" class="btn btn-xs  btn-primary btn-radius"><i class="fa fa-envelope-o"></i></button>-->
             <ul class="nav nav-tabs">
-                <li class="active"><a href="#home" data-toggle="tab">Эксперты</a></li>
-                <li class=""><a href="#profile" data-toggle="tab">Представители</a></li>
+                <li class="active"><a href="#experts" data-toggle="tab">Эксперты</a></li>
+                <li class=""><a href="#managers" data-toggle="tab">Руководители</a></li>
+                <li class=""><a href="#moders" data-toggle="tab">Координаторы</a></li>
 
             </ul>
             <div class="tab-content">
-                <div class="tab-pane active" id="home">
+                <div class="tab-pane active" id="experts">
                     <? $this->actionExpertsList(); ?>
-<!--                    --><?// $this->renderPartial('_exp_grid',array('sort'=>$sort,'pages'=>$pages,'models'=>$models)); ?>
+                    <!--                    --><? // $this->renderPartial('_exp_grid',array('sort'=>$sort,'pages'=>$pages,'models'=>$models)); ?>
                 </div>
-                <div class="tab-pane" id="profile">
+                <div class="tab-pane" id="managers">
                     <? $this->actionManagersList(); ?>
-<!--                    --><?// $this->renderPartial('_man_grid',array('sortm'=>$sortm,'pags'=>$pags,'manags'=>$manags)); ?>
+                    <!--                    --><? // $this->renderPartial('_man_grid',array('sortm'=>$sortm,'pags'=>$pags,'manags'=>$manags)); ?>
+                </div>
+                <div class="tab-pane" id="moders">
+                    <? $this->actionModersList(); ?>
+                    <!--                    --><? // $this->renderPartial('_man_grid',array('sortm'=>$sortm,'pags'=>$pags,'manags'=>$manags)); ?>
                 </div>
             </div>
-
-
-
-
         </div><!--/col-->
-
     </div><!--/profile-->
-
-
 </section>

@@ -3,20 +3,17 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
 
 
 /* @ BEGIN CSS FRAMEWORK */
-Yii::app()->clientScript->registerCssFile($assetsUrl.'/plugins/bootstrap/css/bootstrap.min.css');
-Yii::app()->clientScript->registerCssFile($assetsUrl.'/plugins/font-awesome/css/font-awesome.min.css');
+Yii::app()->clientScript->registerCssFile($assetsUrl . '/plugins/bootstrap/css/bootstrap.min.css');
+Yii::app()->clientScript->registerCssFile($assetsUrl . '/plugins/font-awesome/css/font-awesome.min.css');
 
 /* @ BEGIN CSS PLUGIN */
-Yii::app()->clientScript->registerCssFile($assetsUrl.'/plugins/pace/pace-theme-minimal.css');
+Yii::app()->clientScript->registerCssFile($assetsUrl . '/plugins/pace/pace-theme-minimal.css');
 
 /* @ BEGIN CSS TEMPLATE */
-Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/main.css');
-Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/skins.css');
-
+Yii::app()->clientScript->registerCssFile($assetsUrl . '/css/main.css');
+Yii::app()->clientScript->registerCssFile($assetsUrl . '/css/skins.css');
 
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -68,12 +65,12 @@ Yii::app()->clientScript->registerCssFile($assetsUrl.'/css/skins.css');
 </div>
 
 <!-- BEGIN JS FRAMEWORK -->
-<script src="<?=$assetsUrl ?>/plugins/jquery-2.1.0.min.js"></script>
-<script src="<?=$assetsUrl ?>/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?= $assetsUrl ?>/plugins/jquery-2.1.0.min.js"></script>
+<script src="<?= $assetsUrl ?>/plugins/bootstrap/js/bootstrap.min.js"></script>
 <!-- END JS FRAMEWORK -->
 
 <!-- BEGIN JS PLUGIN -->
-<script src="<?=$assetsUrl ?>/plugins/pace/pace.min.js"></script>
+<script src="<?= $assetsUrl ?>/plugins/pace/pace.min.js"></script>
 <!-- END JS PLUGIN -->
 </body>
 </html>

@@ -187,7 +187,7 @@
 
     <div class="sub-footer">
         <div class="container">
-                <p class="pull-left">Powered by Yii&nbsp;&nbsp; © &nbsp;&nbsp;<?=date('Y')?> MedWAYS,  &nbsp;&nbsp;   Все права защищены.</p>
+                <p class="pull-left">Powered by Altenrion&nbsp;&nbsp; © &nbsp;&nbsp<?=date('Y')?> MedWAYS,  &nbsp;&nbsp;   Все права защищены.</p>
             <ul class="footer-menu pull-right">
                 <li><a href="<?= Yii::app()->createUrl('ShowCase/index')?>">Главная</a></li>
                 <li><a href="<?= Yii::app()->createUrl('ShowCase/info')?>">Информация</a></li>

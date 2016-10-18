@@ -15,8 +15,8 @@
     <i class="fa fa-user"></i>
     <span>Управление проектами</span>
     <ol class="breadcrumb">
-        <li><a href="">Кабинет</a></li>
-        <li class="active"><a href="">Проекты</a></li>
+        <li>Кабинет</li>
+        <li class="active">Проекты</li>
     </ol>
 </section>
 <!-- END CONTENT HEADER -->
@@ -28,7 +28,12 @@
             <div class="grid">
                 <div class="grid-header" style="border:0px; background: none; color: #777777">
                     <i class="fa fa-graduation-cap"></i>
-                    <span class="grid-title">Проекты <small style="font-size: 11px;">доступные для проверки</small> </span>
+                    <span class="grid-title">Проекты <small style="font-size: 11px;">доступные для проверки</small>
+                    <button id="profileinfo" class="btn btn-xs btn-primary " ><i class="fa  fa-info"> </i>
+                        памятка по верификации
+                    </button>
+                    </span>
+
 
                     </div>
                 <div class="grid-body">

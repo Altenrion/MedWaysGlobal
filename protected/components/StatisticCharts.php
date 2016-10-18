@@ -13,7 +13,7 @@ class StatisticCharts {
         $criteria = new CDbCriteria;
         $criteria->select = 'COUNT(id) id,ID_UNIVER';
         $criteria->group = 'ID_UNIVER';
-        $criteria->condition = "id IN (SELECT ID_REPRESENTATIVE FROM m_w_project_registry pr WHERE FIRST_LAVEL_APPROVAL = '3')";
+        $criteria->condition = "id IN (SELECT ID_REPRESENTATIVE FROM m_w_project_registry pr WHERE FIRST_LAVEL_APPROVAL = '3' AND REG_DATE > '2016-09-01')";
         $criteria->order = 'id';
         $universData = Users::model()->findAll($criteria);
 
@@ -43,7 +43,7 @@ class StatisticCharts {
         $criteria = new CDbCriteria;
         $criteria->select = 'COUNT(ID_PROJECT) ID_PROJECT, ID_STAGE  ';
         $criteria->group = 'ID_STAGE';
-        $criteria->condition = "FIRST_LAVEL_APPROVAL = 3";
+        $criteria->condition = "FIRST_LAVEL_APPROVAL = 3 AND REG_DATE > '2016-09-01'";
         $criteria->order = 'ID_PROJECT';
         $stages = ProjectRegistry::model()->findAll($criteria);
 

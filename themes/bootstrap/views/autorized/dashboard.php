@@ -9,29 +9,22 @@
 
 ?>
 
-
-
 <!-- BEGIN CONTENT HEADER -->
 <section class="content-header">
     <i class="fa fa-user"></i>
     <span>Панель управления</span>
     <ol class="breadcrumb">
-        <li><a href="">Кабинет</a></li>
-        <li class="active"><a href="">Панель</a></li>
+        <li>Кабинет</li>
+        <li class="active">Панель</li>
     </ol>
 </section>
 <!-- END CONTENT HEADER -->
 
 <section class="content">
-			<div class="row ">
-                <div class="col-md-12">
-
-                    <? $this->widget("cabinet.widgets.BrowserCounter") ?>
-
-
-                </div>
-
-			</div><!--/profile-->
-
+    <div class="row ">
+        <div class="col-md-12">
+            <? $this->widget("cabinet.widgets.BrowserCounter") ?>
+        </div>
+    </div><!--/profile-->
 </section>
 

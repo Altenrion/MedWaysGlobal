@@ -32,9 +32,9 @@
     <i class="fa fa-user"></i>
     <span>Проект № <?=$project->ID_PROJECT ?></span>
     <ol class="breadcrumb">
-        <li><a href="">Кабинет</a></li>
-        <li><a href="<?=Yii::app()->createUrl('Autorized/projects')?>">Проекты</a></li>
-        <li class="active"><a href="">Управление проектами</a></li>
+        <li>Кабинет</li>
+        <li>Проекты</li>
+        <li class="active">Управление проектами</li>
     </ol>
 </section>
 <!-- END CONTENT HEADER -->

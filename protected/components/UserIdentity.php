@@ -64,7 +64,7 @@ public function authenticate()
     public function getRole(){
         
         $users = Users::model()->findByAttributes(array('EMAIL' => $this->EMAIL));
-        if($users->roles == 'Dev')
+        if(in_array($users->roles, array('Dev', 'Admin')))
             return 1;
         if($users->roles == 'Manager')
             return 2;

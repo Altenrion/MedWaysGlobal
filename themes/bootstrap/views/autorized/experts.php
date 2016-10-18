@@ -16,8 +16,8 @@
     <i class="fa fa-user"></i>
     <span>Управление экспертами</span>
     <ol class="breadcrumb">
-        <li><a href="">Кабинет</a></li>
-        <li class="active"><a href="">Эксперты</a></li>
+        <li>Кабинет</li>
+        <li class="active">Эксперты</li>
     </ol>
 </section>
 <!-- END CONTENT HEADER -->

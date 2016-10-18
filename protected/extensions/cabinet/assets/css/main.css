@@ -3670,7 +3670,7 @@ img.img-circle.avatar {
 
 
     }
-button#enable {
+button.btn.btn-xs {
     font-size: 0.6em;
 }
 

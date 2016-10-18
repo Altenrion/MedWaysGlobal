@@ -4,8 +4,8 @@
     <i class="fa fa-user"></i>
     <span>Управление Записями</span>
     <ol class="breadcrumb">
-        <li><a href="">Кабинет</a></li>
-        <li class="active"><a href="">Управление</a></li>
+        <li>Кабинет</li>
+        <li class="active">Управление</li>
     </ol>
 </section>
 <!-- END CONTENT HEADER -->

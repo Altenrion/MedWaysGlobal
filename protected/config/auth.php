@@ -60,11 +60,20 @@ return array(
         'data' => null
     ),
 
+    'Admin' => array(
+        'type' => CAuthItem::TYPE_ROLE,
+        'description' => 'Администратор',
+        'children' => array(
+            'director',         
+           ),
+        'bizRule' => null,
+        'data' => null
+    ),
     'Dev' => array(
         'type' => CAuthItem::TYPE_ROLE,
         'description' => 'Девелопер',
         'children' => array(
-            'director',         
+            'director',
            ),
         'bizRule' => null,
         'data' => null

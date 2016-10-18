@@ -15,15 +15,15 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
     <i class="fa fa-user"></i>
     <span>Статистика мероприятия</span>
     <ol class="breadcrumb">
-        <li><a href="">Кабинет</a></li>
-        <li class="active"><a href="">Статистика</a></li>
+        <li>Кабинет</li>
+        <li class="active">Статистика</li>
     </ol>
 </section>
 <!-- END CONTENT HEADER -->
 <section class="content">
 			<div class="row ">
 				<div class="col-md-12 ">
-                    <? if($this->checkRole(array('Dev'))): ?>
+                    <? if($this->checkRole(array('Dev', 'Admin'))): ?>
                         <?= $this->actionJuliaList() ; ?>
                     <? endif; ?>
 				</div><!--/col-->
@@ -172,6 +172,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                    </div>
                </div>
 
+            <? if(false):?>
                <? foreach($moneyData as $money_k=>$money_v): ?>
 
                <div class="col-md-4">
@@ -185,6 +186,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                     </div>
                </div>
                <? endforeach; ?>
+            <? endif; ?>
 
 			</div><!--/profile-->
 

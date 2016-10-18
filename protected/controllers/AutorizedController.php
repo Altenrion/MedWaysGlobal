@@ -49,7 +49,7 @@ class AutorizedController extends Controller
             ),
             array('allow',
                 'actions' => array('profile', 'news', 'info', 'project'),
-                'roles' => array('Dev', 'Manager', 'Exp', 'Exp1', 'Exp2', 'Exp3', 'Moder'),
+                'roles' => array('Dev', 'Manager', 'Exp', 'Exp1', 'Exp2', 'Exp3', 'Moder', 'Admin'),
             ),
             array('allow',
                 'actions' => array('project', 'statistics'),
@@ -61,7 +61,7 @@ class AutorizedController extends Controller
             ),
             array('allow',
                 'actions' => array('projects', 'statistics'),
-                'roles' => array('Exp1', 'Exp2', 'Exp3', 'Dev',),
+                'roles' => array('Moder', 'Exp1', 'Exp2', 'Exp3', 'Dev', 'Admin',),
             ),
 
             array('deny',
@@ -120,9 +120,7 @@ class AutorizedController extends Controller
     public function actionProject()
     {
         $model = new ProjectRegistry;
-        if (!Yii::app()->user->isGuest) {
-            $data = $model->findProjectData(Yii::app()->user->id);
-        }
+        $data = $model->findProjectData(Yii::app()->user->id);
 
         $this->render('project', array(
             'data' => $data,
@@ -374,7 +372,6 @@ class AutorizedController extends Controller
             $clean_data = $data[0];
 
             if (!is_null($clean_data['roles'])) {
-
                 $role = $this->cleanRole($data[0]['roles']);
             }
 
@@ -928,6 +925,109 @@ class AutorizedController extends Controller
     }
 
     /**
+     * Метод для отрисовки таблицы Эксертов
+     */
+    public function actionModersList()
+    {
+
+        $columns = array('id', 'AVATAR', 'EMAIL', 'F_NAME', 'L_NAME', 'S_NAME', 'ID_DISTRICT', 'ID_UNIVER'
+//            'roles'
+        );
+
+        $cols = array(
+            array(
+                'name' => 'id',
+                'type' => 'raw',
+                'value' => '$data->id',
+                'htmlOptions' => array('style' => 'text-align: left; width: 40px;')
+            ),
+            array(
+                'name' => 'Фото',
+                'type' => 'html',
+                'value' => 'is_null($data->AVATAR)? (CHtml::image(Yii::app()->baseUrl.\'/images/avatars/thumb_new.png\',"",array("style"=>"width:40px;height:40px;")))
+                 : CHtml::image(Yii::app()->baseUrl.\'/images/avatars/thumb_\'.$data->AVATAR,"",array("style"=>"width:40px;height:40px;"))',
+
+            ),
+            'EMAIL:text:email', 'F_NAME:text:Фамилия', 'L_NAME:text:Имя', 'S_NAME:text:Отчество',
+
+            array(
+                'name' => 'ID_DISTRICT',
+                'type' => 'text',
+                'value' => '$this->getDistrict($data->ID_DISTRICT)',
+            ),
+            array(
+                'name' => 'ID_UNIVER',
+                'type' => 'raw',
+                'value' => '$this->getUniver($data->ID_UNIVER)',
+            ),
+
+//            array(
+//                'name' => 'roles',
+//                'type' => 'raw',
+//
+//                'value' => 'Yii::app()->controller->widget(\'editable.Editable\', array(
+//                                    \'type\'      => \'select\',
+//                                    \'name\'      => \'roles\',
+//                                    \'htmlOptions\' => array(\'class\'=>\'ExpEdit\'),
+//                                    \'pk\'        => $data[\'id\'],
+//                                    \'text\'      => CHtml::encode($this->getRole($data->roles)),
+//                                    \'url\'       => Yii::app()->createUrl(\'Autorized/updateProfile\'),
+//                                    \'source\'    => array( \'Exp\' => \'Эксперт0\', \'Exp1\' => \'Эксперт1\', \'Exp2\' => \'Эксперт2\', \'Exp3\' => \'Эксперт3\'),
+//                                    \'title\'     => \'Выберите роль\',
+//                                    \'placement\' => \'top\',
+//                                    \'options\' => array( \'disabled\'=>false,  \'showbuttons\'=>false),  ),true);',
+//            ),
+
+
+        );
+
+        $criteria = new CDbCriteria;
+        $criteria->condition = "roles='Moder' AND AKTIV_KEY='100'";
+
+        if (isset($_REQUEST['sSearch']) && isset($_REQUEST['sSearch']{0})) {
+            $criteria->addSearchCondition('L_NAME', $_REQUEST['sSearch']);
+        }
+
+        $sort = new EDTSort('Users', $columns);
+        $sort->defaultOrder = 'id';
+
+        $pagination = new EDTPagination();
+
+        $dataProvider = new CActiveDataProvider('Users', array(
+            'criteria' => $criteria,
+            'pagination' => $pagination,
+            'sort' => $sort,
+        ));
+        $widget = $this->createWidget('ext.edatatables.EDataTables', array(
+            'id' => 'Experts',
+            'dataProvider' => $dataProvider,
+            'ajaxUrl' => $this->createUrl('ExpertsList'),
+            'columns' => $cols,
+            'buttons' => array(
+                'refresh' => array(
+                    'tagName' => 'a',
+                    'label' => '<i class="fa fa-refresh "></i>',
+                    'htmlClass' => 'btn',
+                    'htmlOptions' => array('rel' => 'tooltip', 'title' => Yii::t('EDataTables.edt', "Refresh")),
+                    'init' => 'js:function(){}',
+                    'callback' => 'js:function(e){e.data.that.eDataTables("refresh"); return false;}',
+                ),
+            ),
+            'options' => $this->TableOptions,
+        ));
+
+        if (!Yii::app()->getRequest()->getIsAjaxRequest()) {
+            $this->renderPartial('_ExpertsList', array('widget' => $widget,), false, false);
+            return;
+        } else {
+            echo json_encode($widget->getFormattedData(intval($_REQUEST['sEcho'])));
+            Yii::app()->end();
+        }
+
+
+    }
+
+    /**
      * Метод для отрисовки таблицы Представителей
      */
     public function actionManagersList()
@@ -949,7 +1049,7 @@ class AutorizedController extends Controller
                  : CHtml::image(Yii::app()->baseUrl.\'/images/avatars/thumb_\'.$data->AVATAR,"",array("style"=>"width:40px;height:40px;"))',
 
             ),
-            'F_NAME:text:Фамилия', 'L_NAME:text:Имя', 'S_NAME:text:Отчество',
+            'EMAIL:text:email','F_NAME:text:Фамилия', 'L_NAME:text:Имя', 'S_NAME:text:Отчество',
 
             array(
                 'name' => 'ID_DISTRICT',
@@ -1061,6 +1161,7 @@ class AutorizedController extends Controller
                 'htmlOptions' => array('class' => 'status-left')
 
             ),
+
         );
 
 
@@ -1144,18 +1245,24 @@ class AutorizedController extends Controller
                 'type' => 'text',
                 'value' => '$data->ProjCount',
             ),
+            array(
+                'name' => 'Координаторы',
+                'type' => 'text',
+                'value' => '$data->UniverModer',
+            ),
 
         );
 
         $criteria = new CDbCriteria;
         $criteria->select = 't.ID_UNIVER ,t.ID_DISTRICT ,
         (SELECT COUNT(DISTINCT id) FROM `m_w_users` WHERE roles IN ("Exp","Exp1","Exp2","Exp3") AND ID_UNIVER = t.ID_UNIVER ) as ExpCount,
-        (SELECT COUNT(DISTINCT id) FROM m_w_users as u  Where roles IN ("Manager") AND ID_UNIVER = t.ID_UNIVER ) as ProjCount';
+        (SELECT COUNT(DISTINCT id) FROM m_w_users as u  Where roles IN ("Manager") AND ID_UNIVER = t.ID_UNIVER ) as ProjCount,
+        (SELECT COUNT(DISTINCT id) FROM m_w_users as u  Where roles IN ("Moder") AND ID_UNIVER = t.ID_UNIVER ) as UniverModer';
         $criteria->condition = "AKTIV_KEY='100' AND ID_UNIVER is not NULL AND ID_DISTRICT is not NULL";
         $criteria->group = 'ID_UNIVER';
 
         if (isset($_REQUEST['sSearch']) && isset($_REQUEST['sSearch']{0})) {
-            $criteria->addSearchCondition('ID_DISTRICT', $_REQUEST['sSearch']);
+            $criteria->addSearchCondition('ID_DISTRICT', $_REQUEST['sSearch'], true, 'OR');
         }
 
         $sort = new EDTSort('Users', $columns);
@@ -1203,45 +1310,61 @@ class AutorizedController extends Controller
         $user = Users::model()->findByPk(Yii::app()->user->id);
 
         $criteria = new CDbCriteria;
-        $criteria->select = 't.ID_PROJECT,t.ROADMAP_PROJECT, t.ID_STAGE, t.NAME, us.ID_DISTRICT, us.ID_UNIVER '; //todo повменять ID_DISTRICT, ID_UNIVER,  на название через SQL замену
+
+        //todo повменять ID_DISTRICT, ID_UNIVER,  на название через SQL замену
+        $criteria->select = 't.ID_PROJECT, t.ROADMAP_PROJECT, t.ID_STAGE, t.NAME, us.ID_DISTRICT, us.ID_UNIVER ';
         $criteria->join = 'LEFT JOIN  `m_w_users` `us` ON us.id = t.ID_REPRESENTATIVE';
+
+        $criteriaCondition = "t.REG_DATE > '2016-09-01'";
+        $criteriaParams = array();
 
         switch (Yii::app()->user->role) {
 
             /** Критерий для эксперта 1 уровня (по универу) */
             case 'Exp' :
-                $criteria->condition = 'us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL = 1';
-                $criteria->params = array(":univ" => $user['ID_UNIVER']);
+                $criteriaCondition .= ' AND us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL = 1';
+                $criteriaParams = array(":univ" => $user['ID_UNIVER']);
                 break;
 
             /** Критерий для эксперта 1 уровня (по универу) */
             case 'Exp1' :
-                $criteria->condition = 'us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL = 1 OR us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL = 9 OR us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL = 3';
-                $criteria->params = array(":univ" => $user['ID_UNIVER']);
+                $criteriaCondition .= ' AND   
+                (us.ID_UNIVER = :univ 
+                AND 
+                (FIRST_LAVEL_APPROVAL = 1 OR us.ID_UNIVER = :univ) 
+                AND 
+                (FIRST_LAVEL_APPROVAL = 9 OR us.ID_UNIVER = :univ) 
+                AND 
+                FIRST_LAVEL_APPROVAL = 3)';
+                $criteriaParams = array(":univ" => $user['ID_UNIVER']);
                 break;
 
             /** Критерий для эксперта 2 уровня (по платформе и округу)*/
             case 'Exp2' :
 
                 if ($cats = $this->checkFinanceBustersRole()) {
-//                    var_dump(CJSON::encode($cats));
-//                    Yii::app()->end();
-                    $criteria->condition = 't.ID_STAGE IN (' . str_replace(['[', ']'], ' ', CJSON::encode($cats)) . ')  AND us.ID_DISTRICT = :dist AND FIRST_LAVEL_APPROVAL = 3';
-                    $criteria->params = array(":dist" => $user['ID_DISTRICT']);
+                    $criteriaCondition .= ' AND t.ID_STAGE IN (' . str_replace(['[', ']'], ' ', CJSON::encode($cats)) . ') AND us.ID_DISTRICT = :dist AND FIRST_LAVEL_APPROVAL = 3';
+                    $criteriaParams = array(":dist" => $user['ID_DISTRICT']);
 
                 } else {
-                    $criteria->condition = 't.ID_STAGE = :stage AND us.ID_DISTRICT = :dist AND FIRST_LAVEL_APPROVAL = 3';
-                    $criteria->params = array(":stage" => $user['ID_STAGE'], ":dist" => $user['ID_DISTRICT']);
+                    $criteriaCondition .= ' AND t.ID_STAGE = :stage AND us.ID_DISTRICT = :dist AND FIRST_LAVEL_APPROVAL = 3';
+                    $criteriaParams = array(":stage" => $user['ID_STAGE'], ":dist" => $user['ID_DISTRICT']);
                 }
                 break;
 
             /** Критерий для эксперта 3 уровня (по платформе) */
             case 'Exp3' :
                 if ($cats = $this->checkFinanceBustersRole()) {
-                    $criteria->condition = 't.ID_STAGE IN (' . str_replace(['[', ']'], ' ', CJSON::encode($cats)) . ')  AND us.ID_DISTRICT = :dist AND FIRST_LAVEL_APPROVAL = 3';
-                    $criteria->params = array(":dist" => $user['ID_DISTRICT']);
+                    $criteriaCondition .= ' AND  
+                    t.ID_STAGE IN (' . str_replace(['[', ']'], ' ', CJSON::encode($cats)) . ')  
+                    AND us.ID_DISTRICT = :dist 
+                    AND FIRST_LAVEL_APPROVAL = 3';
+                    $criteriaParams = array(":dist" => $user['ID_DISTRICT']);
                 } else {
-                    $criteria->condition = 't.ID_STAGE = :stage AND t.SECOND_LAVEL_RATING IS NOT NULL AND t.ID_PROJECT IN (
+                    $criteriaCondition .= ' 
+                    AND  t.ID_STAGE = :stage 
+                    AND t.SECOND_LAVEL_RATING IS NOT NULL 
+                    AND t.ID_PROJECT IN (
                         22, 27, 34, 36, 39, 43, 47, 48, 52, 53, 56, 57, 61, 63, 65, 70, 77, 98, 101, 
                         102, 110, 114, 115, 121, 122, 124, 126, 129, 131, 132, 133, 135, 142, 146, 148, 
                         150, 152, 155, 157, 158, 161, 162, 168, 169, 170, 171, 172, 173, 174, 177, 179, 
@@ -1249,7 +1372,7 @@ class AutorizedController extends Controller
                         209, 210, 211, 213, 218, 221, 222, 223, 232, 237, 240, 242, 246, 247, 248, 251,
                         252, 253, 255, 257, 258, 259, 261, 263, 264, 265, 267, 280, 281, 282, 283, 285, 286
                     )';
-                    $criteria->params = array(":stage" => $user['ID_STAGE']);
+                    $criteriaParams = array(":stage" => $user['ID_STAGE']);
                 }
                 break;
 
@@ -1257,6 +1380,10 @@ class AutorizedController extends Controller
             case 'Dev' :
                 break;
         }
+
+        $criteria->condition = $criteriaCondition;
+        $criteria->params = $criteriaParams;
+
 
         return $criteria;
     }
@@ -1378,6 +1505,9 @@ class AutorizedController extends Controller
             case 'Dev':
                 $clean_role = 'Разработчик';
                 break;
+            case 'Admin':
+                $clean_role = 'Администратор';
+                break;
             case 'Manager':
                 $clean_role = 'Руководитель проекта';
                 break;
@@ -1428,6 +1558,6 @@ class AutorizedController extends Controller
 
     public function statusSpinner()
     {
-        return '<i class="fa fa-spinner fa-spin"></i>';
+        return '<i class="fa fa-ellipsis-h"></i>';
     }
 }
