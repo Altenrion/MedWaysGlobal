@@ -10,32 +10,34 @@ class StatisticCharts {
 
     public function getUniversData(){
 
-        $criteria = new CDbCriteria;
-        $criteria->select = 'COUNT(id) id,ID_UNIVER';
-        $criteria->group = 'ID_UNIVER';
-        $criteria->condition = "id IN (SELECT ID_REPRESENTATIVE FROM m_w_project_registry pr WHERE FIRST_LAVEL_APPROVAL = '3' AND REG_DATE > '2016-09-01')";
-        $criteria->order = 'id';
-        $universData = Users::model()->findAll($criteria);
+        $projects_sql = "select COUNT(*) as num , un.CONTACTS_UNIVER as name
+            from m_w_project_registry as pr
+            JOIN m_w_users as us on us.id = pr.ID_REPRESENTATIVE
+            JOIN m_w_university as un on us.ID_UNIVER= un.ID_UNIVER
+            where pr.REG_DATE > '2016-09-01'
+                AND us.ID_UNIVER IS NOT NULL
+			
+            GROUP BY us.ID_UNIVER
+		    Order By num";
 
-        $arr = array_reverse(CJSON::decode(CJSON::encode($universData)));
-        $data = array_slice($arr,0,5);
+        $totalProjects = "select COUNT(*) as num 
+            from m_w_project_registry as pr
+            JOIN m_w_users as us on us.id = pr.ID_REPRESENTATIVE
+            where pr.REG_DATE > '2016-09-01' AND us.ID_UNIVER IS NOT NULL";
 
-        $vuzDATA = array();
-        foreach($data as $key=>$val){
+        $con = Yii::app()->db;
 
-            $vuz = University::model()->findByPk($val['ID_UNIVER']);
-            $vuzName = $vuz->CONTACTS_UNIVER;
+        $totalProjectregistry = $con->createCommand($projects_sql);
+        $data = $totalProjectregistry->queryAll();
 
-            $counPr = ProjectRegistry::model()->count('FIRST_LAVEL_APPROVAL = 3');
-            $perc = (100/$counPr) * $val['id'];
+        $totalProjects = $con->createCommand($totalProjects)->queryAll();
 
-            $vuzDATA[] = array(round($perc),$vuzName);
+        for($i = 0; $i < 5; $i++){
 
+            $topUnivers[$i] = array( ($data[$i]['num'] / $totalProjects[0]['num'] ) *100, $data[$i]['name']);
         }
 
-        return $vuzDATA;
-
-
+        return $topUnivers;
     }
 
     public function getStagesData(){
@@ -55,7 +57,7 @@ class StatisticCharts {
 
             $stageName = $stage->NAME_STAGE;
 
-            $counPr = ProjectRegistry::model()->count('FIRST_LAVEL_APPROVAL = 3');
+            $counPr = ProjectRegistry::model()->count("FIRST_LAVEL_APPROVAL = 3 AND REG_DATE > '2016-09-01'");
             $perc = ((100/$counPr) * $val['ID_PROJECT']);
 
             $stageDATA[] = array(round($perc),$stageName);

@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/AutorizedController.php" afterPath="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/StatisticCharts.php" afterPath="$PROJECT_DIR$/protected/components/StatisticCharts.php" />
     </list>
     <ignored path="MedWaysGlobal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,20 +33,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="200">
-      <file leaf-file-name="AutorizedController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AutorizedController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="1262" column="0" selection-start-line="1262" selection-start-column="0" selection-end-line="1262" selection-end-column="0" />
+            <state relative-caret-position="438">
+              <caret line="96" column="38" selection-start-line="96" selection-start-column="38" selection-end-line="96" selection-end-column="38" />
               <folding>
                 <element signature="e#182#910#0#PHP" expanded="false" />
                 <element signature="e#272#903#1#PHP" expanded="false" />
                 <element signature="e#700#891#1#PHP" expanded="false" />
                 <element signature="n#filters#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="e#964#1009#0#PHP" expanded="false" />
-                <element signature="n#accessRules#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                <element signature="e#1073#2319#0#PHP" expanded="false" />
-                <element signature="e#1092#1386#1#PHP" expanded="false" />
                 <element signature="e#1400#1603#1#PHP" expanded="false" />
                 <element signature="e#1617#1751#1#PHP" expanded="false" />
                 <element signature="e#1765#1917#1#PHP" expanded="false" />
@@ -358,12 +355,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StatisticCharts.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StatisticCharts.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/components/StatisticCharts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="476">
+              <caret line="57" column="44" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
+              <folding>
+                <marker date="1476826646670" expanded="true" signature="177:552" ph="select COUNT... m_w_project_registry" />
+                <marker date="1476826646670" expanded="true" signature="177:821" ph="select COUNT... m_w_project_registry" />
+                <marker date="1476826646670" expanded="true" signature="582:788" ph="select COUNT... m_w_project_registry" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -487,8 +488,8 @@
       <file leaf-file-name="statistics.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="53" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="53" />
+            <state relative-caret-position="731">
+              <caret line="76" column="28" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -539,7 +540,6 @@
         <option value="$PROJECT_DIR$/protected/models/medways/Users.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
         <option value="$PROJECT_DIR$/protected/components/RegistrationChart.php" />
-        <option value="$PROJECT_DIR$/protected/components/StatisticCharts.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_users.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertsList.php" />
@@ -547,6 +547,7 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
+        <option value="$PROJECT_DIR$/protected/components/StatisticCharts.php" />
       </list>
     </option>
   </component>
@@ -812,12 +813,12 @@
       <workItem from="1476638086997" duration="10954000" />
       <workItem from="1476723928032" duration="8892000" />
       <workItem from="1476764652385" duration="1059000" />
-      <workItem from="1476819267779" duration="3402000" />
+      <workItem from="1476819267779" duration="7403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59339000" />
+    <option name="totallyTimeSpent" value="63340000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -959,6 +960,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -974,6 +976,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -981,6 +984,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -988,6 +992,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -995,6 +1000,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,6 +1008,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="9" column="12" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,6 +1016,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1016,6 +1024,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,6 +1032,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,6 +1040,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1037,6 +1048,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1044,6 +1056,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1051,6 +1064,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1058,6 +1072,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1065,6 +1080,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1254,14 +1270,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/StatisticCharts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2397">
@@ -1320,27 +1328,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="53" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="1262" column="0" selection-start-line="1262" selection-start-column="0" selection-end-line="1262" selection-end-column="0" />
+        <state relative-caret-position="438">
+          <caret line="96" column="38" selection-start-line="96" selection-start-column="38" selection-end-line="96" selection-end-column="38" />
           <folding>
             <element signature="e#182#910#0#PHP" expanded="false" />
             <element signature="e#272#903#1#PHP" expanded="false" />
             <element signature="e#700#891#1#PHP" expanded="false" />
             <element signature="n#filters#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="e#964#1009#0#PHP" expanded="false" />
-            <element signature="n#accessRules#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="e#1073#2319#0#PHP" expanded="false" />
-            <element signature="e#1092#1386#1#PHP" expanded="false" />
             <element signature="e#1400#1603#1#PHP" expanded="false" />
             <element signature="e#1617#1751#1#PHP" expanded="false" />
             <element signature="e#1765#1917#1#PHP" expanded="false" />
@@ -1617,6 +1614,26 @@
             <marker date="1476822670539" expanded="false" signature="34107:34876" ph="..." />
             <marker date="1476822670539" expanded="false" signature="34144:34875" ph="..." />
             <marker date="1476822670539" expanded="false" signature="53376:53388" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="76" column="28" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/StatisticCharts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="57" column="44" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
+          <folding>
+            <marker date="1476826646670" expanded="true" signature="177:552" ph="select COUNT... m_w_project_registry" />
+            <marker date="1476826646670" expanded="true" signature="177:821" ph="select COUNT... m_w_project_registry" />
+            <marker date="1476826646670" expanded="true" signature="582:788" ph="select COUNT... m_w_project_registry" />
           </folding>
         </state>
       </provider>
