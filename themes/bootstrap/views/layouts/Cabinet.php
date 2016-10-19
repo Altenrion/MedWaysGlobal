@@ -219,6 +219,8 @@ Yii::app()->clientScript->registerCssFile($assetsUrl . '/css/skins.css');
 <!-- BEGIN JS TEMPLATE -->
 <script src="<?= $assetsUrl ?>/js/main.js"></script>
 <script src="<?= $assetsUrl ?>/js/skin-selector.js"></script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40209534 = new Ya.Metrika({ id:40209534, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40209534" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
 
 <!-- END JS TEMPLATE -->
 </body>

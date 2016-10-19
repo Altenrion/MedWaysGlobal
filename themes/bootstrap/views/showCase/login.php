@@ -73,7 +73,7 @@
                                     отслеживать более подробную статистику проектов.
 
                                 </p>
-                                <i class="icon-question-sign contact"><a href="/downloads/vuznauka_project_registration.pdf" target="_blank">Инструкция по оформлению проекта </a></i>
+                                <i class="icon-question-sign contact"><a href="/downloads/vuznauka_project_registration.pdf" target="_blank">Инструкция по регистрации </a></i>
 
                             </div>
                             <div class="control-group ">

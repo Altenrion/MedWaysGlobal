@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php" afterPath="$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php" afterPath="$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php" afterPath="$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php" />
     </list>
     <ignored path="MedWaysGlobal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +38,8 @@
       <file leaf-file-name="AutorizedController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+            <state relative-caret-position="272">
+              <caret line="424" column="17" selection-start-line="424" selection-start-column="17" selection-end-line="424" selection-end-column="17" />
               <folding>
                 <element signature="e#182#910#0#PHP" expanded="false" />
                 <element signature="e#272#903#1#PHP" expanded="false" />
@@ -111,17 +112,10 @@
                 <element signature="n#actionUpdateProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#actionUpdateProfile#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="e#10937#10982#0#PHP" expanded="false" />
-                <element signature="n#actionProfile#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                <element signature="e#11149#12341#0#PHP" expanded="false" />
                 <element signature="e#11300#11412#0#PHP" expanded="false" />
                 <element signature="e#11553#11812#0#PHP" expanded="false" />
-                <element signature="e#11826#11989#0#PHP" expanded="false" />
-                <element signature="e#12003#12242#0#PHP" expanded="false" />
-                <element signature="e#12254#12341#0#PHP" expanded="false" />
-                <element signature="e#12350#12687#0#PHP" expanded="false" />
                 <element signature="e#12375#12686#0#PHP" expanded="false" />
                 <element signature="e#12700#12830#0#PHP" expanded="false" />
-                <element signature="n#CheckInfoPercentage#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="e#12942#13359#0#PHP" expanded="false" />
                 <element signature="e#12990#13228#0#PHP" expanded="false" />
                 <element signature="e#13242#13349#0#PHP" expanded="false" />
@@ -230,6 +224,8 @@
                 <element signature="e#32349#32369#0#PHP" expanded="false" />
                 <element signature="e#33602#33755#0#PHP" expanded="false" />
                 <element signature="e#33943#34066#0#PHP" expanded="false" />
+                <element signature="e#34087#34877#0#PHP" expanded="false" />
+                <element signature="e#34138#34876#0#PHP" expanded="false" />
                 <element signature="e#34334#34819#1#PHP" expanded="false" />
                 <element signature="e#34370#34804#1#PHP" expanded="false" />
                 <element signature="e#34888#35196#0#PHP" expanded="false" />
@@ -334,8 +330,6 @@
                 <element signature="n#statusOk#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#statusFail#0;n#AutorizedController#0;n#!!top" expanded="false" />
                 <element signature="n#statusSpinner#0;n#AutorizedController#0;n#!!top" expanded="false" />
-                <marker date="1476829027637" expanded="false" signature="34107:34876" ph="..." />
-                <marker date="1476829027637" expanded="false" signature="34144:34875" ph="..." />
                 <marker date="1476829027637" expanded="false" signature="53376:53388" ph="..." />
               </folding>
             </state>
@@ -345,12 +339,9 @@
       <file leaf-file-name="statistics.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/statistics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-340">
+            <state relative-caret-position="629">
               <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -414,7 +405,7 @@
       <file leaf-file-name="Users.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
+            <state relative-caret-position="4250">
               <caret line="250" column="53" selection-start-line="250" selection-start-column="53" selection-end-line="250" selection-end-column="53" />
               <folding>
                 <marker date="1476827510227" expanded="true" signature="7187:8138" ph="SELECT user.... m_w_users" />
@@ -456,7 +447,7 @@
       <file leaf-file-name="ShowCaseController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
+            <state relative-caret-position="425">
               <caret line="76" column="20" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
               <folding>
                 <element signature="n#filters#0;n#ShowCaseController#0;n#!!top" expanded="false" />
@@ -497,7 +488,7 @@
       <file leaf-file-name="ContMainController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/ContMainController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="2448">
               <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
               <folding />
             </state>
@@ -517,8 +508,18 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="710">
+            <state relative-caret-position="903">
               <caret line="130" column="39" selection-start-line="130" selection-start-column="39" selection-end-line="130" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -527,7 +528,7 @@
       <file leaf-file-name="MapStat.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/components/MapStat.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
+            <state relative-caret-position="1309">
               <caret line="83" column="52" selection-start-line="83" selection-start-column="52" selection-end-line="83" selection-end-column="52" />
               <folding />
             </state>
@@ -537,8 +538,8 @@
       <file leaf-file-name="Proto.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="189" column="83" selection-start-line="189" selection-start-column="83" selection-end-line="189" selection-end-column="83" />
+            <state relative-caret-position="413">
+              <caret line="202" column="49" selection-start-line="202" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -547,8 +548,8 @@
       <file leaf-file-name="Cabinet.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="136" column="59" selection-start-line="136" selection-start-column="59" selection-end-line="136" selection-end-column="59" />
+            <state relative-caret-position="767">
+              <caret line="220" column="61" selection-start-line="220" selection-start-column="61" selection-end-line="220" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -567,7 +568,7 @@
       <file leaf-file-name="statistics.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="2941">
               <caret line="173" column="21" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="21" />
               <folding />
             </state>
@@ -617,7 +618,6 @@
         <option value="$PROJECT_DIR$/protected/components/RegistrationChart.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_users.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/_ExpertsList.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php" />
         <option value="$PROJECT_DIR$/protected/components/StatisticCharts.php" />
@@ -627,6 +627,7 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
         <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php" />
       </list>
     </option>
@@ -672,6 +673,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -748,7 +750,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="autorized" />
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -804,7 +806,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -912,11 +913,13 @@
       <workItem from="1476723928032" duration="8892000" />
       <workItem from="1476764652385" duration="1059000" />
       <workItem from="1476819267779" duration="9990000" />
+      <workItem from="1476904225129" duration="659000" />
+      <workItem from="1476907606689" duration="98000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65927000" />
+    <option name="totallyTimeSpent" value="66684000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -942,11 +945,10 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19936034" sideWeight="0.4829483" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20362474" sideWeight="0.4829483" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921812" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14978679" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51446944" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16684435" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -959,6 +961,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51446944" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1022,7 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1038,7 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1046,7 +1047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1054,7 +1054,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1062,7 +1061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1171,7 +1169,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1530">
           <caret line="90" column="43" selection-start-line="90" selection-start-column="43" selection-end-line="90" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1179,7 +1176,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
           <caret line="1022" column="20" selection-start-line="1022" selection-start-column="20" selection-end-line="1022" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1195,7 +1191,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="19" column="74" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1245,9 +1240,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="42" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="42" />
-          <folding>
-            <marker date="1476647720343" expanded="true" signature="2614:2673" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1269,21 +1261,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="75" column="99" selection-start-line="75" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/profile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2822">
           <caret line="172" column="51" selection-start-line="172" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#159#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1291,7 +1272,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="395" column="104" selection-start-line="395" selection-start-column="104" selection-end-line="395" selection-end-column="104" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1305,18 +1285,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/statistics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340">
+        <state relative-caret-position="629">
           <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/ShowCaseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
+        <state relative-caret-position="425">
           <caret line="76" column="20" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
           <folding>
             <element signature="n#filters#0;n#ShowCaseController#0;n#!!top" expanded="false" />
@@ -1355,7 +1332,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/ContMainController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="2448">
           <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
           <folding />
         </state>
@@ -1363,7 +1340,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/MapStat.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
+        <state relative-caret-position="1309">
           <caret line="83" column="52" selection-start-line="83" selection-start-column="52" selection-end-line="83" selection-end-column="52" />
           <folding />
         </state>
@@ -1377,26 +1354,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
-          <caret line="130" column="39" selection-start-line="130" selection-start-column="39" selection-end-line="130" selection-end-column="39" />
+        <state relative-caret-position="2941">
+          <caret line="173" column="21" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
+    <entry file="file://$PROJECT_DIR$/protected/components/StatisticCharts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="173" column="21" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="21" />
+        <state relative-caret-position="340">
+          <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
+          <folding>
+            <marker date="1476826646670" expanded="true" signature="177:552" ph="select COUNT... m_w_project_registry" />
+            <marker date="1476826646670" expanded="true" signature="177:821" ph="select COUNT... m_w_project_registry" />
+            <marker date="1476826646670" expanded="true" signature="582:788" ph="select COUNT... m_w_project_registry" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" column="47" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4250">
+          <caret line="250" column="53" selection-start-line="250" selection-start-column="53" selection-end-line="250" selection-end-column="53" />
+          <folding>
+            <marker date="1476827510227" expanded="true" signature="7187:8138" ph="SELECT user.... m_w_users" />
+            <marker date="1476827510227" expanded="true" signature="7537:7621" ph="SELECT dist.... m_w_district" />
+            <marker date="1476827510227" expanded="true" signature="7656:7745" ph="SELECT univ.... m_w_university" />
+            <marker date="1476827510227" expanded="true" signature="7778:7868" ph="SELECT spec.... m_w_speciality" />
+            <marker date="1476827510227" expanded="true" signature="8284:8594" ph="SELECT `ID_D... m_w_users" />
+            <marker date="1476827510227" expanded="true" signature="8733:9094" ph="SELECT `ID_D... m_w_users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="94" selection-start-line="28" selection-start-column="94" selection-end-line="28" selection-end-column="94" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        <state relative-caret-position="272">
+          <caret line="424" column="17" selection-start-line="424" selection-start-column="17" selection-end-line="424" selection-end-column="17" />
           <folding>
             <element signature="e#182#910#0#PHP" expanded="false" />
             <element signature="e#272#903#1#PHP" expanded="false" />
@@ -1469,17 +1481,10 @@
             <element signature="n#actionUpdateProject#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#actionUpdateProfile#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="e#10937#10982#0#PHP" expanded="false" />
-            <element signature="n#actionProfile#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <element signature="e#11149#12341#0#PHP" expanded="false" />
             <element signature="e#11300#11412#0#PHP" expanded="false" />
             <element signature="e#11553#11812#0#PHP" expanded="false" />
-            <element signature="e#11826#11989#0#PHP" expanded="false" />
-            <element signature="e#12003#12242#0#PHP" expanded="false" />
-            <element signature="e#12254#12341#0#PHP" expanded="false" />
-            <element signature="e#12350#12687#0#PHP" expanded="false" />
             <element signature="e#12375#12686#0#PHP" expanded="false" />
             <element signature="e#12700#12830#0#PHP" expanded="false" />
-            <element signature="n#CheckInfoPercentage#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="e#12942#13359#0#PHP" expanded="false" />
             <element signature="e#12990#13228#0#PHP" expanded="false" />
             <element signature="e#13242#13349#0#PHP" expanded="false" />
@@ -1588,6 +1593,8 @@
             <element signature="e#32349#32369#0#PHP" expanded="false" />
             <element signature="e#33602#33755#0#PHP" expanded="false" />
             <element signature="e#33943#34066#0#PHP" expanded="false" />
+            <element signature="e#34087#34877#0#PHP" expanded="false" />
+            <element signature="e#34138#34876#0#PHP" expanded="false" />
             <element signature="e#34334#34819#1#PHP" expanded="false" />
             <element signature="e#34370#34804#1#PHP" expanded="false" />
             <element signature="e#34888#35196#0#PHP" expanded="false" />
@@ -1692,68 +1699,39 @@
             <element signature="n#statusOk#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#statusFail#0;n#AutorizedController#0;n#!!top" expanded="false" />
             <element signature="n#statusSpinner#0;n#AutorizedController#0;n#!!top" expanded="false" />
-            <marker date="1476829027637" expanded="false" signature="34107:34876" ph="..." />
-            <marker date="1476829027637" expanded="false" signature="34144:34875" ph="..." />
             <marker date="1476829027637" expanded="false" signature="53376:53388" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/StatisticCharts.php">
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
-          <folding>
-            <marker date="1476826646670" expanded="true" signature="177:552" ph="select COUNT... m_w_project_registry" />
-            <marker date="1476826646670" expanded="true" signature="177:821" ph="select COUNT... m_w_project_registry" />
-            <marker date="1476826646670" expanded="true" signature="582:788" ph="select COUNT... m_w_project_registry" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="36" column="47" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="47" />
+        <state relative-caret-position="903">
+          <caret line="130" column="39" selection-start-line="130" selection-start-column="39" selection-end-line="130" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/medways/Users.php">
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/showCase/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="250" column="53" selection-start-line="250" selection-start-column="53" selection-end-line="250" selection-end-column="53" />
-          <folding>
-            <marker date="1476827510227" expanded="true" signature="7187:8138" ph="SELECT user.... m_w_users" />
-            <marker date="1476827510227" expanded="true" signature="7537:7621" ph="SELECT dist.... m_w_district" />
-            <marker date="1476827510227" expanded="true" signature="7656:7745" ph="SELECT univ.... m_w_university" />
-            <marker date="1476827510227" expanded="true" signature="7778:7868" ph="SELECT spec.... m_w_speciality" />
-            <marker date="1476827510227" expanded="true" signature="8284:8594" ph="SELECT `ID_D... m_w_users" />
-            <marker date="1476827510227" expanded="true" signature="8733:9094" ph="SELECT `ID_D... m_w_users" />
-          </folding>
+        <state relative-caret-position="504">
+          <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Proto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="189" column="83" selection-start-line="189" selection-start-column="83" selection-end-line="189" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/projects.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="94" selection-start-line="28" selection-start-column="94" selection-end-line="28" selection-end-column="94" />
+        <state relative-caret-position="413">
+          <caret line="202" column="49" selection-start-line="202" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/layouts/Cabinet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="136" column="59" selection-start-line="136" selection-start-column="59" selection-end-line="136" selection-end-column="59" />
+        <state relative-caret-position="767">
+          <caret line="220" column="61" selection-start-line="220" selection-start-column="61" selection-end-line="220" selection-end-column="61" />
           <folding />
         </state>
       </provider>
