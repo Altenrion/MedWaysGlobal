@@ -113,7 +113,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
 
                                         <div class="progress">
                                             <div class="progress-bar" role="progressbar" aria-valuenow="<?=$vuz_v[0] + $i ?>" aria-valuemin="0" aria-valuemax="100" >
-                                                <span class=""><?=$vuz_v[1]?> </span><span id="<?=$vuz_v[1]?>"><?=$vuz_v[0]?>%</span>
+                                                <span class=""><?=$vuz_v[1]?> </span><span id="<?=$vuz_v[1]?>"><?= round($vuz_v[0], 2)?>%</span>
                                             </div>
                                         </div>
 
