@@ -28,67 +28,6 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                     <? endif; ?>
 				</div><!--/col-->
 
-<? if(false): ?>
-                <div class="col-md-12">
-                    <div class="grid">
-                        <div class="grid-header">
-                            <i class="fa fa-bar-chart-o"></i>
-                            <span class="grid-title">Регистрация в проекте</span>
-                            <div class="pull-right grid-tools">
-                                <a data-widget="collapse" title="Collapse"><i class="fa fa-chevron-up"></i></a>
-                                <a data-widget="reload" title="Reload"><i class="fa fa-refresh"></i></a>
-                                <a data-widget="remove" title="Remove"><i class="fa fa-times"></i></a>
-                            </div>
-                        </div>
-                        <div class="grid-body">
-                            <div id="chart-register-line" style="width:100%; height:250px;"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-12">
-                    <div class="grid">
-                        <div class="grid-body">
-                            
-                            <div class="row">
-                                <div class="col-md-6"></br></br></br>
-                                    В настоящем разделе приведена актуальная статистика мероприятия "Эстафета вузовской науки". В блоке справа вы можете видеть Вузы, лидирующие по количеству проектов.
-                                    По результатам экспертизы регионального этапа определятся Базовые вузы Эстафеты 2015 года. </br></br>
-                                    В блоках ниже приведены сводки распределения одобренных проектов по платформам, статистика по командам участников и заявленным бюджетам проектов.
-                                    Настоящая статистика будет пополняться по окончанию регионального и федерального этапа экспертизы.
-                                </div>
-                                <div class="col-md-6">
-
-                                    <p class="lead">Лидеры Эстафеты вузовской науки</p>
-                                    <p>Топ 5 вузов проекта</p>
-                                    <? $i = 40; ?>
-
-                                    <? foreach($topUnivers as $vuz_k=>$vuz_v):?>
-
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="<?=$vuz_v[0] + $i ?>" aria-valuemin="0" aria-valuemax="100" >
-                                                <span class=""><?=$vuz_v[1]?> </span><span id="<?=$vuz_v[1]?>"><?=$vuz_v[0]?>%</span>
-                                            </div>
-                                        </div>
-
-                                    <? $i -= 3; endforeach;  ?>
-
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-<!--                <div class="col-md-12">-->
-<!--                    <div class="grid">-->
-<!--                        <div class="grid-body">-->
-<!--                            <blockquote>-->
-<!--                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>-->
-<!--                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>-->
-<!--                            </blockquote>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
                 <div class="col-md-12">
                     <div class="grid">
                         <div class="grid-body">
@@ -123,24 +62,86 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                     <p class="lead">Платформы Эстафеты вузовской науки</p>
                                     <p>Количество проектов по платформам</p>
                                     <form class="form-horizontal" role="form">
-                                        <? foreach($stagesData as $stage_k=>$stage_v): ?>
 
-                                        <div class="form-group">
-                                            <label class="col-sm-4 control-label"><?=$stage_v[1]?></label>
-                                            <div class="col-sm-8 line-progress" >
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="<?=$stage_v[0] + $stage_v[0]?>" aria-valuemin="0" aria-valuemax="100" >
-                                                        <span id="<?=$stage_v[1]?>"><?=$stage_v[0]?> %</span>
+                                        <?
+                                        $max = reset($stagesData);
+                                        $total_max = $max['total'];
+
+                                        foreach($stagesData as $stage_k=>$stage_v): ?>
+
+                                            <? $local_max = $stage_v['total'] / $total_max * 100; ?>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label"><?=$stage_v["stage"]?></label>
+                                                <div class="col-sm-8 line-progress" >
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-success" aria-valuenow="<?= round(($stage_v['phase1'] / $stage_v['total']) * $local_max) -2 ?>" aria-valuemin="0" aria-valuemax="<?= $total_max ?>" ><span >Идея <?= $stage_v['phase1']?></span></div>
+                                                        <div class="progress-bar progress-bar-warning" aria-valuenow="<?= round(($stage_v['phase2'] / $stage_v['total']) * $local_max) -2?>" aria-valuemin="0" aria-valuemax="<?= $total_max ?>" ><span >НИР <?= $stage_v['phase2']?></span></div>
+                                                        <div class="progress-bar progress-bar-danger" aria-valuenow="<?= round(($stage_v['phase3'] / $stage_v['total']) * $local_max) -2?>" aria-valuemin="0" aria-valuemax="<?= $total_max ?>" ><span >НИОКР <?= $stage_v['phase3']?></span></div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
                                         <? endforeach; ?>
-
                                     </form>
+
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-12">
+                    <div class="grid">
+                        <div class="grid-body">
+                            
+                            <div class="row">
+                                <div class="col-md-6"></br></br></br>
+                                    В настоящем разделе приведена актуальная статистика мероприятия "Эстафета вузовской науки". В блоке справа вы можете видеть Вузы, лидирующие по количеству проектов.
+                                    По результатам экспертизы регионального этапа определятся Базовые вузы Эстафеты 2015 года. </br></br>
+                                    В блоках ниже приведены сводки распределения одобренных проектов по платформам, статистика по командам участников и заявленным бюджетам проектов.
+                                    Настоящая статистика будет пополняться по окончанию регионального и федерального этапа экспертизы.
+                                </div>
+                                <div class="col-md-6">
+
+                                    <p class="lead">Лидеры Эстафеты вузовской науки</p>
+                                    <p>Топ 5 вузов проекта</p>
+                                    <? $i = 40; ?>
+
+                                    <? foreach($topUnivers as $vuz_k=>$vuz_v):?>
+
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="<?=$vuz_v[0] + $i ?>" aria-valuemin="0" aria-valuemax="100" >
+                                                <span class=""><?=$vuz_v[1]?> </span><span id="<?=$vuz_v[1]?>"><?=$vuz_v[0]?>%</span>
+                                            </div>
+                                        </div>
+
+                                    <? $i -= 3; endforeach;  ?>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+    <? if(false): ?>
+
+                <div class="col-md-12">
+                    <div class="grid">
+                        <div class="grid-header">
+                            <i class="fa fa-bar-chart-o"></i>
+                            <span class="grid-title">Регистрация в проекте</span>
+                            <div class="pull-right grid-tools">
+                                <a data-widget="collapse" title="Collapse"><i class="fa fa-chevron-up"></i></a>
+                                <a data-widget="reload" title="Reload"><i class="fa fa-refresh"></i></a>
+                                <a data-widget="remove" title="Remove"><i class="fa fa-times"></i></a>
+                            </div>
+                        </div>
+                        <div class="grid-body">
+                            <div id="chart-register-line" style="width:100%; height:250px;"></div>
                         </div>
                     </div>
                 </div>

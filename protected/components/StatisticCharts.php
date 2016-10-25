@@ -42,27 +42,48 @@ class StatisticCharts {
 
     public function getStagesData(){
 
-        $criteria = new CDbCriteria;
-        $criteria->select = 'COUNT(ID_PROJECT) ID_PROJECT, ID_STAGE  ';
-        $criteria->group = 'ID_STAGE';
-        $criteria->condition = "FIRST_LAVEL_APPROVAL = 3 AND REG_DATE > '2016-09-01'";
-        $criteria->order = 'ID_PROJECT';
-        $stages = ProjectRegistry::model()->findAll($criteria);
+//        $criteria = new CDbCriteria;
+//        $criteria->select = 'COUNT(ID_PROJECT) ID_PROJECT, ID_STAGE  ';
+//        $criteria->group = 'ID_STAGE';
+//        $criteria->condition = "FIRST_LAVEL_APPROVAL = 3 AND REG_DATE > '2016-09-01'";
+//        $criteria->order = 'ID_PROJECT';
+//        $stages = ProjectRegistry::model()->findAll($criteria);
+//        $ordered = array_reverse(CJSON::decode(CJSON::encode($stages)));
+//        foreach($ordered as $key=>$val){
+//
+//            $stage = Stage::model()->findByPk($val['ID_STAGE']);
+//
+//            $stageName = $stage->NAME_STAGE;
+//
+//            $counPr = ProjectRegistry::model()->count("FIRST_LAVEL_APPROVAL = 3 AND REG_DATE > '2016-09-01'");
+//            $perc = ((100/$counPr) * $val['ID_PROJECT']);
+//
+//            $stageDATA[] = array(round($perc),$stageName);
+//        }
 
-        $ordered = array_reverse(CJSON::decode(CJSON::encode($stages)));
+        $query = "
+            SELECT st.NAME_STAGE as stage,
+            count(*) as total ,
+            count(case when pr.ID_PHASE = '1' then 1 else null end) as phase1,
+            count(case when pr.ID_PHASE = '2' then 1 else null end) as phase2, 
+            count(case when pr.ID_PHASE = '3' then 1 else null end) as phase3 
+            
+            FROM `m_w_project_registry` as pr
+            JOIN m_w_stage as st ON st.ID_STAGE = pr.ID_STAGE
+            JOIN m_w_phase as ph ON ph.ID_PHASE = pr.ID_PHASE
+            
+            WHERE  REG_DATE > '2016-09-01'
+            
+            GROUP BY pr.ID_STAGE 
+            ORDER BY total DESC
+            LIMIT 5
+            ";
 
-        foreach($ordered as $key=>$val){
+        $con = Yii::app()->db;
 
-            $stage = Stage::model()->findByPk($val['ID_STAGE']);
+        $stages = $con->createCommand($query)->queryAll();
 
-            $stageName = $stage->NAME_STAGE;
-
-            $counPr = ProjectRegistry::model()->count("FIRST_LAVEL_APPROVAL = 3 AND REG_DATE > '2016-09-01'");
-            $perc = ((100/$counPr) * $val['ID_PROJECT']);
-
-            $stageDATA[] = array(round($perc),$stageName);
-        }
-        return $stageDATA;
+        return $stages;
     }
 
     public function getManagersData(){
