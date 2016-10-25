@@ -1258,7 +1258,7 @@ class AutorizedController extends Controller
         (SELECT COUNT(DISTINCT id) FROM `m_w_users` WHERE roles IN ('Exp','Exp1','Exp2','Exp3') AND ID_UNIVER = t.ID_UNIVER ) as ExpCount,
         (SELECT COUNT(DISTINCT id) FROM m_w_users as u  Where roles IN ('Manager') AND ID_UNIVER = t.ID_UNIVER AND u.REG_DATE > '2016-09-01' ) as ProjCount,
         (SELECT COUNT(DISTINCT id) FROM m_w_users as u  Where roles IN ('Moder') AND ID_UNIVER = t.ID_UNIVER ) as UniverModer";
-        $criteria->condition = "AKTIV_KEY='100' AND ID_UNIVER is not NULL AND ID_DISTRICT is not NULL";
+        $criteria->condition = "AKTIV_KEY='100' AND ID_UNIVER is not NULL AND ID_DISTRICT is not NULL AND t.REG_DATE > '2016-09-01'";
         $criteria->group = 'ID_UNIVER';
 
         if (isset($_REQUEST['sSearch']) && isset($_REQUEST['sSearch']{0})) {
@@ -1300,6 +1300,15 @@ class AutorizedController extends Controller
             Yii::app()->end();
         }
 
+
+//        select t.ID_UNIVER ,t.ID_DISTRICT ,
+//        (SELECT COUNT(DISTINCT id) FROM `m_w_users` WHERE roles IN ('Exp','Exp1','Exp2','Exp3') AND ID_UNIVER = t.ID_UNIVER ) as ExpCount,
+//        (SELECT COUNT(DISTINCT id) FROM m_w_users as u  Where roles IN ('Manager') AND ID_UNIVER = t.ID_UNIVER AND u.REG_DATE > '2016-09-01' ) as ProjCount,
+//        (SELECT COUNT(DISTINCT id) FROM m_w_users as u  Where roles IN ('Moder') AND ID_UNIVER = t.ID_UNIVER ) as UniverModer
+//        FROM m_w_users as t
+//
+//        where AKTIV_KEY='100' AND ID_UNIVER is not NULL AND ID_DISTRICT is not NULL
+//        GROUP BY ID_UNIVER
 
     }
 
