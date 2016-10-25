@@ -18,7 +18,8 @@ class StatisticCharts {
                 AND us.ID_UNIVER IS NOT NULL
 			
             GROUP BY us.ID_UNIVER
-		    Order By num";
+		     ORDER BY num DESC
+            LIMIT 5";
 
         $totalProjects = "select COUNT(*) as num 
             from m_w_project_registry as pr
@@ -32,8 +33,7 @@ class StatisticCharts {
 
         $totalProjects = $con->createCommand($totalProjects)->queryAll();
 
-        for($i = 0; $i < 5; $i++){
-
+        foreach ($data as $i => $topUniver) {
             $topUnivers[$i] = array( ($data[$i]['num'] / $totalProjects[0]['num'] ) *100, $data[$i]['name']);
         }
 
