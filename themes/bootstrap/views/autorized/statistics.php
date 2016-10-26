@@ -28,6 +28,44 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                     <? endif; ?>
 				</div><!--/col-->
 
+
+
+
+                <div class="col-md-12">
+                    <div class="grid">
+                        <div class="grid-body">
+                            
+                            <div class="row">
+                                <div class="col-md-6"></br></br></br>
+                                    В настоящем разделе приведена актуальная статистика мероприятия "Эстафета вузовской науки". В блоке справа вы можете видеть Вузы, лидирующие по количеству проектов.
+                                    По результатам экспертизы регионального этапа определятся Базовые вузы Эстафеты 2015 года. </br></br>
+
+                                    В блоке ниже представлено схематичное распределение проектов по платформам (<span style="color:#5cb85c" >Идея</span>, <span style="color:#f0ad4e">НИР</span>, <span style="color:#d9534f">НИРС</span>).
+                                    Настоящая статистика будет пополняться по окончанию каждого этапа экспертизы.
+                                </div>
+                                <div class="col-md-6">
+
+                                    <p class="lead">Лидеры Эстафеты вузовской науки</p>
+                                    <p>Топ 5 вузов проекта</p>
+                                    <? $i = 40; ?>
+
+                                    <? foreach($topUnivers as $vuz_k=>$vuz_v):?>
+
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="<?=$vuz_v[0] + $i ?>" aria-valuemin="0" aria-valuemax="100" >
+                                                <span class=""><?=$vuz_v[1]?> </span><span id="<?=$vuz_v[1]?>"><?= round($vuz_v[0], 2)?>%</span>
+                                            </div>
+                                        </div>
+
+                                    <? $i -= 3; endforeach;  ?>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-12">
                     <div class="grid">
                         <div class="grid-body">
@@ -74,9 +112,9 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                                 <label class="col-sm-4 control-label"><?=$stage_v["stage"]?></label>
                                                 <div class="col-sm-8 line-progress" >
                                                     <div class="progress">
-                                                        <div class="progress-bar progress-bar-success" aria-valuenow="<?= round(($stage_v['phase1'] / $stage_v['total']) * $local_max) -2 ?>" aria-valuemin="0" aria-valuemax="<?= $total_max ?>" ><span >Идея <?= $stage_v['phase1']?></span></div>
-                                                        <div class="progress-bar progress-bar-warning" aria-valuenow="<?= round(($stage_v['phase2'] / $stage_v['total']) * $local_max) -2?>" aria-valuemin="0" aria-valuemax="<?= $total_max ?>" ><span >НИР <?= $stage_v['phase2']?></span></div>
-                                                        <div class="progress-bar progress-bar-danger" aria-valuenow="<?= round(($stage_v['phase3'] / $stage_v['total']) * $local_max) -2?>" aria-valuemin="0" aria-valuemax="<?= $total_max ?>" ><span >НИОКР <?= $stage_v['phase3']?></span></div>
+                                                        <div class="progress-bar progress-bar-success" aria-valuenow="<?= round(($stage_v['phase1'] / $stage_v['total']) * $local_max) -2 ?>" aria-valuemin="0" aria-valuemax="<?= $total_max ?>" ><span ><?= $stage_v['phase1']?></span></div>
+                                                        <div class="progress-bar progress-bar-warning" aria-valuenow="<?= round(($stage_v['phase2'] / $stage_v['total']) * $local_max) -2?>" aria-valuemin="0" aria-valuemax="<?= $total_max ?>" ><span ><?= $stage_v['phase2']?></span></div>
+                                                        <div class="progress-bar progress-bar-danger" aria-valuenow="<?= round(($stage_v['phase3'] / $stage_v['total']) * $local_max) -2?>" aria-valuemin="0" aria-valuemax="<?= $total_max ?>" ><span ><?= $stage_v['phase3']?></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -89,43 +127,6 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                         </div>
                     </div>
                 </div>
-
-
-
-                <div class="col-md-12">
-                    <div class="grid">
-                        <div class="grid-body">
-                            
-                            <div class="row">
-                                <div class="col-md-6"></br></br></br>
-                                    В настоящем разделе приведена актуальная статистика мероприятия "Эстафета вузовской науки". В блоке справа вы можете видеть Вузы, лидирующие по количеству проектов.
-                                    По результатам экспертизы регионального этапа определятся Базовые вузы Эстафеты 2015 года. </br></br>
-                                    В блоках ниже приведены сводки распределения одобренных проектов по платформам, статистика по командам участников и заявленным бюджетам проектов.
-                                    Настоящая статистика будет пополняться по окончанию регионального и федерального этапа экспертизы.
-                                </div>
-                                <div class="col-md-6">
-
-                                    <p class="lead">Лидеры Эстафеты вузовской науки</p>
-                                    <p>Топ 5 вузов проекта</p>
-                                    <? $i = 40; ?>
-
-                                    <? foreach($topUnivers as $vuz_k=>$vuz_v):?>
-
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="<?=$vuz_v[0] + $i ?>" aria-valuemin="0" aria-valuemax="100" >
-                                                <span class=""><?=$vuz_v[1]?> </span><span id="<?=$vuz_v[1]?>"><?= round($vuz_v[0], 2)?>%</span>
-                                            </div>
-                                        </div>
-
-                                    <? $i -= 3; endforeach;  ?>
-
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-
 
     <? if(false): ?>
 
