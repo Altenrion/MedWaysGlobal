@@ -76,7 +76,6 @@ class StatisticCharts {
             
             GROUP BY pr.ID_STAGE 
             ORDER BY total DESC
-            LIMIT 5
             ";
 
         $con = Yii::app()->db;
