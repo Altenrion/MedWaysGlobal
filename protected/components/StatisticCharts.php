@@ -72,6 +72,7 @@ class StatisticCharts {
             JOIN m_w_stage as st ON st.ID_STAGE = pr.ID_STAGE
             JOIN m_w_phase as ph ON ph.ID_PHASE = pr.ID_PHASE
             
+            WHERE  REG_DATE > '2016-09-01'
             
             GROUP BY pr.ID_STAGE 
             ORDER BY total DESC
