@@ -1567,6 +1567,6 @@ class AutorizedController extends Controller
 
     public function statusSpinner()
     {
-        return '<i class="fa fa-ellipsis-h"></i>';
+        return '<i class="fa fa-spinnerx"></i>';
     }
 }

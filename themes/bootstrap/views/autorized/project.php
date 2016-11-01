@@ -409,6 +409,12 @@ if (isset($data) && !is_null($data)) {
                                                 <li>Информация о профильных публикациях, грантах и соисолнителях</li>
                                             </ul>
 
+                                            <br>
+
+                                            <?if(!empty($data[0]['ROADMAP_PROJECT'])):?>
+                                                <span> <b>Вы загрузили документ: </b> <a href="<?= $this->createUrl('/uploads')."/".$data[0]['ROADMAP_PROJECT']?>">Аннотация проекта № <?= $data[0]['id']?> </a></span>
+                                            <? endif; ?>
+
                                         </div>
                                     </div>
                                 </div>
