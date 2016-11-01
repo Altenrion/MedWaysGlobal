@@ -34,7 +34,7 @@ class StatisticCharts {
         $totalProjects = $con->createCommand($totalProjects)->queryAll();
 
         foreach ($data as $i => $topUniver) {
-            $topUnivers[$i] = array( ($data[$i]['num'] / $totalProjects[0]['num'] ) *100, $data[$i]['name']);
+            $topUnivers[$i] = array(round(($data[$i]['num'] / $totalProjects[0]['num']) *100, 2), $data[$i]['name']);
         }
 
         return $topUnivers;

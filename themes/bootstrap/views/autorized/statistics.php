@@ -40,25 +40,29 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                     В настоящем разделе приведена актуальная статистика мероприятия "Эстафета вузовской науки". В блоке справа вы можете видеть Вузы, лидирующие по количеству проектов.
                                     По результатам экспертизы регионального этапа определятся Базовые вузы Эстафеты 2015 года. </br></br>
 
-                                    В блоке ниже представлено схематичное распределение проектов по платформам (<span style="color:#5cb85c; font-weight: bold" >Идея</span>, <span style="color:#f0ad4e; font-weight: bold">НИР</span>, <span style="color:#d9534f;font-weight: bold">НИРС</span>).</br>
+                                    В блоке ниже представлено схематичное распределение проектов по платформам (<span style="color:#5cb85c; font-weight: bold" >Идея</span>, <span style="color:#f0ad4e; font-weight: bold">НИР</span>, <span style="color:#d9534f;font-weight: bold">НИОКР</span>).</br>
                                     Настоящая статистика будет пополняться по окончанию каждого этапа экспертизы.
                                 </div>
                                 <div class="col-md-6">
 
                                     <p class="lead">Лидеры Эстафеты вузовской науки</p>
                                     <p>Топ 5 вузов проекта</p>
-                                    <? $i = 40; ?>
+                                    <?
+                                    $max = reset($topUnivers);
+                                    $total_max = $max[0];
 
-                                    <? foreach($topUnivers as $vuz_k=>$vuz_v):?>
+                                     foreach($topUnivers as $vuz_k=>$vuz_v):?>
 
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="<?=$vuz_v[0] + $i ?>" aria-valuemin="0" aria-valuemax="100" >
-                                                <span class=""><?=$vuz_v[1]?> </span><span id="<?=$vuz_v[1]?>"><?= round($vuz_v[0], 2)?>%</span>
+                                        <? $local_max = $vuz_v[0] / $total_max * 100; ?>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label"><?=$vuz_v[1]?></label>
+                                            <div class="col-sm-8 line-progress" >
+                                                <div class="progress">
+                                                    <div class="progress-bar " aria-valuenow="<?= round(($vuz_v[0] / $total_max) * 100)  ?>" aria-valuemin="0" aria-valuemax="<?= $total_max ?>" ><span ><?= $vuz_v[0]?> %</span></div>
+                                                </div>
                                             </div>
                                         </div>
-
-                                    <? endforeach;  ?>
-
+                                    <? endforeach; ?>
                                 </div>
                             </div>
                             
