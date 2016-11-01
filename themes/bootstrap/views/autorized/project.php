@@ -412,7 +412,7 @@ if (isset($data) && !is_null($data)) {
                                             <br>
 
                                             <?if(!empty($data[0]['ROADMAP_PROJECT'])):?>
-                                                <span> <b>Вы загрузили документ: </b> <a href="<?= $this->createUrl('/uploads')."/".$data[0]['ROADMAP_PROJECT']?>">Аннотация проекта № <?= $data[0]['id']?> </a></span>
+                                                <span> <b>Вы загрузили документ: </b> <a href="<?= $this->createUrl('/uploads')."/".$data[0]['ROADMAP_PROJECT']?>">Аннотация проекта</a></span>
                                             <? endif; ?>
 
                                         </div>
