@@ -17,11 +17,11 @@ if(isset($data) && !is_null($data)){
             case 'Exp1': $data[0]['role'] = 'Эксперт';break;
             case 'Exp2': $data[0]['role'] = 'Эксперт';break;
             case 'Exp3': $data[0]['role'] = 'Эксперт';break;
-            case 'Moder': $data[0]['role'] = 'Координатор от вуза'; break;
+            case 'Moder':
+            case 'Moder1': $data[0]['role'] = 'Координатор от вуза'; break;
         }
     }
 }
-
 ?>
 
 
@@ -51,10 +51,8 @@ if(isset($data) && !is_null($data)){
                                 <div class="col-xs-7 col-sm-6 col-md-12">
                                     <ul class="vcard-details">
 
-
                                         <li class="vcard-detail">
                                             <div><i class="fa fa-fw fa-child"></i> <?=(isset($data))?($data[0]['role']):('')?></div>
-
                                         </li >
                                         <? if($this->checkRole(array('Exp','Exp1','Exp2','Exp3'))): ?>
                                             <li class="vcard-detail">

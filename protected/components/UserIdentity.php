@@ -72,6 +72,8 @@ public function authenticate()
             return 3;
         if($users->roles == 'Moder')
             return 4;
+        if($users->roles == 'Moder1')
+            return 4;
 
 
     }

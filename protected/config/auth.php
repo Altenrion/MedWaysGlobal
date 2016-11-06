@@ -59,6 +59,12 @@ return array(
         'bizRule' => null,
         'data' => null
     ),
+    'Moder1' => array(
+        'type' => CAuthItem::TYPE_ROLE,
+        'description' => 'Moder1',
+        'bizRule' => null,
+        'data' => null
+    ),
 
     'Admin' => array(
         'type' => CAuthItem::TYPE_ROLE,

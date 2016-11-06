@@ -15,7 +15,7 @@
 
         $('tbody').on('mouseover', 'tr', function(){
         <? foreach($nums as $id_k=>$id_v): ?>
-            $('a[rel="roles_<?=$id_v ?>"]').editable({'disabled':false,'showbuttons':false,'name':'roles','title':'Выберите роль','value':null,'url':'<?= Yii::app()->createUrl('Autorized/updateProfile') ?>','type':'select','placement':'top','source':[{'value':'Exp','text':'Эксперт0'},{'value':'Exp1','text':'Эксперт1'},{'value':'Exp2','text':'Эксперт2'},{'value':'Exp3','text':'Эксперт3'}]});
+            $('a[rel="roles_<?=$id_v ?>"]').editable({'disabled':false,'showbuttons':false,'name':'roles','title':'Выберите роль','value':null,'url':'<?= Yii::app()->createUrl('Autorized/updateProfile') ?>','type':'select','placement':'top','source':[{'value':'Exp','text':'Эксперт0'},{'value':'Exp1','text':'Эксперт1'},{'value':'Exp2','text':'Экспертиза региональная'},{'value':'Exp3','text':'Экспертиза федеральная'}]});
             $('a[rel="ID_STAGE_<?=$id_v ?>"]').editable({'disabled':false,'showbuttons':false,'name':'ID_STAGE','title':'Выберите платформу','value':null,'url':'<?= Yii::app()->createUrl('Autorized/updateProfile') ?>','type':'select','placement':'top','source':[
                 {'value':'1','text':'Онкология'},
                 {'value':'2','text':'Кардиология и ангиология'},

@@ -137,16 +137,20 @@ class EDataColumn extends CDataColumn
                 $rol = 'Руководитель проекта';
                 break;
             case 'Exp':
-                $rol = 'Эксперт0';
+            case 'Moder':
+                $rol = 'Эксперт не авторизован';
                 break;
             case 'Exp1':
                 $rol = 'Эксперт1';
                 break;
             case 'Exp2':
-                $rol = 'Эксперт2';
+                $rol = 'Экспертиза региональная';
                 break;
             case 'Exp3':
-                $rol = 'Эксперт3';
+                $rol = 'Экспертиза федеральная';
+                break;
+            case 'Moder1':
+                $rol = 'Экспертиза вузовская';
                 break;
         }
 

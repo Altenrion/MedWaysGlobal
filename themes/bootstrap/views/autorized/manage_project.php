@@ -352,7 +352,7 @@
         </div><!--/text row-->
     <? endif; ?>
 
-    <? if($this->checkRole(array('Dev','Exp1'))): ?>
+    <? if($this->checkRole(array('Dev','Moder1'))): ?>
     <div class="row ">
         <div class="col-sm-12 ">
             <div class="grid">

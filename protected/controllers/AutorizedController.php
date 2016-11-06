@@ -49,7 +49,7 @@ class AutorizedController extends Controller
             ),
             array('allow',
                 'actions' => array('profile', 'news', 'info', 'project'),
-                'roles' => array('Dev', 'Manager', 'Exp', 'Exp1', 'Exp2', 'Exp3', 'Moder', 'Admin'),
+                'roles' => array('Dev', 'Manager', 'Exp', 'Exp1', 'Exp2', 'Exp3', 'Moder', 'Moder1', 'Admin'),
             ),
             array('allow',
                 'actions' => array('project', 'statistics'),
@@ -61,9 +61,8 @@ class AutorizedController extends Controller
             ),
             array('allow',
                 'actions' => array('projects', 'statistics'),
-                'roles' => array('Moder', 'Exp1', 'Exp2', 'Exp3', 'Dev', 'Admin',),
+                'roles' => array('Moder1', 'Exp1', 'Exp2', 'Exp3', 'Dev', 'Admin',),
             ),
-
             array('deny',
                 'actions' => array('index', 'dashboard', 'profile', 'info', 'news', 'project', 'statistics', 'projects'),
                 'users' => array('*'),
@@ -302,18 +301,13 @@ class AutorizedController extends Controller
     {
 
         $projectData = ProjectRegistry::model()->findByPk($Project);
-//        var_dump($projectData);
         $managerData = Users::model()->findByPk($projectData->ID_REPRESENTATIVE);
-//        var_dump($managerData);
         $criteries = CJSON::decode(CJSON::encode(Creities::model()->findAll()));
-
         $answers = CrAnswers::model()->findAll();
-
 
         foreach ($criteries as $cr_k => $cr_v) {
             $answ[$cr_k] = CJSON::decode(CJSON::encode(CrAnswers::model()->findAll('ID_CRITERIA=' . ++$cr_k)));
         }
-
 
         $this->render('manage_project', array(
             'project' => $projectData,
@@ -379,7 +373,7 @@ class AutorizedController extends Controller
 
             $perc_proj = $count_quest = $count_proj = '0';
 
-            if ($this->checkRole(array('Moder', 'Exp', 'Exp1', 'Exp2', 'Exp3'))) {
+            if ($this->checkRole(array('Moder', 'Moder1', 'Exp', 'Exp1', 'Exp2', 'Exp3'))) {
 
                 $criteria = $this->getProjectByCriteria();
                 $proj = ProjectRegistry::model()->findAll($criteria);
@@ -869,7 +863,7 @@ class AutorizedController extends Controller
                                     \'pk\'        => $data[\'id\'],
                                     \'text\'      => CHtml::encode($this->getRole($data->roles)),
                                     \'url\'       => Yii::app()->createUrl(\'Autorized/updateProfile\'),
-                                    \'source\'    => array( \'Exp\' => \'Эксперт0\', \'Exp1\' => \'Эксперт1\', \'Exp2\' => \'Эксперт2\', \'Exp3\' => \'Эксперт3\'),
+                                    \'source\'    => array( \'Exp\' => \'Эксперт не авторизован\', \'Exp2\' => \'Экспертиза региональная\', \'Exp3\' => \'Экспертиза федеральная\'),
                                     \'title\'     => \'Выберите роль\',
                                     \'placement\' => \'top\',
                                     \'options\' => array( \'disabled\'=>false,  \'showbuttons\'=>false),  ),true);',
@@ -930,9 +924,7 @@ class AutorizedController extends Controller
     public function actionModersList()
     {
 
-        $columns = array('id', 'AVATAR', 'EMAIL', 'F_NAME', 'L_NAME', 'S_NAME', 'ID_DISTRICT', 'ID_UNIVER'
-//            'roles'
-        );
+        $columns = array('id', 'AVATAR', 'EMAIL', 'F_NAME', 'L_NAME', 'S_NAME', 'ID_DISTRICT', 'ID_UNIVER', 'roles');
 
         $cols = array(
             array(
@@ -960,32 +952,30 @@ class AutorizedController extends Controller
                 'type' => 'raw',
                 'value' => '$this->getUniver($data->ID_UNIVER)',
             ),
+            array(
+                'name' => 'roles',
+                'type' => 'raw',
 
-//            array(
-//                'name' => 'roles',
-//                'type' => 'raw',
-//
-//                'value' => 'Yii::app()->controller->widget(\'editable.Editable\', array(
-//                                    \'type\'      => \'select\',
-//                                    \'name\'      => \'roles\',
-//                                    \'htmlOptions\' => array(\'class\'=>\'ExpEdit\'),
-//                                    \'pk\'        => $data[\'id\'],
-//                                    \'text\'      => CHtml::encode($this->getRole($data->roles)),
-//                                    \'url\'       => Yii::app()->createUrl(\'Autorized/updateProfile\'),
-//                                    \'source\'    => array( \'Exp\' => \'Эксперт0\', \'Exp1\' => \'Эксперт1\', \'Exp2\' => \'Эксперт2\', \'Exp3\' => \'Эксперт3\'),
-//                                    \'title\'     => \'Выберите роль\',
-//                                    \'placement\' => \'top\',
-//                                    \'options\' => array( \'disabled\'=>false,  \'showbuttons\'=>false),  ),true);',
-//            ),
-
+                'value' => 'Yii::app()->controller->widget(\'editable.Editable\', array(
+                                    \'type\'      => \'select\',
+                                    \'name\'      => \'roles\',
+                                    \'htmlOptions\' => array(\'class\'=>\'ExpEdit\'),
+                                    \'pk\'        => $data[\'id\'],
+                                    \'text\'      => CHtml::encode($this->getRole($data->roles)),
+                                    \'url\'       => Yii::app()->createUrl(\'Autorized/updateProfile\'),
+                                    \'source\'    => array( \'Moder\' => \'Эксперт не авторизован\', \'Moder1\' => \'Экспертиза вузовская\'),
+                                    \'title\'     => \'Выберите роль\',
+                                    \'placement\' => \'top\',
+                                    \'options\' => array( \'disabled\'=>false,  \'showbuttons\'=>false),  ),true);',
+            )
 
         );
 
         $criteria = new CDbCriteria;
-        $criteria->condition = "roles='Moder' AND AKTIV_KEY='100'";
+        $criteria->condition = "roles IN ('Moder', 'Moder1')  AND AKTIV_KEY='100'";
 
         if (isset($_REQUEST['sSearch']) && isset($_REQUEST['sSearch']{0})) {
-            $criteria->addSearchCondition('L_NAME', $_REQUEST['sSearch']);
+            $criteria->addSearchCondition('F_NAME', $_REQUEST['sSearch']);
         }
 
         $sort = new EDTSort('Users', $columns);
@@ -1073,7 +1063,7 @@ class AutorizedController extends Controller
         $criteria->condition = "roles='Manager'  AND AKTIV_KEY='100'";
 
         if (isset($_REQUEST['sSearch']) && isset($_REQUEST['sSearch']{0})) {
-            $criteria->addSearchCondition('L_NAME', $_REQUEST['sSearch']);
+            $criteria->addSearchCondition('F_NAME', $_REQUEST['sSearch']);
         }
 
         $sort = new EDTSort('Users', $columns);
@@ -1330,12 +1320,13 @@ class AutorizedController extends Controller
         switch (Yii::app()->user->role) {
 
             /** Критерий для эксперта 1 уровня (по универу) */
-            case 'Exp' :
-                $criteriaCondition .= ' AND us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL = 1';
+            case 'Moder' :
+            case 'Moder1' :
+                $criteriaCondition .= " AND us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL IN ('1', '3', '9')" ;
                 $criteriaParams = array(":univ" => $user['ID_UNIVER']);
                 break;
 
-            /** Критерий для эксперта 1 уровня (по универу) */
+            /** Критерий для хз кого*/
             case 'Exp1' :
                 $criteriaCondition .= ' AND   
                 (us.ID_UNIVER = :univ 
@@ -1521,6 +1512,7 @@ class AutorizedController extends Controller
                 $clean_role = 'Руководитель проекта';
                 break;
             case 'Moder':
+            case 'Moder1':
                 $clean_role = 'Координатор от вуза';
                 break;
             case 'Exp':

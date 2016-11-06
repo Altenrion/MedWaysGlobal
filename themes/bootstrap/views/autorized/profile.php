@@ -439,11 +439,12 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                             <a class="btn btn-info"><i class="fa fa-graduation-cap"></i> Проектов</a>
                                         </div>
                                     <? endif; ?>
-                                    <? if ($this->checkRole(array('Exp1', 'Exp2', 'Exp3'))): ?>
+                                    <? if ($this->checkRole(array('Moder', 'Moder1', 'Exp2', 'Exp3'))): ?>
                                         <div class="col-sm-4 stats">
                                             <h1> <?= $count_proj ?> </h1>
                                             <span>Поступило проектов</span>
-                                            <a href="<?= Yii::app()->createUrl('Autorized/projects') ?>"
+
+                                            <a href="<?=  $this->checkRole(array('Moder'))? "#" : Yii::app()->createUrl('Autorized/projects') ?>"
                                                class="btn btn-info"><i class="fa fa-graduation-cap"></i> Проектов</a>
                                         </div>
                                     <? endif; ?>
@@ -498,16 +499,6 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                                         <input type="checkbox" class="js-switch">
                                                     </div>
                                                 </div>
-                                                <!--                                <div class="form-group">-->
-                                                <!--                                    <label class="col-sm-4 control-label">Subscribe Newsletters</label>-->
-                                                <!--                                    <div class="col-sm-2">-->
-                                                <!--                                        <input type="checkbox" class="js-switch" checked>-->
-                                                <!--                                    </div>-->
-                                                <!--                                    <label class="col-sm-2 control-label">RSS Feeds</label>-->
-                                                <!--                                    <div class="col-sm-2">-->
-                                                <!--                                        <input type="checkbox" class="js-switch">-->
-                                                <!--                                    </div>-->
-                                                <!--                                </div>-->
                                             </div>
                                         </div>
                                     </div>
