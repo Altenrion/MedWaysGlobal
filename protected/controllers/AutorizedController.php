@@ -959,7 +959,7 @@ class AutorizedController extends Controller
                 'value' => 'Yii::app()->controller->widget(\'editable.Editable\', array(
                                     \'type\'      => \'select\',
                                     \'name\'      => \'roles\',
-                                    \'htmlOptions\' => array(\'class\'=>\'ExpEdit\'),
+                                    \'htmlOptions\' => array(\'class\'=>\'ModerEdit\'),
                                     \'pk\'        => $data[\'id\'],
                                     \'text\'      => CHtml::encode($this->getRole($data->roles)),
                                     \'url\'       => Yii::app()->createUrl(\'Autorized/updateProfile\'),

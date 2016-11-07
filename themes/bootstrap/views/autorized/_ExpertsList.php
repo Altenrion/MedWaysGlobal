@@ -14,9 +14,12 @@
     $(document).ready(function () {
 
         $('tbody').on('mouseover', 'tr', function(){
-        <? foreach($nums as $id_k=>$id_v): ?>
-            $('a[rel="roles_<?=$id_v ?>"]').editable({'disabled':false,'showbuttons':false,'name':'roles','title':'Выберите роль','value':null,'url':'<?= Yii::app()->createUrl('Autorized/updateProfile') ?>','type':'select','placement':'top','source':[{'value':'Exp','text':'Эксперт0'},{'value':'Exp1','text':'Эксперт1'},{'value':'Exp2','text':'Экспертиза региональная'},{'value':'Exp3','text':'Экспертиза федеральная'}]});
-            $('a[rel="ID_STAGE_<?=$id_v ?>"]').editable({'disabled':false,'showbuttons':false,'name':'ID_STAGE','title':'Выберите платформу','value':null,'url':'<?= Yii::app()->createUrl('Autorized/updateProfile') ?>','type':'select','placement':'top','source':[
+
+            $('a.ExpEdit[rel^="roles_"]').editable({'disabled':false,'showbuttons':false,'name':'roles','title':'Выберите роль','value':null,'url':'<?= Yii::app()->createUrl('Autorized/updateProfile') ?>','type':'select','placement':'top','source':[{'value':'Exp','text':'Эксперт не авторизован'},{'value':'Exp2','text':'Экспертиза региональная'},{'value':'Exp3','text':'Экспертиза федеральная'}]});
+            $('a.ModerEdit[rel^="roles_"]').editable({'disabled':false,'showbuttons':false,'name':'roles','title':'Выберите роль','value':null,'url':'<?= Yii::app()->createUrl('Autorized/updateProfile') ?>','type':'select','placement':'top','source':[{'value':'Moder','text':'Эксперт не авторизован'}, {'value':'Moder1','text':'Экспертиза вузовская'}]});
+
+            $('a[rel^="roles_"]').editable({'disabled':false,'showbuttons':false,'name':'roles','title':'Выберите роль','value':null,'url':'<?= Yii::app()->createUrl('Autorized/updateProfile') ?>','type':'select','placement':'top','source':[{'value':'Exp','text':'Эксперт не авторизован'},{'value':'Exp2','text':'Экспертиза региональная'},{'value':'Exp3','text':'Экспертиза федеральная'}]});
+            $('a[rel^="ID_STAGE_"]').editable({'disabled':false,'showbuttons':false,'name':'ID_STAGE','title':'Выберите платформу','value':null,'url':'<?= Yii::app()->createUrl('Autorized/updateProfile') ?>','type':'select','placement':'top','source':[
                 {'value':'1','text':'Онкология'},
                 {'value':'2','text':'Кардиология и ангиология'},
                 {'value':'3','text':'Неврология'},
@@ -34,9 +37,6 @@
 
 
             ]});
-
-            <? endforeach; ?>
         });
-
     });
 </script>
