@@ -418,6 +418,7 @@ class AutorizedController extends Controller
     {
         $key = 0;
         unset($arr['PRIVACY']);
+        return '10';
 
         foreach ($arr as $ar_k => $ar_v) {
 

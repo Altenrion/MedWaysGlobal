@@ -32,12 +32,12 @@ if (isset($data) && !is_null($data)) {
             $mod_one = $this->statusOk();
             $mod_two = $this->statusOk();
             $no_edit = true;
+            $no_buttons = true;
             break;
         case '9':
             $mod_one = $this->statusFail();
             $mod_two = $this->statusFail();
-            $no_edit = true;
-            $no_buttons = true;
+//            $no_edit = true;
             break;
         default:
             $mod_one = $this->statusSpinner();
