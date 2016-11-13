@@ -370,7 +370,7 @@
                         <li>
                             <strong style="color:#428BCA">Подтвердить</strong> - проект аффелирован с вашим вузом, заполнен корректно
                         </li>
-                        <li><strong style="color:#D9534F">Заблокировать</strong> - одно из условий не соблюдено</li>
+                        <li><strong style="color:#D9534F">Отправить на доработку</strong> - одно из условий не соблюдено</li>
 
                     </ul>
                     <button type="button" class="btn btn-primary" id="accept_button" title="">
@@ -378,7 +378,7 @@
                     </button>
 
                     <button type="button" class="btn btn-danger" id="denied_button"  title="">
-                        Заблокировать
+                        Отправить на доработку
                     </button>
                 </div>
             </div>
@@ -499,7 +499,7 @@
                     break;
                 case 'deny':
                     var status = 9;
-                    var ok_text =  '<h4>Проект исключен из участия в Эстафете</h4><br>';
+                    var ok_text =  '<h4>Проект отправлен на доработку</h4><br>';
                     var fail_text= '<h4>База данных временно не доступна</h4><br>';
                     break;
             }
