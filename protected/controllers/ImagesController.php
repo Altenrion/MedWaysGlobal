@@ -59,7 +59,7 @@ class ImagesController extends Controller{
             //если нет ошибок, грузим файл
             if(!$error) {
 
-                $new_file_name = 'roadmap_'.$this->user_id.'.pdf';
+                $new_file_name = 'roadmap_'.hash('md5', date('Y-m-d H:i:s').$this->user_id).'.pdf';
                 $folder =  $this->destination_folder; //директория в которую будет загружен файл
                 $uploadedFile =  $folder.$new_file_name;
 
@@ -106,9 +106,6 @@ class ImagesController extends Controller{
                 echo 'Вы загружаете запрещенный тип файла';
                 Yii::app()->end();
             }
-
-
-
         }
 
            echo '<div class="alert alert-success">';
