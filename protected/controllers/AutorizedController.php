@@ -121,6 +121,7 @@ class AutorizedController extends Controller
                 where u.id IS NOT NULL
             AND pr.ID_STAGE = st.ID_STAGE
             AND pr.FIRST_LAVEL_APPROVAL = 3
+            AND pr.SECOND_LAVEL_RATING IS NOT NULL
             AND u.ID_DISTRICT = {$total_district['ID_DISTRICT']}
             AND u.REG_DATE > '2016-09-01'
             ) as '{$total_district['NAME']}'";
