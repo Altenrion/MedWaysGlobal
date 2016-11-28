@@ -9,6 +9,38 @@
 $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet.assets'));
 ?>
 
+<style>
+    .form-group{
+        margin-bottom: 0px;
+        height: 25px;
+    }
+    .form-group label{
+        padding-bottom: 0px;
+        height: 5px;
+    }
+    .line-progress{
+        padding-top:10px;
+        height: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .form-group{
+            margin-bottom: 10px;
+            height: 50px;
+        }
+        .form-group label{
+            padding-bottom: 10px;
+            line-height: 10px;
+        }
+
+    }
+    .projects_registry TD:first-child {
+        font-weight: 800;
+    }
+
+</style>
+
+
 
 <!-- BEGIN CONTENT HEADER -->
 <section class="content-header">
@@ -74,32 +106,6 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                     <div class="grid">
                         <div class="grid-body">
                             <div class="row">
-                                <style>
-                                    .form-group{
-                                        margin-bottom: 0px;
-                                        height: 25px;
-                                    }
-                                    .form-group label{
-                                        padding-bottom: 0px;
-                                        height: 5px;
-                                    }
-                                    .line-progress{
-                                        padding-top:10px;
-                                        height: 15px;
-                                    }
-
-                                    @media screen and (max-width: 768px) {
-                                        .form-group{
-                                            margin-bottom: 10px;
-                                            height: 50px;
-                                        }
-                                        .form-group label{
-                                            padding-bottom: 10px;
-                                            line-height: 10px;
-                                        }
-
-                                    }
-                                </style>
                                 <div class="col-md-12">
                                     <p class="lead">Платформы Эстафеты вузовской науки</p>
                                     <p>Количество проектов по платформам</p>
@@ -132,7 +138,37 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                     </div>
                 </div>
 
-    <? if(false): ?>
+
+                <div class="col-md-12">
+                    <div class="grid">
+                        <div class="grid-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="lead">Проекты Эстафеты вузовской науки</p>
+                                    <p>Количество проектов (зарегистрированных/поданных) в эстафете</p>
+
+                                    <table class="table dataTable projects_registry">
+                                        <thead>
+                                            <? foreach (reset($projData) as $k => $dataRow ): ?>
+                                            <th><?=$k?></th>
+                                            <? endforeach; ?>
+                                        </thead>
+                                        <? foreach ($projData as $dataRow ): ?>
+                                            <tr>
+                                                <? foreach ($dataRow as $item):?>
+                                                    <td><?=$item?></td>
+                                                <? endforeach; ?>
+                                            </tr>
+                                        <? endforeach; ?>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <? if(false): ?>
 
                 <div class="col-md-12">
                     <div class="grid">
