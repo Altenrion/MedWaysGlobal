@@ -120,6 +120,7 @@ class AutorizedController extends Controller
                 LEFT JOIN m_w_users as u ON pr.ID_REPRESENTATIVE = u.id
                 where u.id IS NOT NULL
             AND pr.ID_STAGE = st.ID_STAGE
+            AND pr.FIRST_LAVEL_APPROVAL = 3
             AND u.ID_DISTRICT = {$total_district['ID_DISTRICT']}
             AND u.REG_DATE > '2016-09-01'
             ) as '{$total_district['NAME']}'";
@@ -130,7 +131,6 @@ class AutorizedController extends Controller
                 LEFT JOIN m_w_users as u ON pr.ID_REPRESENTATIVE = u.id
                 where u.id IS NOT NULL
             AND pr.ID_STAGE = st.ID_STAGE
-            AND pr.FIRST_LAVEL_APPROVAL = 3
             AND u.ID_DISTRICT = {$total_district['ID_DISTRICT']}
             AND u.REG_DATE > '2016-09-01'
             ) as '{$total_district['NAME']}'";

@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77b2ee7d-2c0e-4c20-a0c7-d095301b9534" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/AutorizedController.php" afterPath="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" afterPath="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
     </list>
     <ignored path="MedWaysGlobal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AutorizedController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AutorizedController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-164">
-              <caret line="111" column="92" selection-start-line="111" selection-start-column="92" selection-end-line="111" selection-end-column="92" />
+            <state relative-caret-position="312">
+              <caret line="121" column="41" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
               <folding>
                 <element signature="e#272#903#1#PHP" expanded="false" />
                 <element signature="e#700#891#1#PHP" expanded="false" />
@@ -276,19 +274,19 @@
                 <element signature="e#55725#55791#0#PHP" expanded="false" />
                 <element signature="e#55800#55865#0#PHP" expanded="false" />
                 <element signature="e#55874#55933#0#PHP" expanded="false" />
-                <marker date="1480291119164" expanded="true" signature="3500:3526" ph="SELECT * fro... m_w_district" />
-                <marker date="1480291119164" expanded="true" signature="3500:3534" ph="SELECT * fro... m_w_district" />
-                <marker date="1480291119164" expanded="false" signature="56047:56059" ph="..." />
+                <marker date="1480291790585" expanded="true" signature="3500:3526" ph="SELECT * fro... m_w_district" />
+                <marker date="1480291790585" expanded="true" signature="3500:3534" ph="SELECT * fro... m_w_district" />
+                <marker date="1480291790585" expanded="false" signature="56047:56059" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="statistics.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="statistics.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+            <state relative-caret-position="-374">
+              <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
                 <marker date="1480291415928" expanded="true" signature="7248:7625" ph="..." />
@@ -518,8 +516,8 @@
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/project.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/manage_project.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ImagesController.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/AutorizedController.php" />
       </list>
     </option>
   </component>
@@ -875,12 +873,12 @@
       <workItem from="1479076850279" duration="3456000" />
       <workItem from="1479152419425" duration="1024000" />
       <workItem from="1479153702779" duration="575000" />
-      <workItem from="1480286416492" duration="5046000" />
+      <workItem from="1480286416492" duration="5369000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101808000" />
+    <option name="totallyTimeSpent" value="102131000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1346,10 +1344,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <marker date="1480291415928" expanded="true" signature="7248:7625" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AutorizedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-164">
-          <caret line="111" column="92" selection-start-line="111" selection-start-column="92" selection-end-line="111" selection-end-column="92" />
+        <state relative-caret-position="312">
+          <caret line="121" column="41" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
           <folding>
             <element signature="e#272#903#1#PHP" expanded="false" />
             <element signature="e#700#891#1#PHP" expanded="false" />
@@ -1586,20 +1595,9 @@
             <element signature="e#55725#55791#0#PHP" expanded="false" />
             <element signature="e#55800#55865#0#PHP" expanded="false" />
             <element signature="e#55874#55933#0#PHP" expanded="false" />
-            <marker date="1480291119164" expanded="true" signature="3500:3526" ph="SELECT * fro... m_w_district" />
-            <marker date="1480291119164" expanded="true" signature="3500:3534" ph="SELECT * fro... m_w_district" />
-            <marker date="1480291119164" expanded="false" signature="56047:56059" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/views/autorized/statistics.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
-            <marker date="1480291415928" expanded="true" signature="7248:7625" ph="..." />
+            <marker date="1480291790585" expanded="true" signature="3500:3526" ph="SELECT * fro... m_w_district" />
+            <marker date="1480291790585" expanded="true" signature="3500:3534" ph="SELECT * fro... m_w_district" />
+            <marker date="1480291790585" expanded="false" signature="56047:56059" ph="..." />
           </folding>
         </state>
       </provider>
