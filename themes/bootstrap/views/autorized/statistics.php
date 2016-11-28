@@ -145,7 +145,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                             <div class="row">
                                 <div class="col-md-12">
                                     <p class="lead">Проекты Эстафеты вузовской науки</p>
-                                    <p>Количество проектов (зарегистрированных/поданных) в эстафете</p>
+                                    <p>Количество проектов в эстафете (зарегистрированных / прошедших оценку)</p>
 
                                     <table class="table dataTable projects_registry">
                                         <thead>
