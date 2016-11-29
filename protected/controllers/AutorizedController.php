@@ -114,7 +114,28 @@ class AutorizedController extends Controller
 
         $sql_for_projects = "SELECT st.NAME_STAGE as ' ',";
         foreach ($total_districts as $total_district) {
+            $total_projects_strings[] = "
+            (SELECT count(*) 
+                FROM m_w_project_registry as pr
+                LEFT JOIN m_w_users as u ON pr.ID_REPRESENTATIVE = u.id
+                where u.id IS NOT NULL
+            AND pr.ID_STAGE = st.ID_STAGE
+            AND u.ID_DISTRICT = {$total_district['ID_DISTRICT']}
+            AND u.REG_DATE > '2016-09-01'
+            ) as '{$total_district['NAME']}'";
+
             $pushed_projects_strings[] = "
+            (SELECT count(*) 
+                FROM m_w_project_registry as pr
+                LEFT JOIN m_w_users as u ON pr.ID_REPRESENTATIVE = u.id
+                where u.id IS NOT NULL
+            AND pr.ID_STAGE = st.ID_STAGE
+            AND pr.FIRST_LAVEL_APPROVAL = 3
+            AND u.ID_DISTRICT = {$total_district['ID_DISTRICT']}
+            AND u.REG_DATE > '2016-09-01'
+            ) as '{$total_district['NAME']}'";
+
+            $verified_projects_strings[] = "
             (SELECT count(*) 
                 FROM m_w_project_registry as pr
                 LEFT JOIN m_w_users as u ON pr.ID_REPRESENTATIVE = u.id
@@ -126,27 +147,20 @@ class AutorizedController extends Controller
             AND u.REG_DATE > '2016-09-01'
             ) as '{$total_district['NAME']}'";
 
-            $total_projects_strings[] = "
-            (SELECT count(*) 
-                FROM m_w_project_registry as pr
-                LEFT JOIN m_w_users as u ON pr.ID_REPRESENTATIVE = u.id
-                where u.id IS NOT NULL
-            AND pr.ID_STAGE = st.ID_STAGE
-            AND u.ID_DISTRICT = {$total_district['ID_DISTRICT']}
-            AND u.REG_DATE > '2016-09-01'
-            ) as '{$total_district['NAME']}'";
         }
         $sql_for_total_projects = $sql_for_projects . implode(",", $total_projects_strings) . " from m_w_stage as st";
         $sql_for_pushed_projects_projects = $sql_for_projects . implode(",", $pushed_projects_strings) . " from m_w_stage as st";
+        $sql_for_verified_projects_projects = $sql_for_projects . implode(",", $verified_projects_strings) . " from m_w_stage as st";
 
 
         $total_projects = Yii::app()->db->createCommand($sql_for_total_projects)->queryAll();
         $pushed_projects = Yii::app()->db->createCommand($sql_for_pushed_projects_projects)->queryAll();
+        $verified_projects = Yii::app()->db->createCommand($sql_for_verified_projects_projects)->queryAll();
 
         foreach ($total_projects as $k => $row) {
             foreach ($row as $kk => $item) {
                 if(is_numeric($item) ){
-                    $total_projects[$k][$kk] = $total_projects[$k][$kk]. " / ". $pushed_projects[$k][$kk];
+                    $total_projects[$k][$kk] = $total_projects[$k][$kk]. " / ". $pushed_projects[$k][$kk] . " / ". $verified_projects[$k][$kk];
                 }
             }
         }
