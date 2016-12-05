@@ -1411,21 +1411,24 @@ class AutorizedController extends Controller
 
             /** Критерий для эксперта 3 уровня (по платформе) */
             case 'Exp3' :
-                $criteriaCondition .= ' AND  t.ID_STAGE = :stage AND t.ID_PROJECT IN (';
+                $criteriaCondition .= ' AND  t.ID_STAGE = :stage ';
 
                 for ($i = 1; $i <= 8; $i++) {
-                    $criteriaConditionArray[] = '(SELECT ID_PROJECT FROM `m_w_project_registry` as pr
+                    $criteriaConditionArray[] = "(SELECT ID_PROJECT FROM `m_w_project_registry` as pr
                         JOIN m_w_users as u ON pr.ID_REPRESENTATIVE = u.id
-                        WHERE SECOND_LAVEL_RATING IS NOT NULL   AND pr.ID_STAGE = :stage AND u.ID_DISTRICT = '.$i.' ORDER BY SECOND_LAVEL_RATING DESC LIMIT 3) ';
+                        WHERE SECOND_LAVEL_RATING IS NOT NULL   
+                        AND pr.REG_DATE > '2016-09-01'
+                        AND pr.ID_STAGE = :stage AND u.ID_DISTRICT = ".$i." ORDER BY SECOND_LAVEL_RATING DESC LIMIT 3) ";
                 }
                 $projects_ids = Yii::app()->db->createCommand(implode(" UNION ", $criteriaConditionArray))->bindParam(":stage", $user['ID_STAGE'],PDO::PARAM_STR)->queryAll();
 
+                $ids = array();
                 if(!empty($projects_ids)){
                     foreach ($projects_ids as $projects_id) {
                         $ids[] = $projects_id['ID_PROJECT'];
                     }
                 }
-                $criteriaCondition .= implode(" , ", $ids) . ')';
+                $criteriaCondition .=  !empty($ids) ? ' AND t.ID_PROJECT IN ('.implode(" , ", $ids) . ')' : " AND t.ID_PROJECT = 0";
 
                 $criteriaParams = array(":stage" => $user['ID_STAGE']);
                 break;
