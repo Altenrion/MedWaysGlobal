@@ -1405,39 +1405,29 @@ class AutorizedController extends Controller
 
             /** Критерий для эксперта 2 уровня (по платформе и округу)*/
             case 'Exp2' :
-
-                if ($cats = $this->checkFinanceBustersRole()) {
-                    $criteriaCondition .= ' AND t.ID_STAGE IN (' . str_replace(['[', ']'], ' ', CJSON::encode($cats)) . ') AND us.ID_DISTRICT = :dist AND FIRST_LAVEL_APPROVAL = 3';
-                    $criteriaParams = array(":dist" => $user['ID_DISTRICT']);
-
-                } else {
                     $criteriaCondition .= ' AND t.ID_STAGE = :stage AND us.ID_DISTRICT = :dist AND FIRST_LAVEL_APPROVAL = 3';
                     $criteriaParams = array(":stage" => $user['ID_STAGE'], ":dist" => $user['ID_DISTRICT']);
-                }
                 break;
 
             /** Критерий для эксперта 3 уровня (по платформе) */
             case 'Exp3' :
-                if ($cats = $this->checkFinanceBustersRole()) {
-                    $criteriaCondition .= ' AND  
-                    t.ID_STAGE IN (' . str_replace(['[', ']'], ' ', CJSON::encode($cats)) . ')  
-                    AND us.ID_DISTRICT = :dist 
-                    AND FIRST_LAVEL_APPROVAL = 3';
-                    $criteriaParams = array(":dist" => $user['ID_DISTRICT']);
-                } else {
-                    $criteriaCondition .= ' 
-                    AND  t.ID_STAGE = :stage 
-                    AND t.SECOND_LAVEL_RATING IS NOT NULL 
-                    AND t.ID_PROJECT IN (
-                        22, 27, 34, 36, 39, 43, 47, 48, 52, 53, 56, 57, 61, 63, 65, 70, 77, 98, 101, 
-                        102, 110, 114, 115, 121, 122, 124, 126, 129, 131, 132, 133, 135, 142, 146, 148, 
-                        150, 152, 155, 157, 158, 161, 162, 168, 169, 170, 171, 172, 173, 174, 177, 179, 
-                        180, 183, 185, 187, 188, 190, 191, 193, 195, 196, 197, 198, 199, 202, 206, 207,
-                        209, 210, 211, 213, 218, 221, 222, 223, 232, 237, 240, 242, 246, 247, 248, 251,
-                        252, 253, 255, 257, 258, 259, 261, 263, 264, 265, 267, 280, 281, 282, 283, 285, 286
-                    )';
-                    $criteriaParams = array(":stage" => $user['ID_STAGE']);
+                $criteriaCondition .= ' AND  t.ID_STAGE = :stage AND t.ID_PROJECT IN (';
+
+                for ($i = 1; $i <= 8; $i++) {
+                    $criteriaConditionArray[] = '(SELECT ID_PROJECT FROM `m_w_project_registry` as pr
+                        JOIN m_w_users as u ON pr.ID_REPRESENTATIVE = u.id
+                        WHERE SECOND_LAVEL_RATING IS NOT NULL   AND pr.ID_STAGE = :stage AND u.ID_DISTRICT = '.$i.' ORDER BY SECOND_LAVEL_RATING DESC LIMIT 3) ';
                 }
+                $projects_ids = Yii::app()->db->createCommand(implode(" UNION ", $criteriaConditionArray))->bindParam(":stage", $user['ID_STAGE'],PDO::PARAM_STR)->queryAll();
+
+                if(!empty($projects_ids)){
+                    foreach ($projects_ids as $projects_id) {
+                        $ids[] = $projects_id['ID_PROJECT'];
+                    }
+                }
+                $criteriaCondition .= implode(" , ", $ids) . ')';
+
+                $criteriaParams = array(":stage" => $user['ID_STAGE']);
                 break;
 
             /** Критерий для разработчика */
@@ -1450,30 +1440,6 @@ class AutorizedController extends Controller
 
 
         return $criteria;
-    }
-
-    public function checkFinanceBustersRole()
-    {
-        $experts = [
-//            ['id'=>'1','stages'=>['1','2','4','5']],
-//            ['id'=>'550','stages'=>['1','2','4','5']],
-            ['id' => '771', 'stages' => ['1', '2', '4', '5']],
-            ['id' => '764', 'stages' => ['14', '13']],
-            ['id' => '774', 'stages' => ['6', '10', '11']],
-            ['id' => '761', 'stages' => ['8', '9']],
-        ];
-
-        $stages = '';
-        foreach ($experts as $expert_n => $expert_data) {
-            if (Yii::app()->user->id == $expert_data['id']) {
-                $stages = $expert_data['stages'];
-            }
-        }
-        if ($stages != '') {
-            return $stages;
-        } else {
-            return false;
-        }
     }
 
     public function actionSaveProjectComment()
