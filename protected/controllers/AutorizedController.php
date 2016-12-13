@@ -197,7 +197,8 @@ class AutorizedController extends Controller
 
     public function getExpertsMarks()
     {
-        $sql_for_projects = "SELECT u.F_NAME, u.L_NAME, u.S_NAME, u.ID_STAGE,
+    $sql_for_projects = "SELECT u.F_NAME, u.L_NAME, u.S_NAME, 
+    (SELECT st.NAME_STAGE from m_w_stage as st where st.ID_STAGE = u.ID_STAGE) as stage,
         IFNULL((select count(*) as num 
           from m_w_third_lavel_marks as ma 
           where ma.ID_EXPERT = u.id 
@@ -215,7 +216,7 @@ class AutorizedController extends Controller
         $data[] = array('Список экспертов', 'платформа', 'кол-во проверенных проектов');
 
         foreach ($this->getExpertsMarks() as $list) {
-            $data[] = array($list['F_NAME'] . ' ' . $list['L_NAME'] . ' ' . $list['S_NAME'], $list['ID_STAGE'], $list['marks']);
+            $data[] = array($list['F_NAME'] . ' ' . $list['L_NAME'] . ' ' . $list['S_NAME'], $list['stage'], $list['marks']);
         }
         Yii::import('application.extensions.phpexcel.JPhpExcel');
 
