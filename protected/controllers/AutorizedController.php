@@ -197,7 +197,7 @@ class AutorizedController extends Controller
 
     public function getExpertsMarks()
     {
-        $sql_for_projects = "SELECT u.F_NAME, u.L_NAME, u.L_NAME, u.ID_STAGE,
+        $sql_for_projects = "SELECT u.F_NAME, u.L_NAME, u.S_NAME, u.ID_STAGE,
         IFNULL((select count(*) as num 
           from m_w_third_lavel_marks as ma 
           where ma.ID_EXPERT = u.id 
