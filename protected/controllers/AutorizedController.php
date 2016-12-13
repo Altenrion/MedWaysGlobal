@@ -219,7 +219,7 @@ class AutorizedController extends Controller
 
     public function getExpertsMarks()
     {
-        $sql_for_projects = "SELECT u.F_NAME, u.L_NAME, u.S_NAME, 
+        $sql_for_projects = "SELECT u.F_NAME, u.L_NAME, u.S_NAME, u.EMAIL,
         (SELECT st.NAME_STAGE from m_w_stage as st where st.ID_STAGE = u.ID_STAGE) as stage,
         IFNULL((select count(*) as num 
             from m_w_third_lavel_marks as ma 
@@ -240,10 +240,10 @@ class AutorizedController extends Controller
     public function actionExportExpertsMarks()
     {
 
-        $data[] = array('Список экспертов', 'платформа', 'кол-во проверенных проектов');
+        $data[] = array('Список экспертов', 'email','платформа', 'кол-во проверенных проектов');
 
         foreach ($this->getExpertsMarks() as $list) {
-            $data[] = array($list['F_NAME'] . ' ' . $list['L_NAME'] . ' ' . $list['S_NAME'], $list['stage'], $list['marks']);
+            $data[] = array($list['F_NAME'] . ' ' . $list['L_NAME'] . ' ' . $list['S_NAME'], $list['EMAIL'],$list['stage'], $list['marks']);
         }
         Yii::import('application.extensions.phpexcel.JPhpExcel');
 
