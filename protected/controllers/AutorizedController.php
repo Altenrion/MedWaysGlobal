@@ -198,13 +198,18 @@ class AutorizedController extends Controller
     public function getExpertsMarks()
     {
     $sql_for_projects = "SELECT u.F_NAME, u.L_NAME, u.S_NAME, 
-    (SELECT st.NAME_STAGE from m_w_stage as st where st.ID_STAGE = u.ID_STAGE) as stage,
+        (SELECT st.NAME_STAGE from m_w_stage as st where st.ID_STAGE = u.ID_STAGE) as stage,
         IFNULL((select count(*) as num 
-          from m_w_third_lavel_marks as ma 
-          where ma.ID_EXPERT = u.id 
-          GROUP BY ma.ID_EXPERT), 0) as marks
-        from m_w_users as u
-        WHERE u.roles = 'Exp3' AND u.REG_DATE > '2016-08-01' AND u.AKTIV_KEY = '100'";
+            from m_w_third_lavel_marks as ma 
+            where ma.ID_EXPERT = u.id 
+            and ma.ID_PROJECT IN (
+                SELECT reg.ID_PROJECT from m_w_project_registry as reg 
+                where reg.REG_DATE > '2016-08-01'
+            )
+            GROUP BY ma.ID_EXPERT), 0) 
+        as marks
+        FROM m_w_users as u
+        WHERE u.roles = 'Exp3' AND u.AKTIV_KEY = '100'";
 
         $data = Yii::app()->db->createCommand($sql_for_projects)->queryAll();
         return $data;
