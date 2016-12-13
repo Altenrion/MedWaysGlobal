@@ -97,13 +97,15 @@ class AutorizedController extends Controller
         $managersData = $charts->getManagersData();
         $moneyData = $charts->getMoneyData();
         $projectsTableInfo = $this->getProjRegInfo();
+        $projectgetExpFinalDisposition = $this->getProjExpFinalDisposition();
 
         $this->render('statistics', array(
             'topUnivers' => $topFive,
             'stagesData' => $stagesData,
             'managersData' => $managersData,
             'moneyData' => $moneyData,
-            'projData' => $projectsTableInfo
+            'projData' => $projectsTableInfo,
+            'projectgetExpFinalDisposition' => $projectgetExpFinalDisposition
         ));
     }
 
@@ -159,8 +161,8 @@ class AutorizedController extends Controller
 
         foreach ($total_projects as $k => $row) {
             foreach ($row as $kk => $item) {
-                if(is_numeric($item) ){
-                    $total_projects[$k][$kk] = $total_projects[$k][$kk]. " / ". $pushed_projects[$k][$kk] . " / ". $verified_projects[$k][$kk];
+                if (is_numeric($item)) {
+                    $total_projects[$k][$kk] = $total_projects[$k][$kk] . " / " . $pushed_projects[$k][$kk] . " / " . $verified_projects[$k][$kk];
                 }
             }
         }
@@ -168,6 +170,61 @@ class AutorizedController extends Controller
         return $total_projects;
 
     }
+
+    public function getProjExpFinalDisposition()
+    {
+        $sql_for_projects = "SELECT st.NAME_STAGE as 'платформа', 
+        (SELECT count(*) 
+        	FROM m_w_project_registry as pr
+            	LEFT JOIN m_w_users as u ON pr.ID_REPRESENTATIVE = u.id
+                where u.id IS NOT NULL
+                AND pr.ID_STAGE = st.ID_STAGE
+                AND pr.FIRST_LAVEL_APPROVAL = 3
+                AND pr.SECOND_LAVEL_RATING IS NOT NULL
+                AND u.ID_DISTRICT IN (1,2,3,4,5,6,7,8)
+                AND u.REG_DATE > '2016-09-01') 
+            	as 'кол-во проектов',
+            (SELECT count(*) from m_w_users as u WHERE u.roles = 'Exp3' 
+                AND u.ID_STAGE = st.ID_STAGE
+             	AND u.AKTIV_KEY = '100'
+            	) as 'кол-во фед экспертов'
+                       
+ 			from m_w_stage as st";
+
+        $data = Yii::app()->db->createCommand($sql_for_projects)->queryAll();
+        return $data;
+    }
+
+    public function getExpertsMarks()
+    {
+        $sql_for_projects = "SELECT u.F_NAME, u.L_NAME, u.L_NAME, u.ID_STAGE,
+        IFNULL((select count(*) as num 
+          from m_w_third_lavel_marks as ma 
+          where ma.ID_EXPERT = u.id 
+          GROUP BY ma.ID_EXPERT), 0) as marks
+        from m_w_users as u
+        WHERE u.roles = 'Exp3' AND u.REG_DATE > '2016-08-01' AND u.AKTIV_KEY = '100'";
+
+        $data = Yii::app()->db->createCommand($sql_for_projects)->queryAll();
+        return $data;
+    }
+
+    public function actionExportExpertsMarks()
+    {
+
+        $data[] = array('Список экспертов', 'платформа', 'кол-во проверенных проектов');
+
+        foreach ($this->getExpertsMarks() as $list) {
+            $data[] = array($list['F_NAME'] . ' ' . $list['L_NAME'] . ' ' . $list['S_NAME'], $list['ID_STAGE'], $list['marks']);
+        }
+        Yii::import('application.extensions.phpexcel.JPhpExcel');
+
+        $xls = new JPhpExcel('UTF-8', false, 'Main page');
+        $xls->addArray($data);
+        $xls->generateXML('Federal-experts-activity-' . date('Y-m-d'));
+
+    }
+
 
     public function actionDashboard()
     {
@@ -1103,7 +1160,7 @@ class AutorizedController extends Controller
                  : CHtml::image(Yii::app()->baseUrl.\'/images/avatars/thumb_\'.$data->AVATAR,"",array("style"=>"width:40px;height:40px;"))',
 
             ),
-            'EMAIL:text:email','F_NAME:text:Фамилия', 'L_NAME:text:Имя', 'S_NAME:text:Отчество',
+            'EMAIL:text:email', 'F_NAME:text:Фамилия', 'L_NAME:text:Имя', 'S_NAME:text:Отчество',
 
             array(
                 'name' => 'ID_DISTRICT',
@@ -1386,7 +1443,7 @@ class AutorizedController extends Controller
             /** Критерий для эксперта 1 уровня (по универу) */
             case 'Moder' :
             case 'Moder1' :
-                $criteriaCondition .= " AND us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL IN ('1', '3', '9')" ;
+                $criteriaCondition .= " AND us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL IN ('1', '3', '9')";
                 $criteriaParams = array(":univ" => $user['ID_UNIVER']);
                 break;
 
@@ -1405,8 +1462,8 @@ class AutorizedController extends Controller
 
             /** Критерий для эксперта 2 уровня (по платформе и округу)*/
             case 'Exp2' :
-                    $criteriaCondition .= ' AND t.ID_STAGE = :stage AND us.ID_DISTRICT = :dist AND FIRST_LAVEL_APPROVAL = 3';
-                    $criteriaParams = array(":stage" => $user['ID_STAGE'], ":dist" => $user['ID_DISTRICT']);
+                $criteriaCondition .= ' AND t.ID_STAGE = :stage AND us.ID_DISTRICT = :dist AND FIRST_LAVEL_APPROVAL = 3';
+                $criteriaParams = array(":stage" => $user['ID_STAGE'], ":dist" => $user['ID_DISTRICT']);
                 break;
 
             /** Критерий для эксперта 3 уровня (по платформе) */
@@ -1418,17 +1475,17 @@ class AutorizedController extends Controller
                         JOIN m_w_users as u ON pr.ID_REPRESENTATIVE = u.id
                         WHERE SECOND_LAVEL_RATING IS NOT NULL   
                         AND pr.REG_DATE > '2016-09-01'
-                        AND pr.ID_STAGE = :stage AND u.ID_DISTRICT = ".$i." ORDER BY SECOND_LAVEL_RATING DESC LIMIT 3) ";
+                        AND pr.ID_STAGE = :stage AND u.ID_DISTRICT = " . $i . " ORDER BY SECOND_LAVEL_RATING DESC LIMIT 3) ";
                 }
-                $projects_ids = Yii::app()->db->createCommand(implode(" UNION ", $criteriaConditionArray))->bindParam(":stage", $user['ID_STAGE'],PDO::PARAM_STR)->queryAll();
+                $projects_ids = Yii::app()->db->createCommand(implode(" UNION ", $criteriaConditionArray))->bindParam(":stage", $user['ID_STAGE'], PDO::PARAM_STR)->queryAll();
 
                 $ids = array();
-                if(!empty($projects_ids)){
+                if (!empty($projects_ids)) {
                     foreach ($projects_ids as $projects_id) {
                         $ids[] = $projects_id['ID_PROJECT'];
                     }
                 }
-                $criteriaCondition .=  !empty($ids) ? ' AND t.ID_PROJECT IN ('.implode(" , ", $ids) . ')' : " AND t.ID_PROJECT = 0";
+                $criteriaCondition .= !empty($ids) ? ' AND t.ID_PROJECT IN (' . implode(" , ", $ids) . ')' : " AND t.ID_PROJECT = 0";
 
                 $criteriaParams = array(":stage" => $user['ID_STAGE']);
                 break;

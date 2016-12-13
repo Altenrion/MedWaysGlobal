@@ -168,6 +168,59 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                 </div>
 
 
+
+                <div class="col-md-12">
+                    <div class="grid">
+                        <div class="grid-body">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="lead">Федеральная экспертиза Эстафеты вузовской науки</p>
+                                    <p>Данные о проектах/экспертах федерального этапа Эстафеты вузовской науки</p>
+
+                                    <br>
+
+                                    В блоке справа представлена сводка о проводимых оценках на этапе федеральной экспертизы.
+                                    <br>
+                                    Данные об активности в оценочной деятельности экспертов федерального уровня можно получить по ссылке ниже.
+                                    <br>
+
+                                    <a class="btn btn-xs btn-primary"  style="font-size: 0.6em" href="exportExpertsMarks" ><i class="fa  fa-info"></i> Выгрузить активность</a>
+
+                                </div>
+                                <div class="col-md-6">
+
+                                    <p class="lead">Платформы Эстафеты вузовской науки</p>
+                                    <p>Топ 5 вузов проекта</p>
+                                    <table class="table dataTable projects_registry">
+                                        <thead>
+                                        <? foreach (reset($projectgetExpFinalDisposition) as $k => $dataRow ): ?>
+                                            <th><?=$k?></th>
+                                        <? endforeach; ?>
+                                        </thead>
+                                        <? foreach ($projectgetExpFinalDisposition as $dataRow ): ?>
+                                            <tr>
+                                                <? foreach ($dataRow as $item):?>
+                                                    <td><?=$item?></td>
+                                                <? endforeach; ?>
+                                            </tr>
+                                        <? endforeach; ?>
+                                    </table>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <? if(false): ?>
 
                 <div class="col-md-12">
