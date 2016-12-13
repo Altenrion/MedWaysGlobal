@@ -173,6 +173,22 @@ class AutorizedController extends Controller
 
     public function getProjExpFinalDisposition()
     {
+
+        for ($i = 1; $i <= 8; $i++) {
+            $criteriaConditionArray[] = "(SELECT ID_PROJECT FROM `m_w_project_registry` as pr
+                        JOIN m_w_users as u ON pr.ID_REPRESENTATIVE = u.id
+                        WHERE SECOND_LAVEL_RATING IS NOT NULL   
+                        AND pr.REG_DATE > '2016-09-01'
+                        AND u.ID_DISTRICT = " . $i . " ORDER BY SECOND_LAVEL_RATING DESC LIMIT 3) ";
+        }
+        $projects_ids = Yii::app()->db->createCommand(implode(" UNION ", $criteriaConditionArray))->queryAll();
+        $ids = array();
+        if (!empty($projects_ids)) {
+            foreach ($projects_ids as $projects_id) {
+                $ids[] = $projects_id['ID_PROJECT'];
+            }
+        }
+
         $sql_for_projects = "SELECT st.NAME_STAGE as 'платформа', 
         (SELECT count(*) 
         	FROM m_w_project_registry as pr
@@ -182,6 +198,7 @@ class AutorizedController extends Controller
                 AND pr.FIRST_LAVEL_APPROVAL = 3
                 AND pr.SECOND_LAVEL_RATING IS NOT NULL
                 AND u.ID_DISTRICT IN (1,2,3,4,5,6,7,8)
+                AND pr.ID_PROJECT IN (" .  implode(" , ", $ids). ")
                 AND u.REG_DATE > '2016-09-01') 
             	as 'кол-во проектов',
             (SELECT count(*) from m_w_users as u WHERE u.roles = 'Exp3' 
