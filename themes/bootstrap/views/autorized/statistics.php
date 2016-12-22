@@ -186,12 +186,12 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                     <br>
 
                                     <a class="btn btn-xs btn-primary"  style="font-size: 0.6em" href="exportExpertsMarks" ><i class="fa  fa-info"></i> Выгрузить активность</a>
+                                    <a class="btn btn-xs btn-primary"  style="font-size: 0.6em" href="exportExpertsMarksDetails" ><i class="fa  fa-info"></i> Выгрузить детализацию оценок</a>
 
                                 </div>
                                 <div class="col-md-6">
 
                                     <p class="lead">Платформы Эстафеты вузовской науки</p>
-                                    <p>Топ 5 вузов проекта</p>
                                     <table class="table dataTable projects_registry">
                                         <thead>
                                         <? foreach (reset($projectgetExpFinalDisposition) as $k => $dataRow ): ?>

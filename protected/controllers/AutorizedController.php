@@ -240,16 +240,79 @@ class AutorizedController extends Controller
     public function actionExportExpertsMarks()
     {
 
-        $data[] = array('Список экспертов', 'email','платформа', 'кол-во проверенных проектов');
+        $data[] = array('Список экспертов', 'email', 'платформа', 'кол-во проверенных проектов');
 
         foreach ($this->getExpertsMarks() as $list) {
-            $data[] = array($list['F_NAME'] . ' ' . $list['L_NAME'] . ' ' . $list['S_NAME'], $list['EMAIL'],$list['stage'], $list['marks']);
+            $data[] = array($list['F_NAME'] . ' ' . $list['L_NAME'] . ' ' . $list['S_NAME'], $list['EMAIL'], $list['stage'], $list['marks']);
         }
         Yii::import('application.extensions.phpexcel.JPhpExcel');
 
         $xls = new JPhpExcel('UTF-8', false, 'Main page');
         $xls->addArray($data);
         $xls->generateXML('Federal-experts-activity-' . date('Y-m-d'));
+
+    }
+
+    public function actionExportExpertsMarksDetails()
+    {
+
+        $total_stages = Yii::app()->db->createCommand("SELECT * from m_w_stage")->queryAll();
+
+        foreach ($total_stages as $stage) {
+            $data[] = array($stage['NAME_STAGE']);
+
+            $stage_marks = $this->getFederalMarksForStage($stage['ID_STAGE']);
+
+
+            $data[] = array_keys(reset($stage_marks));
+            foreach ($stage_marks as $stage_mark) {
+                $data[] = $stage_mark;
+            }
+        }
+
+        Yii::import('application.extensions.phpexcel.JPhpExcel');
+
+        $xls = new JPhpExcel('UTF-8', false, 'Main page');
+        $xls->addArray($data);
+        $xls->generateXML('Federal-experts-detailed-marks-' . date('Y-m-d'));
+
+    }
+
+
+    private function getFederalMarksForStage($stageId)
+    {
+
+        $federal_stage_experts = Yii::app()->db->createCommand("SELECT DISTINCT 
+            ma.ID_EXPERT as 'id',
+            CONCAT(u.F_NAME, ' ', u.L_NAME, ' ', u.S_NAME ) as 'name'
+            from m_w_third_lavel_marks as ma
+            JOIN m_w_project_registry as pr on pr.ID_PROJECT = ma.ID_PROJECT
+            JOIN m_w_users as u on u.id = ma.ID_EXPERT
+            
+            WHERE u.roles = 'Exp3' 
+            AND pr.ID_STAGE= " . $stageId . "
+            AND pr.REG_DATE > '2016-09-01'
+        ")->queryAll();
+
+        while (list($expert_id, $expert_name) = each($federal_stage_experts)) {
+            $projects_sql_strings[] = "MAX(IFNULL((case when ID_EXPERT = " . $expert_id . " then ma.TOTAL_MARK end),0)) AS  '" . $expert_name . "',";
+        }
+
+        $projects_sql = "SELECT 
+            ma.ID_PROJECT as 'project id' ,
+            pr.NAME as 'project name',
+            pr.THIRD_LAVEL_RATING as 'total mark', 
+            ".implode(', ', $projects_sql_strings). "
+            
+            from m_w_third_lavel_marks as ma
+            JOIN m_w_project_registry as pr on pr.ID_PROJECT = ma.ID_PROJECT
+            
+            WHERE pr.REG_DATE > '2016-09-01' AND pr.THIRD_LAVEL_RATING IS NOT NULL AND pr.ID_STAGE = " . $stageId . "
+            GROUP BY ma.ID_PROJECT;";
+
+        $federal_stage_projects = Yii::app()->db->createCommand($projects_sql)->queryAll();
+
+        return $federal_stage_projects;
 
     }
 
