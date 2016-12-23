@@ -294,8 +294,8 @@ class AutorizedController extends Controller
             AND pr.REG_DATE > '2016-09-01'
         ")->queryAll();
 
-        while (list($expert_id, $expert_name) = each($federal_stage_experts)) {
-            $projects_sql_strings[] = "MAX(IFNULL((case when ID_EXPERT = " . $expert_id . " then ma.TOTAL_MARK end),0)) AS  '" . $expert_name . "',";
+        foreach ($federal_stage_experts as $expert) {
+            $projects_sql_strings[] = "MAX(IFNULL((case when ID_EXPERT = " . $expert['id'] . " then ma.TOTAL_MARK end),0)) AS  '" . $expert['name'] . "'";
         }
 
         $projects_sql = "SELECT 
