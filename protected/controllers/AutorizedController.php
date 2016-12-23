@@ -259,7 +259,8 @@ class AutorizedController extends Controller
 
         $total_stages = Yii::app()->db->createCommand("SELECT * from m_w_stage")->queryAll();
 
-        foreach ($total_stages as $stage) {
+        foreach ($total_stages as $k => $stage) {
+
             $data[] = array($stage['NAME_STAGE']);
 
             switch ($export_content) {
@@ -271,6 +272,9 @@ class AutorizedController extends Controller
                     break;
             }
 
+            if(empty($stage_marks)){
+                continue;
+            }
             $data[] = array_keys(reset($stage_marks));
             foreach ($stage_marks as $stage_mark) {
                 $data[] = $stage_mark;
@@ -322,6 +326,7 @@ class AutorizedController extends Controller
         return $federal_stage_projects;
 
     }
+
     private function getFederalCommentsForStage($stageId)
     {
         $federal_stage_experts = Yii::app()->db->createCommand("SELECT DISTINCT 
@@ -337,11 +342,8 @@ class AutorizedController extends Controller
         ")->queryAll();
 
         foreach ($federal_stage_experts as $expert) {
-            $projects_sql_strings[] = "MAX(IFNULL((case when ID_EXPERT = " . $expert['id'] . " then 
-            
-            (select text from m_w_comment_storage where author_id = ID_EXPERT AND project_id = ma.ID_PROJECT)  
-            
-            end),0)) AS  '" . $expert['name'] . "'";
+            $projects_sql_strings[] = "
+            MAX(IFNULL((case when ID_EXPERT = " . $expert['id'] . " then cs.text end),0)) AS  '" . $expert['name'] . "'";
         }
 
         $projects_sql = "SELECT 
@@ -351,7 +353,11 @@ class AutorizedController extends Controller
             " . implode(', ', $projects_sql_strings) . "
             
             from m_w_third_lavel_marks as ma
-            JOIN m_w_project_registry as pr on pr.ID_PROJECT = ma.ID_PROJECT
+            
+            JOIN m_w_comment_storage as cs
+                on cs.author_id = ma.ID_EXPERT AND cs.project_id = ma.ID_PROJECT
+            JOIN m_w_project_registry as pr 
+                on pr.ID_PROJECT = ma.ID_PROJECT
             
             WHERE pr.REG_DATE > '2016-09-01' AND pr.THIRD_LAVEL_RATING IS NOT NULL AND pr.ID_STAGE = " . $stageId . "
             GROUP BY ma.ID_PROJECT;";
