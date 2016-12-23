@@ -186,7 +186,8 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                     <br>
 
                                     <a class="btn btn-xs btn-primary"  style="font-size: 0.6em" href="exportExpertsMarks" ><i class="fa  fa-info"></i> Выгрузить активность</a>
-                                    <a class="btn btn-xs btn-primary"  style="font-size: 0.6em" href="exportExpertsMarksDetails" ><i class="fa  fa-info"></i> Выгрузить детализацию оценок</a>
+                                    <a class="btn btn-xs btn-primary"  style="font-size: 0.6em" href="exportExpertsMarksDetails?content=marks" ><i class="fa  fa-info"></i> Выгрузить детализацию оценок</a>
+                                    <a class="btn btn-xs btn-primary"  style="font-size: 0.6em" href="exportExpertsMarksDetails?content=comments" ><i class="fa  fa-info"></i> Выгрузить детализацию комментариев</a>
 
                                 </div>
                                 <div class="col-md-6">

@@ -255,14 +255,21 @@ class AutorizedController extends Controller
 
     public function actionExportExpertsMarksDetails()
     {
+        $export_content = Yii::app()->getRequest()->getParam('content');
 
         $total_stages = Yii::app()->db->createCommand("SELECT * from m_w_stage")->queryAll();
 
         foreach ($total_stages as $stage) {
             $data[] = array($stage['NAME_STAGE']);
 
-            $stage_marks = $this->getFederalMarksForStage($stage['ID_STAGE']);
-
+            switch ($export_content) {
+                case 'marks'    :
+                    $stage_marks = $this->getFederalMarksForStage($stage['ID_STAGE']);
+                    break;
+                case 'comments' :
+                    $stage_marks = $this->getFederalCommentsForStage($stage['ID_STAGE']);
+                    break;
+            }
 
             $data[] = array_keys(reset($stage_marks));
             foreach ($stage_marks as $stage_mark) {
@@ -274,7 +281,7 @@ class AutorizedController extends Controller
 
         $xls = new JPhpExcel('UTF-8', false, 'Main page');
         $xls->addArray($data);
-        $xls->generateXML('Federal-experts-detailed-marks-' . date('Y-m-d'));
+        $xls->generateXML('Federal-experts-detailed-' . $export_content . '-' . date('Y-m-d'));
 
     }
 
@@ -302,7 +309,7 @@ class AutorizedController extends Controller
             ma.ID_PROJECT as 'project id' ,
             pr.NAME as 'project name',
             pr.THIRD_LAVEL_RATING as 'total mark', 
-            ".implode(', ', $projects_sql_strings). "
+            " . implode(', ', $projects_sql_strings) . "
             
             from m_w_third_lavel_marks as ma
             JOIN m_w_project_registry as pr on pr.ID_PROJECT = ma.ID_PROJECT
@@ -310,6 +317,46 @@ class AutorizedController extends Controller
             WHERE pr.REG_DATE > '2016-09-01' AND pr.THIRD_LAVEL_RATING IS NOT NULL AND pr.ID_STAGE = " . $stageId . "
             GROUP BY ma.ID_PROJECT;";
 
+        $federal_stage_projects = Yii::app()->db->createCommand($projects_sql)->queryAll();
+
+        return $federal_stage_projects;
+
+    }
+    private function getFederalCommentsForStage($stageId)
+    {
+        $federal_stage_experts = Yii::app()->db->createCommand("SELECT DISTINCT 
+            ma.ID_EXPERT as 'id',
+            CONCAT(u.F_NAME, ' ', u.L_NAME, ' ', u.S_NAME ) as 'name'
+            from m_w_third_lavel_marks as ma
+            JOIN m_w_project_registry as pr on pr.ID_PROJECT = ma.ID_PROJECT
+            JOIN m_w_users as u on u.id = ma.ID_EXPERT
+            
+            WHERE u.roles = 'Exp3' 
+            AND pr.ID_STAGE= " . $stageId . "
+            AND pr.REG_DATE > '2016-09-01'
+        ")->queryAll();
+
+        foreach ($federal_stage_experts as $expert) {
+            $projects_sql_strings[] = "MAX(IFNULL((case when ID_EXPERT = " . $expert['id'] . " then 
+            
+            (select text from m_w_comment_storage where author_id = ID_EXPERT AND project_id = ma.ID_PROJECT)  
+            
+            end),0)) AS  '" . $expert['name'] . "'";
+        }
+
+        $projects_sql = "SELECT 
+            ma.ID_PROJECT as 'project id' ,
+            pr.NAME as 'project name',
+            pr.THIRD_LAVEL_RATING as 'total mark', 
+            " . implode(', ', $projects_sql_strings) . "
+            
+            from m_w_third_lavel_marks as ma
+            JOIN m_w_project_registry as pr on pr.ID_PROJECT = ma.ID_PROJECT
+            
+            WHERE pr.REG_DATE > '2016-09-01' AND pr.THIRD_LAVEL_RATING IS NOT NULL AND pr.ID_STAGE = " . $stageId . "
+            GROUP BY ma.ID_PROJECT;";
+
+        var_dump($projects_sql); die();
         $federal_stage_projects = Yii::app()->db->createCommand($projects_sql)->queryAll();
 
         return $federal_stage_projects;
