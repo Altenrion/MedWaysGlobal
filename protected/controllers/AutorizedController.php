@@ -356,7 +356,6 @@ class AutorizedController extends Controller
             WHERE pr.REG_DATE > '2016-09-01' AND pr.THIRD_LAVEL_RATING IS NOT NULL AND pr.ID_STAGE = " . $stageId . "
             GROUP BY ma.ID_PROJECT;";
 
-        var_dump($projects_sql); die();
         $federal_stage_projects = Yii::app()->db->createCommand($projects_sql)->queryAll();
 
         return $federal_stage_projects;
