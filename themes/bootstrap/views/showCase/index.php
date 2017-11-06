@@ -17,8 +17,8 @@ $this->breadcrumbs = array(
                      data-easing="Sine.easeOut">Используй свой шанс!
                 </div>
                 <div class="caption sfb" data-x="550" data-y="340" data-speed="500" data-start="3000"
-                     data-easing="Sine.easeOut"><a href="<?= Yii::app()->createUrl('ShowCase/login') ?>"
-                                                   class="btn btn-large">Регистрация</a></div>
+                     data-easing="Sine.easeOut"><a href="<? //= Yii::app()->createUrl('ShowCase/login') ?> http://www.vuznauka.confreg.org"
+                                                   class="btn btn-large">Регистрация на мероприятие</a></div>
             </li>
             <li data-transition="fade"><img src="<?= Yii::app()->baseUrl; ?>/images/art/map4.png" alt=""/>
                 <div class="caption sft" data-x="50" data-y="90" data-speed="900" data-start="500"
@@ -63,10 +63,9 @@ $this->breadcrumbs = array(
                 <div class="caption sfb lite opacity-bg" data-x="center" data-y="365" data-speed="500" data-start="1500"
                      data-easing="Sine.easeOut"> 6-7 февраля 2017 года
                 </div>
-                <!--                <div class="caption sfb" data-x="center" data-y="339" data-speed="500" data-start="1500"-->
-                <!--                     data-easing="Sine.easeOut"><a href="http://vuznauka2017.ru" class=""><img-->
-                <!--                            src="-->
-                <? //= Yii::app()->baseUrl; ?><!--/images/buttons/mw.png" alt=""/></a></div>-->
+                                <div class="caption sfb" data-x="center" data-y="439" data-speed="500" data-start="1500"
+
+                                     data-easing="Sine.easeOut"><a href="http://www.vuznauka.confreg.org" class="btn btn-large">Регистрация на мероприятие</a></div>
             </li>
         </ul>
         <div class="tp-bannertimer tp-bottom"></div>
