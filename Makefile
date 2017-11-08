@@ -1,5 +1,6 @@
 # Путь к корню вашего проекта
 PROJ_ROOT=/home/altenrion/PhpstormProjects/vuznauka/
+GITTEXT=$(MSG)
 
 build:
 	@echo "Строим образ контейнера приложения"
@@ -32,4 +33,11 @@ stop:
 	docker rm vuznauka-db vuznauka-app
 
 	@echo "Done."
+
+push:
+	@echo "Prepare repo"
+	@echo "----------------------------------------"
+	git commit -m "$(GITTEXT)"
+	git push origin master
+	@echo "----------------------------------------"
 

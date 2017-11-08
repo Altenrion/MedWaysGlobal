@@ -4,13 +4,12 @@
 /** Указание среды */
 
 if (!defined('APPLICATION_ENV')) {
-    if ($_SERVER['SERVER_NAME'] == "vuznauka") {
+    if ($_SERVER['HTTP_HOST'] == "localhost") {
         define(APPLICATION_ENV, 'development');
     } else {
         define(APPLICATION_ENV, 'production');
     }
 }
-define(APPLICATION_ENV, 'development');
 
 /** Определение среды */
 
@@ -21,15 +20,15 @@ $yii = dirname(__FILE__) . '/framework/yii.php';
 
 /** Включим дебаг если мы разработчики */
 
-//if (APPLICATION_ENV == 'development') {
+if (APPLICATION_ENV == 'development') {
     defined('YII_DEBUG') or define('YII_DEBUG', true);
     defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL', 3);
-//}
+}
 
 /** Подключим нужную нам конфигурацию */
 
-//$config = dirname(__FILE__) . '/protected/config/' . APPLICATION_ENV . '.php';
-$config = dirname(__FILE__) . '/protected/config/development.php';
+$config = dirname(__FILE__) . '/protected/config/' . APPLICATION_ENV . '.php';
+//$config = dirname(__FILE__) . '/protected/config/development.php';
 
 
 
