@@ -29,6 +29,10 @@ $(document).ready(function () {
                 console.log(data);
                 if(data.status == 'success'){
                     alertify.success('Ваш пароль успешно обновлен');
+                    setTimeout(function(){
+                        window.location.replace('http://'+window.location.host +"/ShowCase/login");
+                    }, 2000);
+
                 }
                 if(data.status == 'fail'){
                     console.log(data.status);

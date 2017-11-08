@@ -57,7 +57,7 @@
         $('.resetPass').click(function (e) {
             e.preventDefault();
 
-            alertify.prompt( 'Восстановление пароля', 'Введите email', 'e-mail'
+            alertify.prompt( 'Восстановление пароля', 'Введите email', ' '
                 , function(evt, value) {
 
                     $.ajax({

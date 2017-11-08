@@ -119,7 +119,11 @@ class AutorizedController extends Controller
                     $message->from = Yii::app()->params['adminEmail'];
                     Yii::app()->mail->send($message);
 
+                    Yii::app()->user->logout();
+
                     echo json_encode(array("status"=>"success"));
+
+//                    $this->redirect(Yii::app()->createUrl('ShowCase/login'));
                     Yii::app()->end();
                 }
             }
