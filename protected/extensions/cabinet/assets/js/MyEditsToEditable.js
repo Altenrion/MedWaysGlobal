@@ -14,6 +14,37 @@ $(document).ready(function () {
         $("html,body").animate({"scrollTop":height},speed);
     }
 
+    $("#saveNewPass").click(function(e){
+        e.preventDefault();
+
+        $old_passwd = $("#oldPasswd").val();
+        $new_passwd = $("#newPasswd").val();
+
+        $.ajax({
+            type: 'post',
+            url: 'updatePass',
+            data: {oldPass:$old_passwd, newPass:$new_passwd},
+            dataType : 'json',
+            success: function(data){
+                console.log(data);
+                if(data.status == 'success'){
+                    alertify.success('Ваш пароль успешно обновлен');
+                }
+                if(data.status == 'fail'){
+                    console.log(data.status);
+
+                    alertify.error('Вы указали неверный пароль');
+                }
+                if(data.status == 'error'){
+                    alertify.error('При изменении пароля произошла ошибка');
+                }
+            }
+
+        });
+        console.log($old_passwd, $new_passwd);
+    });
+
+
     $('#enable').click(function (e) {
 //        e.stopPropagation()
         console.log("I'm Here");

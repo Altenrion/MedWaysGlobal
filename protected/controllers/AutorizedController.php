@@ -75,6 +75,61 @@ class AutorizedController extends Controller
         $this->render('index');
     }
 
+    public function actionUpdatePass(){
+        if (isset($_POST['oldPass'])) {
+
+
+
+            $oldPass = $_POST['oldPass'];
+            $newPass = $_POST['newPass'];
+
+            $user = Yii::app()->user;
+
+            $db_user = Users::model()->findByAttributes(array('EMAIL' => $user->email));
+            if($db_user){
+
+                $encryptedPass = $db_user::encrypting($oldPass);
+                if($encryptedPass !== $db_user->password){
+                    echo json_encode(array("status"=>"fail", "pass"=>$encryptedPass));
+                    Yii::app()->end();
+                }
+
+
+                $new_password = $newPass;
+                $db_user->password = $new_password;
+                if ($db_user->save()) {
+
+
+                    $tpl_file = Yii::getPathOfAlias('webroot.downloads') . DIRECTORY_SEPARATOR . 'mail_mail.php';
+                    $tpl = file_get_contents($tpl_file);
+                    $mail = $tpl;
+
+                    $title = "Изменение пароля";
+                    $content = "Здравствуйте $db_user->L_NAME $db_user->S_NAME! Ваш пароль успешно изменен.  
+                    Ваш новый пароль : $new_password. <br/><br/> Желаем успехов в эстафете.";
+
+                    $mail = strtr($mail, array(
+                        "{title}" => $title,
+                        "{content}" => $content,
+                    ));
+                    $message = new YiiMailMessage;
+                    $message->setBody($mail, 'text/html');
+                    $message->subject = 'Vuznauka 2018 - Изменение пароля';
+                    $message->addTo($db_user->EMAIL);
+                    $message->from = Yii::app()->params['adminEmail'];
+                    Yii::app()->mail->send($message);
+
+                    echo json_encode(array("status"=>"success"));
+                    Yii::app()->end();
+                }
+            }
+        }
+        echo json_encode(array("status"=>"error"));
+        Yii::app()->end();
+
+    }
+
+
     public function actionStatistics()
     {
         if (Yii::app()->request->isAjaxRequest) {

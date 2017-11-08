@@ -29,6 +29,8 @@
     <!--Mine Customs -->
     <link href="<?=Yii::app()->baseUrl?>/adminka/css/stylings.css" rel="stylesheet">
     <link href="<?=Yii::app()->baseUrl?>/adminka/css/avatar_upload.css" rel="stylesheet">
+    <link href="<?=Yii::app()->baseUrl?>/js/alertifyjs/css/alertify.css" rel="stylesheet">
+    <link href="<?=Yii::app()->baseUrl?>/js/alertifyjs/css/themes/bootstrap.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="<?=Yii::app()->baseUrl?>/adminka/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -163,6 +165,8 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="<?=Yii::app()->baseUrl?>/adminka/js/bootstrap.min.js"></script>
+    <script src="<?=Yii::app()->baseUrl?>/js/alertifyjs/alertify.js"></script>
+    <script src="<?=Yii::app()->baseUrl?>/adminka/js/MyEditsToEditable.js"></script>
 
 </body>
 

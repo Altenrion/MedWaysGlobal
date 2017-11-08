@@ -105,14 +105,14 @@ return array(
         'mail' => array(
             'class' => 'ext.yii-mail.YiiMail',
             'transportType' => 'php',
-//                    'transportType' => 'smtp',
-//                    'transportOptions'=>array(
-//                        'host'=>'localhost',
+                    'transportType' => 'smtp',
+                    'transportOptions'=>array(
+                        'host'=>'vuznauka_smtp_1',
 //                        //'encryption'=>'tls',
 //                        'username'=>'administration@altenrion.ru',
 //                        'password'=>'Altenrion',
-//                        'port'=>25,
-//                    ),
+                        'port'=>25,
+                    ),
             'viewPath' => 'application.views.mail',
             'logging' => true,
             'dryRun' => false

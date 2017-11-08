@@ -159,7 +159,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                     <div class="grid-body">
                         <ul class="nav nav-tabs">
                             <li class="active"><a href="#profile" data-toggle="tab">Профиль</a></li>
-<!--                            <li><a href="#settings" data-toggle="tab">Настройки</a></li>-->
+                            <li><a href="#password" data-toggle="tab">Смена пароля</a></li>
                         </ul>
                         <div class="tab-content">
 
@@ -466,7 +466,35 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                             </div>
 
                             <!-- END PROFILE -->
+                            <!-- BEGIN SETTINGS -->
+                            <div class="tab-pane" id="password">
+                                <p class="lead">Мои настройки</p>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="oldPasswd" class="col-sm-2 control-label">Старый пароль</label>
+                                                <div class="col-lg-4 col-sm-10">
+                                                    <input type="email" class="form-control" id="oldPasswd" placeholder="Пароль">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="newPasswd" class="col-sm-2 control-label">Новый пароль</label>
+                                                <div class="col-lg-4 col-sm-10 ">
+                                                    <input type="password" class="form-control" id="newPasswd" placeholder="Пароль">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-2 col-sm-10">
+                                                    <button id="saveNewPass" class="btn btn-default">Сохранить</button>
+                                                </div>
+                                            </div>
+                                        </div>
 
+                                    </div>
+                                </div>
+                            </div>
 
                             <? if (false): ?>
                                 <!-- BEGIN SETTINGS -->
@@ -563,7 +591,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
 Yii::app()->clientScript->registerCssFile($assetsUrl . '/css/avatar_upload.css', CClientScript::POS_BEGIN);
 Yii::app()->clientScript->registerScriptFile($assetsUrl . '/js/switch.js', CClientScript::POS_END);
 Yii::app()->clientScript->registerScriptFile($assetsUrl . '/js/jquery.form.min.js', CClientScript::POS_END);
-Yii::app()->clientScript->registerScriptFile($assetsUrl . '/js/MyEditsToEditable.js', CClientScript::POS_END);
+//Yii::app()->clientScript->registerScriptFile($assetsUrl . '/js/MyEditsToEditable.js', CClientScript::POS_END);
 Yii::app()->clientScript->registerScriptFile($assetsUrl . '/js/avatar_upload.js', CClientScript::POS_END);
 
 

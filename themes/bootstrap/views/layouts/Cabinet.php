@@ -17,9 +17,12 @@ Yii::app()->clientScript->registerCssFile($assetsUrl . '/plugins/jquery-gritter/
 Yii::app()->clientScript->registerCssFile($assetsUrl . '/plugins/bootstrap-summernote/summernote.css');
 Yii::app()->clientScript->registerCssFile($assetsUrl . '/plugins/bootstrap-summernote/summernote-bs3.css');
 
+
 /* @ BEGIN CSS TEMPLATE */
 Yii::app()->clientScript->registerCssFile($assetsUrl . '/css/main.css');
 Yii::app()->clientScript->registerCssFile($assetsUrl . '/css/skins.css');
+Yii::app()->clientScript->registerCssFile($assetsUrl . '/css/alertify.css');
+Yii::app()->clientScript->registerCssFile($assetsUrl . '/css/themes/bootstrap.css');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -219,6 +222,8 @@ Yii::app()->clientScript->registerCssFile($assetsUrl . '/css/skins.css');
 <!-- BEGIN JS TEMPLATE -->
 <script src="<?= $assetsUrl ?>/js/main.js"></script>
 <script src="<?= $assetsUrl ?>/js/skin-selector.js"></script>
+<script src="<?= $assetsUrl ?>/js/alertify.js"></script>
+<script src="<?= $assetsUrl ?>/js/MyEditsToEditable.js"></script>
 <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter46544628 = new Ya.Metrika({ id:46544628, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/46544628" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
 <!-- END JS TEMPLATE -->

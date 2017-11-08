@@ -46,14 +46,17 @@ class ShowCaseController extends Controller
         $this->render('partners');
     }
 
+    /**
+     *
+     */
     public function actionResetPass(){
         if (isset($_POST['email'])) {
 
             $user = Users::model()->findByAttributes(array('EMAIL' => $_POST['email']));
             if($user){
 
-//          @todo: generate real tmp pass
-                $user->password = '1991';
+                $new_password = base_convert(microtime(fasle),10, 36);
+                $user->password = $new_password;
                 if ($user->save()) {
 
 
@@ -62,7 +65,8 @@ class ShowCaseController extends Controller
                     $mail = $tpl;
 
                     $title = "Восстановление пароля";
-                    $content = "Здравствуйте $user->L_NAME $user->S_NAME! Мы рады Вашему возвращению! /n Ваш новый (временный) пароль : $user->password. Будем рады Вашему участию в текущем тапе эстафеты.";
+                    $content = "Здравствуйте $user->L_NAME $user->S_NAME! Мы рады Вашему возвращению! 
+                    Ваш новый (временный) пароль : $new_password. <br/><br/> Будем рады Вашему участию в текущем этапе эстафеты.";
 
                     $mail = strtr($mail, array(
                         "{title}" => $title,
