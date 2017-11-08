@@ -227,3 +227,9 @@ div.search-form
 {
 	background: #80CFFF;
 }
+p.forgot {
+	padding: 0px 0 0 5px;
+	overflow: hidden;
+	display: inline-block;
+	margin-bottom: 0px;
+}

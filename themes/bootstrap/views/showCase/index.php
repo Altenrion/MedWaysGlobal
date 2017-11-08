@@ -10,15 +10,15 @@ $this->breadcrumbs = array(
     <div class="fullwidthbanner">
         <ul>
             <li data-transition="fade"><img src="<?= Yii::app()->baseUrl; ?>/images/art/docs_.png" alt=""/>
-                <div class="caption sft bold opacity-bg" data-x="550" data-y="215" data-speed="500" data-start="2000"
-                     data-easing="Sine.easeOut">Эстафета вузовской науки
-                </div>
+<!--                <div class="caption sft bold opacity-bg" data-x="550" data-y="215" data-speed="500" data-start="2000"-->
+<!--                     data-easing="Sine.easeOut">Эстафета вузовской науки-->
+<!--                </div>-->
                 <div class="caption sfr bold opacity-bg" data-x="550" data-y="280" data-speed="500" data-start="2500"
-                     data-easing="Sine.easeOut">Используй свой шанс!
+                     data-easing="Sine.easeOut">Прими участие в Эстафете!
                 </div>
                 <div class="caption sfb" data-x="550" data-y="340" data-speed="500" data-start="3000"
-                     data-easing="Sine.easeOut"><a href="<? //= Yii::app()->createUrl('ShowCase/login') ?> http://www.vuznauka.confreg.org"
-                                                   class="btn btn-large">Регистрация на мероприятие</a></div>
+                     data-easing="Sine.easeOut"><a href="<? //= Yii::app()->createUrl('ShowCase/login') ?>"
+                                                   class="btn btn-large">Начало Эстафеты - 20.11.2017</a></div>
             </li>
             <li data-transition="fade"><img src="<?= Yii::app()->baseUrl; ?>/images/art/map4.png" alt=""/>
                 <div class="caption sft" data-x="50" data-y="90" data-speed="900" data-start="500"
@@ -34,8 +34,9 @@ $this->breadcrumbs = array(
                      data-easing="Sine.easeOut"><img src="<?= Yii::app()->baseUrl; ?>/images/art/slider-first2.png"
                                                      alt=""/></div>
                 <div class="caption sfr bold opacity-bg" data-x="620" data-y="270" data-speed="500" data-start="2500"
-                         data-easing="Sine.easeOut">В эстафете
-                    <?= (isset($clean_num)) ? ($clean_num) : ('500') ?>
+                         data-easing="Sine.easeOut"> Начало Эстафеты - 20.11.2017
+<!--                    В эстафете-->
+<!--                    --><?//= (isset($clean_num)) ? ($clean_num) : ('500') ?>
                 </div>
                 <div class="caption sfb" data-x="620" data-y="335" data-speed="500" data-start="3000"
                      data-easing="Sine.easeOut">
@@ -61,11 +62,11 @@ $this->breadcrumbs = array(
                      data-easing="Sine.easeOut"> Международный медицинский форум &quot;Вузовская наука. Инновации&quot;
                 </div>
                 <div class="caption sfb lite opacity-bg" data-x="center" data-y="365" data-speed="500" data-start="1500"
-                     data-easing="Sine.easeOut"> 6-7 февраля 2017 года
+                     data-easing="Sine.easeOut"> 27-28 февраля 2018 года
                 </div>
-                                <div class="caption sfb" data-x="center" data-y="439" data-speed="500" data-start="1500"
-
-                                     data-easing="Sine.easeOut"><a href="http://www.vuznauka.confreg.org" class="btn btn-large">Регистрация на мероприятие</a></div>
+<!--                                <div class="caption sfb" data-x="center" data-y="439" data-speed="500" data-start="1500"-->
+<!---->
+<!--                                     data-easing="Sine.easeOut"><a href="http://www.vuznauka.confreg.org" class="btn btn-large">Регистрация на мероприятие</a></div>-->
             </li>
         </ul>
         <div class="tp-bannertimer tp-bottom"></div>
@@ -107,7 +108,7 @@ $this->breadcrumbs = array(
                         <div class="panel-heading">
                             <h4 class="panel-title"><a data-toggle="collapse" class="panel-toggle active"
                                                        data-parent="#accordion" href="#collapseOne">1. Открытие
-                                    Эстафеты - 27 сентября 2016 г.</a></h4>
+                                    Эстафеты - 08 ноября 2017 г.</a></h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse in" style="height: auto;">
                             <div class="panel-body">Старт Эстафеты предусматривает освещение результатов мероприятия
@@ -130,7 +131,7 @@ $this->breadcrumbs = array(
                                     научно-инновационных проектов по тематикам научных платформ.</p>
 
                                 <ul class="circled">
-                                    <li><a class="date">27.09.2016 - 10.11.2016</a>
+                                    <li><a class="date">20.11.2017 - 15.12.2017</a>
                                         <blockquote>
 
                                     <li>Формирование региональных экспертных советов</li>
@@ -139,12 +140,12 @@ $this->breadcrumbs = array(
 
                                     </li>
 
-                                    <li><a class="date">11.11.2016 – 19.11.2016</a>
+                                    <li><a class="date">15.12.2017 – 31.12.2017</a>
                                         <blockquote>
                                             <li>Экспертиза проектов в вузе</li>
                                         </blockquote>
                                     </li>
-                                    <li><a class="date">22.11.2016 – 04.12.2016</a>
+                                    <li><a class="date">10.01.2018 – 24.01.2018</a>
                                         <blockquote>
                                             <li>Экспертиза проектов регионального этапа</li>
                                         </blockquote>
@@ -175,7 +176,7 @@ $this->breadcrumbs = array(
                                     сектора и бизнеса.</p>
 
                                 <ul class="circled">
-                                    <li><a class="date">06.12.2016 – 19.12.2016</a>
+                                    <li><a class="date">27.01.2018 – 04.02.2018</a>
                                         <blockquote>
                                     <li>Экспертиза проектов финального этапа</li>
                                     </li>
@@ -184,7 +185,7 @@ $this->breadcrumbs = array(
                                     </blockquote>
 
                                     </li>
-                                    <li><a class="date">26.12.2016 – 30.12.2016</a>
+                                    <li><a class="date">08.02.2018 – 10.02.2018</a>
                                         <blockquote>
                                     <li>Информирование победителей, приглашение к очной презентации проектов.</li>
                                     </blockquote>
@@ -208,8 +209,8 @@ $this->breadcrumbs = array(
                         <div id="collapseFour" class="panel-collapse collapse" style="height: 0px;">
                             <div class="panel-body">
                                 <p class="just">Очная презентация и церемония награждения лучших проектов состоится в рамках
-                                    Международного медицинского Форума «Вузовская наука. Инновации» <a class="date">6-7 февраля 2017 года</a>
-                                    в ФГБОУ ВО Первый МГМУ им. И.М. Сеченова Минздрава России.
+                                    Международного медицинского Форума «Вузовская наука. Инновации» <a class="date">27-28 февраля 2018 года</a>
+                                    в ФГAОУ ВО Первый МГМУ им. И.М. Сеченова (Сеченовский Университет) Минздрава России.
                                    </p>
                             </div>
                         </div>

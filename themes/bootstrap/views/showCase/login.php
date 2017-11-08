@@ -49,6 +49,7 @@
                             <div class="form-actions">
                                 <button class="btn btn-primary" type="submit" name="yt0">Войти</button>
                                 <button class="btn" type="reset" name="yt1">Очистить</button>
+                                <p class="forgot">Восстановить <a href="" class="resetPass">пароль</a></p>
                             </div>
 
 
@@ -129,6 +130,7 @@
                                 <button class="btn" type="reset" name="reset" id="res">Очистить</button>
                                 <div class="response alert alert-success"></div>
                                 <div class="response alert alert-danger"></div>
+
                             </div>
                         </fieldset>
 

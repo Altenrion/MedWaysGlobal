@@ -54,6 +54,34 @@
     $.validator.messages.email = "Неверный формат email";
     $.validator.messages.url = "Неверный формат url, начните с http://";
 
+        $('.resetPass').click(function (e) {
+            e.preventDefault();
+
+            alertify.prompt( 'Восстановление пароля', 'Введите email', 'e-mail'
+                , function(evt, value) {
+
+                    $.ajax({
+                        type: 'post',
+                        url: 'resetPass',
+                        data: {email:value},
+                        dataType : 'json',
+                        success: function(data){
+                            if(data.status == 'success'){
+                                alertify.success('На указанную почту отправлено письмо с временным паролем');
+                            }
+                            if(data.status == 'fail'){
+                                alertify.error('Указанный Вами e-mail не найден в системе');
+                            }
+                            if(data.status == 'error'){
+                                alertify.error('При восстановлении пароля произошла ошибка');
+                            }
+                        }
+
+                    });}, function() {
+                console.error("user canseled password reset");
+            });
+        })
+
 
     });
 

@@ -1,0 +1,188 @@
+Creating vuznauka-app
+Attaching to vuznauka-db, vuznauka-app
+vuznauka-db | Initializing database
+vuznauka-db | 2017-11-06T22:27:34.568537Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+vuznauka-app | AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+vuznauka-app | AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+vuznauka-app | [Mon Nov 06 22:27:34.633027 2017] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) PHP/5.6.31 configured -- resuming normal operations
+vuznauka-app | [Mon Nov 06 22:27:34.633074 2017] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+vuznauka-db | 2017-11-06T22:27:35.071997Z 0 [Warning] InnoDB: New log files created, LSN=45790
+vuznauka-db | 2017-11-06T22:27:35.178072Z 0 [Warning] InnoDB: Creating foreign key constraint system tables.
+vuznauka-db | 2017-11-06T22:27:35.261123Z 0 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: b015fcce-c341-11e7-943e-0242ac120002.
+vuznauka-db | 2017-11-06T22:27:35.271855Z 0 [Warning] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
+vuznauka-db | 2017-11-06T22:27:35.272759Z 1 [Warning] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+vuznauka-db | 2017-11-06T22:27:37.962146Z 1 [Warning] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+vuznauka-db | 2017-11-06T22:27:37.962169Z 1 [Warning] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+vuznauka-db | 2017-11-06T22:27:37.962179Z 1 [Warning] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+vuznauka-db | 2017-11-06T22:27:37.962188Z 1 [Warning] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+vuznauka-db | 2017-11-06T22:27:37.962210Z 1 [Warning] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+vuznauka-db | Database initialized
+vuznauka-db | MySQL init process in progress...
+vuznauka-db | 2017-11-06T22:27:40.852087Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+vuznauka-db | 2017-11-06T22:27:40.852594Z 0 [Note] mysqld (mysqld 5.7.16) starting as process 57 ...
+vuznauka-db | 2017-11-06T22:27:40.855077Z 0 [Note] InnoDB: PUNCH HOLE support available
+vuznauka-db | 2017-11-06T22:27:40.855090Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+vuznauka-db | 2017-11-06T22:27:40.855105Z 0 [Note] InnoDB: Uses event mutexes
+vuznauka-db | 2017-11-06T22:27:40.855108Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+vuznauka-db | 2017-11-06T22:27:40.855110Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+vuznauka-db | 2017-11-06T22:27:40.855111Z 0 [Note] InnoDB: Using Linux native AIO
+vuznauka-db | 2017-11-06T22:27:40.855402Z 0 [Note] InnoDB: Number of pools: 1
+vuznauka-db | 2017-11-06T22:27:40.855491Z 0 [Note] InnoDB: Using CPU crc32 instructions
+vuznauka-db | 2017-11-06T22:27:40.856534Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+vuznauka-db | 2017-11-06T22:27:40.862813Z 0 [Note] InnoDB: Completed initialization of buffer pool
+vuznauka-db | 2017-11-06T22:27:40.864303Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+vuznauka-db | 2017-11-06T22:27:40.876125Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+vuznauka-db | 2017-11-06T22:27:40.889430Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+vuznauka-db | 2017-11-06T22:27:40.889485Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+vuznauka-db | 2017-11-06T22:27:40.945229Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+vuznauka-db | 2017-11-06T22:27:40.947448Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+vuznauka-db | 2017-11-06T22:27:40.947474Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+vuznauka-db | 2017-11-06T22:27:40.948661Z 0 [Note] InnoDB: 5.7.16 started; log sequence number 2532034
+vuznauka-db | 2017-11-06T22:27:40.949325Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+vuznauka-db | 2017-11-06T22:27:40.949682Z 0 [Note] Plugin 'FEDERATED' is disabled.
+vuznauka-db | 2017-11-06T22:27:40.951789Z 0 [Note] InnoDB: Buffer pool(s) load completed at 171106 22:27:40
+vuznauka-db | 2017-11-06T22:27:40.956846Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+vuznauka-db | 2017-11-06T22:27:40.966188Z 0 [Warning] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+vuznauka-db | 2017-11-06T22:27:40.966234Z 0 [Warning] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+vuznauka-db | 2017-11-06T22:27:40.966301Z 0 [Warning] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+vuznauka-db | 2017-11-06T22:27:40.966325Z 0 [Warning] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+vuznauka-db | 2017-11-06T22:27:40.968707Z 0 [Warning] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+vuznauka-db | 2017-11-06T22:27:40.979987Z 0 [Note] Event Scheduler: Loaded 0 events
+vuznauka-db | 2017-11-06T22:27:40.980442Z 0 [Note] mysqld: ready for connections.
+vuznauka-db | Version: '5.7.16'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server (GPL)
+vuznauka-db | Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+vuznauka-db | Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
+vuznauka-db | Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+vuznauka-db | 2017-11-06T22:27:44.495372Z 4 [Warning] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+vuznauka-db | 2017-11-06T22:27:44.495388Z 4 [Warning] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+vuznauka-db | 2017-11-06T22:27:44.495413Z 4 [Warning] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+vuznauka-db |
+vuznauka-db | /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init.sql
+vuznauka-db | mysql: [Warning] Using a password on the command line interface can be insecure.
+vuznauka-db |
+vuznauka-db |
+vuznauka-db | 2017-11-06T22:27:50.831014Z 0 [Note] Giving 0 client threads a chance to die gracefully
+vuznauka-db | 2017-11-06T22:27:50.831038Z 0 [Note] Shutting down slave threads
+vuznauka-db | 2017-11-06T22:27:50.831040Z 0 [Note] Forcefully disconnecting 0 remaining clients
+vuznauka-db | 2017-11-06T22:27:50.831044Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+vuznauka-db | 2017-11-06T22:27:50.831065Z 0 [Note] Binlog end
+vuznauka-db | 2017-11-06T22:27:50.831685Z 0 [Note] Shutting down plugin 'ngram'
+vuznauka-db | 2017-11-06T22:27:50.831691Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+vuznauka-db | 2017-11-06T22:27:50.831693Z 0 [Note] Shutting down plugin 'partition'
+vuznauka-db | 2017-11-06T22:27:50.831695Z 0 [Note] Shutting down plugin 'ARCHIVE'
+vuznauka-db | 2017-11-06T22:27:50.831696Z 0 [Note] Shutting down plugin 'MEMORY'
+vuznauka-db | 2017-11-06T22:27:50.831698Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+vuznauka-db | 2017-11-06T22:27:50.831700Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+vuznauka-db | 2017-11-06T22:27:50.831701Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+vuznauka-db | 2017-11-06T22:27:50.831703Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+vuznauka-db | 2017-11-06T22:27:50.831705Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+vuznauka-db | 2017-11-06T22:27:50.831706Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+vuznauka-db | 2017-11-06T22:27:50.831725Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+vuznauka-db | 2017-11-06T22:27:50.831728Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+vuznauka-db | 2017-11-06T22:27:50.831729Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+vuznauka-db | 2017-11-06T22:27:50.831730Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+vuznauka-db | 2017-11-06T22:27:50.831732Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+vuznauka-db | 2017-11-06T22:27:50.831734Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+vuznauka-db | 2017-11-06T22:27:50.831735Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+vuznauka-db | 2017-11-06T22:27:50.831736Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+vuznauka-db | 2017-11-06T22:27:50.831739Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+vuznauka-db | 2017-11-06T22:27:50.831740Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+vuznauka-db | 2017-11-06T22:27:50.831741Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+vuznauka-db | 2017-11-06T22:27:50.831743Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+vuznauka-db | 2017-11-06T22:27:50.831744Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+vuznauka-db | 2017-11-06T22:27:50.831758Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+vuznauka-db | 2017-11-06T22:27:50.831760Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+vuznauka-db | 2017-11-06T22:27:50.831772Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+vuznauka-db | 2017-11-06T22:27:50.831778Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+vuznauka-db | 2017-11-06T22:27:50.831790Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+vuznauka-db | 2017-11-06T22:27:50.831792Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+vuznauka-db | 2017-11-06T22:27:50.831793Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+vuznauka-db | 2017-11-06T22:27:50.831795Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+vuznauka-db | 2017-11-06T22:27:50.831796Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+vuznauka-db | 2017-11-06T22:27:50.831797Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+vuznauka-db | 2017-11-06T22:27:50.831798Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+vuznauka-db | 2017-11-06T22:27:50.831799Z 0 [Note] Shutting down plugin 'InnoDB'
+vuznauka-db | 2017-11-06T22:27:50.831864Z 0 [Note] InnoDB: FTS optimize thread exiting.
+vuznauka-db | 2017-11-06T22:27:50.831973Z 0 [Note] InnoDB: Starting shutdown...
+vuznauka-db | 2017-11-06T22:27:50.932484Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+vuznauka-db | 2017-11-06T22:27:50.932984Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 171106 22:27:50
+vuznauka-db | 2017-11-06T22:27:52.275871Z 0 [Note] InnoDB: Shutdown completed; log sequence number 20249697
+vuznauka-db | 2017-11-06T22:27:52.277356Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+vuznauka-db | 2017-11-06T22:27:52.277365Z 0 [Note] Shutting down plugin 'MyISAM'
+vuznauka-db | 2017-11-06T22:27:52.277372Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+vuznauka-db | 2017-11-06T22:27:52.277376Z 0 [Note] Shutting down plugin 'CSV'
+vuznauka-db | 2017-11-06T22:27:52.277378Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+vuznauka-db | 2017-11-06T22:27:52.277393Z 0 [Note] Shutting down plugin 'sha256_password'
+vuznauka-db | 2017-11-06T22:27:52.277396Z 0 [Note] Shutting down plugin 'mysql_native_password'
+vuznauka-db | 2017-11-06T22:27:52.277503Z 0 [Note] Shutting down plugin 'binlog'
+vuznauka-db | 2017-11-06T22:27:52.277804Z 0 [Note] mysqld: Shutdown complete
+vuznauka-db |
+vuznauka-db |
+vuznauka-db | MySQL init process done. Ready for start up.
+vuznauka-db |
+vuznauka-db | 2017-11-06T22:27:52.461043Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+vuznauka-db | 2017-11-06T22:27:52.461847Z 0 [Note] mysqld (mysqld 5.7.16) starting as process 1 ...
+vuznauka-db | 2017-11-06T22:27:52.464226Z 0 [Note] InnoDB: PUNCH HOLE support available
+vuznauka-db | 2017-11-06T22:27:52.464242Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+vuznauka-db | 2017-11-06T22:27:52.464245Z 0 [Note] InnoDB: Uses event mutexes
+vuznauka-db | 2017-11-06T22:27:52.464247Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+vuznauka-db | 2017-11-06T22:27:52.464249Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+vuznauka-db | 2017-11-06T22:27:52.464268Z 0 [Note] InnoDB: Using Linux native AIO
+vuznauka-db | 2017-11-06T22:27:52.464544Z 0 [Note] InnoDB: Number of pools: 1
+vuznauka-db | 2017-11-06T22:27:52.464622Z 0 [Note] InnoDB: Using CPU crc32 instructions
+vuznauka-db | 2017-11-06T22:27:52.465717Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+vuznauka-db | 2017-11-06T22:27:52.471776Z 0 [Note] InnoDB: Completed initialization of buffer pool
+vuznauka-db | 2017-11-06T22:27:52.473211Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+vuznauka-db | 2017-11-06T22:27:52.484345Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+vuznauka-db | 2017-11-06T22:27:52.510419Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+vuznauka-db | 2017-11-06T22:27:52.510505Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+vuznauka-db | 2017-11-06T22:27:52.569217Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+vuznauka-db | 2017-11-06T22:27:52.569967Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+vuznauka-db | 2017-11-06T22:27:52.569977Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+vuznauka-db | 2017-11-06T22:27:52.570631Z 0 [Note] InnoDB: 5.7.16 started; log sequence number 20249697
+vuznauka-db | 2017-11-06T22:27:52.571061Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+vuznauka-db | 2017-11-06T22:27:52.571128Z 0 [Note] Plugin 'FEDERATED' is disabled.
+vuznauka-db | 2017-11-06T22:27:52.574599Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+vuznauka-db | 2017-11-06T22:27:52.574707Z 0 [Note] InnoDB: Buffer pool(s) load completed at 171106 22:27:52
+vuznauka-db | 2017-11-06T22:27:52.575098Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+vuznauka-db | 2017-11-06T22:27:52.575131Z 0 [Note] IPv6 is available.
+vuznauka-db | 2017-11-06T22:27:52.575141Z 0 [Note]   - '::' resolves to '::';
+vuznauka-db | 2017-11-06T22:27:52.575158Z 0 [Note] Server socket created on IP: '::'.
+vuznauka-db | 2017-11-06T22:27:52.581906Z 0 [Warning] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+vuznauka-db | 2017-11-06T22:27:52.581927Z 0 [Warning] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+vuznauka-db | 2017-11-06T22:27:52.584433Z 0 [Warning] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+vuznauka-db | 2017-11-06T22:27:52.590232Z 0 [Note] Event Scheduler: Loaded 0 events
+vuznauka-db | 2017-11-06T22:27:52.590413Z 0 [Note] mysqld: ready for connections.
+vuznauka-db | Version: '5.7.16'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+vuznauka-app | [Mon Nov 06 22:28:08.887386 2017] [authz_core:debug] [pid 17] mod_authz_core.c(809): [client 172.18.0.1:42344] AH01626: authorization result of Require all granted: granted
+vuznauka-app | [Mon Nov 06 22:28:08.887403 2017] [authz_core:debug] [pid 17] mod_authz_core.c(809): [client 172.18.0.1:42344] AH01626: authorization result of <RequireAny>: granted
+vuznauka-app | [Mon Nov 06 22:28:08.887492 2017] [authz_core:debug] [pid 17] mod_authz_core.c(809): [client 172.18.0.1:42344] AH01626: authorization result of Require all granted: granted
+vuznauka-app | [Mon Nov 06 22:28:08.887495 2017] [authz_core:debug] [pid 17] mod_authz_core.c(809): [client 172.18.0.1:42344] AH01626: authorization result of <RequireAny>: granted
+vuznauka-app | 172.18.0.1 - - [06/Nov/2017:22:28:08 +0000] "GET / HTTP/1.1" 500 489 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+vuznauka-app | [Mon Nov 06 22:28:09.090865 2017] [authz_core:debug] [pid 18] mod_authz_core.c(809): [client 172.18.0.1:42350] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+vuznauka-app | [Mon Nov 06 22:28:09.090883 2017] [authz_core:debug] [pid 18] mod_authz_core.c(809): [client 172.18.0.1:42350] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+vuznauka-app | 172.18.0.1 - - [06/Nov/2017:22:28:09 +0000] "GET /favicon.ico HTTP/1.1" 500 425 "http://localhost/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+vuznauka-app | [Mon Nov 06 22:28:56.365338 2017] [authz_core:debug] [pid 19] mod_authz_core.c(809): [client 172.18.0.1:42354] AH01626: authorization result of Require all granted: granted
+vuznauka-app | [Mon Nov 06 22:28:56.365385 2017] [authz_core:debug] [pid 19] mod_authz_core.c(809): [client 172.18.0.1:42354] AH01626: authorization result of <RequireAny>: granted
+vuznauka-app | [Mon Nov 06 22:28:56.365512 2017] [authz_core:debug] [pid 19] mod_authz_core.c(809): [client 172.18.0.1:42354] AH01626: authorization result of Require all granted: granted
+vuznauka-app | [Mon Nov 06 22:28:56.365520 2017] [authz_core:debug] [pid 19] mod_authz_core.c(809): [client 172.18.0.1:42354] AH01626: authorization result of <RequireAny>: granted
+vuznauka-app | 172.18.0.1 - - [06/Nov/2017:22:28:56 +0000] "GET / HTTP/1.1" 500 425 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+vuznauka-app | [Mon Nov 06 22:28:56.591713 2017] [authz_core:debug] [pid 20] mod_authz_core.c(809): [client 172.18.0.1:42360] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+vuznauka-app | [Mon Nov 06 22:28:56.591734 2017] [authz_core:debug] [pid 20] mod_authz_core.c(809): [client 172.18.0.1:42360] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+vuznauka-app | 172.18.0.1 - - [06/Nov/2017:22:28:56 +0000] "GET /favicon.ico HTTP/1.1" 500 425 "http://localhost/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+vuznauka-app | [Mon Nov 06 22:31:20.566868 2017] [authz_core:debug] [pid 21] mod_authz_core.c(809): [client 172.18.0.1:42368] AH01626: authorization result of Require all granted: granted
+vuznauka-app | [Mon Nov 06 22:31:20.566916 2017] [authz_core:debug] [pid 21] mod_authz_core.c(809): [client 172.18.0.1:42368] AH01626: authorization result of <RequireAny>: granted
+vuznauka-app | [Mon Nov 06 22:31:20.567076 2017] [authz_core:debug] [pid 21] mod_authz_core.c(809): [client 172.18.0.1:42368] AH01626: authorization result of Require all granted: granted
+vuznauka-app | [Mon Nov 06 22:31:20.567091 2017] [authz_core:debug] [pid 21] mod_authz_core.c(809): [client 172.18.0.1:42368] AH01626: authorization result of <RequireAny>: granted
+vuznauka-app | 172.18.0.1 - - [06/Nov/2017:22:31:20 +0000] "GET / HTTP/1.1" 500 425 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+vuznauka-app | [Mon Nov 06 22:31:20.782676 2017] [authz_core:debug] [pid 17] mod_authz_core.c(809): [client 172.18.0.1:42374] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+vuznauka-app | [Mon Nov 06 22:31:20.782687 2017] [authz_core:debug] [pid 17] mod_authz_core.c(809): [client 172.18.0.1:42374] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+vuznauka-app | 172.18.0.1 - - [06/Nov/2017:22:31:20 +0000] "GET /favicon.ico HTTP/1.1" 500 425 "http://localhost/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+vuznauka-app | [Mon Nov 06 22:31:22.069284 2017] [authz_core:debug] [pid 18] mod_authz_core.c(809): [client 172.18.0.1:42378] AH01626: authorization result of Require all granted: granted
+vuznauka-app | [Mon Nov 06 22:31:22.069311 2017] [authz_core:debug] [pid 18] mod_authz_core.c(809): [client 172.18.0.1:42378] AH01626: authorization result of <RequireAny>: granted
+vuznauka-app | [Mon Nov 06 22:31:22.069390 2017] [authz_core:debug] [pid 18] mod_authz_core.c(809): [client 172.18.0.1:42378] AH01626: authorization result of Require all granted: granted
+vuznauka-app | [Mon Nov 06 22:31:22.069397 2017] [authz_core:debug] [pid 18] mod_authz_core.c(809): [client 172.18.0.1:42378] AH01626: authorization result of <RequireAny>: granted
+vuznauka-app | 172.18.0.1 - - [06/Nov/2017:22:31:22 +0000] "GET / HTTP/1.1" 500 425 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+vuznauka-app | [Mon Nov 06 22:31:22.167482 2017] [authz_core:debug] [pid 19] mod_authz_core.c(809): [client 172.18.0.1:42382] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+vuznauka-app | [Mon Nov 06 22:31:22.167492 2017] [authz_core:debug] [pid 19] mod_authz_core.c(809): [client 172.18.0.1:42382] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+vuznauka-app | 172.18.0.1 - - [06/Nov/2017:22:31:22 +0000] "GET /

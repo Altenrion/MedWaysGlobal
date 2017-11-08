@@ -26,7 +26,7 @@ class ShowCaseController extends Controller
 //                'actions'=>array('index'),
 //                'roles'=>array('Dev','Moderator','User'),
 //            ),
-//            array('deny',
+//            array('allow',
 //                'actions'=>array('index'),
 //                'users'=>array('*'),
 //            ),
@@ -44,6 +44,45 @@ class ShowCaseController extends Controller
     public function actionPartners()
     {
         $this->render('partners');
+    }
+
+    public function actionResetPass(){
+        if (isset($_POST['email'])) {
+
+            $user = Users::model()->findByAttributes(array('EMAIL' => $_POST['email']));
+            if($user){
+
+//          @todo: generate real tmp pass
+                $user->password = '1991';
+                if ($user->save()) {
+
+
+                    $tpl_file = Yii::getPathOfAlias('webroot.downloads') . DIRECTORY_SEPARATOR . 'mail_mail.php';
+                    $tpl = file_get_contents($tpl_file);
+                    $mail = $tpl;
+
+                    $title = "Восстановление пароля";
+                    $content = "Здравствуйте $user->L_NAME $user->S_NAME! Мы рады Вашему возвращению! /n Ваш новый (временный) пароль : $user->password. Будем рады Вашему участию в текущем тапе эстафеты.";
+
+                    $mail = strtr($mail, array(
+                        "{title}" => $title,
+                        "{content}" => $content,
+                    ));
+                    $message = new YiiMailMessage;
+                    $message->setBody($mail, 'text/html');
+                    $message->subject = 'Vuznauka 2018 - Восстановление пароля';
+                    $message->addTo($user->EMAIL);
+                    $message->from = Yii::app()->params['adminEmail'];
+                    Yii::app()->mail->send($message);
+
+                    echo json_encode(array("status"=>"success"));
+                    Yii::app()->end();
+                }
+            }
+        }
+        echo json_encode(array("status"=>"fail"));
+        Yii::app()->end();
+
     }
 
     public function actionRegPartners()
@@ -146,7 +185,7 @@ class ShowCaseController extends Controller
         ));
         $message = new YiiMailMessage;
         $message->setBody($mail, 'text/html');
-        $message->subject = 'Активация пароля - Этафета вузовской науки';
+        $message->subject = 'Vuznauka 2018 - Активация пароля';
         $message->addTo($email);
         $message->from = Yii::app()->params['adminEmail'];
         Yii::app()->mail->send($message);

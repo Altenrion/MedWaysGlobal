@@ -118,7 +118,7 @@ h6 {
     font-size: 12px
 }
 .slab {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab',sans-serif;
     text-transform: none;
 }
 .section-title {
@@ -142,7 +142,7 @@ h6 {
     letter-spacing: normal;
 }
 .section-title span {
-    font-family: boblic, serif;
+    font-family: boblic,sans-serif;
     font-weight: 300;
     font-size: 18px;
     text-transform: lowercase;
@@ -193,7 +193,7 @@ h1.post-title {
 .lead {
     font-size: 18px;
     line-height: 32px;
-    font-family: Boblic, serif;
+    font-family: Boblic,sans-serif;
     font-weight: 300;
     color: #7f7f7f;
 }
@@ -207,7 +207,7 @@ blockquote p {
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab',sans-serif;
 }
 blockquote small {
     line-height: 33px;
@@ -294,7 +294,7 @@ i.contact {
     color: #6c6c6c;
     font-size: 12px;
     font-style: normal;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab',sans-serif;
 }
 .tagcloud {
     line-height: 25px
@@ -356,7 +356,7 @@ i.contact {
 .meta,
 .more {
     font-size: 12px;
-    font-family: Boblic, serif;
+    font-family: Boblic,sans-serif;
     color: #9f9f9f;
     font-weight: 400;
     margin-bottom: 10px;
@@ -458,7 +458,7 @@ i.contact {
     height: 120px
 }
 .page-title {
-    font-family: NewsCondensed,'Roboto Slab', serif;
+    font-family: NewsCondensed,'Roboto Slab',sans-serif;
     text-transform: none;
     font-weight: 300;
 }
@@ -1421,7 +1421,7 @@ i.contact {
     list-style: none;
 }
 .tp-caption.bold {
-    font-family: Boblic,'Roboto Slab', serif;
+    font-family:  sans-serif;
     font-size: 30px;
     line-height: 1;
     font-weight: 900;
@@ -1432,7 +1432,7 @@ i.contact {
     line-height: 1;
     color: #F5F5F5;
     font-weight: 400;
-    font-family:  Boblic,'Roboto Slab', serif;
+    font-family:   sans-serif;
 }
 .tp-caption.white-bg {
     background: #FFF;
@@ -1834,7 +1834,7 @@ i.contact {
     line-height: 32px;
     font-weight: 300;
     position: relative;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab',sans-serif;
 }
 #testimonials .tab {
     border: none;
@@ -2062,7 +2062,7 @@ i.contact {
     display: block;
     color: #FFF;
     text-transform: none;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab',sans-serif;
 }
 .filter {
     padding: 0;
@@ -2284,7 +2284,7 @@ i.contact {
 }
 .process li.process-item .number {
     font-size: 60px;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab',sans-serif;
     color: #fa6c65;
     font-weight: 300;
     margin: 10px 25px 0 0;
@@ -2562,7 +2562,7 @@ ul.circled li:before {
     text-transform: none;
 }
 .post-parallax h3.bold {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab',sans-serif;
     font-size: 30px;
     line-height: 1;
     font-weight: 900;
@@ -2573,7 +2573,7 @@ ul.circled li:before {
     line-height: 1;
     color: #F5F5F5;
     font-weight: 400;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab',sans-serif;
 }
 .post-parallax .opacity-bg {
     background: rgba(0,0,0,0.6);
@@ -3240,7 +3240,7 @@ input:focus:-ms-input-placeholder {
 }
 .sidebox .post-list .meta em {
     font-size: 12px;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab',sans-serif;
     color: #9f9f9f;
     font-weight: 400;
 }

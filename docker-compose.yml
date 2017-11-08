@@ -1,0 +1,21 @@
+version: "2"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile-app
+    container_name: vuznauka-app
+    ports:
+      - "80:80"
+    volumes:
+      - .:/var/www/html
+  db:
+    build:
+      context: .
+      dockerfile: ./Dockerfile-db
+    container_name: vuznauka-db
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+  smtp:
+    image: namshi/smtp
+    restart: always

@@ -92,10 +92,10 @@ return array(
         ),
 
         'db'=>array(
-            'connectionString' => 'mysql:host=localhost;dbname=vuznauka',
+            'connectionString' => 'mysql:host=vuznauka-db;dbname=vuznauka',
             'emulatePrepare' => true,
-            'username' => 'root',
-            'password' => '',
+            'username' => 'altenrion',
+            'password' => 'altenrion-db',
             'charset' => 'utf8',
             'enableProfiling'=>true,
             // показываем значения параметров
@@ -107,7 +107,7 @@ return array(
             'transportType' => 'php',
 //                    'transportType' => 'smtp',
 //                    'transportOptions'=>array(
-//                        'host'=>'smtp.timeweb.ru',
+//                        'host'=>'localhost',
 //                        //'encryption'=>'tls',
 //                        'username'=>'administration@altenrion.ru',
 //                        'password'=>'Altenrion',
@@ -153,7 +153,7 @@ return array(
     // using Yii::app()->params['paramName']
     'params'=>array(
         // this is used in contact page
-        'adminEmail'=>'Administration@altenrion.ru',
+        'adminEmail'=>'landerfeld@gmail.com',
         'hash_site_key' => 'dlfkgknbcvjkbsdkjflsdkhfdf34534jkHL$@#K$^kb',
         'postsPerPage' => 5,
         'downloads'=>Yii::app()->basePath,

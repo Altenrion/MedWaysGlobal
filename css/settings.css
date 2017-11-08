@@ -14,7 +14,12 @@ version:   	1.4.5
 **************************/
 
 .tp-hide-revslider,.tp-caption.tp-hidden-caption	{	visibility:hidden !important; display:none !important;}
-
+body p.forgot {
+	padding: 0px 0 0 5px;
+	overflow: hidden;
+	display: inline-block;
+	margin-bottom: 0px;
+}
 
 .tp-caption { z-index:1;}
 

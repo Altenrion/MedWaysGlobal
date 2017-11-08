@@ -23,6 +23,8 @@
         <!-- Bootstrap core CSS -->
         <link href="<?=Yii::app()->baseUrl?>/css/bootstrap.css" rel="stylesheet">
         <link href="<?=Yii::app()->baseUrl?>/css/settings.css" rel="stylesheet">
+        <link href="<?=Yii::app()->baseUrl?>/js/alertifyjs/css/alertify.css" rel="stylesheet">
+        <link href="<?=Yii::app()->baseUrl?>/js/alertifyjs/css/themes/bootstrap.css" rel="stylesheet">
         <link href="<?=Yii::app()->baseUrl?>/css/owl.carousel.css" rel="stylesheet">
         <link href="<?=Yii::app()->baseUrl?>/js/adaptive/google-code-prettify/prettify.css" rel="stylesheet">
         <link href="<?=Yii::app()->baseUrl?>/js/adaptive/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" media="all" />
@@ -82,7 +84,7 @@
                             <li><a href="<?=Yii::app()->createUrl('ShowCase/logout')?>"><i class="icon-logout"></i></a></li>
                         <? endif; ?>
                         <? if(Yii::app()->user->isGuest): ?>
-                            <li><a href="<?=Yii::app()->createUrl('ShowCase/login')?>"><i class="icon-login"></i></a></li>
+<!--                            <li><a href="--><?//=Yii::app()->createUrl('ShowCase/login')?><!--"><i class="icon-login"></i></a></li>-->
                         <? endif; ?>
                     </ul>
                 </div>
@@ -105,14 +107,14 @@
                 <section class="col-sm-3 widget">
                     <h3 class="section-title widget-title">Базовые вузы</h3>
                     <ul class="post-list" >
-                        <li>ЦФО – <a href="#" style="font-size: 9pt;">Воронежский государственный медицинский университет им. Н.Н. Бурденко</a></li>
-                        <li>ЮФО – <a href="#" style="font-size: 9pt;">Кубанский государственный медицинский университет</a></li>
-                        <li>СЗФО – <a href="#" style="font-size: 9pt;">Северо-Западный государственный медицинский университет имени И.И. Мечникова</a></li>
-                        <li>СФО – <a href="#" style="font-size: 9pt;">Красноярский государственный Медицинский университет имени профессора В.Ф. Войно-Ясенецкого</a></li>
-                        <li>ДФО – <a href="#" style="font-size: 9pt;">Тихоокеанский государственный медицинский университет</a></li>
-                        <li>УФО – <a href="#" style="font-size: 9pt;">Уральский государственный медицинский университет</a></li>
-                        <li>ПФО – <a href="#" style="font-size: 9pt;">Саратовский государственный медицинский университет имени В. И. Разумовского</a></li>
-                        <li>СКФО – <a href="#" style="font-size: 9pt;">Ставропольский государственный медицинский университет</a></li>
+                        <li>ЦФО – <a href="#" style="font-size: 9pt;">Курский государственный медицинский университет</a></li>
+                        <li>ЮФО – <a href="#" style="font-size: 9pt;">Астраханский государственный медицинский университет</a></li>
+                        <li>СЗФО – <a href="#" style="font-size: 9pt;">Первый Санкт-Петербургский государственный медицинский университет им. акад. И.П. Павлова</a></li>
+                        <li>СФО – <a href="#" style="font-size: 9pt;">Сибирский государственный Медицинский университет</a></li>
+                        <li>ДФО – <a href="#" style="font-size: 9pt;">Дальневосточный государственный медицинский университет</a></li>
+                        <li>УФО – <a href="#" style="font-size: 9pt;">Тюменский государственный медицинский университет</a></li>
+                        <li>ПФО – <a href="#" style="font-size: 9pt;">Башкирский государственный медицинский университет</a></li>
+                        <li>СКФО – <a href="#" style="font-size: 9pt;">Дагестанский государственный медицинский университет</a></li>
                     </ul>
                     <!-- /.post-list -->
                 </section>
@@ -134,7 +136,7 @@
                         <a href="#" style="font-size: 15pt;">Педиатрия</a>
                         <a href="#" style="font-size: 10pt;">Психиатрия и зависимости</a>
                         <a href="#" style="font-size: 9pt;">Иммунология</a>
-                            <a href="#" style="font-size: 9pt;">    Микробиология</a>
+                        <a href="#" style="font-size: 9pt;">Микробиология</a>
                         <a href="#" style="font-size: 12pt;">Фармакология</a>
                         <a href="#" style="font-size: 9pt;">Профилактическая среда</a>
                         <a href="#" style="font-size: 15pt;">Репродуктивное здоровье</a>
@@ -148,35 +150,38 @@
                 <section class="col-sm-3 widget">
                     <h3 class="section-title widget-title">Организаторы</h3>
                     <strong>Региональный этап мероприятия:</strong>
-                    <p>ФГБОУ ВО «Воронежский государственный медицинский университет им. Н.Н.
-                        Бурденко» Министерства здравоохранения Российской Федерации
+                    <p>ФГБОУ ВО Курский государственный медицинский университет Министерства здравоохранения Российской Федерации
                     </p>
 
                     <div class="divide20"></div>
 
                     <strong>Финальный этап мероприятия:</strong>
 
-                    <p>ФГБОУ ФО Первый МГМУ имени И.М. Сеченова Минздрава России</p>
+                    <p>ФГАОУ ФО Первый МГМУ имени И.М. Сеченова (Сеченовский Университет) Минздрава России</p>
 
 
                 </section>
                 <section class="col-sm-3 widget">
                     <h3 class="section-title widget-title">Контакты</h3>
 
-                    <strong>Контакты по научно организационным вопросам</strong>
+                    <strong>По вопросам взаимодействия вузов с Оргкомитетом Эстафеты вузоской науки</strong>
                     <div class="divide30"></div>
 
                     <strong> Мешалкина Наталия Юрьевна:</strong>
                     <div class="divide5"></div>
                     <i class="icon-mail contact"></i> <a href="#">posrc12@yandex.ru</a></br>
-                    <i class="icon-phone contact"></i> <a href="#">+7(495) 622-95- 00</a></br>
+                    <i class="icon-phone contact"></i> <a href="#">+7(495) 622-95-00</a></br>
                     <div class="divide30"></div>
 
-                    <strong> Тимошенко Камилла Талгатовна:</strong>
-                    <div class="divide10"></div>
-                    <i class="icon-mail contact"></i> <a href="#">kamilla.timoshenko@gmail.com</a></br>
-                </section>
+                    <strong>По вопросам подачи заявок, оценки работ на конкурс Эстафеты вузоской науки, участия в Международном форуме "Вузовская наука. Инновации"  </strong>
+                    <div class="divide30"></div>
 
+<!--                    <strong> :</strong>-->
+<!--                    <div class="divide10"></div>-->
+                    <i class="icon-mail contact"></i> <a href="#">vuznauka@confreg.org</a></br>
+                    <i class="icon-phone contact"></i> <a href="#">+7(499) 390-34-38</a>  <a href="#">+7(926) 848-23-58</a></br>
+                    <i class="icon-print contact"></i> <a href="#">+7(499) 137-34-79</a></br>
+                </section>
 
                 <!-- /.widget -->
             </div>
@@ -192,8 +197,8 @@
                 <li><a href="<?= Yii::app()->createUrl('ShowCase/index')?>">Главная</a></li>
                 <li><a href="<?= Yii::app()->createUrl('ShowCase/info')?>">Информация</a></li>
                 <li><a href="<?= Yii::app()->createUrl('ShowCase/organizers')?>">Организаторы</a></li>
-                <li><a href="<?= Yii::app()->createUrl('ShowCase/partners')?>">Партнеры</a></li>
-                <li><a href="<?= Yii::app()->createUrl('ShowCase/feedback')?>">Обратная связь</a></li>
+<!--                <li><a href="--><?//= Yii::app()->createUrl('ShowCase/partners')?><!--">Партнеры</a></li>-->
+<!--                <li><a href="--><?//= Yii::app()->createUrl('ShowCase/feedback')?><!--">Обратная связь</a></li>-->
             </ul>
         </div>
     </div>
@@ -220,6 +225,7 @@
     <script src="<?=Yii::app()->baseUrl?>/js/adaptive/google-code-prettify/prettify.js"></script>
     <script src="<?=Yii::app()->baseUrl?>/js/adaptive/jquery.slickforms.js"></script>
     <script src="<?=Yii::app()->baseUrl?>/js/adaptive/scripts.js"></script>
+    <script src="<?=Yii::app()->baseUrl?>/js/alertifyjs/alertify.js"></script>
     <script src="<?=Yii::app()->baseUrl?>/js/skel/skel.min.js"></script>
     <script src="<?=Yii::app()->baseUrl?>/js/skel/init.js"></script>
     </body>

@@ -53,8 +53,8 @@
                         <li>
                             <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/org/o_pmgmu.jpg" alt=""> </a> </div>
                             <div class="meta">
-                                <h6><a href="#@#"> ГБОУ ВПО Первый Московский государственный медицинский университет имени И.М. Сеченова Минздрава России </a></h6>
-                                <em><a href="http://mma.ru" target="_blank">mma.ru</a></em> </div>
+                                <h6><a href="#@#"> ФГАОУ ВО Первый Московский государственный медицинский университет имени И.М. Сеченова (Сеченовский Университет) Минздрава России </a></h6>
+                                <em><a href="http://sechenov.ru" target="_blank">sechenov.ru</a></em> </div>
                         </li>
                         <li>
                             <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/org/o_liga.jpg" alt=""> </a> </div>
@@ -71,7 +71,7 @@
                         <li>
                             <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/org/o_burdenko.jpg" alt=""> </a> </div>
                             <div class="meta">
-                                <h6><a href="#@#">ФГБОУ ВПО «Воронежский государственный медицинский университет имени Н.Н. Бурденко» </a></h6>
+                                <h6><a href="#@#">ФГБОУ ВПО «Курский государственный медицинский университет» </a></h6>
                                 <em></em> </div>
                         </li>
 
@@ -85,45 +85,45 @@
                 <div class="sidebox widget">
                 <ul class="post-list">
 
-                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/org/o_burdenko.jpg" alt=""> </a> </div>
+                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/img/org/o_burdenko.jpg" alt=""> </a> </div>
                         <div class="meta">
-                            <h6><a href="#@#">Центральный федеральный округ – ФГБОУ ВО «Воронежский государственный медицинский университет им. Н.Н. Бурденко» Минздрава России</a></h6>
+                            <h6><a href="#@#">Центральный федеральный округ – ФГБОУ ВО «Курский государственный медицинский университет» Минздрава России</a></h6>
 
                         </div>
                     </li>
-                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/univers/u_kgmu.jpg" alt=""> </a> </div>
+                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/img/univers/u_kgmu.jpg" alt=""> </a> </div>
                         <div class="meta">
-                            <h6><a href="#@#">Южный федеральный округ – ФГБОУ ВО «Кубанский государственный медицинский университет» Минздрава России</a></h6>
+                            <h6><a href="#@#">Южный федеральный округ – ФГБОУ ВО «Архангельский государственный медицинский университет» Минздрава России</a></h6>
                         </div>
                     </li>
-                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/univers/u_mechnikov.jpg" alt=""> </a> </div>
+                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/img/univers/u_mechnikov.jpg" alt=""> </a> </div>
                         <div class="meta">
-                            <h6><a href="#@#">Северо-Западный федеральный округ – ФГБОУ ВО «Северо-Западный государственный медицинский университет имени И.И. Мечникова» Минздрава России</a></h6>
+                            <h6><a href="#@#">Северо-Западный федеральный округ – ФГБОУ ВО «Первый Санкт-Петербургский государственный медицинский университет им. акад. И.П. Павлова» Минздрава России</a></h6>
                         </div>
                     </li>
-                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/univers/u_ticho_ocean.jpg" alt=""> </a> </div>
+                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/img/univers/u_ticho_ocean.jpg" alt=""> </a> </div>
                         <div class="meta">
-                            <h6><a href="#@#">Дальневосточный федеральный округ – ФГБОУ ВО «Тихоокеанский государственный медицинский университет» Минздрава России</a></h6>
+                            <h6><a href="#@#">Дальневосточный федеральный округ – ФГБОУ ВО «Дальневосточный государственный медицинский университет» Минздрава России</a></h6>
                         </div>
                     </li>
-                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/univers/u_krasgmu.jpg" alt=""> </a> </div>
+                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/img/univers/u_krasgmu.jpg" alt=""> </a> </div>
                         <div class="meta">
-                            <h6><a href="#@#">Сибирский федеральный округ –ФГБОУ ВО «Красноярский государственный медицинский университет имени профессора В.Ф.Войно-Ясенецкого» Минздрава России</a></h6>
+                            <h6><a href="#@#">Сибирский федеральный округ –ФГБОУ ВО «Сибирский государственный медицинский университет имени профессора В.Ф.Войно-Ясенецкого» Минздрава России</a></h6>
                         </div>
                     </li>
-                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/univers/u_uugmu.jpg" alt=""> </a> </div>
+                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/img/univers/u_uugmu.jpg" alt=""> </a> </div>
                         <div class="meta">
-                            <h6><a href="#@#">Уральский федеральный округ – ФГБОУ ВО «Уральский государственный медицинский университет» Минздрава России</a></h6>
+                            <h6><a href="#@#">Уральский федеральный округ – ФГБОУ ВО «Тюменский государственный медицинский университет» Минздрава России</a></h6>
                         </div>
                     </li>
-                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/univers/u_saratov.jpg" alt=""> </a> </div>
+                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/img/univers/u_saratov.jpg" alt=""> </a> </div>
                         <div class="meta">
-                            <h6><a href="#@#">Приволжский федеральный округ – ФГБОУ ВО «Саратовский государственный медицинский университет имени В. И. Разумовского» Минздрава России</a></h6>
+                            <h6><a href="#@#">Приволжский федеральный округ – ФГБОУ ВО «Башкирский государственный медицинский университет имени В. И. Разумовского» Минздрава России</a></h6>
                         </div>
                     </li>
-                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/univers/u_stavgmu.jpg" alt=""> </a> </div>
+                    <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/img/univers/u_stavgmu.jpg" alt=""> </a> </div>
                         <div class="meta">
-                            <h6><a href="#@#">Северо-Кавказский федеральный округ – ФГБОУ ВО «Ставропольский государственный медицинский университет» Минздрава России</a></h6>
+                            <h6><a href="#@#">Северо-Кавказский федеральный округ – ФГБОУ ВО «Дагестанский государственный медицинский университет» Минздрава России</a></h6>
                         </div>
                     </li>
                 </ul>
@@ -138,7 +138,7 @@
 </div>
 
 
-<? if(false): ?>
+<? if(true): ?>
 
 <div class="light-wrapper inner">
     <div class="container text-center">
