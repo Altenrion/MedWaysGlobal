@@ -50,6 +50,9 @@ if (isset($data) && !is_null($data)) {
             margin-left: 31.666667%;
 
         }
+        #profile .btn.btn-primary.btn-xs {
+            padding-left: 0.6em;
+        }
     </style>
 
     <!-- BEGIN CONTENT HEADER -->
