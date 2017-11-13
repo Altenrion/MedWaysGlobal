@@ -206,6 +206,7 @@ class ProjectRegistry extends CActiveRecord
                 proj.THIRD_LAVEL_RATING,
                 proj.FIRST_LAVEL_COMMENT,
                 proj.ROADMAP_PROJECT,
+                proj.REG_DATE,
                 (SELECT stage.NAME_STAGE FROM m_w_stage as stage WHERE stage.ID_STAGE = proj.ID_STAGE) AS ID_STAGE,
 
                 (SELECT phase.NAME FROM m_w_phase as phase WHERE phase.ID_PHASE = proj.ID_PHASE) AS ID_PHASE,
@@ -213,7 +214,8 @@ class ProjectRegistry extends CActiveRecord
 
 
                 FROM m_w_project_registry as proj
-                WHERE proj.ID_REPRESENTATIVE = $id")->queryAll();
+                
+                WHERE proj.ID_REPRESENTATIVE = $id ORDER BY proj.REG_DATE DESC")->queryAll();
 
         return $data;
 

@@ -63,15 +63,15 @@ Yii::app()->clientScript->registerCssFile($assetsUrl . '/css/themes/bootstrap.cs
             <span class="fa fa-bars fa-lg"></span>
         </a>
 
-        <!-- BEGIN NEWS TICKER -->
-        <!--    <div class="ticker">-->
-        <!--        <strong>Важно:</strong>-->
-        <!--        <ul>-->
-        <!--            <li>Регистрация проектов открыта до 15 октября! </li>-->
-        <!--            <li>К конкурсу допускаются подтвержденные вузом проекты.</li>-->
-        <!--        </ul>-->
-        <!--    </div>-->
-        <!-- END NEWS TICKER -->
+<!--         BEGIN NEWS TICKER-->
+<!--            <div class="ticker">-->
+<!--                <strong>Важно:</strong>-->
+<!--                <ul>-->
+<!--                    <li>Регистрация проектов открыта до 15 октября! </li>-->
+<!--                    <li>К конкурсу допускаются подтвержденные вузом проекты.</li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--         END NEWS TICKER -->
 
         <div class="navbar-right">
             <ul class="nav navbar-nav">
@@ -221,7 +221,6 @@ Yii::app()->clientScript->registerCssFile($assetsUrl . '/css/themes/bootstrap.cs
 </script>
 <!-- BEGIN JS TEMPLATE -->
 <script src="<?= $assetsUrl ?>/js/main.js"></script>
-<script src="<?= $assetsUrl ?>/js/skin-selector.js"></script>
 <script src="<?= $assetsUrl ?>/js/alertify.js"></script>
 <script src="<?= $assetsUrl ?>/js/MyEditsToEditable.js"></script>
 <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter46544628 = new Ya.Metrika({ id:46544628, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/46544628" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->

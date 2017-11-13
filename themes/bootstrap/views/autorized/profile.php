@@ -167,7 +167,7 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
 
                             <div class="tab-pane active" id="profile">
                                 <span class="lead">Мои данные <span> &nbsp;&nbsp;&nbsp;</span>
-                                    <button id="enable" class="btn btn-xs btn-primary "><i class="fa  fa-edit"> </i>
+                                    <button id="" class="btn btn-xs btn-primary enable-edition "><i class="fa  fa-edit"> </i>
                                         редактировать
                                     </button>
                                    <a class="btn btn-xs btn-primary " style="font-size: 0.6em" href="/downloads/vuznauka_project_compilation.pdf" target="_blank"><i class="fa  fa-info"> </i> Инструкция по оформлению проекта </a>

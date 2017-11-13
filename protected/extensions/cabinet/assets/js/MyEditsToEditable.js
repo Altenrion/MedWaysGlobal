@@ -49,50 +49,14 @@ $(document).ready(function () {
     });
 
 
-    $('#enable').click(function (e) {
-//        e.stopPropagation()
-        console.log("I'm Here");
+    $('.enable-edition').click(function (e) {
+       e.preventDefault();
 
-        $('a[rel^="F_NAME"]').editable('toggleDisabled');
-        $('a[rel^="L_NAME"]').editable('toggleDisabled');
-        $('a[rel^="S_NAME"]').editable('toggleDisabled');
-        $('a[rel^="BIRTH_DATE"]').editable('toggleDisabled');
-        $('a[rel^="PHONE"]').editable('toggleDisabled');
-        $('a[rel^="SEX"]').editable('toggleDisabled');
-        $('a[rel^="DEGREE"]').editable('toggleDisabled');
-        $('a[rel^="ACADEMIC_TITLE"]').editable('toggleDisabled');
-        $('a[rel^="ID_DISTRICT"]').editable('toggleDisabled');
-        $('a[rel^="ID_UNIVER"]').editable('toggleDisabled');
-        $('a[rel^="ID_SPECIALITY"]').editable('toggleDisabled');
-        $('a[rel^="W_POSITION"]').editable('toggleDisabled');
-        $('a[rel^="HIRSH"]').editable('toggleDisabled');
-        $('a[rel^="PRIVACY"]').editable('toggleDisabled');
+        var $links = $(this).closest(".grid-body").find('a')
+            .filter(function () {return $(this).hasClass("editable");});
 
-
-    });
-
-    $('#enable').click(function (e) {
-//        e.stopPropagation()
-        console.log("I'm Here");
-
-        $('a[rel^="ID_STAGE"]').editable('toggleDisabled');
-        $('a[rel^="NAME"]').editable('toggleDisabled');
-        $('a[rel^="DESCR_PROJECT"]').editable('toggleDisabled');
-        $('a[rel^="ROADMAP_PROJECT"]').editable('toggleDisabled');
-        $('a[rel^="ID_PHASE"]').editable('toggleDisabled');
-        $('a[rel^="EXECUTERS_NUM"]').editable('toggleDisabled');
-        $('a[rel^="UN_THIRTY_FIVE"]').editable('toggleDisabled');
-        $('a[rel^="STUDY"]').editable('toggleDisabled');
-        $('a[rel^="PUBLICATIONS"]').editable('toggleDisabled');
-        $('a[rel^="FORIN_PUBL"]').editable('toggleDisabled');
-        $('a[rel^="START_YEAR"]').editable('toggleDisabled');
-        $('a[rel^="END_YEAR"]').editable('toggleDisabled');
-        $('a[rel^="YEAR_BUDGET"]').editable('toggleDisabled');
-        $('a[rel^="LONG_BUDGET"]').editable('toggleDisabled');
-        $('a[rel^="CO_FINANCING"]').editable('toggleDisabled');
-        $('a[rel^="ID_BUDGET"]').editable('toggleDisabled');
-
-
+        $links.editable('toggleDisabled');
+        console.log("edit clicked again");
     });
 
 
@@ -140,5 +104,41 @@ $(document).ready(function () {
 
     });
 
+    $(".create-project").on("click", function(e){
+        e.preventDefault();
 
+
+        $.ajax({
+            type: 'post',
+            url: 'createNewProject',
+            // data: {:$old_passwd, newPass:$new_passwd},
+            dataType : 'json',
+            success: function(data){
+                console.log(data);
+                if(data.status == 'success'){
+                    alertify.success('Новый проект успешно создан. Заполните нужные поля и подайте его на участие. Удачи в Эстафете');
+                    setTimeout(function(){
+                        window.location.replace('http://'+window.location.host +"/Autorized/project");
+                    }, 3500);
+                }
+                if(data.status == 'fail'){
+                    console.log(data.status);
+
+                    alertify.error('У вас есть активный проект для текущего периода Эстафеты');
+                }
+                if(data.status == 'error'){
+                    alertify.error('При создании проекта произшла ошибка. Напишите об этом организаторам, приложив скриншот');
+                }
+            },
+            error:function(){
+                alertify.error('При создании проекта произшла ошибка. Напишите об этом организаторам, приложив скриншот');
+            }
+        });
+
+
+
+
+    });
+
+    $(".grid-header a[data-widget='collapse']").trigger("click");
 });

@@ -439,10 +439,83 @@ class AutorizedController extends Controller
         $this->render('experts');
     }
 
+    public static function projectViewConf($project, $obj){
+
+        $config = array(
+            'mod_one' => '',
+            'mod_two' => '',
+            'mod_three' => '',
+            'mod_four' => '',
+            'no_edit' => false,
+            'no_buttons' => false,
+            'finished' => false
+        );
+
+        switch ($project['FIRST_LAVEL_APPROVAL']) {
+
+            case '1':
+                $config['mod_one'] = $obj->statusOk();
+                $config['mod_two'] = $obj->statusSpinner();
+                $config['no_edit'] = true;
+                break;
+            case '2':
+                $config['mod_one'] = $obj->statusSpinner();
+                $config['mod_two'] = $obj->statusFail();
+                break;
+            case '3':
+                $config['mod_one'] = $obj->statusOk();
+                $config['mod_two'] = $obj->statusOk();
+                $config['no_edit'] = true;
+                $config['no_buttons'] = true;
+                break;
+            case '9':
+                $config['mod_one'] = $obj->statusFail();
+                $config['mod_two'] = $obj->statusFail();
+                break;
+            default:
+                $config['mod_one'] = $obj->statusSpinner();
+                $config['mod_two'] = $obj->statusSpinner();
+                break;
+        }
+
+        $config['mod_three'] = (!is_null($project['SECOND_LAVEL_RATING']) ? $obj->statusOk() : $obj->statusSpinner());
+        $config['mod_four'] =  (!is_null($project['THIRD_LAVEL_RATING']) ?  $obj->statusOk() : $obj->statusSpinner());
+        $config['finished'] =  ($project['REG_DATE'] < '2017-11-01' ? true : false);
+
+        return $config;
+    }
+
+    public function actionCreateNewProject(){
+
+        $user = Yii::app()->user;
+
+        $active_projects = ProjectRegistry::model()->findAllByAttributes(array('ID_REPRESENTATIVE' => $user->id), 'REG_DATE>:reg_date', array('reg_date'=>'2017-11-01'));
+
+        if(!empty($active_projects)){
+            echo json_encode(array("status"=>"fail")); die();
+        }
+
+        if(empty($active_projects) && $user->role == 'Dev'){
+
+            $new_project = new ProjectRegistry();
+
+            $new_project->ID_REPRESENTATIVE = $user->id;
+
+            if($new_project->save()){
+                echo json_encode(array("status"=>"success")); die();
+            }
+        }
+
+        echo json_encode(array("status"=>"error")); die();
+
+    }
+
     public function actionProject()
     {
         $model = new ProjectRegistry;
         $data = $model->findProjectData(Yii::app()->user->id);
+
+//        var_dump($data); die();
 
         $this->render('project', array(
             'data' => $data,

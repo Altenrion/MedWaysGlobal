@@ -51,7 +51,7 @@
                                 <em><a href="http://www.ras.ru" target="_blank">www.ras.ru</a></em> </div>
                         </li>
                         <li>
-                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/org/o_pmgmu.jpg" alt=""> </a> </div>
+                            <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/images/sechenov.jpg" alt=""> </a> </div>
                             <div class="meta">
                                 <h6><a href="#@#"> ФГАОУ ВО Первый Московский государственный медицинский университет имени И.М. Сеченова (Сеченовский Университет) Минздрава России </a></h6>
                                 <em><a href="http://sechenov.ru" target="_blank">sechenov.ru</a></em> </div>
