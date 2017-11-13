@@ -495,7 +495,7 @@ class AutorizedController extends Controller
             echo json_encode(array("status"=>"fail")); die();
         }
 
-        if(empty($active_projects) && $user->role == 'Dev'){
+        if(empty($active_projects) && in_array($user->role, array('Manager', 'Dev'))) {
 
             $new_project = new ProjectRegistry();
 
