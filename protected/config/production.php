@@ -156,9 +156,10 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		        'adminEmail'=>'Administration@vuznauka2018.ru',
-                'hash_site_key' => 'dlfkgknbcvjkbsdkjflsdkhfdf34534jkHL$@#K$^kb',
-                'postsPerPage' => 10,
-                'downloads'=>Yii::app()->basePath,
+        'adminEmail'=>'Administration@vuznauka2018.ru',
+        'hash_site_key' => 'dlfkgknbcvjkbsdkjflsdkhfdf34534jkHL$@#K$^kb',
+        'postsPerPage' => 10,
+        'downloads'=>Yii::app()->basePath,
+        'eventStartDate'=> '2017-11-01'
 	),
 );

@@ -182,7 +182,7 @@ class AutorizedController extends Controller
                 where u.id IS NOT NULL
             AND pr.ID_STAGE = st.ID_STAGE
             AND u.ID_DISTRICT = {$total_district['ID_DISTRICT']}
-            AND u.REG_DATE > '2016-09-01'
+            AND u.REG_DATE > ". Yii::app()->params['eventStartDate']."
             ) as '{$total_district['NAME']}'";
 
             $pushed_projects_strings[] = "
@@ -193,7 +193,7 @@ class AutorizedController extends Controller
             AND pr.ID_STAGE = st.ID_STAGE
             AND pr.FIRST_LAVEL_APPROVAL = 3
             AND u.ID_DISTRICT = {$total_district['ID_DISTRICT']}
-            AND u.REG_DATE > '2016-09-01'
+            AND u.REG_DATE > ". Yii::app()->params['eventStartDate']."
             ) as '{$total_district['NAME']}'";
 
             $verified_projects_strings[] = "
@@ -205,7 +205,7 @@ class AutorizedController extends Controller
             AND pr.FIRST_LAVEL_APPROVAL = 3
             AND pr.SECOND_LAVEL_RATING IS NOT NULL
             AND u.ID_DISTRICT = {$total_district['ID_DISTRICT']}
-            AND u.REG_DATE > '2016-09-01'
+            AND u.REG_DATE > ". Yii::app()->params['eventStartDate']."
             ) as '{$total_district['NAME']}'";
 
         }
@@ -238,7 +238,7 @@ class AutorizedController extends Controller
                 $criteriaConditionArray[] = "(SELECT ID_PROJECT FROM `m_w_project_registry` as pr
                         JOIN m_w_users as u ON pr.ID_REPRESENTATIVE = u.id
                         WHERE SECOND_LAVEL_RATING IS NOT NULL   
-                        AND pr.REG_DATE > '2016-09-01'
+                        AND pr.REG_DATE > ". Yii::app()->params['eventStartDate']."
                         AND u.ID_DISTRICT = " . $district . "
                         AND pr.ID_STAGE = " . $platform . "
                         ORDER BY SECOND_LAVEL_RATING DESC LIMIT 3) ";
@@ -263,7 +263,7 @@ class AutorizedController extends Controller
                 AND pr.SECOND_LAVEL_RATING IS NOT NULL
                 AND u.ID_DISTRICT IN (1,2,3,4,5,6,7,8)
                 AND pr.ID_PROJECT IN (" . implode(" , ", $ids) . ")
-                AND u.REG_DATE > '2016-09-01') 
+                AND u.REG_DATE > ". Yii::app()->params['eventStartDate'].") 
             	as 'кол-во проектов',
             (SELECT count(*) from m_w_users as u WHERE u.roles = 'Exp3' 
                 AND u.ID_STAGE = st.ID_STAGE
@@ -285,7 +285,7 @@ class AutorizedController extends Controller
             where ma.ID_EXPERT = u.id 
             and ma.ID_PROJECT IN (
                 SELECT reg.ID_PROJECT from m_w_project_registry as reg 
-                where reg.REG_DATE > '2016-08-01'
+                where reg.REG_DATE >  ".Yii::app()->params['eventStartDate']."
             )
             GROUP BY ma.ID_EXPERT), 0) 
         as marks
@@ -361,8 +361,7 @@ class AutorizedController extends Controller
             
             WHERE u.roles = 'Exp3' 
             AND pr.ID_STAGE= " . $stageId . "
-            AND pr.REG_DATE > '2016-09-01'
-        ")->queryAll();
+            AND pr.REG_DATE > ". Yii::app()->params['eventStartDate'])->queryAll();
 
         foreach ($federal_stage_experts as $expert) {
             $projects_sql_strings[] = "MAX(IFNULL((case when ID_EXPERT = " . $expert['id'] . " then ma.TOTAL_MARK end),0)) AS  '" . $expert['name'] . "'";
@@ -377,7 +376,7 @@ class AutorizedController extends Controller
             from m_w_third_lavel_marks as ma
             JOIN m_w_project_registry as pr on pr.ID_PROJECT = ma.ID_PROJECT
             
-            WHERE pr.REG_DATE > '2016-09-01' AND pr.THIRD_LAVEL_RATING IS NOT NULL AND pr.ID_STAGE = " . $stageId . "
+            WHERE pr.REG_DATE > ". Yii::app()->params['eventStartDate']." AND pr.THIRD_LAVEL_RATING IS NOT NULL AND pr.ID_STAGE = " . $stageId . "
             GROUP BY ma.ID_PROJECT;";
 
         $federal_stage_projects = Yii::app()->db->createCommand($projects_sql)->queryAll();
@@ -397,8 +396,7 @@ class AutorizedController extends Controller
             
             WHERE u.roles = 'Exp3' 
             AND pr.ID_STAGE= " . $stageId . "
-            AND pr.REG_DATE > '2016-09-01'
-        ")->queryAll();
+            AND pr.REG_DATE > ". Yii::app()->params['eventStartDate'])->queryAll();
 
         foreach ($federal_stage_experts as $expert) {
             $projects_sql_strings[] = "
@@ -418,7 +416,7 @@ class AutorizedController extends Controller
             JOIN m_w_project_registry as pr 
                 on pr.ID_PROJECT = ma.ID_PROJECT
             
-            WHERE pr.REG_DATE > '2016-09-01' AND pr.THIRD_LAVEL_RATING IS NOT NULL AND pr.ID_STAGE = " . $stageId . "
+            WHERE pr.REG_DATE > ". Yii::app()->params['eventStartDate']." AND pr.THIRD_LAVEL_RATING IS NOT NULL AND pr.ID_STAGE = " . $stageId . "
             GROUP BY ma.ID_PROJECT;";
 
         $federal_stage_projects = Yii::app()->db->createCommand($projects_sql)->queryAll();
@@ -480,7 +478,7 @@ class AutorizedController extends Controller
 
         $config['mod_three'] = (!is_null($project['SECOND_LAVEL_RATING']) ? $obj->statusOk() : $obj->statusSpinner());
         $config['mod_four'] =  (!is_null($project['THIRD_LAVEL_RATING']) ?  $obj->statusOk() : $obj->statusSpinner());
-        $config['finished'] =  ($project['REG_DATE'] < '2017-11-01' ? true : false);
+        $config['finished'] =  ($project['REG_DATE'] <  Yii::app()->params['eventStartDate'] ? true : false);
 
         return $config;
     }
@@ -489,7 +487,7 @@ class AutorizedController extends Controller
 
         $user = Yii::app()->user;
 
-        $active_projects = ProjectRegistry::model()->findAllByAttributes(array('ID_REPRESENTATIVE' => $user->id), 'REG_DATE>:reg_date', array('reg_date'=>'2017-11-01'));
+        $active_projects = ProjectRegistry::model()->findAllByAttributes(array('ID_REPRESENTATIVE' => $user->id), 'REG_DATE>:reg_date', array('reg_date'=> Yii::app()->params['eventStartDate']));
 
         if(!empty($active_projects)){
             echo json_encode(array("status"=>"fail")); die();
@@ -1642,9 +1640,9 @@ class AutorizedController extends Controller
         $criteria = new CDbCriteria;
         $criteria->select = "t.ID_UNIVER ,t.ID_DISTRICT ,
         (SELECT COUNT(DISTINCT id) FROM `m_w_users` WHERE roles IN ('Exp','Exp1','Exp2','Exp3') AND ID_UNIVER = t.ID_UNIVER ) as ExpCount,
-        (SELECT COUNT(DISTINCT id) FROM m_w_users as u  Where roles IN ('Manager') AND ID_UNIVER = t.ID_UNIVER AND u.REG_DATE > '2016-09-01' ) as ProjCount,
+        (SELECT COUNT(DISTINCT id) FROM m_w_users as u  Where roles IN ('Manager') AND ID_UNIVER = t.ID_UNIVER AND u.REG_DATE > " .Yii::app()->params['eventStartDate']. " ) as ProjCount,
         (SELECT COUNT(DISTINCT id) FROM m_w_users as u  Where roles IN ('Moder', 'Moder1') AND ID_UNIVER = t.ID_UNIVER ) as UniverModer";
-        $criteria->condition = "AKTIV_KEY='100' AND ID_UNIVER is not NULL AND ID_DISTRICT is not NULL AND t.REG_DATE > '2016-09-01'";
+        $criteria->condition = "AKTIV_KEY='100' AND ID_UNIVER is not NULL AND ID_DISTRICT is not NULL AND t.REG_DATE > " .Yii::app()->params['eventStartDate'];
         $criteria->group = 'ID_UNIVER';
 
         if (isset($_REQUEST['sSearch']) && isset($_REQUEST['sSearch']{0})) {
@@ -1710,7 +1708,7 @@ class AutorizedController extends Controller
         $criteria->select = 't.ID_PROJECT, t.ROADMAP_PROJECT, t.ID_STAGE, t.NAME, us.ID_DISTRICT, us.ID_UNIVER ';
         $criteria->join = 'LEFT JOIN  `m_w_users` `us` ON us.id = t.ID_REPRESENTATIVE';
 
-        $criteriaCondition = "t.REG_DATE > '2016-09-01'";
+        $criteriaCondition = "t.REG_DATE > " .Yii::app()->params['eventStartDate'];
         $criteriaParams = array();
 
         switch (Yii::app()->user->role) {
@@ -1749,7 +1747,7 @@ class AutorizedController extends Controller
                     $criteriaConditionArray[] = "(SELECT ID_PROJECT FROM `m_w_project_registry` as pr
                         JOIN m_w_users as u ON pr.ID_REPRESENTATIVE = u.id
                         WHERE SECOND_LAVEL_RATING IS NOT NULL   
-                        AND pr.REG_DATE > '2016-09-01'
+                        AND pr.REG_DATE > " .Yii::app()->params['eventStartDate']. "
                         AND pr.ID_STAGE = :stage AND u.ID_DISTRICT = " . $i . " ORDER BY SECOND_LAVEL_RATING DESC LIMIT 3) ";
                 }
                 $projects_ids = Yii::app()->db->createCommand(implode(" UNION ", $criteriaConditionArray))->bindParam(":stage", $user['ID_STAGE'], PDO::PARAM_STR)->queryAll();

@@ -33,7 +33,7 @@ class RegistrationChart
 
             $criteria = new CDbCriteria();
             $criteria->select = 'REG_DATE';
-            $criteria->condition = "REG_DATE LIKE '%$date[0]%' AND REG_DATE > '2016-09-01 00:00:00'";
+            $criteria->condition = "REG_DATE LIKE '%$date[0]%' AND REG_DATE >  '".Yii::app()->params['eventStartDate']." 00:00:00'";
 
             $count_proj = ProjectRegistry::model()->count($criteria);
 
@@ -82,7 +82,7 @@ class RegistrationChart
 
             $criteria = new CDbCriteria();
             $criteria->select = 'id';
-            $criteria->condition = "REG_DATE LIKE '%$date[0]%' AND roles IN ('Exp', 'Exp1', 'Exp2', 'Exp3') AND REG_DATE > '2016-09-01'";
+            $criteria->condition = "REG_DATE LIKE '%$date[0]%' AND roles IN ('Exp', 'Exp1', 'Exp2', 'Exp3') AND REG_DATE >  ".Yii::app()->params['eventStartDate'];
 
             $count_exp = Users::model()->count($criteria);
 

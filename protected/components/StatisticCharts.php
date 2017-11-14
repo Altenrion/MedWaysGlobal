@@ -14,7 +14,7 @@ class StatisticCharts {
             from m_w_project_registry as pr
             JOIN m_w_users as us on us.id = pr.ID_REPRESENTATIVE
             JOIN m_w_university as un on us.ID_UNIVER= un.ID_UNIVER
-            where pr.REG_DATE > '2016-09-01'
+            where pr.REG_DATE >  ".Yii::app()->params['eventStartDate']."
                 AND us.ID_UNIVER IS NOT NULL
 			
             GROUP BY us.ID_UNIVER
@@ -24,7 +24,7 @@ class StatisticCharts {
         $totalProjects = "select COUNT(*) as num 
             from m_w_project_registry as pr
             JOIN m_w_users as us on us.id = pr.ID_REPRESENTATIVE
-            where pr.REG_DATE > '2016-09-01' AND us.ID_UNIVER IS NOT NULL";
+            where pr.REG_DATE >  ".Yii::app()->params['eventStartDate']." AND us.ID_UNIVER IS NOT NULL";
 
         $con = Yii::app()->db;
 
@@ -45,7 +45,7 @@ class StatisticCharts {
 //        $criteria = new CDbCriteria;
 //        $criteria->select = 'COUNT(ID_PROJECT) ID_PROJECT, ID_STAGE  ';
 //        $criteria->group = 'ID_STAGE';
-//        $criteria->condition = "FIRST_LAVEL_APPROVAL = 3 AND REG_DATE > '2016-09-01'";
+//        $criteria->condition = "FIRST_LAVEL_APPROVAL = 3 AND REG_DATE >  ".Yii::app()->params['eventStartDate']."";
 //        $criteria->order = 'ID_PROJECT';
 //        $stages = ProjectRegistry::model()->findAll($criteria);
 //        $ordered = array_reverse(CJSON::decode(CJSON::encode($stages)));
@@ -55,7 +55,7 @@ class StatisticCharts {
 //
 //            $stageName = $stage->NAME_STAGE;
 //
-//            $counPr = ProjectRegistry::model()->count("FIRST_LAVEL_APPROVAL = 3 AND REG_DATE > '2016-09-01'");
+//            $counPr = ProjectRegistry::model()->count("FIRST_LAVEL_APPROVAL = 3 AND REG_DATE >  ".Yii::app()->params['eventStartDate']."");
 //            $perc = ((100/$counPr) * $val['ID_PROJECT']);
 //
 //            $stageDATA[] = array(round($perc),$stageName);
@@ -72,7 +72,7 @@ class StatisticCharts {
             JOIN m_w_stage as st ON st.ID_STAGE = pr.ID_STAGE
             JOIN m_w_phase as ph ON ph.ID_PHASE = pr.ID_PHASE
             
-            WHERE  REG_DATE > '2016-09-01'
+            WHERE  REG_DATE >  ".Yii::app()->params['eventStartDate']."
             
             GROUP BY pr.ID_STAGE 
             ORDER BY total DESC

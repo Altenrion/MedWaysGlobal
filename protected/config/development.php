@@ -157,5 +157,6 @@ return array(
         'hash_site_key' => 'dlfkgknbcvjkbsdkjflsdkhfdf34534jkHL$@#K$^kb',
         'postsPerPage' => 5,
         'downloads'=>Yii::app()->basePath,
+        'eventStartDate'=> '2017-11-01'
     ),
 );

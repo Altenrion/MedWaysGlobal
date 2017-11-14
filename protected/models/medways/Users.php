@@ -254,7 +254,7 @@ class Users extends CActiveRecord
                   WHERE `AKTIV_KEY`='100'
                     AND roles='Manager'
                     AND ID_DISTRICT is not NULL
-                    AND REG_DATE > '2016-09-01'
+                    AND REG_DATE >  ".Yii::app()->params['eventStartDate']."
                   GROUP BY ID_DISTRICT")->queryAll();
         return $data;
     }
@@ -266,7 +266,7 @@ class Users extends CActiveRecord
                     AND roles='Manager'
                     AND ID_UNIVER is not NULL
 					AND ID_DISTRICT is not NULL
-                    AND REG_DATE > '2016-09-01'
+                    AND REG_DATE >  ".Yii::app()->params['eventStartDate']."
                   GROUP BY ID_DISTRICT")->queryAll();
         return $data;
     }
