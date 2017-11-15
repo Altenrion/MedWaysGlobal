@@ -248,26 +248,31 @@ class Users extends CActiveRecord
     }
 
     public function getDistrictProjectsPoints(){
-        $data = Yii::app()->db->createCommand("SELECT
-                  `ID_DISTRICT` , COUNT(*) as `NUM`
-                  FROM `m_w_users`
-                  WHERE `AKTIV_KEY`='100'
-                    AND roles='Manager'
-                    AND ID_DISTRICT is not NULL
-                    AND REG_DATE >  ".Yii::app()->params['eventStartDate']."
-                  GROUP BY ID_DISTRICT")->queryAll();
+        $data = Yii::app()->db->createCommand(" SELECT distr.ID_DISTRICT, 
+            IFNULL((select COUNT(*) from m_w_users as user WHERE user.AKTIV_KEY='100' 
+                AND user.ID_DISTRICT= distr.ID_DISTRICT    
+                AND user.roles='Manager'
+                AND user.ID_DISTRICT is not NULL
+                AND user.id IN (select proj.ID_REPRESENTATIVE FROM m_w_project_registry as proj where  proj.REG_DATE > ".Yii::app()->params['eventStartDate'].")
+            ), 0 ) as counterr
+            
+            from m_w_district as distr
+            GROUP BY distr.ID_DISTRICT")->queryAll();
         return $data;
     }
     public function getDistrictUniversPoints(){
-        $data = Yii::app()->db->createCommand("SELECT
-                  `ID_DISTRICT`,  COUNT(DISTINCT `ID_UNIVER`)  as `NUM`
-                  FROM `m_w_users`
-                  WHERE `AKTIV_KEY`='100'
-                    AND roles='Manager'
-                    AND ID_UNIVER is not NULL
-					AND ID_DISTRICT is not NULL
-                    AND REG_DATE >  ".Yii::app()->params['eventStartDate']."
-                  GROUP BY ID_DISTRICT")->queryAll();
+        $data = Yii::app()->db->createCommand("SELECT distr.ID_DISTRICT, 
+            IFNULL((select COUNT(DISTINCT user.ID_UNIVER) from m_w_users as user WHERE user.AKTIV_KEY='100' 
+                AND user.ID_DISTRICT= distr.ID_DISTRICT    
+                AND user.roles='Manager'
+                AND user.ID_DISTRICT is not NULL
+                AND user.id IN (select proj.ID_REPRESENTATIVE FROM m_w_project_registry as proj where  proj.REG_DATE > ".Yii::app()->params['eventStartDate'].")
+                AND user.ID_UNIVER is not NULL
+            
+            ), 0 ) as counterr
+            
+            from m_w_district as distr
+            GROUP BY distr.ID_DISTRICT ")->queryAll();
         return $data;
     }
 
