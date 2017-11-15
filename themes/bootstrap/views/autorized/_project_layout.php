@@ -11,7 +11,6 @@
         <div class="pull-right grid-tools">
             <a data-widget="collapse" title="Collapse"><i class="fa fa-chevron-up"></i></a>
             <a data-widget="reload" title="Reload"><i class="fa fa-refresh"></i></a>
-            <a data-widget="remove" title="Remove"><i class="fa fa-times"></i></a>
         </div>
     </div>
 

@@ -93,7 +93,7 @@
                     </li>
                     <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/img/univers/u_kgmu.jpg" alt=""> </a> </div>
                         <div class="meta">
-                            <h6><a href="#@#">Южный федеральный округ – ФГБОУ ВО «Архангельский государственный медицинский университет» Минздрава России</a></h6>
+                            <h6><a href="#@#">Южный федеральный округ – ФГБОУ ВО «Астраханский государственный медицинский университет» Минздрава России</a></h6>
                         </div>
                     </li>
                     <li> <div class="icon-overlay icn-link"> <a href="###"><span class="icn-more"></span><img src="<?=Yii::app()->baseUrl?>/img/univers/u_mechnikov.jpg" alt=""> </a> </div>
@@ -143,7 +143,7 @@
 <div class="light-wrapper inner">
     <div class="container text-center">
         <h3 class="section-title text-center bm20">Федеральные округа <span> Университеты </span></h3>
-        <p class="thin">Региональный этап реализуется на уровне федеральных административных округов в университетах, победивших по результатам Эстафеты вузовской науки 2013 года</p>
+        <p class="thin">Региональный этап реализуется на уровне федеральных административных округов в университетах, победивших по результатам Эстафеты вузовской науки 2017 года</p>
         <div class="divide30"></div>
     </div>
     <!-- /.container -->

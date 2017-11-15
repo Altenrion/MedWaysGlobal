@@ -37,10 +37,12 @@
                     <? $this->actionExpertsList(); ?>
                     <!--                    --><? // $this->renderPartial('_exp_grid',array('sort'=>$sort,'pages'=>$pages,'models'=>$models)); ?>
                 </div>
-                <div class="tab-pane" id="managers">
-                    <? $this->actionManagersList(); ?>
-                    <!--                    --><? // $this->renderPartial('_man_grid',array('sortm'=>$sortm,'pags'=>$pags,'manags'=>$manags)); ?>
-                </div>
+                <? if(!in_array(Yii::app()->user->role, array( "Moder","Moder1"))):  ?>
+                    <div class="tab-pane" id="managers">
+                        <? $this->actionManagersList(); ?>
+                        <!--                    --><? // $this->renderPartial('_man_grid',array('sortm'=>$sortm,'pags'=>$pags,'manags'=>$manags)); ?>
+                    </div>
+                <? endif;?>
                 <div class="tab-pane" id="moders">
                     <? $this->actionModersList(); ?>
                     <!--                    --><? // $this->renderPartial('_man_grid',array('sortm'=>$sortm,'pags'=>$pags,'manags'=>$manags)); ?>

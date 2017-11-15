@@ -152,14 +152,66 @@ $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('cabinet
                                             <? foreach (reset($projData) as $k => $dataRow ): ?>
                                             <th><?=$k?></th>
                                             <? endforeach; ?>
+                                            <th> Сумма проектов в эстафете</th>
                                         </thead>
-                                        <? foreach ($projData as $dataRow ): ?>
+                                        <?
+                                        $aggregated_total_data = array();
+                                        $abstract_sum = array();
+
+                                        foreach ($projData as $row_num => $dataRow ): ?>
                                             <tr>
-                                                <? foreach ($dataRow as $item):?>
+                                                <?
+
+                                                $aggregated_data = array();
+                                                foreach ($dataRow as $k => $item):?>
+                                                    <?
+                                                        $link = $aggregated_data;
+
+                                                        $item_data = explode('/', $item);
+                                                        $aggregated_data[0]+= $item_data[0];
+                                                        $aggregated_data[1]+= $item_data[1];
+                                                        $aggregated_data[2]+= $item_data[2];
+
+
+                                                        $aggregated_total_data[$row_num][$k][0] += $item_data[0];
+                                                        $aggregated_total_data[$row_num][$k][1] += $item_data[1];
+                                                        $aggregated_total_data[$row_num][$k][2] += $item_data[2];
+
+
+
+
+                                                    ?>
                                                     <td><?=$item?></td>
+
                                                 <? endforeach; ?>
+
+                                                <th><?=implode(" / ", $aggregated_data)?></th>
+                                                <?
+                                                $abstract_sum[0] += $aggregated_data[0];
+                                                $abstract_sum[1] += $aggregated_data[1];
+                                                $abstract_sum[2] += $aggregated_data[2];
+                                                ?>
                                             </tr>
                                         <? endforeach; ?>
+
+                                        <tr><th>Сумма</th>
+                                            <?
+                                                foreach ($aggregated_total_data as $k=> $aggregated_total_row){
+                                                    foreach ($aggregated_total_row as $kk=> $column) {
+                                                        foreach ($column as $kkk => $item) {
+                                                             $summator[$kk][$kkk] += $item;
+                                                        }
+                                                    }
+                                                }
+                                                array_shift($summator);
+                                                foreach ($summator as $item){
+                                                    echo '<th>'. implode(' / ', $item) . '</th>';
+                                                }
+                                                echo '<th>'. implode(' / ', $abstract_sum) . '</th>';
+                                            ?>
+
+
+                                        </tr>
                                     </table>
                                 </div>
                             </div>

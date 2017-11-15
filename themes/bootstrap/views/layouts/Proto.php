@@ -84,7 +84,7 @@
                             <li><a href="<?=Yii::app()->createUrl('ShowCase/logout')?>"><i class="icon-logout"></i></a></li>
                         <? endif; ?>
                         <? if(Yii::app()->user->isGuest): ?>
-<!--                            <li><a href="--><?//=Yii::app()->createUrl('ShowCase/login')?><!--"><i class="icon-login"></i></a></li>-->
+                            <li><a href="<?=Yii::app()->createUrl('ShowCase/login')?>"><i class="icon-login"></i></a></li>
                         <? endif; ?>
                     </ul>
                 </div>
