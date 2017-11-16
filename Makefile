@@ -38,7 +38,6 @@ push:
 	@echo "----------------------------------------"
 	git add .
 	git rm --cached .data/vuznauka.sql
-	git commit -m "$(MSG)"
+	git commit -m "$(m)"
 	git push origin master
 	@echo "----------------------------------------"
-

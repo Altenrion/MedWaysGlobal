@@ -45,6 +45,7 @@ class Users extends CActiveRecord
     public $ExpCount;
     public $ProjCount;
     public $UniverModer;
+    public $updated_pass;
 
 
     protected function afterFind() // при чтении из базы
@@ -61,6 +62,7 @@ class Users extends CActiveRecord
             {
 //                $this->salt = $this->generateSalt();
                 $this->password = $this->encrypting($this->password);
+                $this->updated_pass = $this->updated_pass;
             }
             return true;
         }

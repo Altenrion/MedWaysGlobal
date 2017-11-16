@@ -94,9 +94,11 @@ class AutorizedController extends Controller
                     Yii::app()->end();
                 }
 
-
                 $new_password = $newPass;
                 $db_user->password = $new_password;
+                $db_user->updated_pass = 1;
+                $db_user->updated_date = date("Y-m-d H:i:s");
+
                 if ($db_user->save()) {
 
 
@@ -117,14 +119,12 @@ class AutorizedController extends Controller
                     $message->subject = 'Vuznauka 2018 - Изменение пароля';
                     $message->addTo($db_user->EMAIL);
                     $message->from = Yii::app()->params['adminEmail'];
+
                     Yii::app()->mail->send($message);
 
                     Yii::app()->user->logout();
 
-                    echo json_encode(array("status"=>"success"));
-
-//                    $this->redirect(Yii::app()->createUrl('ShowCase/login'));
-                    Yii::app()->end();
+                    echo json_encode(array("status"=>"success")); die();
                 }
             }
         }
