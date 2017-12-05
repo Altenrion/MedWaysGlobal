@@ -82,7 +82,7 @@ class RegistrationChart
 
             $criteria = new CDbCriteria();
             $criteria->select = 'id';
-            $criteria->condition = "REG_DATE LIKE '%$date[0]%' AND roles IN ('Exp', 'Exp1', 'Exp2', 'Exp3') AND REG_DATE >  ".Yii::app()->params['eventStartDate'];
+            $criteria->condition = "REG_DATE LIKE '%$date[0]%' AND roles IN ('Exp', 'Exp1', 'Exp2', 'Exp3') AND REG_DATE >  '".Yii::app()->params['eventStartDate']."'";
 
             $count_exp = Users::model()->count($criteria);
 

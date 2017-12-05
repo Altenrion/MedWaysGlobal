@@ -16,5 +16,5 @@
     elseif ( strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE 10.0') )     { $user_agent = 'Yes';  $cli = 'MSIE10';    }
     else{ $user_agent = 'Yes';   $cli = 'Others'; }
 
-    if($user_agent == 'no'){ header( 'Location:http://Vuznauka2017.ru/IE.html' ); }
+    if($user_agent == 'no'){ header( 'Location:http://vuznauka.ru/IE.html' ); }
 

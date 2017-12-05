@@ -107,7 +107,7 @@ return array(
             'transportType' => 'php',
                     'transportType' => 'smtp',
                     'transportOptions'=>array(
-                        'host'=>'vuznauka_smtp_1',
+                        'host'=>'vuznauka-smtp',
 //                        //'encryption'=>'tls',
 //                        'username'=>'administration@altenrion.ru',
 //                        'password'=>'Altenrion',

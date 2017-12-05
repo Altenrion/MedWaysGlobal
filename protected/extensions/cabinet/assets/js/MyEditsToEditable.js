@@ -140,5 +140,8 @@ $(document).ready(function () {
 
     });
 
-    $(".grid-header a[data-widget='collapse']").trigger("click");
+    var pathname = window.location.pathname;
+    if(pathname == "/Autorized/project"){
+        $(".grid-header a[data-widget='collapse']:not(:first)").trigger("click");
+    }
 });

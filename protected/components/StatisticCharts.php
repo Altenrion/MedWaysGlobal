@@ -14,7 +14,7 @@ class StatisticCharts {
             from m_w_project_registry as pr
             JOIN m_w_users as us on us.id = pr.ID_REPRESENTATIVE
             JOIN m_w_university as un on us.ID_UNIVER= un.ID_UNIVER
-            where pr.REG_DATE >  ".Yii::app()->params['eventStartDate']."
+            where pr.REG_DATE >  '".Yii::app()->params['eventStartDate']."'
                 AND us.ID_UNIVER IS NOT NULL
 			
             GROUP BY us.ID_UNIVER
@@ -24,7 +24,7 @@ class StatisticCharts {
         $totalProjects = "select COUNT(*) as num 
             from m_w_project_registry as pr
             JOIN m_w_users as us on us.id = pr.ID_REPRESENTATIVE
-            where pr.REG_DATE >  ".Yii::app()->params['eventStartDate']." AND us.ID_UNIVER IS NOT NULL";
+            where pr.REG_DATE >  '".Yii::app()->params['eventStartDate']."' AND us.ID_UNIVER IS NOT NULL";
 
         $con = Yii::app()->db;
 
@@ -72,7 +72,7 @@ class StatisticCharts {
             JOIN m_w_stage as st ON st.ID_STAGE = pr.ID_STAGE
             JOIN m_w_phase as ph ON ph.ID_PHASE = pr.ID_PHASE
             
-            WHERE  REG_DATE >  ".Yii::app()->params['eventStartDate']."
+            WHERE  REG_DATE >  '".Yii::app()->params['eventStartDate']."'
             
             GROUP BY pr.ID_STAGE 
             ORDER BY total DESC

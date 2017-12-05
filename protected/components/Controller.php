@@ -25,7 +25,7 @@ class Controller extends CController
             Browser::setBrowser($browser_client[1]);
 //            return true;
         }
-        if($browser_client[0] == 'no'){ header( 'Location:http://vuznauka2017.ru/IE.html' ); }
+        if($browser_client[0] == 'no'){ header( 'Location:http://vuznauka.ru/IE.html' ); }
 
 
         if(Yii::app()->controller->id == 'autorized'){

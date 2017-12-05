@@ -26,8 +26,6 @@ class ImagesController extends Controller{
     private $max_image_size     = 300; //Maximum image size (height and width)
     private $thumb_prefix	    = "thumb_"; //Normal thumb Prefix
     private $destination_folder = '';
-//        Yii::getPathOfAlias('webroot.images.avatars');
-//        'C:/wamp/www/ajax-image-upload-sample/uploads/'; //upload directory ends with / (slash)
 
     private $jpeg_quality 	    = 90; //jpeg quality
     ##########################################
@@ -46,7 +44,6 @@ class ImagesController extends Controller{
                 Yii::app()->end();
             }
 
-//
             $whitelist = array( ".pdf");
             $data = array();
             $error = true;
@@ -56,63 +53,52 @@ class ImagesController extends Controller{
                 if(preg_match("/$item\$/i",$_FILES['pdf_file']['name'])) $error = false;
             }
 
-            //если нет ошибок, грузим файл
-            if(!$error) {
-
-                $new_file_name = 'roadmap_'.hash('md5', date('Y-m-d H:i:s').$this->user_id).'.pdf';
-                $folder =  $this->destination_folder; //директория в которую будет загружен файл
-                $uploadedFile =  $folder.$new_file_name;
-
-                if(is_uploaded_file($_FILES['pdf_file']['tmp_name'])){
-                    if(move_uploaded_file($_FILES['pdf_file']['tmp_name'],$uploadedFile)){
-                        $data = $_FILES['pdf_file'];
-
-                        /// Сохраняю инфу в таблицу с проектом.
-
-                        $project = ProjectRegistry::model()->find("ID_REPRESENTATIVE='".$this->user_id."'");
-
-                        if($project !== null){
-
-                            $this->Update('ProjectRegistry',array(  'pk'=>$project->ID_PROJECT,
-                                                                    'name'=>'ROADMAP_PROJECT',
-                                                                    'value'=>$new_file_name,
-                                                                ));
-
-
-                            echo '<div class="alert alert-success">';
-                            echo '<strong>Ваш документ успешно загружен!</strong>';
-                            echo '</div>';
-
-                            Yii::app()->end();
-                        }
-                        echo "Проект не создан, обратитесь в техническую поддержку.";
-                        Yii::app()->end();
-
-
-                    }
-                    else {
-                        echo "Во время загрузки файла произошла ошибка";
-                        Yii::app()->end();
-
-                    }
-                }
-                else {
-                    echo "Файл не  загружен";
-                    Yii::app()->end();
-                }
-            }
-            else{
-
+            if($error) {
                 echo 'Вы загружаете запрещенный тип файла';
                 Yii::app()->end();
             }
+
+            $active_projects = ProjectRegistry::model()->findAllByAttributes(array('ID_REPRESENTATIVE' => $this->user_id), 'REG_DATE> :reg_date', array('reg_date'=> Yii::app()->params['eventStartDate']));
+            if($active_projects == null) {
+                echo "Загрузка запрещена, обратитесь в техническую поддержку.";
+                Yii::app()->end();
+            }
+
+            $new_file_name = 'roadmap_'.$active_projects[0]->ID_PROJECT."_".hash("md5",date('Y-m-d H:i:s')).'.pdf';
+            $folder =  $this->destination_folder;
+            $uploadedFile =  $folder.$new_file_name;
+
+            if(!is_uploaded_file($_FILES['pdf_file']['tmp_name'])){
+                echo "Файл не  загружен";
+                Yii::app()->end();
+            }
+
+            if(move_uploaded_file($_FILES['pdf_file']['tmp_name'], $uploadedFile)){
+                $data = $_FILES['pdf_file'];
+
+                $this->Update('ProjectRegistry',array(  'pk'=>$active_projects[0]->ID_PROJECT,
+                    'name'=>'ROADMAP_PROJECT',
+                    'value'=>$new_file_name,
+                ));
+
+                echo '<div class="alert alert-success">';
+                echo '<strong>Ваш документ успешно загружен!</strong>';
+                echo '</div>';
+
+                Yii::app()->end();
+            }
+            else {
+                echo "Во время загрузки файла произошла ошибка";
+                Yii::app()->end();
+
+            }
         }
 
-           echo '<div class="alert alert-success">';
-           echo '<strong>Ваш документ успешно загружен!</strong>';
-           echo '</div>';
+        echo '<div class="alert alert-success">';
+        echo '<strong>Ваш документ успешно загружен!</strong>';
+        echo '</div>';
 
-           Yii::app()->end();
+        Yii::app()->end();
 
     }
 

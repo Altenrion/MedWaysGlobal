@@ -35,7 +35,7 @@ class ShowCaseController extends Controller
 
     public function actionIndex()
     {
-        $projects = Users::model()->count("roles = 'Manager' AND AKTIV_KEY = 100 AND REG_DATE > '2017-11-01'" );
+        $projects = Users::model()->count("roles = 'Manager' AND AKTIV_KEY = 100 AND REG_DATE > '" .Yii::app()->params['eventStartDate']."' " );
         $clean_num = $this->getTermination($projects);
         $this->render('index', array('clean_num' => $clean_num));
 

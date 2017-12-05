@@ -255,7 +255,7 @@ class Users extends CActiveRecord
                 AND user.ID_DISTRICT= distr.ID_DISTRICT    
                 AND user.roles='Manager'
                 AND user.ID_DISTRICT is not NULL
-                AND user.id IN (select proj.ID_REPRESENTATIVE FROM m_w_project_registry as proj where  proj.REG_DATE > ".Yii::app()->params['eventStartDate'].")
+                AND user.id IN (select proj.ID_REPRESENTATIVE FROM m_w_project_registry as proj where  proj.REG_DATE > '".Yii::app()->params['eventStartDate']."')
             ), 0 ) as counterr
             
             from m_w_district as distr
@@ -268,7 +268,7 @@ class Users extends CActiveRecord
                 AND user.ID_DISTRICT= distr.ID_DISTRICT    
                 AND user.roles='Manager'
                 AND user.ID_DISTRICT is not NULL
-                AND user.id IN (select proj.ID_REPRESENTATIVE FROM m_w_project_registry as proj where  proj.REG_DATE > ".Yii::app()->params['eventStartDate'].")
+                AND user.id IN (select proj.ID_REPRESENTATIVE FROM m_w_project_registry as proj where  proj.REG_DATE > '".Yii::app()->params['eventStartDate']."')
                 AND user.ID_UNIVER is not NULL
             
             ), 0 ) as counterr

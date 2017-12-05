@@ -160,7 +160,7 @@ Yii::app()->clientScript->registerCssFile($assetsUrl . '/css/themes/bootstrap.cs
                                     записями</a></li>
                             <li><a href="<?= Yii::app()->createUrl('Autorized/manageUsers') ?>">Управление
                                     пользователями</a></li>
-                            <li><a href="<?= Yii::app()->createUrl('Autorized/manageUsers') ?>">Управление проектами</a>
+                            <li><a href="<?= Yii::app()->createUrl('Autorized/projects') ?>">Управление проектами</a>
                             </li>
                             <li><a href="">Что либо еще</a></li>
                         </ul>

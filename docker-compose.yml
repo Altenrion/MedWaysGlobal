@@ -19,3 +19,4 @@ services:
   smtp:
     image: namshi/smtp
     restart: always
+    container_name: vuznauka-smtp
