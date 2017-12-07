@@ -28,7 +28,7 @@
 
         <div class="col-sm-12 ">
             <div class="row ">
-
+                <? if ($this->checkRole(array('Dev'))): ?>
                 <div class="col-md-6">
                     <div class="grid">
                         <div class="grid-header">
@@ -57,6 +57,9 @@
                         </div>
                     </div>
                 </div>
+                <?endif; ?>
+
+                <? if ($this->checkRole(array('Dev'))): ?>
                 <div class="col-md-6">
                     <div class="grid">
                         <div class="grid-header">
@@ -125,7 +128,9 @@
                         </div>
                     </div>
                 </div>
+                <?endif; ?>
 
+                <? if ($this->checkRole(array('Admin','Dev'))): ?>
                 <div class="col-md-12">
                     <div class="grid">
                         <div class="grid-header">
@@ -168,6 +173,8 @@
                         </div>
                     </div>
                 </div>
+                <?endif; ?>
+
             </div>
 
 

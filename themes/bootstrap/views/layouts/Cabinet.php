@@ -144,6 +144,9 @@ Yii::app()->clientScript->registerCssFile($assetsUrl . '/css/themes/bootstrap.cs
                 <? if ($this->checkRole(array('Admin'))): ?>
                     <li><a href="<?= Yii::app()->createUrl('Autorized/manageUsers') ?>"><i class="fa fa-users"></i>Пользователи</a> </li>
                 <? endif; ?>
+                <? if ($this->checkRole(array('Admin','Dev'))): ?>
+                    <li><a href="<?= Yii::app()->createUrl('Autorized/manageNews') ?>"><i class="fa fa-envelope"></i>Рассылки</a></li>
+                <? endif; ?>
 
                 <? if ($this->checkRole(array('Dev'))): ?>
                     <li><a href="<?= Yii::app()->createUrl('Autorized/news') ?>"><i class="fa fa-calendar"></i><span>Новости</span></a>
@@ -156,12 +159,9 @@ Yii::app()->clientScript->registerCssFile($assetsUrl . '/css/themes/bootstrap.cs
                         </a>
                         <ul class="sub-menu">
                             <li><a href="<?= Yii::app()->createUrl('Autorized/manageNews') ?>">Создание записей</a></li>
-                            <li><a href="<?= Yii::app()->createUrl('Autorized/manageNotifies') ?>">Управление
-                                    записями</a></li>
-                            <li><a href="<?= Yii::app()->createUrl('Autorized/manageUsers') ?>">Управление
-                                    пользователями</a></li>
-                            <li><a href="<?= Yii::app()->createUrl('Autorized/projects') ?>">Управление проектами</a>
-                            </li>
+                            <li><a href="<?= Yii::app()->createUrl('Autorized/manageNotifies') ?>">Управление записями</a></li>
+                            <li><a href="<?= Yii::app()->createUrl('Autorized/manageUsers') ?>">Управление пользователями</a></li>
+                            <li><a href="<?= Yii::app()->createUrl('Autorized/projects') ?>">Управление проектами</a></li>
                             <li><a href="">Что либо еще</a></li>
                         </ul>
                     </li>
