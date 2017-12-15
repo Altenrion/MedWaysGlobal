@@ -341,7 +341,7 @@
 
                         <div class="col-sm-3 stats">
                             <h1 id="first_check"><?= $config['mod_one'] ?></h1>
-                            <span> Подача заявки <br> до 15.12.2017 </span>
+                            <span> Подача заявки <br> до 09.01.2018 </span>
                             <button class="btn btn-primary col-sm-8 col-sm-offset-2 text-center">
                                 <span class=""><i class="fa fa-flag-o"></i> Подача</span></button>
                         </div>

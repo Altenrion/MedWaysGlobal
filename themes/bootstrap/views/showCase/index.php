@@ -131,7 +131,7 @@ $this->breadcrumbs = array(
                                     научно-инновационных проектов по тематикам научных платформ.</p>
 
                                 <ul class="circled">
-                                    <li><a class="date">20.11.2017 - 15.12.2017</a>
+                                    <li><a class="date">20.11.2017 - 09.01.2018</a>
                                         <blockquote>
 
                                     <li>Формирование региональных экспертных советов</li>
@@ -140,7 +140,7 @@ $this->breadcrumbs = array(
 
                                     </li>
 
-                                    <li><a class="date">15.12.2017 – 31.12.2017</a>
+                                    <li><a class="date">15.12.2017 – 09.01.2018</a>
                                         <blockquote>
                                             <li>Экспертиза проектов в вузе</li>
                                         </blockquote>
