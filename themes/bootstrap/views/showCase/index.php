@@ -145,11 +145,7 @@ $this->breadcrumbs = array(
                                             <li>Экспертиза проектов в вузе</li>
                                         </blockquote>
                                     </li>
-//                                    <li><a class="date">10.01.2018 – 24.01.2018</a>
-//                                        <blockquote>
-//                                            <li>Экспертиза проектов регионального этапа</li>
-//                                        </blockquote>
-//                                    </li>
+                                    </li>
                                      <li><a class="date">16.01.2018</a>
                                         <blockquote>
                                             <li>Передача проектов в Федеральный округ</li>
