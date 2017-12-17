@@ -108,7 +108,7 @@ $this->breadcrumbs = array(
                         <div class="panel-heading">
                             <h4 class="panel-title"><a data-toggle="collapse" class="panel-toggle active"
                                                        data-parent="#accordion" href="#collapseOne">1. Открытие
-                                    Эстафеты - 08 ноября 2017 г.</a></h4>
+                                    Эстафеты - 25 ноября 2017 г.</a></h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse in" style="height: auto;">
                             <div class="panel-body">Старт Эстафеты предусматривает освещение результатов мероприятия
@@ -140,14 +140,19 @@ $this->breadcrumbs = array(
 
                                     </li>
 
-                                    <li><a class="date">15.12.2017 – 09.01.2018</a>
+                                    <li><a class="date">10.01.2017 – 15.01.2018</a>
                                         <blockquote>
                                             <li>Экспертиза проектов в вузе</li>
                                         </blockquote>
                                     </li>
-                                    <li><a class="date">10.01.2018 – 24.01.2018</a>
+//                                    <li><a class="date">10.01.2018 – 24.01.2018</a>
+//                                        <blockquote>
+//                                            <li>Экспертиза проектов регионального этапа</li>
+//                                        </blockquote>
+//                                    </li>
+                                     <li><a class="date">16.01.2018</a>
                                         <blockquote>
-                                            <li>Экспертиза проектов регионального этапа</li>
+                                            <li>Передача проектов в Федеральный округ</li>
                                         </blockquote>
                                     </li>
                                 </ul>
