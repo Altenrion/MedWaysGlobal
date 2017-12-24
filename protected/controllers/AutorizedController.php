@@ -1138,12 +1138,15 @@ class AutorizedController extends Controller
 
 
                     $sql = "INSERT into m_w_dispatch_mails (user_id, mail_name) values ($user_id, $mail_name)";
+
+
 //                    $parameters = array(
 //                        ":user_id"=>$user_id,
 //                        ":mail_name"=>$mail_name
 //                    );
+                    $dd = Yii::app()->db->createCommand($sql)->executeAll();
 
-                    Yii::app()->db->createCommand($sql)->execute();
+                    var_dump($dd); die();
 
                     $cheker++;
                 }
