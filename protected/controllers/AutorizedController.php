@@ -1111,8 +1111,8 @@ class AutorizedController extends Controller
             "{ending}" => $ending
         ));
 
-        $cheker = 0;
 
+        $cheker = 0;
         $users = Users::model()->findAll(array("condition"=>"AKTIV_KEY =  100"));
 
         if(!empty($users) && is_array($users)){
@@ -1120,6 +1120,8 @@ class AutorizedController extends Controller
 //            foreach ($users as $user) {
             try {
                 $email = "landerfeld@gmail.com";
+                $user_id = "111";
+                $mail_name = "common_email_notification";
 
 //                $email = $user["EMAIL"];
 
@@ -1132,6 +1134,16 @@ class AutorizedController extends Controller
                 $message->attach(Swift_Attachment::fromPath(Yii::getPathOfAlias('webroot.downloads') . DIRECTORY_SEPARATOR . 'univercity_letter.pdf'));
 
                 if (!Yii::app()->mail->send($message)) {
+
+
+
+                    $sql = "insert into m_w_dispatch_mails (user_id, mail_name) values (:id, :user_id, :mail_name)";
+                    $parameters = array(
+                        ":user_id"=>$user_id,
+                        ":mail_name"=>$mail_name
+                    );
+                    Yii::app()->db->createCommand($sql)->execute($parameters);
+
                     $cheker++;
                 }
 
