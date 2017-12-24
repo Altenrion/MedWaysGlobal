@@ -1073,13 +1073,14 @@ class AutorizedController extends Controller
         $tpl = file_get_contents($tpl_file);
         $mail = $tpl;
 
-        $content_file = Yii::getPathOfAlias('webroot.downloads') . DIRECTORY_SEPARATOR . 'mail_text_12.2017.docx';
+        $content_file = Yii::getPathOfAlias('webroot.downloads') . DIRECTORY_SEPARATOR . 'mail_text_12_2017.html';
         $content = file_get_contents($content_file);
 
-        $title = "ЭСТАФЕТА ВУЗОВСКОЙ НАУКИ: открыта подача проектов";
+        $subject = "ЭСТАФЕТА ВУЗОВСКОЙ НАУКИ: открыта подача проектов";
+        $title = "Уважаемые коллеги!";
 
         $mail = strtr($mail, array(
-//            "{title}" => $title,
+            "{title}" => $title,
             "{content}" => $content,
         ));
 
@@ -1097,7 +1098,7 @@ class AutorizedController extends Controller
 
                 $message = new YiiMailMessage;
                 $message->setBody($mail, 'text/html');
-                $message->subject = $title; //'Этафета вузовской науки';
+                $message->subject = $subject;
                 $message->from = Yii::app()->params['adminEmail'];
                 $message->addTo($email);
                 $message->attach(Swift_Attachment::fromPath(Yii::getPathOfAlias('webroot.downloads') . DIRECTORY_SEPARATOR . 'Estafeta_polojenie_2018.pdf'));
@@ -1783,7 +1784,7 @@ class AutorizedController extends Controller
             /** Критерий для эксперта 1 уровня (по универу) */
             case 'Moder' :
             case 'Moder1' :
-                $criteriaCondition .= " AND us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL IN ('1', '3', '9') AND REG_DATE > '" .Yii::app()->params['eventStartDate']."' ";
+                $criteriaCondition .= " AND us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL IN ('1', '3', '9') AND us.REG_DATE > '" .Yii::app()->params['eventStartDate']."' ";
                 $criteriaParams = array(":univ" => $user['ID_UNIVER']);
                 break;
 
