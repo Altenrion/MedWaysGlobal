@@ -1115,9 +1115,14 @@ class AutorizedController extends Controller
         $cheker = 0;
         $users = Users::model()->findAll(array("condition"=>"AKTIV_KEY =  100"));
 
+        $ids_sent = Yii::app()->db->createCommand("SELECT user_id from m_w_dispatch_mails")->queryAll();
+        $id = 121;
+
         if(!empty($users) && is_array($users)){
 
 //            foreach ($users as $user) {
+            if(!in_array($id, $ids_sent)){
+
             try {
                 $email = "landerfeld@gmail.com";
                 $user_id = 111;
@@ -1148,7 +1153,7 @@ class AutorizedController extends Controller
                 echo 'Error: ',  $e->getMessage(), "\n"; die();
             }
 
-//        }
+        }
         }
 
         if ($cheker != 0) {
