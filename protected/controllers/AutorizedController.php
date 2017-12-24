@@ -1128,6 +1128,7 @@ class AutorizedController extends Controller
 //            foreach ($users as $user) {
             if(!in_array($id, $ids)){
 
+
             try {
                 $email = "landerfeld@gmail.com";
                 $user_id = 111;
