@@ -1134,21 +1134,14 @@ class AutorizedController extends Controller
                 $message->attach(Swift_Attachment::fromPath(Yii::getPathOfAlias('webroot.downloads') . DIRECTORY_SEPARATOR . 'univercity_letter.pdf'));
 
                 if (!Yii::app()->mail->send($message)) {
-
-
-
-                    $sql = "INSERT into m_w_dispatch_mails (user_id, mail_name) values ($user_id, $mail_name)";
-
-
-//                    $parameters = array(
-//                        ":user_id"=>$user_id,
-//                        ":mail_name"=>$mail_name
-//                    );
-                    $dd = Yii::app()->db->createCommand($sql)->executeAll();
-
-                    var_dump($dd); die();
-
                     $cheker++;
+                }else{
+                    $sql = "INSERT into m_w_dispatch_mails (user_id, mail_name) values (:user_id, :mail_name)";
+                    $parameters = array(
+                        ":user_id"=>$user_id,
+                        ":mail_name"=>$mail_name
+                    );
+                    Yii::app()->db->createCommand($sql)->execute($parameters);
                 }
 
             } catch (Exception $e) {
