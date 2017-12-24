@@ -1061,6 +1061,63 @@ class AutorizedController extends Controller
         }
     }
 
+    public function actionMailsCrosslist()
+    {
+
+//        $address = Yii::app()->request->getPost('address');
+//        $user_id = Yii::app()->request->getPost('user_id');
+//        $title = Yii::app()->request->getPost('title');
+//        $content = Yii::app()->request->getPost('content');
+
+        $tpl_file = Yii::getPathOfAlias('webroot.downloads') . DIRECTORY_SEPARATOR . 'mail_mail.php';
+        $tpl = file_get_contents($tpl_file);
+        $mail = $tpl;
+
+        $content_file = Yii::getPathOfAlias('webroot.downloads') . DIRECTORY_SEPARATOR . 'mail_text_12.2017.docx';
+        $content = file_get_contents($content_file);
+
+        $title = "ЭСТАФЕТА ВУЗОВСКОЙ НАУКИ: открыта подача проектов";
+
+        $mail = strtr($mail, array(
+//            "{title}" => $title,
+            "{content}" => $content,
+        ));
+
+        $cheker = 0;
+
+        $users = Users::model()->findAll();
+        if(!empty($users) && is_array($users)){
+
+//            foreach ($users as $user) {
+                $email = "landerfeld@gmail.com";
+
+//                $email = $user["EMAIL"];
+
+                $message = new YiiMailMessage;
+                $message->setBody($mail, 'text/html');
+                $message->subject = $title; //'Этафета вузовской науки';
+                $message->from = Yii::app()->params['adminEmail'];
+                $message->addTo($email);
+                $message->attach(Swift_Attachment::fromPath(Yii::getPathOfAlias('webroot.downloads') . DIRECTORY_SEPARATOR . 'Estafeta_polojenie_2018.pdf'));
+                $message->attach(Swift_Attachment::fromPath(Yii::getPathOfAlias('webroot.downloads') . DIRECTORY_SEPARATOR . 'univercity_letter.pdf'));
+
+                if (!Yii::app()->mail->send($message)) {
+                    $cheker++;
+//                }
+            }
+        }
+
+        if ($cheker != 0) {
+            echo json_encode('fail');
+            Yii::app()->end();
+        } else {
+            echo json_encode('ok');
+            Yii::app()->end();
+        }
+    }
+
+
+
     /**
      * Метод для отрисовки таблицы новостей
      */
