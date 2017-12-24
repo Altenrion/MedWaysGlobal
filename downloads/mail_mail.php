@@ -4,7 +4,7 @@
 <table width="100%" bgcolor="#FFF" cellpadding="0" cellspacing="0" border="0">
     <tr>
         <td align="center" valign="top" style="margin:0;padding:0;">
-            <table align="center" border="0" cellspacing="0" cellpadding="0" width="555" bgcolor="#ffffff">
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="777" bgcolor="#ffffff">
                 <tr>
                     <td valign="top" align="left" style="padding-top:0px;padding-right:0;padding-bottom:0;padding-left:0;margin:0;">
                         <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0">
