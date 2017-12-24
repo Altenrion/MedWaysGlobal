@@ -56,8 +56,7 @@
                             <tr>
                                 <td align="left" valign="top" style="padding-top:0;padding-bottom:15px;padding-left:23px;padding-right:23px;margin:0;">
                                     <span style="font-family:Arial,Verdana,Helvetica;color:#6f6f6f;font-size:12px;">
-                                        С уважением, <br>
-                                    Администрация Vuznauka.ru
+                                        {{ending}}
                                     </span>
                                 </td>
                             </tr>
