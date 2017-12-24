@@ -1085,10 +1085,12 @@ class AutorizedController extends Controller
 
         $cheker = 0;
 
-        $users = Users::model()->findAll();
+        $users = Users::model()->findAll(array("condition"=>"AKTIV_KEY =  100"));
+
         if(!empty($users) && is_array($users)){
 
 //            foreach ($users as $user) {
+            try {
                 $email = "landerfeld@gmail.com";
 
 //                $email = $user["EMAIL"];
@@ -1103,8 +1105,13 @@ class AutorizedController extends Controller
 
                 if (!Yii::app()->mail->send($message)) {
                     $cheker++;
-//                }
+                }
+
+            } catch (Exception $e) {
+                echo 'Error: ',  $e->getMessage(), "\n"; die();
             }
+
+//        }
         }
 
         if ($cheker != 0) {
