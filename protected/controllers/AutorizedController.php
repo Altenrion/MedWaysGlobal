@@ -1142,6 +1142,7 @@ class AutorizedController extends Controller
 //                        ":user_id"=>$user_id,
 //                        ":mail_name"=>$mail_name
 //                    );
+
                     Yii::app()->db->createCommand($sql)->execute();
 
                     $cheker++;
