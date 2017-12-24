@@ -1116,12 +1116,17 @@ class AutorizedController extends Controller
         $users = Users::model()->findAll(array("condition"=>"AKTIV_KEY =  100"));
 
         $ids_sent = Yii::app()->db->createCommand("SELECT user_id from m_w_dispatch_mails")->queryAll();
+        $ids = array();
+        foreach ($ids_sent as $item) {
+            $ids[] = $item['user_id'];
+        }
+
         $id = 121;
 
         if(!empty($users) && is_array($users)){
 
 //            foreach ($users as $user) {
-            if(!in_array($id, $ids_sent)){
+            if(!in_array($id, $ids)){
 
             try {
                 $email = "landerfeld@gmail.com";
