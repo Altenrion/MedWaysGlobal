@@ -1087,7 +1087,12 @@ class AutorizedController extends Controller
         
         <p style='text-align:justify'>Будем рады видеть Вас в числе участников!</p></br>
         
-        <p style='text-align:justify'>Приложения: 1. Письмо в вузы, 2. Положение об Эстафете вузовской науки</p></br></br></br>
+        <p style='text-align:justify'>Приложения: <br>
+            <ul>
+                <li>1. Письмо в вузы,</li>
+                <li>2. Положение об Эстафете вузовской науки</li>
+            </ul> 
+         </p></br></br></br>
         ";
 
         $ending = "С уважением, <br>
