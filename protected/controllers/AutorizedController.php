@@ -1121,45 +1121,46 @@ class AutorizedController extends Controller
             $ids[] = $item['user_id'];
         }
 
-        $id = 121;
-
         if(!empty($users) && is_array($users)){
 
-//            foreach ($users as $user) {
-            if(!in_array($id, $ids)){
+            foreach ($users as $user) {
 
 
-            try {
-                $email = "landerfeld@gmail.com";
-                $user_id = 111;
-                $mail_name = "common_email_notification";
+                $user_id = $user["id"];
+                $email = $user["EMAIL"];
 
-//                $email = $user["EMAIL"];
+                if(!in_array($user_id, $ids)){
 
-                $message = new YiiMailMessage;
-                $message->setBody($mail, 'text/html');
-                $message->subject = $subject;
-                $message->from = Yii::app()->params['adminEmail'];
-                $message->addTo($email);
-                $message->attach(Swift_Attachment::fromPath(Yii::getPathOfAlias('webroot.downloads') . DIRECTORY_SEPARATOR . 'Estafeta_polojenie_2018.pdf'));
-                $message->attach(Swift_Attachment::fromPath(Yii::getPathOfAlias('webroot.downloads') . DIRECTORY_SEPARATOR . 'univercity_letter.pdf'));
+                    try {
+                        $mail_name = "common_email_notification";
 
-                if (!Yii::app()->mail->send($message)) {
-                    $cheker++;
-                }else{
-                    $sql = "INSERT into m_w_dispatch_mails (user_id, mail_name) values (:user_id, :mail_name)";
-                    $parameters = array(
-                        ":user_id"=>$user_id,
-                        ":mail_name"=>$mail_name
-                    );
-                    Yii::app()->db->createCommand($sql)->execute($parameters);
+                        $message = new YiiMailMessage;
+                        $message->setBody($mail, 'text/html');
+                        $message->subject = $subject;
+                        $message->from = Yii::app()->params['adminEmail'];
+                        $message->addTo($email);
+                        $message->attach(Swift_Attachment::fromPath(Yii::getPathOfAlias('webroot.downloads') . DIRECTORY_SEPARATOR . 'Estafeta_polojenie_2018.pdf'));
+                        $message->attach(Swift_Attachment::fromPath(Yii::getPathOfAlias('webroot.downloads') . DIRECTORY_SEPARATOR . 'univercity_letter.pdf'));
+
+                        if (!Yii::app()->mail->send($message)) {
+                            $cheker++;
+                        }else{
+                            $sql = "INSERT into m_w_dispatch_mails (user_id, mail_name) values (:user_id, :mail_name)";
+                            $parameters = array(
+                                ":user_id"=>$user_id,
+                                ":mail_name"=>$mail_name
+                            );
+                            Yii::app()->db->createCommand($sql)->execute($parameters);
+                        }
+
+                    } catch (Exception $e) {
+                        echo 'Error: ',  $e->getMessage(), "\n"; die();
+                    }
+
                 }
 
-            } catch (Exception $e) {
-                echo 'Error: ',  $e->getMessage(), "\n"; die();
+                sleep(1);
             }
-
-        }
         }
 
         if ($cheker != 0) {
