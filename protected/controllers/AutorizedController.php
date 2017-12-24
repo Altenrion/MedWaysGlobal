@@ -60,7 +60,7 @@ class AutorizedController extends Controller
                 'roles' => array('Dev'),
             ),
             array('allow',
-                'actions' => array('projects', 'statistics'),
+                'actions' => array('projects', 'statistics', 'mailsCrosslist'),
                 'roles' => array('Moder1', 'Exp1', 'Exp2', 'Exp3', 'Dev', 'Admin',),
             ),
             array('deny',
