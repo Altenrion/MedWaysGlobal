@@ -1137,7 +1137,7 @@ class AutorizedController extends Controller
 
 
 
-                    $sql = "insert into m_w_dispatch_mails (user_id, mail_name) values (:user_id, :mail_name)";
+                    $sql = 'insert into m_w_dispatch_mails (user_id, mail_name) values (:user_id, ":mail_name")';
                     $parameters = array(
                         ":user_id"=>$user_id,
                         ":mail_name"=>$mail_name
