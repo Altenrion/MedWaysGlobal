@@ -694,20 +694,29 @@ class AutorizedController extends Controller
     public function actionManageProject($Project)
     {
 
-        $projectData = ProjectRegistry::model()->findByPk($Project);
+        $income_id = $Project;
+        $temp_id = str_replace( ',', '', $income_id );
+
+        if( is_numeric( $temp_id ) ) {
+            $income_id = $temp_id;
+        }
+        $cleaned_id = $income_id;
+
+        $projectData = ProjectRegistry::model()->findByPk($cleaned_id);
         $managerData = Users::model()->findByPk($projectData->ID_REPRESENTATIVE);
         $criteries = CJSON::decode(CJSON::encode(Creities::model()->findAll()));
-        $answers = CrAnswers::model()->findAll();
+//        $answers = CrAnswers::model()->findAll();
+
 
         foreach ($criteries as $cr_k => $cr_v) {
-            $answ[$cr_k] = CJSON::decode(CJSON::encode(CrAnswers::model()->findAll('ID_CRITERIA=' . ++$cr_k)));
+            $answers_decoded[$cr_k] = CJSON::decode(CJSON::encode(CrAnswers::model()->findAll('ID_CRITERIA=' . ++$cr_k)));
         }
 
         $this->render('manage_project', array(
             'project' => $projectData,
             'manager' => $managerData,
             'criteries' => $criteries,
-            'answers' => $answ
+            'answers' => $answers_decoded
         ));
     }
 
