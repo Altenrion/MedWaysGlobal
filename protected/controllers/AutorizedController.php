@@ -186,12 +186,12 @@ class AutorizedController extends Controller
             ) as '{$total_district['NAME']}'";
 
             $pushed_projects_strings[] = "
-            (SELECT count(*) 
+            (SELECT count(*)
                 FROM m_w_project_registry as pr
                 LEFT JOIN m_w_users as u ON pr.ID_REPRESENTATIVE = u.id
                 where u.id IS NOT NULL
             AND pr.ID_STAGE = st.ID_STAGE
-            AND pr.FIRST_LAVEL_APPROVAL = 3
+            AND pr.FIRST_LAVEL_APPROVAL = 1
             AND u.ID_DISTRICT = {$total_district['ID_DISTRICT']}
             AND pr.REG_DATE > '". Yii::app()->params['eventStartDate']."'
             ) as '{$total_district['NAME']}'";
