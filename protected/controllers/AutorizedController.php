@@ -1841,7 +1841,8 @@ class AutorizedController extends Controller
             /** Критерий для эксперта 1 уровня (по универу) */
             case 'Moder' :
             case 'Moder1' :
-                $criteriaCondition .= " AND us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL IN ('1', '3', '9') AND us.REG_DATE > '" .Yii::app()->params['eventStartDate']."' ";
+                $criteriaCondition .= " AND us.ID_UNIVER = :univ AND FIRST_LAVEL_APPROVAL IN ('1', '3', '9') ";
+//                AND us.REG_DATE > '" .Yii::app()->params['eventStartDate']."' ";
                 $criteriaParams = array(":univ" => $user['ID_UNIVER']);
                 break;
 
