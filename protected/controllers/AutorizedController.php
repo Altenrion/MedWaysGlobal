@@ -182,7 +182,7 @@ class AutorizedController extends Controller
                 where u.id IS NOT NULL
             AND pr.ID_STAGE = st.ID_STAGE
             AND u.ID_DISTRICT = {$total_district['ID_DISTRICT']}
-            AND u.REG_DATE > '". Yii::app()->params['eventStartDate']."'
+            AND pr.REG_DATE > '". Yii::app()->params['eventStartDate']."'
             ) as '{$total_district['NAME']}'";
 
             $pushed_projects_strings[] = "
@@ -193,7 +193,7 @@ class AutorizedController extends Controller
             AND pr.ID_STAGE = st.ID_STAGE
             AND pr.FIRST_LAVEL_APPROVAL = 3
             AND u.ID_DISTRICT = {$total_district['ID_DISTRICT']}
-            AND u.REG_DATE > '". Yii::app()->params['eventStartDate']."'
+            AND pr.REG_DATE > '". Yii::app()->params['eventStartDate']."'
             ) as '{$total_district['NAME']}'";
 
             $verified_projects_strings[] = "
@@ -205,7 +205,7 @@ class AutorizedController extends Controller
             AND pr.FIRST_LAVEL_APPROVAL = 3
             AND pr.SECOND_LAVEL_RATING IS NOT NULL
             AND u.ID_DISTRICT = {$total_district['ID_DISTRICT']}
-            AND u.REG_DATE > '". Yii::app()->params['eventStartDate']."'
+            AND pr.REG_DATE > '". Yii::app()->params['eventStartDate']."'
             ) as '{$total_district['NAME']}'";
 
         }
