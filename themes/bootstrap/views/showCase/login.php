@@ -119,7 +119,7 @@
                                         <option value="">...</option>
                                         <option value="Manager">Руководитель проекта</option>
                                         <option value="Moder">Координатор от вуза</option>
-                                        <option value="Exp">Эксперт</option>
+<!--                                        <option value="Exp">Эксперт</option>-->
 
                                     </select>
                                 </div>

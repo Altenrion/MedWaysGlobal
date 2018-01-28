@@ -64,7 +64,7 @@ if (isset($data) && !is_null($data)) {
             <li class="active">Проект</li>
         </ol>
 
-        <div><button class="btn create-project" ><i class="fa fa-plus"></i> Создать </button></div>
+<!--        <div><button class="btn create-project" ><i class="fa fa-plus"></i> Создать </button></div>-->
 
     </section>
     <!-- END CONTENT HEADER -->
